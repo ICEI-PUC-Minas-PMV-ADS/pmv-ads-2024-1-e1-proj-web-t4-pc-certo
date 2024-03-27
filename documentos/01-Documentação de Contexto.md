@@ -1,35 +1,49 @@
 # Introdução
 
-[Aqui a equipe deve criar um texto descritivo com a visão geral do problema abordado, apresentando o ambiente e as situações envolvidas no problema.]
+Atualmente, é imprescindível um meio de acesso ao “Mundo virtual", visto que, há anos, o processo de globalização tem se intensificado. Com isso, surgiu a necessidade de adaptação a essa nova geração de tecnologias que surgiram para que seja possível fazer parte deste novo meio tecnológico que existe na sociedade. 
+
+Entretanto, existem várias formas de se integrar a essa nova era, com uso de aparelhos como celulares, tablets entre outros. Entre esses dispositivos, o computador se destaca por sua versatilidade e ampla gama de recursos. A dificuldade observada neste processo modulável é a vasta diversidade de peças que existem, abrindo um leque de opções que demandam conhecimento técnico para conseguir escolher os devidos componentes, atendendo às necessidades do usuário.
+
+Tendo em vista a complexidade no processo de montagem de um computador e ausência generalizada do conhecimento necessário para escolha de suas peças, uma aplicação web pode auxiliar neste procedimento. Essa solução pode disponibilizar às pessoas a oportunidade de adquirir, com o melhor custo possível, um computador que supra às suas necessidades individuais, em uma interface simples, intuitiva e de fácil acesso.
+
 
 ## Problema
-[Aqui a equipe deve fornecer uma descrição detalhada do problema a ser resolvido. Não é o momento adequado para abordar questões técnicas relacionadas ao desenvolvimento da aplicação. O objetivo é compreender e comunicar de maneira precisa qual é o desafio ou necessidade que motiva a criação da aplicação.]
-
-Este link pode ajudar a equipe a entender mais sobre definição do problema: [Objetivos, Problema de pesquisa e Justificativa.](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
+ 
+O problema que se apresenta é a dificuldade enfrentada por pessoas sem experiência técnica em hardware de computador. A escolha dos componentes pode ser confusa e a compatibilidade entre eles nem sempre é óbvia. Isso pode resultar em decisões inadequadas que possam comprometer o desempenho do computador e trazer gastos desnecessários, além do tempo perdido.
 
 
 ## Objetivos
 
-[Aqui a equipe deve realizar uma descrição detalhada dos objetivos do trabalho, ressaltando quais as questões principais do problema a serem resolvidas pelo projeto, não é a hora de apresentar requisitos detalhados.]
- 
-Este link pode ajudar a equipe a entender mais sobre definição dos objetivos: [Objetivos, Problema de pesquisa e Justificativa.](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
+O objetivo principal deste projeto é criar uma solução que permita que pessoas inexperientes montem computadores que supram suas necessidades de maneira prática e intuitiva.
+Como objetivos específicos, podemos destacar:
+
+
+   • Comparar preços e desempenho dos hardwares;
+   
+   • Fornecer vídeos e imagens que orientem em cada fase do procedimento de montagem;
+   
+   • Disponibilizar um fórum para interação da comunidade interessada em computadores.
+
 
 ## Justificativa
 
-[Aqui a equipe deve descrever a importância ou a motivação para trabalhar com o problema definido. Indique as razões pelas quais a equipe escolheu o problema e definiu os objetivos.
+A procura por computadores pessoais tem crescido cada vez mais nos últimos anos. Um levantamento feito pela Kantar a pedido de duas empresas renomadas do setor de computadores - Dell e Intel - afirma:
+"Por fim, quase oito em cada dez entrevistados (78,4%) disseram que o uso do computador aumentou desde o início da pandemia: 60% passaram mais tempo nas redes sociais, enquanto 58% usaram mais o PC para estudar, 54% para trabalhar; 53% com entretenimento (séries e filmes) e 41% para jogar." 
 
-Devem ser apresentados dados de fontes relevantes e confiáveis sobre o problema, inserindo-o como alvo de estudo. Sugere-se que a equipe utilize questionários, entrevistas e dados estatísticos, que devem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pela equipe.]
+Em vista disso, muitas pessoas desprovidas da instrução adequada compram computadores sem a certeza de que suas necessidades serão atendidas ou se terão gastos desnecessários. Assim, é comum que esses consumidores adquirem um computador que não alcance o desempenho esperado, ou, por outro lado, desembolsem mais do que o planejado, investindo em recursos ou tecnologias que não são essenciais para suas atividades.
 
-Este link pode ajudar a equipe a formular a justificativa: [Como montar a justificativa.](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Portanto, o projeto busca auxiliar de forma objetiva como o usuário deve montar o seu próprio computador com consciência de que irá satisfazer as suas necessidades. Desse modo, o desenvolvimento de um site para auxiliar os usuários inexperientes capacita os consumidores a fazerem escolhas informadas e a montarem seus próprios sistemas personalizados de acordo com suas necessidades.
 
 ## Público-Alvo
 
-[Aqui é necessário descrever os atores envolvidos no problema, destacando os diferentes perfis de usuários. O propósito é apresentar as características, necessidades, conhecimentos prévios e experiência com a tecnologia do público-alvo.
+Mesmo que até os experientes na montagem de um computador busquem ferramentas para auxiliá-los na compra das peças, o foco deste projeto está no público que não possui o conhecimento necessário para a montagem de um computador. 
 
-Sugere-se que a equipe utilize questionários e/ou entrevistas a fim de conhecer os atores que compõem o público alvo.]
+Dessa forma, foi determinado como público-alvo deste trabalho homens e mulheres que enfrentam obstáculos na hora de compra e montagem de um computador, pois além das diversas opções de componentes, cada indivíduo possui necessidades diferentes para o uso de um computador, e a má escolha dos componentes ou sua indevida montagem podem impactar na performance desejada para suprir sua necessidade.
 
-Os links abaixo podem ajudar a equipe a conhecer um pouco mais sobre o público-alvo. 
+Para saber mais sobre as limitações que o público-alvo possui, foram realizadas entrevistas com 38 pessoas de diferentes faixas etárias, sendo 18 a 64 anos. Com isso foi possível identificar alguns pontos em comum. São esses:
 
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
+• Somente 5% dos entrevistados buscam a ajuda de um profissional da área na hora de comprar um computador, os outros 95% buscam fazer isso sozinhos ou com amigos confiáveis.
 
+• 13 entrevistados não necessitam de ajuda na hora de montar um computador, desses somente 15% estão acima de 25 anos.
+
+• 25 entrevistados necessitam de ajuda na hora de montar um computador e desses 48% não entendem absolutamente nada sobre montagem de computadores.
