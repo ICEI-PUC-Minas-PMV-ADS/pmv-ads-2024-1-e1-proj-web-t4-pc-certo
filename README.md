@@ -27,7 +27,7 @@ Tendo em vista a complexidade no processo de montagem de um computador e ausênc
 <li><a href="documentos/02-Especificação do Projeto.md"> Especificação do Projeto</a></li>
 <li><a href="documentos/03-Metodologia.md"> Metodologia</a></li>
 <li><a href="documentos/04-Projeto de Interface.md"> Projeto de Interface</a></li>
-<li><a href="documentos/09-Referências.md"> Referências Bibliográficas</a></li>
+<li><a href="documentos/09-Referências Bibliográficas.md"> Referências Bibliográficas</a></li>
 </ol>
 
 # Apresentação
