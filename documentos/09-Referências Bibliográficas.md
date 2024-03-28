@@ -1,7 +1,5 @@
 # Referências Bibliográficas
 
-[Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.]
+FREITAS,  Felipe.  Mundo  Conectado.  2022.  Disponível  em:  https://www.mundoconectado.com.br/corporativo/desempenho-e-mais-importante-do-que preco-na-escolha-de-um-pc-para-trabalhar/.  Acesso  em:  08/03/2024.   
 
-> **Links Úteis**:
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
+BEZERRA, Luan. Seu conhecimento sobre computadores. 2024. Disponível em:  https://docs.google.com/spreadsheets/d/1lSGb20N2EKsFEpvXBlBhYdml0xBDRamMn 54cAg_nbo/edit?usp=sharing. Acesso em: 13/03/2024. 
