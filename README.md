@@ -6,7 +6,7 @@
 
 `1º semestre/2024`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
+Tendo em vista a complexidade no processo de montagem de um computador e ausência do conhecimento necessário para escolha de suas peças, esse projeto busca disponibilizar às pessoas a oportunidade de adquirir, com o melhor custo possível, um computador que supra às suas necessidades individuais, em uma interface simples, intuitiva e de fácil acesso.
 
 ## Integrantes
 
