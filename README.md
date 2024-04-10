@@ -10,11 +10,13 @@ Tendo em vista a complexidade no processo de montagem de um computador e ausênc
 
 ## Integrantes
 
+* Caetano Piccolo de Souza
+* Luan Fernando dos Santos Bezerra
+* Lucas Gabriel Ferreira Toti
 * Pedro Fernando dos Santos Bezerra
 * Pedro Henrique Silveira Leiva Machado
-* Lucas Gabriel Ferreira Toti
-* Luan Fernando dos Santos Bezerra
-* Caetano Piccolo de Souza
+
+
   
 ## Orientador
 
