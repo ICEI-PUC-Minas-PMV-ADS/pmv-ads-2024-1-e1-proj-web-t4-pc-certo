@@ -17,15 +17,11 @@
 
 1. Estabelecer qual tipo de uso o computador que o site sugerir as peças terá;
 
-2. Escolher se será uma montagem completa ou somente peças para melhoria de seu atual computador;
-  
-3. Ser guiado a como saber as peças em seu atual computador;
+2. Definir um orçamento de seu interesse para a montagem sugerida;
 
-4. Definir um orçamento de seu interesse para a montagem sugerida;
+3. Determinar se periféricos estão inclusos no orçamento;
 
-5. Determinar se periféricos estão inclusos no orçamento;
-
-6. Receber indicações de onde comprar cada peça da montagem realizada pela aplicação web. </td>
+4. Receber indicações de onde comprar cada peça da montagem realizada pela aplicação web. </td>
 
 </tr>
 </tbody>
@@ -86,10 +82,8 @@
 
 |EU COMO... `QUEM`   | QUERO/PRECISO ... `O QUE` |PARA ... `PORQUE`                 |
 |--------------------|---------------------------|----------------------------------|
-Inexperiente em Hardware | Saber quais peças comprar para meu atual computador. | Melhorar o desempenho do meu computador atual de acordo com minhas necessidades e orçamento. |
 Inexperiente em Hardware | Saber quais peças comprar para meu novo computador. | Ter um novo computador que satisfaça minhas necessidades e meu orçamento. |
 Inexperiente em Hardware | Definir um orçamento personalizado para minha montagem. | Montar um computador sem gastos desnecessários, de acordo com minha necessidade. |
-Inexperiente em Hardware | Saber qual notebook devo comprar. | Satisfazer meu uso sem ter gastos desnecessários. |
 Inexperiente em Hardware | Recomendações de sites seguros para a compra das peças que escolhi. | Ter certeza de que estou comprando no lugar certo e que será seguro. |
 Experiente em Hardware | Compartilhar opinião sobre peças e montagens com outros usuários. | Ajudar outros com base em minhas experiências com o uso do computador. |
 Experiente em Hardware | Realizar relatórios e sugerir melhorias para o site. | Que o site ofereça a melhor experiência para o cliente. |
@@ -103,24 +97,21 @@ Interessado em Aprender | Ler comentários e avaliações de outras pessoas. | A
 
 |ID    | Descrição                | Prioridade |
 |-------|---------------------------------|----|
-| RF-01 |A aplicação deve permitir o usuário escolher entre uma montagem completa ou uma montagem parcial para melhorias em seu atual computador. |Alta| 
-| RF-02 |A aplicação deve solicitar quais periféricos serão inclusos no orçamento, se necessário.|Média| 
-| RF-03 |A aplicação deve solicitar ao usuário quais são os componentes atuais do computador do usuário, se necessário.|Média| 
-| RF-04 |A aplicação deve disponibilizar um passo a passo de como saber quais são as peças atuais do computador do usuário.|Alta| 
-| RF-05 |A aplicação deve solicitar ao usuário qual será finalidade de uso das peças do computador a ser montado. |Alta|
-| RF-06 |A aplicação deve filtrar entre quais peças suprem cada finalidade escolhida pelo usuário anteriormente para a sugestão final da recomendação.|Alta| 
-| RF-07 |A aplicação deve coletar as informações por meio de API dos notebooks e componentes de um computador, como preços e especificações.|Alta| 
-| RF-08 |A aplicação deve oferecer um orçamento ajustável para o usuário.|Alta| 
-| RF-09 |A aplicação deve calcular a soma dos componentes escolhidos para o usuário.|Alta| 
-| RF-10 |A aplicação deve disponibilizar ao usuário a escolha final das peças realizadas pela filtragem. |Alta| 
-| RF-11 |A aplicação deve permitir o cadastro de usuários para o uso do fórum. |Média| 
-| RF-12 |A aplicação deve permitir o login de usuários para o uso do fórum.|Média| 
-| RF-13 |A aplicação deve disponibilizar links de lojas online de hardware de computador para que os usuários comprem as peças diretamente através do site.|Baixo| 
-| RF-14 |A aplicação deve verificar se o orçamento está de acordo com a soma do preço dos componentes escolhidos pela aplicação.|Alta| 
-| RF-15 |A aplicação deve conter um fórum da comunidade. |Média| 
-| RF-16 |A aplicação deve permitir o usuário selecionar individualmente cada componente para o computador após o resultado gerado pela aplicação mantendo a compatibilidade e orçamento, caso necessário. |Média| 
-| RF-17 |A aplicação deve permitir que administradores realizem banimentos/suspensões aos usuários que não respeitarem as regras do fórum.|Média| 
-| RF-18 |A aplicação deve fornecer um guia passo a passo de como realizar a montagem de um computador. |Média| 
+| RF-01 |A aplicação deve solicitar quais periféricos serão inclusos no orçamento, se necessário.|Média| 
+| RF-02 |A aplicação deve solicitar ao usuário qual será finalidade de uso das peças do computador a ser montado. |Alta|
+| RF-03 |A aplicação deve filtrar entre quais peças suprem cada finalidade escolhida pelo usuário anteriormente para a sugestão final da recomendação.|Alta| 
+| RF-04 |A aplicação deve coletar as informações por meio de API dos componentes do computador, como preços e especificações.|Alta| 
+| RF-05 |A aplicação deve oferecer um orçamento ajustável para o usuário.|Alta| 
+| RF-06 |A aplicação deve calcular a soma dos componentes escolhidos para o usuário.|Alta| 
+| RF-07 |A aplicação deve disponibilizar ao usuário a escolha final das peças realizadas pela filtragem. |Alta| 
+| RF-08 |A aplicação deve permitir o cadastro de usuários para o uso do fórum. |Média| 
+| RF-09 |A aplicação deve permitir o login de usuários para o uso do fórum.|Média| 
+| RF-10 |A aplicação deve disponibilizar links de lojas online de hardware de computador para que os usuários comprem as peças diretamente através do site.|Baixo| 
+| RF-11 |A aplicação deve verificar se o orçamento está de acordo com a soma do preço dos componentes escolhidos pela aplicação.|Alta| 
+| RF-12 |A aplicação deve conter um fórum da comunidade. |Média| 
+| RF-13 |A aplicação deve permitir o usuário selecionar individualmente cada componente para o computador após o resultado gerado pela aplicação mantendo a compatibilidade e orçamento, caso necessário. |Média| 
+| RF-14 |A aplicação deve permitir que administradores realizem banimentos/suspensões aos usuários que não respeitarem as regras do fórum.|Média| 
+| RF-15 |A aplicação deve fornecer um guia passo a passo de como realizar a montagem de um computador. |Média| 
 
 **Prioridade: Alta / Média / Baixa. 
 
