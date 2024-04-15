@@ -10,49 +10,90 @@ O fluxograma apresentado na figura 1 mostra o fluxo do usuário pelo sistema. Ca
     <figcaption>Figura 1 - Fluxograma</figcaption>
 </figure>
 
-## Protótipo
+### Protótipo de baixa fidelidade 
 
-Desenvolver um protótipo emerge como uma das maneiras mais ágeis e econômicas de validar uma ideia, conceito ou funcionalidade. Isso permite a interação, avaliação, modificação e aprovação das principais características de uma interface antes de entrar na fase de desenvolvimento. Leia o artigo [Protótipos: baixa, média ou alta fidelidade?](https://medium.com/ladies-that-ux-br/prot%C3%B3tipos-baixa-m%C3%A9dia-ou-alta-fidelidade-71d897559135).
+As telas do sistema apresentam uma estrutura comum que é apresentada na figura 2. Nesta estrutura existem 3 grandes blocos, descritos a seguir. São eles:
+<ul>
+  <li>Cabeçalho - local onde estão dispostos o nome da aplicação web e navegação principal do site (menu da aplicação);</li>
+  <li>Conteúdo - apresenta o conteúdo da tela em questão;</li>
+  <li>Rodapé - apresenta informações sobre os direitos autorais.</li>
+</ul>
 
-### Protótipo de baixa fidelidade
+<figure> 
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/Estrutura%20Padrão%20do%20Site.jpg"
+    <figcaption>Figura 2 - Estrutura padrão do site
+</figure> 
+<hr>
 
-Protótipos de baixa fidelidade apresentam de forma simplificada o design da interface e o relacionamento entre suas páginas, permitindo evolução da proposta da solução. Neste projeto, os utilizaremos para apoiar a validação dos requisitos e efetuar mudanças dos mesmos, caso seja necessário, para menor impacto na codificação da aplicação.
+<h3><b>Imagem 1 - Página inicial</b></h3>
+<p>A Página inicial apresenta o botão principal para o processo de montagem do PC, além de acesso ao fórum e guias com dicas de como escolher componentes</p>
 
-[Elabore as principais interfaces gráficas da aplicação de modo que os requisitos funcionais sejam contemplados nas telas propostas.]
-
-[Adicione aqui as telas da sua aplicação com seus devidos títulos.] 
-
-Imagem 1 - Tela inicial 
-A tela inicial apresenta o botão principal para o processo de montagem do PC, além de acesso ao fórum e guias com dicas de como escolher componentes
-
-Imagem 2 - Questionário
-Esta página apresenta uma breve pesquisa para saber as prioridades do usuário ao montar um PC
-
-Imagem 3 - Escolha de Componentes
-A página escolha de componentes permitirá o usuário a saber mais sobre a função exercida por cada componente e mostrará opções que atendem a sua necessidade
-
-Imagem 4 - Resumo dos Componentes
-Esta página resume todas as escolhas do usuário e indica o melhor lugar para comprar por meio de links direto para loja
-
-Imagem 5 - Guia
-Esta página fornece guias específicos para escolha de cada componente de um computador
-
-Imagem 6 - Fórum
-Esta página permite que usuários tenham interação por compartilhar suas dúvidas, suas soluções ou algo relacionado a computadores
-
-Imagem 7 - Login
-A tela de Login apresenta campos para a inserção do usuário e da senha.
-
-Imagem 8 - Cadastro
-A tela de cadastro apresenta os seguintes campos para a inserção das informações pessoais do usuário: Email, usuário, senha e confirmação de senha
-
+<figure>
+ <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/Página%20Inicial.jpg"
+  <figcaption>Figura 3 - Página Inicial
+</figure>
+<hr>
  
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
->- Ferramentas:
->> - [Pencil](https://pencil.evolus.vn/)
->> - [MarvelApp](https://marvelapp.com/)
->> - [Figma](https://www.figma.com/)
+<h3><b>Imagem 2 - Questionário</b></h3>
+<p>Esta página apresenta uma breve pesquisa para saber as prioridades do usuário ao montar um PC</p>
 
+<figure>
+ <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/Questionário.jpg"
+  <figcaption>Figura 4 - Questionário
+</figure>
+<hr>
 
+<h3><b>Imagem 3 - Escolha de Componentes</b></h3>
+<p>A página escolha de componentes permitirá o usuário a saber mais sobre a função exercida por cada componente e mostrará opções que atendem a sua necessidade</p>
+
+<figure>
+ <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/Escolha%20de%20Componentes.jpg"
+  <figcaption>Figura 5 - Escolha de Componentes
+</figure>
+<hr>
+
+<h3><b>Imagem 4 - Resumo dos Componentes</b></h3>
+<p>Esta página resume todas as escolhas do usuário e indica o melhor lugar para comprar por meio de links direto para loja</p>
+
+<figure>
+ <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/Resumo%20dos%20Componentes.jpg"
+  <figcaption>Figura 6 - Resumo dos Componentes
+</figure>
+<hr>
+
+<h3><b>Imagem 5 - Guia de Escolha de Peças</b></h3>
+<p>Esta página fornece guias específicos para escolha de cada componente de um computador</p>
+
+<figure>
+ <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/Guia%20de%20Escolha%20de%20Peças.jpg"
+  <figcaption>Figura 7 - Guia de Escolha de Peças
+</figure>
+<hr>
+
+<h3><b>Imagem 6 - Fórum da Comunidade</b></h3>
+<p>Esta página permite que usuários tenham interação por compartilhar suas dúvidas, suas soluções ou algo relacionado a computadores</p>
+
+<figure>
+ <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/Fórum%20da%20Comunidade.jpg"
+  <figcaption>Figura 8 - Fórum da Comunidade
+</figure>
+<hr>
+
+<h3><b>Imagem 7 - Página de Login</b></h3>
+<p>A tela de Login apresenta campos para a inserção do usuário e da senha.</p>
+
+<figure>
+ <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/Página%20de%20Login.jpg"
+  <figcaption>Figura 9 - Página de Login
+</figure>
+<hr>
+
+<h3><b>Imagem 8 - Página de Cadastro</b></h3>
+<p>A tela de cadastro apresenta os seguintes campos para a inserção das informações pessoais do usuário: Email, usuário, senha e confirmação de senha</p>
+
+<figure>
+ <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/Página%20de%20Cadastro.jpg"
+  <figcaption>Figura 10 - Página de Cadastro
+</figure>
+<hr>
 
