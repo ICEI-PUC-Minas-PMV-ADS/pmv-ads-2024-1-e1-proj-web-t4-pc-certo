@@ -1,5 +1,7 @@
 # PC Certo
 
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/logo.png">
+
 `Análise e Desenvolvimento de Sistemas - PUC Minas`
 
 `Desenvolvimento de aplicação web front-end`
