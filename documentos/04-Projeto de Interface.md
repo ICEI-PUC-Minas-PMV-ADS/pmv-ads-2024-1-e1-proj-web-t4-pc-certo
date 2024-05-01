@@ -6,7 +6,7 @@
 O fluxograma apresentado na figura 1 mostra o fluxo do usuário pelo sistema. Cada uma das telas deste fluxo é detalhada na seção de Protótipo de baixa fidelidade que se segue. Para visualizar o protótipo interativo, acesse o <a href="https://www.figma.com/proto/LIjpWAXVNciTzD0SulK3DL/Baixa-Fidelidade?type=design&node-id=2-6&t=V1xXaKlFfPXHmLar-1&scaling=contain&page-id=0%3A1">ambiente Figma do projeto</a>.
 
 <figure>
- <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/PC_CERTO_3.png"
+ <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/fluxograma.png"
     <figcaption>Figura 1 - Fluxograma</figcaption>
 </figure>
 
