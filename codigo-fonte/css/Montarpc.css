@@ -1,0 +1,8 @@
+body{
+    font-family: Bahnschrift, Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+main{
+    min-height: 100vh;
+}
