@@ -6,3 +6,57 @@ body{
 main{
     min-height: 100vh;
 }
+.guia{
+    color: #2E2E2E;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 83px;
+    margin-top: 19px;
+}
+.título{
+    color: #2E2E2E;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 58px;
+    margin-left: 83px;
+    margin-bottom: 0px;
+
+}
+.sublinha{
+        float: left;
+        width: 867px;
+        height: 1px;
+        background: #8ecd36;
+        margin-left: 83px;
+        margin-top: 4px;
+        margin-bottom: 0px;
+
+}
+.preferencias{
+    color: #7a7a7a;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 83px;
+    margin-top: 2px;
+    margin-bottom: 0px;
+}
+.jogos{
+    background-color: #2E2E2E;
+    box-shadow: 0px 4px 4px #7a7a7a;
+    border-radius: 25px;
+    border: 1px #8ecd36 solid;
+    width: 449px;
+    height: 485px;
+    margin-left: 227px;
+    margin-top: 46px;
+    margin-bottom: 114px;
+}
