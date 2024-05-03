@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fórum da Comunidade - PCCerto</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="css/forum.css">
     <link rel="stylesheet" href="css/HeaderFooter.css">
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
@@ -11,9 +12,9 @@
 </head>
 <body>
 
-<!-- Cabeçalho-->
+<!-- Cabeçalho -->
 
-<header class="headerConteiner">
+<header>
     <a href="Paginainicial.html">
         <img class="logo" src="img/logo.png" alt="" width="261px" height="112px">
     </a>
@@ -27,31 +28,41 @@
     </a>
 </header> 
 
-<!-- Topo com Titulo, barra de pesquisar e Criar Tópico-->
+<!-- Conteúdo Principal -->
 
 <main>
-<nav>
-    <div class="navegacao">
-       <div class="Titulo"> Fórum da Comunidade</div>
-       <button class="novoTopicoBotao">Criar um Tópico</button>
-       <div class="Pesquisar">
-            <button class="botaoPesquisar">
-                <img src="img/searchIcon.png" class="iconePesq" alt="Icone de Pesquisa">
-            </button>
-          <input name="caixapesq" type="text" class="entPesq" placeholder="O que você procura?" required></input>
+    <div class="contTop">
+        <h1> Fórum da Comunidade</h1>
+        <div class="pesqTpc">
+            <button id="novoTpc"> Criar um Tópico </button>
+
+            <div class="Pesquisar">
+                <button class="botaoPesquisar">
+                    <img src="img/searchIcon.png" class="iconePesq" alt="Icone de Pesquisa">
+                </button>
+                <input name="caixapesq" type="text" class="entPesq" placeholder="O que você procura?" required>
+                </input>
+            </div>
         </div>
     </div>
-</nav>
+
+    <div class="content">
+
+        
+
+    </div>
 
 </main>
 
-<!-- Rodapé-->
+<!-- Rodapé -->
 
 <footer class="rodape">
     <p class="copyright">© 2024, PC Certo | Todos os direitos reservados.</p>
 </footer>
 
-<!-- Fim da Página -->
+<!-- Fim -->
+
+<script src="forum.js"></script>
 
 </body>
 
