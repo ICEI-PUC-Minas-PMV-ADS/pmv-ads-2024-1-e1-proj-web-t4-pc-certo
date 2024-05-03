@@ -1,81 +1,94 @@
-body{
+body {
     font-family: Bahnschrift, Arial, sans-serif;
     padding: 0px;
     margin: 0px;
 }
-main{
+main {
     min-height: 100vh;
 }
-.guia{
+.guia {
     color: #2E2E2E;
     font-family: Roboto;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+   
     margin-left: 83px;
     margin-top: 19px;
 }
-.título{
+.título {
     color: #2E2E2E;
     font-family: Roboto;
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    
     margin-top: 58px;
     margin-left: 83px;
     margin-bottom: 0px;
 
 }
-.sublinha{
-        float: left;
-        width: 867px;
-        height: 1px;
-        background: #8ecd36;
-        margin-left: 83px;
-        margin-top: 4px;
-        margin-bottom: 0px;
+.sublinha {
+    float: left;
+    width: 867px;
+    height: 1px;
+    background: #8ecd36;
 
+    margin-left: 83px;
+    margin-top: 4px;
+    margin-bottom: 0px;
 }
-.pergunta{
+.pergunta {
     color: #7a7a7a;
     font-family: Roboto;
     font-size: 28px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
     margin-left: 83px;
     margin-top: 2px;
     margin-bottom: 0px;
 }
-.escolhas{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-left: 150px;
-    margin-right: 150px;
-}
+.escolhas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
 
-.jogos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.card{
+    display: grid;
+    grid-template-rows: auto;
+
     background-color: #2E2E2E;
     box-shadow: 0px 4px 4px #7a7a7a;
     border-radius: 25px;
     border: 1px #8ecd36 solid;
+    
     width: 600px;
     height: 600px;
+    
     margin-top: 46px;
-    margin-bottom: 114px;
+    cursor: pointer;
 }
-.controle{
-    width: 128px;
-    height: 128px;
-    margin-left: 236px;
+.card:hover{
+    background: #8ECD36;
+    transition: 0.3s;
+    
 }
-.opcoes{
+.controle {
+    width: 180px;
+    height: 180px;
+    margin: 0px;
+
+    justify-self: center;
+    align-self: center;
+}
+.opcoes {
     color: #FFF;
     text-align: center;
     font-family: Roboto;
@@ -83,9 +96,12 @@ main{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-bottom: 0px;
+    
+    margin: 0px;
+
+    align-self: center;
 }
-.descricao{
+.descricao {
     color: #FFF;
     text-align: center;
     font-family: Roboto;
@@ -93,5 +109,27 @@ main{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin: 90px;
+    
+    justify-content: stretch;
+    
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.botao1 {
+    background-color: #8ECD36;
+    border-radius: 25px;
+    border-color: #8ECD36;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+    width: 108px;
+    height: 44px;
+
+    justify-self: center;
 }
