@@ -17,15 +17,18 @@ main{
     margin-top: 70px;
     margin-left: 70px;
 }
-.Titulo{
+h1{
     float: left;
     font-size: 40px;
     text-decoration: underline solid #8ecd36;
     text-decoration-thickness: 2px;
     text-underline-offset: 10px;
     width: 450px;
+    font-weight: 200;
+
+    /* Novo Tópico */
 }
-.novoTopicoBotao{
+#novoTpc{
     font-size: 27px;
     color:white;
     float: right;
@@ -36,11 +39,25 @@ main{
     padding-right: 70px;
     border: none;
     outline: none;
-    transition: transform 0.2s ease-out;
+    transition: 
+    transform 0.2s ease-out;
 }
-.novoTopicoBotao:hover{  background-color: #a1e93c;
+#novoTpc:hover{  background-color: #a1e93c;
     transition: 0.3s;
-    cursor: pointer;}
+    cursor: pointer;
+}
+
+.novoTpcPop{
+    background-color: #fff;
+    width: 50%;
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
 .Pesquisar{
     font-size: 27px;
     float: right;
