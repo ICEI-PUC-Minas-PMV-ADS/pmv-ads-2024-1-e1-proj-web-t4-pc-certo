@@ -1,5 +1,5 @@
 body{
-    font-family: Bahnschrift, Arial, sans-serif;
+    font-family: Roboto, Arial, sans-serif;
     padding: 0px;
     margin: 0px;
 }
@@ -8,15 +8,16 @@ main{
     min-height: 100vh;
 }
 
-/* FORUM */
+/* Main */
 
-.navegacao{
+.contTop{
     height: 130px;
-    font-family: Bahnschrift, Arial, sans-serif;
+    font-family: Roboto, Arial, sans-serif;
     margin-right: 100px;
     margin-top: 70px;
     margin-left: 70px;
 }
+
 h1{
     float: left;
     font-size: 40px;
@@ -27,6 +28,7 @@ h1{
     font-weight: 200;
 
     /* Novo Tópico */
+
 }
 #novoTpc{
     font-size: 27px;
@@ -39,8 +41,7 @@ h1{
     padding-right: 70px;
     border: none;
     outline: none;
-    transition: 
-    transform 0.2s ease-out;
+    transition: transform 0.2s ease-out;
 }
 #novoTpc:hover{  background-color: #a1e93c;
     transition: 0.3s;
@@ -57,6 +58,8 @@ h1{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     position: relative;
 }
+
+    /* Pesquisar*/
 
 .Pesquisar{
     font-size: 27px;
