@@ -4,19 +4,25 @@ body{
     margin: 0px;
 }
 
-main{
-    min-height: 100vh;
-}
-
 /* Main */
 
-.contTop{
-    height: 130px;
-    font-family: Roboto, Arial, sans-serif;
+main{
+    min-height: 100vh;
     margin-right: 100px;
-    margin-top: 70px;
+    margin-top: 50px;
     margin-left: 70px;
 }
+
+/* Conteudo do Main */
+
+.contTop{
+    height:auto;
+    width: 100%;
+    font-family: Roboto, Arial, sans-serif;
+    display: inline-block;
+}
+
+/* Titulo */
 
 h1{
     float: left;
@@ -26,10 +32,16 @@ h1{
     text-underline-offset: 10px;
     width: 450px;
     font-weight: 200;
+    margin: 0;
+    padding-bottom: 10px;
+}
 
     /* Novo Tópico */
 
+.pesqTpc{
+    display: flexbox;
 }
+
 #novoTpc{
     font-size: 27px;
     color:white;
@@ -39,6 +51,7 @@ h1{
     padding: 15px;
     padding-left: 70px;
     padding-right: 70px;
+    margin-bottom: 10px;
     border: none;
     outline: none;
     transition: transform 0.2s ease-out;
@@ -95,4 +108,13 @@ h1{
 .iconePesq{
     width: 33px;
     height: 33px;
+}
+
+/* Conteudo */
+
+.content{
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 50px -100px 50px -70px;
+    border-left-width: 70px;
+    min-height: 900px;
 }
