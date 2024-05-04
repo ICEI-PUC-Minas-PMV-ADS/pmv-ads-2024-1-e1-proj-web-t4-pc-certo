@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/HeaderFooter.css">
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="Montarpc.js"></script>
 </head>
 
 <body>
@@ -43,32 +44,38 @@
         </article>
 
         <!-- Assistente-->
-
         <article class="cards">
             
-
             <!--Primeiro Card - JOGOS-->
-            <div onclick="orcamento" class="card">
-                <img class="controle" src="img/controle.png">
-                <h2 class="opcoes">JOGOS</h2>
-                <p class="descricao">Para isso o PC deve possuir maior poder de processamento gráfico, como uso de placa
-                    de vídeo dedicada, maior armazenamento e LED!</p>
+            <div>
+                <button class="card" onclick="selecionar()">
+                    <img class="imagem" src="img/controle.png">
+                    <h2 class="opcoes">JOGOS</h2>
+                    <p class="descricao">Para isso o PC deve possuir maior poder de processamento gráfico, como uso de
+                        placa
+                        de vídeo dedicada, maior armazenamento e LED!</p>
+                </button>
+
             </div>
 
-             <!--Segundo Card - PROFISSIONAL-->
-            <div class="card">
-                <img class="controle" src="img/profissional.png">
-                <h2 class="opcoes">PROFISSIONAL</h2>
-                <p class="descricao">Um sistema ideal para lidar com tarefas exigentes como edição de vídeos,
-                    renderização 3D e outras atividades de criação de conteúdo.</p>
+            <!--Segundo Card - PROFISSIONAL-->
+            <div>
+                <button class="card">
+                    <img class="imagem" src="img/profissional.png">
+                    <h2 class="opcoes">PROFISSIONAL</h2>
+                    <p class="descricao">Um sistema ideal para lidar com tarefas exigentes como edição de vídeos,
+                        renderização 3D e outras atividades de criação de conteúdo.</p>
+                </button>
             </div>
 
-             <!--Terceiro Card - CASUAL-->
-            <div class="card">
-                <img class="controle" src="img/casual.png">
-                <h2 class="opcoes">CASUAL</h2>
-                <p class="descricao">Um computador para atividades do dia a dia, como navegar na internet, assistir
-                    streaming, estudar e realizar tarefas básicas.</p>
+            <!--Terceiro Card - CASUAL-->
+            <div>
+                <button class="card">
+                    <img class="imagem" src="img/casual.png">
+                    <h2 class="opcoes">CASUAL</h2>
+                    <p class="descricao">Um computador para atividades do dia a dia, como navegar na internet, assistir
+                        streaming, estudar e realizar tarefas básicas.</p>
+                </button>
             </div>
 
         </article>
