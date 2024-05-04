@@ -1,56 +1,88 @@
-body{
+body {
     padding: 0px;
     margin: 0px;
-} 
-main{
+}
+
+main {
     width: 100%;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
-article{
-    color: #2E2E2E;
-    font-family: Roboto;
+
+h1 {
+    margin-top: 75px;
+    font-size: 40px;
+    margin-bottom: 0px;
     margin-left: 83px;
 }
-.sublinha{
+
+h2 {
+    margin-bottom: 0px;
+}
+
+article {
+    color: #2E2E2E;
+    font-family: Roboto;
+}
+
+.bemvindo {
+    margin-top: 0px;
+    width: 75%;
+    margin-left: 83px;
+    font-size: 28px;
+    font-style: normal;
+    color: #7a7a7a;
+    font-weight: 400;
+}
+
+.sublinha {
     float: left;
     width: 525px;
     height: 1px;
     background: #8ECD36;
-}
-
-h1{
-    margin-top: 75px;
-    font-size: 40px;
+    margin-left: 83px;
     margin-bottom: 0px;
 }
-h2{
-    margin: 0px;
-}
-.passos{
-    background-color: #D9D9D9;
-    padding: 30px;
-    display: flex;
-    width: 70%;
-    border-radius: 25px;
-    margin-top: 20px;
-    flex-direction: column;
-    float: right;
-}
-.video{
+
+.video {
     display: flex;
     border-radius: 25px;
     height: 600px;
 }
-.pecas{
-    padding: 10px;
 
+.passos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    justify-items: center;
+    gap: 30px;
+    margin-left: 83px;
+    margin-right: 83px;
 }
-.componentesimg{
-    width: 20%;
-    border-radius: 20px;
+
+.cards {
+    color: #2E2E2E;
+    font-family: Roboto;
+    background-color: #D9D9D9;
+    border-radius: 25px;
+
+    width: 500px;
+    height: 630px;
+    margin-bottom: 20px;
+
+    display: grid;
+    text-align: center;
 }
-.bemvindo{
-    width: 75%;
+
+.titCard {
+    font-size: 30px;
+    color: white;
+    background-color: #2E2E2E;
+    border-radius: 25px 25px 0px 0px;
+    height: 100px;
+}
+
+.txtCard {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 20px;
+    text-align: justify;
 }
