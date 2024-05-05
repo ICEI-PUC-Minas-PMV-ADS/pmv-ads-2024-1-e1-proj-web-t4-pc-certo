@@ -1,92 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCml lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Montar PC - PCCerto</title>
-    <link rel="stylesheet" href="css/Montarpc.css">
-    <link rel="stylesheet" href="css/HeaderFooter.css">
-    <link rel="icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <script src="Montarpc.js"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Montar PC - PCCerto</title>
+        <link rel="stylesheet" href="css/Montarpc.css">
+        <link rel="stylesheet" href="css/HeaderFooter.css">
+        <link rel="icon" href="img/favicon.png" icon">
+        <link rel="shortcut icon" href="img/favicon.ico" icon">
+        <script defer src="js/Montarpc.js"></script>
+    </head>
 
-<body>
+    <body>
 
-    <!-- Cabecalho-->
+        <!-- Cabecalho-->
 
-    <header>
-        <a href="Paginainicial.html">
-            <img class="logo" src="img/logo.png" alt="" width="261px" height="112px">
-        </a>
-        <div class="botoescabecalho">
-            <a class="botaocabecalho" href="Forum.html">Fórum</a>
-            <a class="botaocabecalho" href="Guiademontagem.html">Guia</a>
-            <a class="botaocabecalho" href="Montarpc.html">Montar PC</a>
-        </div>
-        <a class="Perfil" href="Login.html">
-            <img class="ProfileIcon" src="img/ProfileIcon.png" alt="Meu Perfil"><span class="FazerLogin"> Fazer
-                Login</span>
-        </a>
-    </header>
+        <header>
+            <a href="Paginainicial.html">
+                <img class="logo" src="img/logo.png" alt="" width="261px" height="112px">
+            </a>
+            <div class="botoescabecalho">
+                <a class="botaocabecalho" href="Forum.html">Fórum</a>
+                <a class="botaocabecalho" href="Guiademontagem.html">Guia</a>
+                <a class="botaocabecalho" href="Montarpc.html">Montar PC</a>
+            </div>
+            <a class="Perfil" href="Login.html">
+                <img class="ProfileIcon" src="img/ProfileIcon.png" alt="Meu Perfil"><span class="FazerLogin"> Fazer
+                    Login</span>
+            </a>
+        </header>
 
-    <!-- Título da Página-->
+        <!-- Contéudo da página-->
+        <main>
+            <!-- Título da Página-->
+            <article>
+                <p class="guia"> <a href="http://PC-Certo.com.br" target="_self">Página Inicial</a> > Monte seu PC -
+                    Assistente</p>
+                <h1 class="título">Vamos começar a montar so PC certo para você!</h1>
+                <hr class="sublinha">
+                <br>
+                <h2 class="subtitulo">Antes de iniciarmos, qual seu objetivo principal com o novo PC?</h2>
+            </article>
 
-    <main>
-        <article>
-            <p class="guia"> <a href="http://PC-Certo.com.br" target="_self">Página Inicial</a> > Monte seu PC -
-                Assistente</p>
-            <h1 class="título">Vamos começar a montar so PC certo para você!</h1>
-            <hr class="sublinha">
-            <br>
-            <h2 class="pergunta">Antes de iniciarmos, qual seu objetivo principal com o novo PC?</h2>
-        </article>
-
-        <!-- Assistente-->
-        <article class="cards">
-            
-            <!--Primeiro Card - JOGOS-->
+            <!-- Assistente-->
             <div>
-                <button class="card" onclick="selecionar()">
-                    <img class="imagem" src="img/controle.png">
-                    <h2 class="opcoes">JOGOS</h2>
-                    <p class="descricao">Para isso o PC deve possuir maior poder de processamento gráfico, como uso de
-                        placa
-                        de vídeo dedicada, maior armazenamento e LED!</p>
-                </button>
+                <form class="container">
+
+                    <!--Primeiro Card - JOGOS-->
+                        <button class="card">
+                            <img class="imagem" src="img/controle.png">
+                            <h2 class="opcoes">JOGOS</h2>
+                            <p class="descricao">Para isso o PC deve possuir maior poder de processamento gráfico, como
+                                uso de placa de vídeo dedicada, maior armazenamento e LED!</p>
+                        </button>
+
+                    <!--Segundo Card - PROFISSIONAL-->
+                        <button class="card">
+                            <img class="imagem" src="img/profissional.png">
+                            <h2 class="opcoes">PROFISSIONAL</h2>
+                            <p class="descricao">Um sistema ideal para lidar com tarefas exigentes como edição de
+                                vídeos,
+                                renderização 3D e outras atividades de criação de conteúdo.</p>
+                        </button>
+
+                    <!--Terceiro Card - CASUAL-->
+                        <button class="card">
+                            <img class="imagem" src="img/casual.png">
+                            <h2 class="opcoes">CASUAL</h2>
+                            <p class="descricao">Um computador para atividades do dia a dia, como navegar na
+                                internet, assistir streaming, estudar e realizar tarefas básicas.</p>
+                        </button>
+
+                </form>
+
+                <!-- Painel de escolha-->
+
 
             </div>
 
-            <!--Segundo Card - PROFISSIONAL-->
-            <div>
-                <button class="card">
-                    <img class="imagem" src="img/profissional.png">
-                    <h2 class="opcoes">PROFISSIONAL</h2>
-                    <p class="descricao">Um sistema ideal para lidar com tarefas exigentes como edição de vídeos,
-                        renderização 3D e outras atividades de criação de conteúdo.</p>
-                </button>
-            </div>
+        </main>
 
-            <!--Terceiro Card - CASUAL-->
-            <div>
-                <button class="card">
-                    <img class="imagem" src="img/casual.png">
-                    <h2 class="opcoes">CASUAL</h2>
-                    <p class="descricao">Um computador para atividades do dia a dia, como navegar na internet, assistir
-                        streaming, estudar e realizar tarefas básicas.</p>
-                </button>
-            </div>
+        <!-- Rodapé-->
 
-        </article>
-    </main>
+        <footer class="rodape">
+            <p class="copyright">© 2024, PC Certo | Todos os direitos reservados.</p>
+        </footer>
 
-    <!-- Rodapé-->
+    </body>
 
-    <footer class="rodape">
-        <p class="copyright">© 2024, PC Certo | Todos os direitos reservados.</p>
-    </footer>
-
-</body>
-
-</html>
+    </html>
