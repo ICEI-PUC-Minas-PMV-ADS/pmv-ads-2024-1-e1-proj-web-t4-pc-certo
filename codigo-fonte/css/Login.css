@@ -30,7 +30,7 @@ input::placeholder {
     font-family: Roboto;
 }
 
-button {
+div button {
     color: white;
     font-family: Roboto;
     background-color: #8ECD36;
@@ -42,7 +42,7 @@ button {
     margin: 10px;
 }
 
-button:hover {
+div button:hover {
     background-color: #a1e93c;
     transition: 0.3s;
     cursor: pointer;
