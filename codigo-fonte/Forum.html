@@ -35,8 +35,12 @@
 <main>
     <div class="contTop">
         <h1> Fórum da Comunidade</h1>
-        <div class="pesqTpc">
-            <button id="novoTpc"> Criar um Tópico </button>
+
+<!-- Criar Tópico -->
+
+        <button id="novoTpc"> Criar um Tópico </button>
+
+<!-- Caixa de Pesquisa -->
 
             <div class="Pesquisar">
                 <button class="botaoPesquisar">
@@ -45,11 +49,23 @@
                 <input name="caixapesq" type="text" class="entPesq" placeholder="O que você procura?" required>
                 </input>
             </div>
-        </div>
     </div>
 
     <div class="content">
 
+<!-- Conteudo -->
+
+<!-- PopUp -->
+
+<div id="pop-up">
+    <div class="cxNovoTpc">
+        <button class="fechar" id="botaoFechar"><img src="img/close.png" id="closeBtn" alt="&times"></button>
+        <h2>Novo Tópico</h2><br>
+        <input type="tituloPub" id="postTitle" placeholder="Título do Tópico"><br><br>
+        <textarea id="textoPub" placeholder="Digite aqui sua dúvida..."></textarea><br><br>
+        <button id="enviarPub">Publicar</button>
+    </div>
+</div>
         
 
     </div>
@@ -64,7 +80,7 @@
 
 <!-- Fim -->
 
-<script src="forum.js"></script>
+<script src="js/forum.js"></script>
 
 </body>
 

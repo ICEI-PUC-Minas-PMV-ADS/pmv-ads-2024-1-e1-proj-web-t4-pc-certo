@@ -38,10 +38,6 @@ h1{
 
     /* Novo Tópico */
 
-.pesqTpc{
-    display: flexbox;
-}
-
 #novoTpc{
     font-size: 27px;
     color:white;
@@ -61,15 +57,90 @@ h1{
     cursor: pointer;
 }
 
-.novoTpcPop{
+/* Novo Tópico PopUp */
+
+#pop-up{
+    display: ;
+    position: fixed;
+    z-index: 9999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+  }
+
+.cxNovoTpc {
     background-color: #fff;
-    width: 50%;
-    max-width: 600px;
-    margin: 100px auto;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    position: relative;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 100px 700px;
+    min-width: 400px;
+    min-height: 400px;
+    height: 550px;
+}
+
+#postTitle{
+    border: none;
+    outline: none;
+    background-color: gainsboro;
+    padding: 10px;
+    font-size: 25px;
+    font-family: Roboto, sans-serif;
+    border-radius: 10px;
+}
+
+#textoPub{
+    outline: none;
+    border: none;
+    background-color: gainsboro;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: Roboto, sans-serif;
+    width: 350px;
+    height: 300px;
+    padding: 10px;
+    resize: none;
+}
+#enviarPub{
+    float: right;
+    border: none;
+    outline: none;
+    background-color: gainsboro;
+    border-radius: 10px;
+    display: inline;
+    padding: 20px
+}
+
+#enviarPub:hover{
+    cursor: pointer;
+    background-color: #8ecd36;
+    transition: 0.3s ease-in-out;
+}
+
+.fechar{
+    float: right;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border-color: none;
+    background-color: gainsboro;
+    outline: none;
+    transition:  0.3s;
+    border: none;
+}
+
+.fechar:hover{
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.3);
+    transition: 0.3s ease-in-out;
+}
+
+#closeBtn{
+    width: 18px;
+    height: 18px;
+    float: left;
 }
 
     /* Pesquisar*/
