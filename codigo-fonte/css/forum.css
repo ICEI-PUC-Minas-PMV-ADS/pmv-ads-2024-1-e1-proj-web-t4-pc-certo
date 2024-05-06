@@ -110,12 +110,15 @@ h1{
     background-color: gainsboro;
     border-radius: 10px;
     display: inline;
-    padding: 20px
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color:
 }
 
 #enviarPub:hover{
     cursor: pointer;
-    background-color: #8ecd36;
+    background-color: #8ecd369a;
     transition: 0.3s ease-in-out;
 }
 
