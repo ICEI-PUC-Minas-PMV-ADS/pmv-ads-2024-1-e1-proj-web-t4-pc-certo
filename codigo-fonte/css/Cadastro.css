@@ -16,6 +16,7 @@ body {
 #JanelaCadastro {
     color: #2E2E2E;
     font-family: Roboto;
+    font-size: large;
     text-align: center;
     background-color: gainsboro;
     display: flex;
@@ -27,12 +28,13 @@ body {
     margin: 10px;
 }
 
-h1 {
-    transform: translate(0, -80%);
+.Titulo {
+    margin-top: -50px;
+    margin-bottom: 50px;
 }
 
 input,
-button {
+div     button {
     color: white;
     font-family: Roboto;
     background-color: #A7A5A5;

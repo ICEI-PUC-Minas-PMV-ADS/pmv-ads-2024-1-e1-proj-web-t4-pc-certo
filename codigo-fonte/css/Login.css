@@ -3,14 +3,28 @@ body {
     margin: 0px;
 }
 
+.Artigo {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #JanelaLogin {
     color: #2E2E2E;
     font-family: Roboto;
+    font-size: x-large;
     text-align: center;
     background-color: gainsboro;
+    width: 500px;
     padding: 2.5%;
     border-radius: 20px;
-    margin: 10px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 3px;
+    margin-right: 3px;
+    height: 400px;
 }
 
 input {
@@ -58,6 +72,5 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
     width: 100%;
 }
