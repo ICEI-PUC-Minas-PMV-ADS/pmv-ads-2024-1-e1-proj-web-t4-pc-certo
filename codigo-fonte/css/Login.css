@@ -68,7 +68,7 @@ p {
 }
 
 .Conteudo {
-    min-height: 100vh;
+    min-height: 85vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
