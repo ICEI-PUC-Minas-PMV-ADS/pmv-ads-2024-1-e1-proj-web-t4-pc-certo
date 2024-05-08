@@ -4,20 +4,27 @@
     div.botoescabecalho {
         display: none;
     }
-    header .sidebaricon{
+
+    header .sidebaricon {
         display: flex;
         float: right;
         margin: 43px 0;
         margin-right: 32px;
+        margin-left: 20px;
         background-color: #8ecd36;
         border-radius: 20px;
         border: 0px;
         padding: 10px;
         cursor: pointer;
     }
-    header .sidebaricon:hover{
+
+    header .sidebaricon:hover {
         transition: 0.3s ease-in-out;
         background-color: #a1e93c;
+    }
+
+    header .logo {
+        margin-left: 15px;
     }
 }
 
@@ -29,7 +36,10 @@ header {
     height: auto;
     background-color: #2e2e2e;
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
-    display: inline-block;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .logo {
@@ -38,17 +48,16 @@ header {
     margin-bottom: 9px;
 }
 
+.botoescabecalho {
+    margin: 43px 0;
+
+}
+
 .ProfileIcon {
     height: 50px;
     width: 50px;
     float: left;
     padding: 2px;
-}
-
-.botoescabecalho {
-    display: flex;
-    float: right;
-    margin: 43px 0;
 }
 
 .botaocabecalho {
@@ -65,7 +74,7 @@ header {
     background-color: #dcdcdc;
 }
 
-.botaocabecalho2 .txtcabecalho{
+.botaocabecalho2 .txtcabecalho {
     color: #2e2e2e;
 }
 
@@ -90,7 +99,7 @@ header {
 
 /* SIDEBAR ICON */
 
-.sidebaricon{
+.sidebaricon {
     display: none;
 }
 
