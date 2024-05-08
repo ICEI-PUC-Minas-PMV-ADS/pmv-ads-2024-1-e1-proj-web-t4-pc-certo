@@ -18,23 +18,31 @@
     <a href="Paginainicial.html">
         <img class="logo" src="img/logo.png" alt="" width="261px" height="112px">
     </a>
+    <button class="sidebaricon"><img src="img/sidebar.png" alt="iconesidebar" width="35px" height="30px" ></button>
     <div class="botoescabecalho">
-        <a class="botaocabecalho" href="Forum.html">Fórum</a>
-        <a class="botaocabecalho" href="Guiademontagem.html">Guia</a>
-        <a class="botaocabecalho" href="Montarpc.html">Montar PC</a>
+        <a class="botaocabecalho" href="Forum.html"><span class="txtcabecalho">Fórum</span></a>
+        <a class="botaocabecalho" href="Guiademontagem.html"><span class="txtcabecalho">Guia</span></a>
+        <a class="botaocabecalho" href="Montarpc.html"><span class="txtcabecalho">Montar PC</span></a>
+        <a class="botaocabecalho2" href="Login.html">
+            <img class="ProfileIcon" src="img/ProfileIcon.png" alt="Meu Perfil">
+            <span class="txtcabecalho"> Fazer Login</span>
+        </a>
     </div>
-    <a class="Perfil" href="Login.html">
-        <img class="ProfileIcon" src="img/ProfileIcon.png" alt="Meu Perfil"><span class="FazerLogin"> Fazer Login</span>
-    </a>
-</header> 
+</header>
 
 <!-- Conteúdo Principal -->
 
 <main>
+    <div class="teste"> <p class="guia"> <a href="http://PC-Certo.com.br" target="_self">Página Inicial</a> > Monte seu PC -
+        Assistente</p></div>
     <div class="contTop">
         <h1> Fórum da Comunidade</h1>
-        <div class="pesqTpc">
-            <button id="novoTpc"> Criar um Tópico </button>
+
+<!-- Criar Tópico -->
+
+        <button id="novoTpc"> Criar um Tópico </button>
+
+<!-- Caixa de Pesquisa -->
 
             <div class="Pesquisar">
                 <button class="botaoPesquisar">
@@ -43,11 +51,23 @@
                 <input name="caixapesq" type="text" class="entPesq" placeholder="O que você procura?" required>
                 </input>
             </div>
-        </div>
     </div>
 
     <div class="content">
 
+<!-- Conteudo -->
+
+<!-- PopUp -->
+
+<div id="pop-up">
+    <div class="cxNovoTpc">
+        <button class="fechar" id="botaoFechar"><img src="img/close.png" id="closeBtn" alt="&times"></button>
+        <h2>Novo Tópico</h2><br>
+        <input type="tituloPub" id="postTitle" placeholder="Título do Tópico"><br><br>
+        <textarea id="textoPub" placeholder="Digite aqui sua dúvida..."></textarea><br><br>
+        <button id="enviarPub">Publicar</button>
+    </div>
+</div>
         
 
     </div>
@@ -62,7 +82,7 @@
 
 <!-- Fim -->
 
-<script src="forum.js"></script>
+<script src="js/forum.js"></script>
 
 </body>
 

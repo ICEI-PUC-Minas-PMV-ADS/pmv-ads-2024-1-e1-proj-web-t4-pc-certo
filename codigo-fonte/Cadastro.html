@@ -17,37 +17,41 @@
         <a href="Paginainicial.html">
             <img class="logo" src="img/logo.png" alt="" width="261px" height="112px">
         </a>
+        <button class="sidebaricon"><img src="img/sidebar.png" alt="iconesidebar" width="35px" height="30px"></button>
         <div class="botoescabecalho">
-            <a class="botaocabecalho" href="Forum.html">Fórum</a>
-            <a class="botaocabecalho" href="Guiademontagem.html">Guia</a>
-            <a class="botaocabecalho" href="Montarpc.html">Montar PC</a>
+            <a class="botaocabecalho" href="Forum.html"><span class="txtcabecalho">Fórum</span></a>
+            <a class="botaocabecalho" href="Guiademontagem.html"><span class="txtcabecalho">Guia</span></a>
+            <a class="botaocabecalho" href="Montarpc.html"><span class="txtcabecalho">Montar PC</span></a>
+            <a class="botaocabecalho2" href="Login.html">
+                <img class="ProfileIcon" src="img/ProfileIcon.png" alt="Meu Perfil">
+                <span class="txtcabecalho"> Fazer Login</span>
+            </a>
         </div>
-        <a class="Perfil" href="Login.html">
-            <img class="ProfileIcon" src="img/ProfileIcon.png" alt="Meu Perfil"><span class="FazerLogin"> Fazer
-                Login</span>
-        </a>
     </header>
     <!-- Cadastro -->
     <div class="Conteudo">
-        <div id="Cadastre-se">
-            <div id="JanelaCadastro">
-                <h1>Cadastre-se</h1>
-                <div id="TelaCadastro">
-                    <div id="PrimeiraParte">
-                        <div id="UsuárioEmail">
-                            <input type="text" placeholder="Nome de Usuário">
-                            <input type="text" placeholder="Email">
-                        </div>
-                        <a href="Login.html"><button id="Cancelar"> Cancelar </button></a>
-                    </div>
-                    <div id="SegundaParte">
-                        <div id="SenhaSenha">
-                            <input type="password" placeholder="Senha">
-                            <input type="password" placeholder="Confirmar Senha">
-                        </div>
-                        <button id="Cadastrar"> Cadastrar </button>
+        <div class="JanelaCadastro">
+            <h1>Cadastre-se</h1>
+            <div class="organizar">
+                <div class="Parte">
+                    <div class="campo">
+                        <input type="text" placeholder="Nome de Usuário">
+                        <input type="text" placeholder="Email">
                     </div>
                 </div>
+                <div class="Parte">
+                    <div class="campo">
+                        <input type="password" placeholder="Senha">
+                        <input type="password" placeholder="Confirmar Senha">
+                    </div>
+                </div>
+            </div>
+            <div class="termosuso">
+            <label><input type="checkbox" class="checkbox"> Li e estou de acordo com o <a href="https://www.tiktok.com/@pedraptor" target="_blank"</a> Termos de Uso e Política de Privacidade.</a></input></label>
+            </div>
+            <div class="botoes">
+                <button class="Cadastrar"> Cadastrar </button>
+                <button class="Cancelar" onclick="window.location.href='Login.html';"> Cancelar </button>
             </div>
         </div>
     </div>
@@ -56,5 +60,4 @@
         <p class="copyright">© 2024, PC Certo | Todos os direitos reservados.</p>
     </footer>
 </body>
-
 </html>
