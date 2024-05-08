@@ -2,44 +2,47 @@ body {
     padding: 0px;
     margin: 0px;
 }
-
-#Cadastre-se {
+.Conteudo {
+    min-height: 85vh;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 5%;
-    border-radius: 20px;
-    margin: 10px;
-}
-
-#JanelaCadastro {
-    color: #2E2E2E;
-    font-family: Roboto;
-    font-size: large;
-    text-align: center;
-    background-color: gainsboro;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5%;
+}
+
+.JanelaCadastro {
+    background-color: gainsboro;
+    align-items: center;
+    padding: 50px;
     border-radius: 20px;
-    margin: 10px;
 }
 
-.Titulo {
-    margin-top: -50px;
-    margin-bottom: 50px;
+.JanelaCadastro h1 {
+    color: #2E2E2E;
+    font-family: Roboto;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-input,
-div     button {
+
+.organizar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Parte {
+    display: flex;
+    align-items: center;
+}
+
+.Parte .campo input {
     color: white;
     font-family: Roboto;
+    font-size: 16px;
     background-color: #A7A5A5;
-    padding: 5%;
-    width: 200px;
+    padding: 10px 10px 10px 10px;
+    height: 40%;
     border: none;
     outline: none;
     border-radius: 20px;
@@ -51,25 +54,26 @@ input::placeholder {
     font-family: Roboto;
 }
 
-#TelaCadastro {
+
+.botoes {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    scale: 120%;
+    flex-direction: column;
+    align-items: center;
 }
 
-button#Cancelar {
+button.Cancelar {
     color: white;
     font-family: Roboto;
-    background-color: #C1C1C1;
+    background-color: #c1c1c1;
     padding: 5%;
     border: none;
     outline: none;
     border-radius: 20px;
-    width: 30%;
+    width: 25%;
+    margin: 10px;
 }
 
-button#Cadastrar {
+button.Cadastrar {
     color: white;
     font-family: Roboto;
     background-color: #8ECD36;
@@ -77,21 +81,18 @@ button#Cadastrar {
     border: none;
     outline: none;
     border-radius: 20px;
-    width: 30%;
+    width: 25%;
+    margin: 10px;
 }
 
-button#Cadastrar:hover {
+button.Cadastrar:hover {
     background-color: #a1e93c;
     transition: 0.3s;
     cursor: pointer;
 }
 
-button#Cancelar:hover {
+button.Cancelar:hover {
     background-color: #A7A5A5;
     transition: 0.3s;
     cursor: pointer;
-}
-
-.Conteudo {
-    min-height: 85vh;
 }
