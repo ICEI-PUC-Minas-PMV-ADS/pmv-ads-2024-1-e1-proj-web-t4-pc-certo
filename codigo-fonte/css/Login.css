@@ -2,35 +2,15 @@ body {
     padding: 0px;
     margin: 0px;
 }
-.Conteudo {
-    min-height: 85vh;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-}
 
-.Artigo {
-    width: 100%;
-    height: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.JanelaLogin {
+#JanelaLogin {
     color: #2E2E2E;
     font-family: Roboto;
-    font-size: x-large;
     text-align: center;
     background-color: gainsboro;
-    width: 500px;
     padding: 2.5%;
     border-radius: 20px;
-    margin-top: 5%;
-    margin-bottom: 10%;
-    margin-left: 3px;
-    margin-right: 3px;
-    height: 400px;
+    margin: 10px;
 }
 
 input {
@@ -50,7 +30,7 @@ input::placeholder {
     font-family: Roboto;
 }
 
-div button {
+button {
     color: white;
     font-family: Roboto;
     background-color: #8ECD36;
@@ -62,7 +42,7 @@ div button {
     margin: 10px;
 }
 
-div button:hover {
+button:hover {
     background-color: #a1e93c;
     transition: 0.3s;
     cursor: pointer;
@@ -71,4 +51,13 @@ div button:hover {
 p {
     font-family: Roboto;
     font-size: small;
+}
+
+.Conteudo {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }

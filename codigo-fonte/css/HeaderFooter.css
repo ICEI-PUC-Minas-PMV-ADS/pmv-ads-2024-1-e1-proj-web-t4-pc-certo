@@ -1,117 +1,89 @@
-/* RESPONSIVIDADE */
-
-@media (max-width: 1000px) {
-    div.botoescabecalho {
-        display: none;
-    }
-
-    header .sidebaricon {
-        display: flex;
-        float: right;
-        margin: 43px 0;
-        margin-right: 32px;
-        margin-left: 20px;
-        background-color: #8ecd36;
-        border-radius: 20px;
-        border: 0px;
-        padding: 10px;
-        cursor: pointer;
-    }
-
-    header .sidebaricon:hover {
-        transition: 0.3s ease-in-out;
-        background-color: #a1e93c;
-    }
-
-    header .logo {
-        margin-left: 15px;
-    }
-}
-
-
 /* HEADER */
 
-header {
+header{
     width: 100%;
     height: auto;
     background-color: #2e2e2e;
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: inline-block;
 }
 
-.logo {
+.logo{
     margin-left: 63px;
     margin-top: 9px;
     margin-bottom: 9px;
 }
 
-.botoescabecalho {
-    margin: 43px 0;
-
-}
-
-.ProfileIcon {
-    height: 50px;
-    width: 50px;
-    float: left;
-    padding: 2px;
-}
-
-.botaocabecalho {
+.Perfil{
+    background-color: gainsboro;
+    border-radius: 30px;
+    margin-top: 43px;
     margin-right: 32px;
-    border-radius: 25px;
-    float: left;
-    background-color: #8ecd36;
+    margin-bottom: 43px;
+    float: right;
+    display: flex;
 }
 
-.botaocabecalho2 {
-    margin-right: 32px;
-    border-radius: 25px;
-    float: left;
-    background-color: #dcdcdc;
-}
-
-.botaocabecalho2 .txtcabecalho {
-    color: #2e2e2e;
-}
-
-.txtcabecalho {
-    font-size: 20px;
-    font-family: Roboto, Arial, sans-serif;
-    color: white;
-    text-decoration-line: none;
-    float: left;
-    padding: 15px;
-}
-
-.botaocabecalho:hover {
-    background-color: #a1e93c;
-    transition: 0.3s ease-in-out;
-}
-
-.botaocabecalho2:hover {
+.Perfil:hover{
     background-color: white;
     transition: 0.3s;
 }
 
-/* SIDEBAR ICON */
-
-.sidebaricon {
-    display: none;
+.ProfileIcon{
+    height: 50px;
+    width: 50px;
+    padding-left: 5px;
 }
+
+.FazerLogin{
+    font-size: 20px;
+    font-family: Roboto, Arial, sans-serif;
+    color: #2e2e2e;
+    text-decoration-line: none;
+    float: left;
+    margin-top: 13px;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+
+.botoescabecalho{
+    display: flex;
+    float: right;
+    margin-right: 68px;
+    margin-top: 43px;
+    margin-bottom: 43px;
+}
+
+.botaocabecalho{
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 20px;
+    color: #fff;
+    margin-right: 32px;
+    padding: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+    float: left;
+    background-color: #8ecd36;
+    text-decoration: none;
+}
+
+.botaocabecalho:hover {
+        background-color: #a1e93c;
+        transition: 0.3s;
+} 
+
 
 /* FOOTER */
 
-.rodape {
+.rodape{
     width: 100%;
     height: 130px;
     background-color: #2e2e2e;
 }
 
-.copyright {
+.copyright{
     padding-top: 53px;
     padding-bottom: 53px;
     padding-left: 83px;
