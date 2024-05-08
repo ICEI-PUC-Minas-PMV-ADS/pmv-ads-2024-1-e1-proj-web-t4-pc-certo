@@ -5,7 +5,7 @@ body {
 .Conteudo {
     min-height: 85vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -14,6 +14,8 @@ body {
     align-items: center;
     padding: 50px;
     border-radius: 20px;
+    margin-right: 3px;
+    margin-left: 3px;
 }
 
 .JanelaCadastro h1 {
@@ -35,14 +37,24 @@ body {
     display: flex;
     align-items: center;
 }
+.campo {
+    display: flex;
+    gap: 50px;
+}
+@media (max-width: 600px) {
+    .campo {
+        flex-direction: column;
+        gap: 0;
+    }
+}
 
 .Parte .campo input {
     color: white;
     font-family: Roboto;
-    font-size: 16px;
     background-color: #A7A5A5;
     padding: 10px 10px 10px 10px;
-    height: 40%;
+    width: 250px;
+    height: 40px;
     border: none;
     outline: none;
     border-radius: 20px;
@@ -53,23 +65,33 @@ input::placeholder {
     color: #e6e6e6;
     font-family: Roboto;
 }
-
+.termosuso label {
+    display: inline-block;
+    font-family: Roboto;
+    font-size: small;
+    color: #2E2E2E;
+    margin: 20px 7px 23px;
+}
+.termosuso label input {
+    accent-color: white;
+}
 
 .botoes {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 button.Cancelar {
     color: white;
     font-family: Roboto;
     background-color: #c1c1c1;
-    padding: 5%;
+    padding: 25px;
     border: none;
     outline: none;
     border-radius: 20px;
-    width: 25%;
+    width: 150px;
     margin: 10px;
 }
 
@@ -77,11 +99,11 @@ button.Cadastrar {
     color: white;
     font-family: Roboto;
     background-color: #8ECD36;
-    padding: 5%;
+    padding: 25px;
     border: none;
     outline: none;
     border-radius: 20px;
-    width: 25%;
+    width: 150px;
     margin: 10px;
 }
 

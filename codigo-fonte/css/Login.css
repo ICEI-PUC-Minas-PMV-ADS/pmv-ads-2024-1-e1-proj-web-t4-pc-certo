@@ -2,6 +2,12 @@ body {
     padding: 0px;
     margin: 0px;
 }
+.Conteudo {
+    min-height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
 
 .Artigo {
     width: 100%;
@@ -65,12 +71,4 @@ div button:hover {
 p {
     font-family: Roboto;
     font-size: small;
-}
-
-.Conteudo {
-    min-height: 85vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
 }
