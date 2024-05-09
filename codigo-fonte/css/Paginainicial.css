@@ -16,29 +16,37 @@ body {
     font-family: Roboto;
     text-align: center;
     background-color: gainsboro;
-    position: absolute;
     padding: 2.5%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-95%, 55%);
     border-radius: 20px;
+    width: 500px;
     margin: 10px;
 }
 
-#gbotao {font-family: Roboto;
+.gbotao {
+    display: flex;
+    font-family: Roboto;
     font-size: 20px;
     color: #fff;
-    margin-right: 32px;
-    padding: 50px;
+    text-decoration: none;
     padding-left: 80px;
     padding-right: 80px;
     border-radius: 25px;
-    float: left;
     background-color: #8ecd36;
-    list-style-type: none; 
-    transform: translate(1080px,120px);
+    margin: 50px 0 50px;
+    align-items: center;
 }
-#gbotao:hover{  background-color: #a1e93c;
+
+#gbotao:hover {
+    background-color: #a1e93c;
     transition: 0.3s;
-    cursor: pointer;}
-.describotao{transform: translate(10%,80px);}
+    cursor: pointer;
+}
+
+.describotao {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+

@@ -2,48 +2,44 @@ body{
     font-family: Roboto, Arial, sans-serif;
     padding: 0px;
     margin: 0px;
+    display: grid;
+    min-height: 100;
 }
 
 /* Main */
 
 main{
-    min-height: 100vh;
-    margin-right: 100px;
-    margin-top: 50px;
-    margin-left: 70px;
+    display: grid;
+    padding: 0 63px 0 63px;
+    min-height: 100%;
 }
 
-/* Conteudo do Main */
+/* Conteudo do Topo */
 
 .contTop{
     height:auto;
-    width: 100%;
+    max-height: fit-content;
+    width: auto;
     font-family: Roboto, Arial, sans-serif;
-    display: inline-block;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 1em;
+
 }
-
-/* guia */
-
-.teste{
-    display: inline-block;
-    margin-top: -100px;
-}
-
-
-
 
 /* Titulo */
 
 h1{
-    float: left;
     font-size: 40px;
     text-decoration: underline solid #8ecd36;
     text-decoration-thickness: 2px;
     text-underline-offset: 10px;
-    width: 450px;
     font-weight: 200;
-    margin: 0;
-    padding-bottom: 10px;
+
+    flex-grow: 1;
 }
 
     /* Novo Tópico */
@@ -51,13 +47,10 @@ h1{
 #novoTpc{
     font-size: 27px;
     color:white;
-    float: right;
     background-color: #8ecd36;
     border-radius: 20px;
-    padding: 15px;
-    padding-left: 70px;
-    padding-right: 70px;
-    margin-bottom: 10px;
+    padding: 15px 30px 15px;
+    margin: 0 1% 0 1%;
     border: none;
     outline: none;
     transition: transform 0.2s ease-out;
@@ -123,7 +116,6 @@ h1{
     padding: 20px;
     font-size: 20px;
     font-weight: bold;
-    color:
 }
 
 #enviarPub:hover{
@@ -158,38 +150,38 @@ h1{
 
     /* Pesquisar*/
 
-.Pesquisar{
+.Search{
     font-size: 27px;
-    float: right;
-    margin-right: 50px;
-    padding-right: 70px;
-    padding: 15px;
     background-color: gainsboro;
     border-radius: 20px;
+    margin: 0 1% 0 1%;
+    padding: 10px;
+    
+    display: flexbox;
 }
-.entPesq{
+.SearchBar{
     font-size: 27px;
     border: none;
     outline: none;
     background-color:transparent;
+    padding: 0;
 }
 
-.botaoPesquisar{
+.SearchBtn{
     width: 33px;
     height: 33px;
-    float: right;
     border: none;
     background-color: transparent;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
 }
-.botaoPesquisar:hover{
+.SearchBtn:hover{
     transform: scale(0.7) rotate(20deg);
     transition: 0.3s;
     cursor: pointer;
     
 }
-.iconePesq{
+.SearchIcon{
     width: 33px;
     height: 33px;
 }
@@ -197,8 +189,7 @@ h1{
 /* Conteudo */
 
 .content{
-    background-color: rgba(0, 0, 0, 0.1);
-    margin: 50px -100px 50px -70px;
-    border-left-width: 70px;
-    min-height: 900px;
+    padding: 100px 100px 500px 100px;
+    background-color: gainsboro;
+    border-radius: 20px
 }
