@@ -23,6 +23,7 @@ body {
 }
 
 .gbotao {
+    display: flex;
     font-family: Roboto;
     font-size: 20px;
     color: #fff;
@@ -32,6 +33,7 @@ body {
     border-radius: 25px;
     background-color: #8ecd36;
     margin: 50px 0 50px;
+    align-items: center;
 }
 
 #gbotao:hover {
@@ -45,6 +47,6 @@ body {
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    height: 50vh;
+    height: 100vh;
 }
 
