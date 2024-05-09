@@ -30,21 +30,24 @@ body {
 .organizar {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    gap: 50px;
 }
 
 .Parte {
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 .campo {
     display: flex;
-    gap: 50px;
+    flex-direction: column;
+    align-items: center;
 }
+
 @media (max-width: 600px) {
-    .campo {
+    .organizar {
         flex-direction: column;
-        gap: 0;
+        gap: 20px;
     }
 }
 
@@ -58,19 +61,65 @@ body {
     border: none;
     outline: none;
     border-radius: 20px;
-    margin: 10px;
 }
 
 input::placeholder {
     color: #e6e6e6;
     font-family: Roboto;
 }
+
+.erroNomeEmail {
+    display: flex;
+    font-family: Roboto;
+    font-size: x-small;
+    color: #e63636;
+}
+
+.nome {
+    display: flex;
+    align-items: center;
+    width: 246px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    width: 246px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.erroSenhaConfirmacao {
+    display: flex;
+    font-family: Roboto;
+    font-size: x-small;
+    color: #e63636;
+}
+
+.senha {
+    display: flex;
+    align-items: center;
+    width: 246px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.confirmacao {
+    display: flex;
+    align-items: center;
+    width: 246px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
 .termosuso label {
     display: inline-block;
     font-family: Roboto;
     font-size: small;
     color: #2E2E2E;
-    margin: 20px 7px 23px;
+    margin: 20px 7px 23px 7px;
 }
 .termosuso label input {
     accent-color: white;
