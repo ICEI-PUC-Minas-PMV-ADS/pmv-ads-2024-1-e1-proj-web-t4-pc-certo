@@ -1,0 +1,1 @@
+const prox = document.querySelector('.previousBtn')
