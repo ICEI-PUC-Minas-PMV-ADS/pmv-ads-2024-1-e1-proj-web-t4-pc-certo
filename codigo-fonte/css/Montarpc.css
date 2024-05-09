@@ -8,6 +8,7 @@ main {
     min-height: 100vh;
 }
 
+/* Título da Página */
 .guia {
     color: #2E2E2E;
     font-family: Roboto;
@@ -55,6 +56,7 @@ main {
     margin-bottom: 0px;
 }
 
+/* Escolha principal de predefinição de perfil */
 #passo1 {
     display: grid;
     gap: 10px;
@@ -65,7 +67,7 @@ main {
     margin-left: 5%;
 }
 
-.card {
+.btnCard {
     display: grid;
     grid-template-rows: auto;
 
@@ -74,8 +76,8 @@ main {
     border-radius: 25px;
     border: none;
 
-    width: 500px;
-    height: 500px;
+    width: 80%;
+    height: 450px;
     margin-top: 46px;
 
     user-select: none;
@@ -84,12 +86,14 @@ main {
     transition: 0.3s ease-in-out;
 }
 
-.active, .card:hover {
+.active,
+.btnCard:hover {
     transform: scale(1.1);
     background-color: #8ECD36;
-    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.808);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
 }
 
+/* Contéudo do Card */
 .imagem {
     width: 180px;
     height: 180px;
@@ -106,9 +110,7 @@ main {
     text-align: center;
     font-family: Roboto;
     font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+
 
     margin: 0px;
 
@@ -130,19 +132,93 @@ main {
     margin-right: 50px;
 }
 
-#passo2 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax (1650px 1fr));
-    justify-items: center;
-}
-.orcamento {
-    display: none;
-    background-color: #2E2E2E;
-    box-shadow: 0px 4px 4px #7a7a7a;
-    border-radius: 25px;
-    border: none;
+/* Escolha de predefinição de orçamento */
 
-    width: 1650px;
-    height: 250px;
-    margin-top: 75px;
+/* Orçamento jogos */
+#jogosOrc {
+    display: none;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    justify-items: center;
+    align-items: center;
+
+    margin: 50px 5%
+}
+
+/* Orçamento Profissional */
+#profissionalOrc {
+    display: none;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    justify-items: center;
+    align-items: center;
+
+    margin: 50px 5%
+}
+
+/* Orçamento Casual */
+#casualOrc {
+    display: none;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    justify-items: center;
+    align-items: center;
+
+    margin: 50px 5%
+}
+
+/* Botão Orcamento */
+.btnOrcamento {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border: none;
+    background-color: #2E2E2E;
+    border-radius: 25px;
+
+    width: 80%;
+    height: 100%;
+    margin: 0px auto;
+
+    user-select: none;
+    cursor: pointer;
+
+    transition: 0.3s ease-in-out;
+}
+
+.ativo,
+.btnOrcamento:hover {
+    transform: scale(1.1);
+    background-color: #8ECD36;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* Conteúdo do botão orcamento */
+.orcamentoOpcao {
+    color: #FFF;
+    font-size: 30px;
+    font-family: roboto;
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+.descricao2 {
+    color: #FFF;
+    font-size: 16px;
+    font-family: roboto;
+
+    margin: 10px 15px;
+}
+
+.precoMedio {
+    font-size: 20px;
+    font-family: roboto;
+    color: #FFF;
+
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
