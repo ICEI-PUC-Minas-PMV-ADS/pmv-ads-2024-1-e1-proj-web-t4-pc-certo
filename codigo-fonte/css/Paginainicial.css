@@ -22,18 +22,16 @@ body {
     margin: 10px;
 }
 
-#gbotao {
+.gbotao {
     font-family: Roboto;
     font-size: 20px;
     color: #fff;
-    padding: 50px;
+    text-decoration: none;
     padding-left: 80px;
     padding-right: 80px;
     border-radius: 25px;
-    float: left;
     background-color: #8ecd36;
-    list-style-type: none;
-
+    margin: 50px 0 50px;
 }
 
 #gbotao:hover {
@@ -49,4 +47,4 @@ body {
     flex-wrap: wrap;
     height: 50vh;
 }
-.botaobugado{max-height:100px ;}
+
