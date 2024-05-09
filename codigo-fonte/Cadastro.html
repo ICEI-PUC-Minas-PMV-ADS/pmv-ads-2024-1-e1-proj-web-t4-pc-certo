@@ -31,7 +31,7 @@
     </header>
     <!-- Cadastro -->
     <div class="Conteudo">
-        <form>
+        <form class="form">
             <div class="JanelaCadastro">
                 <h1>Cadastre-se</h1>
                 <div class="organizar">
@@ -44,7 +44,7 @@
                             </div>
                         </div>
                         <div class="campo">
-                            <input type="text" placeholder="Email" class="obrigatorio">
+                            <input type="text" placeholder="Email" class="obrigatorio" oninput="validarEmail()">
                             <div class="email erro">
                                 <p class="erroNomeEmail"> Não é um Email válido.</p>
                             </div>
@@ -52,24 +52,21 @@
                     </div>
                     <div class="Parte">
                         <div class="campo">
-                            <input type="password" placeholder="Senha" class="obrigatorio">
+                            <input type="password" placeholder="Senha" class="obrigatorio" oninput="validarSenha()">
                             <div class="senha erro">
-                            <p class="erroSenhaConfirmacao"> A senha precisa ter no mínimo 8 caracteres.</p>
+                                <p class="erroSenhaConfirmacao"> A senha precisa ter no mínimo 8 caracteres.</p>
                             </div>
                             <div class="campo">
-                            <input type="password" placeholder="Confirmar Senha" class="obrigatorio">
-                            <div class="confirmacao erro">
-                                <p class="erroSenhaConfirmacao"> As senhas não são iguais.</p>
+                                <input type="password" placeholder="Confirmar Senha" class="obrigatorio" oninput="validarConfirmacao()">
+                                <div class="confirmacao erro">
+                                    <p class="erroSenhaConfirmacao"> As senhas não são iguais.</p>
+                                </div>
                             </div>
-                            </div>
-                        </div>
-                        <div class="erros">
                         </div>
                     </div>
                 </div>
                 <div class="termosuso">
-                    <label><input type="checkbox" class="checkbox obrigatorio"> Li e estou de acordo com o <a
-                            href="https://www.tiktok.com/@pedraptor" target="_blank" </a> Termos de Uso e Política de
+                    <input type="checkbox" class="checkbox" value="on"><label for="checkbox"> Li e estou de acordo com o <a href="https://www.tiktok.com/@pedraptor" target="_blank" </a> Termos de Uso e Política de
                             Privacidade.</a></input></label>
                 </div>
                 <div class="botoes">
