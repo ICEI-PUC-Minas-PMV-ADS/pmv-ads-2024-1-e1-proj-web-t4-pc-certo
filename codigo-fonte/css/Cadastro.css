@@ -14,6 +14,7 @@ body {
     align-items: center;
     padding: 50px;
     border-radius: 20px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
     margin-right: 3px;
     margin-left: 3px;
 }
@@ -67,7 +68,9 @@ input::placeholder {
     color: #e6e6e6;
     font-family: Roboto;
 }
-
+.erro {
+    opacity: 0;
+}
 .erroNomeEmail {
     display: flex;
     font-family: Roboto;
@@ -80,7 +83,6 @@ input::placeholder {
     align-items: center;
     width: 246px;
     justify-content: center;
-    margin-bottom: 10px;
 }
 
 .email {
@@ -88,7 +90,6 @@ input::placeholder {
     align-items: center;
     width: 246px;
     justify-content: center;
-    margin-bottom: 10px;
 }
 
 .erroSenhaConfirmacao {
@@ -103,7 +104,6 @@ input::placeholder {
     align-items: center;
     width: 246px;
     justify-content: center;
-    margin-bottom: 10px;
 }
 
 .confirmacao {
@@ -111,19 +111,20 @@ input::placeholder {
     align-items: center;
     width: 246px;
     justify-content: center;
-    margin-bottom: 10px;
 }
 
-.termosuso label {
+input[type='checkbox'] {
+    cursor: pointer;
+}
+
+.termosuso {
     display: inline-block;
     font-family: Roboto;
     font-size: small;
     color: #2E2E2E;
-    margin: 20px 7px 23px 7px;
+    margin: 10px 7px 23px 7px;
 }
-.termosuso label input {
-    accent-color: white;
-}
+
 
 .botoes {
     display: flex;
