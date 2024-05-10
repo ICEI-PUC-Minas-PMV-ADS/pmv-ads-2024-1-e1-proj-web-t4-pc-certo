@@ -30,17 +30,11 @@ main {
     margin-top: 58px;
     margin-left: 83px;
     margin-bottom: 0px;
-}
 
-.sublinha {
-    float: left;
-    width: 867px;
-    height: 1px;
-    background: #8ecd36;
-
-    margin-left: 83px;
-    margin-top: 4px;
-    margin-bottom: 0px;
+    text-decoration: underline;
+    text-decoration-color: #8ECD36;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 7px;
 }
 
 .subtitulo {

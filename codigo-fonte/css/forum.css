@@ -2,16 +2,35 @@ body{
     font-family: Roboto, Arial, sans-serif;
     padding: 0px;
     margin: 0px;
-    display: grid;
-    min-height: 100;
+    min-height: 100vh;
+    min-width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 /* Main */
 
 main{
-    display: grid;
-    padding: 0 63px 0 63px;
+    padding: 0 5% 0 5%;
     min-height: 100%;
+    gap: 10px 0 10px 0;
+
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
+.Breadcrumb{
+    max-height: fit-content;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
 }
 
 /* Conteudo do Topo */
@@ -19,13 +38,14 @@ main{
 .contTop{
     height:auto;
     max-height: fit-content;
-    width: auto;
+    width: 100%;
     font-family: Roboto, Arial, sans-serif;
 
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     align-content: flex-start;
+    justify-content: space-evenly;
     gap: 1em;
 
 }
@@ -36,7 +56,7 @@ h1{
     font-size: 40px;
     text-decoration: underline solid #8ecd36;
     text-decoration-thickness: 2px;
-    text-underline-offset: 10px;
+    text-underline-offset: 7px;
     font-weight: 200;
 
     flex-grow: 1;
@@ -49,11 +69,13 @@ h1{
     color:white;
     background-color: #8ecd36;
     border-radius: 20px;
-    padding: 15px 30px 15px;
-    margin: 0 1% 0 1%;
+    padding: 15px 10px;
     border: none;
     outline: none;
     transition: transform 0.2s ease-out;
+    max-width: 600px;
+
+    flex-grow: 1;
 }
 #novoTpc:hover{  background-color: #a1e93c;
     transition: 0.3s;
@@ -154,42 +176,61 @@ h1{
     font-size: 27px;
     background-color: gainsboro;
     border-radius: 20px;
-    margin: 0 1% 0 1%;
-    padding: 10px;
-    
-    display: flexbox;
+    padding: 10px 15px 10px 15px;
+    width: 30%;
+    max-width: fit-content;
+
+    flex-grow: 2;
+
+    display: flex;
+    flex-direction: row;
 }
+
 .SearchBar{
     font-size: 27px;
     border: none;
     outline: none;
     background-color:transparent;
-    padding: 0;
+    flex-grow: 1;
+    width: 100%;
 }
 
 .SearchBtn{
-    width: 33px;
-    height: 33px;
+    width: 33.47px;
+    height: 33.47px;
+    padding: 0;
     border: none;
     background-color: transparent;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
+
+    align-self: flex-end;
 }
+
 .SearchBtn:hover{
     transform: scale(0.7) rotate(20deg);
     transition: 0.3s;
     cursor: pointer;
     
 }
+
 .SearchIcon{
     width: 33px;
     height: 33px;
 }
 
+@media (max-width: 1000px) {
+    input.SearchBar {
+        display: none;
+    }
+    }
+
 /* Conteudo */
 
 .content{
+    margin: 40px 0 40px 0;
     padding: 100px 100px 500px 100px;
     background-color: gainsboro;
-    border-radius: 20px
+    border-radius: 20px;
+    flex-grow: 1;
 }
