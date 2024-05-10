@@ -9,6 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia de Montagem e Escolha de Peças - PC Certo</title>
+    <script defer src="js/Guiademontagem.js"></script>
 </head>
 
 <body>
@@ -33,168 +34,109 @@
             <!--Primeira sessao-->
             <article class="titulopagina">
                 <div class="titlinha">
-                    <h1>Guia para Escolha de Peças
-                    </h1>
+                    <h1>Guia para Escolha de Peças </h1>
                 </div>
-                <p class="titdesc">Aprenda a escolher as peças de seu computador de forma segura e
-                    eficiente.</p>
+                <p class="titdesc">Aprenda a escolher as peças de seu computador de forma segura e eficiente.</p>
             </article>
-            <article id="swipe" class="containerSlider">
+            <article class="containerSlider">
                 <div class="cardSlider">
-                    <!--card1-->
-                    <div class="card">
-                        
-                        <div class="titCard">
-                            <img src="img/pagGuia-Processador.png" alt="" class="imgCard">
-                            <h3>Processador (CPU)</h3>
+                    <div class="slides" style="--img: url('../img/pagGuia-CPU.png')">
+                        <div class="conteudoSlides">
+                            <h1>Processador (CPU)</h1>
+                            <p>Os processadores Intel incluem "i3", "i5", "i7" e "i9". Que indicam o nível de desempenho
+                                do processador. "K" indica desbloqueio para overclocking, "F" indica
+                                ausência de gráficos integrados. Já para os processadores AMD Ryzen, "3", "5", "7" e "9"
+                                indicam o nível de desempenho. "X" indica uma versão mais avançada, "G" indica presença
+                                de gráficos integrados.</p>
+                                <br>
+                            <p><b>Gerações:</b> Cada nova geração oferece melhorias de desempenho, eficiência energética
+                                e recursos. Exemplo: "Ryzen 5 5600X" é da série 5000 e o "Intel Core i7-11700F" é da 11ª
+                                geração.</p>
                         </div>
-                        <p class="txtCard"><b>Sufixos:</b> Indicam o nível de desempenho do processador. Os
-                            processadores Intel
-                            incluem "i3", "i5", "i7" e "i9". "K" indica desbloqueio para overclocking, "F" indica
-                            ausência de gráficos integrados.<br> Já
-                            para os processadores AMD Ryzen, "3", "5", "7" e "9" indicam o nível de desempenho. "X"
-                            indica uma
-                            versão mais avançada, "G" indica presença de gráficos integrados.</p>
-                        <p class="txtCard"><b>Gerações:</b> Cada nova geração oferece melhorias de desempenho,
-                            eficiência energética e
-                            recursos. Exemplo: "Ryzen 5 5600X" é da série 5000 e o "Intel Core i7-11700F" é da 11ª
-                            geração.</p>
-
-
                     </div>
-                    <!--card2-->
-                    <div class="card">
-                        <div class="titCard">
-                            <img src="img/pagGuia-Placa-mae.jpg" alt="" class="imgCard">
-                            <h3>Placa-mãe</h3>
+                    <div class="slides" style="--img: url('../img/pagGuia-MB.jpg')">
+                        <div class="conteudoSlides">
+                            <h1>Placa-mãe</h1>
+                            <p><b>Compatibilidade:</b> Verifique se a placa-mãe é compatível com o seu processador.
+                                Elatambém precisa ser compatível com outros componentes, como RAM e GPU.</p>
+                                <br>
+                            <p><b>Recursos:</b> Considere os recursos extras que você pode precisar, como slots de
+                                expansão, portas USB, e suporte para overclocking (se necessário)</p>
                         </div>
-                        <p class="txtCard"><b>Compatibilidade:</b> Verifique se a placa-mãe é compatível com o seu
-                            processador.
-                            Ela
-                            também precisa ser compatível com outros componentes, como RAM e GPU.</p>
-                        <p class="txtCard"><b>Recursos:</b> Considere os recursos extras que você pode precisar,
-                            como
-                            slots de
-                            expansão, portas USB, e suporte para overclocking (se necessário).</p>
-                        
                     </div>
-                    <!--card3-->
-                    <div class="card">
-                        <div class="titCard">
-                            <img src="img/pagGuia-MemoriaRAM.png" alt="" class="imgCard">
-                            <h3>Memória RAM</h3>
+                    <div class="slides" style="--img: url('../img/pagGuia-MemoriaRAM.png')">
+                        <div class="conteudoSlides">
+                            <h1>Memória RAM</h1>
+                            <p><b>Capacidade:</b> Escolha a quantidade de RAM com base nas suas necessidades. Para a
+                                maioria dos usuários, 8GB a 16GB é suficiente, mas se você planeja fazer edição de vídeo
+                                ou jogar jogos exigentes, pode precisar de mais.</p>
+                                <br>
+                            <p><b>Velocidade:</b> Quanto mais alta a velocidade, melhor o desempenho geral do sistema,
+                                mas a diferença pode não ser muito perceptível em usos cotidianos.</p>
                         </div>
-                        <p class="txtCard"><b>Capacidade:</b> Escolha a quantidade de RAM com base nas suas
-                            necessidades. Para a
-                            maioria dos
-                            usuários, 8GB a 16GB é suficiente, mas se você planeja fazer edição de vídeo ou jogar
-                            jogos
-                            exigentes, pode precisar de mais.</p>
-                        <p class="txtCard"><b>Velocidade:</b> Quanto mais alta a velocidade, melhor o desempenho
-                            geral
-                            do
-                            sistema, mas
-                            a diferença
-                            pode não ser muito perceptível em usos cotidianos.</p>
-                        
                     </div>
-                    <!--card4-->
-                    <div class="card">
-                        <div class="titCard">
-                            <img src="img/pagGuia-GPU.png" alt="" class="imgCard">
-                            <h3>Placa de Vídeo (GPU)</h3>
+                    <div class="slides" style="--img: url('../img/pagGuia-GPU.png')">
+                        <div class="conteudoSlides">
+                            <h1>Placa de Vídeo (GPU)</h1>
+                            <p><b>Uso:</b> Se você estiver jogando jogos ou fazendo edição de vídeo, uma GPU dedicada é
+                                essencial. Para uso geral, a GPU integrada no processador pode ser suficiente.</p>
+                                <br>
+                            <p><b>Memória VRAM:</b> Mais VRAM permite que a GPU processe gráficos mais complexos. Para
+                                jogos modernos, 4GB a 8GB de VRAM é recomendado.</p>
                         </div>
-                        <p class="txtCard"><b>Uso:</b> Se você estiver jogando jogos ou fazendo edição de vídeo, uma
-                            GPU
-                            dedicada é
-                            essencial. Para
-                            uso geral, a GPU integrada no processador pode ser suficiente.</p>
-                        <p class="txtCard"><b>Memória VRAM:</b> Mais VRAM permite que a GPU processe gráficos mais
-                            complexos.
-                            Para
-                            jogos modernos,
-                            4GB a 8GB de VRAM é recomendado.</p>
-                        
                     </div>
-                    <!--card5-->
-                    <div class="card">
-                        <div class="titCard">
-                            <img src="img/pagGuia-Armazenamento.jpg" alt="" class="imgCard">
-                            <h3>Armazenamento (SSD/HDD)</h3>
+                    <div class="slides" style="--img: url('../img/pagGuia-Armazenamento.jpg')">
+                        <div class="conteudoSlides">
+                            <h1>Armazenamento (SSD/HDD)</h1>
+                            <p><b>SSD vs. HDD:</b> SSDs são mais rápidos e mais caros por GB, enquanto os HDDs são mais
+                                lentos, mas oferecem mais armazenamento por um preço menor. Recomenda-se um SSD para o
+                                sistema operacional e aplicativos, e um HDD para armazenamento de dados.</p>
+                                <br>
+                            <p><b>Capacidade:</b> Um SSD de 250GB a 500GB para o sistema operacional e alguns
+                                aplicativos, e um HDD de 1TB a 2TB para armazenamento de dados são opções comuns.</p>
                         </div>
-                        <p class="txtCard"><b>SSD vs. HDD:</b> SSDs são mais rápidos e mais caros por GB, enquanto os
-                            HDDs são
-                            mais
-                            lentos, mas oferecem mais armazenamento por um preço menor. Recomenda-se um SSD para o
-                            sistema
-                            operacional e aplicativos, e um HDD para armazenamento de dados.</p>
-                        <p class="txtCard"><b>Capacidade:</b> Um SSD de 250GB a 500GB para o sistema operacional e
-                            alguns
-                            aplicativos, e um HDD de 1TB a 2TB para
-                            armazenamento de dados são opções comuns.</p>
-                        
                     </div>
-                    <!--card6-->
-                    <div class="card">
-                        <div class="titCard">
-                            <img src="img/pagGuia-PSU.png" alt="" class="imgCard">
-                            <h3>Fonte de Alimentação (PSU)</h3>
+                    <div class="slides" style="--img: url('../img/pagGuia-PSU.png')">
+                        <div class="conteudoSlides">
+                            <h1>Fonte de Alimentação (PSU)</h1>
+                            <p><b>Potência:</b> Escolha uma fonte de alimentação com potência suficiente para suportar
+                                todos os componentes do seu sistema. Use uma calculadora de PSU online para determinar a
+                                potência necessária com base nos componentes que você escolheu.</p>
+                                <br>
+                            <p><b>Eficiência e Certificação:</b> Procure por uma fonte de alimentação com uma
+                                classificação de eficiência alta (80 PLUS Bronze, Silver, Gold, ou Platinum) para
+                                economizar energia.
+                            </p>
                         </div>
-                        <p class="txtCard"><b>Potência:</b> Escolha uma fonte de alimentação com potência suficiente
-                            para
-                            suportar
-                            todos os
-                            componentes do seu sistema. Use uma calculadora de PSU online para determinar a potência
-                            necessária com base nos componentes que você escolheu.</p>
-                        <p class="txtCard"><b>Eficiência e Certificação:</b> Procure por uma fonte de alimentação
-                            com
-                            uma
-                            classificação
-                            de eficiência alta (80 PLUS Bronze, Silver, Gold, ou Platinum) para economizar energia.
-                        </p>
-                        
                     </div>
-                    <!--card7-->
-                    <div class="card">
-                        <div class="titCard">
-                            <img src="img/pagGuia-Gabinete.jpg" alt="" class="imgCard">
-                            <h3>Gabinete</h3>
+                    <div class="slides" style="--img: url('../img/pagGuia-Gabinete.jpg')">
+                        <div class="conteudoSlides">
+                            <h1>Gabinete</h1>
+                            <p><b>Tamanho:</b> Certifique-se de escolher um gabinete que seja grande o suficiente para
+                                acomodar todos os seus componentes, especialmente a placa-mãe e a placa de vídeo.</p>
+                                <br>
+                            <p><b>Ventilação:</b> Procure por um gabinete com boa ventilação para manter seus
+                                componentes resfriados e evitar o superaquecimento.</p>
                         </div>
-                        <p class="txtCard"><b>Tamanho:</b> Certifique-se de escolher um gabinete que seja grande o
-                            suficiente
-                            para
-                            acomodar todos os seus componentes, especialmente a placa-mãe e a placa de vídeo.</p>
-                        <p class="txtCard"><b>Ventilação:</b> Procure por um gabinete com boa ventilação para manter
-                            seus
-                            componentes
-                            resfriados e evitar o superaquecimento.</p>
-                        
                     </div>
-                    <!--card8-->
-                    <div class="card">
-                        <div class="titCard">
-                            <img src="img/pagGuia-Cooler.png" alt="" class="imgCard">
-                            <h3>Refrigeração</h3>
+                    <div class="slides" style="--img: url('../img/pagGuia-Cooler.png')">
+                        <div class="conteudoSlides">
+                            <h1>Refrigeração</h1>
+                            <p><b>Refrigeração a Ar vs. Líquida:</b> Os coolers a ar são mais baratos e geralmente
+                                suficientes para resfriar a maioria dos sistemas. Os coolers líquidos são mais
+                                eficientes em dissipar o calor, mas são mais caros e podem exigir manutenção.</p>
+                                <br>
+                            <p><b>Compatibilidade:</b> Verifique se o cooler é compatível com o seu gabinete e
+                                placa-mãe. Marcas de Confiança: Noctua, Cooler Master, Corsair e NZXT são marcas
+                                conhecidas por seus sistemas de refrigeração.</p>
                         </div>
-                        <p class="txtCard"><b>Refrigeração a Ar vs. Líquida:</b> Os coolers a ar são mais baratos e
-                            geralmente
-                            suficientes para
-                            resfriar a maioria dos sistemas. Os coolers líquidos são mais eficientes em dissipar o
-                            calor,
-                            mas são mais caros e podem exigir manutenção.</p>
-                        <p class="txtCard"><b>Compatibilidade:</b> Verifique se o cooler é compatível com o seu
-                            gabinete
-                            e
-                            placa-mãe.
-                            Marcas de Confiança: Noctua, Cooler Master, Corsair e NZXT são marcas conhecidas por
-                            seus
-                            sistemas de refrigeração.</p>
-                        
                     </div>
                 </div>
-
+                <div class="btns">
+                    <span class="prev"><img src="img/pagGuia-nxtPrevBtn.png" alt=""></span>
+                    <span class="nxt"><img src="img/pagGuia-nxtPrevBtn.png" alt=""></span>
+                </div>
             </article>
-
             <article class="titulopagina">
                 <div class="titlinha">
                     <h1>Guia para a Montagem de PC
