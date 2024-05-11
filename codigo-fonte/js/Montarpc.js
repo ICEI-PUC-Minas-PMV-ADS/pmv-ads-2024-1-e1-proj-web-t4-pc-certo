@@ -29,11 +29,39 @@ btncardElList[2].addEventListener('click', () => {
 })
 
 // Escolha das predefinições de orçamento
-const btnOrcElList = document.querySelectorAll('.btnOrcamento');
+const btnOrcamentoElList = document.querySelectorAll('.btnOrcamento');
 
-btnOrcElList.forEach(btnOrcEl => {
-    btnOrcEl.addEventListener('click', () => {
+btnOrcamentoElList.forEach(btnOrcamentoEl => {
+    btnOrcamentoEl.addEventListener('click', () => {
         document.querySelector('.ativo')?.classList.remove('ativo');
-        btnOrcEl.classList.add('ativo');
+        btnOrcamentoEl.classList.add('ativo');
+    });
+})
+
+btnOrcamentoElList[0].addEventListener('click', () => {
+    document.getElementById('PriceMin').style.display = "flex"
+    document.getElementById('PriceMed').style.display = "none"
+    document.getElementById('PriceMax').style.display = "none"
+})
+
+btnOrcamentoElList[1].addEventListener('click', () => {
+    document.getElementById('PriceMin').style.display = "none"
+    document.getElementById('PriceMed').style.display = "flex"
+    document.getElementById('PriceMax').style.display = "none"
+})
+
+btnOrcamentoElList[2].addEventListener('click', () => {
+    document.getElementById('PriceMin').style.display = "none"
+    document.getElementById('PriceMed').style.display = "none"
+    document.getElementById('PriceMax').style.display = "flex"
+})
+
+// Botão de preço
+const btnPriceElList = document.querySelectorAll('.btnPrice');
+
+btnPriceElList.forEach(btnPriceEl => {
+    btnPriceEl.addEventListener('click', () => {
+        document.querySelector('.ativado')?.classList.remove('ativado');
+        btnPriceEl.classList.add('ativado');
     });
 })

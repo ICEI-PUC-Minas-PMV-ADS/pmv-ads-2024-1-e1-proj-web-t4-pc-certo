@@ -171,6 +171,7 @@ main {
     border: none;
     background-color: #2E2E2E;
     border-radius: 25px;
+    box-shadow: 0px 4px 4px #7a7a7a;
 
     width: 80%;
     height: 100%;
@@ -186,7 +187,7 @@ main {
 .btnOrcamento:hover {
     transform: scale(1.1);
     background-color: #8ECD36;
-    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
 }
 
 /* Conteúdo do botão orcamento */
@@ -215,4 +216,119 @@ main {
 
     margin-bottom: 20px;
     margin-top: 10px;
+}
+
+/* Escolha de preço base e avançar */
+
+#PriceMin {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+
+    margin: 40px 30%;
+    height: 15%;
+
+    background-color: #2E2E2E;
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px #7a7a7a;
+}
+
+#PriceMed {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+
+    margin: 40px 30%;
+    height: 15%;
+
+    background-color: #2E2E2E;
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px #7a7a7a;
+}
+
+#PriceMax {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+
+    margin: 40px 30%;
+    height: 15%;
+
+    background-color: #2E2E2E;
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px #7a7a7a;
+}
+
+.btnPrice {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border: none;
+    background-color: #2E2E2E;
+    border-radius: 25px;
+
+    width: 25%;
+    margin: 0px auto;
+
+    user-select: none;
+    cursor: pointer;
+
+    transition: 0.3s ease-in-out;
+}
+
+.btnPrice p {
+    font-family: Roboto;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.ativado,
+.btnPrice:hover {
+    background-color: #8ECD36;
+}
+
+.avancar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    background-color: #2E2E2E;
+    border-radius: 25px;
+
+    width: 25%;
+    margin: 0px auto;
+
+    user-select: none;
+}
+
+.btnAvancar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8ECD36;
+    border: none;
+    border-radius: 25px;
+
+    width: 50%;
+    height: 50%;
+
+    cursor: pointer;
+    user-select: none;
+
+    transition: 0.3s ease-in-out;
+}
+
+.btnAvancar:hover {
+    background-color: #8ECD36;
+    transform: scale(1.2);
+}
+
+.btnAvancar img {
+    width: 70%;
+    height: 70%;
 }

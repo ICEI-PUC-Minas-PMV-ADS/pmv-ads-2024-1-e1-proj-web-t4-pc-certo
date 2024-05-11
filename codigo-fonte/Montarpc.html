@@ -50,7 +50,7 @@
                 <div id="passo1">
 
                     <!--Primeiro Card - JOGOS-->
-                    <button id="card" class="btnCard">
+                    <button class="btnCard">
                         <img class="imagem" src="img/controle.png">
                         <h2 class="opcoes">JOGOS</h2>
                         <p class="descricao">Para isso o PC deve possuir maior poder de processamento gráfico,
@@ -77,8 +77,8 @@
                 </div>
 
                 <!-- Orcamento-->
+                <div>
 
-                <div id="passo2">
                     <!-- Orçamento de Jogos-->
                     <div id="jogosOrc">
                         <button class="btnOrcamento">
@@ -94,7 +94,7 @@
                             <p class="descricao2">Recomendação para rodar jogos que exigem um pouco mais de poder
                                 gráfico, tendo
                                 como alvo a seguinte performance em jogos: 1080p a 60fps.</p>
-                            <p class="precoMedio">R$1.500,00 - R$2.500,00</p>
+                            <p class="precoMedio">R$2.500,00 - R$4.000,00</p>
                         </button>
 
                         <button class="btnOrcamento">
@@ -102,7 +102,7 @@
                             <p class="descricao2">Recomendação para rodar jogos no ultra que exigem o máximo de poder
                                 gráfico da sua máquina, como:
                                 Rodar Jogos em 1440p e 4k, 60fps com Ray-Tracing.</p>
-                            <p class="precoMedio">R$1.500,00 - R$2.500,00</p>
+                            <p class="precoMedio">R$4.000,00 ou mais</p>
                         </button>
                     </div>
 
@@ -111,7 +111,8 @@
                         <button class="btnOrcamento">
                             <h3 class="orcamentoOpcao">Mínimo Recomendado</h3>
                             <p class="descricao2">Seu PC atenderá os requisitos mínimos feitos pelas
-                                principais ferramentas de edição do mercado, por causa disso poderá apresentar problemas de
+                                principais ferramentas de edição do mercado, por causa disso poderá apresentar problemas
+                                de
                                 renderização. Vamos priorizar a máquina para futuros upgrades.
                             </p>
                             <p class="precoMedio">R$1.500,00 - R$3.000,00</p>
@@ -120,7 +121,8 @@
                         <button class="btnOrcamento">
                             <h3 class="orcamentoOpcao">Recomendado</h3>
                             <p class="descricao2">Seu PC atenderá os requisitos recomendados feitos pelas
-                                principais ferramentas do mercado e também conseguirá realizar multi-tarefas. Os programas irão rodar de forma suave. 
+                                principais ferramentas do mercado e também conseguirá realizar multi-tarefas. Os
+                                programas irão rodar de forma suave.
                             </p>
                             <p class="precoMedio">R$3.000,00 - R$5.000,00</p>
                         </button>
@@ -130,7 +132,7 @@
                             <p class="descricao2">Seu PC não só atenderá os requisitos recomendados feitos pelas
                                 principais ferramentas do mercado, como também possibilita ir ao limite
                                 dessas plataformas, trabalhar em diversas multi-tarefas e mais.</p>
-                            <p class="precoMedio">R$1.500,00 - R$2.500,00</p>
+                            <p class="precoMedio">R$5.000,00 ou mais</p>
                         </button>
                     </div>
 
@@ -138,29 +140,79 @@
                     <div id="casualOrc">
                         <button class="btnOrcamento">
                             <h3 class="orcamentoOpcao">Mínimo Recomendado</h3>
-                            <p class="descricao2">abc</p>
+                            <p class="descricao2">abc.</p>
                             <p class="precoMedio">R$1.500,00 - R$2.500,00</p>
                         </button>
 
                         <button class="btnOrcamento">
                             <h3 class="orcamentoOpcao">Recomendado</h3>
                             <p class="descricao2">abc.</p>
-                            <p class="precoMedio">R$1.500,00 - R$2.500,00</p>
+                            <p class="precoMedio">R$2.500,00 - R$4.000,00</p>
                         </button>
 
                         <button class="btnOrcamento">
                             <h3 class="orcamentoOpcao">Alto Desempenho</h3>
                             <p class="descricao2">abc.</p>
-                            <p class="precoMedio">R$1.500,00 - R$2.500,00</p>
+                            <p class="precoMedio">R$4.000,00 ou mais</p>
                         </button>
                     </div>
                 </div>
 
-                <div class="price"></div>
+                <!-- Defina o limite de preço e avance-->
+                <div id="passo3">
 
+                    <!-- Preço Jogos-->
+                    <div id="PriceMin">
+                        <button class="btnPrice">
+                            <p>R$1.500,00</p>
+                        </button>
+                        <button class="btnPrice">
+                            <p>R$2.000,00</p>
+                        </button>
+                        <button class="btnPrice">
+                            <p>R$2.500,00</p>
+                        </button>
+                        <div class="avancar">
+                            <a href="escolhaDeComponentes.html" class="btnAvancar">
+                                <img src="/codigo-fonte/img/pagGuia-nxtPrevBtn.png" alt="botaoAvancar">
+                            </a>
+                        </div>
+                    </div>
 
+                    <div id="PriceMed">
+                        <button class="btnPrice">
+                            <p>R$2.500,00</p>
+                        </button>
+                        <button class="btnPrice">
+                            <p>R$3.000,00</p>
+                        </button>
+                        <button class="btnPrice">
+                            <p>R$4.000,00</p>
+                        </button>
+                        <div class="avancar">
+                            <a href="escolhaDeComponentes.html" class="btnAvancar">
+                                <img src="/codigo-fonte/img/pagGuia-nxtPrevBtn.png" alt="botaoAvancar">
+                            </a>
+                        </div>
+                    </div>
 
-            </div>
+                    <div id="PriceMax">
+                        <button class="btnPrice">
+                            <p>R$5.000,00</p>
+                        </button>
+                        <button class="btnPrice">
+                            <p>R$7.000,00</p>
+                        </button>
+                        <button class="btnPrice">
+                            <p>Unlimited</p>
+                        </button>
+                        <div class="avancar">
+                            <a href="escolhaDeComponentes.html" class="btnAvancar">
+                                <img src="/codigo-fonte/img/pagGuia-nxtPrevBtn.png" alt="botaoAvancar">
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
         </main>
 
