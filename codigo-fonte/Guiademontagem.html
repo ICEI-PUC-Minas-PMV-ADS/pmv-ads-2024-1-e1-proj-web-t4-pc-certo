@@ -9,12 +9,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia de Montagem e Escolha de Peças - PC Certo</title>
+    <script defer src="js/Guiademontagem.js"></script>
 </head>
 
 <body>
     <div class="wrapper">
         <header>
-            <a href="Paginainicial.html">
+            <a href="Paginainicial.html" id="logosite">
                 <img class="logo" src="img/logo.png" alt="" width="261px" height="112px">
             </a>
             <button class="sidebaricon"><img src="img/sidebar.png" alt="iconesidebar" width="35px"
@@ -31,260 +32,259 @@
         </header>
         <main>
             <!--Primeira sessao-->
-            <article class="titulopagina">
-                <div class="titlinha">
-                    <h1>Guia para Escolha de Peças
-                    </h1>
-                </div>
-                <p class="titdesc">Aprenda a escolher as peças de seu computador de forma segura e
-                    eficiente.</p>
-            </article>
-            <article id="swipe" class="containerSlider">
-                <div class="cardSlider">
-                    <!--card1-->
-                    <div class="card">
-                        
-                        <div class="titCard">
-                            <img src="img/pagGuia-Processador.png" alt="" class="imgCard">
-                            <h3>Processador (CPU)</h3>
+            <section>
+                <article class="titulopagina">
+                    <div class="titlinha">
+                        <h1>Guia para Escolha de Peças </h1>
+                    </div>
+                    <p class="titdesc">Aprenda a escolher as peças de seu computador de forma segura e eficiente.</p>
+                </article>
+                <article class="containerSlider">
+                    <div class="cardSlider">
+                        <div class="slides" style="--img: url('../img/pagGuia-CPU.png')">
+                            <div class="conteudoSlides">
+                                <h1>Processador (CPU)</h1>
+                                <p>Os processadores Intel incluem "i3", "i5", "i7" e "i9". Que indicam o nível de
+                                    desempenho
+                                    do processador. "K" indica desbloqueio para overclocking, "F" indica
+                                    ausência de gráficos integrados. Já para os processadores AMD Ryzen, "3", "5", "7" e
+                                    "9"
+                                    indicam o nível de desempenho. "X" indica uma versão mais avançada, "G" indica
+                                    presença
+                                    de gráficos integrados.</p>
+                                <br>
+                                <p><b>Gerações:</b> Cada nova geração oferece melhorias de desempenho, eficiência
+                                    energética
+                                    e recursos. Exemplo: "Ryzen 5 5600X" é da série 5000 e o "Intel Core i7-11700F" é da
+                                    11ª
+                                    geração.</p>
+                            </div>
                         </div>
-                        <p class="txtCard"><b>Sufixos:</b> Indicam o nível de desempenho do processador. Os
-                            processadores Intel
-                            incluem "i3", "i5", "i7" e "i9". "K" indica desbloqueio para overclocking, "F" indica
-                            ausência de gráficos integrados.<br> Já
-                            para os processadores AMD Ryzen, "3", "5", "7" e "9" indicam o nível de desempenho. "X"
-                            indica uma
-                            versão mais avançada, "G" indica presença de gráficos integrados.</p>
-                        <p class="txtCard"><b>Gerações:</b> Cada nova geração oferece melhorias de desempenho,
-                            eficiência energética e
-                            recursos. Exemplo: "Ryzen 5 5600X" é da série 5000 e o "Intel Core i7-11700F" é da 11ª
-                            geração.</p>
-
-
-                    </div>
-                    <!--card2-->
-                    <div class="card">
-                        <div class="titCard">
-                            <img src="img/pagGuia-Placa-mae.jpg" alt="" class="imgCard">
-                            <h3>Placa-mãe</h3>
+                        <div class="slides" style="--img: url('../img/pagGuia-MB.jpg')">
+                            <div class="conteudoSlides">
+                                <h1>Placa-mãe</h1>
+                                <p><b>Compatibilidade:</b> Verifique se a placa-mãe é compatível com o seu processador.
+                                    Ela também precisa ser compatível com outros componentes, como RAM e GPU.</p>
+                                <br>
+                                <p><b>Recursos:</b> Considere os recursos extras que você pode precisar, como slots de
+                                    expansão, portas USB, e suporte para overclocking (se necessário)</p>
+                            </div>
                         </div>
-                        <p class="txtCard"><b>Compatibilidade:</b> Verifique se a placa-mãe é compatível com o seu
-                            processador.
-                            Ela
-                            também precisa ser compatível com outros componentes, como RAM e GPU.</p>
-                        <p class="txtCard"><b>Recursos:</b> Considere os recursos extras que você pode precisar,
-                            como
-                            slots de
-                            expansão, portas USB, e suporte para overclocking (se necessário).</p>
-                        
-                    </div>
-                    <!--card3-->
-                    <div class="card">
-                        <div class="titCard">
-                            <img src="img/pagGuia-MemoriaRAM.png" alt="" class="imgCard">
-                            <h3>Memória RAM</h3>
+                        <div class="slides" style="--img: url('../img/pagGuia-MemoriaRAM.png')">
+                            <div class="conteudoSlides">
+                                <h1>Memória RAM</h1>
+                                <p><b>Capacidade:</b> Escolha a quantidade de RAM com base nas suas necessidades. Para a
+                                    maioria dos usuários, 8GB a 16GB é suficiente, mas se você planeja fazer edição de
+                                    vídeo
+                                    ou jogar jogos exigentes, pode precisar de mais.</p>
+                                <br>
+                                <p><b>Velocidade:</b> Quanto mais alta a velocidade, melhor o desempenho geral do
+                                    sistema,
+                                    mas a diferença pode não ser muito perceptível em usos cotidianos.</p>
+                            </div>
                         </div>
-                        <p class="txtCard"><b>Capacidade:</b> Escolha a quantidade de RAM com base nas suas
-                            necessidades. Para a
-                            maioria dos
-                            usuários, 8GB a 16GB é suficiente, mas se você planeja fazer edição de vídeo ou jogar
-                            jogos
-                            exigentes, pode precisar de mais.</p>
-                        <p class="txtCard"><b>Velocidade:</b> Quanto mais alta a velocidade, melhor o desempenho
-                            geral
-                            do
-                            sistema, mas
-                            a diferença
-                            pode não ser muito perceptível em usos cotidianos.</p>
-                        
-                    </div>
-                    <!--card4-->
-                    <div class="card">
-                        <div class="titCard">
-                            <img src="img/pagGuia-GPU.png" alt="" class="imgCard">
-                            <h3>Placa de Vídeo (GPU)</h3>
+                        <div class="slides" style="--img: url('../img/pagGuia-GPU.png')">
+                            <div class="conteudoSlides">
+                                <h1>Placa de Vídeo (GPU)</h1>
+                                <p><b>Uso:</b> Se você estiver jogando jogos ou fazendo edição de vídeo, uma GPU
+                                    dedicada é
+                                    essencial. Para uso geral, a GPU integrada no processador pode ser suficiente.</p>
+                                <br>
+                                <p><b>Memória VRAM:</b> Mais VRAM permite que a GPU processe gráficos mais complexos.
+                                    Para
+                                    jogos modernos, 4GB a 8GB de VRAM é recomendado.</p>
+                            </div>
                         </div>
-                        <p class="txtCard"><b>Uso:</b> Se você estiver jogando jogos ou fazendo edição de vídeo, uma
-                            GPU
-                            dedicada é
-                            essencial. Para
-                            uso geral, a GPU integrada no processador pode ser suficiente.</p>
-                        <p class="txtCard"><b>Memória VRAM:</b> Mais VRAM permite que a GPU processe gráficos mais
-                            complexos.
-                            Para
-                            jogos modernos,
-                            4GB a 8GB de VRAM é recomendado.</p>
-                        
-                    </div>
-                    <!--card5-->
-                    <div class="card">
-                        <div class="titCard">
-                            <img src="img/pagGuia-Armazenamento.jpg" alt="" class="imgCard">
-                            <h3>Armazenamento (SSD/HDD)</h3>
+                        <div class="slides" style="--img: url('../img/pagGuia-Armazenamento.jpg')">
+                            <div class="conteudoSlides">
+                                <h1>Armazenamento (SSD/HDD)</h1>
+                                <p><b>SSD vs. HDD:</b> SSDs são mais rápidos e mais caros por GB, enquanto os HDDs são
+                                    mais
+                                    lentos, mas oferecem mais armazenamento por um preço menor. Recomenda-se um SSD para
+                                    o
+                                    sistema operacional e aplicativos, e um HDD para armazenamento de dados.</p>
+                                <br>
+                                <p><b>Capacidade:</b> Um SSD de 250GB a 500GB para o sistema operacional e alguns
+                                    aplicativos, e um HDD de 1TB a 2TB para armazenamento de dados são opções comuns.
+                                </p>
+                            </div>
                         </div>
-                        <p class="txtCard"><b>SSD vs. HDD:</b> SSDs são mais rápidos e mais caros por GB, enquanto os
-                            HDDs são
-                            mais
-                            lentos, mas oferecem mais armazenamento por um preço menor. Recomenda-se um SSD para o
-                            sistema
-                            operacional e aplicativos, e um HDD para armazenamento de dados.</p>
-                        <p class="txtCard"><b>Capacidade:</b> Um SSD de 250GB a 500GB para o sistema operacional e
-                            alguns
-                            aplicativos, e um HDD de 1TB a 2TB para
-                            armazenamento de dados são opções comuns.</p>
-                        
-                    </div>
-                    <!--card6-->
-                    <div class="card">
-                        <div class="titCard">
-                            <img src="img/pagGuia-PSU.png" alt="" class="imgCard">
-                            <h3>Fonte de Alimentação (PSU)</h3>
+                        <div class="slides" style="--img: url('../img/pagGuia-PSU.png')">
+                            <div class="conteudoSlides">
+                                <h1>Fonte de Alimentação (PSU)</h1>
+                                <p><b>Potência:</b> Escolha uma fonte de alimentação com potência suficiente para
+                                    suportar
+                                    todos os componentes do seu sistema. Use uma calculadora de PSU online para
+                                    determinar a
+                                    potência necessária com base nos componentes que você escolheu.</p>
+                                <br>
+                                <p><b>Eficiência e Certificação:</b> Procure por uma fonte de alimentação com uma
+                                    classificação de eficiência alta (80 PLUS Bronze, Silver, Gold, ou Platinum) para
+                                    economizar energia.
+                                </p>
+                            </div>
                         </div>
-                        <p class="txtCard"><b>Potência:</b> Escolha uma fonte de alimentação com potência suficiente
-                            para
-                            suportar
-                            todos os
-                            componentes do seu sistema. Use uma calculadora de PSU online para determinar a potência
-                            necessária com base nos componentes que você escolheu.</p>
-                        <p class="txtCard"><b>Eficiência e Certificação:</b> Procure por uma fonte de alimentação
-                            com
-                            uma
-                            classificação
-                            de eficiência alta (80 PLUS Bronze, Silver, Gold, ou Platinum) para economizar energia.
-                        </p>
-                        
-                    </div>
-                    <!--card7-->
-                    <div class="card">
-                        <div class="titCard">
-                            <img src="img/pagGuia-Gabinete.jpg" alt="" class="imgCard">
-                            <h3>Gabinete</h3>
+                        <div class="slides" style="--img: url('../img/pagGuia-Gabinete.jpg')">
+                            <div class="conteudoSlides">
+                                <h1>Gabinete</h1>
+                                <p><b>Tamanho:</b> Certifique-se de escolher um gabinete que seja grande o suficiente
+                                    para
+                                    acomodar todos os seus componentes, especialmente a placa-mãe e a placa de vídeo.
+                                </p>
+                                <br>
+                                <p><b>Ventilação:</b> Procure por um gabinete com boa ventilação para manter seus
+                                    componentes resfriados e evitar o superaquecimento.</p>
+                            </div>
                         </div>
-                        <p class="txtCard"><b>Tamanho:</b> Certifique-se de escolher um gabinete que seja grande o
-                            suficiente
-                            para
-                            acomodar todos os seus componentes, especialmente a placa-mãe e a placa de vídeo.</p>
-                        <p class="txtCard"><b>Ventilação:</b> Procure por um gabinete com boa ventilação para manter
-                            seus
-                            componentes
-                            resfriados e evitar o superaquecimento.</p>
-                        
-                    </div>
-                    <!--card8-->
-                    <div class="card">
-                        <div class="titCard">
-                            <img src="img/pagGuia-Cooler.png" alt="" class="imgCard">
-                            <h3>Refrigeração</h3>
+                        <div class="slides" style="--img: url('../img/pagGuia-Cooler.png')">
+                            <div class="conteudoSlides">
+                                <h1>Refrigeração</h1>
+                                <p><b>Refrigeração a Ar vs. Líquida:</b> Os coolers a ar são mais baratos e geralmente
+                                    suficientes para resfriar a maioria dos sistemas. Os coolers líquidos são mais
+                                    eficientes em dissipar o calor, mas são mais caros e podem exigir manutenção.</p>
+                                <br>
+                                <p><b>Compatibilidade:</b> Verifique se o cooler é compatível com o seu gabinete e
+                                    placa-mãe. Marcas de Confiança: Noctua, Cooler Master, Corsair e NZXT são marcas
+                                    conhecidas por seus sistemas de refrigeração.</p>
+                            </div>
                         </div>
-                        <p class="txtCard"><b>Refrigeração a Ar vs. Líquida:</b> Os coolers a ar são mais baratos e
-                            geralmente
-                            suficientes para
-                            resfriar a maioria dos sistemas. Os coolers líquidos são mais eficientes em dissipar o
-                            calor,
-                            mas são mais caros e podem exigir manutenção.</p>
-                        <p class="txtCard"><b>Compatibilidade:</b> Verifique se o cooler é compatível com o seu
-                            gabinete
-                            e
-                            placa-mãe.
-                            Marcas de Confiança: Noctua, Cooler Master, Corsair e NZXT são marcas conhecidas por
-                            seus
-                            sistemas de refrigeração.</p>
-                        
                     </div>
-                </div>
-
-            </article>
-
-            <article class="titulopagina">
-                <div class="titlinha">
-                    <h1>Guia para a Montagem de PC
-                    </h1>
-                </div>
-                <p class="titdesc">Aprenda a montar seu novo PC de uma forma prática.</p>
-            </article>
-            <!--Segunda sessao-->
-            <section class="montarPc">
-                <!--passo1-->
-                <div class="passos">
-                    <h3 class="titPassos">Passo 1: Reúna os Componentes</h3>
-                    <p class="txtPassos">Certifique-se de ter todos os componentes necessários para montar seu PC. Estes
-                        incluem:</p>
-                    <div class="ulliPassos">
-                        <ul>
-                            <li>Processador (CPU);</li>
-                            <li>Placa-mãe;</li>
-                            <li>Memória RAM;</li>
-                            <li>Placa de vídeo (se necessário);</li>
-                            <li>Unidade de armazenamento (HDD ou SSD);</li>
-                            <li>Fonte de alimentação;</li>
-                            <li>Gabinete;</li>
-                            <li>Cooler de CPU (pode vir com o processador ou ser adquirido separadamente).</li>
-                        </ul>
+                    <div class="btns">
+                        <span class="prev"><img src="img/pagGuia-nxtPrevBtn.png" alt=""></span>
+                        <span class="nxt"><img src="img/pagGuia-nxtPrevBtn.png" alt=""></span>
                     </div>
-                </div>
-                <!--passo2-->
-                <div class="passos">
-                    <h3 class="titPassos">Passo 2: Prepare a Área de Trabalho</h3>
-                    <p class="txtPassos">Escolha uma área limpa e espaçosa para trabalhar. Certifique-se de ter espaço
-                        suficiente para organizar
-                        os componentes e seguir os próximos passos. Antes de começar, é essencial ler os manuais de
-                        todos os componentes. Eles
-                        fornecerão instruções
-                        específicas para a instalação correta de cada peça.</p>
-                </div>
-                <!--passo3-->
-                <div class="passos">
-                    <h3 class="titPassos">Passo 3: Preparação da Placa-mãe e Gabinete</h3>
-                    <p class="txtPassos">Placa-mãe: Instale o processador, cooler de CPU e memória RAM de acordo com
-                        as instruções do manual. Certifique-se de alinhar corretamente os pinos do processador com o
-                        soquete
-                        da placa-mãe.</p>
-                    <p class="txtPassos">Instale a Placa-mãe no Gabinete: Posicione a placa-mãe dentro do gabinete e
-                        parafuse-a nos suportes correspondentes. Certifique-se de que não haja fios ou cabos soltos que
-                        possam causar curtos-circuitos.</p>
-                </div>
-                <!--passo4-->
-                <div class="passos">
-                    <h3 class="titPassos">Passo 4: Conexão dos Componentes</h3>
-
-                    <p class="txtPassos">Conecte os Componentes: Conecte a fonte de alimentação, placa de vídeo,
-                        unidades de armazenamento e outros dispositivos à placa-mãe. Consulte os manuais para
-                        identificar os conectores corretos.</p>
-
-                    <p class="txtPassos">Instale a Unidade de Armazenamento: Fixe a unidade de armazenamento (HDD ou
-                        SSD) nos compartimentos apropriados do gabinete e conecte os cabos SATA à placa-mãe e à unidade.
-                    </p>
-                </div>
-                <!--passo5-->
-                <div class="passos">
-                    <h3 class="titPassos">Passo 5: Organização de Cabos</h3>
-
-                    <p class="txtPassos">Organize os Cabos: Organize os cabos dentro do gabinete para garantir uma boa
-                        circulação de ar e evitar obstruções. Utilize abraçadeiras de cabo para manter os cabos
-                        arrumados.</p>
-                    <p class="txtPassos">Instale a Placa de Vídeo: Se você tiver uma placa de vídeo separada, insira-a
-                        no slot PCI-Express da placa-mãe e conecte-a à fonte de alimentação conforme necessário.</p>
-                </div>
-                <!--passo6-->
-                <div class="passos">
-                    <h3 class="titPassos">Passo 6: Finalização e Testes</h3>
-
-                    <p class="txtPassos">Feche o gabinete, conecte o cabo de alimentação e os periféricos (teclado,
-                        mouse, monitor) e ligue o computador.</p>
-                    <p class="txtPassos">Insira o disco de instalação do sistema operacional (como o Windows) na unidade
-                        óptica ou crie um dispositivo de instalação USB. Siga as instruções na tela para instalar o
-                        sistema operacional no seu novo PC.</p>
-                    <p class="txtPassos">Ligue o computador e verifique se ele inicializa corretamente. Se houver algum
-                        problema, consulte os manuais e tutoriais para identificar e resolver possíveis problemas.</p>
-                </div>
+                </article>
+                <article class="titulopagina">
+                    <div class="titlinha">
+                        <h1>Guia para a Montagem de PC</h1>
+                    </div>
+                    <p class="titdesc">Aprenda a montar seu novo PC de uma forma prática.</p>
+                </article>
             </section>
-            <article class="videoMontar">
-                <h2 class="videoTxt">Como montar um PC</h2>
-                <iframe class="video" src="https://www.youtube.com/embed/vyR4UGZGTzU?autoplay=1&mute=1"
-                    title="COMO MONTAR UM PC GAMER COMPLETO PASSO A PASSO 2023" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </article>
+            <!--Segunda sessao-->
+            <section>
+                <article class="containerPassos">
+                    <div class="sliderPassos">
+                        <div class="passos" style="--img: url('../img/pagGuia-Componentes.jpg')">
+                            <h3>Passo 1: Reúna os Componentes</h3>
+                            <div class="conteudoPassos">
+                                <p>Certifique-se de ter todos os componentes necessários para montar seu
+                                    PC.
+                                    Estes
+                                    incluem:</p>
+                                <ul>
+                                    <li>Processador (CPU);</li>
+                                    <li>Placa-mãe;</li>
+                                    <li>Memória RAM;</li>
+                                    <li>Placa de vídeo (se necessário);</li>
+                                    <li>Unidade de armazenamento (HDD ou SSD);</li>
+                                    <li>Fonte de alimentação;</li>
+                                    <li>Gabinete;</li>
+                                    <li>Cooler de CPU (pode vir com o processador ou ser adquirido separadamente).
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="passos" style="--img: url('../img/pagGuia-Manual.jpg')">
+                            <h3>Passo 2: Prepare a Área de Trabalho</h3>
+                            <div class="conteudoPassos">
+
+
+                                <p>Escolha uma área limpa e espaçosa para trabalhar. Certifique-se de ter
+                                    espaço
+                                    suficiente para organizar
+                                    os componentes e seguir os próximos passos. Antes de começar, é essencial ler os
+                                    manuais
+                                    de
+                                    todos os componentes. Eles
+                                    fornecerão instruções
+                                    específicas para a instalação correta de cada peça.</p>
+                            </div>
+                        </div>
+                        <div class="passos" style="--img: url('../img/pagGuia-prep.jpg')">
+                            <h3>Passo 3: Preparação da Placa-mãe e Gabinete</h3>
+                            <div class="conteudoPassos">
+
+                                <p>Placa-mãe: Instale o processador, cooler de CPU e memória RAM de acordo
+                                    com
+                                    as instruções do manual. Certifique-se de alinhar corretamente os pinos do
+                                    processador
+                                    com o
+                                    soquete
+                                    da placa-mãe.</p>
+                                <p>Instale a Placa-mãe no Gabinete: Posicione a placa-mãe dentro do
+                                    gabinete e
+                                    parafuse-a nos suportes correspondentes. Certifique-se de que não haja fios ou cabos
+                                    soltos
+                                    que
+                                    possam causar curtos-circuitos.</p>
+                            </div>
+                        </div>
+                        <div class="passos" style="--img: url('../img/pagGuia-conex.png')">
+                            <h3>Passo 4: Conexão dos Componentes</h3>
+                            <div class="conteudoPassos">
+
+
+                                <p>Conecte os Componentes: Conecte a fonte de alimentação, unidades de armazenamento e
+                                    outros dispositivos à placa-mãe. Consulte os manuais
+                                    para
+                                    identificar os conectores corretos.</p>
+
+                                <p>Instale a Unidade de Armazenamento: Fixe a unidade de armazenamento
+                                    (HDD ou
+                                    SSD) nos compartimentos apropriados do gabinete e conecte os cabos SATA à placa-mãe
+                                    e à
+                                    unidade.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="passos" style="--img: url('../img/pagGuia-cableman.jpg')">
+                            <h3>Passo 5: Organização de Cabos</h3>
+                            <div class="conteudoPassos">
+
+
+                                <p>Organize os Cabos: Organize os cabos dentro do gabinete para garantir
+                                    uma
+                                    boa
+                                    circulação de ar e evitar obstruções. Utilize abraçadeiras de cabo para manter os
+                                    cabos
+                                    arrumados.</p>
+                                <p>Instale a Placa de Vídeo: Se você tiver uma placa de vídeo separada,
+                                    insira-a
+                                    no slot PCI-Express da placa-mãe e conecte-a à fonte de alimentação conforme
+                                    necessário.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="passos" style="--img: url('../img/pagGuia-final.jpg')">
+                            <h3>Passo 6: Finalização e Testes</h3>
+                            <div class="conteudoPassos">
+
+
+                                <p>Feche o gabinete, conecte o cabo de alimentação e os periféricos
+                                    (teclado,
+                                    mouse, monitor) e ligue o computador.</p>
+                                <p>Insira o disco de instalação do sistema operacional (como o Windows) na
+                                    unidade
+                                    óptica ou crie um dispositivo de instalação USB. Siga as instruções na tela para
+                                    instalar o
+                                    sistema operacional no seu novo PC.</p>
+                                <p>Ligue o computador e verifique se ele inicializa corretamente. Se
+                                    houver
+                                    algum
+                                    problema, consulte os manuais e tutoriais para identificar e resolver possíveis
+                                    problemas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="botaoPassos" style="--img: url('../img/pagGuia-Componentes.png')">
+                        <button class="prevPassos"><img src="img/pagGuia-nxtPrevBtn.png" alt=""></button>
+                        <button class="nxtPassos"><img src="img/pagGuia-nxtPrevBtn.png" alt=""></button>
+                    </div>
+                </article>
+            </section>
         </main>
         <footer class="rodape">
             <p class="copyright">© 2024, PC Certo | Todos os direitos reservados.</p>
