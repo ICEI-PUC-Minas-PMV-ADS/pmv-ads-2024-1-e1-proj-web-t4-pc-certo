@@ -199,7 +199,7 @@ main {
 .orcamentoOpcao {
     color: #FFF;
     font-size: 30px;
-    font-family: roboto;
+    font-family: Roboto;
 
     margin-top: 20px;
     margin-bottom: 10px;
@@ -209,14 +209,14 @@ main {
 .descricao2 {
     color: #FFF;
     font-size: 16px;
-    font-family: roboto;
+    font-family: Roboto;
 
     margin: 10px 15px;
 }
 
 .precoMedio {
     font-size: 20px;
-    font-family: roboto;
+    font-family: Roboto;
     color: #FFF;
 
     margin-bottom: 20px;
