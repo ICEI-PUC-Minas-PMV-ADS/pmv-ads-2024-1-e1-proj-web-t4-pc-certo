@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    background: radial-gradient(150% 80% at 10% 30%,
+    #8FBD4E 1%, #8FBD4E 25%, #4C622D 100%)
+}
 .wrapper {
 font-family: roboto;
 }
