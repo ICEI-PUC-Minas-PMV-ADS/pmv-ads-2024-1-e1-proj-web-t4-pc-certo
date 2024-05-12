@@ -36,9 +36,9 @@ RF-08: A aplicação deve permitir o login de usuários para o uso do fórum.
 
 Responsável: Pedro Bezerra
 
-O acesso a página Guia poderá ser feito através da opção do menu de navegação “Fazer login”. As estruturas de dados foram baseadas em HTML, CSS e JS.
+O acesso a página Guia poderá ser feito através da opção do menu de navegação “Guia”. As estruturas de dados foram baseadas em HTML, CSS e JS.
 
-Exemplo da página de login:
+Exemplo da página de Guia:
 
 <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E3-pagGuia.png">
 
