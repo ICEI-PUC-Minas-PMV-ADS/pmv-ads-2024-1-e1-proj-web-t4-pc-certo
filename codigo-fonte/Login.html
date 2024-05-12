@@ -19,7 +19,7 @@
         <a href="Paginainicial.html" id="logosite">
             <img class="logo" src="img/logo.png" alt="" width="261px" height="112px">
         </a>
-        <button class="sidebaricon"><img src="img/sidebar.png" alt="iconesidebar" width="35px" height="30px" ></button>
+        <button class="sidebaricon"><img src="img/sidebar.png" alt="iconesidebar" width="35px" height="30px"></button>
         <div class="botoescabecalho">
             <a class="botaocabecalho" href="Forum.html"><span class="txtcabecalho">Fórum</span></a>
             <a class="botaocabecalho" href="Guiademontagem.html"><span class="txtcabecalho">Guia</span></a>
@@ -33,16 +33,20 @@
     <!-- Login -->
     <div class="Conteudo">
         <article class="Artigo">
-        <div class="JanelaLogin">
-            <h1>Login</h1>
-            <input type="text" placeholder="Email">
-            <input type="password" placeholder="Senha">
-            <div class="Entrar">
-                <button> Entrar </button>
+            <div class="JanelaLogin">
+                <h1>Login</h1>
+                <input type="text" placeholder="Email" id="email" >
+
+                <div id="errorEmail">E-mail ou Senha invalidos</div>
+
+                <input type="password" placeholder="Senha" id="senha">
+
+                <div class="Entrar">
+                    <button id =botao> Entrar </button>
+                </div>
+                <p>Não tem um login? <a href="Cadastro.html">Cadastre-se</a></p>
             </div>
-            <p>Não tem um login? <a href="Cadastro.html">Cadastre-se</a></p>
-        </div>
-    </article>
+        </article>
     </div>
     <!-- Rodapé -->
     <footer class="rodape">

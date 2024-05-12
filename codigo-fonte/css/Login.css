@@ -73,3 +73,8 @@ p {
     font-family: Roboto;
     font-size: small;
 }
+
+#errorEmail, #error{color: red;
+    display: none;
+}
+
