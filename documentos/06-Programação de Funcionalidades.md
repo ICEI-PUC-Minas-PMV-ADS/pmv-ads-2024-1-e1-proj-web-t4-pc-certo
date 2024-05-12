@@ -51,7 +51,7 @@ Caetano Souza, Pedro Machado
 
 Exemplo da tela de login:
 
-<img src= "../e3 login.jpg
+<img src= "![alt text](<img/e3 login.jpg>)"
 
 #### Requisito atendido RF-08
 
@@ -60,13 +60,13 @@ A aplicação deve permitir o login de usuários para o uso do fórum.
 
 #### Artefatos da funcionalidade
 
-[text](../codigo-fonte/Login.html)
-[text](../codigo-fonte/css/Login.css)
-[text](../codigo-fonte/js/Login.js)
+
+[login.css](../codigo-fonte/css/Login.css)
+[login.js](../codigo-fonte/js/Login.js)
 
 #### Estrutura de Dados
 
-login.html
+[login.html](../codigo-fonte/Login.html)
 
 
 #### Instruções de acesso
