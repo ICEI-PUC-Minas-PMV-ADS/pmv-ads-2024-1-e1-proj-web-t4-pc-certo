@@ -80,10 +80,14 @@ main {
     transition: 0.3s ease-in-out;
 }
 
-.active,
-.btnCard:hover {
+.active {
     transform: scale(1.1);
     background-color: #8ECD36;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
+}
+
+.btnCard:hover {
+    transform: scale(1.1);
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
 }
 
@@ -127,6 +131,19 @@ main {
 }
 
 /* Escolha de predefinição de orçamento */
+
+#orcamento {
+    display: none;
+
+    color: #7a7a7a;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin: 50px 5%;
+}
 
 /* Orçamento jogos */
 #jogosOrc {
@@ -183,10 +200,13 @@ main {
     transition: 0.3s ease-in-out;
 }
 
-.ativo,
-.btnOrcamento:hover {
+.ativo {
     transform: scale(1.1);
     background-color: #8ECD36;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
+}
+.btnOrcamento:hover {
+    transform: scale(1.1);
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
 }
 
@@ -224,8 +244,10 @@ main {
     display: none;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 
-    margin: 40px 30%;
+    margin: 40px 20%;
+    padding: 0px 10px;
     height: 15%;
 
     background-color: #2E2E2E;
@@ -237,8 +259,10 @@ main {
     display: none;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 
-    margin: 40px 30%;
+    margin: 40px 20%;
+    padding: 0px 10px;
     height: 15%;
 
     background-color: #2E2E2E;
@@ -250,8 +274,10 @@ main {
     display: none;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 
-    margin: 40px 30%;
+    margin: 40px 20%;
+    padding: 0px 10px;
     height: 15%;
 
     background-color: #2E2E2E;
@@ -259,6 +285,7 @@ main {
     box-shadow: 0px 4px 4px #7a7a7a;
 }
 
+/* botão de cada preço */
 .btnPrice {
     display: flex;
     flex-direction: column;
@@ -270,7 +297,7 @@ main {
     border-radius: 25px;
 
     width: 25%;
-    margin: 0px auto;
+    margin: 0px 10px;
 
     user-select: none;
     cursor: pointer;
@@ -285,13 +312,19 @@ main {
     font-weight: 700;
 }
 
-.ativado,
+.ativado {
+    transform: scale(1.05);
+    background-color: #8ECD36;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
+}
 .btnPrice:hover {
     background-color: #8ECD36;
+    transform: scale(1.05)
 }
 
-.avancar {
-    display: flex;
+/* botão avançar */
+#avancar, #avancar1, #avancar2 {
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -314,18 +347,28 @@ main {
     border: none;
     border-radius: 25px;
 
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
 
     cursor: pointer;
     user-select: none;
 
-    transition: 0.3s ease-in-out;
+    animation: animar 0.9s linear infinite;
 }
 
-.btnAvancar:hover {
-    background-color: #8ECD36;
-    transform: scale(1.2);
+@keyframes animar {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(0.8);
+        opacity: 1;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .btnAvancar img {
