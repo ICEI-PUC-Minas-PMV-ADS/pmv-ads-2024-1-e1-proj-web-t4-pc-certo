@@ -40,7 +40,7 @@
     header .sidebaricon {
         display: block;
         float: right;
-        background-color: #8ecd36;
+        background-color: #41ae4f;
         border-radius: 20px;
         margin: auto 32px;
         padding: 10px;
@@ -54,7 +54,7 @@
 
     header .sidebaricon:hover {
         transition: 0.3s ease-in-out;
-        background-color: #a1e93c;
+        background-color: #41ae4f;
     }
 
     header #logosite {
@@ -113,7 +113,7 @@ header {
 .botaocabecalho {
     margin-right: 32px;
     border-radius: 25px;
-    background-color: #8ecd36;
+    background-color: #41ae4f;
 }
 
 .botaocabecalho2 {
@@ -137,7 +137,7 @@ header {
 }
 
 .botaocabecalho:hover {
-    background-color: #a1e93c;
+    background-color: #31833c;
     transition: 0.3s ease-in-out;
 }
 

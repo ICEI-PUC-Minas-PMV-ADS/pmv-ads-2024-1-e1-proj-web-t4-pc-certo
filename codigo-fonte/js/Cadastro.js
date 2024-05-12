@@ -29,7 +29,7 @@ function removerTermosErro() {
 
 // FUNÇÕES PARA VALIDAR OS CAMPOS
 function validarNome() {
-    if (obrigatorio[0].value.length < 3) {
+    if (obrigatorio[0].value.length < 5) {
         erro(0);
         localStorage.removeItem("nomeCadastro");
     }

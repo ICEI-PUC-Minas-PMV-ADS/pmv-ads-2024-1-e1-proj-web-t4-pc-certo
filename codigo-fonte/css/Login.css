@@ -1,8 +1,9 @@
 body {
     padding: 0px;
     margin: 0px;
-    background: radial-gradient(150% 80% at 10% 30%,
-    #8FBD4E 1%, #8FBD4E 25%, #4C622D 100%)
+    background: url("../img/menuInicial.jpg");
+    background-size: cover;
+    background-position: center;
 }
 .Conteudo {
     min-height: 85vh;
@@ -24,11 +25,12 @@ body {
     font-family: Roboto;
     font-size: x-large;
     text-align: center;
-    background-color: #2E2E2E;
+    background-color: #2e2e2e69;
+    backdrop-filter: blur(20px);
     width: 500px;
     padding: 2.5%;
     border-radius: 20px;
-    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     margin-top: 5%;
     margin-bottom: 10%;
     margin-left: 3px;
@@ -39,7 +41,8 @@ body {
 input {
     color: white;
     font-family: Roboto;
-    background-color: #7a7a7a;
+    background: transparent;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     padding: 5%;
     border: none;
     outline: none;
@@ -56,7 +59,7 @@ input::placeholder {
 div button {
     color: white;
     font-family: Roboto;
-    background-color: #8FBD4E;
+    background-color: #41ae4f;
     padding: 5%;
     border: none;
     outline: none;
@@ -66,7 +69,7 @@ div button {
 }
 
 div button:hover {
-    background-color: #8ecd36;
+    background-color: #31833c;
     transition: 0.3s;
     cursor: pointer;
 }
