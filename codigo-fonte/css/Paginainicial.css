@@ -4,49 +4,26 @@ body {
 }
 
 .conteudo {
-    min-height: 100vh;
-}
-
-#capafoto {
-    width: 100%;
-    transform: translate(0, -7px);
-}
-
-#descriçao {
-    font-family: Roboto;
-    text-align: center;
-    background-color: gainsboro;
-    padding: 2.5%;
-    border-radius: 20px;
-    width: 500px;
-    margin: 10px;
-}
-
-.gbotao {
     display: flex;
+}
+
+.conteudo h1 {
+    position: absolute;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 40px;
     color: #fff;
-    text-decoration: none;
-    padding-left: 80px;
-    padding-right: 80px;
-    border-radius: 25px;
-    background-color: #8ecd36;
-    margin: 50px 0 50px;
-    align-items: center;
+
 }
 
-#gbotao:hover {
-    background-color: #a1e93c;
-    transition: 0.3s;
-    cursor: pointer;
+.conteudo h2 {
+    position: absolute;
+    font-family: Roboto;
+    font-size: 40px;
+    color: #fff;
+
 }
 
-.describotao {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    height: 100vh;
+.imgPrincipal {
+    width: 100%;
+    height: 100%;
 }
-
