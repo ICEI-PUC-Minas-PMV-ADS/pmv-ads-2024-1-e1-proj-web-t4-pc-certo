@@ -14,7 +14,10 @@ var botaologin = document.getElementById('botao');
 
 // validar emails cadastrados
 botaologin.addEventListener('click', function validarEmail() {
-    if (localStorage.getItem("emailCadastro") == emailInserido && (localStorage.getItem("senhaCadastro")) == senhaInserida) { console.log('o email é valido') }
+    if (localStorage.getItem("emailCadastro") == emailInserido.value && (localStorage.getItem("senhaCadastro")) == senhaInserida.value) {
+        console.log('o email é valido');
+        window.location.href = "../codigo-fonte/Forum.html"
+    }
 
     else {
         console.log('email invalido');
@@ -27,10 +30,10 @@ botaologin.addEventListener('click', function validarEmail() {
 }
 )
 //remover erro
-inputs.forEach(function(input){
-    input.addEventListener('click', function(){
+inputs.forEach(function (input) {
+    input.addEventListener('click', function () {
         erroremail.style.display = "none";
-        redborder.forEach(function(element){
+        redborder.forEach(function (element) {
             element.style.border = "0px";
         })
 

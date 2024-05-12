@@ -77,4 +77,4 @@ p {
 #errorEmail, #error{color: red;
     display: none;
 }
-
+#errorEmail{font-size: 17px;}
