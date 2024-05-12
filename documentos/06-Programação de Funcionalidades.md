@@ -1,74 +1,63 @@
 # Programação de Funcionalidades
 
-Implementação da aplicação descritas por meio dos requisitos codificados. 
+### Página de Login (RF-08)
 
-[Utilize a estrutura abaixo para cada funcionalidade entregue na etapa]
+Responsável: Caetano Souza, Pedro Machado
 
-### Título da funcionalidade
+O acesso a página de login poderá ser feito através da opção do menu de navegação “Fazer login”. As estruturas de dados foram baseadas em HTML, CSS e JS.
 
-[Adicione imagem da funcionalidade/tela]
+Exemplo da página de login:
 
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E3-pagLogin.jpg"
 
 #### Requisito atendido
 
-[RF-X: adicione a descrição do requisito atendido]
+RF-08: A aplicação deve permitir o login de usuários para o uso do fórum.
 
 
 #### Artefatos da funcionalidade
 
-[Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade]
+●Login.html
 
+●Login.css
+
+●Login.js
 
 #### Estrutura de Dados
 
-[Caso exista estrutura de dados, adicione aqui]
+[Login.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/codigo-fonte/Login.html)
 
 
 #### Instruções de acesso
 
-[Adicione as orientações de acesso à funcionalidade]
 
+### Página de Guia de Escolha e Montagem (RF-14)
 
-#### Responsável
+Responsável: Pedro Bezerra
 
-[Adicione nome do responsável pelo desenvolvimento da funcionalidade]
+O acesso a página Guia poderá ser feito através da opção do menu de navegação “Fazer login”. As estruturas de dados foram baseadas em HTML, CSS e JS.
 
+Exemplo da página de login:
 
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E3-pagGuia.png"
 
+#### Requisito atendido
 
-> **Links Úteis**:
-> - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
-> - [JSON Tutorial](https://www.w3resource.com/JSON)
-> - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
-> - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
-
-
-### Telalogin RF-08
-
-#### Responsável
-
-Caetano Souza, Pedro Machado
-
-Exemplo da tela de login:
-
-<img src= ![alt text](<img/e3 login.jpg>)
-
-#### Requisito atendido RF-08
-
-A aplicação deve permitir o login de usuários para o uso do fórum.
+RF-14: A aplicação deve fornecer um guia para escolha de peças e como realizar a montagem de um computador.
 
 
 #### Artefatos da funcionalidade
 
+●Guiademontagem.html
 
-[login.css](../codigo-fonte/css/Login.css)<br>
-[login.js](../codigo-fonte/js/Login.js)
+●Guiademontagem.css
+
+●Guiademontagem.js
 
 #### Estrutura de Dados
 
-[login.html](../codigo-fonte/Login.html)
+[Guiademontagem.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/codigo-fonte/Guiademontagem.html)
 
 
 #### Instruções de acesso
-
 
