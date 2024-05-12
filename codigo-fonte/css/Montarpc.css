@@ -80,10 +80,14 @@ main {
     transition: 0.3s ease-in-out;
 }
 
-.active,
-.btnCard:hover {
+.active {
     transform: scale(1.1);
     background-color: #8ECD36;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
+}
+
+.btnCard:hover {
+    transform: scale(1.1);
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
 }
 
@@ -196,10 +200,13 @@ main {
     transition: 0.3s ease-in-out;
 }
 
-.ativo,
-.btnOrcamento:hover {
+.ativo {
     transform: scale(1.1);
     background-color: #8ECD36;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
+}
+.btnOrcamento:hover {
+    transform: scale(1.1);
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
 }
 
@@ -305,7 +312,11 @@ main {
     font-weight: 700;
 }
 
-.ativado,
+.ativado {
+    transform: scale(1.05);
+    background-color: #8ECD36;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
+}
 .btnPrice:hover {
     background-color: #8ECD36;
     transform: scale(1.05)
