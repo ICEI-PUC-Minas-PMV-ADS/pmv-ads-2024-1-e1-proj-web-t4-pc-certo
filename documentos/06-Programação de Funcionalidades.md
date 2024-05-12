@@ -62,3 +62,34 @@ RF-14: A aplicação deve fornecer um guia para escolha de peças e como realiza
 
 #### Instruções de acesso
 
+<hr>
+
+### Página do Forum da Comunidade (RF-11)
+
+Responsável: Lucas Gabriel
+
+O acesso a página do fórum poderá ser feito através da opção do menu de navegação “Guia”. As estruturas de dados foram baseadas em HTML, CSS e JS.
+
+Exemplo da página de Guia:
+
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E3-pagForum.png">
+
+#### Requisito atendido
+
+RF-11: A aplicação deve conter um fórum da comunidade.
+
+#### Artefatos da funcionalidade
+
+●Forum.html
+
+●forum.css
+
+●forum.js
+
+#### Estrutura de Dados
+
+[Forum.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/codigo-fonte/Forum.html)
+
+
+#### Instruções de acesso
+
