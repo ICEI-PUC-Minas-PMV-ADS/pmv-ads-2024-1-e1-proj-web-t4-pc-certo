@@ -2,8 +2,8 @@ body {
     font-family: Bahnschrift, Arial, sans-serif;
     padding: 0px;
     margin: 0px;
-    background: radial-gradient(282.53% 101.32% at 7.68% 30.28%,
-    #8EBD4E 0%, #8FBD4E 4.5%, #4C622D 100%)
+    background: radial-gradient(150% 80% at 10% 30%,
+    #8FBD4E 1%, #8FBD4E 25%, #4C622D 100%)
 }
 
 main {
