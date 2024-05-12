@@ -4,15 +4,7 @@
 }
 
 .wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "cabecalho"
-        "main"
-        "rodape";
-
-    font-family: roboto;
+font-family: roboto;
 }
 
 header {
