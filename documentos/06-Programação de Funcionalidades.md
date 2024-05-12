@@ -51,7 +51,7 @@ Caetano Souza, Pedro Machado
 
 Exemplo da tela de login:
 
-<img src= "![alt text](<img/e3 login.jpg>)"
+<img src= ![alt text](<img/e3 login.jpg>)
 
 #### Requisito atendido RF-08
 
