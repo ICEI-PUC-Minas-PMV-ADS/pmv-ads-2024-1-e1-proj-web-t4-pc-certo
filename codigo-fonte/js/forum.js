@@ -12,7 +12,5 @@ document.getElementById("botaoFechar").addEventListener("click", function() {
 
 // PUBLICAR
 
-  document.getElementById("botaoFechar").addEventListener('click', function() {
-    document.getElementById("pop-up").style.display ="none";
-  });
+
 
