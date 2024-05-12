@@ -4,26 +4,69 @@ body {
 }
 
 .conteudo {
-    display: flex;
+    position: relative;
 }
 
-.conteudo h1 {
+.principal {
     position: absolute;
+    z-index: 1;
+
+    width: 100%;
+    text-align: center;
+    top: 4%;
+}
+
+.principal h1 {
     font-family: Roboto;
     font-size: 40px;
     color: #fff;
+    user-select: none;
 
 }
 
-.conteudo h2 {
-    position: absolute;
+.principal h2 {
     font-family: Roboto;
-    font-size: 40px;
-    color: #fff;
+    font-size: 32px;
+    color: #ffffffad;
+    user-select: none;
 
 }
 
 .imgPrincipal {
     width: 100%;
-    height: 100%;
+}
+
+.btnPrincipal {
+    margin-top: 12%;
+    width: 10%;
+    padding: 1%;
+
+    background-color: #8ecd36;
+    border-radius: 25px;
+    border: none;
+
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 900;
+    color: #FFF;
+
+    user-select: none;
+    cursor: pointer;
+
+    animation: pulsar 1.5s linear infinite
+}
+
+@keyframes pulsar {
+    from {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    to {
+        transform: scale(1);
+    }
+
 }
