@@ -3,7 +3,7 @@ body {
     padding: 0px;
     margin: 0px;
     background: radial-gradient(150% 80% at 10% 30%,
-    #8FBD4E 1%, #8FBD4E 25%, #4C622D 100%)
+    #41ae4f 1%, #2b7735 25%,#19441f 100%);
 }
 
 main {
@@ -14,7 +14,7 @@ main {
 /* Título da Página */
 
 .guia {
-    color: #2E2E2E;
+    color: white;
     font-family: Roboto;
     font-size: 12px;
     font-style: normal;
@@ -23,6 +23,10 @@ main {
 
     margin-left: 83px;
     margin-top: 19px;
+}
+
+.link {
+    color: white;
 }
 
 .título {

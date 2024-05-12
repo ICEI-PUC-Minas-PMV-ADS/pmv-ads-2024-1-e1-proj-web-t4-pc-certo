@@ -4,8 +4,8 @@ body{
     margin: 0px;
     min-height: 100vh;
     min-width: 100%;
-    background: radial-gradient(160% 90% at 10% 30%,
-    #8FBD4E 1%, #8FBD4E 25%, #45622d 100%);
+    background: radial-gradient(150% 80% at 10% 30%,
+    #41ae4f 1%, #2b7735 25%,#19441f 100%);
 
     display: flex;
     flex-direction: column;
