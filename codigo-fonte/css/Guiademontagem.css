@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background: radial-gradient(150% 80% at 10% 30%,
-    #8FBD4E 1%, #8FBD4E 25%, #4C622D 100%)
+            #8FBD4E 1%, #8FBD4E 25%, #4C622D 100%)
 }
+
 .wrapper {
-font-family: roboto;
+    font-family: roboto;
 }
 
 header {
@@ -32,14 +34,11 @@ main {
 
 .titdesc {
     margin-top: 10px;
-    color: #2e2e2e;
+    color: white;
 }
 
 .titlinha h1 {
-    text-decoration: underline;
-    text-decoration-color: #8ECD36;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 7px;
+    color: white;
     font-size: 40px;
 }
 
@@ -171,7 +170,7 @@ main {
 
 .btns .nxt:hover,
 .btns .prev:hover {
-    background-color: #8ECD36;
+    background-color: #31833c;
 }
 
 .btns .nxt:active,
@@ -450,7 +449,7 @@ main {
 
 .nxtPassos:hover,
 .prevPassos:hover {
-    background-color: #8ECD36;
+    background-color: #31833c;
 }
 
 .nxtPassos:active,
