@@ -4,7 +4,6 @@ var navbar = document.querySelector('.botoescabecalho');
 
 
 sideBtn.addEventListener('click', function () {
-    togglenavbar = !togglenavbar;
     if (togglenavbar == false) {
         navbar.style.right = "0";
 
@@ -13,4 +12,5 @@ sideBtn.addEventListener('click', function () {
         navbar.style.right = "100vw";
 
     }
+    togglenavbar = !togglenavbar;
 })
