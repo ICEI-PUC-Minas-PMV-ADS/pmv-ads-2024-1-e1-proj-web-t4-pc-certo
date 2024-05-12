@@ -30,6 +30,7 @@ RF-08: A aplicação deve permitir o login de usuários para o uso do fórum.
 
 #### Instruções de acesso
 
+<hr>
 
 ### Página de Guia de Escolha e Montagem (RF-14)
 
