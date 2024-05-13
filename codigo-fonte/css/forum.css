@@ -282,9 +282,8 @@ h2{
 .topico {
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    flex-grow: 1;
     max-height: fit-content;
-    max-width: 1500px;
+    width: auto;
     border-radius: 10px;
 
     display: flex;
