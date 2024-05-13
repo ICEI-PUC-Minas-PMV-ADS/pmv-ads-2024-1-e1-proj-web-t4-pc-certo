@@ -3,7 +3,7 @@ body {
     padding: 0px;
     margin: 0px;
     background: radial-gradient(150% 80% at 10% 30%,
-    #41ae4f 1%, #2b7735 25%,#19441f 100%);
+            #41ae4f 1%, #2b7735 25%, #19441f 100%);
 }
 
 main {
@@ -17,11 +17,9 @@ main {
     color: white;
     font-family: Roboto;
     font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 
-    margin-left: 83px;
+
+    margin-left: 4.5%;
     margin-top: 19px;
 }
 
@@ -35,23 +33,20 @@ main {
     font-size: 40px;
     line-height: normal;
 
-    margin-top: 1%;
-    margin-bottom: 0px;
+    margin: 0 0 0 4.5%;
     width: 100%;
-    text-align: center;
+    text-align: left;
 }
 
 .subtitulo {
     color: #ffffffe7;
     font-family: Roboto;
     font-size: 28px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-weight: 50;
 
-    margin: 0px auto;
+    margin: 0.2% 0 0 4.5%;
     width: 100%;
-    text-align: center;
+    text-align: left;
 }
 
 /* Escolha principal de predefinição de perfil */
@@ -86,7 +81,7 @@ main {
 
 .active {
     transform: scale(1.1);
-    background-color: #8ECD36;
+    background-color: 41ae4f;
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
 }
 
@@ -124,9 +119,7 @@ main {
     text-align: center;
     font-family: Roboto;
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-weight: lighter;
 
     justify-content: stretch;
 
@@ -142,13 +135,11 @@ main {
     color: #ffffffe7;
     font-family: Roboto;
     font-size: 28px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-weight: lighter;
 
-    margin: 50px 0;
+    margin: 3% 0 2% 4.5%;
     width: 100%;
-   justify-content: center;
+    text-align: left;
 }
 
 /* Orçamento jogos */
@@ -208,9 +199,10 @@ main {
 
 .ativo {
     transform: scale(1.1);
-    background-color: #8ECD36;
+    background-color: 41ae4f;
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
 }
+
 .btnOrcamento:hover {
     transform: scale(1.1);
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
@@ -232,7 +224,7 @@ main {
     font-size: 16px;
     font-family: Roboto;
 
-    margin: 10px 15px;
+    margin: 10px 40px;
 }
 
 .precoMedio {
@@ -254,7 +246,7 @@ main {
 
     margin: 40px 20%;
     padding: 0px 10px;
-    height: 15%;
+    height: 10%;
 
     background-color: #2E2E2E;
     border-radius: 25px;
@@ -269,7 +261,7 @@ main {
 
     margin: 40px 20%;
     padding: 0px 10px;
-    height: 15%;
+    height: 10%;
 
     background-color: #2E2E2E;
     border-radius: 25px;
@@ -284,7 +276,7 @@ main {
 
     margin: 40px 20%;
     padding: 0px 10px;
-    height: 15%;
+    height: 10%;
 
     background-color: #2E2E2E;
     border-radius: 25px;
@@ -320,16 +312,19 @@ main {
 
 .ativado {
     transform: scale(1.05);
-    background-color: #8ECD36;
+    background-color: 41ae4f;
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
 }
+
 .btnPrice:hover {
-    background-color: #8ECD36;
+    background-color: 41ae4f;
     transform: scale(1.05)
 }
 
 /* botão avançar */
-#avancar, #avancar1, #avancar2 {
+#avancar,
+#avancar1,
+#avancar2 {
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -349,12 +344,12 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #8ECD36;
+    background-color: 41ae4f;
     border: none;
     border-radius: 25px;
 
-    width: 40%;
-    height: 40%;
+    width: 35%;
+    height: 35%;
 
     cursor: pointer;
     user-select: none;
@@ -367,10 +362,12 @@ main {
         transform: scale(1);
         opacity: 1;
     }
+
     50% {
         transform: scale(0.8);
         opacity: 1;
     }
+
     to {
         transform: scale(1);
         opacity: 1;
