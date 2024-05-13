@@ -29,7 +29,7 @@ As telas do sistema apresentam uma estrutura comum que é apresentada na figura 
 <p>A Página inicial apresenta o botão principal para o processo de montagem do PC, além de acesso ao fórum e guias com dicas de como escolher componentes</p>
 
 <figure>
- <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E2-pagInicial.jpg"
+ <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E2-Paginainicial.jpg"
   <figcaption>Figura 3 - Página Inicial
 </figure>
 <hr>
@@ -38,7 +38,7 @@ As telas do sistema apresentam uma estrutura comum que é apresentada na figura 
 <p>Esta página apresenta uma breve pesquisa para saber as prioridades do usuário ao montar um PC</p>
 
 <figure>
- <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E2-pagMontarPC.jpg"
+ <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E2-Montarpc.jpg"
   <figcaption>Figura 4 - Montar PC
 </figure>
 <hr>
@@ -47,7 +47,7 @@ As telas do sistema apresentam uma estrutura comum que é apresentada na figura 
 <p>A página escolha de componentes permitirá o usuário a saber mais sobre a função exercida por cada componente e mostrará opções que atendem a sua necessidade</p>
 
 <figure>
- <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E2-pagEscolhadecomp.jpg"
+ <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E2-Escolha.jpg"
   <figcaption>Figura 5 - Escolha de Componentes
 </figure>
 <hr>
@@ -56,7 +56,7 @@ As telas do sistema apresentam uma estrutura comum que é apresentada na figura 
 <p>Esta página resume todas as escolhas do usuário e indica o melhor lugar para comprar por meio de links direto para loja</p>
 
 <figure>
- <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E2-pagResumodecomp.jpg"
+ <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E2-Resumo.jpg"
   <figcaption>Figura 6 - Resumo dos Componentes
 </figure>
 <hr>
@@ -65,7 +65,7 @@ As telas do sistema apresentam uma estrutura comum que é apresentada na figura 
 <p>Esta página fornece guias específicos para escolha de cada componente de um computador</p>
 
 <figure>
- <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E2-pagGuia.jpg"
+ <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E2-Guia.jpg"
   <figcaption>Figura 7 - Guia de Escolha de Peças
 </figure>
 <hr>
@@ -83,7 +83,7 @@ As telas do sistema apresentam uma estrutura comum que é apresentada na figura 
 <p>A tela de Login apresenta campos para a inserção do usuário e da senha.</p>
 
 <figure>
- <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E2-pagLogin.jpg"
+ <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E2-Login.jpg"
   <figcaption>Figura 9 - Página de Login
 </figure>
 <hr>
@@ -92,7 +92,7 @@ As telas do sistema apresentam uma estrutura comum que é apresentada na figura 
 <p>A tela de cadastro apresenta os seguintes campos para a inserção das informações pessoais do usuário: Email, usuário, senha e confirmação de senha</p>
 
 <figure>
- <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E2-pagCadastro.jpg"
+ <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E2-Cadastro.jpg"
   <figcaption>Figura 10 - Página de Cadastro
 </figure>
 <hr>
