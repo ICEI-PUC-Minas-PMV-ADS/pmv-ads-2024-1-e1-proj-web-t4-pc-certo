@@ -8,7 +8,7 @@ O acesso a página de login poderá ser feito através da opção do menu de nav
 
 Exemplo da página de login:
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E3-pagLogin.jpg">
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E3-pagLogin.png">
 
 #### Requisito atendido
 
@@ -40,7 +40,7 @@ O acesso a página Guia poderá ser feito através da opção do menu de navega�
 
 Exemplo da página de Guia:
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E3-pagGuia.png">
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E3-pagGuias.png">
 
 #### Requisito atendido
 
@@ -103,7 +103,7 @@ O acesso a página de cadastro poderá ser feito através do link "Cadastre-se" 
 
 Exemplo da página de login:
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E3-pagLogin.jpg">
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E3-pagCadastro.png">
 
 #### Requisito atendido
 
