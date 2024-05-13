@@ -4,7 +4,7 @@ const btncardElList = document.querySelectorAll('.btncard');
 
 btncardElList.forEach(btnCardEl => {
     btnCardEl.addEventListener('click', () => {
-        window.scroll({top: innerHeight, behavior: "smooth"});
+        window.scroll({ top: innerHeight, behavior: "smooth" });
         document.querySelector('.active')?.classList.remove('active');
         document.querySelector('.ativado')?.classList.remove('ativado');
         btnCardEl.classList.add('active');
@@ -46,7 +46,7 @@ btncardElList[2].addEventListener('click', () => {
     document.getElementById('PriceMed').style.display = "none";
     document.getElementById('PriceMax').style.display = "none";
     document.getElementById('avancar').style.display = "none";
-    document.getElementById('avancar1').style.display = "none"; 
+    document.getElementById('avancar1').style.display = "none";
     document.getElementById('avancar2').style.display = "none";
 })
 
@@ -55,7 +55,6 @@ const btnOrcamentoElList = document.querySelectorAll('.btnOrcamento');
 
 btnOrcamentoElList.forEach(btnOrcamentoEl => {
     btnOrcamentoEl.addEventListener('click', () => {
-        window.scrollTo(0, 1000)
         document.querySelector('.ativo')?.classList.remove('ativo');
         btnOrcamentoEl.classList.add('ativo');
     });
@@ -66,6 +65,8 @@ btnOrcamentoElList[0].addEventListener('click', () => {
     document.getElementById('PriceMed').style.display = "none";
     document.getElementById('PriceMax').style.display = "none";
     document.getElementById('avancar').style.display = "none";
+    document.getElementById('avancar1').style.display = "none";
+    document.getElementById('avancar2').style.display = "none";
 })
 
 btnOrcamentoElList[1].addEventListener('click', () => {
@@ -73,6 +74,8 @@ btnOrcamentoElList[1].addEventListener('click', () => {
     document.getElementById('PriceMed').style.display = "flex";
     document.getElementById('PriceMax').style.display = "none";
     document.getElementById('avancar').style.display = "none";
+    document.getElementById('avancar1').style.display = "none";
+    document.getElementById('avancar2').style.display = "none";
 })
 
 btnOrcamentoElList[2].addEventListener('click', () => {
@@ -80,6 +83,8 @@ btnOrcamentoElList[2].addEventListener('click', () => {
     document.getElementById('PriceMed').style.display = "none";
     document.getElementById('PriceMax').style.display = "flex";
     document.getElementById('avancar').style.display = "none";
+    document.getElementById('avancar1').style.display = "none";
+    document.getElementById('avancar2').style.display = "none";
 })
 // caso a escolha seja profissional
 btnOrcamentoElList[3].addEventListener('click', () => {
@@ -87,6 +92,8 @@ btnOrcamentoElList[3].addEventListener('click', () => {
     document.getElementById('PriceMed').style.display = "none";
     document.getElementById('PriceMax').style.display = "none";
     document.getElementById('avancar').style.display = "none";
+    document.getElementById('avancar1').style.display = "none";
+    document.getElementById('avancar2').style.display = "none";
 })
 
 btnOrcamentoElList[4].addEventListener('click', () => {
@@ -94,6 +101,8 @@ btnOrcamentoElList[4].addEventListener('click', () => {
     document.getElementById('PriceMed').style.display = "flex";
     document.getElementById('PriceMax').style.display = "none";
     document.getElementById('avancar').style.display = "none";
+    document.getElementById('avancar1').style.display = "none";
+    document.getElementById('avancar2').style.display = "none";
 })
 
 btnOrcamentoElList[5].addEventListener('click', () => {
@@ -101,6 +110,8 @@ btnOrcamentoElList[5].addEventListener('click', () => {
     document.getElementById('PriceMed').style.display = "none";
     document.getElementById('PriceMax').style.display = "flex";
     document.getElementById('avancar').style.display = "none";
+    document.getElementById('avancar1').style.display = "none";
+    document.getElementById('avancar2').style.display = "none";
 })
 // caso a escolha seja casual
 btnOrcamentoElList[6].addEventListener('click', () => {
@@ -108,6 +119,8 @@ btnOrcamentoElList[6].addEventListener('click', () => {
     document.getElementById('PriceMed').style.display = "none";
     document.getElementById('PriceMax').style.display = "none";
     document.getElementById('avancar').style.display = "none";
+    document.getElementById('avancar1').style.display = "none";
+    document.getElementById('avancar2').style.display = "none";
 })
 
 btnOrcamentoElList[7].addEventListener('click', () => {
@@ -115,6 +128,8 @@ btnOrcamentoElList[7].addEventListener('click', () => {
     document.getElementById('PriceMed').style.display = "flex";
     document.getElementById('PriceMax').style.display = "none";
     document.getElementById('avancar').style.display = "none";
+    document.getElementById('avancar1').style.display = "none";
+    document.getElementById('avancar2').style.display = "none";
 })
 
 btnOrcamentoElList[8].addEventListener('click', () => {
@@ -122,6 +137,8 @@ btnOrcamentoElList[8].addEventListener('click', () => {
     document.getElementById('PriceMed').style.display = "none";
     document.getElementById('PriceMax').style.display = "flex";
     document.getElementById('avancar').style.display = "none";
+    document.getElementById('avancar1').style.display = "none";
+    document.getElementById('avancar2').style.display = "none";
 })
 
 // Botão de preço
@@ -130,7 +147,7 @@ const btnPriceElList = document.querySelectorAll('.btnPrice');
 btnPriceElList.forEach(btnPriceEl => {
     btnPriceEl.addEventListener('click', () => {
         document.querySelector('.ativado')?.classList.remove('ativado');
-        btnPriceEl.classList.add('ativado');    
+        btnPriceEl.classList.add('ativado');
     })
 })
 
