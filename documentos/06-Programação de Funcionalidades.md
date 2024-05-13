@@ -92,3 +92,35 @@ RF-11: A aplicação deve conter um fórum da comunidade.
 
 
 #### Instruções de acesso
+
+<hr>
+
+### Página de Login (RF-08)
+
+Responsável: Pedro Machado
+
+O acesso a página de cadastro poderá ser feito através do link "Cadastre-se" na página de login. As estruturas de dados foram baseadas em HTML, CSS e JS.
+
+Exemplo da página de login:
+
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E3-pagLogin.jpg">
+
+#### Requisito atendido
+
+RF-08: A aplicação deve permitir o login de usuários para o uso do fórum.
+
+
+#### Artefatos da funcionalidade
+
+●Login.html
+
+●Login.css
+
+●Login.js
+
+#### Estrutura de Dados
+
+[Login.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/codigo-fonte/Login.html)
+
+
+#### Instruções de acesso
