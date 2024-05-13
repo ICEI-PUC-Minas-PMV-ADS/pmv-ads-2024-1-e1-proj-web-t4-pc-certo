@@ -30,6 +30,10 @@ RF-07: A aplicação deve permitir o cadastro de usuários para o uso do fórum.
 
 #### Instruções de acesso
 
+Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/codigo-fonte/Paginainicial.html
+
+Ao clicar em “Fazer login” no canto superior direito da tela, o acesso a página de cadastro poderá ser feito através do link "Cadastre-se" na janela de login.
+
 <hr>
 
 ### Página de Login (RF-08)
@@ -61,6 +65,10 @@ RF-08: A aplicação deve permitir o login de usuários para o uso do fórum.
 
 
 #### Instruções de acesso
+
+Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/codigo-fonte/Paginainicial.html
+
+Ao clicar em “Fazer login” no canto superior direito da tela, terá acesso a página de Login.
 
 <hr>
 
@@ -94,6 +102,10 @@ RF-14: A aplicação deve fornecer um guia para escolha de peças e como realiza
 
 #### Instruções de acesso
 
+Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/codigo-fonte/Paginainicial.html
+
+Ao clicar em “Guia” no menu de navegação, terá acesso a página Guia.
+
 <hr>
 
 ### Página do Forum da Comunidade (RF-11)
@@ -102,7 +114,7 @@ Responsável: Lucas Gabriel
 
 O acesso a página do fórum poderá ser feito através da opção do menu de navegação “Fórum”. As estruturas de dados foram baseadas em HTML, CSS e JS.
 
-Exemplo da página de Guia:
+Exemplo da página Fórum:
 
 <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E3-pagForumDaComunidade.png">
 
@@ -125,13 +137,17 @@ RF-11: A aplicação deve conter um fórum da comunidade.
 
 #### Instruções de acesso
 
+Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/codigo-fonte/Paginainicial.html
+
+Ao clicar em “Fórum” no menu de navegação, terá acesso a página Fórum.
+
 <hr>
 
 ### Página de Montar PC (RF-01)
 
 Responsável: Luan Bezerra
 
-O acesso a página Montar PC poderá ser feito através do botão iniciar na Página inicial, ou pela opção no menu de navegação "Montar PC". As estruturas de dados foram baseadas em HTML, CSS e JS.
+O acesso a página Montar PC poderá ser feito através do botão iniciar na Página inicial ou pela opção no menu de navegação "Montar PC". As estruturas de dados foram baseadas em HTML, CSS e JS.
 
 Exemplo da página Montar PC:
 
@@ -157,3 +173,7 @@ RF-01: A aplicação deve solicitar ao usuário qual será finalidade de uso das
 
 #### Instruções de acesso
 
+Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/codigo-fonte/Paginainicial.html
+
+Ao clicar no botão "Iniciar" na página inicial, terá acesso a página Montar PC.
+Ou também, ao clicar em "Montar PC" através do menu de navegação, terá acesso a página Montar PC.
