@@ -35,10 +35,6 @@ body {
     font-size: x-large;
 }
 
-.titulopagina {
-    margin: 20px 40px;
-}
-
 /* RESUMO DOS COMPONENTES */
 .resumoComponente {
     background-color: #2e2e2e;
@@ -77,16 +73,19 @@ body {
 .buscaFiltro {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 
-    min-width: fit-content;
+    width: 100%;
+    ;
     justify-content: space-evenly;
     align-items: center;
 
     border-radius: 20px;
     background-color: #2e2e2e;
-    padding: 10px;
+    padding: 10px 0;
 
     .buscar {
+        position: relative;
         display: flex;
         height: 30px;
 
@@ -102,8 +101,8 @@ body {
             border: none;
             cursor: pointer;
             background-color: transparent;
-            position: relative;
-            left: -30px;
+            position: absolute;
+            right: 0;
 
             img {
 
@@ -116,6 +115,7 @@ body {
         display: flex;
         height: 30px;
         gap: 15px;
+        margin: 5px 0;
 
         select,
         option {
@@ -127,21 +127,115 @@ body {
 }
 
 /* ESCOLHA DE COMP */
-.opcoesComponentes{
+.opcoesComponentes {
+    margin: 10px 0;
     width: 100%;
-    height: fit-content;
+    height: 400px;
+    overflow: auto;
 
-    background-color: red;
-
-    .opcaoComponente{
+    .opcaoComponente {
         display: flex;
+        background-color: #2e2e2e;
+        border-radius: 20px;
+        padding: 10px;
+        justify-content: space-between;
+        margin: 10px 0;
 
-        .nomePreco{
+        .nomePreco {
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            align-self: center;
+            text-align: center;
 
+
+            h2 {
+                font-size: medium;
+                color: white;
+            }
         }
-        .imagemComponente{
 
+        .imgComponente {
+            width: 25%;
         }
-        
+
+        .imagemComponente {
+            width: 100%;
+        }
+
+        .alertas {
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            gap: 5px;
+            text-align: center;
+
+            .alertaDesempenho {
+                border-radius: 20px;
+                background-color: green;
+                color: white;
+                width: 100%;
+                padding: 2px;
+            }
+
+            .alertaOrcamento {
+                border-radius: 20px;
+                width: 100%;
+                padding: 2px;
+                background-color: orange;
+            }
+        }
+    }
+}
+
+/* BOTAO FIXO ORÇAMENTO TOTAL // AVANCAR */
+.orcamentoTotaleAvancar {
+    width: 90%;
+    height: 90px;
+    margin: 10px 0;
+    border-radius: 20px;
+    align-self: center;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .orcamentoTotal {
+        font-weight: bold;
+        font-size: 15px;
+        margin: 10px;
+        border-radius: 20px;
+
+        .orcamento {
+            display: flex;
+            padding: 8px;
+            border-radius: 20px 20px 0 0;
+            background-color: #41ae4f;
+        }
+
+        .totalparcial {
+            display: flex;
+            padding: 8px;
+            border-radius: 0 0 20px 20px;
+            background-color: #2e2e2e;
+            color: white;
+        }
+    }
+
+    .proxComponente {
+        border-radius: 20px;
+        border: none;
+        margin: 10px;
+        width: 150px;
+        height: 68px;
+        background-color: #41ae4f;
+        cursor: pointer;
+
+        font-size: 20px;
+    }
+
+    .proxComponente:hover {
+        background-color: #31833c;
+        transition: 0.2s ease-in-out;
     }
 }
