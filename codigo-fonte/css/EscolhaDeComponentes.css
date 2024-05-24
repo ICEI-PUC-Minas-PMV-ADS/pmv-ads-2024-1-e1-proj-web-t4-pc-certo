@@ -146,7 +146,6 @@ body {
             flex-direction: column;
             justify-self: center;
             align-self: center;
-            text-align: center;
 
 
             h2 {
@@ -205,12 +204,15 @@ body {
         font-size: 15px;
         margin: 10px;
         border-radius: 20px;
+        width: 250px;
+
 
         .orcamento {
             display: flex;
             padding: 8px;
             border-radius: 20px 20px 0 0;
             background-color: #41ae4f;
+            justify-content: space-around;
         }
 
         .totalparcial {
@@ -219,6 +221,8 @@ body {
             border-radius: 0 0 20px 20px;
             background-color: #2e2e2e;
             color: white;
+            justify-content: space-around;
+
         }
     }
 
