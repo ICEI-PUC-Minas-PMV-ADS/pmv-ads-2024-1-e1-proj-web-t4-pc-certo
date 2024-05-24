@@ -1,91 +1,43 @@
-//ABRIR POP UP NOVO TOPICO
+// DOCUMENT GET
 
-document.getElementById("novoTpc").addEventListener("click", function () {
-    document.getElementById("pop-up").style.display = "flex";
-});
+document.getElementById("novoTpc");
+document.getElementById("popUp");
+document.getElementById("btFechar");
+document.getElementById("textoPub");
+document.getElementById("titPub");
+document.getElementById("enviarPub");
 
-// FECHAR POP UP
+// FUNÇÃO ABRIR E FECHAR POP UP NOVO TOPICO
 
-document.getElementById("botaoFechar").addEventListener("click", function() {
-    document.getElementById("pop-up").style.display = "none";
-  })
+function abrirPU () {
+    popUp.style.display= "flex";
+    titPub.focus();
+};
 
-  // FECHAR AO CLICAR FORA
+function fecharPU () {
+    popUp.style.display= "none";
+};
 
-  document.getElementById("botaoFechar").addEventListener("click", function() {
-    document.getElementById("pop-up").style.display = "none";
-  })
+novoTpc.onclick = abrirPU;
+btFechar.onclick = fecharPU;
 
+// FUNÇÃO PUBLICAR
 
-// PUBLICAR
+    // VERIFICA CAMPOS VAZIOS
 
-// ARRAY DE ARMAZEM DOS TOPICOS
+var desativaPub = true
 
-let topicos = [];
-
-function publicarTopico() {
-
-    let titulo = document.getElementById("postTitle").value;
-    let conteudo = document.getElementById("textoPub").value;
-
-    // VERIFICAR CAMPOS PREENCHIDOS
-
-    if (titulo.trim() !== '' && conteudo.trim() !== '') {
-
-        // CRIAR OBJETO
-
-        let topico = {
-            titulo: titulo,
-            conteudo: conteudo
-        };
-
-        // ADICIONAR TOPICO AO ARRAY
-
-        topicos.push(topico);
-
-        // LIMPAR CAMBOS DO FORMULARIO
-
-        document.getElementById("postTitle").value = '';
-        document.getElementById("textoPub").value = '';
-
-        // FECHAR JANELA
-        
-        document.getElementById("pop-up").style.display = "none";      
-
-        // ATUALIZAR EXIBIÇÃO
-
-        exibirTopicos();
-    } else {
-        alert("Por favor, preencha todos os campos antes de enviar.");
-    }
+function validaDados () {
+   if (textoPub.value == "" || titPub.value == ""){
+    desativaPub = true;
+   } else {
+    desativaPub = false;
+   }
+   function desativaPub
 }
 
-// EXIBIR TOPICOS
+onkeyup = validaDados;
 
-function exibirTopicos() {
-  let contentDiv = document.querySelector(".content");
-  contentDiv.innerHTML = '';
+    // COLETA DADOS
 
-  // JUNTAR ITENS DOS TOPICOS DO ARRAY AO HTML
-
-  topicos.forEach(function(topico) {
-      let topicoDiv = document.createElement("div");
-      topicoDiv.classList.add("topico"); 
-
-
-      let tituloElement = document.createElement("h2");
-      tituloElement.textContent = topico.titulo;
-
-      let conteudoElement = document.createElement("p");
-      conteudoElement.textContent = topico.conteudo;
-
-      topicoDiv.appendChild(tituloElement);
-      topicoDiv.appendChild(conteudoElement);
-
-      contentDiv.appendChild(topicoDiv);
-  });
-}
-
-// ENVIAR PUBLICAÇAÕ COM EVENT LISTENET
-
-document.getElementById("enviarPub").addEventListener("click", publicarTopico);
+    
