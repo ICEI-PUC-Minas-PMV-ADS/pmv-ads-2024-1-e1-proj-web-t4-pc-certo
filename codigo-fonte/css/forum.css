@@ -139,6 +139,11 @@ h2{
     flex-grow: 1;
 }
 
+h3{
+    margin: 0 0 5px 0;
+    font-weight: 500;
+}
+
 #titPub{
     border: none;
     outline: none;
@@ -169,18 +174,22 @@ h2{
     outline: none;
     background-color: gainsboro;
     border-radius: 10px;
+
     display: inline;
     padding: 20px;
     font-size: 20px;
     font-weight: bold;
     transition: 0.3s ease-in-out;
+    cursor: not-allowed;
+
 }
 
-#enviarPub:hover{
+/* #enviarPub:hover{
     cursor: pointer;
     background-color: #41ae4f;
     color: #fff;
 }
+*/
 
 .fechar{
     float: right;
