@@ -103,7 +103,7 @@ h1{
 /* Novo Tópico PopUp */
 
 #popUp{
-    display: flex;
+    display: none;
     position: fixed;
     top: 0%;
     left: 0%;

@@ -13,10 +13,33 @@ document.getElementById("h2");
 function abrirPU () {
     popUp.style.display= "flex";
     titPub.focus();
+
+    textoPub.value = "";
+    titPub.value = "";
+    
+    enviarPub.onmouseenter = function () {
+        enviarPub.style.backgroundColor= "";
+        enviarPub.style.color= "";
+}
+    enviarPub.onmouseleave = function () {
+        enviarPub.style.backgroundColor= "";
+        enviarPub.style.color= "";
 };
+}
 
 function fecharPU () {
+
+
+    if (textoPub.value !== "" || titPub.value !== ""){
+        const confirmar = confirm("Descartar anotações e sair?");
+        if (!confirmar) {
+            return;
+        }
+    }
     popUp.style.display= "none";
+
+    
+
 };
 
 novoTpc.onclick = abrirPU;
@@ -25,42 +48,47 @@ btFechar.onclick = fecharPU;
 // FUNÇÃO PUBLICAR
 
     //FUNCOES EXECUTADAS AO ABRIR
-
-enviarPub.onmouseenter = function () {enviarPub.style.backgroundColor= "#gainsboro";}
-enviarPub.onmouseleave = function () {enviarPub.style.backgroundColor= "gainsboro";}
+        //HOVER
+        enviarPub.onmouseenter = function () {
+            enviarPub.style.backgroundColor= "#gainsboro";
+            enviarPub.style.color= "black";
+}
+        enviarPub.onmouseleave = function () {
+            enviarPub.style.backgroundColor= "gainsboro";
+            enviarPub.style.color= "black";
+}
+        //LIMPAR AREAS
+        textoPub.value = "";
+        titPub.value = "";
 
 
     //DESATIVA BOTAO DE PUBLICAR
 
-        
-
 function desativaPub () {
     enviarPub.style.cursor= "not-allowed"
     enviarPub.onclick= function () {alert("Preencha todos os campos antes de publicar!")}
-
+        // HOVER PARA DESATIVO
     enviarPub.onmouseenter = function () {enviarPub.style.backgroundColor= "";}
     enviarPub.onmouseleave = function () {enviarPub.style.backgroundColor= "";}
 };
-
-    // HOVER PARA DESATIVO
-
-
 
     //ATIVA BOTAO DE PUBLICAR
 
 function ativaPub () {
     enviarPub.style.cursor= "pointer";
     enviarPub.style.backgroundColor= "gainsboro";
-    enviarPub.onclick= fecharPU;
+    enviarPub.onclick= "";
     enviarPub.title= "Clique para fazer sua publicação!";
-
-    enviarPub.onmouseenter = function () {enviarPub.style.backgroundColor= "#41ae4f";}
-    enviarPub.onmouseleave = function () {enviarPub.style.backgroundColor= "gainsboro";}
+        //HOVER PARA ATIVO
+    enviarPub.onmouseenter = function () {
+        enviarPub.style.backgroundColor= "#41ae4f";
+        enviarPub.style.color= "white";
+    }
+    enviarPub.onmouseleave = function () {
+        enviarPub.style.backgroundColor= "gainsboro";
+        enviarPub.style.color= "black";
+    }
 };
-
-    //HOVER PARA ATIVO
-
-
 
     //VERIFICA CAMPOS VAZIOS E PREENCHIDOS
 
@@ -72,6 +100,6 @@ function validaDados () {
    }
 }
 
-onkeyup = validaDados;
+onkeyup = validaDados
 
-    // COLETA DADOS
+    //COLETA DADOS
