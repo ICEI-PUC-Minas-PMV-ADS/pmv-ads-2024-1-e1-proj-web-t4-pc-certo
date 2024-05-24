@@ -1,5 +1,5 @@
 body {
-    font-family: Bahnschrift, Arial, sans-serif;
+    font-family: roboto;
     padding: 0px;
     margin: 0px;
     background: radial-gradient(150% 80% at 10% 30%,
@@ -8,373 +8,82 @@ body {
 
 main {
     min-height: 100vh;
-
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Título da Página */
-
-.guia {
-    color: white;
-    font-family: Roboto;
-    font-size: 12px;
-
-
-    margin-left: 4.5%;
-    margin-top: 19px;
+/* TITULO DAS SEÇÕES DA PAG */
+.titulopagina {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px;
 }
 
-.link {
+.titdesc {
+    margin-top: 10px;
     color: white;
 }
 
-.título {
-    color: #FFF;
-    font-family: Roboto;
-    font-size: 40px;
-    line-height: normal;
-
-    margin: 0 0 0 4.5%;
-    width: 100%;
-    text-align: left;
+.titlinha h1 {
+    color: white;
+    font-size: x-large;
 }
 
-.subtitulo {
-    color: #ffffffe7;
-    font-family: Roboto;
-    font-size: 28px;
-    font-weight: 50;
-
-    margin: 0.2% 0 0 4.5%;
-    width: 100%;
-    text-align: left;
+.titulopagina {
+    margin: 20px 40px;
 }
 
-/* Escolha principal de predefinição de perfil */
+
+/* Passo 1 */
 #passo1 {
+    width: 100%;
     display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: 80%;
     justify-items: center;
+    row-gap: 2%;
 
-    margin-right: 5%;
-    margin-left: 5%;
+    margin: 0px 15px
+
 }
 
-.btnCard {
+.btncard {
     display: grid;
-    grid-template-rows: auto;
+    grid-template-columns: 30% 70%;
 
-    background-color: #2E2E2E;
-    box-shadow: 0px 4px 10px #2E2E2E;
     border-radius: 25px;
-    border: none;
+    border: 1px solid #41AE4F;
+    background: #2E2E2E;
 
-    width: 80%;
-    height: 450px;
-    margin-top: 46px;
+    height: 100%;
+    width: 100%;
 
-    user-select: none;
-    cursor: pointer;
-
-    transition: 0.3s ease-in-out;
 }
-
-.active {
-    transform: scale(1.1);
-    background-color: 41ae4f;
-    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
-}
-
-.btnCard:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
-}
-
-/* Contéudo do Card */
-.imagem {
-    width: 180px;
-    height: 180px;
-    margin: 0px;
-
-    justify-self: center;
-    align-self: flex-end;
-
-    -webkit-user-drag: none;
+.btncard div {
+    width: 70%;
 }
 
 .opcoes {
+    display: flex;
+    flex-direction: column;
+
     color: #FFF;
     text-align: center;
-    font-family: Roboto;
-    font-size: 40px;
+    font-size: 20px;
 
-
-    margin: 0px;
-
-    align-self: center;
+    height: 20%;
 }
 
 .descricao {
-    color: #FFF;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 20px;
-    font-weight: lighter;
-
-    justify-content: stretch;
-
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-/* Escolha de predefinição de orçamento */
-
-#orcamento {
-    display: none;
-
-    color: #ffffffe7;
-    font-family: Roboto;
-    font-size: 28px;
-    font-weight: lighter;
-
-    margin: 3% 0 2% 4.5%;
-    width: 100%;
-    text-align: left;
-}
-
-/* Orçamento jogos */
-#jogosOrc {
-    display: none;
-    gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    justify-items: center;
-    align-items: center;
-
-    margin: 50px 5%
-}
-
-/* Orçamento Profissional */
-#profissionalOrc {
-    display: none;
-    gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    justify-items: center;
-    align-items: center;
-
-    margin: 50px 5%
-}
-
-/* Orçamento Casual */
-#casualOrc {
-    display: none;
-    gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    justify-items: center;
-    align-items: center;
-
-    margin: 50px 5%
-}
-
-/* Botão Orcamento */
-.btnOrcamento {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-
-    border: none;
-    background-color: #2E2E2E;
-    border-radius: 25px;
-    box-shadow: 0px 4px 4px #2e2e2e;
-
-    width: 80%;
-    height: 100%;
-    margin: 0px auto;
-
-    user-select: none;
-    cursor: pointer;
-
-    transition: 0.3s ease-in-out;
-}
-
-.ativo {
-    transform: scale(1.1);
-    background-color: 41ae4f;
-    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
-}
-
-.btnOrcamento:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
-}
-
-/* Conteúdo do botão orcamento */
-.orcamentoOpcao {
-    color: #FFF;
-    font-size: 30px;
-    font-family: Roboto;
-
-    margin-top: 20px;
-    margin-bottom: 10px;
-
-}
-
-.descricao2 {
-    color: #FFF;
-    font-size: 16px;
-    font-family: Roboto;
-
-    margin: 10px 40px;
-}
-
-.precoMedio {
-    font-size: 20px;
-    font-family: Roboto;
-    color: #FFF;
-
-    margin-bottom: 20px;
-    margin-top: 10px;
-}
-
-/* Escolha de preço base e avançar */
-
-#PriceMin {
-    display: none;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
 
-    margin: 40px 20%;
-    padding: 0px 10px;
-    height: 10%;
-
-    background-color: #2E2E2E;
-    border-radius: 25px;
-    box-shadow: 0px 4px 4px #2e2e2e;
+    height: 80%;
 }
 
-#PriceMed {
-    display: none;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    margin: 40px 20%;
-    padding: 0px 10px;
-    height: 10%;
-
-    background-color: #2E2E2E;
-    border-radius: 25px;
-    box-shadow: 0px 4px 4px #2e2e2e;
-}
-
-#PriceMax {
-    display: none;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    margin: 40px 20%;
-    padding: 0px 10px;
-    height: 10%;
-
-    background-color: #2E2E2E;
-    border-radius: 25px;
-    box-shadow: 0px 4px 4px #2e2e2e;
-}
-
-/* botão de cada preço */
-.btnPrice {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-
-    border: none;
-    background-color: #2E2E2E;
-    border-radius: 25px;
-
-    width: 25%;
-    margin: 0px 10px;
-
-    user-select: none;
-    cursor: pointer;
-
-    transition: 0.3s ease-in-out;
-}
-
-.btnPrice p {
-    font-family: Roboto;
-    color: #FFF;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.ativado {
-    transform: scale(1.05);
-    background-color: 41ae4f;
-    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
-}
-
-.btnPrice:hover {
-    background-color: 41ae4f;
-    transform: scale(1.05)
-}
-
-/* botão avançar */
-#avancar,
-#avancar1,
-#avancar2 {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    border: none;
-    background-color: #2E2E2E;
-    border-radius: 25px;
-
-    width: 25%;
-    margin: 0px auto;
-
-    user-select: none;
-}
-
-.btnAvancar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: 41ae4f;
-    border: none;
-    border-radius: 25px;
-
-    width: 35%;
-    height: 35%;
-
-    cursor: pointer;
-    user-select: none;
-
-    animation: animar 0.9s linear infinite;
-}
-
-@keyframes animar {
-    from {
-        transform: scale(1);
-        opacity: 1;
-    }
-
-    50% {
-        transform: scale(0.8);
-        opacity: 1;
-    }
-
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-.btnAvancar img {
-    width: 70%;
-    height: 70%;
+/* Imagems */
+.imagem {
+    width: 90px;
+    height: 90px;
+    margin: 0px;
 }

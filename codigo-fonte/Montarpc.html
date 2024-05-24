@@ -36,16 +36,16 @@
         <!-- Contéudo da página-->
         <main>
             <!-- Título da Página-->
-            <article>
-                <p class="guia"> <a href="http://PC-Certo.com.br" target="_self" class="link">Página Inicial</a> > Monte
-                    seu PC -
-                    Assistente</p>
-                <h1 class="título">Vamos começar a montar seu PC certo!</h1>
-                <h2 class="subtitulo">Qual seu objetivo principal com o novo PC?</h2>
-            </article>
+            <section>
+                <article class="titulopagina">
+                    <div class="titlinha">
+                        <h1>Escolha de Componentes</h1>
+                    </div>
+                    <p class="titdesc">Está na hora de começar!</p>
+                </article>
+            </section>
 
             <!-- Assistente-->
-            <div>
 
                 <!-- cards-->
                 <div id="passo1">
@@ -53,173 +53,35 @@
                     <!--Primeiro Card - JOGOS-->
                     <button class="btnCard">
                         <img class="imagem" src="img/controle.png">
-                        <h2 class="opcoes">JOGOS</h2>
-                        <p class="descricao">Para isso o PC deve possuir maior poder de processamento gráfico,
-                            uso de placa de vídeo dedicada, maior armazenamento e LED!</p>
+                        <div>
+                            <h2 class="opcoes">JOGOS</h2>
+                            <p class="descricao">Para isso o PC deve possuir maior poder de processamento gráfico,
+                                uso de placa de vídeo dedicada, maior armazenamento e LED!</p>
+                        </div>
                     </button>
+
 
                     <!--Segundo Card - PROFISSIONAL-->
                     <button class="btnCard">
                         <img class="imagem" src="img/profissional.png">
-                        <h2 class="opcoes">PROFISSIONAL</h2>
-                        <p class="descricao">Um sistema ideal para lidar com tarefas exigentes como edição de
-                            vídeos,
-                            renderização 3D e outras atividades de criação de conteúdo.</p>
+                        <div>
+                            <h2 class="opcoes">PROFISSIONAL</h2>
+                            <p class="descricao">Um sistema ideal para lidar com tarefas exigentes como edição de
+                                vídeos,
+                                renderização 3D e outras atividades de criação de conteúdo.</p>
+                        </div>
                     </button>
 
                     <!--Terceiro Card - CASUAL-->
                     <button class="btnCard">
                         <img class="imagem" src="img/casual.png">
-                        <h2 class="opcoes">CASUAL</h2>
-                        <p class="descricao">Um computador para atividades do dia a dia, como navegar na
-                            internet, assistir streaming, estudar e realizar tarefas básicas.</p>
+                        <div>
+                            <h2 class="opcoes">CASUAL</h2>
+                            <p class="descricao">Um computador para atividades do dia a dia, como navegar na
+                                internet, assistir streaming, estudar e realizar tarefas básicas.</p>
+                        </div>
                     </button>
 
-                </div>
-
-                <!-- Orcamento-->
-                <div>
-                    <h1 id="Orcamento">Vamos definir seu orçamento, escolha uma das opções:</h1>
-
-                    <!-- Orçamento de Jogos-->
-                    <div id="jogosOrc">
-                        <button class="btnOrcamento">
-                            <h3 class="orcamentoOpcao">Mínimo Recomendado</h3>
-                            <p class="descricao2">Desempenho mínimo para rodar jogos leves que não devem exigir tanto
-                                poder gráfico, tendo como alvo
-                                a seguinte performance em jogos: 1080p a 30fps</p>
-                            <p class="precoMedio">R$1.500,00 - R$2.500,00</p>
-                        </button>
-
-                        <button class="btnOrcamento">
-                            <h3 class="orcamentoOpcao">Recomendado</h3>
-                            <p class="descricao2">Recomendação para rodar jogos que exigem um pouco mais de poder
-                                gráfico, tendo
-                                como alvo a seguinte performance em jogos: 1080p a 60fps.</p>
-                            <p class="precoMedio">R$2.500,00 - R$4.000,00</p>
-                        </button>
-
-                        <button class="btnOrcamento">
-                            <h3 class="orcamentoOpcao">Alto Desempenho</h3>
-                            <p class="descricao2">Recomendação para rodar jogos no ultra que exigem o máximo de poder
-                                gráfico da sua máquina, como:
-                                Rodar Jogos em 1440p e 4k, 60fps com Ray-Tracing.</p>
-                            <p class="precoMedio">R$5.000,00 ou mais</p>
-                        </button>
-                    </div>
-
-                    <!-- Orçamento de Profissional-->
-                    <div id="profissionalOrc">
-                        <button class="btnOrcamento">
-                            <h3 class="orcamentoOpcao">Mínimo Recomendado</h3>
-                            <p class="descricao2">Seu PC atenderá os requisitos mínimos feitos pelas
-                                principais ferramentas de edição do mercado, por causa disso poderá apresentar problemas
-                                de
-                                renderização. Vamos priorizar a máquina para futuros upgrades.
-                            </p>
-                            <p class="precoMedio">R$1.500,00 - R$2.500,00</p>
-                        </button>
-
-                        <button class="btnOrcamento">
-                            <h3 class="orcamentoOpcao">Recomendado</h3>
-                            <p class="descricao2">Seu PC atenderá os requisitos recomendados feitos pelas
-                                principais ferramentas do mercado e também conseguirá realizar multi-tarefas. Os
-                                programas irão rodar de forma suave.
-                            </p>
-                            <p class="precoMedio">R$2.500,00 - R$4.000,00</p>
-                        </button>
-
-                        <button class="btnOrcamento">
-                            <h3 class="orcamentoOpcao">Alto Desempenho</h3>
-                            <p class="descricao2">Seu PC não só atenderá os requisitos recomendados feitos pelas
-                                principais ferramentas do mercado, como também possibilita ir ao limite
-                                dessas plataformas, trabalhar em diversas multi-tarefas e mais.</p>
-                            <p class="precoMedio">R$5.000,00 ou mais</p>
-                        </button>
-                    </div>
-
-                    <!-- Orçamento de Casual-->
-                    <div id="casualOrc">
-                        <button class="btnOrcamento">
-                            <h3 class="orcamentoOpcao">Mínimo Recomendado</h3>
-                            <p class="descricao2">Oferece um equilíbrio entre desempenho e economia para
-                                atividades cotidianas como navegar na internet, estudar e assistir a vídeos,
-                                sem comprometer o orçamento.</p>
-                            <p class="precoMedio">R$1.500,00 - R$2.500,00</p>
-                        </button>
-
-                        <button class="btnOrcamento">
-                            <h3 class="orcamentoOpcao">Recomendado</h3>
-                            <p class="descricao2">Proporciona uma configuração mais robusta e responsiva,
-                                ideal para multitarefa leve, edição básica de fotos e até mesmo alguns jogos casuais,
-                                com componentes de qualidade e desempenho aprimorados.</p>
-                            <p class="precoMedio">R$2.500,00 - R$4.000,00</p>
-                        </button>
-
-                        <button class="btnOrcamento">
-                            <h3 class="orcamentoOpcao">Alto Desempenho</h3>
-                            <p class="descricao2"> Oferece uma experiência excepcional em todas as tarefas,
-                                desde navegação ultrarrápida até multitarefa intensiva, edição de vídeos e jogos de alta
-                                qualidade,
-                                combinando poder de processamento, armazenamento rápido e gráficos avançados.</p>
-                            <p class="precoMedio">R$5.000,00 ou mais</p>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Defina o limite de preço e avance-->
-                <div id="passo3">
-                    <!-- Preços-->
-                    <div id="PriceMin">
-                        <button class="btnPrice">
-                            <p>R$1.500,00</p>
-                        </button>
-                        <button class="btnPrice">
-                            <p>R$2.000,00</p>
-                        </button>
-                        <button class="btnPrice">
-                            <p>R$2.500,00</p>
-                        </button>
-                        <div id="avancar">
-                            <a href="EscolhaDeComponentes.html" class="btnAvancar">
-                                <img src="img/pagGuia-nxtPrevBtn.png" alt="botaoAvancar">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div id="PriceMed">
-                        <button class="btnPrice">
-                            <p>R$2.500,00</p>
-                        </button>
-                        <button class="btnPrice">
-                            <p>R$3.000,00</p>
-                        </button>
-                        <button class="btnPrice">
-                            <p>R$4.000,00</p>
-                        </button>
-                        <div id="avancar1">
-                            <a href="EscolhaDeComponentes.html" class="btnAvancar">
-                                <img src="img/pagGuia-nxtPrevBtn.png" alt="botaoAvancar">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div id="PriceMax">
-                        <button class="btnPrice">
-                            <p>R$5.000,00</p>
-                        </button>
-                        <button class="btnPrice">
-                            <p>R$7.000,00</p>
-                        </button>
-                        <button class="btnPrice">
-                            <p>Capital Ilimitado</p>
-                        </button>
-                        <div id="avancar2">
-                            <a href="EscolhaDeComponentes.html" class="btnAvancar">
-                                <img src="img/pagGuia-nxtPrevBtn.png" alt="botaoAvancar">
-                            </a>
-                        </div>
-                    </div>
                 </div>
 
         </main>
