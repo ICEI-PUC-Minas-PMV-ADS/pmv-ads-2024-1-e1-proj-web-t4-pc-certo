@@ -25,6 +25,9 @@ function abrirPU () {
     enviarPub.onmouseleave = function () {
         enviarPub.style.backgroundColor= "";
         enviarPub.style.color= "";
+
+        txtCurto.textContent = "*O texto está muito curto!"
+        titCurto.textContent = "*O título está muito curto!"
 };
 }
 
@@ -43,7 +46,7 @@ function fecharPU () {
 novoTpc.onclick = abrirPU;
 btFechar.onclick = fecharPU;
 
-// FUNÇÃO PUBLICAR
+// FUNÇÃO DO BOTAO DE PUBLICAR
 
     //FUNCOES EXECUTADAS AO ABRIR
 
@@ -66,6 +69,7 @@ btFechar.onclick = fecharPU;
 function desativaPub () {
     enviarPub.style.cursor= "not-allowed"
     enviarPub.onclick= function () {alert("Preencha adequadamente todos os campos antes de publicar!")}
+
         // HOVER PARA DESATIVO
     enviarPub.onmouseenter = function () {enviarPub.style.backgroundColor= "";}
     enviarPub.onmouseleave = function () {enviarPub.style.backgroundColor= "";}
@@ -75,7 +79,7 @@ function desativaPub () {
 
 function ativaPub () {
     enviarPub.style.cursor= "pointer";
-    enviarPub.onclick= "";
+    enviarPub.onclick= publicar;
     enviarPub.title= "Clique para fazer sua publicação!";
     
         //HOVER PARA ATIVO
@@ -134,6 +138,31 @@ function validaDados () {
 
  }
 
-onkeyup = validaDados
 
-    //COLETA DADOS
+textoPub.oninput= validaDados;
+titPub.oninput= validaDados;
+
+    // FUNCAO PUBLICAR DE FATO    
+
+function publicar (){
+
+        //ENVIAR DADOS AO LOCAL STORAGE E FECHAR
+
+var Publicacao = {
+    titulo: titPub.value,
+    texto: textoPub.value
+};
+
+var nomeObjeto = "objeto_" + Date.now();
+
+var PublicacaoString = JSON.stringify(Publicacao);
+
+localStorage.setItem(nomeObjeto, PublicacaoString)
+
+popUp.style.display= "none";
+
+        // CRIAR NOVA ESTRUTURA
+
+}
+
+
