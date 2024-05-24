@@ -1,7 +1,10 @@
-body {
-    font-family: roboto;
+* {
     padding: 0px;
     margin: 0px;
+}
+
+body {
+    font-family: roboto;
     background: radial-gradient(150% 80% at 10% 30%,
             #41ae4f 1%, #2b7735 25%, #19441f 100%);
 }
@@ -44,7 +47,6 @@ main {
     row-gap: 2%;
 
     margin: 0px 15px
-
 }
 
 .btncard {
@@ -59,6 +61,7 @@ main {
     width: 100%;
 
 }
+
 .btncard div {
     width: 70%;
 }

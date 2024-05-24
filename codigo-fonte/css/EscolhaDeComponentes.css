@@ -1,7 +1,147 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-main{
+
+main {
     min-height: 85vh;
+}
+
+body {
+    font-family: roboto;
+    background: radial-gradient(150% 80% at 10% 30%,
+            #41ae4f 1%, #2b7735 25%, #19441f 100%);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+/*TITULO DAS SEÇÕES DA PAG*/
+.titulopagina {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px;
+}
+
+.titdesc {
+    margin-top: 10px;
+    color: white;
+}
+
+.titlinha h1 {
+    color: white;
+    font-size: x-large;
+}
+
+.titulopagina {
+    margin: 20px 40px;
+}
+
+/* RESUMO DOS COMPONENTES */
+.resumoComponente {
+    background-color: #2e2e2e;
+    height: fit-content;
+    width: 80%;
+    border-radius: 20px;
+
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 25px;
+
+    color: white;
+}
+
+/* DIVISAO P/ ESCOLHA */
+.divisaoh1 {
+    font-size: x-large;
+    color: white;
+    margin: 30px auto;
+}
+
+/* DIV QUE SEGURA BUSCA FILTRO E ESCOLHA */
+.escolhaComponentes {
+    width: 90%;
+    height: auto;
+
+    align-self: center;
+}
+
+/* BUSCA E FILTRO */
+.buscaFiltro {
+    display: flex;
+    flex-direction: row;
+
+    min-width: fit-content;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border-radius: 20px;
+    background-color: #2e2e2e;
+    padding: 10px;
+
+    .buscar {
+        display: flex;
+        height: 30px;
+
+        .busca {
+            border: none;
+            max-width: 200px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        button {
+            width: 30px;
+            border: none;
+            cursor: pointer;
+            background-color: transparent;
+            position: relative;
+            left: -30px;
+
+            img {
+
+                width: 90%;
+            }
+        }
+    }
+
+    .filtrar {
+        display: flex;
+        height: 30px;
+        gap: 15px;
+
+        select,
+        option {
+            width: 60px;
+            border: none;
+            border-radius: 10px;
+        }
+    }
+}
+
+/* ESCOLHA DE COMP */
+.opcoesComponentes{
+    width: 100%;
+    height: fit-content;
+
+    background-color: red;
+
+    .opcaoComponente{
+        display: flex;
+
+        .nomePreco{
+
+        }
+        .imagemComponente{
+
+        }
+        
+    }
 }
