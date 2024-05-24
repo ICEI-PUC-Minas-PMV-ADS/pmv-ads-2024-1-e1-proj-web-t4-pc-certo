@@ -168,6 +168,14 @@ h3{
     padding: 10px;
     resize: none;
 }
+
+#txtCurto, #titCurto{
+    font-size: 15px;
+    font-weight: 600;
+    color: red;
+    margin-top: 2px;
+}
+
 #enviarPub{
     float: right;
     border: none;
@@ -183,13 +191,6 @@ h3{
     cursor: not-allowed;
 
 }
-
-/* #enviarPub:hover{
-    cursor: pointer;
-    background-color: #41ae4f;
-    color: #fff;
-}
-*/
 
 .fechar{
     float: right;

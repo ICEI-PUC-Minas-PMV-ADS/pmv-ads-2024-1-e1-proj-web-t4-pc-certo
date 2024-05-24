@@ -7,6 +7,7 @@ document.getElementById("textoPub");
 document.getElementById("titPub");
 document.getElementById("enviarPub");
 document.getElementById("h2");
+document.getElementById("txtCurto");
 
 // FUNÇÃO ABRIR E FECHAR POP UP NOVO TOPICO
 
@@ -31,15 +32,12 @@ function fecharPU () {
 
 
     if (textoPub.value !== "" || titPub.value !== ""){
-        const confirmar = confirm("Descartar anotações e sair?");
+        const confirmar = confirm("Descartar publicação e sair?");
         if (!confirmar) {
             return;
         }
     }
     popUp.style.display= "none";
-
-    
-
 };
 
 novoTpc.onclick = abrirPU;
@@ -48,6 +46,7 @@ btFechar.onclick = fecharPU;
 // FUNÇÃO PUBLICAR
 
     //FUNCOES EXECUTADAS AO ABRIR
+
         //HOVER
         enviarPub.onmouseenter = function () {
             enviarPub.style.backgroundColor= "#gainsboro";
@@ -66,7 +65,7 @@ btFechar.onclick = fecharPU;
 
 function desativaPub () {
     enviarPub.style.cursor= "not-allowed"
-    enviarPub.onclick= function () {alert("Preencha todos os campos antes de publicar!")}
+    enviarPub.onclick= function () {alert("Preencha adequadamente todos os campos antes de publicar!")}
         // HOVER PARA DESATIVO
     enviarPub.onmouseenter = function () {enviarPub.style.backgroundColor= "";}
     enviarPub.onmouseleave = function () {enviarPub.style.backgroundColor= "";}
@@ -76,9 +75,9 @@ function desativaPub () {
 
 function ativaPub () {
     enviarPub.style.cursor= "pointer";
-    enviarPub.style.backgroundColor= "gainsboro";
     enviarPub.onclick= "";
     enviarPub.title= "Clique para fazer sua publicação!";
+    
         //HOVER PARA ATIVO
     enviarPub.onmouseenter = function () {
         enviarPub.style.backgroundColor= "#41ae4f";
@@ -90,15 +89,50 @@ function ativaPub () {
     }
 };
 
-    //VERIFICA CAMPOS VAZIOS E PREENCHIDOS
+    //VERIFICAÇÃO DE CAMPOS
 
+        //CAMPOS VAZIOS
 function validaDados () {
     if (textoPub.value == "" || titPub.value == ""){
         desativaPub ();
     } else {
-        ativaPub ();
-   }
-}
+    ativaPub ();
+    }
+           
+        //TEXTO OU TITULO CURTOS
+
+    let valorTxt = textoPub.value;
+    let valorTit = titPub.value;
+
+    function eTxtCurto () {
+        txtCurto.textContent = "*O texto está muito curto!"
+    }
+    function eTxtLongo () {
+        txtCurto.textContent = " "
+    }
+
+    function eTitCurto () {
+        titCurto.textContent = "*O título está muito curto!"
+    }
+    function eTitLongo () {
+        titCurto.textContent = " "
+    }
+
+
+    if(valorTxt.length < 10 && valorTxt.length !== ""){
+        eTxtCurto ();
+        desativaPub ();
+    } else {
+        eTxtLongo ();
+    }
+
+    if(valorTit.length < 5 && valorTit.length !== ""){
+        eTitCurto ();
+    } else {
+        eTitLongo ();
+    }
+
+ }
 
 onkeyup = validaDados
 
