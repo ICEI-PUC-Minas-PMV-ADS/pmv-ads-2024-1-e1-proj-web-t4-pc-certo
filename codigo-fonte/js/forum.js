@@ -8,6 +8,14 @@ document.getElementById("titPub");
 document.getElementById("enviarPub");
 document.getElementById("h2");
 document.getElementById("txtCurto");
+document.getElementById("temaTpc");
+document.getElementById("opcInval");
+
+// RETIRAR VALOR DO LOCAL STORAGE E CONVERTER COM JSON
+
+const usuarioString = localStorage.getItem("nomeCadastro");
+
+
 
 // FUNÇÃO ABRIR E FECHAR POP UP NOVO TOPICO
 
@@ -17,6 +25,8 @@ function abrirPU () {
 
     textoPub.value = "";
     titPub.value = "";
+    temaTpc.value= "NULO";
+
     
     enviarPub.onmouseenter = function () {
         enviarPub.style.backgroundColor= "";
@@ -43,7 +53,15 @@ function fecharPU () {
     popUp.style.display= "none";
 };
 
-novoTpc.onclick = abrirPU;
+novoTpc.onclick = function () {
+    if (usuarioString === null) {
+        alert("É necessário criar uma conta para fazer uma publicação!");
+    } else {
+        abrirPU ();
+    desativaPub ();
+    validaDados ();
+    }
+} 
 btFechar.onclick = fecharPU;
 
 // FUNÇÃO DO BOTAO DE PUBLICAR
@@ -59,11 +77,6 @@ btFechar.onclick = fecharPU;
             enviarPub.style.backgroundColor= "gainsboro";
             enviarPub.style.color= "black";
 }
-        //LIMPAR AREAS
-        textoPub.value = "";
-        titPub.value = "";
-
-
     //DESATIVA BOTAO DE PUBLICAR
 
 function desativaPub () {
@@ -97,13 +110,13 @@ function ativaPub () {
 
         //CAMPOS VAZIOS
 function validaDados () {
-    if (textoPub.value == "" || titPub.value == ""){
+    if (textoPub.value == "" || titPub.value == "" || temaTpc.value == "NULO"){
         desativaPub ();
     } else {
     ativaPub ();
     }
            
-        //TEXTO OU TITULO CURTOS
+        //MENSAGENS VERMELHAS DE TEXTO OU TITULO CURTOS
 
     let valorTxt = textoPub.value;
     let valorTit = titPub.value;
@@ -112,14 +125,20 @@ function validaDados () {
         txtCurto.textContent = "*O texto está muito curto!"
     }
     function eTxtLongo () {
-        txtCurto.textContent = " "
+        txtCurto.textContent = ""
     }
 
     function eTitCurto () {
         titCurto.textContent = "*O título está muito curto!"
     }
     function eTitLongo () {
-        titCurto.textContent = " "
+        titCurto.textContent = ""
+    }
+    function eTemaNulo () {
+        opcInval.textContent = "*Você deve selecionar alguma opção!"
+    }
+    function eTemaCerto () {
+        opcInval.textContent = ""
     }
 
 
@@ -132,15 +151,24 @@ function validaDados () {
 
     if(valorTit.length < 5 && valorTit.length !== ""){
         eTitCurto ();
+        desativaPub ();
     } else {
         eTitLongo ();
     }
 
+    if(temaTpc.value == "NULO"){
+        eTemaNulo ();
+        desativaPub ();
+    } else {
+        eTemaCerto ();
+    }
  }
 
+//RECONHECENDORES DE INPUT PARA EXECUTAR A VALIDAÇÃO
 
 textoPub.oninput= validaDados;
 titPub.oninput= validaDados;
+temaTpc.onchange= validaDados;
 
     // FUNCAO PUBLICAR DE FATO    
 
@@ -150,18 +178,25 @@ function publicar (){
 
 var Publicacao = {
     titulo: titPub.value,
-    texto: textoPub.value
+    texto: textoPub.value,
+    tema: temaTpc.value,
+    autor: usuarioString
 };
 
-var nomeObjeto = "objeto_" + Date.now();
+    //CRIANDO NUMERO PARA CHAVE idPost
 
-var PublicacaoString = JSON.stringify(Publicacao);
+    var nPost = localStorage.length
+    nPost += 1;
 
-localStorage.setItem(nomeObjeto, PublicacaoString)
+var idPost = "POST_" + temaTpc.value + "_"+ nPost;
+
+var postString = JSON.stringify(Publicacao);
+
+localStorage.setItem(idPost, postString)
 
 popUp.style.display= "none";
 
-        // CRIAR NOVA ESTRUTURA
+        // CRIAR NOVA ESTRUTURA --EM PROGRESSO--
 
 }
 
