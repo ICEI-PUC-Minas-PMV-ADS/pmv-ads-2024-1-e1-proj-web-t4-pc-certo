@@ -47,7 +47,7 @@ main {
     row-gap: 3vh;
 }
 
-/* botão */
+/* Card */
 .btnCard {
     grid-template-columns: 40% 60%;
 
@@ -67,6 +67,7 @@ main {
     row-gap: 1vh;
 }
 
+/* Cards individuais */
 #jogos {
     display: grid;
     grid-template-rows: 20vh;
@@ -82,7 +83,7 @@ main {
     grid-template-rows: 20vh;
 }
 
-/* textos dos botões */
+/* textos dos cards */
 .opcoes {
     color: white;
     text-align: left;
@@ -99,7 +100,7 @@ main {
     height: 100%;
 }
 
-/* Imagems */
+/* Imagems do card */
 .imagem {
     width: 90px;
     height: 90px;
@@ -127,25 +128,27 @@ main {
     display: none;
     gap: 10px;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 10vh);
+    grid-template-rows: repeat(auto-fill, minmax(3, 10vh));
     justify-items: center;
     align-items: center;
 }
 
+/* Orçamento profissional */
 #profissionalOrc {
     display: none;
     gap: 10px;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 10vh);
+    grid-template-rows: repeat(auto-fill, minmax(3, 10vh));
     justify-items: center;
     align-items: center;
 }
 
+/* Orçamento casual */
 #casualOrc {
     display: none;
     gap: 10px;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 10vh);
+    grid-template-rows: repeat(auto-fill, minmax(3, 10vh));
     justify-items: center;
     align-items: center;
 }
@@ -203,10 +206,7 @@ main {
     display: flex;
 }
 
-.active {
-    background-color: #41ae4f;
-}
-
+/* textos do segundo Card */
 .titOrc {
     color: white;
     text-align: left;
@@ -222,17 +222,68 @@ main {
     width: 90%;
 }
 
-/* Reiniciar */
-#reiniciar {
+
+/* Passo 3 */
+
+#passo3 {
     display: none;
     flex-direction: column;
-    align-self: center;
-    justify-content: center;
+    margin: 20px 20px;
+    justify-items: center;
+    align-items: center;
 
-    margin: 20px;
+    color: white;
+    font-weight: 300;
+    text-align: center;
 }
 
-.btnReiniciar {
+/* Baixo Orçamento */
+#valorLimiteBaixo {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1, 5vh);
+    row-gap: 1vh;
+    justify-items: center;
+}
+
+#btnValorLimite0 {
+    background-color: #2E2E2E;
+}
+
+#btnValorLimite1 {
+    background-color: #2E2E2E;
+ }
+
+ /* Custo Benefício */
+#valorLimiteMedio {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 5vh);
+    row-gap: 1vh;
+    justify-items: center;
+}
+
+#btnValorLimite2 {
+    background-color: #2E2E2E;
+}
+
+#btnValorLimite3 {
+    background-color: #2E2E2E;
+ }
+
+ #btnValorLimite4 {
+    background-color: #2E2E2E;
+ }
+
+#valorLimiteAlto {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 5vh);
+    row-gap: 1vh;
+    justify-items: center;
+}
+
+.btnValorLimite {
     border-radius: 25px;
     background: #2E2E2E;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -242,7 +293,57 @@ main {
     text-align: center;
     color: white;
     font-weight: 700;
-    
+
+    width: 80%;
+}
+
+/* Funções */
+#funcoes {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    margin: 20px 20px;
+}
+
+/* Reiniciar */
+#reiniciar {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    float: left;
+
+    border-radius: 25px;
+    background: #2E2E2E;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+
+    text-align: center;
+    color: white;
+    font-weight: 700;
+
+    width: 25vw;
+    height: 5vh;
+}
+
+/* Próxima página */
+#avancar {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    float: right;
+
+    border-radius: 25px;
+    background: #2E2E2E;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+
+
+    text-align: center;
+    color: white;
+    font-weight: 700;
+
     width: 25vw;
     height: 5vh;
 }
