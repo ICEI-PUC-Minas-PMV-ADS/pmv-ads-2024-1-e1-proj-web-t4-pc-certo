@@ -81,7 +81,10 @@ btFechar.onclick = fecharPU;
 
 function desativaPub () {
     enviarPub.style.cursor= "not-allowed"
-    enviarPub.onclick= function () {alert("Preencha adequadamente todos os campos antes de publicar!")}
+    enviarPub.onclick= function () {
+        alert("Preencha adequadamente todos os campos antes de publicar!")
+    }
+    enviarPub.title= "Preencha adequadamente todos os campos para poder publicar";
 
         // HOVER PARA DESATIVO
     enviarPub.onmouseenter = function () {enviarPub.style.backgroundColor= "";}
