@@ -21,67 +21,82 @@ main {
     display: flex;
     flex-direction: column;
     margin: 20px 20px;
+    justify-items: center;
+    align-items: center;
 }
 
 .titdesc {
     margin-top: 10px;
     color: white;
+    font-weight: 300;
 }
 
 .titlinha h1 {
     color: white;
     font-size: x-large;
+    text-align: center;
 }
 
-.titulopagina {
-    margin: 20px 40px;
-}
-
-
-/* Passo 1 */
+/* DIV DO PASSO 1 */
 #passo1 {
     width: 100%;
     display: grid;
-    grid-template-columns: 80%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fill, (3, 20vh));
     justify-items: center;
-    row-gap: 2%;
-
-    margin: 0px 15px
+    row-gap: 3vh;
 }
 
-.btncard {
-    display: grid;
-    grid-template-columns: 30% 70%;
+/* botão */
+.btnCard {
+    grid-template-columns: 40% 60%;
 
     border-radius: 25px;
-    border: 1px solid #41AE4F;
     background: #2E2E2E;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
 
-    height: 100%;
-    width: 100%;
-
+    width: 90vw;
 }
 
-.btncard div {
-    width: 70%;
-}
-
-.opcoes {
+.btnCard div {
+    width: 90%;
     display: flex;
     flex-direction: column;
+    align-self: center;
+    row-gap: 1vh;
+}
 
-    color: #FFF;
-    text-align: center;
-    font-size: 20px;
+#jogos {
+    display: grid;
+    grid-template-rows: 20vh;
+}
 
-    height: 20%;
+#profissional {
+    display: grid;
+    grid-template-rows: 20vh;
+}
+
+#casual {
+    display: grid;
+    grid-template-rows: 20vh;
+}
+
+/* textos dos botões */
+.opcoes {
+    color: white;
+    text-align: left;
+    font-size: 3vh;
+
+    height: 50%;
 }
 
 .descricao {
-    display: flex;
-    flex-direction: row;
-
-    height: 80%;
+    color: white;
+    font-family: Roboto;
+    font-weight: 300;
+    text-align: left;
+    height: 100%;
 }
 
 /* Imagems */
@@ -89,4 +104,145 @@ main {
     width: 90px;
     height: 90px;
     margin: 0px;
+
+    justify-self: center;
+    align-self: center;
+}
+
+/* Passo 2 */
+#passo2 {
+    display: none;
+    flex-direction: column;
+    margin: 20px 20px;
+    justify-items: center;
+    align-items: center;
+
+    color: white;
+    font-weight: 300;
+    text-align: center;
+}
+
+/* Orçamento jogos */
+#jogosOrc {
+    display: none;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 10vh);
+    justify-items: center;
+    align-items: center;
+}
+
+#profissionalOrc {
+    display: none;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 10vh);
+    justify-items: center;
+    align-items: center;
+}
+
+#casualOrc {
+    display: none;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 10vh);
+    justify-items: center;
+    align-items: center;
+}
+
+.btnOrc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 25px;
+    background: #2E2E2E;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+
+    height: fit-content;
+    max-height: 90%;
+    width: 90vw;
+
+    padding: 5% 5%;
+}
+
+#btnOrc0 {
+    display: flex;
+}
+
+#btnOrc1 {
+    display: flex;
+}
+
+#btnOrc2 {
+    display: flex;
+}
+
+#btnOrc3 {
+    display: flex;
+}
+
+#btnOrc4 {
+    display: flex;
+}
+
+#btnOrc5 {
+    display: flex;
+}
+
+#btnOrc6 {
+    display: flex;
+}
+
+#btnOrc7 {
+    display: flex;
+}
+
+#btnOrc8 {
+    display: flex;
+}
+
+.active {
+    background-color: #41ae4f;
+}
+
+.titOrc {
+    color: white;
+    text-align: left;
+
+    width: 50%;
+}
+
+.descricao1 {
+    color: white;
+    text-align: left;
+    font-size: ;
+    font-weight: 300;
+    width: 90%;
+}
+
+/* Reiniciar */
+#reiniciar {
+    display: none;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+
+    margin: 20px;
+}
+
+.btnReiniciar {
+    border-radius: 25px;
+    background: #2E2E2E;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+
+
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    
+    width: 25vw;
+    height: 5vh;
 }

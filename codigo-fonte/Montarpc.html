@@ -1,98 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Montar PC - PC Certo</title>
-        <link rel="stylesheet" href="css/Montarpc.css">
-        <link rel="stylesheet" href="css/HeaderFooter.css">
-        <link rel="icon" href="img/favicon.png" icon">
-        <link rel="shortcut icon" href="img/favicon.ico" icon">
-        <script defer src="js/Montarpc.js"></script>
-        <script defer src="js/HeaderFooter.js"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montar PC - PC Certo</title>
+    <link rel="stylesheet" href="css/Montarpc.css">
+    <link rel="stylesheet" href="css/HeaderFooter.css">
+    <link rel="icon" href="img/favicon.png" icon">
+    <link rel="shortcut icon" href="img/favicon.ico" icon">
+    <script defer src="js/Montarpc.js"></script>
+    <script defer src="js/HeaderFooter.js"></script>
+</head>
 
-    <body>
+<body>
 
-        <!-- Cabecalho-->
-        <header>
-            <a href="Paginainicial.html" id="logosite">
-                <img class="logo" src="img/logo.png" alt="">
-                <img class="loguinho" src="img/favicon.png" alt="">
+    <!-- Cabecalho-->
+    <header>
+        <a href="Paginainicial.html" id="logosite">
+            <img class="logo" src="img/logo.png" alt="">
+            <img class="loguinho" src="img/favicon.png" alt="">
+        </a>
+        <button class="sidebaricon"><img src="img/sidebar.png" alt="iconesidebar" width="35px" height="30px"></button>
+        <div class="botoescabecalho">
+            <a class="botaocabecalho" href="Forum.html"><span class="txtcabecalho">Fórum</span></a>
+            <a class="botaocabecalho" href="Guiademontagem.html"><span class="txtcabecalho">Guia</span></a>
+            <a class="botaocabecalho" href="Montarpc.html"><span class="txtcabecalho">Montar PC</span></a>
+            <a class="botaocabecalho2" href="Login.html">
+                <img class="ProfileIcon" src="img/ProfileIcon.png" alt="Meu Perfil">
+                <span class="txtcabecalho"> Fazer Login</span>
             </a>
-            <button class="sidebaricon"><img src="img/sidebar.png" alt="iconesidebar" width="35px"
-                    height="30px"></button>
-            <div class="botoescabecalho">
-                <a class="botaocabecalho" href="Forum.html"><span class="txtcabecalho">Fórum</span></a>
-                <a class="botaocabecalho" href="Guiademontagem.html"><span class="txtcabecalho">Guia</span></a>
-                <a class="botaocabecalho" href="Montarpc.html"><span class="txtcabecalho">Montar PC</span></a>
-                <a class="botaocabecalho2" href="Login.html">
-                    <img class="ProfileIcon" src="img/ProfileIcon.png" alt="Meu Perfil">
-                    <span class="txtcabecalho"> Fazer Login</span>
-                </a>
-            </div>
-        </header>
+        </div>
+    </header>
 
-        <!-- Contéudo da página-->
-        <main>
-            <!-- Título da Página-->
-            <section>
-                <article class="titulopagina">
-                    <div class="titlinha">
-                        <h1>Escolha de Componentes</h1>
-                    </div>
-                    <p class="titdesc">Está na hora de começar!</p>
-                </article>
-            </section>
-
-            <!-- Assistente-->
-
-                <!-- cards-->
-                <div id="passo1">
-
-                    <!--Primeiro Card - JOGOS-->
-                    <button class="btnCard">
-                        <img class="imagem" src="img/controle.png">
-                        <div>
-                            <h2 class="opcoes">JOGOS</h2>
-                            <p class="descricao">Para isso o PC deve possuir maior poder de processamento gráfico,
-                                uso de placa de vídeo dedicada, maior armazenamento e LED!</p>
-                        </div>
-                    </button>
-
-
-                    <!--Segundo Card - PROFISSIONAL-->
-                    <button class="btnCard">
-                        <img class="imagem" src="img/profissional.png">
-                        <div>
-                            <h2 class="opcoes">PROFISSIONAL</h2>
-                            <p class="descricao">Um sistema ideal para lidar com tarefas exigentes como edição de
-                                vídeos,
-                                renderização 3D e outras atividades de criação de conteúdo.</p>
-                        </div>
-                    </button>
-
-                    <!--Terceiro Card - CASUAL-->
-                    <button class="btnCard">
-                        <img class="imagem" src="img/casual.png">
-                        <div>
-                            <h2 class="opcoes">CASUAL</h2>
-                            <p class="descricao">Um computador para atividades do dia a dia, como navegar na
-                                internet, assistir streaming, estudar e realizar tarefas básicas.</p>
-                        </div>
-                    </button>
-
+    <!-- Contéudo da página-->
+    <main>
+        <!-- Título da Página-->
+        <section>
+            <article class="titulopagina">
+                <div class="titlinha">
+                    <h1>Vamos começar a montagem do seu PC certo!</h1>
                 </div>
+                <p class="titdesc">Antes de iniciarmos, quais são suas preferências?</p>
+            </article>
+        </section>
 
-        </main>
+        <!-- Assistente-->
 
-        <!-- Rodapé-->
+        <!-- cards-->
+        <div id="passo1">
 
-        <footer class="rodape">
-            <p class="copyright">© 2024, PC Certo | Todos os direitos reservados.</p>
-        </footer>
+            <!--Primeiro Card - JOGOS-->
+            <button id="jogos" class="btnCard">
+                <img class="imagem" src="img/controle.png">
+                <div>
+                    <h2 class="opcoes">JOGOS</h2>
+                    <p class="descricao">Para isso o PC deve possuir maior poder de processamento gráfico,
+                        uso de placa de vídeo dedicada, maior armazenamento e LED!</p>
+                </div>
+            </button>
 
-    </body>
 
-    </html>
+            <!--Segundo Card - PROFISSIONAL-->
+            <button id="profissional" class="btnCard">
+                <img class="imagem" src="img/profissional.png">
+                <div>
+                    <h2 class="opcoes">PROFISSIONAL</h2>
+                    <p class="descricao">Ideal para lidar com tarefas exigentes como edição de
+                        vídeos,
+                        renderização 3D e outras atividades de criação de conteúdo.</p>
+                </div>
+            </button>
+
+            <!--Terceiro Card - CASUAL-->
+            <button id="casual" class="btnCard">
+                <img class="imagem" src="img/casual.png">
+                <div>
+                    <h2 class="opcoes">CASUAL</h2>
+                    <p class="descricao">Um computador para atividades do dia a dia, como navegar na
+                        internet, assistir streaming, estudar e realizar tarefas básicas.</p>
+                </div>
+            </button>
+        </div>
+
+        <!-- Orcamento-->
+        <div>
+            <p id="passo2">Vamos definir seu orçamento, escolha uma das opções:</p>
+
+            <!-- Orçamento de Jogos-->
+            <div id="jogosOrc">
+                <button id="btnOrc0" class="btnOrc">
+                    <h3 class="titOrc">MÍNIMO DESEMPENHO</h3>
+                    <p class="descricao1">Desempenho mínimo para rodar jogos leves que não devem exigir tanto poder
+                        gráfico, até R$2.500,00. </p>
+                </button>
+
+                <button id="btnOrc1" class="btnOrc">
+                    <h3 class="titOrc">CUSTO-BENEFÍCIO</h3>
+                    <p class="descricao1">Recomendação para rodar jogos que exigem um pouco mais de poder
+                        gráfico, até R$4.000,00. </p>
+                </button>
+
+                <button id="btnOrc2" class="btnOrc">
+                    <h3 class="titOrc">ALTO DESEMPENHO</h3>
+                    <p class="descricao1">Recomendação para rodar jogos no ultra que exigem o máximo de poder
+                        gráfico da sua máquina, acima de R$4.000,00 </p>
+                </button>
+            </div>
+            <!-- Orçamento de Profissional-->
+            <div id="profissionalOrc">
+                <button id="btnOrc3" class="btnOrc">
+                    <h3 class="titOrc">MÍNIMO DESEMPENHO</h3>
+                    <p class="descricao1">Requisitos mínimos das
+                        principais ferramentas de edição do mercado, poderá apresentar problemas
+                        de renderização. </p>
+                </button>
+
+                <button id="btnOrc4" class="btnOrc">
+                    <h3 class="titOrc">CUSTO-BENEFÍCIO</h3>
+                    <p class="descricao1">Seu PC atenderá os requisitos recomendados feitos pelas
+                        principais ferramentas do mercado e realizará multi-tarefas de forma suave.
+                    </p>
+                </button>
+
+                <button id="btnOrc5" class="btnOrc">
+                    <h3 class="titOrc">ALTO DESEMPENHO</h3>
+                    <p class="descricao1">Além dos requisitos recomendados feitos pelas
+                        principais ferramentas do mercado, como também possibilita ir ao limite
+                        dessas plataformas.</p>
+                </button>
+            </div>
+
+            <!-- Orçamento de Casual-->
+            <div id="casualOrc">
+                <button id="btnOrc6" class="btnOrc">
+                    <h3 class="titOrc">MÍNIMO DESEMPENHO</h3>
+                    <p class="descricao1">Oferece o mínimo para
+                        atividades cotidianas como navegar na internet, estudar e assistir a vídeos,
+                        sem comprometer o orçamento.</p>
+                </button>
+
+                <button id="btnOrc7" class="btnOrc">
+                    <h3 class="titOrc">CUSTO-BENEFÍCIO</h3>
+                    <p class="descricao1">Proporciona uma configuração mais robusta e responsiva,
+                        ideal para multitarefa leve e  jogos casuais,
+                        com componentes de qualidade.</p>
+                </button>
+
+                <button id="btnOrc8" class="btnOrc">
+                    <h3 class="titOrc">ALTO DESEMPENHO</h3>
+                    <p class="descricao1"> Oferece uma experiência além do uso casual em todas as tarefas,
+                        desde navegação ultrarrápida até jogos na mais alta
+                        qualidade.</p>
+                </button>
+            </div>
+        </div>
+
+         <!-- Botão de reiniciar -->
+         <div id="reiniciar">
+            <button class="btnReiniciar"> Reiniciar </button>
+        </div>
+
+    </main>
+
+    <!-- Rodapé-->
+
+    <footer class="rodape">
+        <p class="copyright">© 2024, PC Certo | Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

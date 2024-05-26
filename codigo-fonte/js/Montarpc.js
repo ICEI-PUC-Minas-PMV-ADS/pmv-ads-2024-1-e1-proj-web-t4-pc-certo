@@ -1,188 +1,91 @@
 //Escolha Principal de predefinição de perfil
+btnCardElList = document.querySelectorAll('.btnCard')
+btnOrcElList = document.querySelectorAll('.btnOrc')
+btnReiniciarEl = document.querySelector('.btnReiniciar')
 
-const btncardElList = document.querySelectorAll('.btncard');
 
-btncardElList.forEach(btnCardEl => {
+btnCardElList.forEach(btnCardEl => {
     btnCardEl.addEventListener('click', () => {
-        window.scroll({ top: innerHeight, behavior: "smooth" });
-        document.querySelector('.active')?.classList.remove('active');
-        document.querySelector('.ativado')?.classList.remove('ativado');
-        btnCardEl.classList.add('active');
-    });
-})
-
-btncardElList[0].addEventListener('click', () => {
-    document.getElementById('Orcamento').style.display = "flex"
-    document.getElementById('jogosOrc').style.display = "grid";
-    document.getElementById('profissionalOrc').style.display = "none";
-    document.getElementById('casualOrc').style.display = "none";
-    document.getElementById('PriceMin').style.display = "none";
-    document.getElementById('PriceMed').style.display = "none";
-    document.getElementById('PriceMax').style.display = "none";
-    document.getElementById('avancar').style.display = "none";
-    document.getElementById('avancar1').style.display = "none";
-    document.getElementById('avancar2').style.display = "none";
-})
-
-btncardElList[1].addEventListener('click', () => {
-    document.getElementById('Orcamento').style.display = "flex"
-    document.getElementById('jogosOrc').style.display = "none";
-    document.getElementById('profissionalOrc').style.display = "grid";
-    document.getElementById('casualOrc').style.display = "none";
-    document.getElementById('PriceMin').style.display = "none";
-    document.getElementById('PriceMed').style.display = "none";
-    document.getElementById('PriceMax').style.display = "none";
-    document.getElementById('avancar').style.display = "none";
-    document.getElementById('avancar1').style.display = "none";
-    document.getElementById('avancar2').style.display = "none";
-})
-
-btncardElList[2].addEventListener('click', () => {
-    document.getElementById('Orcamento').style.display = "flex"
-    document.getElementById('jogosOrc').style.display = "none";
-    document.getElementById('profissionalOrc').style.display = "none";
-    document.getElementById('casualOrc').style.display = "grid";
-    document.getElementById('PriceMin').style.display = "none";
-    document.getElementById('PriceMed').style.display = "none";
-    document.getElementById('PriceMax').style.display = "none";
-    document.getElementById('avancar').style.display = "none";
-    document.getElementById('avancar1').style.display = "none";
-    document.getElementById('avancar2').style.display = "none";
-})
-
-// Escolha das predefinições de orçamento
-const btnOrcamentoElList = document.querySelectorAll('.btnOrcamento');
-
-btnOrcamentoElList.forEach(btnOrcamentoEl => {
-    btnOrcamentoEl.addEventListener('click', () => {
-        document.querySelector('.ativo')?.classList.remove('ativo');
-        btnOrcamentoEl.classList.add('ativo');
-    });
-})
-// caso a escolha seja jogos
-btnOrcamentoElList[0].addEventListener('click', () => {
-    document.getElementById('PriceMin').style.display = "flex";
-    document.getElementById('PriceMed').style.display = "none";
-    document.getElementById('PriceMax').style.display = "none";
-    document.getElementById('avancar').style.display = "none";
-    document.getElementById('avancar1').style.display = "none";
-    document.getElementById('avancar2').style.display = "none";
-})
-
-btnOrcamentoElList[1].addEventListener('click', () => {
-    document.getElementById('PriceMin').style.display = "none";
-    document.getElementById('PriceMed').style.display = "flex";
-    document.getElementById('PriceMax').style.display = "none";
-    document.getElementById('avancar').style.display = "none";
-    document.getElementById('avancar1').style.display = "none";
-    document.getElementById('avancar2').style.display = "none";
-})
-
-btnOrcamentoElList[2].addEventListener('click', () => {
-    document.getElementById('PriceMin').style.display = "none";
-    document.getElementById('PriceMed').style.display = "none";
-    document.getElementById('PriceMax').style.display = "flex";
-    document.getElementById('avancar').style.display = "none";
-    document.getElementById('avancar1').style.display = "none";
-    document.getElementById('avancar2').style.display = "none";
-})
-// caso a escolha seja profissional
-btnOrcamentoElList[3].addEventListener('click', () => {
-    document.getElementById('PriceMin').style.display = "flex";
-    document.getElementById('PriceMed').style.display = "none";
-    document.getElementById('PriceMax').style.display = "none";
-    document.getElementById('avancar').style.display = "none";
-    document.getElementById('avancar1').style.display = "none";
-    document.getElementById('avancar2').style.display = "none";
-})
-
-btnOrcamentoElList[4].addEventListener('click', () => {
-    document.getElementById('PriceMin').style.display = "none";
-    document.getElementById('PriceMed').style.display = "flex";
-    document.getElementById('PriceMax').style.display = "none";
-    document.getElementById('avancar').style.display = "none";
-    document.getElementById('avancar1').style.display = "none";
-    document.getElementById('avancar2').style.display = "none";
-})
-
-btnOrcamentoElList[5].addEventListener('click', () => {
-    document.getElementById('PriceMin').style.display = "none";
-    document.getElementById('PriceMed').style.display = "none";
-    document.getElementById('PriceMax').style.display = "flex";
-    document.getElementById('avancar').style.display = "none";
-    document.getElementById('avancar1').style.display = "none";
-    document.getElementById('avancar2').style.display = "none";
-})
-// caso a escolha seja casual
-btnOrcamentoElList[6].addEventListener('click', () => {
-    document.getElementById('PriceMin').style.display = "flex";
-    document.getElementById('PriceMed').style.display = "none";
-    document.getElementById('PriceMax').style.display = "none";
-    document.getElementById('avancar').style.display = "none";
-    document.getElementById('avancar1').style.display = "none";
-    document.getElementById('avancar2').style.display = "none";
-})
-
-btnOrcamentoElList[7].addEventListener('click', () => {
-    document.getElementById('PriceMin').style.display = "none";
-    document.getElementById('PriceMed').style.display = "flex";
-    document.getElementById('PriceMax').style.display = "none";
-    document.getElementById('avancar').style.display = "none";
-    document.getElementById('avancar1').style.display = "none";
-    document.getElementById('avancar2').style.display = "none";
-})
-
-btnOrcamentoElList[8].addEventListener('click', () => {
-    document.getElementById('PriceMin').style.display = "none";
-    document.getElementById('PriceMed').style.display = "none";
-    document.getElementById('PriceMax').style.display = "flex";
-    document.getElementById('avancar').style.display = "none";
-    document.getElementById('avancar1').style.display = "none";
-    document.getElementById('avancar2').style.display = "none";
-})
-
-// Botão de preço
-const btnPriceElList = document.querySelectorAll('.btnPrice');
-
-btnPriceElList.forEach(btnPriceEl => {
-    btnPriceEl.addEventListener('click', () => {
-        document.querySelector('.ativado')?.classList.remove('ativado');
-        btnPriceEl.classList.add('ativado');
+        document.getElementById('passo2').style.display = "flex"
     })
 })
 
-btnPriceElList[0].addEventListener('click', () => {
-    document.getElementById('avancar').style.display = "flex";
+btnCardElList[0].addEventListener('click', () => {
+    jogos.style.backgroundColor = "#41AE4F"
+    profissional.style.display = "none"
+    casual.style.display = "none"
+    jogosOrc.style.display = "grid"
+    reiniciar.style.display = "flex"
+})
+btnCardElList[1].addEventListener('click', () => {
+    jogos.style.display = "none"
+    profissional.style.backgroundColor = "#41AE4F"
+    casual.style.display = "none"
+    profissionalOrc.style.display = "grid"
+    reiniciar.style.display = "flex"
+})
+btnCardElList[2].addEventListener('click', () => {
+    jogos.style.display = "none"
+    profissional.style.display = "none"
+    casual.style.backgroundColor = "#41AE4F"
+    casualOrc.style.display = "grid"
+    reiniciar.style.display = "flex"
 })
 
-btnPriceElList[1].addEventListener('click', () => {
-    document.getElementById('avancar').style.display = "flex";
+btnReiniciarEl.addEventListener('click', () => {
+    window.location.reload()
 })
 
-btnPriceElList[2].addEventListener('click', () => {
-    document.getElementById('avancar').style.display = "flex";
+btnOrcElList[0].addEventListener('click', () => {
+    btnOrc0.style.backgroundColor = "#41AE4F"
+    btnOrc1.style.display = "none"
+    btnOrc2.style.display = "none"
 })
 
-btnPriceElList[3].addEventListener('click', () => {
-    document.getElementById('avancar1').style.display = "flex";
+btnOrcElList[1].addEventListener('click', () => {
+    btnOrc1.style.backgroundColor = "#41AE4F"
+    btnOrc0.style.display = "none"
+    btnOrc2.style.display = "none"
 })
 
-btnPriceElList[4].addEventListener('click', () => {
-    document.getElementById('avancar1').style.display = "flex";
+btnOrcElList[2].addEventListener('click', () => {
+    btnOrc2.style.backgroundColor = "#41AE4F"
+    btnOrc1.style.display = "none"
+    btnOrc0.style.display = "none"
 })
 
-btnPriceElList[5].addEventListener('click', () => {
-    document.getElementById('avancar1').style.display = "flex";
+btnOrcElList[3].addEventListener('click', () => {
+    btnOrc3.style.backgroundColor = "#41AE4F"
+    btnOrc4.style.display = "none"
+    btnOrc5.style.display = "none"
 })
 
-btnPriceElList[6].addEventListener('click', () => {
-    document.getElementById('avancar2').style.display = "flex";
+btnOrcElList[4].addEventListener('click', () => {
+    btnOrc4.style.backgroundColor = "#41AE4F"
+    btnOrc3.style.display = "none"
+    btnOrc5.style.display = "none"
 })
 
-btnPriceElList[7].addEventListener('click', () => {
-    document.getElementById('avancar2').style.display = "flex";
+btnOrcElList[5].addEventListener('click', () => {
+    btnOrc5.style.backgroundColor = "#41AE4F"
+    btnOrc4.style.display = "none"
+    btnOrc3.style.display = "none"
 })
 
-btnPriceElList[8].addEventListener('click', () => {
-    document.getElementById('avancar2').style.display = "flex";
+btnOrcElList[6].addEventListener('click', () => {
+    btnOrc6.style.backgroundColor = "#41AE4F"
+    btnOrc7.style.display = "none"
+    btnOrc8.style.display = "none"
+})
+
+btnOrcElList[7].addEventListener('click', () => {
+    btnOrc7.style.backgroundColor = "#41AE4F"
+    btnOrc6.style.display = "none"
+    btnOrc8.style.display = "none"
+})
+
+btnOrcElList[8].addEventListener('click', () => {
+    btnOrc8.style.backgroundColor = "#41AE4F"
+    btnOrc7.style.display = "none"
+    btnOrc6.style.display = "none"
 })
