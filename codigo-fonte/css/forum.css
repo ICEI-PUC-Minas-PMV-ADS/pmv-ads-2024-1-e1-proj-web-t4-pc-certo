@@ -291,9 +291,9 @@ h3{
 
 /* Conteudo */
 
-.content{
+#mainContent{
     margin: 40px 0 40px 0;
-    padding: 100px 100px 100px 100px;
+    padding: 30px;
     background-color: #dfdfdf;
     border-radius: 20px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
@@ -303,12 +303,14 @@ h3{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+
+    align-items: center;
     gap: 10px;
 }
 
 /* Estilos dos tópicos */
 
-#tituloTemas{
+#tituloPosts{
     font-size: 40px;
     margin-left: 50px;
     margin-bottom: 10px;
@@ -319,42 +321,67 @@ h3{
     text-underline-offset: 8px;
 }
 
-.topico {
+.classePSU, .classeCASE, .classeGERAL, .classeSSD, .classeUPGRADE, .classeRAM, .classeMONTAGEM
+, .classeNOTEBOOKS, .classePERIF, .classeGPU, .classeMOBO, .classeISSUES, .classeCPU, .classeCOOLER {
     background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    max-height: fit-content;
-    width: auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    padding-left: 30px;
+    padding: 10px;
+    word-wrap: break-word;
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    width: 90%;
+
+    display: grid;
 
     transition: 0.3s ease;
 }
 
-.topico:hover{
+.classePSU:hover,.classeCASE:hover,.classeGERAL:hover,.classeSSD:hover,.classeUPGRADE:hover,
+.classeRAM:hover,.classeMONTAGEM:hover,.classeNOTEBOOKS:hover,.classePERIF:hover,.classeGPU:hover,.classeMOBO:hover,.classeISSUES:hover,.classeCPU:hover,.classeCOOLER:hover{
     cursor: pointer;
-    transform: scale(1.03);
+    transform: scale(1.015);
     border: 1px solid green;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
 }
 
-.topico h2 {
-    height: 0;
+.titulo {
     font-size: 24px;
-    margin: 20px;
-    max-height: fit-content;
-
+    font-weight: 600;
     text-transform: uppercase;
+    flex-grow: 1;
     
+
+    width: fit-content;
 }
 
-.topico p {
-    flex-grow: 1;
+.qualTema{
+    color: grey;
+    display: block;
+
+    width: fit-content;
+}
+
+.tema{
+
+    color: grey;
+    font-weight: 600;
+    
+    width: fit-content;
+}
+
+.texto {
     font-size: 16px;
-    margin: 20px;
     color: #333;
+
+    width: fit-content;
+}
+
+.feitoPor{
+    width: fit-content;
+}
+
+.autor{
+    font-weight: 600;
+    width: fit-content;
 
 }

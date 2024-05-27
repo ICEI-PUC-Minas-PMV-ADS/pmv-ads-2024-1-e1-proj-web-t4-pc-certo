@@ -15,10 +15,7 @@ document.getElementById("opcInval");
 
 const usuarioString = localStorage.getItem("nomeCadastro");
 
-
-
 // FUNÇÃO ABRIR E FECHAR POP UP NOVO TOPICO
-
 function abrirPU () {
     popUp.style.display= "flex";
     titPub.focus();
@@ -27,7 +24,6 @@ function abrirPU () {
     titPub.value = "";
     temaTpc.value= "NULO";
 
-    
     enviarPub.onmouseenter = function () {
         enviarPub.style.backgroundColor= "";
         enviarPub.style.color= "";
@@ -199,8 +195,77 @@ localStorage.setItem(idPost, postString)
 
 popUp.style.display= "none";
 
-        // CRIAR NOVA ESTRUTURA --EM PROGRESSO--
+    // REFRESH NA PAGINA
+setTimeout(function() {
+    location.reload();
+}, 100);
+
 
 }
 
+ ///// CRIADORA DE DIVS /////
 
+for (let i = 0; i < localStorage.length; i++){
+    const chaveX = localStorage.key(i)
+    
+    if (chaveX.includes("POST_")){
+        var postStr = localStorage.getItem(chaveX)
+        var postJSON = JSON.parse(postStr)
+
+        function criaDiv(postJSON) {
+
+            // CRIA DIV DO POST
+            var divPrincipal = document.createElement('div');
+            divPrincipal.className = 'classe' + postJSON.tema;
+            
+            //CRIA DIV DO "TEMA DO POST"
+            var divQualTema = document.createElement('div');
+            divQualTema.className = "qualTema";
+            divQualTema.innerText = "Tema do Tópico: ";
+
+             //CRIA DIV DO TEMA DO POST
+             var divTema = document.createElement('div');
+             divTema.className = "tema";
+             divTema.innerText = postJSON.tema
+
+            // CRIA DIV DO TITULO
+            var divTitulo = document.createElement('div');
+            divTitulo.className = "titulo";
+            divTitulo.innerText = postJSON.titulo;
+        
+            // CRIA A DIV DO TEXTO
+            var divTexto = document.createElement('div');
+            divTexto.className = 'texto';
+            divTexto.innerText = postJSON.texto;
+
+            // CRIA A DIV "PUBLICADO POR"
+            var divBy = document.createElement('div');
+            divBy.className = 'feitoPor';
+            divBy.innerText = "Publicado por: "
+
+            // CRIA A DIV DO AUTOR
+            var divAutor = document.createElement('div');
+            divAutor.className = 'autor';
+            divAutor.innerText = postJSON.autor;
+        
+            // COLOCA AS DIVS COMO FILHAS DA PRINCIPAL
+            divPrincipal.appendChild(divTitulo);
+            divPrincipal.appendChild(divQualTema)
+            divPrincipal.appendChild(divTema);
+            divPrincipal.appendChild(divTexto);
+            divPrincipal.appendChild(divBy);
+            divPrincipal.appendChild(divAutor);
+        
+            // ADICIONA A DIV PRINCIPAL NA DIV mainContent
+            var mainContent = document.getElementById('mainContent');
+            if (mainContent) {
+                mainContent.appendChild(divPrincipal);
+            } else {
+                alert("ERRO!")
+            }
+        }
+
+        criaDiv(postJSON)
+
+    }
+}
