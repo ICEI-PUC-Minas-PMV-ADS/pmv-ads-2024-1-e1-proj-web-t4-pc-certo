@@ -252,7 +252,9 @@ for (let i = 0; i < localStorage.length; i++){
             divPrincipal.appendChild(divTitulo);
             divPrincipal.appendChild(divQualTema)
             divPrincipal.appendChild(divTema);
+            divPrincipal.appendChild(document.createElement("br"));
             divPrincipal.appendChild(divTexto);
+            divPrincipal.appendChild(document.createElement("br"));
             divPrincipal.appendChild(divBy);
             divPrincipal.appendChild(divAutor);
         
