@@ -215,8 +215,8 @@ for (let i = 0; i < localStorage.length; i++){
         function criaDiv(postJSON) {
 
             // CRIA DIV DO POST
-            var divPrincipal = document.createElement('div');
-            divPrincipal.className = 'classe' + postJSON.tema;
+            var divPrincipal = document.createElement("div");
+            divPrincipal.className = "classe" + postJSON.tema;
             
             //CRIA DIV DO "TEMA DO POST"
             var divQualTema = document.createElement('div');
@@ -234,18 +234,18 @@ for (let i = 0; i < localStorage.length; i++){
             divTitulo.innerText = postJSON.titulo;
         
             // CRIA A DIV DO TEXTO
-            var divTexto = document.createElement('div');
-            divTexto.className = 'texto';
+            var divTexto = document.createElement("div");
+            divTexto.className = "texto";
             divTexto.innerText = postJSON.texto;
 
             // CRIA A DIV "PUBLICADO POR"
-            var divBy = document.createElement('div');
-            divBy.className = 'feitoPor';
+            var divBy = document.createElement("div");
+            divBy.className = "feitoPor";
             divBy.innerText = "Publicado por: "
 
             // CRIA A DIV DO AUTOR
-            var divAutor = document.createElement('div');
-            divAutor.className = 'autor';
+            var divAutor = document.createElement("div");
+            divAutor.className = "autor";
             divAutor.innerText = postJSON.autor;
         
             // COLOCA AS DIVS COMO FILHAS DA PRINCIPAL
@@ -259,7 +259,7 @@ for (let i = 0; i < localStorage.length; i++){
             divPrincipal.appendChild(divAutor);
         
             // ADICIONA A DIV PRINCIPAL NA DIV mainContent
-            var mainContent = document.getElementById('mainContent');
+            var mainContent = document.getElementById("mainContent");
             if (mainContent) {
                 mainContent.appendChild(divPrincipal);
             } else {
