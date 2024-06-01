@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/HeaderFooter.css">
     <script defer src="js/HeaderFooter.js"></script>
+    <script defer src="js/EscolhadeComponentes.js"></script>
     <link rel="stylesheet" href="css/EscolhaDeComponentes.css">
     <title>Escolha de componentes - PC Certo</title>
 </head>
@@ -67,77 +68,18 @@
                         </select>
                     </div>
                 </div>
-                <div class="opcoesComponentes">
+                <div id="containerComp" class="opcoesComponentes">
                     <div class="opcaoComponente">
                         <div class="nomePreco">
-                            <h2>i5-10343F</h2>
-                            <h2>R$9.999,00</h2>
+                            <h2 id="Modelo" class="nome">Intel i5-10343F</h2>
+                            <h2 id="Preco" class="preco">R$9.999,00</h2>
                         </div>
                         <div class="imgComponente"><img src="img/pagEscolha-teste.png" alt="" class="imagemComponente">
                         </div>
                         <div class="alertas">
-                            <div class="alertaOrcamento">Custo Excedente</div>
                             <div class="alertaDesempenho">Médio Desempenho</div>
-                        </div>
-                    </div>
-                    <div class="opcaoComponente">
-                        <div class="nomePreco">
-                            <h2>i9-11900k</h2>
-                            <h2>R$1.300,00</h2>
-                        </div>
-                        <div class="imgComponente"><img src="img/pagEscolha-teste.png" alt="" class="imagemComponente">
-                        </div>
-                        <div class="alertas">
-                            <div class="alertaOrcamento">Dentro do Orçamento</div>
-                            <div class="alertaDesempenho">Alto Desempenho</div>
-                        </div>
-                    </div>
-                    <div class="opcaoComponente">
-                        <div class="nomePreco">
-                            <h2>Ryzen 5 5600x</h2>
-                            <h2>R$200,00</h2>
-                        </div>
-                        <div class="imgComponente"><img src="img/pagEscolha-teste.png" alt="" class="imagemComponente">
-                        </div>
-                        <div class="alertas">
-                            <div class="alertaOrcamento">Dentro do Orçamento</div>
-                            <div class="alertaDesempenho">Baixo Desempenho</div>
-                        </div>
-                    </div>
-                    <div class="opcaoComponente">
-                        <div class="nomePreco">
-                            <h2>i5-10343F</h2>
-                            <h2>R$9.999,00</h2>
-                        </div>
-                        <div class="imgComponente"><img src="img/pagEscolha-teste.png" alt="" class="imagemComponente">
-                        </div>
-                        <div class="alertas">
-                            <div class="alertaOrcamento">Custo Excedente</div>
-                            <div class="alertaDesempenho">Médio Desempenho</div>
-                        </div>
-                    </div>
-                    <div class="opcaoComponente">
-                        <div class="nomePreco">
-                            <h2>i5-10343F</h2>
-                            <h2>R$9.999,00</h2>
-                        </div>
-                        <div class="imgComponente"><img src="img/pagEscolha-teste.png" alt="" class="imagemComponente">
-                        </div>
-                        <div class="alertas">
-                            <div class="alertaOrcamento">Custo Excedente</div>
-                            <div class="alertaDesempenho">Médio Desempenho</div>
-                        </div>
-                    </div>
-                    <div class="opcaoComponente">
-                        <div class="nomePreco">
-                            <h2>i5-10343F</h2>
-                            <h2>R$9.999,00</h2>
-                        </div>
-                        <div class="imgComponente"><img src="img/pagEscolha-teste.png" alt="" class="imagemComponente">
-                        </div>
-                        <div class="alertas">
-                            <div class="alertaOrcamento">Custo Excedente</div>
-                            <div class="alertaDesempenho">Médio Desempenho</div>
+                            <button class="maisInfo" onclick="">Mais Info</button>
+                            <button class="addComponente">+</button>
                         </div>
                     </div>
                 </div>
@@ -147,11 +89,11 @@
                 <div class="orcamentoTotal">
                     <div class="orcamento">
                         <p>Orçamento:</p>
-                        <p>R$X.XXX,XX</p>
+                        <p>R$0,00</p>
                     </div>
                     <div class="totalparcial">
                         <p>Total parcial:</p>
-                        <p>R$X.XXX,XX</p>
+                        <p>R$0,00</p>
                     </div>
                 </div>
                 <button class="proxComponente">Avançar</button>

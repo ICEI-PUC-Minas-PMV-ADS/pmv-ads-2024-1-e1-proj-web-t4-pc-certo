@@ -63,7 +63,7 @@ body {
 
 /* DIV QUE SEGURA BUSCA FILTRO E ESCOLHA */
 .escolhaComponentes {
-    width: 90%;
+    width: 95%;
     height: auto;
 
     align-self: center;
@@ -134,58 +134,113 @@ body {
     overflow: auto;
 
     .opcaoComponente {
-        display: flex;
+        display: grid;
+        grid-template-areas: "preco img alerta";
+
         background-color: #2e2e2e;
         border-radius: 20px;
-        padding: 10px;
-        justify-content: space-between;
+        padding: 15px 20px;
         margin: 10px 0;
+        align-items: center;
+
 
         .nomePreco {
+            grid-area: preco;
             display: flex;
             flex-direction: column;
-            justify-self: center;
-            align-self: center;
 
-
-            h2 {
+            .nome,
+            .preco {
                 font-size: medium;
                 color: white;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                text-align: right;
             }
+
+            .preco:nth-child(2) {
+                font-weight: bold;
+            }
+
         }
 
         .imgComponente {
-            width: 25%;
-        }
+            grid-area: img;
+            justify-self: center;
+            width: 80px;
+            height: 80px;
 
-        .imagemComponente {
-            width: 100%;
+            .imagemComponente {
+                width: 100%;
+                height: 100%;
+            }
         }
 
         .alertas {
-            display: flex;
-            flex-direction: column;
-            align-self: center;
+            grid-area: alerta;
+
+            display: grid;
+            grid-template-areas:
+                "alertadesempenho alertadesempenho"
+                "maisinfo add";
             gap: 5px;
             text-align: center;
+            max-width: 160px;
 
             .alertaDesempenho {
-                border-radius: 20px;
-                background-color: green;
-                color: white;
-                width: 100%;
+                grid-area: alertadesempenho;
+                border-radius: 10px;
+                background-color: #FFD600;
                 padding: 2px;
+                font-size: small;
             }
 
-            .alertaOrcamento {
-                border-radius: 20px;
-                width: 100%;
+            .maisInfo {
+                grid-area: maisinfo;
+                border-radius: 10px;
+                background-color: #FFD600;
+                border: none;
+                cursor: pointer;
                 padding: 2px;
-                background-color: orange;
+                font-size: small;
+                width: 100%;
+
+                .maisInfoLink {
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+
+            .maisInfo:hover {
+                background-color: #ffd500ce;
+                transition: 0.2s ease-in-out;
+            }
+
+            .addComponente {
+                grid-area: add;
+                justify-self: center;
+                align-self: center;
+
+                border: none;
+                width: 100%;
+                height: 30px;
+                font-size: x-large;
+
+                border-radius: 10px;
+                background-color: #41ae4f;
+                color: white;
+                cursor: pointer;
+            }
+
+            .addComponente:hover {
+                background-color: #31833c;
+                transition: 0.2s ease-in-out;
             }
         }
     }
 }
+
 
 /* BOTAO FIXO ORÇAMENTO TOTAL // AVANCAR */
 .orcamentoTotaleAvancar {
