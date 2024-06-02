@@ -9,8 +9,11 @@ main {
 
 body {
     font-family: roboto;
-    background: radial-gradient(150% 80% at 10% 30%,
-            #41ae4f 1%, #2b7735 25%, #19441f 100%);
+    background: url("../img/menuInicial.jpg");
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(20px)brightness(0.9);
+
 }
 
 .wrapper {
@@ -39,6 +42,7 @@ body {
 /* RESUMO DOS COMPONENTES */
 .resumoComponente {
     background-color: #2e2e2e;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
     height: fit-content;
     width: 80%;
     border-radius: 20px;
@@ -63,11 +67,20 @@ body {
     }
 }
 
+/* ARTICLE QUE SEGURA TODA A PARTE DE DIVISAO, FILTRO, ESCOLHA E AVANCAR */
+
+.containerEscolhaProx {
+    display: flex;
+    flex-direction: column;
+}
+
+
 /* DIVISAO P/ ESCOLHA */
 .divisaoh1 {
     font-size: x-large;
     color: white;
     margin: 30px auto;
+    text-align: center;
 }
 
 /* --------COMECO---------------DIV QUE SEGURA BUSCA FILTRO E ESCOLHA-------------------- */
@@ -269,6 +282,7 @@ body {
         margin: 10px;
         border-radius: 20px;
         width: 250px;
+        color: white;
 
 
         .orcamento {
@@ -300,6 +314,7 @@ body {
         cursor: pointer;
 
         font-size: 20px;
+        color: white;
     }
 
     .proxComponente:hover {
@@ -313,12 +328,20 @@ body {
 @media (min-width: 950px) {
     .wrapper {
         display: grid;
+        grid-template-rows: 140px;
         grid-template-areas:
-            "titulopag titEscolha"
-            "resumo escolha"
-            "resumo avancar";
+            "titulopag containerEscolha"
+            "resumo containerEscolha"
+            "resumo containerEscolha";
     }
-
+    .containerEscolhaProx {
+        grid-area: containerEscolha;
+        display: flex;
+        flex-direction: column;
+        background-color: #2e2e2e4b;
+        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+        height: 100%;
+    }
     .titulopagina {
         grid-area: titulopag;
         margin-left: 40px;
@@ -333,6 +356,8 @@ body {
     }
 
     .resumoComponente {
+        
+        background-color: #2e2e2e8f;
         grid-area: resumo;
         margin-left: 40px;
         align-self: flex-start;
@@ -396,21 +421,18 @@ body {
     }
 
     .divisaoh1 {
-        grid-area: titEscolha;
         margin: 20px auto;
         font-size: xx-large;
+        text-align: center;
 
     }
 
     .escolhaComponentes {
-        grid-area: escolha;
         margin: 0 auto;
-        margin-top: -30px;
     }
 
     .orcamentoTotaleAvancar {
-        grid-area: avancar;
-        margin: 0 auto;
+        margin: 20px auto;
     }
 
 }
@@ -418,10 +440,10 @@ body {
 /* RESPONSIVIDADE 1500px */
 
 @media (min-width: 1500px) {
+
     .escolhaComponentes {
         width: 800px;
-        margin: 20px 20px;
-        margin-top: -30px;
+        margin: 0px 20px;
     }
 
     .opcoesComponentes {
@@ -496,14 +518,16 @@ body {
     }
 
     .resumoComponente {
-        margin-top: 60px;
-        h2{
+
+        h2 {
             font-size: x-large;
         }
-        p{
+
+        p {
             font-size: large;
         }
-        .guia{
+
+        .guia {
             font-size: medium;
             padding: 20px 0;
         }
@@ -514,7 +538,6 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 100px;
 
         .orcamentoTotal {
             width: 400px;
