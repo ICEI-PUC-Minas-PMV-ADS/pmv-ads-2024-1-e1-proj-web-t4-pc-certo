@@ -10,7 +10,7 @@ body {
 }
 
 main {
-    min-height: 100vh;
+    min-height: 85vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -20,7 +20,7 @@ main {
 .titulopagina {
     display: flex;
     flex-direction: column;
-    margin: 20px 20px;
+    margin: 20px 5px;
     justify-items: center;
     align-items: center;
 }
@@ -29,26 +29,27 @@ main {
     margin-top: 10px;
     color: white;
     font-weight: 300;
+    text-align: center;
 }
 
 .titlinha h1 {
     color: white;
-    font-size: x-large;
+    font-size: xx-large;
     text-align: center;
 }
 
 /* DIV DO PASSO 1 */
 #passo1 {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(auto-fill, (3, 20vh));
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     row-gap: 3vh;
 }
 
 /* Card */
 .btnCard {
+    display: grid;
     grid-template-columns: 40% 60%;
 
     border-radius: 25px;
@@ -57,6 +58,7 @@ main {
     border: none;
 
     width: 90vw;
+    padding: 5% 0%;
 }
 
 .btnCard div {
@@ -65,22 +67,6 @@ main {
     flex-direction: column;
     align-self: center;
     row-gap: 1vh;
-}
-
-/* Cards individuais */
-#jogos {
-    display: grid;
-    grid-template-rows: 20vh;
-}
-
-#profissional {
-    display: grid;
-    grid-template-rows: 20vh;
-}
-
-#casual {
-    display: grid;
-    grid-template-rows: 20vh;
 }
 
 /* textos dos cards */
@@ -110,7 +96,7 @@ main {
     align-self: center;
 }
 
-/* Passo 2 */
+/* -------- Passo 2 ---------- */
 #passo2 {
     display: none;
     flex-direction: column;
@@ -123,36 +109,16 @@ main {
     text-align: center;
 }
 
-/* Orçamento jogos */
-#jogosOrc {
+/* --- DIV QUE SEGURA CADA ORÇAMENTO ---- */
+.orcamentoDiv {
     display: none;
     gap: 10px;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(auto-fill, minmax(3, 10vh));
     justify-items: center;
     align-items: center;
 }
 
-/* Orçamento profissional */
-#profissionalOrc {
-    display: none;
-    gap: 10px;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(auto-fill, minmax(3, 10vh));
-    justify-items: center;
-    align-items: center;
-}
-
-/* Orçamento casual */
-#casualOrc {
-    display: none;
-    gap: 10px;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(auto-fill, minmax(3, 10vh));
-    justify-items: center;
-    align-items: center;
-}
-
+/*  --- Botões de orçamento ---- */
 .btnOrc {
     display: flex;
     align-items: center;
@@ -170,43 +136,7 @@ main {
     padding: 5% 5%;
 }
 
-#btnOrc0 {
-    display: flex;
-}
-
-#btnOrc1 {
-    display: flex;
-}
-
-#btnOrc2 {
-    display: flex;
-}
-
-#btnOrc3 {
-    display: flex;
-}
-
-#btnOrc4 {
-    display: flex;
-}
-
-#btnOrc5 {
-    display: flex;
-}
-
-#btnOrc6 {
-    display: flex;
-}
-
-#btnOrc7 {
-    display: flex;
-}
-
-#btnOrc8 {
-    display: flex;
-}
-
-/* textos do segundo Card */
+/* -------- Textos dos botões de orçamento --------- */
 .titOrc {
     color: white;
     text-align: left;
@@ -217,7 +147,6 @@ main {
 .descricao1 {
     color: white;
     text-align: left;
-    font-size: ;
     font-weight: 300;
     width: 90%;
 }
@@ -246,14 +175,6 @@ main {
     justify-items: center;
 }
 
-#btnValorLimite0 {
-    background-color: #2E2E2E;
-}
-
-#btnValorLimite1 {
-    background-color: #2E2E2E;
- }
-
  /* Custo Benefício */
 #valorLimiteMedio {
     display: none;
@@ -262,19 +183,7 @@ main {
     row-gap: 1vh;
     justify-items: center;
 }
-
-#btnValorLimite2 {
-    background-color: #2E2E2E;
-}
-
-#btnValorLimite3 {
-    background-color: #2E2E2E;
- }
-
- #btnValorLimite4 {
-    background-color: #2E2E2E;
- }
-
+/* Alto orçamento */
 #valorLimiteAlto {
     display: none;
     grid-template-columns: 1fr 1fr;
@@ -283,6 +192,7 @@ main {
     justify-items: center;
 }
 
+/*  botões dos valores */
 .btnValorLimite {
     border-radius: 25px;
     background: #2E2E2E;
@@ -346,4 +256,61 @@ main {
 
     width: 25vw;
     height: 5vh;
+}
+
+@media (min-width: 951px) {
+
+    main {
+        margin: 0 auto;
+        width: 90vw;
+    }
+
+    .titulopagina {
+       align-items: start;     
+    }
+
+    #passo1 {
+        grid-template-areas: "jogos profissional casual";
+        
+    }    
+
+    #jogos {
+    grid-area: jogos;
+    }
+
+     #profissional {
+    grid-area: profissional;
+    }
+
+     #casual {
+    grid-area: casual;
+    }
+
+    .btnCard {
+        grid-template-columns: 1fr;
+        width: 25vw;
+        height: 45vh;
+    }
+
+    .btnCard div {
+        width: 100%;
+    }
+
+    .opcoes {
+        text-align: center;
+    }
+    
+    .descricao {
+        text-align: center;
+    }
+
+    .imagem {
+        width: 150px;
+        height: 150px;
+    }
+
+    #passo2 {
+        display: none;
+    }
+
 }
