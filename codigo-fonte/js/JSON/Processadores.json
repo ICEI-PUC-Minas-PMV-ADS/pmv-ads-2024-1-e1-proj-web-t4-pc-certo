@@ -2,7 +2,7 @@
     {
         "marca": "AMD",
         "modelo": "Ryzen 5 5600x",
-        "preco": "R$ 2.517,59",
+        "preco": "R$ 2.324,59",
         "desempenho": "Alto Desempenho",
         "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
         "imagem": "img/pagEscolha-teste.png",
@@ -22,7 +22,7 @@
     {
         "marca": "AMD",
         "modelo": "Ryzen 5 5600x",
-        "preco": "R$ 2.517,59",
+        "preco": "R$ 2.541,59",
         "desempenho": "Medio Desempenho",
         "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
         "imagem": "img/pagEscolha-teste.png",

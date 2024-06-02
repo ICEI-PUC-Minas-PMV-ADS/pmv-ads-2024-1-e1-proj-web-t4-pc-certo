@@ -70,9 +70,11 @@ function carregar() {
 
                 container.appendChild(opcao)
 
-                // Adicionando evento ao botão adicionado dinamicamente
 
+                // CHAMANDO FUNCOES
+                lvlDesempenho()
 
+                // FUNCAO DE AO CLICAR SELECIONAR EM VERDE A OPCAO E DESSELECIONAR O RESTANTE
                 add.onclick = function () {
                     let opcoes = document.querySelectorAll('.opcaoComponente')
 
@@ -86,10 +88,30 @@ function carregar() {
                     this.parentElement.parentElement.classList.add('opcaoSelecionada');
                     this.parentElement.parentElement.style.backgroundColor = '#41ae4f';
 
+                    // VARIAVEL TOTAL PARCIAL
+                    TotalParcial = document.getElementById('parcialTotal')
+                    TotalParcial.textContent = Processador.preco
                 }
+                // FUNCAO P/ DEFINIR COR AO DESEMPENHO
+                function lvlDesempenho() {
+                    if (Processador.desempenho == "Alto Desempenho") {
+                        alertDesempenho.style.backgroundColor = "#308041"
+                        alertDesempenho.style.color = "white"
+                    }
+                    else if (Processador.desempenho == "Medio Desempenho") {
+                        alertDesempenho.style.backgroundColor = "#FFD600"
+                    }
+                    else if (Processador.desempenho == "Baixo Desempenho") {
+                        alertDesempenho.style.backgroundColor = "#840000"
+                        alertDesempenho.style.color = "white"
+                    }
+
+                }
+
 
             })
         })
+
         .catch(error => console.error('Erro ao carregar os Processadores:', error));
 }
 
