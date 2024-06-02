@@ -1,60 +1,13 @@
-// // Elementos que JSON vai alterar no HTML
-// var modelo = document.querySelector('#Modelo')
-// var preco = document.querySelector('#Preco')
-// var imagem = null
-// var alertaDesempenho = document.querySelector('.alertaDesempenho')
-// var maisInfo = document.querySelector('.maisInfo')
-
-// // Container que segura as opcoes
-// var container = document.querySelector('#containerComp')
+carregar()
 
 
-// function load() {
-//     fetch('/codigo-fonte/js/Componentes.json')
-//         .then(Response => Response.json())
-//         .then(Componentes => {
-//             const container = document.querySelector('#containerComp')
-//             Componentes.map(Componente => {
-//                 // DIV DO CARD
-//                 const opcao = document.createElement('div')
-//                 opcao.classList.add('opcaoComponente')
-
-//                 // NOME E PRECO
-//                 const nomePreco = document.createElement('div')
-//                 nomePreco.classList.add('nomePreco')
-
-//                 const nome = document.createElement('h2')
-//                 nome.textContent = Componente.modelo
-//                 const preco = document.createElement('h2')
-//                 preco.textContent = Componente.preco
-//                 // IMAGEM
-//                 const imgdiv = document.createElement('div')
-//                 imgdiv.classList.add('imgComponente')
-//                 const img = document.createElement('img')
-//                 img.classList.add('imagemComponente')
-//                 img.src = Componente.imagem
-//                 // ALERTAS E INFO
-//                 const alertas = document.createElement('div');
-//                 alertas.classList.add('alertas')
-//                 const alertDesempenho = document.createElement('div')
-//                 alertDesempenho.classList.add('alertaDesempenho')
-//                 alertDesempenho.textContent = Componente.desempenho
-
-//                 const maisInfo = document.createElement('button')
-//                 maisInfo.classList.add('maisInfo')
-//                 maisInfo.textContent = Componente.info
-//             })
-//         })
-// }
-
-
-
-function carregar(){
-    fetch('/codigo-fonte/js/Componentes.json')
+// FUNCAO QUE CHAMA OS PROCESSADORES JSON PARA O HTML
+function carregar() {
+    fetch('/codigo-fonte/js/JSON/Processadores.json')
         .then(Response => Response.json())
-        .then(Componentes => {
+        .then(Processadores => {
             const container = document.querySelector('#containerComp')
-            Componentes.map(Componente => {
+            Processadores.map(Processador => {
                 // DIV DO CARD
                 const opcao = document.createElement('div')
                 opcao.classList.add('opcaoComponente')
@@ -64,11 +17,11 @@ function carregar(){
                 nomePreco.classList.add('nomePreco')
 
                 const nome = document.createElement('h2')
-                nome.textContent = Componente.modelo
+                nome.textContent = Processador.modelo
                 nome.classList.add('nome')
 
                 const preco = document.createElement('h2')
-                preco.textContent = Componente.preco
+                preco.textContent = Processador.preco
                 preco.classList.add('preco')
 
                 // IMAGEM
@@ -77,7 +30,7 @@ function carregar(){
 
                 const img = document.createElement('img')
                 img.classList.add('imagemComponente')
-                img.src = Componente.imagem
+                img.src = Processador.imagem
 
                 // ALERTAS INFO e ADD
                 const alertas = document.createElement('div');
@@ -85,13 +38,13 @@ function carregar(){
 
                 const alertDesempenho = document.createElement('div')
                 alertDesempenho.classList.add('alertaDesempenho')
-                alertDesempenho.textContent = Componente.desempenho
+                alertDesempenho.textContent = Processador.desempenho
 
                 const maisInfo = document.createElement('button')
                 maisInfo.classList.add('maisInfo')
 
                 const maisInfoLink = document.createElement('a')
-                maisInfoLink.href = Componente.info
+                maisInfoLink.href = Processador.info
                 maisInfoLink.textContent = 'Mais Info'
                 maisInfoLink.target = '_blank'
                 maisInfoLink.classList.add('maisInfoLink')
@@ -99,7 +52,7 @@ function carregar(){
                 const add = document.createElement('button')
                 add.classList.add('addComponente')
                 add.textContent = "+"
-                
+
                 // AJUSTANDO HIERARQUIA DOS ELEMENTOS CRIADOS ACIMA
                 nomePreco.appendChild(nome)
                 nomePreco.appendChild(preco)
@@ -116,8 +69,27 @@ function carregar(){
                 opcao.appendChild(alertas)
 
                 container.appendChild(opcao)
+
+                // Adicionando evento ao botão adicionado dinamicamente
+
+
+                add.onclick = function () {
+                    let opcoes = document.querySelectorAll('.opcaoComponente')
+
+                    opcoes.forEach(opcao => {
+                        if (opcao.classList.contains('opcaoSelecionada')) {
+                            opcao.classList.remove('opcaoSelecionada');
+                            opcao.style.backgroundColor = '';
+                        }
+                    })
+
+                    this.parentElement.parentElement.classList.add('opcaoSelecionada');
+                    this.parentElement.parentElement.style.backgroundColor = '#41ae4f';
+
+                }
+
             })
         })
-        .catch(error => console.error('Erro ao carregar os componentes:', error));
+        .catch(error => console.error('Erro ao carregar os Processadores:', error));
 }
-carregar()
+

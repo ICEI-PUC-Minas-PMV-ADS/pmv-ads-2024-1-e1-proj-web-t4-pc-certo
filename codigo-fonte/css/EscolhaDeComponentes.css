@@ -23,6 +23,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 20px 20px;
+    width: fit-content;
 }
 
 .titdesc {
@@ -52,6 +53,14 @@ body {
     padding: 25px;
 
     color: white;
+
+    img {
+        display: none;
+    }
+
+    .guia {
+        display: none;
+    }
 }
 
 /* DIVISAO P/ ESCOLHA */
@@ -61,12 +70,13 @@ body {
     margin: 30px auto;
 }
 
-/* DIV QUE SEGURA BUSCA FILTRO E ESCOLHA */
+/* --------COMECO---------------DIV QUE SEGURA BUSCA FILTRO E ESCOLHA-------------------- */
 .escolhaComponentes {
     width: 95%;
     height: auto;
-
     align-self: center;
+    display: flex;
+    flex-direction: column;
 }
 
 /* BUSCA E FILTRO */
@@ -76,7 +86,6 @@ body {
     flex-wrap: wrap;
 
     width: 100%;
-    ;
     justify-content: space-evenly;
     align-items: center;
 
@@ -143,7 +152,6 @@ body {
         margin: 10px 0;
         align-items: center;
 
-
         .nomePreco {
             grid-area: preco;
             display: flex;
@@ -199,7 +207,7 @@ body {
             .maisInfo {
                 grid-area: maisinfo;
                 border-radius: 10px;
-                background-color: #FFD600;
+                background-color: #dcdcdc;
                 border: none;
                 cursor: pointer;
                 padding: 2px;
@@ -213,7 +221,7 @@ body {
             }
 
             .maisInfo:hover {
-                background-color: #ffd500ce;
+                background-color: white;
                 transition: 0.2s ease-in-out;
             }
 
@@ -241,6 +249,7 @@ body {
     }
 }
 
+/* --------FIM-------------DIV QUE SEGURA BUSCA FILTRO E ESCOLHA-------------------- */
 
 /* BOTAO FIXO ORÇAMENTO TOTAL // AVANCAR */
 .orcamentoTotaleAvancar {
@@ -296,5 +305,249 @@ body {
     .proxComponente:hover {
         background-color: #31833c;
         transition: 0.2s ease-in-out;
+    }
+}
+
+/* RESPONSIVIDADE 950PX */
+
+@media (min-width: 950px) {
+    .wrapper {
+        display: grid;
+        grid-template-areas:
+            "titulopag titEscolha"
+            "resumo escolha"
+            "resumo avancar";
+    }
+
+    .titulopagina {
+        grid-area: titulopag;
+        margin-left: 40px;
+
+        .titdesc {
+            margin-top: 10px;
+        }
+
+        .titlinha h1 {
+            font-size: xx-large;
+        }
+    }
+
+    .resumoComponente {
+        grid-area: resumo;
+        margin-left: 40px;
+        align-self: flex-start;
+        margin-top: 20px;
+
+        height: 420px;
+
+        display: grid;
+        grid-template-areas:
+            "img tit"
+            "img desc"
+            "img guia";
+
+        h2 {
+            grid-area: tit;
+            font-size: x-large;
+            align-self: center;
+            justify-self: center;
+        }
+
+        p {
+            grid-area: desc;
+            align-self: center;
+            margin: 0 15px;
+            text-align: center;
+        }
+
+        div {
+            grid-area: img;
+            width: 100%;
+            height: 100%;
+        }
+
+        img {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            border-radius: 18px;
+            object-fit: cover;
+        }
+
+        .guia {
+            grid-area: guia;
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+            justify-self: center;
+            align-self: center;
+
+            border-radius: 15px;
+            border: none;
+            width: 100px;
+            height: 30px;
+            background-color: #41ae4f;
+            cursor: pointer;
+            color: white;
+
+            padding: 20px 0;
+        }
+    }
+
+    .divisaoh1 {
+        grid-area: titEscolha;
+        margin: 20px auto;
+        font-size: xx-large;
+
+    }
+
+    .escolhaComponentes {
+        grid-area: escolha;
+        margin: 0 auto;
+        margin-top: -30px;
+    }
+
+    .orcamentoTotaleAvancar {
+        grid-area: avancar;
+        margin: 0 auto;
+    }
+
+}
+
+/* RESPONSIVIDADE 1500px */
+
+@media (min-width: 1500px) {
+    .escolhaComponentes {
+        width: 800px;
+        margin: 20px 20px;
+        margin-top: -30px;
+    }
+
+    .opcoesComponentes {
+        height: 55vh;
+
+        .opcaoComponente {
+            .nomePreco {
+
+                .nome,
+                .preco {
+                    font-size: x-large;
+                }
+            }
+
+            .alertas {
+                .alertaDesempenho {
+                    font-size: medium;
+                }
+
+                .maisInfo {
+                    font-size: medium;
+                }
+            }
+        }
+    }
+
+    .buscaFiltro {
+        width: 100%;
+        justify-content: space-evenly;
+
+        .buscar {
+            position: relative;
+            display: flex;
+            height: 30px;
+
+            .busca {
+                border: none;
+                min-width: 400px;
+                border-radius: 10px;
+                padding: 10px;
+                font-size: medium;
+            }
+
+            button {
+                width: 30px;
+                border: none;
+                cursor: pointer;
+                background-color: transparent;
+                position: absolute;
+                right: 0;
+
+                img {
+                    width: 90%;
+                }
+            }
+        }
+
+        .filtrar {
+            display: flex;
+            height: 30px;
+            gap: 15px;
+            margin: 5px 0;
+
+            select,
+            option {
+                font-size: medium;
+                width: 100px;
+                border: none;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .resumoComponente {
+        margin-top: 60px;
+        h2{
+            font-size: x-large;
+        }
+        p{
+            font-size: large;
+        }
+        .guia{
+            font-size: medium;
+            padding: 20px 0;
+        }
+    }
+
+    .orcamentoTotaleAvancar {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 100px;
+
+        .orcamentoTotal {
+            width: 400px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .orcamento {
+                padding: 10px;
+                height: 30%;
+                font-size: x-large;
+                font-weight: normal;
+            }
+
+            .totalparcial {
+                padding: 10px;
+                height: 30%;
+                justify-self: center;
+                font-size: x-large;
+                font-weight: normal;
+            }
+        }
+
+        .proxComponente {
+            border-radius: 20px;
+            border: none;
+            margin: 10px;
+            width: 250px;
+            height: 100%;
+            background-color: #41ae4f;
+            cursor: pointer;
+
+            font-size: x-large;
+        }
     }
 }
