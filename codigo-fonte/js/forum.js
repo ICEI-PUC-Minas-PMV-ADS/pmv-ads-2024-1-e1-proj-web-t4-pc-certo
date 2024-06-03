@@ -200,7 +200,6 @@ setTimeout(function() {
     location.reload();
 }, 100);
 
-
 }
 
  ///// CRIADORA DE DIVS /////
@@ -266,8 +265,6 @@ for (let i = 0; i < localStorage.length; i++){
                 alert("ERRO!")
             }
         }
-
         criaDiv(postJSON)
-
     }
 }
