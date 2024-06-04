@@ -5,6 +5,7 @@ body {
     background-size: cover;
     background-position: center;
 }
+
 .Conteudo {
     min-height: 85vh;
     display: flex;
@@ -83,7 +84,12 @@ a {
     color: white;
 }
 
-#errorEmail, #error{color: #e63636;
+#errorEmail,
+#error {
+    color: #e63636;
     display: none;
 }
-#errorEmail{font-size: small;}
+
+#errorEmail {
+    font-size: small;
+}

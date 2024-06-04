@@ -1,0 +1,19 @@
+body {
+    font-family: roboto;
+    padding: 0px;
+    margin: 0px;
+    background: url("../img/menuInicial.jpg");
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(20px)brightness(0.9);
+}
+.Conteudo {
+    min-height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.JanelaResumo {
+    background-color: #2e2e2e;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+}
