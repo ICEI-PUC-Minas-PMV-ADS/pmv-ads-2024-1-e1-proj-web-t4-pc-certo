@@ -7,13 +7,90 @@ body {
     background-position: center;
     backdrop-filter: blur(20px)brightness(0.9);
 }
+
 .Conteudo {
     min-height: 85vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
 .JanelaResumo {
-    background-color: #2e2e2e;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: Roboto;
+    font-size: x-large;
+    text-align: center;
+    background-color: #2e2e2e69;
+    backdrop-filter: blur(20px);
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+    height: fit-content;
+    width: 90%;
+    border-radius: 20px;
+    margin: 20px 0 0 0;
+}
+
+.placaMae {
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 0 50px 10px 50px;
+}
+
+.ram {
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 0 50px 10px 50px;
+}
+
+.gpu {
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 0 50px 10px 50px;
+}
+
+.armazenamento {
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 0 50px 10px 50px;
+}
+
+.fonte {
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 0 50px 10px 50px;
+}
+
+.gabinete {
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 0 50px 10px 50px;
+}
+
+.cooler {
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 0 50px 10px 50px;
+}
+
+.cpu {
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 0 50px 10px 50px;
 }
