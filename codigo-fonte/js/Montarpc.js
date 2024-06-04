@@ -22,7 +22,7 @@ for (i = 0; i < cards.length; i++) {
         // Mostrar a div correspondente ao card clicado
         const targetId = this.getAttribute('data-target')
         const targetDiv = document.getElementById(targetId)
-        targetDiv.style.display = 'grid'
+        targetDiv.style.display = 'flex'
 
         document.getElementById('reiniciar').style.display = 'flex'
     }

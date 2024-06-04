@@ -10,7 +10,7 @@ body {
 }
 
 main {
-    min-height: 85vh;
+    min-height: 80vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -73,7 +73,7 @@ main {
 .opcoes {
     color: white;
     text-align: left;
-    font-size: 3vh;
+    font-size: x-large;
 
     height: 50%;
 }
@@ -86,10 +86,11 @@ main {
     height: 100%;
 }
 
-/* Imagems do card */
+/* Imagem do card */
 .imagem {
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
+
     margin: 0px;
 
     justify-self: center;
@@ -113,7 +114,7 @@ main {
 .orcamentoDiv {
     display: none;
     gap: 10px;
-    grid-template-columns: 1fr;
+    flex-direction: column;
     justify-items: center;
     align-items: center;
 }
@@ -131,6 +132,7 @@ main {
 
     height: fit-content;
     max-height: 90%;
+    
     width: 90vw;
 
     padding: 5% 5%;
@@ -260,57 +262,118 @@ main {
 
 @media (min-width: 951px) {
 
-    main {
-        margin: 0 auto;
-        width: 90vw;
+    .wrapper {
+        display: grid;
+        grid-template-areas: 
+        "titulo titulo"
+        "escolha1 escolha2"
+        "escolha1 escolha3"
+        "botoes botoes";
+
+        grid-template-rows: max-content;
+        row-gap: 2vh;
+        height: fit-content;
+
+        padding: 2.5vw;
+
     }
 
+    /* Titulo da página */
     .titulopagina {
-       align-items: start;     
-    }
+        grid-area: titulo;
 
+        align-items: flex-start;
+        width: fit-content;
+        height: fit-content;
+
+        /* margin: 40px; */
+    }
+    
+    /* Passo 1 ----- Cards */
     #passo1 {
-        grid-template-areas: "jogos profissional casual";
-        
-    }    
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 3vh;
+        grid-area: escolha1;
 
-    #jogos {
-    grid-area: jogos;
-    }
-
-     #profissional {
-    grid-area: profissional;
-    }
-
-     #casual {
-    grid-area: casual;
+        width: 100%;
     }
 
     .btnCard {
+        display: grid;
         grid-template-columns: 1fr;
-        width: 25vw;
+    
+        width: 30vw;
         height: 45vh;
+        padding: 3vh;
     }
 
     .btnCard div {
         width: 100%;
     }
 
+    /* ----- Conteúdo dos Cards ------  */
     .opcoes {
         text-align: center;
+        font-size: xx-large;
     }
-    
+
     .descricao {
         text-align: center;
+        font-size: small;
     }
 
     .imagem {
-        width: 150px;
-        height: 150px;
+        width: 130px;
+        height: 130px;
     }
 
-    #passo2 {
-        display: none;
+    /* ------ Passo 2 ---------- */
+
+    #grid {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        grid-area: escolha2;
+
+        height: fit-content;
     }
 
+    .btnOrc {
+        width: 100%;  
+        height: 100px;      
+    }
+
+    /* ----- Passo 3 ------- */
+    .grid3 {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        grid-area: escolha3;
+
+        width: fit-content;
+        height: fit-content;
+    }
+    
+    /* botoes */
+    #funcoes {
+        justify-self: center;
+        align-self: center;
+        column-gap: 5vw;
+        grid-area: botoes;
+
+        width: fit-content;
+        height: fit-content;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    #passo1 {
+        justify-content: space-between;
+    }
+
+    .btnCard {
+        justify-self: center;
+    }
 }

@@ -35,7 +35,8 @@
 
     <!-- Contéudo da página-->
     <main>
-        <!-- Título da Página-->
+        <div class="wrapper">
+            <!-- Título da Página-->
             <article class="titulopagina">
                 <div class="titlinha">
                     <h1>Vamos começar a montagem do seu PC certo!</h1>
@@ -43,148 +44,149 @@
                 <p class="titdesc">Antes de iniciarmos, quais são suas preferências?</p>
             </article>
 
-        <!-- Assistente-->
+            <!-- Assistente-->
 
-        <!-- 1º Passo -->
-        <div id="passo1">
+            <!-- 1º Passo -->
+            <div id="passo1">
 
-            <!--Primeiro Card - JOGOS-->
-            <button class="btnCard" data-target="jogos">
-                <img class="imagem" src="img/controle.png">
-                <div>
-                    <h2 class="opcoes">JOGOS</h2>
-                    <p class="descricao">Para isso o PC deve possuir maior poder de processamento gráfico,
-                        uso de placa de vídeo dedicada, maior armazenamento e LED!</p>
-                </div>
-            </button>
-
-
-            <!--Segundo Card - PROFISSIONAL-->
-            <button class="btnCard" data-target="profissional">
-                <img class="imagem" src="img/profissional.png">
-                <div>
-                    <h2 class="opcoes">PROFISSIONAL</h2>
-                    <p class="descricao">Ideal para lidar com tarefas exigentes como edição de
-                        vídeos,
-                        renderização 3D e outras atividades de criação de conteúdo.</p>
-                </div>
-            </button>
-
-            <!--Terceiro Card - CASUAL-->
-            <button class="btnCard" data-target="casual">
-                <img class="imagem" src="img/casual.png">
-                <div>
-                    <h2 class="opcoes">CASUAL</h2>
-                    <p class="descricao">Um computador para atividades do dia a dia, como navegar na
-                        internet, assistir streaming, estudar e realizar tarefas básicas.</p>
-                </div>
-            </button>
-        </div>
-
-        <!-- 2º Passo -->
-        <div>
-            <p id="passo2">Vamos definir seu orçamento, escolha uma das opções:</p>
-
-            <!-- Orçamento de Jogos-->
-            <div id="jogos" class="orcamentoDiv">
-                <button class="btnOrc" data-target="valorLimiteBaixo">
-                    <h3 class="titOrc">MÍNIMO DESEMPENHO</h3>
-                    <p class="descricao1">Desempenho mínimo para rodar jogos leves que não devem exigir tanto poder
-                        gráfico, até R$2.500,00. </p>
+                <!--Primeiro Card - JOGOS-->
+                <button class="btnCard" data-target="jogos">
+                    <img class="imagem" src="img/controle.png">
+                    <div>
+                        <h2 class="opcoes">JOGOS</h2>
+                        <p class="descricao">Deverá contar com maior poder de processamento gráfico,
+                            uso de placa de vídeo dedicada e mais armazenamento.</p>
+                    </div>
                 </button>
 
-                <button class="btnOrc" data-target="valorLimiteMedio" >
-                    <h3 class="titOrc">CUSTO-BENEFÍCIO</h3>
-                    <p class="descricao1">Recomendação para rodar jogos que exigem um pouco mais de poder
-                        gráfico, até R$4.000,00. </p>
+
+                <!--Segundo Card - PROFISSIONAL-->
+                <button class="btnCard" data-target="profissional">
+                    <img class="imagem" src="img/profissional.png">
+                    <div>
+                        <h2 class="opcoes">PROFISSIONAL</h2>
+                        <p class="descricao">Ideal para lidar com tarefas exigentes como edição de
+                            vídeos,
+                            renderização 3D e outras atividades de criação de conteúdo.</p>
+                    </div>
                 </button>
 
-                <button class="btnOrc" data-target="valorLimiteAlto">
-                    <h3 class="titOrc">ALTO DESEMPENHO</h3>
-                    <p class="descricao1">Recomendação para rodar jogos no ultra que exigem o máximo de poder
-                        gráfico da sua máquina, acima de R$4.000,00 </p>
-                </button>
-            </div>
-            <!-- Orçamento de Profissional-->
-            <div id="profissional" class="orcamentoDiv">
-                <button class="btnOrc" data-target="valorLimiteBaixo">
-                    <h3 class="titOrc">MÍNIMO DESEMPENHO</h3>
-                    <p class="descricao1">Requisitos mínimos das
-                        principais ferramentas de edição do mercado, poderá apresentar problemas
-                        de renderização. </p>
-                </button>
-
-                <button class="btnOrc" data-target="valorLimiteMedio">
-                    <h3 class="titOrc">CUSTO-BENEFÍCIO</h3>
-                    <p class="descricao1">Seu PC atenderá os requisitos recomendados feitos pelas
-                        principais ferramentas do mercado e realizará multi-tarefas de forma suave.
-                    </p>
-                </button>
-
-                <button class="btnOrc" data-target="valorLimiteAlto">
-                    <h3 class="titOrc">ALTO DESEMPENHO</h3>
-                    <p class="descricao1">Além dos requisitos recomendados feitos pelas
-                        principais ferramentas do mercado, como também possibilita ir ao limite
-                        dessas plataformas.</p>
+                <!--Terceiro Card - CASUAL-->
+                <button class="btnCard" data-target="casual">
+                    <img class="imagem" src="img/casual.png">
+                    <div>
+                        <h2 class="opcoes">CASUAL</h2>
+                        <p class="descricao">Feito para atividades do dia a dia, como navegar na
+                            internet, assistir streaming, estudar e realizar tarefas básicas.</p>
+                    </div>
                 </button>
             </div>
 
-            <!-- Orçamento de Casual-->
-            <div id="casual" class="orcamentoDiv">
-                <button class="btnOrc" data-target="valorLimiteBaixo">
-                    <h3 class="titOrc">MÍNIMO DESEMPENHO</h3>
-                    <p class="descricao1">Oferece o mínimo para
-                        atividades cotidianas como navegar na internet, estudar e assistir a vídeos,
-                        sem comprometer o orçamento.</p>
-                </button>
+            <!-- 2º Passo -->
+            <div id="grid">
+                <p id="passo2">Vamos definir seu orçamento, escolha uma das opções:</p>
 
-                <button class="btnOrc"  data-target="valorLimiteMedio">
-                    <h3 class="titOrc">CUSTO-BENEFÍCIO</h3>
-                    <p class="descricao1">Proporciona uma configuração mais robusta e responsiva,
-                        ideal para multitarefa leve e jogos casuais,
-                        com componentes de qualidade.</p>
-                </button>
+                <!-- Orçamento de Jogos-->
+                <div id="jogos" class="orcamentoDiv">
+                    <button class="btnOrc" data-target="valorLimiteBaixo">
+                        <h3 class="titOrc">MÍNIMO DESEMPENHO</h3>
+                        <p class="descricao1">Desempenho mínimo para rodar jogos leves que não devem exigir tanto poder
+                            gráfico, até R$2.500,00. </p>
+                    </button>
 
-                <button class="btnOrc" data-target="valorLimiteAlto">
-                    <h3 class="titOrc">ALTO DESEMPENHO</h3>
-                    <p class="descricao1"> Oferece uma experiência além do uso casual em todas as tarefas,
-                        desde navegação ultrarrápida até jogos na mais alta
-                        qualidade.</p>
-                </button>
+                    <button class="btnOrc" data-target="valorLimiteMedio">
+                        <h3 class="titOrc">CUSTO-BENEFÍCIO</h3>
+                        <p class="descricao1">Recomendação para rodar jogos que exigem um pouco mais de poder
+                            gráfico, até R$4.000,00. </p>
+                    </button>
+
+                    <button class="btnOrc" data-target="valorLimiteAlto">
+                        <h3 class="titOrc">ALTO DESEMPENHO</h3>
+                        <p class="descricao1">Recomendação para rodar jogos no ultra que exigem o máximo de poder
+                            gráfico da sua máquina, acima de R$4.000,00 </p>
+                    </button>
+                </div>
+                <!-- Orçamento de Profissional-->
+                <div id="profissional" class="orcamentoDiv">
+                    <button class="btnOrc" data-target="valorLimiteBaixo">
+                        <h3 class="titOrc">MÍNIMO DESEMPENHO</h3>
+                        <p class="descricao1">Requisitos mínimos das
+                            principais ferramentas de edição do mercado, poderá apresentar problemas
+                            de renderização. </p>
+                    </button>
+
+                    <button class="btnOrc" data-target="valorLimiteMedio">
+                        <h3 class="titOrc">CUSTO-BENEFÍCIO</h3>
+                        <p class="descricao1">Seu PC atenderá os requisitos recomendados feitos pelas
+                            principais ferramentas do mercado e realizará multi-tarefas de forma suave.
+                        </p>
+                    </button>
+
+                    <button class="btnOrc" data-target="valorLimiteAlto">
+                        <h3 class="titOrc">ALTO DESEMPENHO</h3>
+                        <p class="descricao1">Além dos requisitos recomendados feitos pelas
+                            principais ferramentas do mercado, como também possibilita ir ao limite
+                            dessas plataformas.</p>
+                    </button>
+                </div>
+
+                <!-- Orçamento de Casual-->
+                <div id="casual" class="orcamentoDiv">
+                    <button class="btnOrc" data-target="valorLimiteBaixo">
+                        <h3 class="titOrc">MÍNIMO DESEMPENHO</h3>
+                        <p class="descricao1">Oferece o mínimo para
+                            atividades cotidianas como navegar na internet, estudar e assistir a vídeos,
+                            sem comprometer o orçamento.</p>
+                    </button>
+
+                    <button class="btnOrc" data-target="valorLimiteMedio">
+                        <h3 class="titOrc">CUSTO-BENEFÍCIO</h3>
+                        <p class="descricao1">Proporciona uma configuração mais robusta e responsiva,
+                            ideal para multitarefa leve e jogos casuais,
+                            com componentes de qualidade.</p>
+                    </button>
+
+                    <button class="btnOrc" data-target="valorLimiteAlto">
+                        <h3 class="titOrc">ALTO DESEMPENHO</h3>
+                        <p class="descricao1"> Oferece uma experiência além do uso casual em todas as tarefas,
+                            desde navegação ultrarrápida até jogos na mais alta
+                            qualidade.</p>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 3º Passo -->
+            <div class="grid3">
+                <p id="passo3"> Defina o valor máximo que deseja investir:</p>
+
+
+                <div id="valorLimiteBaixo">
+                    <button class="btnValorLimite"> R$1.500,00 </button>
+                    <button class="btnValorLimite"> R$2.000,00 </button>
+                </div>
+
+                <div id="valorLimiteMedio">
+                    <button class="btnValorLimite"> R$2.500,00 </button>
+                    <button class="btnValorLimite"> R$3.000,00 </button>
+                    <button class="btnValorLimite"> R$3.500,00 </button>
+                    <button class="btnValorLimite"> R$4.000,00 </button>
+                </div>
+
+                <div id="valorLimiteAlto">
+                    <button class="btnValorLimite"> R$4.500,00 </button>
+                    <button class="btnValorLimite"> R$5.000,00 </button>
+                    <button class="btnValorLimite"> R$6.000,00 </button>
+                    <button class="btnValorLimite"> O céu é o limite </button>
+                </div>
+            </div>
+
+            <!-- DIV para botões de reiniciar e avançar -->
+
+            <div id="funcoes">
+                <button id="reiniciar"> Reiniciar </button>
+                <button id="avancar"> Avançar </button>
             </div>
         </div>
-
-        <!-- 3º Passo -->
-        <div>
-            <p id="passo3"> Defina o valor máximo que deseja investir:</p>
-        </div>
-
-        <div id="valorLimiteBaixo">
-            <button class="btnValorLimite"> R$1.500,00 </button>
-            <button class="btnValorLimite"> R$2.000,00 </button>
-        </div>
-
-        <div id="valorLimiteMedio">
-            <button class="btnValorLimite"> R$2.500,00 </button>
-            <button class="btnValorLimite"> R$3.000,00 </button>
-            <button class="btnValorLimite"> R$3.500,00 </button>
-            <button class="btnValorLimite"> R$4.000,00 </button>
-        </div>
-
-        <div id="valorLimiteAlto">
-            <button class="btnValorLimite"> R$4.500,00 </button>
-            <button class="btnValorLimite"> R$5.000,00 </button>
-            <button class="btnValorLimite"> R$6.000,00 </button>
-            <button class="btnValorLimite"> O céu é o limite </button>
-        </div>
-
-        <!-- DIV para botões de reiniciar e avançar -->
-        
-        <div id="funcoes">
-            <button id="reiniciar"> Reiniciar </button>
-            <button id="avancar"> Avançar </button>
-        </div>
-
     </main>
 
     <!-- Rodapé-->
