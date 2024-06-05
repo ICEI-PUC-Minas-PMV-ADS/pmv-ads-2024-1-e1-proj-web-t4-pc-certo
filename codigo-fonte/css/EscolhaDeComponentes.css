@@ -334,6 +334,7 @@ body {
             "resumo containerEscolha"
             "resumo containerEscolha";
     }
+
     .containerEscolhaProx {
         grid-area: containerEscolha;
         display: flex;
@@ -342,6 +343,7 @@ body {
         box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
         height: 100%;
     }
+
     .titulopagina {
         grid-area: titulopag;
         margin-left: 40px;
@@ -356,7 +358,7 @@ body {
     }
 
     .resumoComponente {
-        
+
         background-color: #2e2e2e8f;
         grid-area: resumo;
         margin-left: 40px;
