@@ -93,4 +93,45 @@ body {
     justify-content: center;
     border-radius: 20px;
     margin: 0 50px 10px 50px;
+    display: flex;
 }
+
+#comprarbotao{
+    border-radius: 25px;
+    border: 0;
+    height: 7vh;
+    width: 12vh;
+    background-color: #41ae4f;
+    color: aliceblue;
+    font-size: x-large;
+
+}
+#comprarbotao:hover{
+    background-color: #31833c;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+
+}
+#alterarbotoes{
+    border-radius: 25px;
+    border: 0;
+    height: 7vh;
+    width: 12vh;
+    background-color: #dcdcdc;
+    color: #2e2e2e;
+    font-size: x-large;
+    margin-right: 15px;
+}
+#alterarbotoes:hover{
+    background-color: white;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.componentes div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3vh;
+    padding-right: 3vh;
+}
+
