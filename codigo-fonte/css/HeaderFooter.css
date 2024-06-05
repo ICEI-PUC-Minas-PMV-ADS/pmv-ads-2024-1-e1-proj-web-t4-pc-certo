@@ -113,13 +113,13 @@ header {
 
 .botaocabecalho {
     margin-right: 32px;
-    border-radius: 25px;
+    border-radius: 20px;
     background-color: #41ae4f;
 }
 
 .botaocabecalho2 {
     margin-right: 32px;
-    border-radius: 25px;
+    border-radius: 20px;
     float: left;
     background-color: #dcdcdc;
 }
