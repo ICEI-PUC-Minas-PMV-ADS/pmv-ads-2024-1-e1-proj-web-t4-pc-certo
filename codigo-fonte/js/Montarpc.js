@@ -1,3 +1,8 @@
+// variáveis
+var finalidade
+var orcamentoTotal
+
+
 // adicionando funções aos botões 
 
 // ------- PASSO 1 ------------
@@ -25,6 +30,12 @@ for (i = 0; i < cards.length; i++) {
         targetDiv.style.display = 'flex'
 
         document.getElementById('reiniciar').style.display = 'flex'
+
+        // Armazenar variável
+        var finalidade = this.querySelector('h2').textContent;
+        localStorage.setItem("finalidade", finalidade);
+
+        localStorage.removeItem("orcamentoTotal", orcamentoTotal);
     }
 }
 
@@ -69,12 +80,22 @@ for (k = 0; k < valores.length; k++) {
         })
         this.classList.add('valorAtivo')
         this.style.backgroundColor = '#41ae4f'
+
+        // Armazenar variável
+        var orcamentoTotal = this.textContent;
+        localStorage.setItem("orcamentoTotal", orcamentoTotal);
+
+        // Dinâmica no btn Avançar ao selecionar um valor máximo
+        btnAvancarEl.style.backgroundColor = '#41ae4f'
+        btnAvancarEl.style.cursor = 'pointer'
+
     }
 }
 
 // Botão de reiniciar
 
 btnReiniciarEl = document.querySelector('#reiniciar')
+
 btnReiniciarEl.addEventListener('click', () => {
     window.location.reload()
 })
@@ -82,7 +103,13 @@ btnReiniciarEl.addEventListener('click', () => {
 // botão de avancar
 
 btnAvancarEl = document.querySelector('#avancar')
-btnAvancarEl.addEventListener('click', () => {
-    location.href = "EscolhaDeComponentes.html"
-})
 
+btnAvancarEl.onclick = function () {
+    if (finalidade == "" && orcamentoTotal == "") {
+        alert("Selecione o valor máximo desejado.")
+    }
+
+    else {       
+        location.href = "EscolhaDeComponentes.html"
+    }
+}

@@ -1,6 +1,5 @@
 carregar()
 
-
 // FUNCAO QUE CHAMA OS PROCESSADORES JSON PARA O HTML
 function carregar() {
     fetch('/codigo-fonte/js/JSON/Processadores.json')
@@ -107,7 +106,11 @@ function carregar() {
                     }
 
                 }
-
+                function orcTotal(){
+                   let orcTot = localStorage.getItem('orcamentoTotal')
+                   document.getElementById('orcTotal').textContent = orcTot
+                }
+                orcTotal()
 
             })
         })

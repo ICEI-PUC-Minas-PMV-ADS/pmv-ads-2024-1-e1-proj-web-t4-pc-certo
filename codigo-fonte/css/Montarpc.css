@@ -138,6 +138,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    column-gap: 1vh;
 
     border-radius: 25px;
     background: #2E2E2E;
@@ -440,12 +441,14 @@ main {
     /* botoes */
     #funcoes {
         justify-self: center;
-        align-self: center;
+        align-self: end;
         column-gap: 5vw;
         grid-area: botoes;
 
         width: fit-content;
         height: fit-content;
+
+        margin: 0;
 
         button {
             background-color: #2e2e2e4b;
