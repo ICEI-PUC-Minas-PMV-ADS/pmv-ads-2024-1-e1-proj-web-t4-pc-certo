@@ -1,10 +1,9 @@
 body{
-    font-family: Hanken Grotesk, 'Trebuchet MS', sans-serif, sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif, sans-serif;
     padding: 0px;
     margin: 0px;
     min-height: 100vh;
-    min-width: 100%;
-    background: #3d7c45;
+    background-color: #273F27;
 
     display: flex;
     flex-direction: column;
@@ -12,25 +11,122 @@ body{
     position: relative;
 }
 
-/* Main */
+        /* MAIN */
 
 main{
     min-height: 100%;
     gap: 10px 0 10px 0;
+    padding: 0 5%;
+
+
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.bcBt{
+    text-decoration: none;
+    color: rgb(143, 167, 143);
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    max-width: fit-content;
+}
+
+.btDef{
+    border: none;
+    
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+    /* Pesquisar*/
+
+.Search{
+    font-size: 27px;
+    background-color: #3f6944;
+    border-radius: 20px;
+    padding: 15px 15px 15px 15px;
+    max-width: 500px;
+    min-width: fit-content;
 
     flex-grow: 2;
 
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    position: relative;
+    flex-direction: row;
+}
+    
+.SearchBar{
+    font-size: 27px;
+    color: #fff;
+
+        border: none;
+    outline: none;
+    background-color:transparent;
+    flex-grow: 1;
+    width: 100%;
+}
+    
+.SearchBar::placeholder{
+        color: #7db486;
+}
+    
+.SearchBtn{
+    width: 33.47px;
+    height: 33.47px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+
+    align-self: flex-end;
+}
+    
+.SearchBtn:hover{
+    transform: scale(0.7) rotate(20deg);
+    transition: 0.3s;
+    cursor: pointer;
     
 }
+    
+.SearchIcon{
+    width: 33px;
+    height: 33px;
+}
+
+#aNovoTpcPqno{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+#novoTpcPqno{
+    width: 30px;
+    height: 30px;
+    max-width: 100%;
+    padding: 10px;
+
+    bottom: 50%;
+
+    background-color: #41ae4f;
+    border-radius: 10px;
+    transition: 1s ease;
+}
+
+#novoTpcPqno:hover{
+    scale: 1.01;
+}
+
+        /* BREADCRUMB */
 
 .Breadcrumb{
     max-height: fit-content;
     color: rgb(126, 167, 126);
-    padding: 5px 40px;
+    padding: 5px 0px;
     font-size: 20px;
     gap: 1%;
 
@@ -40,48 +136,151 @@ main{
 }
 
 #indBC{
-    color: #0bc424;
+    color: #41ae4f;
 }
 
-a{
-    text-decoration: none;
-    color: rgb(126, 167, 126);
-    font-size: 20px;
-    transition: 0.3s ease;
-}
 a:hover{
     scale: 1.03;
     color: rgb(179, 245, 179);
 }
 
-/* Conteudo do Topo */
+        /* MAIN */
+
+
+#mainContent{
+    padding: 30px 50px 30px 0;
+    min-width: fit-content;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+#sideContent{
+    color: #fff;
+    min-width: fit-content;
+    flex-grow: 1;
+    
+    padding: 30px 0 30px 0px;
+}
 
 .contTop{
     height:auto;
     max-height: fit-content;
 
-    font-family: Hanken Grotesk, Arial, sans-serif;
-    padding: 10px 0px 10px 40px;
+    font-family: 'Hanken Grotesk', Arial, sans-serif;
+    padding: 10px 0px 10px 0px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
 }
 
-/* Titulo */
+#Participe{
+    background-color: #3f6944;
+    max-width: fit-content;
+    padding: 35px 40px 40px 40px;
+    gap: 40px;
+    border-radius: 30px;
 
-h1{
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#Publique{
+    background-color: #3f6944;
+    max-width: fit-content;
+    padding: 35px 40px 40px 40px;
+    gap: 40px;
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#partTop{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+
+#partTit{
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 900;
     color: #fff;
-
-    flex-grow: 1;
+    margin: 0;
 }
 
-    /* Novo Tópico */
+#partText{
+    font-size: 20px;
+    color: rgb(174, 219, 174);
+    margin: 0;
+    max-width: 675px;
+}
+
+#partBt{
+    display: flex;
+    gap: 5%;
+}
+
+#partLog{
+    background-color: #41ae4f;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+#partCad{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #41ae4f;
+    transition: 0.3s ease-in-out;
+}
+
+.topImgs{
+    transition: 0.3s;
+    max-width: 100%;
+    width: 200px;
+    height: auto;
+}
+
+@media (max-width: 946px){
+    img#pasrtImg{
+        display: flex;
+    }
+}
+
+@media (max-width: 850px){
+    img#pubImg{
+        display: none;
+    }
+}
+
+
+        /* NOVO TOPICO ID= novoTpc */
 
 #novoTpc{
     font-size: 27px;
     font-weight: bold;
     letter-spacing: 1px;
     color:white;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: #41ae4f;
     border-radius: 20px;
     padding: 15px 10px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
@@ -99,13 +298,6 @@ h1{
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
     color: #41ae4f;
     cursor: pointer;
-}
-
-@media (max-width: 1190px){
-    button#novoTpc{
-        max-width: 100%;
-    }
-
 }
 
 /* Novo Tópico PopUp */
@@ -158,7 +350,7 @@ h3{
     background-color: gainsboro;
     padding: 10px;
     font-size: 25px;
-    font-family: Hanken Grotesk, sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
     border-radius: 10px;
 }
 
@@ -241,96 +433,7 @@ h3{
     float: left;
 }
 
-    /* Pesquisar*/
-
-.Search{
-    font-size: 27px;
-    background-color: #3f6944;
-    border-radius: 20px;
-    padding: 15px 15px 15px 15px;
-    width: 30%;
-    max-width: fit-content;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
-
-    flex-grow: 2;
-
-    display: flex;
-    flex-direction: row;
-}
-
-.SearchBar{
-    font-size: 27px;
-    color: #fff;
-
-    border: none;
-    outline: none;
-    background-color:transparent;
-    flex-grow: 1;
-    width: 100%;
-}
-
-.SearchBar::placeholder{
-        color: #7db486;
-}
-
-.SearchBtn{
-    width: 33.47px;
-    height: 33.47px;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-
-    align-self: flex-end;
-}
-
-.SearchBtn:hover{
-    transform: scale(0.7) rotate(20deg);
-    transition: 0.3s;
-    cursor: pointer;
-    
-}
-
-.SearchIcon{
-    width: 33px;
-    height: 33px;
-}
-
-@media (max-width: 1000px) {
-    input.SearchBar {
-        display: none;
-    }
-    }
-
-/* Conteudo */
-
-#mainContent{
-    padding: 30px;
-    background-color: rgb(39, 63, 39);
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
-
-    flex-grow: 1;
-
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-
-    gap: 10px;
-}
-
 /* Estilos dos tópicos */
-
-#tituloPosts{
-    margin-left: 50px;
-    margin-bottom: 10px;
-
-    font-size: 40px;
-    font-weight: 700;
-    font-family: Hanken Grotesk,sans-serif;
-    color: #fff;
-
-}
 
 .classePSU, .classeCASE, .classeGERAL, .classeSSD, .classeUPGRADE, .classeRAM, .classeMONTAGEM
 , .classeNOTEBOOKS, .classePERIF, .classeGPU, .classeMOBO, .classeISSUES, .classeCPU, .classeCOOLER {
@@ -394,5 +497,4 @@ h3{
 .autor{
     font-weight: 600;
     width: fit-content;
-
 }

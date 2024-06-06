@@ -10,6 +10,8 @@ document.getElementById("h2");
 document.getElementById("txtCurto");
 document.getElementById("temaTpc");
 document.getElementById("opcInval");
+document.getElementById("Participe");
+document.getElementById("Publique");
 
 // RETIRAR VALOR DO LOCAL STORAGE E CONVERTER COM JSON
 
@@ -57,7 +59,8 @@ novoTpc.onclick = function () {
     desativaPub ();
     validaDados ();
     }
-} 
+}
+
 btFechar.onclick = fecharPU;
 
 // FUNÇÃO DO BOTAO DE PUBLICAR
@@ -267,4 +270,14 @@ for (let i = 0; i < localStorage.length; i++){
         }
         criaDiv(postJSON)
     }
+}
+
+if (usuarioString !== null){
+
+    Participe.style.display = "none"
+    Publique.style.display = "flex"
+
+} else {
+    Participe.style.display = "flex"
+    Publique.style.display = "none"
 }
