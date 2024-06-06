@@ -12,6 +12,12 @@ document.getElementById("temaTpc");
 document.getElementById("opcInval");
 document.getElementById("Participe");
 document.getElementById("Publique");
+document.getElementById("allForums");
+document.getElementById("ofcForums");
+document.getElementById("pubForums");
+document.getElementById("myForums");
+
+
 
 // RETIRAR VALOR DO LOCAL STORAGE E CONVERTER COM JSON
 
@@ -280,4 +286,25 @@ if (usuarioString !== null){
 } else {
     Participe.style.display = "flex"
     Publique.style.display = "none"
+}
+// Obtém todos os elementos por seus IDs
+var forums = [
+    allForums,
+    ofcForums,
+    pubForums,
+    myForums
+];
+
+forums.forEach(function(forumX) {
+    forumX.onclick = function() { slctForum(forumX); };
+});
+
+function slctForum(selectedForum) {
+    forums.forEach(function(forumX) {
+        forumX.classList.remove("forumSlctOpt1");
+        forumX.classList.add("forumSlctOpt");
+    });
+    
+    selectedForum.classList.remove("forumSlctOpt");
+    selectedForum.classList.add("forumSlctOpt1");
 }

@@ -56,6 +56,13 @@ main{
     
 }
 
+.filterBtn{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0 0 0 0;
+}
+
 button:hover{
     cursor: pointer;
 }
@@ -165,12 +172,25 @@ button:hover{
     cursor: pointer;
 }
 
-#numNot{
-    color: #fff;
-    font-weight: bolder;
+.iconVSmll{
+    width: 20px;
+    height: auto;
+    max-width: 100%;
+    padding: 10px;
 
-    margin-left: -24px;
-    margin-top: 8px ;
+    transition: 0.5s ease;
+}
+
+#sinoNot:hover{
+    animation: shake 0.35s;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(-5deg); }
+    75% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
 }
 
         /* BREADCRUMB */
@@ -305,6 +325,46 @@ a:hover{
     }
 }
 
+.titSmll{
+    color: #fff;
+    font-size: large;
+
+    display: flex;
+    align-items: center;
+}
+
+.forumSelect{
+    display: flex;
+    gap: 15px;
+    padding: 3px 0;
+}
+
+.forumSlctOpt{
+    background-color: transparent;
+    border: 2px solid #7db486;
+    border-radius: 10px;
+    padding: 10px;
+
+    color:#fff;
+    font-weight: bold;
+
+    transition: 0.3s ease;
+    scale: 1
+}
+
+.forumSlctOpt1{
+    background-color: #41ae4f;
+    border: 2px solid #41ae4f;
+    border-radius: 10px;
+    padding: 10px;
+
+    color:#fff;
+    font-weight: bold;
+
+    transition: 0.3s ease;
+    scale: 1.1;
+}
+
 
         /* NOVO TOPICO ID= novoTpc */
 
@@ -316,8 +376,6 @@ a:hover{
     background-color: #41ae4f;
     border-radius: 20px;
     padding: 15px 10px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
-
     border: none;
     outline: none;
     transition: transform 0.2s ease-out;
@@ -328,7 +386,6 @@ a:hover{
 }
 #novoTpc:hover{  
     background-color: #dfdfdf;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
     color: #41ae4f;
     cursor: pointer;
 }
