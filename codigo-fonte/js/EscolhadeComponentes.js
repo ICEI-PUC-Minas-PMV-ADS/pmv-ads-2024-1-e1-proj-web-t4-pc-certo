@@ -2,7 +2,7 @@ carregar()
 
 // FUNCAO QUE CHAMA OS PROCESSADORES JSON PARA O HTML
 function carregar() {
-    fetch('/codigo-fonte/js/JSON/Processadores.json')
+    fetch('/codigo-fonte/js/JSON/Componentes.json')
         .then(Response => Response.json())
         .then(Processadores => {
             const container = document.querySelector('#containerComp')

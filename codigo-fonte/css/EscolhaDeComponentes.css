@@ -212,7 +212,6 @@ body {
             .alertaDesempenho {
                 grid-area: alertadesempenho;
                 border-radius: 10px;
-                background-color: #FFD600;
                 padding: 2px;
                 font-size: small;
             }
@@ -575,4 +574,11 @@ body {
             font-size: x-large;
         }
     }
+}
+
+
+/* CLASSE CRIADA NO JS NAO MEXA */
+.opcaoSelecionada{
+    background-color: #41ae4f !important;
+    transition: 0.3s ease-in-out;
 }

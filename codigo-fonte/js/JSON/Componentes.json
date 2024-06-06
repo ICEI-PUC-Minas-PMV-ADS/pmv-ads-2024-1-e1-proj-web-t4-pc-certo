@@ -1,0 +1,238 @@
+{
+    "Processador": [
+        {
+            "marca": "AMD",
+            "modelo": "Ryzen 5 5600x",
+            "preco": 2222.24,
+            "desempenho": "Alto Desempenho",
+            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+            "imagem": "img/pagEscolha-teste.png",
+            "socket": "AM4",
+            "TDP": "65W"
+        },
+        {
+            "marca": "AMD",
+            "modelo": "Ryzen 5 5600x",
+            "preco": 4124.12,
+            "desempenho": "Baixo Desempenho",
+            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+            "imagem": "img/pagEscolha-teste.png",
+            "socket": "AM4",
+            "TDP": "65W"
+        },
+        {
+            "marca": "AMD",
+            "modelo": "Ryzen 5 5600x",
+            "preco": 2131.12,
+            "desempenho": "Medio Desempenho",
+            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+            "imagem": "img/pagEscolha-teste.png",
+            "socket": "AM4",
+            "TDP": "65W"
+        },
+        {
+            "marca": "AMD",
+            "modelo": "Ryzen 5 5600x",
+            "preco": 4124.12,
+            "desempenho": "Medio Desempenho",
+            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+            "imagem": "img/pagEscolha-teste.png",
+            "socket": "AM4",
+            "TDP": "65W"
+        },
+        {
+            "marca": "AMD",
+            "modelo": "Ryzen 5 5600x",
+            "preco": 4124.12,
+            "desempenho": "Medio Desempenho",
+            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+            "imagem": "img/pagEscolha-teste.png",
+            "socket": "AM4",
+            "TDP": "65W"
+        },
+        {
+            "marca": "AMD",
+            "modelo": "Ryzen 5 5600x",
+            "preco": 4124.12,
+            "desempenho": "Medio Desempenho",
+            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+            "imagem": "img/pagEscolha-teste.png",
+            "socket": "AM4",
+            "TDP": "65W"
+        },
+        {
+            "marca": "AMD",
+            "modelo": "Ryzen 5 5600x",
+            "preco": 4124.12,
+            "desempenho": "Medio Desempenho",
+            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+            "imagem": "img/pagEscolha-teste.png",
+            "socket": "AM4",
+            "TDP": "65W"
+        },
+        {
+            "marca": "AMD",
+            "modelo": "Ryzen 5 5600x",
+            "preco": 4124.12,
+            "desempenho": "Medio Desempenho",
+            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+            "imagem": "img/pagEscolha-teste.png",
+            "socket": "AM4",
+            "TDP": "65W"
+        }
+    ],
+    "Placa-mae": [
+        {
+            "marca": "AMD",
+            "modelo": "Ryzen 5 5600x",
+            "preco": 4124.12,
+            "desempenho": "Alto Desempenho",
+            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+            "imagem": "img/pagEscolha-teste.png",
+            "socket": "AM4",
+            "TDP": "65W"
+        },
+        {
+            "marca": "AMD",
+            "modelo": "Ryzen 5 5600x",
+            "preco": 4124.12,
+            "desempenho": "Baixo Desempenho",
+            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+            "imagem": "img/pagEscolha-teste.png",
+            "socket": "AM4",
+            "TDP": "65W"
+        }
+    ],
+    "RAM": [
+        {
+            "marca": "AMD",
+            "modelo": "Ryzen 5 5600x",
+            "preco": 4124.12,
+            "desempenho": "Alto Desempenho",
+            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+            "imagem": "img/pagEscolha-teste.png",
+            "socket": "AM4",
+            "TDP": "65W"
+        },
+        {
+            "marca": "AMD",
+            "modelo": "Ryzen 5 5600x",
+            "preco": 4124.12,
+            "desempenho": "Baixo Desempenho",
+            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+            "imagem": "img/pagEscolha-teste.png",
+            "socket": "AM4",
+            "TDP": "65W"
+        }
+    ],
+    "GPU": [
+        {
+            "marca": "AMD",
+            "modelo": "Ryzen 5 5600x",
+            "preco": 4124.12,
+            "desempenho": "Alto Desempenho",
+            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+            "imagem": "img/pagEscolha-teste.png",
+            "socket": "AM4",
+            "TDP": "65W"
+        },
+        {
+            "marca": "AMD",
+            "modelo": "Ryzen 5 5600x",
+            "preco": 4124.12,
+            "desempenho": "Baixo Desempenho",
+            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+            "imagem": "img/pagEscolha-teste.png",
+            "socket": "AM4",
+            "TDP": "65W"
+        }
+    ],
+    "Armazenamento": [
+        {
+            "marca": "AMD",
+            "modelo": "Ryzen 5 5600x",
+            "preco": 4124.12,
+            "desempenho": "Alto Desempenho",
+            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+            "imagem": "img/pagEscolha-teste.png",
+            "socket": "AM4",
+            "TDP": "65W"
+        },
+        {
+            "marca": "AMD",
+            "modelo": "Ryzen 5 5600x",
+            "preco": 4124.12,
+            "desempenho": "Baixo Desempenho",
+            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+            "imagem": "img/pagEscolha-teste.png",
+            "socket": "AM4",
+            "TDP": "65W"
+        }
+    ],
+    "PSU": [
+        {
+            "marca": "AMD",
+            "modelo": "Ryzen 5 5600x",
+            "preco": 4124.12,
+            "desempenho": "Alto Desempenho",
+            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+            "imagem": "img/pagEscolha-teste.png",
+            "socket": "AM4",
+            "TDP": "65W"
+        },
+        {
+            "marca": "AMD",
+            "modelo": "Ryzen 5 5600x",
+            "preco": 4124.12,
+            "desempenho": "Baixo Desempenho",
+            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+            "imagem": "img/pagEscolha-teste.png",
+            "socket": "AM4",
+            "TDP": "65W"
+        }
+    ],
+    "Gabinete": [
+        {
+            "marca": "AMD",
+            "modelo": "Ryzen 5 5600x",
+            "preco": 4124.12,
+            "desempenho": "Alto Desempenho",
+            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+            "imagem": "img/pagEscolha-teste.png",
+            "socket": "AM4",
+            "TDP": "65W"
+        },
+        {
+            "marca": "AMD",
+            "modelo": "Ryzen 5 5600x",
+            "preco": 4124.12,
+            "desempenho": "Baixo Desempenho",
+            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+            "imagem": "img/pagEscolha-teste.png",
+            "socket": "AM4",
+            "TDP": "65W"
+        }
+    ],
+    "Refrigeração": [
+        {
+            "marca": "AMD",
+            "modelo": "Ryzen 5 5600x",
+            "preco": 4124.12,
+            "desempenho": "Alto Desempenho",
+            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+            "imagem": "img/pagEscolha-teste.png",
+            "socket": "AM4",
+            "TDP": "65W"
+        },
+        {
+            "marca": "AMD",
+            "modelo": "Ryzen 5 5600x",
+            "preco": 4124.12,
+            "desempenho": "Baixo Desempenho",
+            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+            "imagem": "img/pagEscolha-teste.png",
+            "socket": "AM4",
+            "TDP": "65W"
+        }
+    ]
+}
