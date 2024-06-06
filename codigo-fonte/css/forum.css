@@ -11,7 +11,23 @@ body{
     position: relative;
 }
 
-        /* MAIN */
+.contTop{
+    max-height: fit-content;
+
+    font-family: 'Hanken Grotesk', Arial, sans-serif;
+    padding: 10px 5%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.flexGrow1{
+    flex-grow: 1;
+}
+    /* MAIN */
 
 main{
     min-height: 100%;
@@ -23,7 +39,7 @@ main{
 
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .bcBt{
@@ -64,7 +80,7 @@ button:hover{
     font-size: 27px;
     color: #fff;
 
-        border: none;
+    border: none;
     outline: none;
     background-color:transparent;
     flex-grow: 1;
@@ -73,6 +89,30 @@ button:hover{
     
 .SearchBar::placeholder{
         color: #7db486;
+}
+
+@media (max-width: 709px) {
+    .SearchBar{
+        max-width: 300px;
+    }
+    .Search{
+        max-width: fit-content;
+    }
+}
+
+@media (max-width: 610px) {
+    input.SearchBar{
+        display: none;
+    }
+    div.Search{
+        flex-grow: 0;
+    }
+    button#srch0{
+        display: none;
+    }
+    button#srch1{
+        display: inline-block;
+    }
 }
     
 .SearchBtn{
@@ -99,26 +139,38 @@ button:hover{
     height: 33px;
 }
 
-#aNovoTpcPqno{
-    max-width: 50px;
-    max-height: 50px;
+#srch1{
+    display: none;
 }
 
-#novoTpcPqno{
-    width: 30px;
-    height: 30px;
+    /* ICONES FORUM */
+
+#iconesForum{
+    display: flex;
+}
+
+.iconSmll{
+    width: 33px;
+    height: 33px;
     max-width: 100%;
     padding: 10px;
+    float: right;
 
     bottom: 50%;
-
-    background-color: #41ae4f;
-    border-radius: 10px;
-    transition: 1s ease;
+    transition: 0.5s ease;
 }
 
-#novoTpcPqno:hover{
-    scale: 1.01;
+.iconSmll:hover{
+    scale: 1.2;
+    cursor: pointer;
+}
+
+#numNot{
+    color: #fff;
+    font-weight: bolder;
+
+    margin-left: -24px;
+    margin-top: 8px ;
 }
 
         /* BREADCRUMB */
@@ -149,39 +201,26 @@ a:hover{
 
 #mainContent{
     padding: 30px 50px 30px 0;
-    min-width: fit-content;
+
+    flex: 2;
 
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-
     gap: 10px;
 }
 
 #sideContent{
     color: #fff;
-    min-width: fit-content;
-    flex-grow: 1;
+    flex: 1;
     
     padding: 30px 0 30px 0px;
-}
-
-.contTop{
-    height:auto;
-    max-height: fit-content;
-
-    font-family: 'Hanken Grotesk', Arial, sans-serif;
-    padding: 10px 0px 10px 0px;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
 }
 
 #Participe{
     background-color: #3f6944;
     max-width: fit-content;
+    min-width: none;
     padding: 35px 40px 40px 40px;
     gap: 40px;
     border-radius: 30px;
@@ -189,7 +228,7 @@ a:hover{
     display: none;
     flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 #Publique{
@@ -260,13 +299,7 @@ a:hover{
     height: auto;
 }
 
-@media (max-width: 946px){
-    img#pasrtImg{
-        display: flex;
-    }
-}
-
-@media (max-width: 850px){
+@media (max-width: 1300px){
     img#pubImg{
         display: none;
     }
