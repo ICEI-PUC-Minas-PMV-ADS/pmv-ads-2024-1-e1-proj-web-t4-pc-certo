@@ -281,7 +281,14 @@ if (usuarioString !== null) {
 
 // SELECAO DE TIPO DE FORUM
 
-var forums = [allForums, buyForums, softForums, hardForums, etcForums];
+var forums = [
+  allForums,
+  buyForums,
+  softForums,
+  hardForums,
+  prfcForums,
+  etcForums,
+];
 
 forums.forEach(function (forumX) {
   forumX.onclick = function () {

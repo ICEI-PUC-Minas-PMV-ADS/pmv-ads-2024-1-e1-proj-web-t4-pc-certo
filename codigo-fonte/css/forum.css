@@ -177,7 +177,7 @@ button:hover {
 }
 
 .iconVSmll {
-    width: 20px;
+    width: 30px;
     height: auto;
     max-width: 100%;
     padding: 10px;
@@ -255,7 +255,7 @@ a:hover {
     padding: 30px 0 30px 0px;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 1000px) {
     main {
         flex-direction: column;
     }
@@ -263,6 +263,37 @@ a:hover {
     div#mainContent {
         padding: 30px 0px;
     }
+}
+
+.sideBarPub {
+    padding: 10px;
+    background-color: #3f6944;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.sideBarPubPic {
+    width: 80px;
+    height: fit-content;
+    max-width: 100%;
+}
+
+.sideBarPubTxt {
+    display: flex;
+    flex-direction: column;
+
+    flex-grow: 1;
+    flex: 1;
+}
+
+.sideBarPubResp {
+    color: #7db486;
+}
+
+.tempoDesdePub {
+    color: #bbbbbb;
 }
 
 #Participe {
@@ -355,18 +386,31 @@ a:hover {
 
 .titSmll {
     color: #fff;
-    font-size: large;
+    font-size: larger;
 
     display: flex;
     align-items: center;
 }
 
+#titSmallTit {
+    flex-grow: 1;
+}
+
+#linhaHor {
+    height: 2px;
+    background-color: #4f8556;
+    margin: 0 2%;
+
+    flex-grow: 1;
+}
+
 .forumSelect {
     display: flex;
     flex-wrap: wrap;
+    width: fit-content;
 
     gap: 15px;
-    padding: 3px 0;
+    padding: 3px 3px;
 }
 
 .forumSlctOpt {
@@ -380,6 +424,10 @@ a:hover {
 
     transition: 0.3s ease;
     scale: 1
+}
+
+.forumSlctOpt:hover {
+    scale: 1.1;
 }
 
 .forumSlctOpt1 {
@@ -409,7 +457,7 @@ a:hover {
 
     flex-grow: 1;
     display: flex;
-    gap: 5%;
+    gap: 2%;
 
     transition: 0.3s ease;
 }
@@ -443,11 +491,15 @@ a:hover {
 }
 
 .tpcCounter {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .msgCounter {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .eachIcon {
@@ -465,6 +517,8 @@ a:hover {
     }
 }
 
+/* CORES DAS CATEGORIAS */
+
 #geralIcon {
     background-color: #3b89ff;
 }
@@ -475,6 +529,18 @@ a:hover {
 
 #HWIcon {
     background-color: #db1d1d;
+}
+
+#prfIcon {
+    background-color: #129e2a;
+}
+
+#mntIcon {
+    background-color: #c7660b;
+}
+
+#foneIcon {
+    background-color: #9b0bc7;
 }
 
 .CntrTit {
