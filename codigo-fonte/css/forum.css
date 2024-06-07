@@ -1,4 +1,4 @@
-body{
+body {
     font-family: 'Hanken Grotesk', sans-serif, sans-serif;
     padding: 0px;
     margin: 0px;
@@ -11,7 +11,7 @@ body{
     position: relative;
 }
 
-.contTop{
+.contTop {
     max-height: fit-content;
 
     font-family: 'Hanken Grotesk', Arial, sans-serif;
@@ -24,16 +24,16 @@ body{
     gap: 20px;
 }
 
-.flexGrow1{
+.flexGrow1 {
     flex-grow: 1;
 }
-    /* MAIN */
 
-main{
+/* MAIN */
+
+main {
     min-height: 100%;
     gap: 10px 0 10px 0;
     padding: 0 5%;
-
 
     flex-grow: 1;
 
@@ -42,7 +42,7 @@ main{
     flex-wrap: nowrap;
 }
 
-.bcBt{
+.bcBt {
     text-decoration: none;
     color: rgb(143, 167, 143);
     font-size: 20px;
@@ -51,25 +51,25 @@ main{
     max-width: fit-content;
 }
 
-.btDef{
+.btDef {
     border: none;
-    
+
 }
 
-.filterBtn{
+.filterBtn {
     border: none;
     outline: none;
     background-color: transparent;
     padding: 0 0 0 0;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
 }
 
-    /* Pesquisar*/
+/* Pesquisar*/
 
-.Search{
+.Search {
     font-size: 27px;
     background-color: #3f6944;
     border-radius: 20px;
@@ -82,47 +82,51 @@ button:hover{
     display: flex;
     flex-direction: row;
 }
-    
-.SearchBar{
+
+.SearchBar {
     font-size: 27px;
     color: #fff;
 
     border: none;
     outline: none;
-    background-color:transparent;
+    background-color: transparent;
     flex-grow: 1;
     width: 100%;
 }
-    
-.SearchBar::placeholder{
-        color: #7db486;
+
+.SearchBar::placeholder {
+    color: #7db486;
 }
 
 @media (max-width: 709px) {
-    .SearchBar{
+    .SearchBar {
         max-width: 300px;
     }
-    .Search{
+
+    .Search {
         max-width: fit-content;
     }
 }
 
-@media (max-width: 610px) {
-    input.SearchBar{
+@media (max-width: 690px) {
+    input.SearchBar {
         display: none;
     }
-    div.Search{
+
+    div.Search {
         flex-grow: 0;
     }
-    button#srch0{
+
+    button#srch0 {
         display: none;
     }
-    button#srch1{
+
+    button#srch1 {
         display: inline-block;
     }
 }
-    
-.SearchBtn{
+
+.SearchBtn {
     width: 33.47px;
     height: 33.47px;
     padding: 0;
@@ -133,30 +137,30 @@ button:hover{
 
     align-self: flex-end;
 }
-    
-.SearchBtn:hover{
+
+.SearchBtn:hover {
     transform: scale(0.7) rotate(20deg);
     transition: 0.3s;
     cursor: pointer;
-    
+
 }
-    
-.SearchIcon{
+
+.SearchIcon {
     width: 33px;
     height: 33px;
 }
 
-#srch1{
+#srch1 {
     display: none;
 }
 
-    /* ICONES FORUM */
+/* ICONES FORUM */
 
-#iconesForum{
+#iconesForum {
     display: flex;
 }
 
-.iconSmll{
+.iconSmll {
     width: 33px;
     height: 33px;
     max-width: 100%;
@@ -167,12 +171,12 @@ button:hover{
     transition: 0.5s ease;
 }
 
-.iconSmll:hover{
+.iconSmll:hover {
     scale: 1.2;
     cursor: pointer;
 }
 
-.iconVSmll{
+.iconVSmll {
     width: 20px;
     height: auto;
     max-width: 100%;
@@ -181,21 +185,35 @@ button:hover{
     transition: 0.5s ease;
 }
 
-#sinoNot:hover{
+#sinoNot:hover {
     animation: shake 0.35s;
 }
 
 @keyframes shake {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(5deg); }
-    50% { transform: rotate(-5deg); }
-    75% { transform: rotate(5deg); }
-    100% { transform: rotate(0deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+
+    75% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
-        /* BREADCRUMB */
+/* BREADCRUMB */
 
-.Breadcrumb{
+.Breadcrumb {
     max-height: fit-content;
     color: rgb(126, 167, 126);
     padding: 5px 0px;
@@ -207,19 +225,19 @@ button:hover{
     align-items: center;
 }
 
-#indBC{
+#indBC {
     color: #41ae4f;
 }
 
-a:hover{
+a:hover {
     scale: 1.03;
     color: rgb(179, 245, 179);
 }
 
-        /* MAIN */
+/* MAIN */
 
 
-#mainContent{
+#mainContent {
     padding: 30px 50px 30px 0;
 
     flex: 2;
@@ -230,20 +248,30 @@ a:hover{
     gap: 10px;
 }
 
-#sideContent{
+#sideContent {
     color: #fff;
     flex: 1;
-    
+
     padding: 30px 0 30px 0px;
 }
 
-#Participe{
+@media (max-width: 680px) {
+    main {
+        flex-direction: column;
+    }
+
+    div#mainContent {
+        padding: 30px 0px;
+    }
+}
+
+#Participe {
     background-color: #3f6944;
-    max-width: fit-content;
     min-width: none;
     padding: 35px 40px 40px 40px;
     gap: 40px;
     border-radius: 30px;
+    max-width: max-content;
 
     display: none;
     flex-direction: row;
@@ -251,12 +279,12 @@ a:hover{
     flex-wrap: nowrap;
 }
 
-#Publique{
+#Publique {
     background-color: #3f6944;
-    max-width: fit-content;
     padding: 35px 40px 40px 40px;
     gap: 40px;
     border-radius: 30px;
+    max-width: max-content;
 
     display: flex;
     flex-direction: row;
@@ -264,33 +292,33 @@ a:hover{
     flex-wrap: nowrap;
 }
 
-#partTop{
+#partTop {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    
+
 }
 
-#partTit{
+#partTit {
     font-size: 40px;
     font-weight: 900;
     color: #fff;
     margin: 0;
 }
 
-#partText{
+#partText {
     font-size: 20px;
     color: rgb(174, 219, 174);
     margin: 0;
     max-width: 675px;
 }
 
-#partBt{
+#partBt {
     display: flex;
     gap: 5%;
 }
 
-#partLog{
+#partLog {
     background-color: #41ae4f;
     padding: 15px;
     border-radius: 10px;
@@ -301,7 +329,7 @@ a:hover{
     transition: 0.3s ease-in-out;
 }
 
-#partCad{
+#partCad {
     background-color: #fff;
     padding: 15px;
     border-radius: 10px;
@@ -312,20 +340,20 @@ a:hover{
     transition: 0.3s ease-in-out;
 }
 
-.topImgs{
+.topImgs {
     transition: 0.3s;
     max-width: 100%;
     width: 200px;
     height: auto;
 }
 
-@media (max-width: 1300px){
-    img#pubImg{
+@media (max-width: 1300px) {
+    img#pubImg {
         display: none;
     }
 }
 
-.titSmll{
+.titSmll {
     color: #fff;
     font-size: large;
 
@@ -333,46 +361,141 @@ a:hover{
     align-items: center;
 }
 
-.forumSelect{
+.forumSelect {
     display: flex;
+    flex-wrap: wrap;
+
     gap: 15px;
     padding: 3px 0;
 }
 
-.forumSlctOpt{
+.forumSlctOpt {
     background-color: transparent;
     border: 2px solid #7db486;
     border-radius: 10px;
     padding: 10px;
 
-    color:#fff;
+    color: #fff;
     font-weight: bold;
 
     transition: 0.3s ease;
     scale: 1
 }
 
-.forumSlctOpt1{
+.forumSlctOpt1 {
     background-color: #41ae4f;
     border: 2px solid #41ae4f;
     border-radius: 10px;
     padding: 10px;
 
-    color:#fff;
-    font-weight: bold;
+    color: #fff;
+    font-weight: bolder;
 
     transition: 0.3s ease;
     scale: 1.1;
 }
 
+.contForums {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
-        /* NOVO TOPICO ID= novoTpc */
+.eachForum {
+    background-color: #3f6944;
 
-#novoTpc{
+    padding: 20px;
+    border-radius: 15px;
+
+    flex-grow: 1;
+    display: flex;
+    gap: 5%;
+
+    transition: 0.3s ease;
+}
+
+.eachForum:hover {
+    scale: 1.02;
+    background-color: #4f8556;
+    cursor: pointer;
+}
+
+.titSubTit {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.hTit {
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+
+    margin: 0;
+}
+
+.hTxt {
+    color: #86c49e;
+    font-size: 20px;
+    font-weight: bold;
+
+    margin: 0;
+}
+
+.tpcCounter {
+    display: inline-block;
+}
+
+.msgCounter {
+    display: inline-block;
+}
+
+.eachIcon {
+    width: 60px;
+    height: 60px;
+    max-width: 100%;
+
+    padding: 10px;
+    border-radius: 15px;
+}
+
+@media (max-width: 440px) {
+    .eachIcon {
+        display: none;
+    }
+}
+
+#geralIcon {
+    background-color: #3b89ff;
+}
+
+#regrasIcon {
+    background-color: #dbaf1d;
+}
+
+#HWIcon {
+    background-color: #db1d1d;
+}
+
+.CntrTit {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.CntrTxt {
+    color: #86c49e;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/* NOVO TOPICO ID= novoTpc */
+
+#novoTpc {
     font-size: 27px;
     font-weight: bold;
     letter-spacing: 1px;
-    color:white;
+    color: white;
     background-color: #41ae4f;
     border-radius: 20px;
     padding: 15px 10px;
@@ -384,7 +507,8 @@ a:hover{
     flex-grow: 1;
     transition: 0.3s ease-in-out;
 }
-#novoTpc:hover{  
+
+#novoTpc:hover {
     background-color: #dfdfdf;
     color: #41ae4f;
     cursor: pointer;
@@ -392,7 +516,7 @@ a:hover{
 
 /* Novo Tópico PopUp */
 
-#popUp{
+#popUp {
     display: none;
     position: fixed;
     top: 0%;
@@ -404,7 +528,7 @@ a:hover{
 
     justify-content: center;
     flex-wrap: wrap;
-  }
+}
 
 .cxNovoTpc {
     background-color: #fff;
@@ -420,21 +544,21 @@ a:hover{
     justify-content: center;
 }
 
-.popUpTop{
+.popUpTop {
     display: flex;
     align-items: center;
 }
 
-h2{
+h2 {
     flex-grow: 1;
 }
 
-h3{
+h3 {
     margin: 0 0 5px 0;
     font-weight: 500;
 }
 
-#titPub{
+#titPub {
     border: none;
     outline: none;
     background-color: gainsboro;
@@ -444,12 +568,12 @@ h3{
     border-radius: 10px;
 }
 
-#escolhaTema{
+#escolhaTema {
     font-weight: 600;
     margin-bottom: 3px;
 }
 
-#temaTpc{
+#temaTpc {
     background-color: gainsboro;
     padding: 3px 0px;
     outline: none;
@@ -461,7 +585,7 @@ h3{
     justify-content: center;
 }
 
-#textoPub{
+#textoPub {
     outline: none;
     border: none;
     background-color: gainsboro;
@@ -476,14 +600,16 @@ h3{
     resize: none;
 }
 
-#txtCurto, #titCurto, #opcInval{
+#txtCurto,
+#titCurto,
+#opcInval {
     font-size: 15px;
     font-weight: 600;
     color: red;
     margin-top: 2px;
 }
 
-#enviarPub{
+#enviarPub {
     float: right;
     border: none;
     outline: none;
@@ -499,7 +625,7 @@ h3{
 
 }
 
-.fechar{
+.fechar {
     float: right;
     width: 30px;
     height: 30px;
@@ -507,17 +633,17 @@ h3{
     border-color: none;
     background-color: gainsboro;
     outline: none;
-    transition:  0.3s;
+    transition: 0.3s;
     border: none;
 }
 
-.fechar:hover{
+.fechar:hover {
     cursor: pointer;
     background-color: rgba(255, 0, 0, 0.3);
     transition: 0.3s ease-in-out;
 }
 
-#closeBtn{
+#closeBtn {
     width: 18px;
     height: 18px;
     float: left;
@@ -525,8 +651,20 @@ h3{
 
 /* Estilos dos tópicos */
 
-.classePSU, .classeCASE, .classeGERAL, .classeSSD, .classeUPGRADE, .classeRAM, .classeMONTAGEM
-, .classeNOTEBOOKS, .classePERIF, .classeGPU, .classeMOBO, .classeISSUES, .classeCPU, .classeCOOLER {
+.classePSU,
+.classeCASE,
+.classeGERAL,
+.classeSSD,
+.classeUPGRADE,
+.classeRAM,
+.classeMONTAGEM,
+.classeNOTEBOOKS,
+.classePERIF,
+.classeGPU,
+.classeMOBO,
+.classeISSUES,
+.classeCPU,
+.classeCOOLER {
     background-color: #fff;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -540,8 +678,20 @@ h3{
     transition: 0.3s ease;
 }
 
-.classePSU:hover,.classeCASE:hover,.classeGERAL:hover,.classeSSD:hover,.classeUPGRADE:hover,
-.classeRAM:hover,.classeMONTAGEM:hover,.classeNOTEBOOKS:hover,.classePERIF:hover,.classeGPU:hover,.classeMOBO:hover,.classeISSUES:hover,.classeCPU:hover,.classeCOOLER:hover{
+.classePSU:hover,
+.classeCASE:hover,
+.classeGERAL:hover,
+.classeSSD:hover,
+.classeUPGRADE:hover,
+.classeRAM:hover,
+.classeMONTAGEM:hover,
+.classeNOTEBOOKS:hover,
+.classePERIF:hover,
+.classeGPU:hover,
+.classeMOBO:hover,
+.classeISSUES:hover,
+.classeCPU:hover,
+.classeCOOLER:hover {
     cursor: pointer;
     transform: scale(1.015);
     border: 1px solid green;
@@ -553,23 +703,23 @@ h3{
     font-weight: 600;
     text-transform: uppercase;
     flex-grow: 1;
-    
+
 
     width: fit-content;
 }
 
-.qualTema{
+.qualTema {
     color: grey;
     display: block;
 
     width: fit-content;
 }
 
-.tema{
+.tema {
 
     color: grey;
     font-weight: 600;
-    
+
     width: fit-content;
 }
 
@@ -580,11 +730,11 @@ h3{
     width: fit-content;
 }
 
-.feitoPor{
+.feitoPor {
     width: fit-content;
 }
 
-.autor{
+.autor {
     font-weight: 600;
     width: fit-content;
 }

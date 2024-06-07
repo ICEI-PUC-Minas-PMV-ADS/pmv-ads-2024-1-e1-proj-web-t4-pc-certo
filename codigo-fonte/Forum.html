@@ -1,188 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fórum da Comunidade - PC Certo</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-    <link rel="stylesheet" href="css/forum.css">
-    <link rel="stylesheet" href="css/HeaderFooter.css">
-    <link rel="icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    />
+    <link rel="stylesheet" href="css/forum.css" />
+    <link rel="stylesheet" href="css/HeaderFooter.css" />
+    <link rel="icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <script defer src="js/HeaderFooter.js"></script>
     <script defer src="js/forum.js"></script>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- HEADER -->
 
-<header>
-    <a href="Paginainicial.html" id="logosite">
-        <img class="logo" src="img/logo.png" alt="">
-        <img class="loguinho" src="img/favicon.png" alt="">
-    </a>
-    <button class="sidebaricon"><img src="img/sidebar.png" alt="iconesidebar" width="35px"
-            height="30px"></button>
-    <div class="botoescabecalho">
-        <a class="botaocabecalho" href="Forum.html"><span class="txtcabecalho">Fórum</span></a>
-        <a class="botaocabecalho" href="Guiademontagem.html"><span class="txtcabecalho">Guia</span></a>
-        <a class="botaocabecalho" href="Montarpc.html"><span class="txtcabecalho">Montar PC</span></a>
+    <header>
+      <a href="Paginainicial.html" id="logosite">
+        <img class="logo" src="img/logo.png" alt="" />
+        <img class="loguinho" src="img/favicon.png" alt="" />
+      </a>
+      <button class="sidebaricon">
+        <img
+          src="img/sidebar.png"
+          alt="iconesidebar"
+          width="35px"
+          height="30px"
+        />
+      </button>
+      <div class="botoescabecalho">
+        <a class="botaocabecalho" href="Forum.html"
+          ><span class="txtcabecalho">Fórum</span></a
+        >
+        <a class="botaocabecalho" href="Guiademontagem.html"
+          ><span class="txtcabecalho">Guia</span></a
+        >
+        <a class="botaocabecalho" href="Montarpc.html"
+          ><span class="txtcabecalho">Montar PC</span></a
+        >
         <a class="botaocabecalho2" href="Login.html">
-            <img class="ProfileIcon" src="img/ProfileIcon.png" alt="Meu Perfil">
-            <span class="txtcabecalho"> Fazer Login</span>
+          <img class="ProfileIcon" src="img/ProfileIcon.png" alt="Meu Perfil" />
+          <span class="txtcabecalho"> Fazer Login</span>
         </a>
-    </div>
-</header> <br>
+      </div>
+    </header>
+    <br />
 
     <!-- MAIN -->
 
     <div class="contTop">
-        <div class="Search">
-            <input name="caixapesq" type="text" class="SearchBar" placeholder="O que você procura?" required></input>
-            <button class="SearchBtn" id="srch0">
-                <img src="img/searchIcon_DM.png" class="SearchIcon" alt="Icone de Pesquisa">
-            </button>
-            <button class="SearchBtn" id="srch1">
-                <img src="img/searchIcon_DM.png" class="SearchIcon" alt="Icone de Pesquisa">
-            </button>
-        </div>
-        <button class="filterBtn">
-            <img src="img/filtroIcon_DM.png" class="iconSmll" alt="">
+      <div class="Search">
+        <input
+          name="caixapesq"
+          type="text"
+          class="SearchBar"
+          placeholder="O que você procura?"
+          required
+        />
+        <button class="SearchBtn" id="srch0">
+          <img
+            src="img/forum/searchIcon_DM.png"
+            class="SearchIcon"
+            alt="Icone de Pesquisa"
+          />
         </button>
-        
-        <span class="flexGrow1">&nbsp</span>
-        <div id="iconesForum">
-            <img src="img/mais_DM.png" class="iconSmll" alt="">
-            <img src="img/sinos/sinoMais_DM.png" class="iconSmll" alt="" id="sinoNot">
-            <img src="img/profileIconSmll_DM.png" class="iconSmll" alt="">
-        </div>
-        
+        <button class="SearchBtn" id="srch1">
+          <img
+            src="img/forum/searchIcon_DM.png"
+            class="SearchIcon"
+            alt="Icone de Pesquisa"
+          />
+        </button>
+      </div>
+      <button class="filterBtn">
+        <img src="img/forum/filtroIcon_DM.png" class="iconSmll" alt="" />
+      </button>
+
+      <span class="flexGrow1">&nbsp</span>
+      <div id="iconesForum">
+        <img src="img/forum/mais_DM.png" class="iconSmll" alt="" />
+        <img
+          src="img/forum/sinos/sinoMais_DM.png"
+          class="iconSmll"
+          alt=""
+          id="sinoNot"
+        />
+        <img src="img/forum/profileIconSmll_DM.png" class="iconSmll" alt="" />
+      </div>
     </div>
 
-<main>
+    <main>
+      <!-- CONTEUDO DA PAGINA -->
 
-    <!-- CONTEUDO DA PAGINA -->
-    
-    
-    <div id="mainContent">
+      <div id="mainContent">
         <div class="Breadcrumb">
-            <span id="indBC">&#9679;</span>
+          <span id="indBC">&#9679;</span>
 
-            <a class="bcBt" href="Paginainicial.html"> Página Inicial</a> 
-            &#10140; 
-            <a class="bcBt" href="Forum.html">Fórum da Comunidade</a>
+          <a class="bcBt" href="Paginainicial.html"> Página Inicial</a>
+          &#10140;
+          <a class="bcBt" href="Forum.html">Fórum da Comunidade</a>
         </div>
         <div id="Participe">
-            <div id="partTop">
-                <p id="partTit"> Fique Por Dentro Do <br> Que Está Acontecendo! </p>
-                <p id="partText"> 
-                Participe da nossa comunidade, onde você terá acesso à 
-                resolução de dúvidas que outras pessoas tiveram, podendo
-                também responde-las, alem de compartilhar suas dúvidas,
-                opiniões e muito mais!
-                </p>
-                <div id="partBt">
-                    <a class="btDef" id="partLog" href="Login.html">
-                        Fazer Login
-                    </a>
-                    <a class="btDef" id="partCad" href="Cadastro.html">
-                        Cadastrar
-                    </a>
-                </div>
+          <div id="partTop">
+            <p id="partTit">
+              Fique Por Dentro Do <br />
+              Que Está Acontecendo!
+            </p>
+            <p id="partText">
+              Participe da nossa comunidade, onde você terá acesso à resolução
+              de dúvidas que outras pessoas tiveram, podendo também
+              responde-las, alem de compartilhar suas dúvidas, opiniões e muito
+              mais!
+            </p>
+            <div id="partBt">
+              <a class="btDef" id="partLog" href="Login.html"> Fazer Login </a>
+              <a class="btDef" id="partCad" href="Cadastro.html"> Cadastrar </a>
             </div>
-            <img class="topImgs" id="pubImg" src="img/iconForum_DM.png" alt="" max-width="100%" width="200px" height="auto">
+          </div>
+          <img
+            class="topImgs"
+            id="pubImg"
+            src="img/forum/iconForum_DM.png"
+            alt=""
+            max-width="100%"
+            width="200px"
+            height="auto"
+          />
         </div>
         <div id="Publique">
-            <div id="partTop">
-                <p id="partTit"> Opa! Alguma duvida aí? <br></p>
-                <p id="partText"> 
-                Faça uma publicação dentro de algum tópico para que outras pessoas
-                possam responder suas dúvidas, ajudando também aqueles possam acabar
-                tendo a mesma dúvida que você!
-                </p>
-                <div id="partBt">
-                    <button id="novoTpc"> Fazer uma Publicação </button>
-                </div>
+          <div id="partTop">
+            <p id="partTit">Opa! Alguma duvida aí? <br /></p>
+            <p id="partText">
+              Faça uma publicação dentro de algum tópico para que outras pessoas
+              possam responder suas dúvidas, ajudando também aqueles possam
+              acabar tendo a mesma dúvida que você!
+            </p>
+            <div id="partBt">
+              <button id="novoTpc">Fazer uma Publicação</button>
             </div>
-            <img class="topImgs" id="pubImg" src="img/duvida_DM.png" alt="">
+          </div>
+          <img
+            class="topImgs"
+            id="pubImg"
+            src="img/forum/duvida_DM.png"
+            alt=""
+          />
         </div>
-        <br>
+        <br />
         <div class="titSmll">
-            <img src="img/chatIcon_DM.png" class="iconVSmll" alt="">
-            Forums da Comunidade
+          <img src="img/forum/chatIcon_DM.png" class="iconVSmll" alt="" />
+          Forums da Comunidade
         </div>
         <div class="forumSelect">
-            <button class="forumSlctOpt1" id="allForums">Todos</button>
-            <button class="forumSlctOpt" id="ofcForums">Fórums Oficiais</button>
-            <button class="forumSlctOpt" id="pubForums">Fórums Públicos</button>
-            <button class="forumSlctOpt" id="myForums">Meus Forum</button>
+          <button class="forumSlctOpt1" id="allForums">Todos</button>
+          <button class="forumSlctOpt" id="buyForums">Compra & Venda</button>
+          <button class="forumSlctOpt" id="softForums">Software</button>
+          <button class="forumSlctOpt" id="hardForums">Hardware</button>
+          <button class="forumSlctOpt" id="etcForums">Outros</button>
         </div>
         <div class="contForums">
-            <div class="forumCSS">
-                <img src="x">
-                
+          <div class="eachForum">
+            <img
+              src="img/forum/forumIcon/Regras_DM.png"
+              class="eachIcon"
+              id="regrasIcon"
+            />
+            <div class="titSubTit">
+              <h2 class="hTit">Regras do Fórum</h2>
+              <p class="hTxt">Outros</p>
             </div>
+            <div class="tpcCounter">
+              <span class="CntrTit">12</span>
+              <span class="CntrTxt">Posts</span>
+            </div>
+            <div class="msgCounter">
+              <span class="CntrTit">17.2k</span>
+              <span class="CntrTxt">Mensagens</span>
+            </div>
+          </div>
+          <div class="eachForum">
+            <img
+              src="img/forum/forumIcon/Geral_DM.png"
+              class="eachIcon"
+              id="geralIcon"
+            />
+            <div class="titSubTit">
+              <h2 class="hTit">Erros e Soluções de Problemas</h2>
+              <p class="hTxt">Software</p>
+            </div>
+            <div class="tpcCounter">
+              <span class="CntrTit">9.2k</span>
+              <span class="CntrTxt">Posts</span>
+            </div>
+            <div class="msgCounter">
+              <span class="CntrTit">929.4k</span>
+              <span class="CntrTxt">Mensagens</span>
+            </div>
+          </div>
+          <div class="eachForum">
+            <img
+              src="img/forum/forumIcon/Hardware_DM.png"
+              class="eachIcon"
+              id="HWIcon"
+            />
+            <div class="titSubTit">
+              <h2 class="hTit">Troca de Peças</h2>
+              <p class="hTxt">Hardware</p>
+            </div>
+            <div class="tpcCounter">
+              <span class="CntrTit">43.2k</span>
+              <span class="CntrTxt">Posts</span>
+            </div>
+            <div class="msgCounter">
+              <span class="CntrTit">1.1M</span>
+              <span class="CntrTxt">Mensagens</span>
+            </div>
+          </div>
         </div>
-    </div>
-    <div id="sideContent">
-        Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Vero aliquid eaque fugiat
-        reiciendis eius natus nulla 
-        provident ipsam sunt corrupti 
-        aperiam doloremque ducimus, 
-        praesentium autem magni 
-        excepturi est eligendi 
-        labore. Repellat quidem 
-        nemo aliquid velit quas 
-        assumenda, ratione repudiandae 
-        saepe unde provident sit 
-        quisquam porro harum cum 
-        recusandae corporis labore 
-        vel itaque, nulla nostrum 
-        blanditiis modi doloremque 
-        magni est! Numquam cupiditate 
-        exercitationem quidem, culpa 
-        quia nostrum excepturi. Ducimus 
-        similique quis eos delectus 
-        saepe et neque, assumenda 
-        aspernatur iusto aut expedita 
-        placeat perferendis? Porro et ex 
-        vel, impedit temporibus totam 
-        doloremque culpa laborum quaerat
-        labore perspiciatis non 
-        doloribus eius? Provident 
-        minus, distinctio corporis 
-        vitae beatae sequi, nobis eaque 
-        repellendus voluptas doloremque
-        laudantium repudiandae, 
-        totam sed? Error dicta esse, 
-        ratione dolore eligendi 
-        quia provident reprehenderit 
-        doloremque corrupti eveniet 
-        quidem illum magnam quo 
-        repellendus voluptate 
-        consectetur rerum natus
-    </div>
+      </div>
+      <div id="sideContent">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aliquid
+        eaque fugiat reiciendis eius natus nulla provident ipsam sunt corrupti
+        aperiam doloremque ducimus, praesentium autem magni excepturi est
+        eligendi labore. Repellat quidem nemo aliquid velit quas assumenda,
+        ratione repudiandae saepe unde provident sit quisquam porro harum cum
+        recusandae corporis labore vel itaque, nulla nostrum blanditiis modi
+        doloremque magni est! Numquam cupiditate exercitationem quidem, culpa
+        quia nostrum excepturi. Ducimus similique quis eos delectus saepe et
+        neque, assumenda aspernatur iusto aut expedita placeat perferendis?
+        Porro et ex vel, impedit temporibus totam doloremque culpa laborum
+        quaerat labore perspiciatis non doloribus eius? Provident minus,
+        distinctio corporis vitae beatae sequi, nobis eaque repellendus voluptas
+        doloremque laudantium repudiandae, totam sed? Error dicta esse, ratione
+        dolore eligendi quia provident reprehenderit doloremque corrupti eveniet
+        quidem illum magnam quo repellendus voluptate consectetur rerum natus
+      </div>
 
+      <!-- POP UP OCULTO -->
 
-    <!-- POP UP OCULTO -->
-
-<div id="popUp">
-    <div class="cxNovoTpc">
-        <div class="popUpTop">
-            <h2 id="h2">Novo Tópico</h2><br>
-            <button class="fechar" id="btFechar"><img src="img/close.png" id="closeBtn" alt="&times"></button>
-        </div>
-        <h3 id="h3">Título</h3>
-        <input type="tituloPub" id="titPub" placeholder="Título do Tópico"  maxlength="75">
-        <span id="titCurto">*O título está muito curto!</span><br>
-        <label for="temaTpc" id="escolhaTema"> Escolha o tema:</label>
-        <select id="temaTpc">
+      <div id="popUp">
+        <div class="cxNovoTpc">
+          <div class="popUpTop">
+            <h2 id="h2">Novo Tópico</h2>
+            <br />
+            <button class="fechar" id="btFechar">
+              <img src="img/close.png" id="closeBtn" alt="&times" />
+            </button>
+          </div>
+          <h3 id="h3">Título</h3>
+          <input
+            type="tituloPub"
+            id="titPub"
+            placeholder="Título do Tópico"
+            maxlength="75"
+          />
+          <span id="titCurto">*O título está muito curto!</span><br />
+          <label for="temaTpc" id="escolhaTema"> Escolha o tema:</label>
+          <select id="temaTpc">
             <option value="NULO">======SELECIONE UMA OPÇÃO=====</option>
             <option value="PSU">Fontes e energia</option>
             <option value="CASE">Gabinetes e Casemod</option>
@@ -195,26 +279,37 @@
             <option value="PERIF">Periféricos (Mouse, teclado, etc)</option>
             <option value="GPU">Placas de Vídeos</option>
             <option value="MOBO">Placas Mãe</option>
-            <option value="ISSUES">Problemas de software (tela azul, etc)</option>
+            <option value="ISSUES">
+              Problemas de software (tela azul, etc)
+            </option>
             <option value="CPU">Processador</option>
-            <option value="COOLER">Ventoinhas e sistemas de refrigeração</option>
-        </select>
-        <span id="opcInval">*Você deve selecionar alguma opção!</span><br>
-        <h3 id="h4">Texto</h3>
-        <textarea id="textoPub" placeholder="Digite aqui sua dúvida..."  maxlength="750"></textarea>
-        <span id="txtCurto">*O texto está muito curto!</span><br>
-        <button id="enviarPub" title="Você deve prencher o título e o texto antes!">Publicar</button>
-    </div>
-</div>
-
-</main> <br>
+            <option value="COOLER">
+              Ventoinhas e sistemas de refrigeração
+            </option>
+          </select>
+          <span id="opcInval">*Você deve selecionar alguma opção!</span><br />
+          <h3 id="h4">Texto</h3>
+          <textarea
+            id="textoPub"
+            placeholder="Digite aqui sua dúvida..."
+            maxlength="750"
+          ></textarea>
+          <span id="txtCurto">*O texto está muito curto!</span><br />
+          <button
+            id="enviarPub"
+            title="Você deve prencher o título e o texto antes!"
+          >
+            Publicar
+          </button>
+        </div>
+      </div>
+    </main>
+    <br />
 
     <!-- FOOTER -->
 
-<footer class="rodape">
-    <p class="copyright">© 2024, PC Certo | Todos os direitos reservados.</p>
-</footer>
-
-</body>
-
+    <footer class="rodape">
+      <p class="copyright">© 2024, PC Certo | Todos os direitos reservados.</p>
+    </footer>
+  </body>
 </html>
