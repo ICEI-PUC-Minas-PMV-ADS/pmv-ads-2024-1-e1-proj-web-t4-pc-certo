@@ -95,7 +95,7 @@ Comprador Interessado em Aprender | Ler comentários e avaliações de outras pe
 |-------|---------------------------------|----|
 | RF-01 |A aplicação deve solicitar ao usuário qual será finalidade de uso das peças do computador a ser montado. |Alta|
 | RF-02 |A aplicação deve filtrar entre quais peças suprem cada finalidade escolhida pelo usuário anteriormente para a sugestão final da recomendação.|Alta| 
-| RF-03 |A aplicação deve coletar as informações por meio de API dos componentes do computador, como preços e especificações.|Alta| 
+| RF-03 |A aplicação deve coletar as informações por meio de um arquivo JSON dos componentes do computador, como preços e especificações.|Alta| 
 | RF-04 |A aplicação deve oferecer um orçamento ajustável para o usuário.|Alta| 
 | RF-05 |A aplicação deve calcular a soma dos componentes escolhidos para o usuário.|Alta| 
 | RF-06 |A aplicação deve disponibilizar ao usuário a escolha final das peças realizadas pela filtragem. |Alta| 
@@ -116,12 +116,11 @@ Comprador Interessado em Aprender | Ler comentários e avaliações de outras pe
 |--------|-------------------------|----|
 | RNF-01 |A aplicação deve funcionar 24 horas por dia, todos os dias da semana. |Alta| 
 | RNF-02 |A aplicação deve ser publicada em um ambiente acessível público na Internet.|Alta| 
-| RNF-03 |A aplicação deve oferecer uma interface para o usuário simples e direta.|Alta| 
-| RNF-04 |A aplicação deve atualizar os preços das peças a cada 24 horas. |Baixa| 
-| RNF-05 |A aplicação deve ser responsiva permitindo a visualização em dispositivos diversos de forma adequada.|Alta| 
-| RNF-06 |A aplicação deve ser compatível com os principais navegadores do mercado: Google Chrome, Firefox e Microsoft Edge. |Alta| 
-| RNF-07 |A aplicação deve ter bom nível de contraste entre os elementos da tela.|Média| 
-| RNF-08 |A aplicação deve armazenar as informações de cadastro dos usuários de forma criptografada. |Alta| 
+| RNF-03 |A aplicação deve oferecer uma interface para o usuário simples e direta.|Alta|
+| RNF-04 |A aplicação deve ser responsiva permitindo a visualização em dispositivos diversos de forma adequada.|Alta| 
+| RNF-05 |A aplicação deve ser compatível com os principais navegadores do mercado: Google Chrome, Firefox e Microsoft Edge. |Alta| 
+| RNF-06 |A aplicação deve ter bom nível de contraste entre os elementos da tela.|Média| 
+| RNF-07 |A aplicação deve armazenar as informações de cadastro dos usuários de forma criptografada. |Alta| 
 
 
 **Prioridade: Alta / Média / Baixa. 
