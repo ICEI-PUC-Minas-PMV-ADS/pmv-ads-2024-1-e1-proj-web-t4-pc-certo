@@ -28,6 +28,10 @@ body {
     flex-grow: 1;
 }
 
+p {
+    margin: 0 0;
+}
+
 /* MAIN */
 
 main {
@@ -216,7 +220,7 @@ button:hover {
 .Breadcrumb {
     max-height: fit-content;
     color: rgb(126, 167, 126);
-    padding: 5px 0px;
+    padding: 10px 5%;
     font-size: 20px;
     gap: 1%;
 
@@ -352,6 +356,30 @@ a:hover {
     color: rgb(174, 219, 174);
     margin: 0;
     max-width: 675px;
+}
+
+.pubNovaPub {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: #41ae4f;
+    border-radius: 10px;
+    border: 2px solid transparent;
+
+    padding: 8px 15px;
+    transition: 0.3s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pubNovaPub:hover {
+    scale: 1;
+    color: #fff;
+    border: 2px solid #fff;
+
 }
 
 #partBt {

@@ -1,23 +1,29 @@
 // DOCUMENT GET
 
-document.getElementById("novoTpc");
-document.getElementById("popUp");
-document.getElementById("btFechar");
-document.getElementById("textoPub");
-document.getElementById("titPub");
-document.getElementById("enviarPub");
-document.getElementById("h2");
-document.getElementById("txtCurto");
-document.getElementById("temaTpc");
-document.getElementById("opcInval");
-document.getElementById("Participe");
-document.getElementById("Publique");
-
-// RETIRAR VALOR DO LOCAL STORAGE E CONVERTER COM JSON
+//DECLARAÇÃO DE CONST E VAR
 
 const usuarioString = localStorage.getItem("nomeCadastro");
 
-//HOVER
+/*
+  popUp.style.display = "flex";
+  */
+titPub.focus();
+
+textoPub.value = "";
+titPub.value = "";
+temaTpc.value = "NULO";
+
+enviarPub.onmouseenter = function () {
+  enviarPub.style.backgroundColor = "";
+  enviarPub.style.color = "";
+};
+enviarPub.onmouseleave = function () {
+  enviarPub.style.backgroundColor = "";
+  enviarPub.style.color = "";
+
+  txtCurto.textContent = "*O texto está muito curto!";
+  titCurto.textContent = "*O título está muito curto!";
+};
 
 enviarPub.onmouseenter = function () {
   enviarPub.style.backgroundColor = "#gainsboro";
@@ -217,41 +223,6 @@ for (let i = 0; i < localStorage.length; i++) {
     }
     criaDiv(postJSON);
   }
-}
-
-if (usuarioString !== null) {
-  Participe.style.display = "none";
-  Publique.style.display = "flex";
-} else {
-  Participe.style.display = "flex";
-  Publique.style.display = "none";
-}
-
-// SELECAO DE TIPO DE FORUM
-
-var forums = [
-  allForums,
-  buyForums,
-  softForums,
-  hardForums,
-  prfcForums,
-  etcForums,
-];
-
-forums.forEach(function (forumX) {
-  forumX.onclick = function () {
-    slctForum(forumX);
-  };
-});
-
-function slctForum(selectedForum) {
-  forums.forEach(function (forumX) {
-    forumX.classList.remove("forumSlctOpt1");
-    forumX.classList.add("forumSlctOpt");
-  });
-
-  selectedForum.classList.remove("forumSlctOpt");
-  selectedForum.classList.add("forumSlctOpt1");
 }
 
 // SUMIR ICONES DO FORUM SE NAO TIVER LOGADO
