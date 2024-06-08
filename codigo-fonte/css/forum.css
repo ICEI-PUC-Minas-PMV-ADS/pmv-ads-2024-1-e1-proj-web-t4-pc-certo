@@ -137,14 +137,13 @@ button:hover {
     border: none;
     background-color: transparent;
     cursor: pointer;
-    transition: transform 0.3s ease-in-out;
+    transition: 0.3s ease;
 
     align-self: flex-end;
 }
 
 .SearchBtn:hover {
-    transform: scale(0.7) rotate(20deg);
-    transition: 0.3s;
+    scale: 1.2;
     cursor: pointer;
 
 }

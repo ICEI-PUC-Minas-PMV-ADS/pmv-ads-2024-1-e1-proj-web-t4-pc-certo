@@ -1,153 +1,104 @@
-// DOCUMENT GET
+const usuarioString = localStorage.getItem("nomeCadastro"); // DECLARA VAR USUARIO
 
-//DECLARAÇÃO DE CONST E VAR
+if (!usuarioString) {
+  alert("É necessario criar uma conta para fazer uma publicação!");
+  window.location.href = "Forum.html";
+}
 
-const usuarioString = localStorage.getItem("nomeCadastro");
+titPub.focus(); //FOCA NO TITULO
 
-/*
-  popUp.style.display = "flex";
-  */
-titPub.focus();
-
+//LIMPA O FORMULARO
 textoPub.value = "";
 titPub.value = "";
 temaTpc.value = "NULO";
+///
 
-enviarPub.onmouseenter = function () {
-  enviarPub.style.backgroundColor = "";
-  enviarPub.style.color = "";
-};
-enviarPub.onmouseleave = function () {
-  enviarPub.style.backgroundColor = "";
-  enviarPub.style.color = "";
+//
+enviarPub.onclick = validaDados;
 
-  txtCurto.textContent = "*O texto está muito curto!";
-  titCurto.textContent = "*O título está muito curto!";
-};
-
-enviarPub.onmouseenter = function () {
-  enviarPub.style.backgroundColor = "#gainsboro";
-  enviarPub.style.color = "black";
-};
-enviarPub.onmouseleave = function () {
-  enviarPub.style.backgroundColor = "gainsboro";
-  enviarPub.style.color = "black";
-};
-
-//DESATIVA BOTAO DE PUBLICAR
-
-function desativaPub() {
-  enviarPub.style.cursor = "not-allowed";
-  enviarPub.onclick = function () {
-    alert("Preencha adequadamente todos os campos antes de publicar!");
-  };
-  enviarPub.title =
-    "Preencha adequadamente todos os campos para poder publicar";
-
-  // HOVER PARA DESATIVO
-  enviarPub.onmouseenter = function () {
-    enviarPub.style.backgroundColor = "";
-  };
-  enviarPub.onmouseleave = function () {
-    enviarPub.style.backgroundColor = "";
-  };
-}
-
-//ATIVA BOTAO DE PUBLICAR
-
-function ativaPub() {
-  enviarPub.style.cursor = "pointer";
-  enviarPub.onclick = publicar;
-  enviarPub.title = "Clique para fazer sua publicação!";
-
-  //HOVER PARA ATIVO
-  enviarPub.onmouseenter = function () {
-    enviarPub.style.backgroundColor = "#41ae4f";
-    enviarPub.style.color = "white";
-  };
-  enviarPub.onmouseleave = function () {
-    enviarPub.style.backgroundColor = "gainsboro";
-    enviarPub.style.color = "black";
-  };
-}
-
-//VERIFICAÇÃO DE CAMPOS
-
-//CAMPOS VAZIOS
 function validaDados() {
-  if (textoPub.value == "" || titPub.value == "" || temaTpc.value == "NULO") {
-    desativaPub();
+  if (
+    temaTpc.mvalue !== "NULO" &&
+    textoPub.value.length >= 20 &&
+    titPub.value.length >= 7
+  ) {
+    publicar();
   } else {
-    ativaPub();
+    if (temaTpc.value == "NULO") {
+      opcInval.textContent = "*Você deve selecionar alguma opção!";
+      temaTpc.classList.remove("formNormal");
+      temaTpc.classList.add("formErro");
+    }
+    if (textoPub.value.length < 20) {
+      txtCurto.textContent = "*O texto está muito curto!";
+      textoPub.classList.remove("formNormal");
+      textoPub.classList.add("formErro");
+    }
+    if (titPub.value.length < 5) {
+      titCurto.textContent = "*O título está muito curto!";
+      titPub.classList.remove("formNormal");
+      titPub.classList.add("formErro");
+    }
   }
+}
 
-  //MENSAGENS VERMELHAS DE TEXTO OU TITULO CURTOS
+textoPub.oninput = eFormNormal;
+titPub.oninput = eFormNormal;
+temaTpc.onchange = eFormNormal;
 
-  let valorTxt = textoPub.value;
-  let valorTit = titPub.value;
+function eFormNormal() {
+  if (temaTpc.value !== "NULO") {
+    opcInval.textContent = "";
+    temaTpc.classList.remove("formErro");
+    temaTpc.classList.add("formNormal");
+  }
+  if (textoPub.value.length >= 20) {
+    txtCurto.textContent = "";
+    textoPub.classList.remove("formErro");
+    textoPub.classList.add("formNormal");
+  }
+  if (titPub.value.length >= 5) {
+    titCurto.textContent = "";
+    titPub.classList.remove("formErro");
+    titPub.classList.add("formNormal");
+  }
+}
 
-  function eTxtCurto() {
+/*
+
+  function TxtCurto() {
     txtCurto.textContent = "*O texto está muito curto!";
   }
-  function eTxtLongo() {
+  function TxtLongo() {
     txtCurto.textContent = "";
   }
-
-  function eTitCurto() {
+  function TitCurto() {
     titCurto.textContent = "*O título está muito curto!";
   }
-  function eTitLongo() {
+  function TitLongo() {
     titCurto.textContent = "";
   }
-  function eTemaNulo() {
+  function TemaNulo() {
     opcInval.textContent = "*Você deve selecionar alguma opção!";
   }
-  function eTemaCerto() {
+  function TemaCerto() {
     opcInval.textContent = "";
   }
 
-  if (valorTxt.length < 10 && valorTxt.length !== "") {
-    eTxtCurto();
-    desativaPub();
-  } else {
-    eTxtLongo();
-  }
-
-  if (valorTit.length < 5 && valorTit.length !== "") {
-    eTitCurto();
-    desativaPub();
-  } else {
-    eTitLongo();
-  }
-
-  if (temaTpc.value == "NULO") {
-    eTemaNulo();
-    desativaPub();
-  } else {
-    eTemaCerto();
-  }
-}
-
-//RECONHECENDORES DE INPUT PARA EXECUTAR A VALIDAÇÃO
-
-textoPub.oninput = validaDados;
-titPub.oninput = validaDados;
-temaTpc.onchange = validaDados;
+ */
 
 // FUNCAO PUBLICAR DE FATO
-
 function publicar() {
   //ENVIAR DADOS AO LOCAL STORAGE E FECHAR
-
   var Publicacao = {
     titulo: titPub.value,
     texto: textoPub.value,
     tema: temaTpc.value,
     autor: usuarioString,
   };
+  ///
 
   //CRIANDO NUMERO PARA CHAVE idPost
-
   var nPost = localStorage.length;
   nPost += 1;
 
@@ -157,12 +108,8 @@ function publicar() {
 
   localStorage.setItem(idPost, postString);
 
-  popUp.style.display = "none";
-
-  // REFRESH NA PAGINA
-  setTimeout(function () {
-    location.reload();
-  }, 100);
+  window.location.href = "publicacaoFeita.html";
+  ///
 }
 
 ///// CRIADORA DE DIVS /////
