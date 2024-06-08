@@ -265,14 +265,14 @@ body {
 
 /* BOTAO FIXO ORÇAMENTO TOTAL // AVANCAR */
 .orcamentoTotaleAvancar {
-    width: 90%;
+    width: 100%;
     height: 90px;
-    margin: 10px 0;
+    margin: 20px 0;
     border-radius: 20px;
     align-self: center;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
     .orcamentoTotal {
@@ -286,19 +286,20 @@ body {
 
         .orcamento {
             display: flex;
+            flex-wrap: wrap;
             padding: 8px;
             border-radius: 20px 20px 0 0;
             background-color: #41ae4f;
-            justify-content: space-around;
+            justify-content: space-between;
         }
 
         .totalparcial {
             display: flex;
+            flex-wrap: wrap;
             padding: 8px;
             border-radius: 0 0 20px 20px;
             background-color: #2e2e2e;
-            color: white;
-            justify-content: space-around;
+            justify-content: space-between;
 
         }
     }
@@ -306,14 +307,22 @@ body {
     .proxComponente {
         border-radius: 20px;
         border: none;
-        margin: 10px;
+        margin: 5px;
         width: 150px;
-        height: 68px;
+        height: 69px;
         background-color: #41ae4f;
         cursor: pointer;
 
         font-size: 20px;
         color: white;
+    }
+
+    #voltar{
+        background-color: #d9d9d9;
+        color: black;
+    }
+    #voltar:hover{
+        background-color: white;
     }
 
     .proxComponente:hover {
@@ -537,7 +546,7 @@ body {
     .orcamentoTotaleAvancar {
 
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
 
         .orcamentoTotal {
@@ -566,8 +575,6 @@ body {
             border-radius: 20px;
             border: none;
             margin: 10px;
-            width: 250px;
-            height: 100%;
             background-color: #41ae4f;
             cursor: pointer;
 
