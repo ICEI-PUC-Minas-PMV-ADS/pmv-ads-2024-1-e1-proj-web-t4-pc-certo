@@ -1,14 +1,34 @@
 // variáveis
-var finalidade
-var orcamentoTotal
+var finalidade = "";
+var orcamentoTotal = "";
+
+// Botão de reiniciar
+
+btnReiniciarEl = document.querySelector('#reiniciar');
+
+btnReiniciarEl.addEventListener('click', () => {
+    window.location.reload();
+});
+
+// botão de avancar        
+const btnAvancarEl = document.querySelector('#avancar');
+
+btnAvancarEl.addEventListener('click', () => {
+    if (orcamentoTotal == "") {
+        console.log("a");
+        alert("Selecione o valor máximo desejado.");
+    } else {
+        location.href = "EscolhaDeComponentes.html";
+    }
+});
 
 
 // adicionando funções aos botões 
 
 // ------- PASSO 1 ------------
-const cards = document.querySelectorAll('.btnCard')
+const cards = document.querySelectorAll('.btnCard');
 
-for (i = 0; i < cards.length; i++) {
+for (let i = 0; i < cards.length; i++) {
 
     cards[i].onclick = function () {
 
@@ -18,51 +38,51 @@ for (i = 0; i < cards.length; i++) {
         })
 
         // Mostrar o card clicado
-        this.classList.add('cardAtivo')
-        this.style.backgroundColor = '#41ae4f'
-        this.style.display = 'grid'
+        this.classList.add('cardAtivo');
+        this.style.backgroundColor = '#41ae4f';
+        this.style.display = 'grid';
 
-        document.getElementById('passo2').style.display = 'flex'
+        document.getElementById('passo2').style.display = 'flex';
 
         // Mostrar a div correspondente ao card clicado
-        const targetId = this.getAttribute('data-target')
-        const targetDiv = document.getElementById(targetId)
-        targetDiv.style.display = 'flex'
+        const targetId = this.getAttribute('data-target');
+        const targetDiv = document.getElementById(targetId);
+        targetDiv.style.display = 'flex';
 
-        document.getElementById('reiniciar').style.display = 'flex'
+        document.getElementById('reiniciar').style.display = 'flex';
 
         // Armazenar variável
         var finalidade = this.querySelector('h2').textContent;
         localStorage.setItem("finalidade", finalidade);
 
-        localStorage.removeItem("orcamentoTotal", orcamentoTotal);
+        localStorage.setItem("orcamentoTotal", orcamentoTotal);
     }
 }
 
 // ----------- PASSO 2 ---------------
-const orcamentos = document.querySelectorAll('.btnOrc')
+const orcamentos = document.querySelectorAll('.btnOrc');
 
-for (j = 0; j < orcamentos.length; j++) {
+for (let j = 0; j < orcamentos.length; j++) {
 
     orcamentos[j].onclick = function () {
         orcamentos.forEach(orcamento => {
             // Esconder todos os cards
-            orcamento.style.display = 'none'
+            orcamento.style.display = 'none';
         })
 
         // Mostrar card escolhido
-        this.classList.add('orcamentoAtivo')
-        this.style.backgroundColor = '#41ae4f'
-        this.style.display = 'flex'
+        this.classList.add('orcamentoAtivo');
+        this.style.backgroundColor = '#41ae4f';
+        this.style.display = 'flex';
 
-        document.getElementById('passo3').style.display = 'flex'
+        document.getElementById('passo3').style.display = 'flex';
 
         // Mostrar a div correspondente ao card clicado
-        const targetId = this.getAttribute('data-target')
-        const targetDiv = document.getElementById(targetId)
-        targetDiv.style.display = 'grid'
+        const targetId = this.getAttribute('data-target');
+        const targetDiv = document.getElementById(targetId);
+        targetDiv.style.display = 'grid';
 
-        document.getElementById('avancar').style.display = 'flex'
+        document.getElementById('avancar').style.display = 'flex';
     }
 }
 
@@ -70,46 +90,24 @@ for (j = 0; j < orcamentos.length; j++) {
 
 const valores = document.querySelectorAll('.btnValorLimite')
 
-for (k = 0; k < valores.length; k++) {
+for (let k = 0; k < valores.length; k++) {
     valores[k].onclick = function () {
         valores.forEach(valor => {
             if (valor.classList.contains('valorAtivo')) {
-                valor.classList.remove('valorAtivo')
+                valor.classList.remove('valorAtivo');
                 valor.style.backgroundColor = '';
             }
         })
         this.classList.add('valorAtivo')
         this.style.backgroundColor = '#41ae4f'
 
-        // Armazenar variável
-        var orcamentoTotal = this.textContent;
+        // Armazenar variável global
+        orcamentoTotal = this.textContent;
         localStorage.setItem("orcamentoTotal", orcamentoTotal);
 
         // Dinâmica no btn Avançar ao selecionar um valor máximo
         btnAvancarEl.style.backgroundColor = '#41ae4f'
         btnAvancarEl.style.cursor = 'pointer'
-
     }
 }
 
-// Botão de reiniciar
-
-btnReiniciarEl = document.querySelector('#reiniciar')
-
-btnReiniciarEl.addEventListener('click', () => {
-    window.location.reload()
-})
-
-// botão de avancar
-
-btnAvancarEl = document.querySelector('#avancar')
-
-btnAvancarEl.onclick = function () {
-    if (finalidade == "" && orcamentoTotal == "") {
-        alert("Selecione o valor máximo desejado.")
-    }
-
-    else {       
-        location.href = "EscolhaDeComponentes.html"
-    }
-}

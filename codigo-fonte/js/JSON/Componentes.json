@@ -2,237 +2,518 @@
     "Processador": [
         {
             "marca": "AMD",
-            "modelo": "Ryzen 5 5600x",
+            "modelo": "Ryzen 9 5950X",
+            "preco": 5199.99,
+            "desempenho": "Alto Desempenho",
+            "info": "https://www.amd.com/pt/products/cpu/amd-ryzen-9-5950x",
+            "imagem": "img/ryzen9-5950x.png",
+            "socket": "AM4",
+            "TDP": "105W"
+        },
+        {
+            "marca": "Intel",
+            "modelo": "Core i9-12900K",
+            "preco": 4699.99,
+            "desempenho": "Alto Desempenho",
+            "info": "https://ark.intel.com/content/www/br/pt/ark/products/212283/intel-core-i9-12900k-processor-30m-cache-up-to-5-20-ghz.html",
+            "imagem": "img/i9-12900k.png",
+            "socket": "LGA 1700",
+            "TDP": "125W"
+        },
+        {
+            "marca": "AMD",
+            "modelo": "Ryzen 9 5900X",
+            "preco": 3999.99,
+            "desempenho": "Alto Desempenho",
+            "info": "https://www.amd.com/pt/products/cpu/amd-ryzen-9-5900x",
+            "imagem": "img/ryzen9-5900x.png",
+            "socket": "AM4",
+            "TDP": "105W"
+        },
+        {
+            "marca": "Intel",
+            "modelo": "Core i7-12700K",
+            "preco": 3199.99,
+            "desempenho": "Alto Desempenho",
+            "info": "https://ark.intel.com/content/www/br/pt/ark/products/212276/intel-core-i7-12700k-processor-25m-cache-up-to-5-00-ghz.html",
+            "imagem": "img/i7-12700k.png",
+            "socket": "LGA 1700",
+            "TDP": "125W"
+        },
+        {
+            "marca": "AMD",
+            "modelo": "Ryzen 7 5800X",
+            "preco": 3299.99,
+            "desempenho": "Alto Desempenho",
+            "info": "https://www.amd.com/pt/products/cpu/amd-ryzen-7-5800x",
+            "imagem": "img/ryzen7-5800x.png",
+            "socket": "AM4",
+            "TDP": "105W"
+        },
+        {
+            "marca": "AMD",
+            "modelo": "Ryzen 5 5600X",
             "preco": 2222.24,
-            "desempenho": "Alto Desempenho",
+            "desempenho": "Custo-Benefício",
             "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
             "imagem": "img/pagEscolha-teste.png",
             "socket": "AM4",
             "TDP": "65W"
         },
         {
-            "marca": "AMD",
-            "modelo": "Ryzen 5 5600x",
-            "preco": 4124.12,
-            "desempenho": "Baixo Desempenho",
-            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
-            "imagem": "img/pagEscolha-teste.png",
-            "socket": "AM4",
+            "marca": "Intel",
+            "modelo": "Core i5-12400F",
+            "preco": 1399.99,
+            "desempenho": "Custo-Benefício",
+            "info": "https://ark.intel.com/content/www/br/pt/ark/products/212284/intel-core-i512400f-processor-18m-cache-up-to-4-40-ghz.html",
+            "imagem": "img/i5-12400f.png",
+            "socket": "LGA 1700",
             "TDP": "65W"
         },
         {
             "marca": "AMD",
-            "modelo": "Ryzen 5 5600x",
-            "preco": 2131.12,
-            "desempenho": "Medio Desempenho",
-            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
-            "imagem": "img/pagEscolha-teste.png",
+            "modelo": "Ryzen 5 3600",
+            "preco": 1299.99,
+            "desempenho": "Custo-Benefício",
+            "info": "https://www.amd.com/pt/products/cpu/amd-ryzen-5-3600",
+            "imagem": "img/ryzen5-3600.png",
             "socket": "AM4",
             "TDP": "65W"
         },
         {
-            "marca": "AMD",
-            "modelo": "Ryzen 5 5600x",
-            "preco": 4124.12,
-            "desempenho": "Medio Desempenho",
-            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
-            "imagem": "img/pagEscolha-teste.png",
-            "socket": "AM4",
+            "marca": "Intel",
+            "modelo": "Core i5-10400F",
+            "preco": 999.99,
+            "desempenho": "Custo-Benefício",
+            "info": "https://ark.intel.com/content/www/br/pt/ark/products/199283/intel-core-i5-10400f-processor-12m-cache-up-to-4-30-ghz.html",
+            "imagem": "img/i5-10400f.png",
+            "socket": "LGA 1200",
             "TDP": "65W"
         },
         {
             "marca": "AMD",
-            "modelo": "Ryzen 5 5600x",
-            "preco": 4124.12,
-            "desempenho": "Medio Desempenho",
-            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
-            "imagem": "img/pagEscolha-teste.png",
+            "modelo": "Ryzen 7 3700X",
+            "preco": 1899.99,
+            "desempenho": "Custo-Benefício",
+            "info": "https://www.amd.com/pt/products/cpu/amd-ryzen-7-3700x",
+            "imagem": "img/ryzen7-3700x.png",
             "socket": "AM4",
             "TDP": "65W"
         },
         {
-            "marca": "AMD",
-            "modelo": "Ryzen 5 5600x",
-            "preco": 4124.12,
-            "desempenho": "Medio Desempenho",
-            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
-            "imagem": "img/pagEscolha-teste.png",
-            "socket": "AM4",
+            "marca": "Intel",
+            "modelo": "Core i3-10100",
+            "preco": 599.99,
+            "desempenho": "Baixa Performance",
+            "info": "https://ark.intel.com/content/www/br/pt/ark/products/199283/intel-core-i3-10100-processor-6m-cache-up-to-4-30-ghz.html",
+            "imagem": "img/i3-10100.png",
+            "socket": "LGA 1200",
             "TDP": "65W"
         },
         {
             "marca": "AMD",
-            "modelo": "Ryzen 5 5600x",
-            "preco": 4124.12,
-            "desempenho": "Medio Desempenho",
-            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
-            "imagem": "img/pagEscolha-teste.png",
+            "modelo": "Ryzen 3 3200G",
+            "preco": 499.99,
+            "desempenho": "Baixa Performance",
+            "info": "https://www.amd.com/pt/products/cpu/amd-ryzen-3-3200g",
+            "imagem": "img/ryzen3-3200g.png",
             "socket": "AM4",
             "TDP": "65W"
         },
         {
+            "marca": "Intel",
+            "modelo": "Pentium Gold G6400",
+            "preco": 399.99,
+            "desempenho": "Baixa Performance",
+            "info": "https://ark.intel.com/content/www/br/pt/ark/products/199285/intel-pentium-gold-g6400-processor-4m-cache-4-00-ghz.html",
+            "imagem": "img/pentium-gold-g6400.png",
+            "socket": "LGA 1200",
+            "TDP": "58W"
+        },
+        {
             "marca": "AMD",
-            "modelo": "Ryzen 5 5600x",
-            "preco": 4124.12,
-            "desempenho": "Medio Desempenho",
-            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
-            "imagem": "img/pagEscolha-teste.png",
+            "modelo": "Athlon 3000G",
+            "preco": 349.99,
+            "desempenho": "Baixa Performance",
+            "info": "https://www.amd.com/pt/products/apu/amd-athlon-3000g",
+            "imagem": "img/athlon-3000g.png",
             "socket": "AM4",
-            "TDP": "65W"
+            "TDP": "35W"
+        },
+        {
+            "marca": "Intel",
+            "modelo": "Celeron G5905",
+            "preco": 299.99,
+            "desempenho": "Baixa Performance",
+            "info": "https://ark.intel.com/content/www/br/pt/ark/products/199274/intel-celeron-processor-g5905-2m-cache-3-50-ghz.html",
+            "imagem": "img/celeron-g5905.png",
+            "socket": "LGA 1200",
+            "TDP": "58W"
         }
-    ],
-    "Placa-mae": [
-        {
-            "marca": "AMD",
-            "modelo": "Ryzen 5 5600x",
-            "preco": 4124.12,
-            "desempenho": "Alto Desempenho",
-            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
-            "imagem": "img/pagEscolha-teste.png",
-            "socket": "AM4",
-            "TDP": "65W"
-        },
-        {
-            "marca": "AMD",
-            "modelo": "Ryzen 5 5600x",
-            "preco": 4124.12,
-            "desempenho": "Baixo Desempenho",
-            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
-            "imagem": "img/pagEscolha-teste.png",
-            "socket": "AM4",
-            "TDP": "65W"
-        }
-    ],
-    "RAM": [
-        {
-            "marca": "AMD",
-            "modelo": "Ryzen 5 5600x",
-            "preco": 4124.12,
-            "desempenho": "Alto Desempenho",
-            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
-            "imagem": "img/pagEscolha-teste.png",
-            "socket": "AM4",
-            "TDP": "65W"
-        },
-        {
-            "marca": "AMD",
-            "modelo": "Ryzen 5 5600x",
-            "preco": 4124.12,
-            "desempenho": "Baixo Desempenho",
-            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
-            "imagem": "img/pagEscolha-teste.png",
-            "socket": "AM4",
-            "TDP": "65W"
-        }
-    ],
-    "GPU": [
-        {
-            "marca": "AMD",
-            "modelo": "Ryzen 5 5600x",
-            "preco": 4124.12,
-            "desempenho": "Alto Desempenho",
-            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
-            "imagem": "img/pagEscolha-teste.png",
-            "socket": "AM4",
-            "TDP": "65W"
-        },
-        {
-            "marca": "AMD",
-            "modelo": "Ryzen 5 5600x",
-            "preco": 4124.12,
-            "desempenho": "Baixo Desempenho",
-            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
-            "imagem": "img/pagEscolha-teste.png",
-            "socket": "AM4",
-            "TDP": "65W"
-        }
-    ],
-    "Armazenamento": [
-        {
-            "marca": "AMD",
-            "modelo": "Ryzen 5 5600x",
-            "preco": 4124.12,
-            "desempenho": "Alto Desempenho",
-            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
-            "imagem": "img/pagEscolha-teste.png",
-            "socket": "AM4",
-            "TDP": "65W"
-        },
-        {
-            "marca": "AMD",
-            "modelo": "Ryzen 5 5600x",
-            "preco": 4124.12,
-            "desempenho": "Baixo Desempenho",
-            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
-            "imagem": "img/pagEscolha-teste.png",
-            "socket": "AM4",
-            "TDP": "65W"
-        }
-    ],
-    "PSU": [
-        {
-            "marca": "AMD",
-            "modelo": "Ryzen 5 5600x",
-            "preco": 4124.12,
-            "desempenho": "Alto Desempenho",
-            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
-            "imagem": "img/pagEscolha-teste.png",
-            "socket": "AM4",
-            "TDP": "65W"
-        },
-        {
-            "marca": "AMD",
-            "modelo": "Ryzen 5 5600x",
-            "preco": 4124.12,
-            "desempenho": "Baixo Desempenho",
-            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
-            "imagem": "img/pagEscolha-teste.png",
-            "socket": "AM4",
-            "TDP": "65W"
-        }
-    ],
-    "Gabinete": [
-        {
-            "marca": "AMD",
-            "modelo": "Ryzen 5 5600x",
-            "preco": 4124.12,
-            "desempenho": "Alto Desempenho",
-            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
-            "imagem": "img/pagEscolha-teste.png",
-            "socket": "AM4",
-            "TDP": "65W"
-        },
-        {
-            "marca": "AMD",
-            "modelo": "Ryzen 5 5600x",
-            "preco": 4124.12,
-            "desempenho": "Baixo Desempenho",
-            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
-            "imagem": "img/pagEscolha-teste.png",
-            "socket": "AM4",
-            "TDP": "65W"
-        }
-    ],
-    "Refrigeração": [
-        {
-            "marca": "AMD",
-            "modelo": "Ryzen 5 5600x",
-            "preco": 4124.12,
-            "desempenho": "Alto Desempenho",
-            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
-            "imagem": "img/pagEscolha-teste.png",
-            "socket": "AM4",
-            "TDP": "65W"
-        },
-        {
-            "marca": "AMD",
-            "modelo": "Ryzen 5 5600x",
-            "preco": 4124.12,
-            "desempenho": "Baixo Desempenho",
-            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
-            "imagem": "img/pagEscolha-teste.png",
-            "socket": "AM4",
-            "TDP": "65W"
-        }
-    ]
+],
+
+"Placa-mae": [
+    {
+      "marca": "ASUS",
+      "modelo": "ROG Crosshair VIII Hero (Wi-Fi)",
+      "preco": 2399.99,
+      "info": "https://www.asus.com/Motherboards-Components/Motherboards/All-series/ROG-Crosshair-VIII-Hero-WI-FI/",
+      "imagem": "img/crosshair-viii-hero.png",
+      "socket": "AM4",
+      "RAM": "DDR4"
+    },
+    {
+      "marca": "ASUS",
+      "modelo": "ROG Maximus XIII Hero",
+      "preco": 2499.99,
+      "info": "https://www.asus.com/Motherboards-Components/Motherboards/All-series/ROG-Maximus-XIII-Hero/",
+      "imagem": "img/maximus-xiii-hero.png",
+      "socket": "LGA1200",
+      "RAM": "DDR4"
+    },
+    {
+      "marca": "MSI",
+      "modelo": "MPG Z590 Gaming Carbon WiFi",
+      "preco": 2099.99,
+      "info": "https://www.msi.com/Motherboard/MPG-Z590-GAMING-CARBON-WIFI",
+      "imagem": "img/z590-gaming-carbon.png",
+      "socket": "LGA1200",
+      "RAM": "DDR4"
+    },
+    {
+      "marca": "Gigabyte",
+      "modelo": "X570 AORUS Elite",
+      "preco": 1499.99,
+      "info": "https://www.gigabyte.com/Motherboard/X570-AORUS-ELITE-rev-10#kf",
+      "imagem": "img/x570-aorus-elite.png",
+      "socket": "AM4",
+      "RAM": "DDR4"
+    },
+    {
+      "marca": "ASUS",
+      "modelo": "TUF Gaming B550-PLUS",
+      "preco": 899.99,
+      "info": "https://www.asus.com/Motherboards-Components/Motherboards/All-series/TUF-Gaming-B550-PLUS/",
+      "imagem": "img/b550-plus.png",
+      "socket": "AM4",
+      "RAM": "DDR4"
+    },
+    {
+      "marca": "MSI",
+      "modelo": "MAG B550 TOMAHAWK",
+      "preco": 799.99,
+      "info": "https://www.msi.com/Motherboard/MAG-B550-TOMAHAWK",
+      "imagem": "img/b550-tomahawk.png",
+      "socket": "AM4",
+      "RAM": "DDR4"
+    },
+    {
+      "marca": "Gigabyte",
+      "modelo": "B560M DS3H",
+      "preco": 599.99,
+      "info": "https://www.gigabyte.com/Motherboard/B560M-DS3H-rev-10#kf",
+      "imagem": "img/b560m-ds3h.png",
+      "socket": "LGA1200",
+      "RAM": "DDR4"
+    },
+    {
+      "marca": "ASUS",
+      "modelo": "PRIME B460M-A",
+      "preco": 549.99,
+      "info": "https://www.asus.com/Motherboards-Components/Motherboards/All-series/PRIME-B460M-A/",
+      "imagem": "img/b460m-a.png",
+      "socket": "LGA1200",
+      "RAM": "DDR4"
+    },
+    {
+      "marca": "MSI",
+      "modelo": "A320M-A PRO",
+      "preco": 299.99,
+      "info": "https://www.msi.com/Motherboard/A320M-A-PRO",
+      "imagem": "img/a320m-a-pro.png",
+      "socket": "AM4",
+      "RAM": "DDR4"
+    },
+    {
+      "marca": "Gigabyte",
+      "modelo": "A320M-S2H",
+      "preco": 199.99,
+      "info": "https://www.gigabyte.com/Motherboard/GA-A320M-S2H-rev-10#kf",
+      "imagem": "img/a320m-s2h.png",
+      "socket": "AM4",
+      "RAM": "DDR4"
+    }
+  ],
+"RAM": [
+    {
+      "marca": "Corsair",
+      "modelo": "Vengeance LPX 32GB (2 x 16GB) DDR4 3200MHz",
+      "preco": 999.99,
+      "info": "https://www.corsair.com/us/en/Categories/Products/Memory/VENGEANCE%C2%AE-LPX-16GB-%282-x-8GB%29-DDR4-DRAM-3200MHz-C16-Memory-Kit-%E2%80%94-Black/p/CMK16GX4M2B3200C16",
+      "imagem": "img/vengeance-lpx-32gb.png",
+      "tipo": "DDR4",
+      "frequencia": "3200MHz"
+    },
+    {
+      "marca": "G.Skill",
+      "modelo": "Ripjaws V 16GB (2 x 8GB) DDR4 3600MHz",
+      "preco": 749.99,
+      "info": "https://www.gskill.com/product/165/184/1562831230/F4-3600C16D-16GVKC-Ripjaws-V-DDR4-3600MHz-CL16-16GB-(2x8GB)",
+      "imagem": "img/ripjaws-v-16gb.png",
+      "tipo": "DDR4",
+      "frequencia": "3600MHz"
+    },
+    {
+      "marca": "Kingston",
+      "modelo": "HyperX Fury 16GB (2 x 8GB) DDR4 3200MHz",
+      "preco": 699.99,
+      "info": "https://www.kingston.com/en/memory/gaming/kingston-fury",
+      "imagem": "img/hyperx-fury-16gb.png",
+      "tipo": "DDR4",
+      "frequencia": "3200MHz"
+    },
+    {
+      "marca": "Corsair",
+      "modelo": "Vengeance LPX 16GB (2 x 8GB) DDR4 3000MHz",
+      "preco": 649.99,
+      "info": "https://www.corsair.com/us/en/Categories/Products/Memory/VENGEANCE%C2%AE-LPX-16GB-%282-x-8GB%29-DDR4-DRAM-3000MHz-C15-Memory-Kit-%E2%80%94-Black/p/CMK16GX4M2B3000C15",
+      "imagem": "img/vengeance-lpx-16gb.png",
+      "tipo": "DDR4",
+      "frequencia": "3000MHz"
+    },
+    {
+      "marca": "Crucial",
+      "modelo": "Ballistix 8GB (1 x 8GB) DDR4 2666MHz",
+      "preco": 299.99,
+      "info": "https://www.crucial.com/memory/ddr4/bl8g26c16u4r",
+      "imagem": "img/ballistix-8gb.png",
+      "tipo": "DDR4",
+      "frequencia": "2666MHz"
+    }
+  ],
+"GPU": [
+    {
+      "marca": "NVIDIA",
+      "modelo": "GeForce RTX 3080",
+      "preco": 5999.99,
+      "info": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3080/",
+      "imagem": "img/rtx-3080.png",
+      "tipo": "GDDR6X",
+      "VRAM": "10GB"
+    },
+    {
+      "marca": "AMD",
+      "modelo": "Radeon RX 6800 XT",
+      "preco": 5499.99,
+      "info": "https://www.amd.com/en/products/graphics/amd-radeon-rx-6800-xt",
+      "imagem": "img/rx-6800-xt.png",
+      "tipo": "GDDR6",
+      "VRAM": "16GB"
+    },
+    {
+      "marca": "NVIDIA",
+      "modelo": "GeForce RTX 3070",
+      "preco": 4999.99,
+      "info": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3070/",
+      "imagem": "img/rtx-3070.png",
+      "tipo": "GDDR6",
+      "VRAM": "8GB"
+    },
+    {
+      "marca": "AMD",
+      "modelo": "Radeon RX 6700 XT",
+      "preco": 4799.99,
+      "info": "https://www.amd.com/en/products/graphics/amd-radeon-rx-6700-xt",
+      "imagem": "img/rx-6700-xt.png",
+      "tipo": "GDDR6",
+      "VRAM": "12GB"
+    },
+    {
+      "marca": "NVIDIA",
+      "modelo": "GeForce RTX 3060 Ti",
+      "preco": 3999.99,
+      "info": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3060-ti/",
+      "imagem": "img/rtx-3060-ti.png",
+      "tipo": "GDDR6",
+      "VRAM": "8GB"
+    }
+  ],
+"Armazenamento": [
+    {
+      "marca": "Samsung",
+      "modelo": "970 EVO Plus 1TB NVMe SSD",
+      "preco": 899.99,
+      "info": "https://www.samsung.com/us/computing/memory-storage/solid-state-drives/ssd-970-evo-plus-nvme-m-2-1tb-mz-v7s1t0b-am/",
+      "imagem": "img/970-evo-plus-1tb.png",
+      "tipo": "NVMe SSD",
+      "capacidade": "1TB"
+    },
+    {
+      "marca": "Western Digital",
+      "modelo": "WD Blue 3D NAND 1TB SSD",
+      "preco": 749.99,
+      "info": "https://www.westerndigital.com/products/internal-drives/wd-blue-3d-nand-sata-ssd",
+      "imagem": "img/wd-blue-1tb.png",
+      "tipo": "SATA SSD",
+      "capacidade": "1TB"
+    },
+    {
+      "marca": "Crucial",
+      "modelo": "MX500 500GB SATA SSD",
+      "preco": 499.99,
+      "info": "https://www.crucial.com/ssd/mx500/ct500mx500ssd1",
+      "imagem": "img/mx500-500gb.png",
+      "tipo": "SATA SSD",
+      "capacidade": "500GB"
+    },
+    {
+      "marca": "Kingston",
+      "modelo": "A2000 500GB NVMe SSD",
+      "preco": 449.99,
+      "info": "https://www.kingston.com/us/ssd/a2000-nvme-pcie-ssd",
+      "imagem": "img/a2000-500gb.png",
+      "tipo": "NVMe SSD",
+      "capacidade": "500GB"
+    },
+    {
+      "marca": "Seagate",
+      "modelo": "Barracuda 1TB HDD",
+      "preco": 249.99,
+      "info": "https://www.seagate.com/internal-hard-drives/hdd/barracuda/",
+      "imagem": "img/barracuda-1tb.png",
+      "tipo": "HDD",
+      "capacidade": "1TB"
+    }
+  ],
+"PSU": [
+    {
+      "marca": "Corsair",
+      "modelo": "RM850x 850W 80 Plus Gold",
+      "preco": 749.99,
+      "info": "https://www.corsair.com/us/en/Categories/Products/Power-Supply-Units/Advanced-RM-Series/p/CP-9020180-NA",
+      "imagem": "img/rm850x.png",
+      "potencia": "850W",
+      "eficiencia": "80 Plus Gold"
+    },
+    {
+      "marca": "EVGA",
+      "modelo": "SuperNOVA 750 G5 750W 80 Plus Gold",
+      "preco": 699.99,
+      "info": "https://www.evga.com/products/product.aspx?pn=220-G5-0750-X1",
+      "imagem": "img/supernova-750-g5.png",
+      "potencia": "750W",
+      "eficiencia": "80 Plus Gold"
+    },
+    {
+      "marca": "Seasonic",
+      "modelo": "FOCUS GX-650 650W 80 Plus Gold",
+      "preco": 649.99,
+      "info": "https://seasonic.com/focus-gx",
+      "imagem": "img/focus-gx-650.png",
+      "potencia": "650W",
+      "eficiencia": "80 Plus Gold"
+    },
+    {
+      "marca": "Cooler Master",
+      "modelo": "MWE Bronze 550W 80 Plus Bronze",
+      "preco": 399.99,
+      "info": "https://www.coolermaster.com/catalog/power-supplies/mwe-series/mwe-bronze-550-230v/",
+      "imagem": "img/mwe-bronze-550.png",
+      "potencia": "550W",
+      "eficiencia": "80 Plus Bronze"
+    },
+    {
+      "marca": "Thermaltake",
+      "modelo": "Smart 500W 80 Plus",
+      "preco": 299.99,
+      "info": "https://www.thermaltake.com/smart-500w.html",
+      "imagem": "img/smart-500w.png",
+      "potencia": "500W",
+      "eficiencia": "80 Plus"
+    }
+  ],
+"Gabinete": [
+    {
+      "marca": "NZXT",
+      "modelo": "H510 Elite",
+      "preco": 999.99,
+      "info": "https://nzxt.com/product/h510-elite",
+      "imagem": "img/h510-elite.png",
+      "tipo": "Mid Tower"
+    },
+    {
+      "marca": "Corsair",
+      "modelo": "iCUE 4000X RGB",
+      "preco": 749.99,
+      "info": "https://www.corsair.com/us/en/Categories/Products/Cases/Mid-Tower-ATX-Cases/iCUE-4000X-RGB-Mid-Tower-ATX-Case/p/CC-9011204-WW",
+      "imagem": "img/4000x-rgb.png",
+      "tipo": "Mid Tower"
+    },
+    {
+      "marca": "Cooler Master",
+      "modelo": "MasterBox TD500 Mesh",
+      "preco": 649.99,
+      "info": "https://www.coolermaster.com/catalog/cases/mid-tower/masterbox-td500-mesh/",
+      "imagem": "img/td500-mesh.png",
+      "tipo": "Mid Tower"
+    },
+    {
+      "marca": "Fractal Design",
+      "modelo": "Meshify C",
+      "preco": 599.99,
+      "info": "https://www.fractal-design.com/products/cases/meshify/meshify-c/black/",
+      "imagem": "img/meshify-c.png",
+      "tipo": "Mid Tower"
+    },
+    {
+      "marca": "Thermaltake",
+      "modelo": "V200 RGB",
+      "preco": 399.99,
+      "info": "https://www.thermaltake.com/v200-tg-rgb.html",
+      "imagem": "img/v200-rgb.png",
+      "tipo": "Mid Tower"
+    }
+  ],
+"Refrigeração": [
+    {
+      "marca": "Noctua",
+      "modelo": "NH-D15",
+      "preco": 499.99,
+      "info": "https://noctua.at/en/nh-d15",
+      "imagem": "img/nh-d15.png",
+      "tipo": "Air Cooler"
+    },
+    {
+      "marca": "Corsair",
+      "modelo": "iCUE H150i Elite Capellix",
+      "preco": 799.99,
+      "info": "https://www.corsair.com/us/en/Categories/Products/Liquid-Cooling/iCUE-ELITE-CAPELLIX-Liquid-CPU-Coolers/p/CW-9060048-WW",
+      "imagem": "img/h150i-elite-capellix.png",
+      "tipo": "Liquid Cooler"
+    },
+    {
+      "marca": "Cooler Master",
+      "modelo": "Hyper 212 RGB Black Edition",
+      "preco": 299.99,
+      "info": "https://www.coolermaster.com/catalog/coolers/cpu-air-coolers/hyper-212-rgb-black-edition/",
+      "imagem": "img/hyper-212-rgb.png",
+      "tipo": "Air Cooler"
+    },
+    {
+      "marca": "be quiet!",
+      "modelo": "Dark Rock Pro 4",
+      "preco": 399.99,
+      "info": "https://www.bequiet.com/en/cpucooler/1378",
+      "imagem": "img/dark-rock-pro-4.png",
+      "tipo": "Air Cooler"
+    },
+    {
+      "marca": "NZXT",
+      "modelo": "Kraken X63",
+      "preco": 599.99,
+      "info": "https://nzxt.com/product/kraken-x63",
+      "imagem": "img/kraken-x63.png",
+      "tipo": "Liquid Cooler"
+    }
+  ]
 }
