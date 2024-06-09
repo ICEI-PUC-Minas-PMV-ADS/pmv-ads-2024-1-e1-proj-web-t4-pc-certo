@@ -105,7 +105,7 @@ Comprador Interessado em Aprender | Ler comentários e avaliações de outras pe
 | RF-10 |A aplicação deve verificar se o orçamento está de acordo com a soma do preço dos componentes escolhidos pela aplicação.|Alta| 
 | RF-11 |A aplicação deve conter um fórum da comunidade. |Média| 
 | RF-12 |A aplicação deve permitir o usuário selecionar individualmente cada componente para o computador após o resultado gerado pela aplicação mantendo a compatibilidade e orçamento, caso necessário. |Média| 
-| RF-13 |A aplicação deve permitir que administradores realizem banimentos/suspensões aos usuários que não respeitarem as regras do fórum.|Média| 
+| RF-13 |A aplicação deve permitir que apenas usuários logados realizem publicações no fórum.|Média| 
 | RF-14 |A aplicação deve fornecer um guia para escolha de peças e como realizar a montagem de um computador. |Alta| 
 
 **Prioridade: Alta / Média / Baixa. 
