@@ -16,7 +16,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
   <td>
    <ul>
     <li>RF-05:	A aplicação deve calcular a soma dos componentes escolhidos para o usuário.</li>
-   <li>RF-10:	A aplicação deve verificar se o orçamento está de acordo com a soma do preço dos componentes escolhidos pela aplicação.</li>
+    <li>RF-10:	A aplicação deve verificar se o orçamento está de acordo com a soma do preço dos componentes escolhidos pela aplicação.</li>
    </ul>
   </td>
   <td>Garantir que a soma dos componentes escolhidos e o orçamento está sendo respeitado.</td>
@@ -40,7 +40,8 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
   <td>
    <ul>
     <li>RF-08:	A aplicação deve permitir o login de usuários para o uso do fórum.</li>
-   <li>RF-11:	A aplicação deve conter um fórum da comunidade.</li>
+    <li>RF-11:	A aplicação deve conter um fórum da comunidade.</li>
+    <li> A aplicação deve permitir que apenas usuários logados realizem publicações no fórum. </li>
    </ul>
   </td>
   <td>Garantir que a impossibilidade de realizar publicações caso usuário não esteja logado.</td>
