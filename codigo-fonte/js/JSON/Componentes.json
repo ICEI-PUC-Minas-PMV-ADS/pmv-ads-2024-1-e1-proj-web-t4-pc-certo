@@ -151,7 +151,7 @@
       "modelo": "TUF Gaming Z790-Plus Wifi",
       "preco": 1899.99,
       "info": "https://www.gigabyte.com/br/Motherboard/Z790-AORUS-ELITE-rev-11/sp#sp",
-      "imagem": "img/crosshair-viii-hero.png",
+      "imagem": "img/json/PlacaMae/tufZ790.png",
       "socket": "LGA1700",
       "RAM": "DDR5",
       "format": "ATX"
@@ -161,7 +161,7 @@
       "modelo": "TUF Gaming X670E-Plus",
       "preco": 2099.99,
       "info": "https://www.asus.com/br/motherboards-components/motherboards/tuf-gaming/tuf-gaming-x670e-plus/",
-      "imagem": "img/maximus-xiii-hero.png",
+      "imagem": "img/json/PlacaMae/x670e.png",
       "socket": "AM5",
       "RAM": "DDR5",
       "format": "ATX"
@@ -171,7 +171,7 @@
       "modelo": "TUF Gaming B650M-Plus",
       "preco": 1439.99,
       "info": "https://www.asus.com/br/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b650m-plus/",
-      "imagem": "img/z590-gaming-carbon.png",
+      "imagem": "img/json/PlacaMae/b650m.png",
       "socket": "AM5",
       "RAM": "DDR5",
       "format": "mATX"
@@ -181,7 +181,7 @@
       "modelo": "TUF Gaming B550M-Plus",
       "preco": 829.99,
       "info": "https://www.asus.com/br/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b550m-plus/",
-      "imagem": "img/b550-plus.png",
+      "imagem": "img/json/PlacaMae/b550m.png",
       "socket": "AM4",
       "RAM": "DDR4",
       "format": "microATX"
@@ -191,7 +191,7 @@
       "modelo": "B660M Phantom Gaming 4",
       "preco": 699.99,
       "info": "https://pg.asrock.com/mb/Intel/B660M%20Phantom%20Gaming%204/index.br.asp",
-      "imagem": "img/b550-tomahawk.png",
+      "imagem": "img/json/PlacaMae/b660m.png",
       "socket": "LGA1700",
       "RAM": "DDR4",
       "format": "mATX"
@@ -201,7 +201,7 @@
       "modelo": "H610M (rev. 1.0)",
       "preco": 599.99,
       "info": "https://www.gigabyte.com/br/Motherboard/H610M-H-DDR4-rev-10#kf",
-      "imagem": "img/b560m-ds3h.png",
+      "imagem": "img/json/PlacaMae/h610m.png",
       "socket": "LGA1700",
       "RAM": "DDR4",
       "format": "mATX"
@@ -211,7 +211,7 @@
       "modelo": "A520M-A PRO",
       "preco": 359.99,
       "info": "https://br.msi.com/Motherboard/A520M-A-PRO/Overview",
-      "imagem": "img/b460m-a.png",
+      "imagem": "img/json/PlacaMae/a520m.png",
       "socket": "AM4",
       "RAM": "DDR4",
       "format": "mATX"
@@ -221,7 +221,7 @@
       "modelo": "H510M REV.1.0",
       "preco": 517.99,
       "info": "https://www.gigabyte.com/br/Motherboard/H510M-H-rev-10-11-15#kf",
-      "imagem": "img/a320m-a-pro.png",
+      "imagem": "img/json/PlacaMae/h510m.png",
       "socket": "LGA1200",
       "RAM": "DDR4",
       "format": "mATX"
@@ -231,7 +231,7 @@
       "modelo": "B560M PRO-E",
       "preco": 439.99,
       "info": "https://www.msi.com/Motherboard/B560M-PRO-E",
-      "imagem": "img/a320m-s2h.png",
+      "imagem": "img/json/PlacaMae/b560m.png",
       "socket": "LGA1200",
       "RAM": "DDR4",
       "format": "mATX"
@@ -243,7 +243,7 @@
       "modelo": "Vengeance RGB 32GB (2 x 16GB)",
       "preco": 1049.99,
       "info": "https://www.corsair.com/br/pt/p/memory/cmh32gx5m2x6200c36/vengeance-rgb-32gb-2x16gb-ddr5-dram-6200mt-s-cl36-memory-kit-black-cmh32gx5m2x6200c36",
-      "imagem": "img/vengeance-lpx-32gb.png",
+      "imagem": "img/json/ram/veneganceddr5.png",
       "tipo": "DDR5",
       "frequencia": "6200MHz"
     },
@@ -252,7 +252,7 @@
       "modelo": "Rise Mode Z 16GB",
       "preco": 299.99,
       "info": "https://www.lojarisemode.com.br/produto/memoria-ddr5-rise-mode-z-preto-rm-d5-16g-4800z",
-      "imagem": "img/ripjaws-v-16gb.png",
+      "imagem": "img/json/ram/risemodez.png",
       "tipo": "DDR5",
       "frequencia": "4800MHz"
     },
@@ -261,7 +261,7 @@
       "modelo": "Fury Beast 8GB",
       "preco": 699.99,
       "info": "https://www.kingston.com/br/memory/gaming/kingston-fury-beast-ddr5-memory",
-      "imagem": "img/hyperx-fury-16gb.png",
+      "imagem": "img/json/ram/furyBeastddr5.png",
       "tipo": "DDR5",
       "frequencia": "4800MHz"
     },
@@ -270,16 +270,25 @@
       "modelo": "Fury Beast 8GB",
       "preco": 169.99,
       "info": "https://www.kingston.com/br/memory/gaming/kingston-fury-beast-ddr4-rgb-memory",
-      "imagem": "img/vengeance-lpx-16gb.png",
+      "imagem": "img/json/ram/furyBeastRGB.png",
       "tipo": "DDR4",
       "frequencia": "3000MHz"
+    },
+    {
+      "marca": "Kingston",
+      "modelo": "Fury Beast 32GB (2x16GB)",
+      "preco": 649.99,
+      "info": "https://www.kingston.com/br/memory/gaming/kingston-fury-beast-ddr4-rgb-memory",
+      "imagem": "img/json/ram/furyBeastRGB.png",
+      "tipo": "DDR4",
+      "frequencia": "3200MHz"
     },
     {
       "marca": "XPG",
       "modelo": "Spectrix D35G 16GB",
       "preco": 285.99,
       "info": "https://www.xpg.com/pt/xpg/dram-modules-spectrix-d35g-rgb-ddr4",
-      "imagem": "img/ballistix-8gb.png",
+      "imagem": "img/json/ram/xpgSpectrix.png",
       "tipo": "DDR4",
       "frequencia": "3200MHz"
     },
@@ -288,18 +297,18 @@
       "modelo": "Vengeance LPX 4GB",
       "preco": 119.99,
       "info": "https://www.corsair.com/br/pt/p/memory/cmk4gx4m1a2400c14r/vengeancea-lpx-4gb-1-x-4gb-ddr4-dram-2400mhz-c14-memory-kit-red-cmk4gx4m1a2400c14r",
-      "imagem": "img/ballistix-8gb.png",
+      "imagem": "img/json/ram/veneganceLPX.png",
       "tipo": "DDR4",
       "frequencia": "2400MHz"
     },
     {
-      "marca": "CKingston",
+      "marca": "Kingston",
       "modelo": "Fury Beast 16GB (2x 8GB)",
       "preco": 329.99,
-      "info": "https://www.corsair.com/br/pt/p/memory/cmk4gx4m1a2400c14r/vengeancea-lpx-4gb-1-x-4gb-ddr4-dram-2400mhz-c14-memory-kit-red-cmk4gx4m1a2400c14r",
-      "imagem": "img/ballistix-8gb.png",
+      "info": "https://www.kingston.com/br/memory/gaming/kingston-fury-beast-ddr4-memory",
+      "imagem": "img/json/ram/furyBeastddr4.png",
       "tipo": "DDR4",
-      "frequencia": "2400MHz"
+      "frequencia": "3200MHz"
     }
   ],
 "GPU": [
