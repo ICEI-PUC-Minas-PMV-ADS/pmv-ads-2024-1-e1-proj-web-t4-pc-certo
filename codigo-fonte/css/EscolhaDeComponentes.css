@@ -16,6 +16,21 @@ body {
 
 }
 
+/* FORMATACAO SCROLLBAR */
+::-webkit-scrollbar-track {
+    background: #2e2e2e;
+}
+::-webkit-scrollbar-thumb {
+    background: #41ae4f;
+    border-radius: 6px;
+}
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #41ae4f #2e2e2e;
+}
+
+
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -144,6 +159,22 @@ body {
             width: 60px;
             border: none;
             border-radius: 10px;
+
+            background-color: #41ae4f;
+            color: white;
+            padding-left: 10px;
+            border: 1px solid #2e2e2e;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            max-width: 300px; /* Adjust as needed */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for a more modern look */
+        }
+        select:hover,
+        option:hover{
+            background-color: #31833c;
+            transition: 0.3s;
         }
     }
 }
@@ -158,6 +189,7 @@ body {
     .opcaoComponente {
         display: grid;
         grid-template-areas: "preco img alerta";
+        grid-template-columns: 55% 20% 25%;
 
         background-color: #2e2e2e;
         border-radius: 20px;
@@ -317,11 +349,12 @@ body {
         color: white;
     }
 
-    #voltar{
+    #voltar {
         background-color: #d9d9d9;
         color: black;
     }
-    #voltar:hover{
+
+    #voltar:hover {
         background-color: white;
     }
 
@@ -482,8 +515,8 @@ body {
 
     .buscaFiltro {
         width: 100%;
-        justify-content: space-evenly;
-
+        justify-content: space-around;
+        
         .buscar {
             position: relative;
             display: flex;
@@ -503,7 +536,8 @@ body {
                 cursor: pointer;
                 background-color: transparent;
                 position: absolute;
-                right: 0;
+                right: 4px;
+                bottom: 0;
 
                 img {
                     width: 90%;
@@ -520,7 +554,7 @@ body {
             select,
             option {
                 font-size: medium;
-                width: 100px;
+                width: 160px;
                 border: none;
                 border-radius: 10px;
             }
@@ -585,7 +619,7 @@ body {
 
 
 /* CLASSE CRIADA NO JS NAO MEXA */
-.opcaoSelecionada{
+.opcaoSelecionada {
     background-color: #41ae4f !important;
     transition: 0.3s ease-in-out;
 }

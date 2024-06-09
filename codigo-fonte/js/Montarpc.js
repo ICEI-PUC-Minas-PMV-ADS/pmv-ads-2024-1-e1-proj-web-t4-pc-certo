@@ -54,7 +54,7 @@ for (let i = 0; i < cards.length; i++) {
         // Armazenar variável
         finalidade = this.querySelector('h2').textContent;
         localStorage.setItem("finalidade", finalidade);
-
+        localStorage.setItem('lvlDesempenho', "")
         localStorage.setItem("orcamentoTotal", orcamentoTotal);
     }
 }
@@ -74,7 +74,7 @@ for (let j = 0; j < orcamentos.length; j++) {
         this.classList.add('orcamentoAtivo');
         this.style.backgroundColor = '#41ae4f';
         this.style.display = 'flex';
-
+        localStorage.setItem('lvlDesempenho', orcamentos[j].querySelector('h3').textContent);
         document.getElementById('passo3').style.display = 'flex';
 
         // Mostrar a div correspondente ao card clicado
