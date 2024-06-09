@@ -493,86 +493,86 @@
   ],
   "Gabinete": [
     {
-      "marca": "NZXT",
-      "modelo": "H510 Elite",
-      "preco": 999.99,
-      "info": "https://nzxt.com/product/h510-elite",
-      "imagem": "img/h510-elite.png",
+      "marca": "Mancer",
+      "modelo": "Gamer Hexer Rainbow",
+      "preco": 208.99,
+      "info": "https://mancer.com.br/p/gabinete-gamer-mancer-hexer/",
+      "imagem": "img/json/Gabinete/hexerRainbow",
+      "tipo": "Mid Tower"
+    },
+    {
+      "marca": "Rise Mode",
+      "modelo": "Glass 06X",
+      "preco": 159.99,
+      "info": "https://www.lojarisemode.com.br/produto/gabinete-rise-mode-glass-06x-black-sem-fans-rm-ca-06x-fb",
+      "imagem": "img/json/Gabinete/glass06X",
       "tipo": "Mid Tower"
     },
     {
       "marca": "Corsair",
-      "modelo": "iCUE 4000X RGB",
-      "preco": 749.99,
-      "info": "https://www.corsair.com/us/en/Categories/Products/Cases/Mid-Tower-ATX-Cases/iCUE-4000X-RGB-Mid-Tower-ATX-Case/p/CC-9011204-WW",
-      "imagem": "img/4000x-rgb.png",
-      "tipo": "Mid Tower"
-    },
-    {
-      "marca": "Cooler Master",
-      "modelo": "MasterBox TD500 Mesh",
+      "modelo": "4000D Airflow",
       "preco": 649.99,
-      "info": "https://www.coolermaster.com/catalog/cases/mid-tower/masterbox-td500-mesh/",
-      "imagem": "img/td500-mesh.png",
+      "info": "https://www.corsair.com/br/pt/p/pc-cases/cc-9011201-ww/4000d-airflow-tempered-glass-mid-tower-atx-case-white-cc-9011201-ww",
+      "imagem": "img/json/Gabinete/CorsairAirFlow",
       "tipo": "Mid Tower"
     },
     {
-      "marca": "Fractal Design",
-      "modelo": "Meshify C",
-      "preco": 599.99,
-      "info": "https://www.fractal-design.com/products/cases/meshify/meshify-c/black/",
-      "imagem": "img/meshify-c.png",
+      "marca": "Rise Mode",
+      "modelo": "Galaxy Glass",
+      "preco": 549.99,
+      "info": "https://www.lojarisemode.com.br/produto/gabinete-gamer-rise-mode-galaxy-glass-m-black-sem-fans-rm-ga-ggm-fb",
+      "imagem": "img/json/Gabinete/galaxyGlass",
       "tipo": "Mid Tower"
     },
     {
-      "marca": "Thermaltake",
-      "modelo": "V200 RGB",
-      "preco": 399.99,
-      "info": "https://www.thermaltake.com/v200-tg-rgb.html",
-      "imagem": "img/v200-rgb.png",
-      "tipo": "Mid Tower"
+      "marca": "Lian Li",
+      "modelo": "Lian Li 011",
+      "preco": 1235.99,
+      "info": "https://www.lianli.com.br/produtos-gabinete-o11",
+      "imagem": "img/json/Gabinete/lianLi",
+      "tipo": "Full Tower"
     }
   ],
   "Refrigeração": [
     {
-      "marca": "Noctua",
-      "modelo": "NH-D15",
-      "preco": 499.99,
-      "info": "https://noctua.at/en/nh-d15",
-      "imagem": "img/nh-d15.png",
+      "marca": "Rise Mode",
+      "modelo": "Storm 8 Black",
+      "preco": 189.99,
+      "info": "https://www.kabum.com.br/produto/506058/air-cooler-gamer-rise-mode-storm-8-black-intel-amd-120mm-preto-rm-acst-b",
+      "imagem": "img/json/cooler/storm8",
       "tipo": "Air Cooler"
     },
     {
-      "marca": "Corsair",
-      "modelo": "iCUE H150i Elite Capellix",
-      "preco": 799.99,
-      "info": "https://www.corsair.com/us/en/Categories/Products/Liquid-Cooling/iCUE-ELITE-CAPELLIX-Liquid-CPU-Coolers/p/CW-9060048-WW",
-      "imagem": "img/h150i-elite-capellix.png",
-      "tipo": "Liquid Cooler"
+      "marca": "Rise Mode",
+      "modelo": "Gamer Black 240mm",
+      "preco": 189.99,
+      "info": "https://www.lojarisemode.com.br/produto/water-cooler-rise-mode-black-240mm-rgb-rm-wcb-02-rgb",
+      "imagem": "img/json/cooler/gamerBlack",
+      "tipo": "Water Cooler"
     },
     {
       "marca": "Cooler Master",
-      "modelo": "Hyper 212 RGB Black Edition",
-      "preco": 299.99,
-      "info": "https://www.coolermaster.com/catalog/coolers/cpu-air-coolers/hyper-212-rgb-black-edition/",
-      "imagem": "img/hyper-212-rgb.png",
+      "modelo": "ML280 Mirror",
+      "preco": 539.99,
+      "info": "https://www.coolermaster.com/pt-br/products/masterliquid-ml280-mirror/",
+      "imagem": "img/json/cooler/ml280",
+      "tipo": "Water Cooler"
+    },
+    {
+      "marca": "DeepCool",
+      "modelo": "AG400",
+      "preco": 129.99,
+      "info": "https://www.terabyteshop.com.br/produto/23224/cooler-para-processador-deepcool-gammaxx-ag400-120mm-intel-amd-r-ag400-bknnmn-g-1",
+      "imagem": "img/json/cooler/ag400",
       "tipo": "Air Cooler"
     },
     {
-      "marca": "be quiet!",
-      "modelo": "Dark Rock Pro 4",
-      "preco": 399.99,
-      "info": "https://www.bequiet.com/en/cpucooler/1378",
-      "imagem": "img/dark-rock-pro-4.png",
+      "marca": "Rise Mode",
+      "modelo": "G800",
+      "preco": 89.99,
+      "info": "https://www.lojarisemode.com.br/produto/air-cooler-gamer-rise-mode-g800-rm-ac-o8-rgb",
+      "imagem": "img/json/cooler/g800",
       "tipo": "Air Cooler"
-    },
-    {
-      "marca": "NZXT",
-      "modelo": "Kraken X63",
-      "preco": 599.99,
-      "info": "https://nzxt.com/product/kraken-x63",
-      "imagem": "img/kraken-x63.png",
-      "tipo": "Liquid Cooler"
     }
   ]
 }
