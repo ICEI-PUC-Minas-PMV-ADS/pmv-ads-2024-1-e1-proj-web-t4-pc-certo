@@ -307,6 +307,7 @@ a:hover {
 
 .tempoDesdePub {
     color: #bbbbbb;
+    display: flex;
 }
 
 #Participe {

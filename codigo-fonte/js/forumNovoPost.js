@@ -15,7 +15,7 @@ titPub.value = "";
 temaTpc.value = "NULO";
 ///
 
-//
+//VALIDA DADOS ANTES DE PUBLICAR
 enviarPub.onclick = validaDados;
 
 function validaDados() {
@@ -51,7 +51,9 @@ temaTpc.onchange = function () {
   eFormNormal();
   mostraNovoTpcEm();
 };
+///
 
+//ESTETICA PARA QUANDO DADOS NAO FORAM VALIDADOS
 function mostraNovoTpcEm() {
   if (temaTpc.value !== "NULO") {
     tpcEm.textContent = "em #" + temaTpc.value;
@@ -77,37 +79,23 @@ function eFormNormal() {
     titPub.classList.add("formNormal");
   }
 }
-
-/*
-  function TxtCurto() {
-    txtCurto.textContent = "*O texto está muito curto!";
-  }
-  function TxtLongo() {
-    txtCurto.textContent = "";
-  }
-  function TitCurto() {
-    titCurto.textContent = "*O título está muito curto!";
-  }
-  function TitLongo() {
-    titCurto.textContent = "";
-  }
-  function TemaNulo() {
-    opcInval.textContent = "*Você deve selecionar alguma opção!";
-  }
-  function TemaCerto() {
-    opcInval.textContent = "";
-  }
-
- */
+///
 
 // FUNCAO PUBLICAR DE FATO
 function publicar() {
+  let dataPost = new Date();
+  clickCounter = 0;
+  repCounter = 0;
+
   //ENVIAR DADOS AO LOCAL STORAGE E FECHAR
   var Publicacao = {
     titulo: titPub.value,
     texto: textoPub.value,
     tema: temaTpc.value,
     autor: usuarioString,
+    data: dataPost,
+    nClicks: clickCounter,
+    nRespostas: repCounter,
   };
   ///
 

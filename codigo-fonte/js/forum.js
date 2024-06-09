@@ -157,68 +157,10 @@ function publicar() {
   setTimeout(function () {
     location.reload();
   }, 100);
+  ///
 }
 
-///// CRIADORA DE DIVS /////
-
-for (let i = 0; i < localStorage.length; i++) {
-  const chaveX = localStorage.key(i);
-
-  if (chaveX.includes("POST_")) {
-    var postStr = localStorage.getItem(chaveX);
-    var postJSON = JSON.parse(postStr);
-
-    function criaDiv(postJSON) {
-      // CRIA DIV DO POST
-      var divPrincipal = document.createElement("div");
-      divPrincipal.className = "classe" + postJSON.tema;
-
-      //CRIA DIV DO "TEMA DO POST"
-      var divQualTema = document.createElement("div");
-      divQualTema.className = "qualTema";
-      divQualTema.innerText = "Tema do Tópico: ";
-
-      //CRIA DIV DO TEMA DO POST
-      var divTema = document.createElement("div");
-      divTema.className = "tema";
-      divTema.innerText = postJSON.tema;
-
-      // CRIA DIV DO TITULO
-      var divTitulo = document.createElement("div");
-      divTitulo.className = "titulo";
-      divTitulo.innerText = postJSON.titulo;
-
-      // CRIA A DIV DO TEXTO
-      var divTexto = document.createElement("div");
-      divTexto.className = "texto";
-      divTexto.innerText = postJSON.texto;
-
-      // CRIA A DIV "PUBLICADO POR"
-      var divBy = document.createElement("div");
-      divBy.className = "feitoPor";
-      divBy.innerText = "Publicado por: ";
-
-      // CRIA A DIV DO AUTOR
-      var divAutor = document.createElement("div");
-      divAutor.className = "autor";
-      divAutor.innerText = postJSON.autor;
-
-      // COLOCA AS DIVS COMO FILHAS DA PRINCIPAL
-      divPrincipal.appendChild(divTitulo);
-      divPrincipal.appendChild(divQualTema);
-      divPrincipal.appendChild(divTema);
-      divPrincipal.appendChild(document.createElement("br"));
-      divPrincipal.appendChild(divTexto);
-      divPrincipal.appendChild(document.createElement("br"));
-      divPrincipal.appendChild(divBy);
-      divPrincipal.appendChild(divAutor);
-
-      // ADICIONA A DIV PRINCIPAL NA DIV mainContent
-    }
-    criaDiv(postJSON);
-  }
-}
-
+// DISPLAY DIFERENTE NA TELA INICIAL DEPENDENDO DO LOGIN
 if (usuarioString !== null) {
   Participe.style.display = "none";
   Publique.style.display = "flex";
@@ -226,11 +168,12 @@ if (usuarioString !== null) {
   Participe.style.display = "flex";
   Publique.style.display = "none";
 }
+///
 
-// SELECAO DE TIPO DE FORUM
-
+// SELECAO DE TIPO DE FORUM E FILTRO
 var forums = [
   allForums,
+  componentes,
   buyForums,
   softForums,
   hardForums,
@@ -241,6 +184,7 @@ var forums = [
 forums.forEach(function (forumX) {
   forumX.onclick = function () {
     slctForum(forumX);
+    filtroForum(forumX);
   };
 });
 
@@ -254,10 +198,88 @@ function slctForum(selectedForum) {
   selectedForum.classList.add("forumSlctOpt1");
 }
 
-// SUMIR ICONES DO FORUM SE NAO TIVER LOGADO
+function filtroForum(selectedForum) {
+  var forumId = selectedForum.id;
+  var forumPrefix = forumId.slice(0, -6);
+  var allForums = document.querySelectorAll(".eachForum");
 
+  allForums.forEach(function (forum) {
+    forum.style.display = "none";
+  });
+
+  if (selectedForum.id == "allForums") {
+    allForums.forEach(function (forum) {
+      forum.style.display = "flex";
+    });
+  }
+
+  var filteredForums = document.querySelectorAll("[id^='" + forumPrefix + "']");
+  filteredForums.forEach(function (forum) {
+    forum.style.display = "flex";
+  });
+}
+
+// SUMIR ICONES DO FORUM SE NAO TIVER LOGADO
 if (usuarioString !== null) {
   iconesForum.classList.remove("forumSlctOpt");
 } else {
   iconesForum.style.display = "none";
+}
+///
+
+/// TOP 5 RECENTES POSTS
+var allKeys = Object.keys(localStorage);
+var maioresIDs = [];
+
+allKeys.forEach(function (key) {
+  if (key.startsWith("POST_")) {
+    var id = parseInt(key.split("_")[2]);
+
+    if (maioresIDs.length < 5 || id > maioresIDs[4].id) {
+      maioresIDs.push({ id: id, chave: key });
+
+      maioresIDs.sort(function (a, b) {
+        return b.id - a.id;
+      });
+
+      if (maioresIDs.length > 5) {
+        maioresIDs.pop();
+      }
+    }
+  }
+});
+
+//EXIBIR NAS DIVS
+document.getElementById("ultimoPub1");
+
+var Titulo = document.getElementById("ultimoPubTit1");
+var Autor = document.getElementById("ultimoPubAut1");
+var Respostas = document.getElementById("ultimoPubResp1");
+var Data = document.getElementById("ultimoPubData1");
+var Hora = document.getElementById("ultimoPubHora1");
+
+var nomeDaChave = maioresIDs[0].chave;
+
+for (var k = 0; k < localStorage.length; k++) {
+  if (maioresIDs[0].chave === Object.keys(localStorage)[k]) {
+    let chave = Object.keys(localStorage)[k];
+    let valor = localStorage.getItem(chave);
+    let objeto = JSON.parse(valor);
+
+    Titulo.textContent = objeto.titulo;
+    Autor.textContent = objeto.autor;
+    Respostas.textContent = objeto.nRespostas;
+
+    // DATA FORMATADA
+    let dataDoObjeto = new Date(objeto.data);
+    let dia = dataDoObjeto.getDate().toString().padStart(2, "0");
+    let mes = (dataDoObjeto.getMonth() + 1).toString().padStart(2, "0");
+    let ano = dataDoObjeto.getFullYear().toString().substr(-2);
+    let hora = dataDoObjeto.getHours().toString().padStart(2, "0");
+    let minuto = dataDoObjeto.getMinutes().toString().padStart(2, "0");
+    let dataFormatada = dia + "/" + mes + "/" + ano;
+
+    Data.textContent = dataFormatada;
+    Hora.textContent = hora + ":" + minuto;
+  }
 }

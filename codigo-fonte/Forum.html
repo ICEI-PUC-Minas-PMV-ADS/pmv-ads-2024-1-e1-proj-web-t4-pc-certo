@@ -174,6 +174,7 @@
         </div>
         <div class="forumSelect">
           <button class="forumSlctOpt1" id="allForums">Todos</button>
+          <button class="forumSlctOpt" id="componentes">Peças de PC</button>
           <button class="forumSlctOpt" id="buyForums">Compra & Venda</button>
           <button class="forumSlctOpt" id="softForums">Software</button>
           <button class="forumSlctOpt" id="hardForums">Hardware</button>
@@ -181,7 +182,7 @@
           <button class="forumSlctOpt" id="etcForums">Outros</button>
         </div>
         <div class="contForums">
-          <div class="eachForum">
+          <div id="etcForumsRegras" class="eachForum">
             <img
               src="img/forum/forumIcon/Regras_DM.png"
               class="eachIcon"
@@ -201,7 +202,7 @@
             </div>
           </div>
 
-          <div class="eachForum">
+          <div id="softForumsErros" class="eachForum">
             <img
               src="img/forum/forumIcon/Geral_DM.png"
               class="eachIcon"
@@ -221,7 +222,7 @@
             </div>
           </div>
 
-          <div class="eachForum">
+          <div id="hardForumsUpgrade" class="eachForum">
             <img
               src="img/forum/forumIcon/Hardware_DM.png"
               class="eachIcon"
@@ -241,7 +242,7 @@
             </div>
           </div>
 
-          <div class="eachForum">
+          <div id="prfcForumsMouse" class="eachForum">
             <img
               src="img/forum/forumIcon/Mouse_DM.png"
               class="eachIcon"
@@ -261,7 +262,7 @@
             </div>
           </div>
 
-          <div class="eachForum">
+          <div id="hardForumsSugestoes" class="eachForum">
             <img
               src="img/forum/forumIcon/Geral_DM.png"
               class="eachIcon"
@@ -281,7 +282,7 @@
             </div>
           </div>
 
-          <div class="eachForum">
+          <div id="buyForumsOnline" class="eachForum">
             <img
               src="img/forum/forumIcon/Geral_DM.png"
               class="eachIcon"
@@ -301,7 +302,7 @@
             </div>
           </div>
 
-          <div class="eachForum">
+          <div id="buyForumsLocal" class="eachForum">
             <img
               src="img/forum/forumIcon/Geral_DM.png"
               class="eachIcon"
@@ -321,7 +322,7 @@
             </div>
           </div>
 
-          <div class="eachForum">
+          <div id="prfcForumsMonitores" class="eachForum">
             <img
               src="img/forum/forumIcon/Monitor_DM.png"
               class="eachIcon"
@@ -341,14 +342,14 @@
             </div>
           </div>
 
-          <div class="eachForum">
+          <div id="prfcForumsAudio" class="eachForum">
             <img
               src="img/forum/forumIcon/Headset_DM.png"
               class="eachIcon"
               id="foneIcon"
             />
             <div class="titSubTit">
-              <h2 class="hTit">Fones, Headsets e Microfones</h2>
+              <h2 class="hTit">Headsets, Microfones e Áudio</h2>
               <p class="hTxt">Periféricos</p>
             </div>
             <div class="tpcCounter">
@@ -361,7 +362,27 @@
             </div>
           </div>
 
-          <div class="eachForum">
+          <div id="prfcForumsOutros" class="eachForum">
+            <img
+              src="img/forum/forumIcon/OUTROS_DM.png"
+              class="eachIcon"
+              id="foneIcon"
+            />
+            <div class="titSubTit">
+              <h2 class="hTit">Outros Periféricos E Dispositivos</h2>
+              <p class="hTxt">Periféricos</p>
+            </div>
+            <div class="tpcCounter">
+              <span class="CntrTit">22.1k</span>
+              <span class="CntrTxt">Posts</span>
+            </div>
+            <div class="msgCounter">
+              <span class="CntrTit">672.2k</span>
+              <span class="CntrTxt">Mensagens</span>
+            </div>
+          </div>
+
+          <div id="softForumsDicas" class="eachForum">
             <img
               src="img/forum/forumIcon/Geral_DM.png"
               class="eachIcon"
@@ -393,7 +414,7 @@
           <span id="linhaHor"></span>
         </div>
 
-        <div class="contForums">
+        <div id="componentesGPU" class="contForums">
           <div class="eachForum">
             <img src="img/forum/forumIcon/GPU_DM.png" class="eachIcon" />
             <div class="titSubTit">
@@ -410,7 +431,7 @@
             </div>
           </div>
 
-          <div class="eachForum">
+          <div id="componentesCPU" class="eachForum">
             <img src="img/forum/forumIcon/CPU_DM.png" class="eachIcon" />
             <div class="titSubTit">
               <h2 class="hTit">Processadores</h2>
@@ -426,7 +447,7 @@
             </div>
           </div>
 
-          <div class="eachForum">
+          <div id="componentesMOBO" class="eachForum">
             <img src="img/forum/forumIcon/MOBO_DM.png" class="eachIcon" />
             <div class="titSubTit">
               <h2 class="hTit">Placas-Mãe</h2>
@@ -442,7 +463,7 @@
             </div>
           </div>
 
-          <div class="eachForum">
+          <div id="componentesPSU" class="eachForum">
             <img src="img/forum/forumIcon/PSU_DM.png" class="eachIcon" />
             <div class="titSubTit">
               <h2 class="hTit">Fontes</h2>
@@ -458,10 +479,10 @@
             </div>
           </div>
 
-          <div class="eachForum">
+          <div id="componentesRAM" class="eachForum">
             <img src="img/forum/forumIcon/RAM_DM.png" class="eachIcon" />
             <div class="titSubTit">
-              <h2 class="hTit">Mémoria RAM</h2>
+              <h2 class="hTit">Memória RAM</h2>
               <p class="hTxt">Componentes de Hardware</p>
             </div>
             <div class="tpcCounter">
@@ -474,7 +495,7 @@
             </div>
           </div>
 
-          <div class="eachForum">
+          <div id="componentesSSD" class="eachForum">
             <img src="img/forum/forumIcon/SSD_DM.png" class="eachIcon" />
             <div class="titSubTit">
               <h2 class="hTit">SSD's, HDD's e Armazenamento</h2>
@@ -490,10 +511,10 @@
             </div>
           </div>
 
-          <div class="eachForum">
+          <div id="componentesCASE" class="eachForum">
             <img src="img/forum/forumIcon/CASE_DM.png" class="eachIcon" />
             <div class="titSubTit">
-              <h2 class="hTit">Gabinetes, e CaseMod's</h2>
+              <h2 class="hTit">Gabinetes e Casemod</h2>
               <p class="hTxt">Componentes de Hardware</p>
             </div>
             <div class="tpcCounter">
@@ -506,7 +527,7 @@
             </div>
           </div>
 
-          <div class="eachForum">
+          <div id="componentesCOOLER" class="eachForum">
             <img src="img/forum/forumIcon/COOL_DM.png" class="eachIcon" />
             <div class="titSubTit">
               <h2 class="hTit">Peças de Refrigeração</h2>
@@ -522,7 +543,7 @@
             </div>
           </div>
 
-          <div class="eachForum">
+          <div id="componentesOUTROS" class="eachForum">
             <img src="img/forum/forumIcon/CABLE_DM.png" class="eachIcon" />
             <div class="titSubTit">
               <h2 class="hTit">Cabos e Outras Peças</h2>
@@ -548,7 +569,7 @@
         </div>
         <br />
         <div class="contForums">
-          <div class="sideBarPub">
+          <div id="ultimo1" class="sideBarPub">
             <img src="img/ProfileIcon.png" alt="" class="sideBarPubPic" />
             <div class="sideBarPubTxt">
               <div>Titulo Aqui</div>
@@ -562,7 +583,7 @@
             <div class="sideBarPubResp"><span>X</span> Respostas</div>
           </div>
 
-          <div class="sideBarPub">
+          <div id="ultimo2" class="sideBarPub">
             <img src="img/ProfileIcon.png" alt="" class="sideBarPubPic" />
             <div class="sideBarPubTxt">
               <div>Titulo Aqui</div>
@@ -576,7 +597,7 @@
             <div class="sideBarPubResp"><span>X</span> Respostas</div>
           </div>
 
-          <div class="sideBarPub">
+          <div id="ultimo3" class="sideBarPub">
             <img src="img/ProfileIcon.png" alt="" class="sideBarPubPic" />
             <div class="sideBarPubTxt">
               <div>Titulo Aqui</div>
@@ -590,7 +611,7 @@
             <div class="sideBarPubResp"><span>X</span> Respostas</div>
           </div>
 
-          <div class="sideBarPub">
+          <div id="ultimo4" class="sideBarPub">
             <img src="img/ProfileIcon.png" alt="" class="sideBarPubPic" />
             <div class="sideBarPubTxt">
               <div>Titulo Aqui</div>
@@ -604,7 +625,7 @@
             <div class="sideBarPubResp"><span>X</span> Respostas</div>
           </div>
 
-          <div class="sideBarPub">
+          <div id="ultimo5" class="sideBarPub">
             <img src="img/ProfileIcon.png" alt="" class="sideBarPubPic" />
             <div class="sideBarPubTxt">
               <div>Titulo Aqui</div>
@@ -620,6 +641,8 @@
         </div>
         <br /><br />
 
+        <!-- ULTIMAS PUBLICACOES POSTADAS-->
+
         <div class="titSmll">
           <img src="img/forum/Fire_DM.png" class="iconVSmll" alt="" />
           <span id="titSmllTit">Últimas Publicações</span>
@@ -627,76 +650,22 @@
         </div>
         <br />
 
-        <div class="contForums">
+        <div id="ultimoPub1" class="contForums">
           <div class="sideBarPub">
             <img src="img/ProfileIcon.png" alt="" class="sideBarPubPic" />
             <div class="sideBarPubTxt">
-              <div>Titulo Aqui</div>
-              <div>Por <span>Autor</span></div>
+              <div id="ultimoPubTit1"></div>
+              <div>Por <span id="ultimoPubAut1">Autor</span></div>
               <div class="tempoDesdePub">
-                Há
-                <span>X</span>
-                minutos
+                <div id="ultimoPubData1"></div>
+                <div id="ultimoPubHora1"></div>
               </div>
             </div>
-            <div class="sideBarPubResp"><span>X</span> Respostas</div>
-          </div>
-
-          <div class="sideBarPub">
-            <img src="img/ProfileIcon.png" alt="" class="sideBarPubPic" />
-            <div class="sideBarPubTxt">
-              <div>Titulo Aqui</div>
-              <div>Por <span>Autor</span></div>
-              <div class="tempoDesdePub">
-                Há
-                <span>X</span>
-                minutos
-              </div>
+            <div class="sideBarPubResp">
+              <span id="ultimoPubResp1"></span> Respostas
             </div>
-            <div class="sideBarPubResp"><span>X</span> Respostas</div>
           </div>
-
-          <div class="sideBarPub">
-            <img src="img/ProfileIcon.png" alt="" class="sideBarPubPic" />
-            <div class="sideBarPubTxt">
-              <div>Titulo Aqui</div>
-              <div>Por <span>Autor</span></div>
-              <div class="tempoDesdePub">
-                Há
-                <span>X</span>
-                minutos
-              </div>
-            </div>
-            <div class="sideBarPubResp"><span>X</span> Respostas</div>
-          </div>
-
-          <div class="sideBarPub">
-            <img src="img/ProfileIcon.png" alt="" class="sideBarPubPic" />
-            <div class="sideBarPubTxt">
-              <div>Titulo Aqui</div>
-              <div>Por <span>Autor</span></div>
-              <div class="tempoDesdePub">
-                Há
-                <span>X</span>
-                minutos
-              </div>
-            </div>
-            <div class="sideBarPubResp"><span>X</span> Respostas</div>
-          </div>
-
-          <div class="sideBarPub">
-            <img src="img/ProfileIcon.png" alt="" class="sideBarPubPic" />
-            <div class="sideBarPubTxt">
-              <div>Titulo Aqui</div>
-              <div>Por <span>Autor</span></div>
-              <div class="tempoDesdePub">
-                Há
-                <span>X</span>
-                minutos
-              </div>
-            </div>
-            <div class="sideBarPubResp"><span>X</span> Respostas</div>
-          </div>
+          <br />
         </div>
       </div>
 
