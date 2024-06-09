@@ -33,6 +33,8 @@ Tendo em vista a complexidade no processo de montagem de um computador e ausênc
 <li><a href="documentos/04-Projeto de Interface.md"> Projeto de Interface</a></li>
 <li><a href="documentos/05-Template padrão da Aplicação.md"> Template padrão da Aplicação</a></li>
 <li><a href="documentos/06-Programação de Funcionalidades.md"> Programação de Funcionalidades</a></li>
+<li><a href="documentos/07-Plano de Testes de Software"> Plano de Testes de Software</a></li>
+<li><a href="documentos/08-Registro de Testes de Software.md"> Registro de Testes de Software</a></li>
 <li><a href="documentos/09-Referências Bibliográficas.md"> Referências Bibliográficas</a></li>
 </ol>
 
