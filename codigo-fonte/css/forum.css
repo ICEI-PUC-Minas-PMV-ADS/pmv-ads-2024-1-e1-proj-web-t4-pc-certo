@@ -30,6 +30,7 @@ body {
 
 p {
     margin: 0 0;
+    max-width: fit-content;
 }
 
 /* MAIN */
@@ -296,6 +297,7 @@ a:hover {
 .sideBarPubTxt {
     display: flex;
     flex-direction: column;
+    max-width: 100%;
 
     flex-grow: 1;
     flex: 1;
@@ -395,6 +397,10 @@ a:hover {
     text-decoration: none;
     color: #fff;
     transition: 0.3s ease-in-out;
+}
+
+.tituloPub {
+    word-wrap: break-word;
 }
 
 #partCad {

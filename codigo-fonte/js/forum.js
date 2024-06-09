@@ -250,36 +250,38 @@ allKeys.forEach(function (key) {
 });
 
 //EXIBIR NAS DIVS
-document.getElementById("ultimoPub1");
 
-var Titulo = document.getElementById("ultimoPubTit1");
-var Autor = document.getElementById("ultimoPubAut1");
-var Respostas = document.getElementById("ultimoPubResp1");
-var Data = document.getElementById("ultimoPubData1");
-var Hora = document.getElementById("ultimoPubHora1");
+for (var l = 1; l < 6; l++) {
+  document.getElementById("ultimoPub" + l);
+  var Titulo = document.getElementById("ultimoPubTit" + l);
+  var Autor = document.getElementById("ultimoPubAut" + l);
+  var Respostas = document.getElementById("ultimoPubResp" + l);
+  var Data = document.getElementById("ultimoPubData" + l);
+  var Hora = document.getElementById("ultimoPubHora" + l);
 
-var nomeDaChave = maioresIDs[0].chave;
+  var nomeDaChave = maioresIDs[l - 1].chave;
 
-for (var k = 0; k < localStorage.length; k++) {
-  if (maioresIDs[0].chave === Object.keys(localStorage)[k]) {
-    let chave = Object.keys(localStorage)[k];
-    let valor = localStorage.getItem(chave);
-    let objeto = JSON.parse(valor);
+  for (var k = 0; k < localStorage.length; k++) {
+    if (nomeDaChave === Object.keys(localStorage)[k]) {
+      let chave = Object.keys(localStorage)[k];
+      let valor = localStorage.getItem(chave);
+      let objeto = JSON.parse(valor);
 
-    Titulo.textContent = objeto.titulo;
-    Autor.textContent = objeto.autor;
-    Respostas.textContent = objeto.nRespostas;
+      Titulo.textContent = objeto.titulo;
+      Autor.textContent = objeto.autor;
+      Respostas.textContent = objeto.nRespostas;
 
-    // DATA FORMATADA
-    let dataDoObjeto = new Date(objeto.data);
-    let dia = dataDoObjeto.getDate().toString().padStart(2, "0");
-    let mes = (dataDoObjeto.getMonth() + 1).toString().padStart(2, "0");
-    let ano = dataDoObjeto.getFullYear().toString().substr(-2);
-    let hora = dataDoObjeto.getHours().toString().padStart(2, "0");
-    let minuto = dataDoObjeto.getMinutes().toString().padStart(2, "0");
-    let dataFormatada = dia + "/" + mes + "/" + ano;
+      // DATA FORMATADA
+      let dataDoObjeto = new Date(objeto.data);
+      let dia = dataDoObjeto.getDate().toString().padStart(2, "0");
+      let mes = (dataDoObjeto.getMonth() + 1).toString().padStart(2, "0");
+      let ano = dataDoObjeto.getFullYear().toString().substr(-2);
+      let hora = dataDoObjeto.getHours().toString().padStart(2, "0");
+      let minuto = dataDoObjeto.getMinutes().toString().padStart(2, "0");
+      let dataFormatada = dia + "/" + mes + "/" + ano;
 
-    Data.textContent = dataFormatada;
-    Hora.textContent = hora + ":" + minuto;
+      Data.textContent = dataFormatada + " ";
+      Hora.textContent = " " + hora + ":" + minuto;
+    }
   }
 }
