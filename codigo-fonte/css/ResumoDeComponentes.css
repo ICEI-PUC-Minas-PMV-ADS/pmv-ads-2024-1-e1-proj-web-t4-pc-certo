@@ -96,7 +96,7 @@ body {
     display: flex;
 }
 
-#comprarbotao{
+.comprarbotao{
     border-radius: 25px;
     border: 0;
     height: 7vh;
@@ -106,7 +106,7 @@ body {
     font-size: x-large;
 
 }
-#comprarbotao:hover{
+.comprarbotao:hover{
     background-color: #31833c;
     transition: 0.3s ease-in-out;
     cursor: pointer;
