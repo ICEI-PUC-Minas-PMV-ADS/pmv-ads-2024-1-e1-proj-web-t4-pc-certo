@@ -116,7 +116,7 @@ O acesso a página do fórum poderá ser feito através da opção do menu de na
 
 Exemplo da página Fórum:
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E3-pagForumDaComunidade.png">
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E3-pagForum.png">
 
 #### Requisito atendido
 
