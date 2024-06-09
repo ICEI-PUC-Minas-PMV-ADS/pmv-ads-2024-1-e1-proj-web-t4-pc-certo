@@ -65,7 +65,6 @@ function eFormNormal() {
 }
 
 /*
-
   function TxtCurto() {
     txtCurto.textContent = "*O texto está muito curto!";
   }
@@ -108,7 +107,7 @@ function publicar() {
 
   localStorage.setItem(idPost, postString);
 
-  window.location.href = "publicacaoFeita.html";
+  window.location.href = "forumPubFeita.html";
   ///
 }
 
