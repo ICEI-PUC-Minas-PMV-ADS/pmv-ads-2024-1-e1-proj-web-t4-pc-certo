@@ -44,6 +44,7 @@ function atualizarOrcamentoCard() {
         cardOrcamento.parentElement.style.color = 'white';
         alert('O valor parcial excede o orçamento! Volte para selecionar suas peças novamente ou continue assim mesmo.');
     }
+
 }
 
 function atualizarTotalParcial() {
