@@ -120,5 +120,3 @@ if (usuarioString !== null) {
 } else {
   iconesForum.style.display = "none";
 }
-
-//

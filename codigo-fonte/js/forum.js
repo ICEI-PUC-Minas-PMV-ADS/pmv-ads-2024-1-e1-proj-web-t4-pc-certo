@@ -106,7 +106,7 @@ allKeys.forEach(function (key) {
   }
 });
 
-//EXIBIR NAS DIVS
+//EXIBIR NAS DIVS ULTIMOS POSTS
 for (var l = 1; l < 6; l++) {
   if (maioresIDs.length >= l) {
     let Publication = document.getElementById("ultimoPub" + l);
