@@ -36,7 +36,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
   <td>Pedro Bezerra</td>
  </tr>
  <tr>
-  <td>CT-02: Verificar a possibilidade do usuário submeter publicações com base no login</td>
+  <td>CT-02: Verificar a possibilidade do usuário submeter publicações com base no login.</td>
   <td>
    <ul>
     <li>RF-08:	A aplicação deve permitir o login de usuários para o uso do fórum.</li>
@@ -57,6 +57,28 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
    </ol>
    </td>
   <td>A opção de criar publicaçãos deve ser impossibilitada caso o usuário não tenha realizado login.</td>
+  <td>Lucas Gabriel</td>
+ </tr>
+ <tr>
+  <td>CT-03: A aplicação deve impedir a publicação caso as condições necessárias forem insuficientes.</td>
+  <td>
+   <ul>
+    <li>RF-11:	A aplicação deve conter um fórum da comunidade.</li>
+   </ul>
+  </td>
+  <td>Impossibilitar a publicação de um novo tópico ao forum caso as condições necessárias para tal não forem cumpridas, exibindo informações ao usuário sobre como satisfaze-las.</td>
+  <td>
+   <ol>
+    <li>Acessar o navegador.</li>
+    <li>Informar o endereço do site.</li>
+    <li>Visualizar a página Home.</li>
+    <li>Clicar em "Forum".</li>
+    <li>Verificar se há botão para criar nova publicação.</li>
+    <li>Informar o endereço da pagina "Nova Publicação - PC Certo".</li>
+    <li>Verificar possibilidade de uso da página.</li>
+   </ol>
+   </td>
+  <td>O botão de enviar a publicação deverá não submeter as informações, além de exibir o(s) motivo(s) que estão impossibilitando o envio, permitindo ao usuário corrigir os campos para realizar sua publicaçao com êxito.</td>
   <td>Lucas Gabriel</td>
  </tr>
 </table>
