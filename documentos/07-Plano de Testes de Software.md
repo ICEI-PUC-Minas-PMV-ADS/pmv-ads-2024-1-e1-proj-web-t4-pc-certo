@@ -55,7 +55,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
     <li>Verificar possibilidade de uso da página.</li>
    </ol>
    </td>
-  <td>A soma deve ser atualizada corretamente sempre que um componente é adicionado ou removido da seleção. A aplicação deve fornecer um feedback quando o orçamento é excedido ou está dentro do limite.</td>
-  <td>Pedro Bezerra</td>
+  <td>A opção de criar publicaçãos deve ser impossibilitada caso o usuário não tenha realizado login.</td>
+  <td>Lucas Gabriel</td>
  </tr>
 </table>
