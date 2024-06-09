@@ -1,20 +1,38 @@
 # Plano de Testes de Software
 
-[Apresente os cenários de testes a serem utilizados na realização dos testes da aplicação. Escolha cenários de testes que demonstrem os requisitos sendo atendidos. ]
+Os testes funcionais a serem realizados na aplicação são descritos a seguir.
 
-Os testes funcionais a serem realizados na aplicação são descritos a seguir. [Utilize a estrutura abaixo para cada caso de teste]
-
-|Caso de Teste    | CT-X - Título Caso de Teste |
-|:---|:---|
-| Requisitos Associados | RF-X |
-| Objetivo do Teste | Descrição do objetivo do teste |
-| Passos | Indicar passos para a execução do teste |
-| Critérios de êxito | Indicar os critérios de êxito  |
-| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+<table>
+ <tr>
+  <th>Caso de teste</th>
+  <th>Requisitos associados</th>
+  <th>Objetivo do teste</th>
+  <th>Passos</th>
+  <th>Critérios de êxito</th>
+  <th>Responsável</th>
+ </tr>
+ <tr>
+  <td>CT-01: Verificar o funcionamento do orçamento e soma dos valores dos componentes</td>
+  <td>
+   <ul>
+    <li>RF-05:	A aplicação deve calcular a soma dos componentes escolhidos para o usuário.</li>
+   <li>RF-10:	A aplicação deve verificar se o orçamento está de acordo com a soma do preço dos componentes escolhidos pela aplicação.</li>
+   </ul>
+  </td>
+  <td>Garantir que a soma dos componentes escolhidos e o orçamento está sendo respeitado.</td>
+  <td>
+   <ol>
+    <li>Acessar o navegador.</li>
+    <li>Informar o endereço do site.</li>
+    <li>Visualizar a página Home.</li>
+    <li>Clicar em "iniciar"</li>
+    <li>Escolher a finalidade</li> 
+    <li>Escolher o nível de orçamento</li> 
+    <li>Escolher o valor máximo a investir</li> 
+    <li>Escolher as peças do computador e ir verificando se a soma está sendo feita corretamente e se o orçamento está sendo respeitado.</li> 
+   </ol>
+   </td>
+  <td>A soma deve ser atualizada corretamente sempre que um componente é adicionado ou removido da seleção. A aplicação deve fornecer um feedback quando o orçamento é excedido ou está dentro do limite.</td>
+  <td>Pedro Bezerra</td>
+ </tr>
+</table>
