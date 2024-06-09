@@ -108,7 +108,7 @@ Ao clicar em “Guia” no menu de navegação, terá acesso a página Guia.
 
 <hr>
 
-### Página do Forum da Comunidade (RF-11)
+### Página do Forum da Comunidade (RF-11, RF-13, RF-08)
 
 Responsável: Lucas Gabriel
 
@@ -121,14 +121,24 @@ Exemplo da página Fórum:
 #### Requisito atendido
 
 RF-11: A aplicação deve conter um fórum da comunidade.
+RF-13: A aplicação deve permitir que administradores realizem banimentos/suspensões aos usuários que não respeitarem as regras do fórum.
+RF-08: A aplicação deve permitir o login de usuários para o uso do fórum. (Sem login não será possível submeter publicações)
 
 #### Artefatos da funcionalidade
 
 ●Forum.html
+●forumNovoPost.html
+●ForumPubFeita.html
+●exibirPosts.html
 
-●forum.css
+●Forum.css
+●forumNovoPost.css
+●ForumPubFeita.css
+●exibirPosts.css
 
-●forum.js
+●Forum.js
+●forumNovoPost.js
+●ForumPubFeita.js
 
 #### Estrutura de Dados
 
