@@ -35,4 +35,27 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
   <td>A soma deve ser atualizada corretamente sempre que um componente é adicionado ou removido da seleção. A aplicação deve fornecer um feedback quando o orçamento é excedido ou está dentro do limite.</td>
   <td>Pedro Bezerra</td>
  </tr>
+ <tr>
+  <td>CT-02: Verificar a possibilidade do usuário submeter publicações com base no login</td>
+  <td>
+   <ul>
+    <li>RF-08:	A aplicação deve permitir o login de usuários para o uso do fórum.</li>
+   <li>RF-11:	A aplicação deve conter um fórum da comunidade.</li>
+   </ul>
+  </td>
+  <td>Garantir que a impossibilidade de realizar publicações caso usuário não esteja logado.</td>
+  <td>
+   <ol>
+    <li>Acessar o navegador.</li>
+    <li>Informar o endereço do site.</li>
+    <li>Visualizar a página Home.</li>
+    <li>Clicar em "Forum".</li>
+    <li>Verificar se há botão para criar nova publicação.</li>
+    <li>Informar o endereço da pagina "Nova Publicação - PC Certo".</li>
+    <li>Verificar possibilidade de uso da página.</li>
+   </ol>
+   </td>
+  <td>A soma deve ser atualizada corretamente sempre que um componente é adicionado ou removido da seleção. A aplicação deve fornecer um feedback quando o orçamento é excedido ou está dentro do limite.</td>
+  <td>Pedro Bezerra</td>
+ </tr>
 </table>
