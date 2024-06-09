@@ -274,7 +274,6 @@ a:hover {
     background-color: #3f6944;
     border-radius: 10px;
     border: 2px solid #3f6944;
-    max-height: 5200px;
 
     display: flex;
     flex-direction: row;
