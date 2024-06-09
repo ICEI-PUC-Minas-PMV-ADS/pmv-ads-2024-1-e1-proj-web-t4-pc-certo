@@ -114,53 +114,52 @@
       <!-- CONTEUDO DA PAGINA -->
 
       <!-- POP UP OCULTO -->
+      <a href="forumRegras.html" class="verRegras">
+        IMPORTANTE: Ver Regras Do Forum </a
+      ><br /><br />
+      <div class="cxNovoTpc">
+        <div class="popUpTop">
+          <h2 id="h2">Novo Tópico <span id="novoTpcEm"></span></h2>
+          <br />
+        </div>
+        <h3 id="h3">Título</h3>
+        <input
+          type="text"
+          id="titPub"
+          class="formNormal"
+          placeholder="Título do Tópico"
+          maxlength="75"
+        />
+        <span id="titCurto"></span><br />
+        <label for="temaTpc" id="escolhaTema"> Escolha o tema:</label>
+        <select id="temaTpc" class="formNormal">
+          <option value="NULO"></option>
+          <option value="PSU">Fontes e energia</option>
+          <option value="CASE">Gabinetes e Casemod</option>
+          <option value="GERAL">Geral</option>
+          <option value="SSD">HDD's e SSD's</option>
+          <option value="UPGRADE">Melhorias e upgrades</option>
+          <option value="RAM">Memória RAM</option>
+          <option value="MONTAGEM">Montagem e outros</option>
+          <option value="NOTEBOOKS">Notebook's</option>
+          <option value="PERIF">Periféricos (Mouse, teclado, etc)</option>
+          <option value="GPU">Placas de Vídeos</option>
+          <option value="MOBO">Placas Mãe</option>
+          <option value="ISSUES">Problemas de software (tela azul, etc)</option>
+          <option value="CPU">Processador</option>
+          <option value="COOLER">Ventoinhas e sistemas de refrigeração</option>
+        </select>
+        <span id="opcInval"></span><br />
+        <h3 id="h4">Texto</h3>
+        <textarea
+          id="textoPub"
+          class="formNormal"
+          placeholder="Digite aqui sua dúvida..."
+          maxlength="750"
+        ></textarea>
+        <span id="txtCurto"></span><br />
 
-      <div id="popUp">
-        <div class="cxNovoTpc">
-          <div class="popUpTop">
-            <h2 id="h2">Novo Tópico</h2>
-            <br />
-          </div>
-          <h3 id="h3">Título</h3>
-          <input
-            type="text"
-            id="titPub"
-            class="formNormal"
-            placeholder="Título do Tópico"
-            maxlength="75"
-          />
-          <span id="titCurto"></span><br />
-          <label for="temaTpc" id="escolhaTema"> Escolha o tema:</label>
-          <select id="temaTpc" class="formNormal">
-            <option value="NULO"></option>
-            <option value="PSU">Fontes e energia</option>
-            <option value="CASE">Gabinetes e Casemod</option>
-            <option value="GERAL">Geral</option>
-            <option value="SSD">HDD's e SSD's</option>
-            <option value="UPGRADE">Melhorias e upgrades</option>
-            <option value="RAM">Memória RAM</option>
-            <option value="MONTAGEM">Montagem e outros</option>
-            <option value="NOTEBOOKS">Notebook's</option>
-            <option value="PERIF">Periféricos (Mouse, teclado, etc)</option>
-            <option value="GPU">Placas de Vídeos</option>
-            <option value="MOBO">Placas Mãe</option>
-            <option value="ISSUES">
-              Problemas de software (tela azul, etc)
-            </option>
-            <option value="CPU">Processador</option>
-            <option value="COOLER">
-              Ventoinhas e sistemas de refrigeração
-            </option>
-          </select>
-          <span id="opcInval"></span><br />
-          <h3 id="h4">Texto</h3>
-          <textarea
-            id="textoPub"
-            class="formNormal"
-            placeholder="Digite aqui sua dúvida..."
-            maxlength="750"
-          ></textarea>
-          <span id="txtCurto"></span><br />
+        <div class="centralizar">
           <button
             id="enviarPub"
             title="Você deve prencher o título e o texto antes!"

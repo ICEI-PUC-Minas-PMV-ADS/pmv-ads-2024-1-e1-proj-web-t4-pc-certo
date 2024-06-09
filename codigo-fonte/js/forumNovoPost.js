@@ -1,5 +1,7 @@
 const usuarioString = localStorage.getItem("nomeCadastro"); // DECLARA VAR USUARIO
 
+var tpcEm = document.getElementById("novoTpcEm"); // VAR NOVO TOPICO "EM X"
+
 if (!usuarioString) {
   alert("É necessario criar uma conta para fazer uma publicação!");
   window.location.href = "Forum.html";
@@ -44,7 +46,19 @@ function validaDados() {
 
 textoPub.oninput = eFormNormal;
 titPub.oninput = eFormNormal;
-temaTpc.onchange = eFormNormal;
+
+temaTpc.onchange = function () {
+  eFormNormal();
+  mostraNovoTpcEm();
+};
+
+function mostraNovoTpcEm() {
+  if (temaTpc.value !== "NULO") {
+    tpcEm.textContent = "em #" + temaTpc.value;
+  } else {
+    tpcEm.textContent = "";
+  }
+}
 
 function eFormNormal() {
   if (temaTpc.value !== "NULO") {
