@@ -250,19 +250,20 @@ allKeys.forEach(function (key) {
 });
 
 //EXIBIR NAS DIVS
-
 for (var l = 1; l < 6; l++) {
-  document.getElementById("ultimoPub" + l);
-  var Titulo = document.getElementById("ultimoPubTit" + l);
-  var Autor = document.getElementById("ultimoPubAut" + l);
-  var Respostas = document.getElementById("ultimoPubResp" + l);
-  var Data = document.getElementById("ultimoPubData" + l);
-  var Hora = document.getElementById("ultimoPubHora" + l);
+  let Publication = document.getElementById("ultimoPub" + l);
+  let Titulo = document.getElementById("ultimoPubTit" + l);
+  let Autor = document.getElementById("ultimoPubAut" + l);
+  let Respostas = document.getElementById("ultimoPubResp" + l);
+  let Data = document.getElementById("ultimoPubData" + l);
+  let Hora = document.getElementById("ultimoPubHora" + l);
 
-  var nomeDaChave = maioresIDs[l - 1].chave;
+  let nomeDaChave = maioresIDs[l - 1].chave;
 
   for (var k = 0; k < localStorage.length; k++) {
     if (nomeDaChave === Object.keys(localStorage)[k]) {
+      Publication.style.display = "flex";
+
       let chave = Object.keys(localStorage)[k];
       let valor = localStorage.getItem(chave);
       let objeto = JSON.parse(valor);

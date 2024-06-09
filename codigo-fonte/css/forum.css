@@ -274,6 +274,7 @@ a:hover {
     background-color: #3f6944;
     border-radius: 10px;
     border: 2px solid #3f6944;
+    max-height: 5200px;
 
     display: flex;
     flex-direction: row;
@@ -297,10 +298,26 @@ a:hover {
 .sideBarPubTxt {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
+    max-height: fit-content;
 
     flex-grow: 1;
     flex: 1;
+}
+
+#ultimoPubTit1,
+#ultimoPubTit2,
+#ultimoPubTit3,
+#ultimoPubTit4,
+#ultimoPubTit5 {
+    flex-grow: 1;
+}
+
+#ultimoPubAut1,
+#ultimoPubAut2,
+#ultimoPubAut3,
+#ultimoPubAut4,
+#ultimoPubAut5 {
+    color: #86c49e;
 }
 
 .sideBarPubResp {
