@@ -1,7 +1,3 @@
-console.log(localStorage.getItem("nomeCadastro"));
-console.log(localStorage.getItem("emailCadastro"));
-console.log(localStorage.getItem("senhaCadastro"));
-console.log(localStorage.getItem("confirmacaoCadastro"));
 // variaveis
 var erroremail = document.getElementById("errorEmail");
 var redborder = document.querySelectorAll('#email, #senha');
