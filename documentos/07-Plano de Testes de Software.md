@@ -41,7 +41,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
    <ul>
     <li>RF-08:	A aplicação deve permitir o login de usuários para o uso do fórum.</li>
     <li>RF-11:	A aplicação deve conter um fórum da comunidade.</li>
-    <li> A aplicação deve permitir que apenas usuários logados realizem publicações no fórum. </li>
+    <li>RF-13: A aplicação deve permitir que apenas usuários logados realizem publicações no fórum. </li>
    </ul>
   </td>
   <td>Garantir que a impossibilidade de realizar publicações caso usuário não esteja logado.</td>
