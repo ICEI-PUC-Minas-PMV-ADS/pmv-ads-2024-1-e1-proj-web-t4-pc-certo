@@ -6,7 +6,6 @@ let precoParcial = parseFloat(localStorage.getItem('totalParcial')) || 0;
 let precoTemporario = 0;
 const ordemComponentes = ['Processador', 'Placa-mae', 'RAM', 'GPU', 'Armazenamento', 'PSU', 'Gabinete', 'Refrigeração'];
 
-
 // Atualizar resumo ao mudar de componente
 function atualizarResumo(componenteAtual) {
     const resumos = {
@@ -160,7 +159,7 @@ function carregarComponentes(tipo) {
             const TotalParcial = document.getElementById('parcialTotal');
             TotalParcial.innerHTML = `R$${(precoParcial + precoTemporario).toFixed(2).replace('.', ',')}`;
             salvarComponentesSelecionados();
-            
+
         });
 
         container.appendChild(opcao);
@@ -184,7 +183,6 @@ function carregarComponentes(tipo) {
             document.getElementById('orcTotal').textContent = orcTot;
         }
         orcTotal();
-
 
     });
 }
