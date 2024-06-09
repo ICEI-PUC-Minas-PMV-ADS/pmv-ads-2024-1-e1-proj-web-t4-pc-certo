@@ -1,11 +1,12 @@
 /* RESPONSIVIDADE */
 
 @media (max-width: 950px) {
-    #logosite{
+    #logosite {
         display: flex;
         align-items: center;
         justify-content: start;
     }
+
     #logosite .logo {
         display: none;
     }
@@ -35,6 +36,10 @@
     }
 
     header .botaocabecalho2 {
+        margin: 0px 32px 20px;
+    }
+
+    header .botaocabecalho3 {
         margin: 0px 32px 20px;
     }
 
@@ -111,6 +116,15 @@ header {
     padding: 2px;
 }
 
+#btLogado {
+    display: none;
+}
+
+#btDeslogado {
+    display: none;
+}
+
+
 .botaocabecalho {
     margin-right: 32px;
     border-radius: 20px;
@@ -118,6 +132,8 @@ header {
 }
 
 .botaocabecalho2 {
+    display: flex;
+
     margin-right: 32px;
     border-radius: 20px;
     float: left;
@@ -125,6 +141,17 @@ header {
 }
 
 .botaocabecalho2 .txtcabecalho {
+    color: #2e2e2e;
+}
+
+.botaocabecalho3 {
+    margin-right: 32px;
+    border-radius: 20px;
+    float: left;
+    background-color: #dcdcdc;
+}
+
+.botaocabecalho3 .txtcabecalho {
     color: #2e2e2e;
 }
 
@@ -143,6 +170,16 @@ header {
 }
 
 .botaocabecalho2:hover {
+    background-color: white;
+    transition: 0.3s;
+}
+
+.botaocabecalho:hover {
+    background-color: #31833c;
+    transition: 0.3s ease-in-out;
+}
+
+.botaocabecalho3:hover {
     background-color: white;
     transition: 0.3s;
 }
