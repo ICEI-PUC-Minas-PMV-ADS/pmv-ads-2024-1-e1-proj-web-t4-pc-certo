@@ -17,149 +17,6 @@ document.getElementById("Publique");
 
 const usuarioString = localStorage.getItem("nomeCadastro");
 
-//HOVER
-
-enviarPub.onmouseenter = function () {
-  enviarPub.style.backgroundColor = "#gainsboro";
-  enviarPub.style.color = "black";
-};
-enviarPub.onmouseleave = function () {
-  enviarPub.style.backgroundColor = "gainsboro";
-  enviarPub.style.color = "black";
-};
-
-//DESATIVA BOTAO DE PUBLICAR
-
-function desativaPub() {
-  enviarPub.style.cursor = "not-allowed";
-  enviarPub.onclick = function () {
-    alert("Preencha adequadamente todos os campos antes de publicar!");
-  };
-  enviarPub.title =
-    "Preencha adequadamente todos os campos para poder publicar";
-
-  // HOVER PARA DESATIVO
-  enviarPub.onmouseenter = function () {
-    enviarPub.style.backgroundColor = "";
-  };
-  enviarPub.onmouseleave = function () {
-    enviarPub.style.backgroundColor = "";
-  };
-}
-
-//ATIVA BOTAO DE PUBLICAR
-
-function ativaPub() {
-  enviarPub.style.cursor = "pointer";
-  enviarPub.onclick = publicar;
-  enviarPub.title = "Clique para fazer sua publicação!";
-
-  //HOVER PARA ATIVO
-  enviarPub.onmouseenter = function () {
-    enviarPub.style.backgroundColor = "#41ae4f";
-    enviarPub.style.color = "white";
-  };
-  enviarPub.onmouseleave = function () {
-    enviarPub.style.backgroundColor = "gainsboro";
-    enviarPub.style.color = "black";
-  };
-}
-
-//VERIFICAÇÃO DE CAMPOS
-
-//CAMPOS VAZIOS
-function validaDados() {
-  if (textoPub.value == "" || titPub.value == "" || temaTpc.value == "NULO") {
-    desativaPub();
-  } else {
-    ativaPub();
-  }
-
-  //MENSAGENS VERMELHAS DE TEXTO OU TITULO CURTOS
-
-  let valorTxt = textoPub.value;
-  let valorTit = titPub.value;
-
-  function eTxtCurto() {
-    txtCurto.textContent = "*O texto está muito curto!";
-  }
-  function eTxtLongo() {
-    txtCurto.textContent = "";
-  }
-
-  function eTitCurto() {
-    titCurto.textContent = "*O título está muito curto!";
-  }
-  function eTitLongo() {
-    titCurto.textContent = "";
-  }
-  function eTemaNulo() {
-    opcInval.textContent = "*Você deve selecionar alguma opção!";
-  }
-  function eTemaCerto() {
-    opcInval.textContent = "";
-  }
-
-  if (valorTxt.length < 10 && valorTxt.length !== "") {
-    eTxtCurto();
-    desativaPub();
-  } else {
-    eTxtLongo();
-  }
-
-  if (valorTit.length < 5 && valorTit.length !== "") {
-    eTitCurto();
-    desativaPub();
-  } else {
-    eTitLongo();
-  }
-
-  if (temaTpc.value == "NULO") {
-    eTemaNulo();
-    desativaPub();
-  } else {
-    eTemaCerto();
-  }
-}
-
-//RECONHECENDORES DE INPUT PARA EXECUTAR A VALIDAÇÃO
-
-textoPub.oninput = validaDados;
-titPub.oninput = validaDados;
-temaTpc.onchange = validaDados;
-
-// FUNCAO PUBLICAR DE FATO
-
-function publicar() {
-  //ENVIAR DADOS AO LOCAL STORAGE E FECHAR
-
-  var Publicacao = {
-    titulo: titPub.value,
-    texto: textoPub.value,
-    tema: temaTpc.value,
-    autor: usuarioString,
-  };
-
-  //CRIANDO NUMERO PARA CHAVE idPost
-
-  var nPost = localStorage.length;
-  nPost += 1;
-
-  var idPost = "POST_" + temaTpc.value + "_" + nPost;
-
-  var postString = JSON.stringify(Publicacao);
-
-  localStorage.setItem(idPost, postString);
-
-  popUp.style.display = "none";
-
-  // REFRESH NA PAGINA
-  setTimeout(function () {
-    location.reload();
-  }, 100);
-  ///
-}
-
 // DISPLAY DIFERENTE NA TELA INICIAL DEPENDENDO DO LOGIN
 if (usuarioString !== null) {
   Participe.style.display = "none";
@@ -251,38 +108,54 @@ allKeys.forEach(function (key) {
 
 //EXIBIR NAS DIVS
 for (var l = 1; l < 6; l++) {
-  let Publication = document.getElementById("ultimoPub" + l);
-  let Titulo = document.getElementById("ultimoPubTit" + l);
-  let Autor = document.getElementById("ultimoPubAut" + l);
-  let Respostas = document.getElementById("ultimoPubResp" + l);
-  let Data = document.getElementById("ultimoPubData" + l);
-  let Hora = document.getElementById("ultimoPubHora" + l);
+  if (maioresIDs.length >= l) {
+    let Publication = document.getElementById("ultimoPub" + l);
+    let Titulo = document.getElementById("ultimoPubTit" + l);
+    let Autor = document.getElementById("ultimoPubAut" + l);
+    let Respostas = document.getElementById("ultimoPubResp" + l);
+    let Data = document.getElementById("ultimoPubData" + l);
+    let Hora = document.getElementById("ultimoPubHora" + l);
 
-  let nomeDaChave = maioresIDs[l - 1].chave;
+    let objeto = maioresIDs[l - 1];
 
-  for (var k = 0; k < localStorage.length; k++) {
-    if (nomeDaChave === Object.keys(localStorage)[k]) {
-      Publication.style.display = "flex";
+    if (objeto && objeto.hasOwnProperty("chave")) {
+      let nomeDaChave = objeto.chave;
 
-      let chave = Object.keys(localStorage)[k];
-      let valor = localStorage.getItem(chave);
-      let objeto = JSON.parse(valor);
+      for (var k = 0; k < localStorage.length; k++) {
+        if (nomeDaChave === Object.keys(localStorage)[k]) {
+          Publication.style.display = "flex";
 
-      Titulo.textContent = objeto.titulo;
-      Autor.textContent = objeto.autor;
-      Respostas.textContent = objeto.nRespostas;
+          let chave = Object.keys(localStorage)[k];
+          let valor = localStorage.getItem(chave);
+          let objeto = JSON.parse(valor);
 
-      // DATA FORMATADA
-      let dataDoObjeto = new Date(objeto.data);
-      let dia = dataDoObjeto.getDate().toString().padStart(2, "0");
-      let mes = (dataDoObjeto.getMonth() + 1).toString().padStart(2, "0");
-      let ano = dataDoObjeto.getFullYear().toString().substr(-2);
-      let hora = dataDoObjeto.getHours().toString().padStart(2, "0");
-      let minuto = dataDoObjeto.getMinutes().toString().padStart(2, "0");
-      let dataFormatada = dia + "/" + mes + "/" + ano;
+          Titulo.textContent = objeto.titulo;
+          Autor.textContent = objeto.autor;
+          Respostas.textContent = objeto.nRespostas;
 
-      Data.textContent = dataFormatada + " ";
-      Hora.textContent = " " + hora + ":" + minuto;
+          // DATA FORMATADA
+          let dataDoObjeto = new Date(objeto.data);
+          let dia = dataDoObjeto.getDate().toString().padStart(2, "0");
+          let mes = (dataDoObjeto.getMonth() + 1).toString().padStart(2, "0");
+          let ano = dataDoObjeto.getFullYear().toString().substr(-2);
+          let hora = dataDoObjeto.getHours().toString().padStart(2, "0");
+          let minuto = dataDoObjeto.getMinutes().toString().padStart(2, "0");
+          let dataFormatada = dia + "/" + mes + "/" + ano;
+
+          Data.textContent = dataFormatada + " ";
+          Hora.textContent = " " + hora + ":" + minuto;
+        }
+      }
     }
   }
 }
+
+//REDIRECIONAMENTO
+const buttons = document.querySelectorAll(".eachForum");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", function () {
+    const id = this.id;
+    window.location.href = `forumPages/exibirPosts.html?id=${id}`;
+  });
+});

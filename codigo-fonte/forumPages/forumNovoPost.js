@@ -4,7 +4,7 @@ var tpcEm = document.getElementById("novoTpcEm"); // VAR NOVO TOPICO "EM X"
 
 if (!usuarioString) {
   alert("É necessario criar uma conta para fazer uma publicação!");
-  window.location.href = "Forum.html";
+  window.location.href = "../Forum.html";
 }
 
 titPub.focus(); //FOCA NO TITULO
@@ -20,7 +20,7 @@ enviarPub.onclick = validaDados;
 
 function validaDados() {
   if (
-    temaTpc.mvalue !== "NULO" &&
+    temaTpc.value !== "NULO" &&
     textoPub.value.length >= 20 &&
     titPub.value.length >= 7
   ) {
@@ -113,66 +113,6 @@ function publicar() {
   ///
 }
 
-///// CRIADORA DE DIVS /////
-
-for (let i = 0; i < localStorage.length; i++) {
-  const chaveX = localStorage.key(i);
-
-  if (chaveX.includes("POST_")) {
-    var postStr = localStorage.getItem(chaveX);
-    var postJSON = JSON.parse(postStr);
-
-    function criaDiv(postJSON) {
-      // CRIA DIV DO POST
-      var divPrincipal = document.createElement("div");
-      divPrincipal.className = "classe" + postJSON.tema;
-
-      //CRIA DIV DO "TEMA DO POST"
-      var divQualTema = document.createElement("div");
-      divQualTema.className = "qualTema";
-      divQualTema.innerText = "Tema do Tópico: ";
-
-      //CRIA DIV DO TEMA DO POST
-      var divTema = document.createElement("div");
-      divTema.className = "tema";
-      divTema.innerText = postJSON.tema;
-
-      // CRIA DIV DO TITULO
-      var divTitulo = document.createElement("div");
-      divTitulo.className = "titulo";
-      divTitulo.innerText = postJSON.titulo;
-
-      // CRIA A DIV DO TEXTO
-      var divTexto = document.createElement("div");
-      divTexto.className = "texto";
-      divTexto.innerText = postJSON.texto;
-
-      // CRIA A DIV "PUBLICADO POR"
-      var divBy = document.createElement("div");
-      divBy.className = "feitoPor";
-      divBy.innerText = "Publicado por: ";
-
-      // CRIA A DIV DO AUTOR
-      var divAutor = document.createElement("div");
-      divAutor.className = "autor";
-      divAutor.innerText = postJSON.autor;
-
-      // COLOCA AS DIVS COMO FILHAS DA PRINCIPAL
-      divPrincipal.appendChild(divTitulo);
-      divPrincipal.appendChild(divQualTema);
-      divPrincipal.appendChild(divTema);
-      divPrincipal.appendChild(document.createElement("br"));
-      divPrincipal.appendChild(divTexto);
-      divPrincipal.appendChild(document.createElement("br"));
-      divPrincipal.appendChild(divBy);
-      divPrincipal.appendChild(divAutor);
-
-      // ADICIONA A DIV PRINCIPAL NA DIV mainContent
-    }
-    criaDiv(postJSON);
-  }
-}
-
 // SUMIR ICONES DO FORUM SE NAO TIVER LOGADO
 
 if (usuarioString !== null) {
@@ -180,3 +120,5 @@ if (usuarioString !== null) {
 } else {
   iconesForum.style.display = "none";
 }
+
+//
