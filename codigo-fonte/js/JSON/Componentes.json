@@ -497,7 +497,7 @@
       "modelo": "Gamer Hexer Rainbow",
       "preco": 208.99,
       "info": "https://mancer.com.br/p/gabinete-gamer-mancer-hexer/",
-      "imagem": "img/json/Gabinete/hexerRainbow",
+      "imagem": "img/json/Gabinete/hexerRainbow.png",
       "tipo": "Mid Tower"
     },
     {
@@ -505,7 +505,7 @@
       "modelo": "Glass 06X",
       "preco": 159.99,
       "info": "https://www.lojarisemode.com.br/produto/gabinete-rise-mode-glass-06x-black-sem-fans-rm-ca-06x-fb",
-      "imagem": "img/json/Gabinete/glass06X",
+      "imagem": "img/json/Gabinete/glass06X.png",
       "tipo": "Mid Tower"
     },
     {
@@ -513,7 +513,7 @@
       "modelo": "4000D Airflow",
       "preco": 649.99,
       "info": "https://www.corsair.com/br/pt/p/pc-cases/cc-9011201-ww/4000d-airflow-tempered-glass-mid-tower-atx-case-white-cc-9011201-ww",
-      "imagem": "img/json/Gabinete/CorsairAirFlow",
+      "imagem": "img/json/Gabinete/CorsairAirFlow.png",
       "tipo": "Mid Tower"
     },
     {
@@ -521,7 +521,7 @@
       "modelo": "Galaxy Glass",
       "preco": 549.99,
       "info": "https://www.lojarisemode.com.br/produto/gabinete-gamer-rise-mode-galaxy-glass-m-black-sem-fans-rm-ga-ggm-fb",
-      "imagem": "img/json/Gabinete/galaxyGlass",
+      "imagem": "img/json/Gabinete/galaxyGlass.png",
       "tipo": "Mid Tower"
     },
     {
@@ -529,7 +529,7 @@
       "modelo": "Lian Li 011",
       "preco": 1235.99,
       "info": "https://www.lianli.com.br/produtos-gabinete-o11",
-      "imagem": "img/json/Gabinete/lianLi",
+      "imagem": "img/json/Gabinete/lianLi.png",
       "tipo": "Full Tower"
     }
   ],
@@ -539,7 +539,7 @@
       "modelo": "Storm 8 Black",
       "preco": 189.99,
       "info": "https://www.kabum.com.br/produto/506058/air-cooler-gamer-rise-mode-storm-8-black-intel-amd-120mm-preto-rm-acst-b",
-      "imagem": "img/json/cooler/storm8",
+      "imagem": "img/json/cooler/storm8.png",
       "tipo": "Air Cooler"
     },
     {
@@ -547,7 +547,7 @@
       "modelo": "Gamer Black 240mm",
       "preco": 189.99,
       "info": "https://www.lojarisemode.com.br/produto/water-cooler-rise-mode-black-240mm-rgb-rm-wcb-02-rgb",
-      "imagem": "img/json/cooler/gamerBlack",
+      "imagem": "img/json/cooler/gamerBlack.png",
       "tipo": "Water Cooler"
     },
     {
@@ -555,7 +555,7 @@
       "modelo": "ML280 Mirror",
       "preco": 539.99,
       "info": "https://www.coolermaster.com/pt-br/products/masterliquid-ml280-mirror/",
-      "imagem": "img/json/cooler/ml280",
+      "imagem": "img/json/cooler/ml280.png",
       "tipo": "Water Cooler"
     },
     {
@@ -563,7 +563,7 @@
       "modelo": "AG400",
       "preco": 129.99,
       "info": "https://www.terabyteshop.com.br/produto/23224/cooler-para-processador-deepcool-gammaxx-ag400-120mm-intel-amd-r-ag400-bknnmn-g-1",
-      "imagem": "img/json/cooler/ag400",
+      "imagem": "img/json/cooler/ag400.png",
       "tipo": "Air Cooler"
     },
     {
@@ -571,7 +571,7 @@
       "modelo": "G800",
       "preco": 89.99,
       "info": "https://www.lojarisemode.com.br/produto/air-cooler-gamer-rise-mode-g800-rm-ac-o8-rgb",
-      "imagem": "img/json/cooler/g800",
+      "imagem": "img/json/cooler/g800.png",
       "tipo": "Air Cooler"
     }
   ]
