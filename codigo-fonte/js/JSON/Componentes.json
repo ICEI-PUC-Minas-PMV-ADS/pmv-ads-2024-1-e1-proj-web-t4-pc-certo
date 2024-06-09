@@ -1,155 +1,155 @@
 {
-    "Processador": [
-        {
-            "marca": "AMD",
-            "modelo": "Ryzen 9 5950X",
-            "preco": 2839.99,
-            "desempenho": "Alto Desempenho",
-            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-9-5950x.html",
-            "imagem": "img/json/processadores/Ryzen5950X.png",
-            "socket": "AM4",
-            "TDP": "105W",
-            "videoIntegrado": "não"
-        },
-        {
-            "marca": "Intel",
-            "modelo": "Core i9-14900KF",
-            "preco": 2498.99,
-            "desempenho": "Alto Desempenho",
-            "info": "https://www.intel.com.br/content/www/br/pt/products/sku/236787/intel-core-i9-processor-14900kf-36m-cache-up-to-6-00-ghz/specifications.html",
-            "imagem": "img/json/processadores/I9.png",
-            "socket": "LGA1700",
-            "TDP": "125W",
-            "videoIntegrado": "não"
-        },
-        {
-            "marca": "AMD",
-            "modelo": "Ryzen 9 7950X3D",
-            "preco": 4998.99,
-            "desempenho": "Alto Desempenho",
-            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/7000-series/amd-ryzen-9-7950x3d.html",
-            "imagem": "img/json/processadores/Ryzen7950X3D.png",
-            "socket": "AM5",
-            "TDP": "120W",
-            "videoIntegrado": "sim"
-        },
-        {
-            "marca": "Intel",
-            "modelo": "Core i5-13600KF",
-            "preco": 1999.99,
-            "desempenho": "Alto Desempenho",
-            "info": "https://www.intel.com.br/content/www/br/pt/products/sku/230494/intel-core-i513600kf-processor-24m-cache-up-to-5-10-ghz/specifications.html",
-            "imagem": "img/json/processadores/i5.png",
-            "socket": "LGA1700",
-            "TDP": "125W",
-            "videoIntegrado": "não"
-        },
-        {
-            "marca": "AMD",
-            "modelo": "Ryzen 7 7700",
-            "preco": 1889.99,
-            "desempenho": "Alto Desempenho",
-            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7700.html",
-            "imagem": "img/json/processadores/Ryzen7700.png",
-            "socket": "AM5",
-            "TDP": "65W",
-            "videoIntegrado": "sim"
-        },
-        {
-            "marca": "AMD",
-            "modelo": "Ryzen 5 5600X",
-            "preco": 998.99,
-            "desempenho": "Custo-Benefício",
-            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
-            "imagem": "img/json/processadores/Ryzen5500e5600.png",
-            "socket": "AM4",
-            "TDP": "65W",
-            "videoIntegrado": "não"
-        },
-        {
-            "marca": "Intel",
-            "modelo": "Core i5-12400F",
-            "preco": 769.99,
-            "desempenho": "Custo-Benefício",
-            "info": "https://www.intel.com.br/content/www/br/pt/products/sku/134587/intel-core-i512400f-processor-18m-cache-up-to-4-40-ghz/specifications.html",
-            "imagem": "img/json/processadores/i5.png",
-            "socket": "LGA1700",
-            "TDP": "65W",
-            "videoIntegrado": "não"
-        },
-        {
-            "marca": "AMD",
-            "modelo": "Ryzen 5 5500",
-            "preco": 669.99,
-            "desempenho": "Custo-Benefício",
-            "info": "https://www.amd.com/en/product/11811",
-            "imagem": "img/json/processadores/Ryzen5500e5600.png",
-            "socket": "AM4",
-            "TDP": "65W",
-            "videoIntegrado": "não"
-        },
-        {
-            "marca": "Intel",
-            "modelo": "Core i5-10400F",
-            "preco": 999.99,
-            "desempenho": "Custo-Benefício",
-            "info": "https://www.intel.com.br/content/www/br/pt/products/sku/199278/intel-core-i510400f-processor-12m-cache-up-to-4-30-ghz/specifications.html",
-            "imagem": "img/json/processadores/i5.png",
-            "socket": "LGA1200",
-            "TDP": "65W",
-            "videoIntegrado": "não"
-        },
-        {
-            "marca": "AMD",
-            "modelo": "Ryzen 5 5600G",
-            "preco": 834.99,
-            "desempenho": "Custo-Benefício",
-            "info": "https://www.amd.com/en/product/11176",
-            "imagem": "img/json/processadores/Ryzen5600X.png",
-            "socket": "AM4",
-            "TDP": "65W",
-            "videoIntegrado": "sim"
-        },
-        {
-            "marca": "Intel",
-            "modelo": "Core i3-10105",
-            "preco": 587.99,
-            "desempenho": "Baixa Performance",
-            "info": "https://www.intel.com.br/content/www/br/pt/products/sku/201894/intel-core-i310105-processor-6m-cache-up-to-4-40-ghz/specifications.html",
-            "imagem": "img/json/processadores/i3.webp",
-            "socket": "LGA1200",
-            "TDP": "65W",
-            "videoIntegrado": "sim"
-        },
-        {
-            "marca": "AMD",
-            "modelo": "Ryzen 5 4600G",
-            "preco": 579.99,
-            "desempenho": "Baixa Performance",
-            "info": "https://www.adrenaline.com.br/produto/processador/amd-ryzen-5-4600g/",
-            "imagem": "img/json/processadores/Ryzen4600G.png",
-            "socket": "AM4",
-            "TDP": "65W",
-            "videoIntegrado": "sim"
-        },
-        {
-            "marca": "Intel",
-            "modelo": "Pentium Gold G6405",
-            "preco": 430.99,
-            "desempenho": "Baixa Performance",
-            "info": "https://www.intel.com.br/content/www/br/pt/products/sku/201901/intel-pentium-gold-g6405-processor-4m-cache-4-10-ghz/specifications.html",
-            "imagem": "img/json/processadores/pentium.png",
-            "socket": "LGA1200",
-            "TDP": "58W",
-            "videoIntegrado": "sim"
-        }
-],
-
-"Placa-mae": [
+  "Processador": [
+    {
+      "marca": "AMD",
+      "modelo": "Ryzen 9 5950X",
+      "preco": 2839.99,
+      "desempenho": "Alto Desempenho",
+      "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-9-5950x.html",
+      "imagem": "img/json/processadores/Ryzen5950X.png",
+      "socket": "AM4",
+      "TDP": "105W",
+      "videoIntegrado": "não"
+    },
+    {
+      "marca": "Intel",
+      "modelo": "Core i9-14900KF",
+      "preco": 2498.99,
+      "desempenho": "Alto Desempenho",
+      "info": "https://www.intel.com.br/content/www/br/pt/products/sku/236787/intel-core-i9-processor-14900kf-36m-cache-up-to-6-00-ghz/specifications.html",
+      "imagem": "img/json/processadores/I9.png",
+      "socket": "LGA1700",
+      "TDP": "125W",
+      "videoIntegrado": "não"
+    },
+    {
+      "marca": "AMD",
+      "modelo": "Ryzen 9 7950X3D",
+      "preco": 4998.99,
+      "desempenho": "Alto Desempenho",
+      "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/7000-series/amd-ryzen-9-7950x3d.html",
+      "imagem": "img/json/processadores/Ryzen7950X3D.png",
+      "socket": "AM5",
+      "TDP": "120W",
+      "videoIntegrado": "sim"
+    },
+    {
+      "marca": "Intel",
+      "modelo": "Core i5-13600KF",
+      "preco": 1999.99,
+      "desempenho": "Alto Desempenho",
+      "info": "https://www.intel.com.br/content/www/br/pt/products/sku/230494/intel-core-i513600kf-processor-24m-cache-up-to-5-10-ghz/specifications.html",
+      "imagem": "img/json/processadores/i5.png",
+      "socket": "LGA1700",
+      "TDP": "125W",
+      "videoIntegrado": "não"
+    },
+    {
+      "marca": "AMD",
+      "modelo": "Ryzen 7 7700",
+      "preco": 1889.99,
+      "desempenho": "Alto Desempenho",
+      "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7700.html",
+      "imagem": "img/json/processadores/Ryzen7700.png",
+      "socket": "AM5",
+      "TDP": "65W",
+      "videoIntegrado": "sim"
+    },
+    {
+      "marca": "AMD",
+      "modelo": "Ryzen 5 5600X",
+      "preco": 998.99,
+      "desempenho": "Custo-Benefício",
+      "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+      "imagem": "img/json/processadores/Ryzen5500e5600.png",
+      "socket": "AM4",
+      "TDP": "65W",
+      "videoIntegrado": "não"
+    },
+    {
+      "marca": "Intel",
+      "modelo": "Core i5-12400F",
+      "preco": 769.99,
+      "desempenho": "Custo-Benefício",
+      "info": "https://www.intel.com.br/content/www/br/pt/products/sku/134587/intel-core-i512400f-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+      "imagem": "img/json/processadores/i5.png",
+      "socket": "LGA1700",
+      "TDP": "65W",
+      "videoIntegrado": "não"
+    },
+    {
+      "marca": "AMD",
+      "modelo": "Ryzen 5 5500",
+      "preco": 669.99,
+      "desempenho": "Custo-Benefício",
+      "info": "https://www.amd.com/en/product/11811",
+      "imagem": "img/json/processadores/Ryzen5500e5600.png",
+      "socket": "AM4",
+      "TDP": "65W",
+      "videoIntegrado": "não"
+    },
+    {
+      "marca": "Intel",
+      "modelo": "Core i5-10400F",
+      "preco": 999.99,
+      "desempenho": "Custo-Benefício",
+      "info": "https://www.intel.com.br/content/www/br/pt/products/sku/199278/intel-core-i510400f-processor-12m-cache-up-to-4-30-ghz/specifications.html",
+      "imagem": "img/json/processadores/i5.png",
+      "socket": "LGA1200",
+      "TDP": "65W",
+      "videoIntegrado": "não"
+    },
+    {
+      "marca": "AMD",
+      "modelo": "Ryzen 5 5600G",
+      "preco": 834.99,
+      "desempenho": "Custo-Benefício",
+      "info": "https://www.amd.com/en/product/11176",
+      "imagem": "img/json/processadores/Ryzen5600X.png",
+      "socket": "AM4",
+      "TDP": "65W",
+      "videoIntegrado": "sim"
+    },
+    {
+      "marca": "Intel",
+      "modelo": "Core i3-10105",
+      "preco": 587.99,
+      "desempenho": "Baixa Performance",
+      "info": "https://www.intel.com.br/content/www/br/pt/products/sku/201894/intel-core-i310105-processor-6m-cache-up-to-4-40-ghz/specifications.html",
+      "imagem": "img/json/processadores/i3.webp",
+      "socket": "LGA1200",
+      "TDP": "65W",
+      "videoIntegrado": "sim"
+    },
+    {
+      "marca": "AMD",
+      "modelo": "Ryzen 5 4600G",
+      "preco": 579.99,
+      "desempenho": "Baixa Performance",
+      "info": "https://www.adrenaline.com.br/produto/processador/amd-ryzen-5-4600g/",
+      "imagem": "img/json/processadores/Ryzen4600G.png",
+      "socket": "AM4",
+      "TDP": "65W",
+      "videoIntegrado": "sim"
+    },
+    {
+      "marca": "Intel",
+      "modelo": "Pentium Gold G6405",
+      "preco": 430.99,
+      "desempenho": "Baixa Performance",
+      "info": "https://www.intel.com.br/content/www/br/pt/products/sku/201901/intel-pentium-gold-g6405-processor-4m-cache-4-10-ghz/specifications.html",
+      "imagem": "img/json/processadores/pentium.png",
+      "socket": "LGA1200",
+      "TDP": "58W",
+      "videoIntegrado": "sim"
+    }
+  ],
+  "Placa-mae": [
     {
       "marca": "AORUS",
       "modelo": "TUF Gaming Z790-Plus Wifi",
       "preco": 1899.99,
+      "desempenho": "Alto Desempenho",
       "info": "https://www.gigabyte.com/br/Motherboard/Z790-AORUS-ELITE-rev-11/sp#sp",
       "imagem": "img/json/PlacaMae/tufZ790.png",
       "socket": "LGA1700",
@@ -160,8 +160,9 @@
       "marca": "ASUS",
       "modelo": "TUF Gaming X670E-Plus",
       "preco": 2099.99,
+      "desempenho": "Alto Desempenho",
       "info": "https://www.asus.com/br/motherboards-components/motherboards/tuf-gaming/tuf-gaming-x670e-plus/",
-      "imagem": "img/json/PlacaMae/x670e.png",
+      "imagem": "img/json/PlacaMae/x670e-plus.png",
       "socket": "AM5",
       "RAM": "DDR5",
       "format": "ATX"
@@ -170,6 +171,7 @@
       "marca": "ASUS",
       "modelo": "TUF Gaming B650M-Plus",
       "preco": 1439.99,
+      "desempenho": "Alto Desempenho",
       "info": "https://www.asus.com/br/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b650m-plus/",
       "imagem": "img/json/PlacaMae/b650m.png",
       "socket": "AM5",
@@ -180,6 +182,7 @@
       "marca": "ASUS",
       "modelo": "TUF Gaming B550M-Plus",
       "preco": 829.99,
+      "desempenho": "Custo-Benefício",
       "info": "https://www.asus.com/br/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b550m-plus/",
       "imagem": "img/json/PlacaMae/b550m.png",
       "socket": "AM4",
@@ -190,6 +193,7 @@
       "marca": "ASROCK",
       "modelo": "B660M Phantom Gaming 4",
       "preco": 699.99,
+      "desempenho": "Custo-Benefício",
       "info": "https://pg.asrock.com/mb/Intel/B660M%20Phantom%20Gaming%204/index.br.asp",
       "imagem": "img/json/PlacaMae/b660m.png",
       "socket": "LGA1700",
@@ -200,6 +204,7 @@
       "marca": "Gigabyte",
       "modelo": "H610M (rev. 1.0)",
       "preco": 599.99,
+      "desempenho": "Custo-Benefício",
       "info": "https://www.gigabyte.com/br/Motherboard/H610M-H-DDR4-rev-10#kf",
       "imagem": "img/json/PlacaMae/h610m.png",
       "socket": "LGA1700",
@@ -210,6 +215,7 @@
       "marca": "MSI",
       "modelo": "A520M-A PRO",
       "preco": 359.99,
+      "desempenho": "Custo-Benefício",
       "info": "https://br.msi.com/Motherboard/A520M-A-PRO/Overview",
       "imagem": "img/json/PlacaMae/a520m.png",
       "socket": "AM4",
@@ -220,6 +226,7 @@
       "marca": "Gigabyte",
       "modelo": "H510M REV.1.0",
       "preco": 517.99,
+      "desempenho": "Custo-Benefício",
       "info": "https://www.gigabyte.com/br/Motherboard/H510M-H-rev-10-11-15#kf",
       "imagem": "img/json/PlacaMae/h510m.png",
       "socket": "LGA1200",
@@ -230,6 +237,7 @@
       "marca": "MSI",
       "modelo": "B560M PRO-E",
       "preco": 439.99,
+      "desempenho": "Custo-Benefício",
       "info": "https://www.msi.com/Motherboard/B560M-PRO-E",
       "imagem": "img/json/PlacaMae/b560m.png",
       "socket": "LGA1200",
@@ -237,11 +245,12 @@
       "format": "mATX"
     }
   ],
-"RAM": [
+  "RAM": [
     {
       "marca": "Corsair",
-      "modelo": "Vengeance RGB 32GB (2 x 16GB)",
+      "modelo": "Vengeance RGB 2x16GB DDR5",
       "preco": 1049.99,
+      "desempenho": "Alto Desempenho",
       "info": "https://www.corsair.com/br/pt/p/memory/cmh32gx5m2x6200c36/vengeance-rgb-32gb-2x16gb-ddr5-dram-6200mt-s-cl36-memory-kit-black-cmh32gx5m2x6200c36",
       "imagem": "img/json/ram/veneganceddr5.png",
       "tipo": "DDR5",
@@ -249,8 +258,9 @@
     },
     {
       "marca": "Rise Mode",
-      "modelo": "Rise Mode Z 16GB",
+      "modelo": "Rise Mode Z 16GB DDR5",
       "preco": 299.99,
+      "desempenho": "Custo-Benefício",
       "info": "https://www.lojarisemode.com.br/produto/memoria-ddr5-rise-mode-z-preto-rm-d5-16g-4800z",
       "imagem": "img/json/ram/risemodez.png",
       "tipo": "DDR5",
@@ -258,8 +268,9 @@
     },
     {
       "marca": "Kingston",
-      "modelo": "Fury Beast 8GB",
+      "modelo": "Fury Beast 8GB DDR5",
       "preco": 699.99,
+      "desempenho": "Alto Desempenho",
       "info": "https://www.kingston.com/br/memory/gaming/kingston-fury-beast-ddr5-memory",
       "imagem": "img/json/ram/furyBeastddr5.png",
       "tipo": "DDR5",
@@ -267,8 +278,9 @@
     },
     {
       "marca": "Kingston",
-      "modelo": "Fury Beast 8GB",
+      "modelo": "Fury Beast 8GB DDR4",
       "preco": 169.99,
+      "desempenho": "Custo-Benefício",
       "info": "https://www.kingston.com/br/memory/gaming/kingston-fury-beast-ddr4-rgb-memory",
       "imagem": "img/json/ram/furyBeastRGB.png",
       "tipo": "DDR4",
@@ -276,8 +288,9 @@
     },
     {
       "marca": "Kingston",
-      "modelo": "Fury Beast 32GB (2x16GB)",
+      "modelo": "Fury Beast 2x16GB DDR4",
       "preco": 649.99,
+      "desempenho": "Alto Desempenho",
       "info": "https://www.kingston.com/br/memory/gaming/kingston-fury-beast-ddr4-rgb-memory",
       "imagem": "img/json/ram/furyBeastRGB.png",
       "tipo": "DDR4",
@@ -285,17 +298,19 @@
     },
     {
       "marca": "XPG",
-      "modelo": "Spectrix D35G 16GB",
+      "modelo": "Spectrix D35G 16GB DDR4",
       "preco": 285.99,
+      "desempenho": "Alto Desempenho",
       "info": "https://www.xpg.com/pt/xpg/dram-modules-spectrix-d35g-rgb-ddr4",
-      "imagem": "img/json/ram/xpgSpectrix.png",
+      "imagem": "img/json/ram/xpgspectrixD35G.png",
       "tipo": "DDR4",
       "frequencia": "3200MHz"
     },
     {
       "marca": "Corsair",
-      "modelo": "Vengeance LPX 4GB",
+      "modelo": "Vengeance LPX 4GB DDR4",
       "preco": 119.99,
+      "desempenho": "Baixa Performance",
       "info": "https://www.corsair.com/br/pt/p/memory/cmk4gx4m1a2400c14r/vengeancea-lpx-4gb-1-x-4gb-ddr4-dram-2400mhz-c14-memory-kit-red-cmk4gx4m1a2400c14r",
       "imagem": "img/json/ram/veneganceLPX.png",
       "tipo": "DDR4",
@@ -303,156 +318,180 @@
     },
     {
       "marca": "Kingston",
-      "modelo": "Fury Beast 16GB (2x 8GB)",
+      "modelo": "Fury Beast 2x8GB DDR4",
       "preco": 329.99,
+      "desempenho": "Custo-Benefício",
       "info": "https://www.kingston.com/br/memory/gaming/kingston-fury-beast-ddr4-memory",
       "imagem": "img/json/ram/furyBeastddr4.png",
       "tipo": "DDR4",
       "frequencia": "3200MHz"
     }
   ],
-"GPU": [
-    {
-      "marca": "NVIDIA",
-      "modelo": "GeForce RTX 3080",
-      "preco": 5999.99,
-      "info": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3080/",
-      "imagem": "img/rtx-3080.png",
-      "tipo": "GDDR6X",
-      "VRAM": "10GB"
-    },
+  "GPU": [
     {
       "marca": "AMD",
       "modelo": "Radeon RX 6800 XT",
-      "preco": 5499.99,
+      "preco": 3412.99,
+      "desempenho": "Alto Desempenho",
       "info": "https://www.amd.com/en/products/graphics/amd-radeon-rx-6800-xt",
-      "imagem": "img/rx-6800-xt.png",
-      "tipo": "GDDR6",
-      "VRAM": "16GB"
-    },
-    {
-      "marca": "NVIDIA",
-      "modelo": "GeForce RTX 3070",
-      "preco": 4999.99,
-      "info": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3070/",
-      "imagem": "img/rtx-3070.png",
-      "tipo": "GDDR6",
-      "VRAM": "8GB"
+      "imagem": "img/json/GPU/rx6800xt.png",
+      "sugPSU": "750W"
     },
     {
       "marca": "AMD",
       "modelo": "Radeon RX 6700 XT",
-      "preco": 4799.99,
+      "preco": 2500.99,
+      "desempenho": "Alto Desempenho",
       "info": "https://www.amd.com/en/products/graphics/amd-radeon-rx-6700-xt",
-      "imagem": "img/rx-6700-xt.png",
-      "tipo": "GDDR6",
-      "VRAM": "12GB"
+      "imagem": "img/json/GPU/rx6700xt.png",
+      "sugPSU": "650W"
     },
     {
       "marca": "NVIDIA",
-      "modelo": "GeForce RTX 3060 Ti",
-      "preco": 3999.99,
+      "modelo": "GeForce RTX 3060",
+      "preco": 2100.99,
+      "desempenho": "Custo-Benefício",
       "info": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3060-ti/",
-      "imagem": "img/rtx-3060-ti.png",
-      "tipo": "GDDR6",
-      "VRAM": "8GB"
+      "imagem": "img/json/GPU/rtx3060.png",
+      "sugPSU": "550W"
+    },
+    {
+      "marca": "NVIDIA",
+      "modelo": "GeForce RTX 4060 Ti",
+      "desempenho": "Alto Desempenho",
+      "preco": 2549.99,
+      "info": "https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4060-ti/",
+      "imagem": "img/json/GPU/rtx4060ti.png",
+      "sugPSU": "650W"
+    },
+    {
+      "marca": "AMD",
+      "modelo": "Radeon RX 550",
+      "preco": 500.99,
+      "desempenho": "Baixa Performance",
+      "info": "https://www.amd.com/en/products/graphics/radeon-rx-550",
+      "imagem": "img/json/GPU/rx550.png",
+      "sugPSU": "350W"
+    },
+    {
+      "marca": "NVIDIA",
+      "modelo": "GeForce GT 1030",
+      "preco": 499.99,
+      "desempenho": "Baixa Performance",
+      "info": "https://www.nvidia.com/en-us/geforce/graphics-cards/10-series/gt-1030/",
+      "imagem": "img/json/GPU/gt1030.png",
+      "sugPSU": "300W"
+    },
+    {
+      "marca": "NVIDIA",
+      "modelo": "GeForce GTX 1050 Ti",
+      "preco": 1354.99,
+      "desempenho": "Custo-Benefício",
+      "info": "https://www.nvidia.com/en-us/geforce/graphics-cards/10-series/gtx-1050/",
+      "imagem": "img/json/GPU/gtx1050ti.png",
+      "sugPSU": "300W"
     }
   ],
-"Armazenamento": [
+  "Armazenamento": [
     {
       "marca": "Samsung",
       "modelo": "970 EVO Plus 1TB NVMe SSD",
-      "preco": 899.99,
+      "preco": 749.99,
+      "desempenho": "Alto Desempenho",
       "info": "https://www.samsung.com/us/computing/memory-storage/solid-state-drives/ssd-970-evo-plus-nvme-m-2-1tb-mz-v7s1t0b-am/",
-      "imagem": "img/970-evo-plus-1tb.png",
-      "tipo": "NVMe SSD",
-      "capacidade": "1TB"
+      "imagem": "img/json/Armazenamento/970evoplus.png",
+      "tipo": "NVMe SSD"
     },
     {
       "marca": "Western Digital",
-      "modelo": "WD Blue 3D NAND 1TB SSD",
-      "preco": 749.99,
+      "modelo": "WD Blue 1TB SSD",
+      "preco": 499.99,
+      "desempenho": "Custo-Benefício",
       "info": "https://www.westerndigital.com/products/internal-drives/wd-blue-3d-nand-sata-ssd",
-      "imagem": "img/wd-blue-1tb.png",
-      "tipo": "SATA SSD",
-      "capacidade": "1TB"
+      "imagem": "img/json/Armazenamento/wdblue.png",
+      "tipo": "SATA SSD"
     },
     {
       "marca": "Crucial",
-      "modelo": "MX500 500GB SATA SSD",
-      "preco": 499.99,
+      "modelo": "BX500 500GB SATA SSD",
+      "preco": 199.99,
+      "desempenho": "Custo-Benefício",
       "info": "https://www.crucial.com/ssd/mx500/ct500mx500ssd1",
-      "imagem": "img/mx500-500gb.png",
-      "tipo": "SATA SSD",
-      "capacidade": "500GB"
+      "imagem": "img/json/Armazenamento/crucial.png",
+      "tipo": "SATA SSD"
     },
     {
       "marca": "Kingston",
-      "modelo": "A2000 500GB NVMe SSD",
-      "preco": 449.99,
-      "info": "https://www.kingston.com/us/ssd/a2000-nvme-pcie-ssd",
-      "imagem": "img/a2000-500gb.png",
-      "tipo": "NVMe SSD",
-      "capacidade": "500GB"
+      "modelo": "SSD Kingston NV2 250GB NVME",
+      "preco": 199.99,
+      "desempenho": "Custo-Benefício",
+      "info": "https://www.kingston.com/en/ssd/nv2-nvme-pcie-ssd",
+      "imagem": "img/json/Armazenamento/kingston.png",
+      "tipo": "NVMe SSD"
     },
     {
       "marca": "Seagate",
       "modelo": "Barracuda 1TB HDD",
-      "preco": 249.99,
+      "preco": 349.99,
+      "desempenho": "Custo-Benefício",
       "info": "https://www.seagate.com/internal-hard-drives/hdd/barracuda/",
-      "imagem": "img/barracuda-1tb.png",
-      "tipo": "HDD",
-      "capacidade": "1TB"
+      "imagem": "img/json/Armazenamento/hdbarracuda.png",
+      "tipo": "HDD"
     }
   ],
-"PSU": [
+  "PSU": [
     {
-      "marca": "Corsair",
-      "modelo": "RM850x 850W 80 Plus Gold",
-      "preco": 749.99,
-      "info": "https://www.corsair.com/us/en/Categories/Products/Power-Supply-Units/Advanced-RM-Series/p/CP-9020180-NA",
-      "imagem": "img/rm850x.png",
-      "potencia": "850W",
-      "eficiencia": "80 Plus Gold"
-    },
-    {
-      "marca": "EVGA",
-      "modelo": "SuperNOVA 750 G5 750W 80 Plus Gold",
-      "preco": 699.99,
-      "info": "https://www.evga.com/products/product.aspx?pn=220-G5-0750-X1",
-      "imagem": "img/supernova-750-g5.png",
-      "potencia": "750W",
-      "eficiencia": "80 Plus Gold"
-    },
-    {
-      "marca": "Seasonic",
-      "modelo": "FOCUS GX-650 650W 80 Plus Gold",
-      "preco": 649.99,
-      "info": "https://seasonic.com/focus-gx",
-      "imagem": "img/focus-gx-650.png",
+      "marca": "XPG",
+      "modelo": "Core Reactor 650W 80 Plus Gold",
+      "preco": 589.99,
+      "desempenho": "Alto Desempenho",
+      "info": "https://www.xpg.com/pt/xpg/641",
+      "imagem": "img/json/PSU/corereactor650.png",
       "potencia": "650W",
       "eficiencia": "80 Plus Gold"
     },
     {
-      "marca": "Cooler Master",
-      "modelo": "MWE Bronze 550W 80 Plus Bronze",
-      "preco": 399.99,
-      "info": "https://www.coolermaster.com/catalog/power-supplies/mwe-series/mwe-bronze-550-230v/",
-      "imagem": "img/mwe-bronze-550.png",
+      "marca": "Corsair",
+      "modelo": "CX550 550W 80 Plus Bronze",
+      "preco": 379.99,
+      "desempenho": "Custo-Benefício",
+      "info": "https://www.corsair.com/us/en/p/psu/cp-9020121-na/cx-series-cx550-550-watt-80-plus-bronze-certified-atx-psu-cp-9020121-na",
+      "imagem": "img/json/PSU/cx550.png",
       "potencia": "550W",
       "eficiencia": "80 Plus Bronze"
     },
     {
-      "marca": "Thermaltake",
-      "modelo": "Smart 500W 80 Plus",
-      "preco": 299.99,
-      "info": "https://www.thermaltake.com/smart-500w.html",
-      "imagem": "img/smart-500w.png",
+      "marca": "Pichau",
+      "modelo": "Nidus 500W 80 Plus Bronze",
+      "preco": 350.99,
+      "desempenho": "Custo-Benefício",
+      "info": "https://pichaugaming.com.br/p/fonte-pichau-gaming-nidus-500w/",
+      "imagem": "img/json/PSU/nidus500w.png",
       "potencia": "500W",
-      "eficiencia": "80 Plus"
+      "eficiencia": "80 Plus Bronze"
+    },
+    {
+      "marca": "EVGA",
+      "modelo": "500W 80 Plus Bronze",
+      "preco": 299.99,
+      "desempenho": "Custo-Benefício",
+      "info": "https://www.evga.com/products/product.aspx?pn=100-BV-0500-K1",
+      "imagem": "img/json/PSU/evga500bw.png",
+      "potencia": "500W",
+      "eficiencia": "80 Plus Bronze"
+    },
+    {
+      "marca": "Redragon",
+      "modelo": "Fonte Gamer Redragon RGPS 400W",
+      "preco": 199.99,
+      "desempenho": "Baixa Performance",
+      "info": "https://www.redragon.com.br/rgps400w",
+      "imagem": "img/json/PSU/redragon400.png",
+      "potencia": "400W",
+      "eficiencia": "80 Plus White"
     }
   ],
-"Gabinete": [
+  "Gabinete": [
     {
       "marca": "NZXT",
       "modelo": "H510 Elite",
@@ -494,7 +533,7 @@
       "tipo": "Mid Tower"
     }
   ],
-"Refrigeração": [
+  "Refrigeração": [
     {
       "marca": "Noctua",
       "modelo": "NH-D15",
