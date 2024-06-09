@@ -52,7 +52,7 @@ for (let i = 0; i < cards.length; i++) {
         document.getElementById('reiniciar').style.display = 'flex';
 
         // Armazenar variável
-        var finalidade = this.querySelector('h2').textContent;
+        finalidade = this.querySelector('h2').textContent;
         localStorage.setItem("finalidade", finalidade);
 
         localStorage.setItem("orcamentoTotal", orcamentoTotal);
@@ -108,6 +108,7 @@ for (let k = 0; k < valores.length; k++) {
         // Dinâmica no btn Avançar ao selecionar um valor máximo
         btnAvancarEl.style.backgroundColor = '#41ae4f'
         btnAvancarEl.style.cursor = 'pointer'
+        btnAvancarEl.style.animation = ' pulsar 1.5s ease-in-out infinite'
     }
 }
 

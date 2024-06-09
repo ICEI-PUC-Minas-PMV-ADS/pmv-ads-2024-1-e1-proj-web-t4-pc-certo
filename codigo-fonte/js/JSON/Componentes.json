@@ -3,152 +3,145 @@
         {
             "marca": "AMD",
             "modelo": "Ryzen 9 5950X",
-            "preco": 5199.99,
+            "preco": 2839.99,
             "desempenho": "Alto Desempenho",
-            "info": "https://www.amd.com/pt/products/cpu/amd-ryzen-9-5950x",
-            "imagem": "img/ryzen9-5950x.png",
+            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-9-5950x.html",
+            "imagem": "img/Ryzen5950X.png",
             "socket": "AM4",
-            "TDP": "105W"
+            "TDP": "105W",
+            "videoIntegrado": "não"
         },
         {
             "marca": "Intel",
-            "modelo": "Core i9-12900K",
-            "preco": 4699.99,
+            "modelo": "Core i9-14900KF",
+            "preco": 2498.99,
             "desempenho": "Alto Desempenho",
-            "info": "https://ark.intel.com/content/www/br/pt/ark/products/212283/intel-core-i9-12900k-processor-30m-cache-up-to-5-20-ghz.html",
-            "imagem": "img/i9-12900k.png",
-            "socket": "LGA 1700",
-            "TDP": "125W"
+            "info": "https://www.intel.com.br/content/www/br/pt/products/sku/236787/intel-core-i9-processor-14900kf-36m-cache-up-to-6-00-ghz/specifications.html",
+            "imagem": "img/I9.png",
+            "socket": "LGA1700",
+            "TDP": "125W",
+            "videoIntegrado": "não"
         },
         {
             "marca": "AMD",
-            "modelo": "Ryzen 9 5900X",
-            "preco": 3999.99,
+            "modelo": "Ryzen 9 7950X3D",
+            "preco": 4998.99,
             "desempenho": "Alto Desempenho",
-            "info": "https://www.amd.com/pt/products/cpu/amd-ryzen-9-5900x",
-            "imagem": "img/ryzen9-5900x.png",
-            "socket": "AM4",
-            "TDP": "105W"
+            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/7000-series/amd-ryzen-9-7950x3d.html",
+            "imagem": "img/Ryzen7950X3D.png",
+            "socket": "AM5",
+            "TDP": "120W",
+            "videoIntegrado": "sim"
         },
         {
             "marca": "Intel",
-            "modelo": "Core i7-12700K",
-            "preco": 3199.99,
+            "modelo": "Core i5-13600KF",
+            "preco": 1999.99,
             "desempenho": "Alto Desempenho",
-            "info": "https://ark.intel.com/content/www/br/pt/ark/products/212276/intel-core-i7-12700k-processor-25m-cache-up-to-5-00-ghz.html",
-            "imagem": "img/i7-12700k.png",
-            "socket": "LGA 1700",
-            "TDP": "125W"
+            "info": "https://www.intel.com.br/content/www/br/pt/products/sku/230494/intel-core-i513600kf-processor-24m-cache-up-to-5-10-ghz/specifications.html",
+            "imagem": "img/i5.png",
+            "socket": "LGA1700",
+            "TDP": "125W",
+            "videoIntegrado": "não"
         },
         {
             "marca": "AMD",
-            "modelo": "Ryzen 7 5800X",
-            "preco": 3299.99,
+            "modelo": "Ryzen 7 7700",
+            "preco": 1889.99,
             "desempenho": "Alto Desempenho",
-            "info": "https://www.amd.com/pt/products/cpu/amd-ryzen-7-5800x",
-            "imagem": "img/ryzen7-5800x.png",
-            "socket": "AM4",
-            "TDP": "105W"
+            "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7700.html",
+            "imagem": "img/Ryzen7700.png",
+            "socket": "AM5",
+            "TDP": "65W",
+            "videoIntegrado": "sim"
         },
         {
             "marca": "AMD",
             "modelo": "Ryzen 5 5600X",
-            "preco": 2222.24,
+            "preco": 998.99,
             "desempenho": "Custo-Benefício",
             "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
-            "imagem": "img/pagEscolha-teste.png",
+            "imagem": "img/Ryzen5500e5600.png",
             "socket": "AM4",
-            "TDP": "65W"
+            "TDP": "65W",
+            "videoIntegrado": "não"
         },
         {
             "marca": "Intel",
             "modelo": "Core i5-12400F",
-            "preco": 1399.99,
+            "preco": 769.99,
             "desempenho": "Custo-Benefício",
-            "info": "https://ark.intel.com/content/www/br/pt/ark/products/212284/intel-core-i512400f-processor-18m-cache-up-to-4-40-ghz.html",
-            "imagem": "img/i5-12400f.png",
-            "socket": "LGA 1700",
-            "TDP": "65W"
+            "info": "https://www.intel.com.br/content/www/br/pt/products/sku/134587/intel-core-i512400f-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+            "imagem": "img/i5.png",
+            "socket": "LGA1700",
+            "TDP": "65W",
+            "videoIntegrado": "não"
         },
         {
             "marca": "AMD",
-            "modelo": "Ryzen 5 3600",
-            "preco": 1299.99,
+            "modelo": "Ryzen 5 5500",
+            "preco": 669.99,
             "desempenho": "Custo-Benefício",
-            "info": "https://www.amd.com/pt/products/cpu/amd-ryzen-5-3600",
-            "imagem": "img/ryzen5-3600.png",
+            "info": "https://www.amd.com/en/product/11811",
+            "imagem": "img/Ryzen5500e5600.png",
             "socket": "AM4",
-            "TDP": "65W"
+            "TDP": "65W",
+            "videoIntegrado": "não"
         },
         {
             "marca": "Intel",
             "modelo": "Core i5-10400F",
             "preco": 999.99,
             "desempenho": "Custo-Benefício",
-            "info": "https://ark.intel.com/content/www/br/pt/ark/products/199283/intel-core-i5-10400f-processor-12m-cache-up-to-4-30-ghz.html",
-            "imagem": "img/i5-10400f.png",
-            "socket": "LGA 1200",
-            "TDP": "65W"
+            "info": "https://www.intel.com.br/content/www/br/pt/products/sku/199278/intel-core-i510400f-processor-12m-cache-up-to-4-30-ghz/specifications.html",
+            "imagem": "img/i5.png",
+            "socket": "LGA1200",
+            "TDP": "65W",
+            "videoIntegrado": "não"
         },
         {
             "marca": "AMD",
-            "modelo": "Ryzen 7 3700X",
-            "preco": 1899.99,
+            "modelo": "Ryzen 5 5600G",
+            "preco": 834.99,
             "desempenho": "Custo-Benefício",
-            "info": "https://www.amd.com/pt/products/cpu/amd-ryzen-7-3700x",
-            "imagem": "img/ryzen7-3700x.png",
+            "info": "https://www.amd.com/en/product/11176",
+            "imagem": "img/Ryzen5600X.png",
             "socket": "AM4",
-            "TDP": "65W"
+            "TDP": "65W",
+            "videoIntegrado": "sim"
         },
         {
             "marca": "Intel",
-            "modelo": "Core i3-10100",
-            "preco": 599.99,
+            "modelo": "Core i3-10105",
+            "preco": 587.99,
             "desempenho": "Baixa Performance",
-            "info": "https://ark.intel.com/content/www/br/pt/ark/products/199283/intel-core-i3-10100-processor-6m-cache-up-to-4-30-ghz.html",
-            "imagem": "img/i3-10100.png",
-            "socket": "LGA 1200",
-            "TDP": "65W"
+            "info": "https://www.intel.com.br/content/www/br/pt/products/sku/201894/intel-core-i310105-processor-6m-cache-up-to-4-40-ghz/specifications.html",
+            "imagem": "img/i3.png",
+            "socket": "LGA1200",
+            "TDP": "65W",
+            "videoIntegrado": "sim"
         },
         {
             "marca": "AMD",
-            "modelo": "Ryzen 3 3200G",
-            "preco": 499.99,
+            "modelo": "Ryzen 5 4600G",
+            "preco": 579.99,
             "desempenho": "Baixa Performance",
-            "info": "https://www.amd.com/pt/products/cpu/amd-ryzen-3-3200g",
-            "imagem": "img/ryzen3-3200g.png",
+            "info": "https://www.adrenaline.com.br/produto/processador/amd-ryzen-5-4600g/",
+            "imagem": "img/Ryzen4600G.png",
             "socket": "AM4",
-            "TDP": "65W"
+            "TDP": "65W",
+            "videoIntegrado": "sim"
         },
         {
             "marca": "Intel",
-            "modelo": "Pentium Gold G6400",
-            "preco": 399.99,
+            "modelo": "Pentium Gold G6405",
+            "preco": 430.99,
             "desempenho": "Baixa Performance",
-            "info": "https://ark.intel.com/content/www/br/pt/ark/products/199285/intel-pentium-gold-g6400-processor-4m-cache-4-00-ghz.html",
-            "imagem": "img/pentium-gold-g6400.png",
-            "socket": "LGA 1200",
-            "TDP": "58W"
-        },
-        {
-            "marca": "AMD",
-            "modelo": "Athlon 3000G",
-            "preco": 349.99,
-            "desempenho": "Baixa Performance",
-            "info": "https://www.amd.com/pt/products/apu/amd-athlon-3000g",
-            "imagem": "img/athlon-3000g.png",
-            "socket": "AM4",
-            "TDP": "35W"
-        },
-        {
-            "marca": "Intel",
-            "modelo": "Celeron G5905",
-            "preco": 299.99,
-            "desempenho": "Baixa Performance",
-            "info": "https://ark.intel.com/content/www/br/pt/ark/products/199274/intel-celeron-processor-g5905-2m-cache-3-50-ghz.html",
-            "imagem": "img/celeron-g5905.png",
-            "socket": "LGA 1200",
-            "TDP": "58W"
+            "info": "https://www.intel.com.br/content/www/br/pt/products/sku/201901/intel-pentium-gold-g6405-processor-4m-cache-4-10-ghz/specifications.html",
+            "imagem": "img/pentium.png",
+            "socket": "LGA1200",
+            "TDP": "58W",
+            "videoIntegrado": "sim"
         }
 ],
 
