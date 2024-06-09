@@ -121,7 +121,7 @@ Exemplo da página Fórum:
 #### Requisito atendido
 
 RF-11: A aplicação deve conter um fórum da comunidade.
-RF-13: A aplicação deve permitir que administradores realizem banimentos/suspensões aos usuários que não respeitarem as regras do fórum.
+RF-13: A aplicação deve permitir que apenas usuários logados realizem publicações no fórum.
 RF-08: A aplicação deve permitir o login de usuários para o uso do fórum. (Sem login não será possível submeter publicações)
 
 #### Artefatos da funcionalidade
