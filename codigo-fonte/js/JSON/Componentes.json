@@ -6,7 +6,7 @@
             "preco": 2839.99,
             "desempenho": "Alto Desempenho",
             "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-9-5950x.html",
-            "imagem": "img/Ryzen5950X.png",
+            "imagem": "img/json/processadores/Ryzen5950X.png",
             "socket": "AM4",
             "TDP": "105W",
             "videoIntegrado": "não"
@@ -17,7 +17,7 @@
             "preco": 2498.99,
             "desempenho": "Alto Desempenho",
             "info": "https://www.intel.com.br/content/www/br/pt/products/sku/236787/intel-core-i9-processor-14900kf-36m-cache-up-to-6-00-ghz/specifications.html",
-            "imagem": "img/I9.png",
+            "imagem": "img/json/processadores/I9.png",
             "socket": "LGA1700",
             "TDP": "125W",
             "videoIntegrado": "não"
@@ -28,7 +28,7 @@
             "preco": 4998.99,
             "desempenho": "Alto Desempenho",
             "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/7000-series/amd-ryzen-9-7950x3d.html",
-            "imagem": "img/Ryzen7950X3D.png",
+            "imagem": "img/json/processadores/Ryzen7950X3D.png",
             "socket": "AM5",
             "TDP": "120W",
             "videoIntegrado": "sim"
@@ -39,7 +39,7 @@
             "preco": 1999.99,
             "desempenho": "Alto Desempenho",
             "info": "https://www.intel.com.br/content/www/br/pt/products/sku/230494/intel-core-i513600kf-processor-24m-cache-up-to-5-10-ghz/specifications.html",
-            "imagem": "img/i5.png",
+            "imagem": "img/json/processadores/i5.png",
             "socket": "LGA1700",
             "TDP": "125W",
             "videoIntegrado": "não"
@@ -50,7 +50,7 @@
             "preco": 1889.99,
             "desempenho": "Alto Desempenho",
             "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7700.html",
-            "imagem": "img/Ryzen7700.png",
+            "imagem": "img/json/processadores/Ryzen7700.png",
             "socket": "AM5",
             "TDP": "65W",
             "videoIntegrado": "sim"
@@ -61,7 +61,7 @@
             "preco": 998.99,
             "desempenho": "Custo-Benefício",
             "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
-            "imagem": "img/Ryzen5500e5600.png",
+            "imagem": "img/json/processadores/Ryzen5500e5600.png",
             "socket": "AM4",
             "TDP": "65W",
             "videoIntegrado": "não"
@@ -72,7 +72,7 @@
             "preco": 769.99,
             "desempenho": "Custo-Benefício",
             "info": "https://www.intel.com.br/content/www/br/pt/products/sku/134587/intel-core-i512400f-processor-18m-cache-up-to-4-40-ghz/specifications.html",
-            "imagem": "img/i5.png",
+            "imagem": "img/json/processadores/i5.png",
             "socket": "LGA1700",
             "TDP": "65W",
             "videoIntegrado": "não"
@@ -83,7 +83,7 @@
             "preco": 669.99,
             "desempenho": "Custo-Benefício",
             "info": "https://www.amd.com/en/product/11811",
-            "imagem": "img/Ryzen5500e5600.png",
+            "imagem": "img/json/processadores/Ryzen5500e5600.png",
             "socket": "AM4",
             "TDP": "65W",
             "videoIntegrado": "não"
@@ -94,7 +94,7 @@
             "preco": 999.99,
             "desempenho": "Custo-Benefício",
             "info": "https://www.intel.com.br/content/www/br/pt/products/sku/199278/intel-core-i510400f-processor-12m-cache-up-to-4-30-ghz/specifications.html",
-            "imagem": "img/i5.png",
+            "imagem": "img/json/processadores/i5.png",
             "socket": "LGA1200",
             "TDP": "65W",
             "videoIntegrado": "não"
@@ -105,7 +105,7 @@
             "preco": 834.99,
             "desempenho": "Custo-Benefício",
             "info": "https://www.amd.com/en/product/11176",
-            "imagem": "img/Ryzen5600X.png",
+            "imagem": "img/json/processadores/Ryzen5600X.png",
             "socket": "AM4",
             "TDP": "65W",
             "videoIntegrado": "sim"
@@ -116,7 +116,7 @@
             "preco": 587.99,
             "desempenho": "Baixa Performance",
             "info": "https://www.intel.com.br/content/www/br/pt/products/sku/201894/intel-core-i310105-processor-6m-cache-up-to-4-40-ghz/specifications.html",
-            "imagem": "img/i3.png",
+            "imagem": "img/json/processadores/i3.webp",
             "socket": "LGA1200",
             "TDP": "65W",
             "videoIntegrado": "sim"
@@ -127,7 +127,7 @@
             "preco": 579.99,
             "desempenho": "Baixa Performance",
             "info": "https://www.adrenaline.com.br/produto/processador/amd-ryzen-5-4600g/",
-            "imagem": "img/Ryzen4600G.png",
+            "imagem": "img/json/processadores/Ryzen4600G.png",
             "socket": "AM4",
             "TDP": "65W",
             "videoIntegrado": "sim"
@@ -138,7 +138,7 @@
             "preco": 430.99,
             "desempenho": "Baixa Performance",
             "info": "https://www.intel.com.br/content/www/br/pt/products/sku/201901/intel-pentium-gold-g6405-processor-4m-cache-4-10-ghz/specifications.html",
-            "imagem": "img/pentium.png",
+            "imagem": "img/json/processadores/pentium.png",
             "socket": "LGA1200",
             "TDP": "58W",
             "videoIntegrado": "sim"
@@ -147,141 +147,159 @@
 
 "Placa-mae": [
     {
-      "marca": "ASUS",
-      "modelo": "ROG Crosshair VIII Hero (Wi-Fi)",
-      "preco": 2399.99,
-      "info": "https://www.asus.com/Motherboards-Components/Motherboards/All-series/ROG-Crosshair-VIII-Hero-WI-FI/",
+      "marca": "AORUS",
+      "modelo": "TUF Gaming Z790-Plus Wifi",
+      "preco": 1899.99,
+      "info": "https://www.gigabyte.com/br/Motherboard/Z790-AORUS-ELITE-rev-11/sp#sp",
       "imagem": "img/crosshair-viii-hero.png",
-      "socket": "AM4",
-      "RAM": "DDR4"
+      "socket": "LGA1700",
+      "RAM": "DDR5",
+      "format": "ATX"
     },
     {
       "marca": "ASUS",
-      "modelo": "ROG Maximus XIII Hero",
-      "preco": 2499.99,
-      "info": "https://www.asus.com/Motherboards-Components/Motherboards/All-series/ROG-Maximus-XIII-Hero/",
-      "imagem": "img/maximus-xiii-hero.png",
-      "socket": "LGA1200",
-      "RAM": "DDR4"
-    },
-    {
-      "marca": "MSI",
-      "modelo": "MPG Z590 Gaming Carbon WiFi",
+      "modelo": "TUF Gaming X670E-Plus",
       "preco": 2099.99,
-      "info": "https://www.msi.com/Motherboard/MPG-Z590-GAMING-CARBON-WIFI",
-      "imagem": "img/z590-gaming-carbon.png",
-      "socket": "LGA1200",
-      "RAM": "DDR4"
-    },
-    {
-      "marca": "Gigabyte",
-      "modelo": "X570 AORUS Elite",
-      "preco": 1499.99,
-      "info": "https://www.gigabyte.com/Motherboard/X570-AORUS-ELITE-rev-10#kf",
-      "imagem": "img/x570-aorus-elite.png",
-      "socket": "AM4",
-      "RAM": "DDR4"
+      "info": "https://www.asus.com/br/motherboards-components/motherboards/tuf-gaming/tuf-gaming-x670e-plus/",
+      "imagem": "img/maximus-xiii-hero.png",
+      "socket": "AM5",
+      "RAM": "DDR5",
+      "format": "ATX"
     },
     {
       "marca": "ASUS",
-      "modelo": "TUF Gaming B550-PLUS",
-      "preco": 899.99,
-      "info": "https://www.asus.com/Motherboards-Components/Motherboards/All-series/TUF-Gaming-B550-PLUS/",
+      "modelo": "TUF Gaming B650M-Plus",
+      "preco": 1439.99,
+      "info": "https://www.asus.com/br/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b650m-plus/",
+      "imagem": "img/z590-gaming-carbon.png",
+      "socket": "AM5",
+      "RAM": "DDR5",
+      "format": "mATX"
+    },
+    {
+      "marca": "ASUS",
+      "modelo": "TUF Gaming B550M-Plus",
+      "preco": 829.99,
+      "info": "https://www.asus.com/br/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b550m-plus/",
       "imagem": "img/b550-plus.png",
       "socket": "AM4",
-      "RAM": "DDR4"
+      "RAM": "DDR4",
+      "format": "microATX"
     },
     {
-      "marca": "MSI",
-      "modelo": "MAG B550 TOMAHAWK",
-      "preco": 799.99,
-      "info": "https://www.msi.com/Motherboard/MAG-B550-TOMAHAWK",
+      "marca": "ASROCK",
+      "modelo": "B660M Phantom Gaming 4",
+      "preco": 699.99,
+      "info": "https://pg.asrock.com/mb/Intel/B660M%20Phantom%20Gaming%204/index.br.asp",
       "imagem": "img/b550-tomahawk.png",
-      "socket": "AM4",
-      "RAM": "DDR4"
+      "socket": "LGA1700",
+      "RAM": "DDR4",
+      "format": "mATX"
     },
     {
       "marca": "Gigabyte",
-      "modelo": "B560M DS3H",
+      "modelo": "H610M (rev. 1.0)",
       "preco": 599.99,
-      "info": "https://www.gigabyte.com/Motherboard/B560M-DS3H-rev-10#kf",
+      "info": "https://www.gigabyte.com/br/Motherboard/H610M-H-DDR4-rev-10#kf",
       "imagem": "img/b560m-ds3h.png",
-      "socket": "LGA1200",
-      "RAM": "DDR4"
-    },
-    {
-      "marca": "ASUS",
-      "modelo": "PRIME B460M-A",
-      "preco": 549.99,
-      "info": "https://www.asus.com/Motherboards-Components/Motherboards/All-series/PRIME-B460M-A/",
-      "imagem": "img/b460m-a.png",
-      "socket": "LGA1200",
-      "RAM": "DDR4"
+      "socket": "LGA1700",
+      "RAM": "DDR4",
+      "format": "mATX"
     },
     {
       "marca": "MSI",
-      "modelo": "A320M-A PRO",
-      "preco": 299.99,
-      "info": "https://www.msi.com/Motherboard/A320M-A-PRO",
-      "imagem": "img/a320m-a-pro.png",
+      "modelo": "A520M-A PRO",
+      "preco": 359.99,
+      "info": "https://br.msi.com/Motherboard/A520M-A-PRO/Overview",
+      "imagem": "img/b460m-a.png",
       "socket": "AM4",
-      "RAM": "DDR4"
+      "RAM": "DDR4",
+      "format": "mATX"
     },
     {
       "marca": "Gigabyte",
-      "modelo": "A320M-S2H",
-      "preco": 199.99,
-      "info": "https://www.gigabyte.com/Motherboard/GA-A320M-S2H-rev-10#kf",
+      "modelo": "H510M REV.1.0",
+      "preco": 517.99,
+      "info": "https://www.gigabyte.com/br/Motherboard/H510M-H-rev-10-11-15#kf",
+      "imagem": "img/a320m-a-pro.png",
+      "socket": "LGA1200",
+      "RAM": "DDR4",
+      "format": "mATX"
+    },
+    {
+      "marca": "MSI",
+      "modelo": "B560M PRO-E",
+      "preco": 439.99,
+      "info": "https://www.msi.com/Motherboard/B560M-PRO-E",
       "imagem": "img/a320m-s2h.png",
-      "socket": "AM4",
-      "RAM": "DDR4"
+      "socket": "LGA1200",
+      "RAM": "DDR4",
+      "format": "mATX"
     }
   ],
 "RAM": [
     {
       "marca": "Corsair",
-      "modelo": "Vengeance LPX 32GB (2 x 16GB) DDR4 3200MHz",
-      "preco": 999.99,
-      "info": "https://www.corsair.com/us/en/Categories/Products/Memory/VENGEANCE%C2%AE-LPX-16GB-%282-x-8GB%29-DDR4-DRAM-3200MHz-C16-Memory-Kit-%E2%80%94-Black/p/CMK16GX4M2B3200C16",
+      "modelo": "Vengeance RGB 32GB (2 x 16GB)",
+      "preco": 1049.99,
+      "info": "https://www.corsair.com/br/pt/p/memory/cmh32gx5m2x6200c36/vengeance-rgb-32gb-2x16gb-ddr5-dram-6200mt-s-cl36-memory-kit-black-cmh32gx5m2x6200c36",
       "imagem": "img/vengeance-lpx-32gb.png",
-      "tipo": "DDR4",
-      "frequencia": "3200MHz"
+      "tipo": "DDR5",
+      "frequencia": "6200MHz"
     },
     {
-      "marca": "G.Skill",
-      "modelo": "Ripjaws V 16GB (2 x 8GB) DDR4 3600MHz",
-      "preco": 749.99,
-      "info": "https://www.gskill.com/product/165/184/1562831230/F4-3600C16D-16GVKC-Ripjaws-V-DDR4-3600MHz-CL16-16GB-(2x8GB)",
+      "marca": "Rise Mode",
+      "modelo": "Rise Mode Z 16GB",
+      "preco": 299.99,
+      "info": "https://www.lojarisemode.com.br/produto/memoria-ddr5-rise-mode-z-preto-rm-d5-16g-4800z",
       "imagem": "img/ripjaws-v-16gb.png",
-      "tipo": "DDR4",
-      "frequencia": "3600MHz"
+      "tipo": "DDR5",
+      "frequencia": "4800MHz"
     },
     {
       "marca": "Kingston",
-      "modelo": "HyperX Fury 16GB (2 x 8GB) DDR4 3200MHz",
+      "modelo": "Fury Beast 8GB",
       "preco": 699.99,
-      "info": "https://www.kingston.com/en/memory/gaming/kingston-fury",
+      "info": "https://www.kingston.com/br/memory/gaming/kingston-fury-beast-ddr5-memory",
       "imagem": "img/hyperx-fury-16gb.png",
-      "tipo": "DDR4",
-      "frequencia": "3200MHz"
+      "tipo": "DDR5",
+      "frequencia": "4800MHz"
     },
     {
-      "marca": "Corsair",
-      "modelo": "Vengeance LPX 16GB (2 x 8GB) DDR4 3000MHz",
-      "preco": 649.99,
-      "info": "https://www.corsair.com/us/en/Categories/Products/Memory/VENGEANCE%C2%AE-LPX-16GB-%282-x-8GB%29-DDR4-DRAM-3000MHz-C15-Memory-Kit-%E2%80%94-Black/p/CMK16GX4M2B3000C15",
+      "marca": "Kingston",
+      "modelo": "Fury Beast 8GB",
+      "preco": 169.99,
+      "info": "https://www.kingston.com/br/memory/gaming/kingston-fury-beast-ddr4-rgb-memory",
       "imagem": "img/vengeance-lpx-16gb.png",
       "tipo": "DDR4",
       "frequencia": "3000MHz"
     },
     {
-      "marca": "Crucial",
-      "modelo": "Ballistix 8GB (1 x 8GB) DDR4 2666MHz",
-      "preco": 299.99,
-      "info": "https://www.crucial.com/memory/ddr4/bl8g26c16u4r",
+      "marca": "XPG",
+      "modelo": "Spectrix D35G 16GB",
+      "preco": 285.99,
+      "info": "https://www.xpg.com/pt/xpg/dram-modules-spectrix-d35g-rgb-ddr4",
       "imagem": "img/ballistix-8gb.png",
       "tipo": "DDR4",
-      "frequencia": "2666MHz"
+      "frequencia": "3200MHz"
+    },
+    {
+      "marca": "Corsair",
+      "modelo": "Vengeance LPX 4GB",
+      "preco": 119.99,
+      "info": "https://www.corsair.com/br/pt/p/memory/cmk4gx4m1a2400c14r/vengeancea-lpx-4gb-1-x-4gb-ddr4-dram-2400mhz-c14-memory-kit-red-cmk4gx4m1a2400c14r",
+      "imagem": "img/ballistix-8gb.png",
+      "tipo": "DDR4",
+      "frequencia": "2400MHz"
+    },
+    {
+      "marca": "CKingston",
+      "modelo": "Fury Beast 16GB (2x 8GB)",
+      "preco": 329.99,
+      "info": "https://www.corsair.com/br/pt/p/memory/cmk4gx4m1a2400c14r/vengeancea-lpx-4gb-1-x-4gb-ddr4-dram-2400mhz-c14-memory-kit-red-cmk4gx4m1a2400c14r",
+      "imagem": "img/ballistix-8gb.png",
+      "tipo": "DDR4",
+      "frequencia": "2400MHz"
     }
   ],
 "GPU": [
