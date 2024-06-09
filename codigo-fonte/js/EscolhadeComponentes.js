@@ -80,7 +80,6 @@ document.getElementById('avancar').addEventListener('click', () => {
     salvarComponentesSelecionados();
     atualizarTotalParcial();
 
-
     precoTemporario = 0; // Reset precoTemporario after advancing
 
     const indexAtual = ordemComponentes.indexOf(componenteAtual);
@@ -121,10 +120,12 @@ async function carregarDataComponentes() {
 }
 
 function carregarComponentes(tipo) {
+    console.log(`Carregando componentes para tipo: ${tipo}`);
     const container = document.querySelector('#containerComp');
     container.innerHTML = '';
 
     componentes[tipo].forEach((componente) => {
+
         const opcao = document.createElement('div');
         opcao.classList.add('opcaoComponente');
 
