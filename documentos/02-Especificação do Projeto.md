@@ -42,15 +42,15 @@
 <table>
 <tbody>
 <tr align=center>
-<th colspan="2">Perfil 03: Administrador do Fórum</th>
+<th colspan="2">Perfil 03: Usuário do Fórum</th>
 </tr>
 <tr>
 <td width="150px"><b>Descrição</b></td>
-<td width="600px">Ter privilégios no fórum como editar/apagar publicações, finalizar publicações cujas dúvidas já foram resolvidas, banir ou suspender usuários e adicionar ou remover tópicos no fórum</td>
+<td width="600px">Ter privilégios no fórum como enviar publicações</td>
 </tr>
 <tr>
 <td><b>Necessidades</b></td>
-<td>Acesso ao fórum do site para auxiliar outras pessoas interessadas em montar um computador e discutir assuntos relacionados a hardware de computador</td>
+<td>Acesso ao fórum do site para tirar suas dúvidas e discutir assuntos relacionados a hardware de computador</td>
 </tr>
 </tbody>
 </table>
