@@ -45,7 +45,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
     <li>RF-13: A aplicação deve permitir que apenas usuários logados realizem publicações no fórum. </li>
    </ul>
   </td>
-  <td>Garantir que a impossibilidade de realizar publicações caso usuário não esteja logado.</td>
+  <td>Garantir a impossibilidade de realizar publicações caso usuário não esteja logado.</td>
   <td>
    <ol>
     <li>Acessar o navegador.</li>
@@ -86,8 +86,8 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
   <td>CT-04: Verificar se o programa irá funcionar de acordo com a necessidade do usuário</td>
   <td>
    <ul>
-    <li>RF-01	A aplicação deve perguntar ao usuário qual será especificamente o uso das peças do computador a serem montadas.	Alta</li>
-    <li>RF-04	A aplicação deve oferecer um orçamento ajustável para o usuário.</li>
+    <li>RF-01:	A aplicação deve perguntar ao usuário qual será especificamente o uso das peças do computador a serem montadas.</li>
+    <li>RF-04:	A aplicação deve oferecer um orçamento ajustável para o usuário.</li>
    </ul>
   </td>
   <td>Garantir que o usuário consiga escolher o objetivo do computador e também quanto deseja investir no PC. </td>
@@ -106,5 +106,32 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
    </td>
   <td>A aplicação deve respeitar as escolhas decididads pelo usuário em todo processo de montagem.</td>
   <td>Luan Bezerra</td>
+ </tr>
+     <tr>
+  <td>CT-05: Verificar se o programa irá exibir os componentes escolhidos pelo usuário ao final da montagem</td>
+  <td>
+   <ul>
+    <li>RF-09:	A aplicação deve disponibilizar links de lojas online de hardware de computador para que os usuários comprem as peças diretamente através do site.</li>
+    <li>RF-15:	A aplicação deve fornecer um resumo dos componentes selecionados pelo usuário ao final da montagem.</li>
+   </ul>
+  </td>
+  <td>Garantir que o usuário consiga revisar os componentes selecionados. </td>
+  <td>
+   <ol>
+    <li>Acessar o navegador.</li>
+    <li>Informar o endereço do site.</li>
+    <li>Visualizar a página Home.</li>
+    <li>Clicar em "Iniciar" na Página Inicial ou clicar em "Montar PC" no cabeçalho.</li>
+    <li>Escolher a finalidade</li> 
+     <li>Escolher o nível de orçamento</li>
+     <li>Escolher o valor máximo a se investir</li>
+    <li>Clicar em "Avançar"</li>
+    <li>Escolher os componentes do computador</li>
+    <li>Clicar em "Avançar" ao final de cada etapa da Escolha de Componentes</li>
+     <li>Verificar se é redirecionado à página de Resumo de Componentes, exibindo imagens, modelos e preços correspondentes às peças escolhidas</li>
+   </ol>
+   </td>
+  <td>A aplicação deve corresponder às escolhas decididads pelo usuário em todo processo de montagem.</td>
+  <td>Pedro Machado</td>
  </tr>
 </table>
