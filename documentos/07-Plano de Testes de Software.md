@@ -97,14 +97,14 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
     <li>Informar o endereço do site.</li>
     <li>Visualizar a página Home.</li>
     <li>Clicar em "iniciar" ou no Header clicar em "Montar PC"</li>
-    <li>Escolher a finalidade e verificar se está sendo salvo corretamente no Local Storage<</li> 
-    <li>Escolher o nível de orçamento e verificar se está sendo corretamente salvo no Local Storage</li> 
-    <li>Escolher o valor máximo a investir e verificar se está salvo corretamente no Local Storage</li> 
+    <li>Escolher a finalidade e verificar se está sendo salvo corretamente no Local Storage.</li> 
+    <li>Escolher o nível de orçamento e verificar se está sendo corretamente salvo no Local Storage.</li> 
+    <li>Escolher o valor máximo a investir e verificar se está salvo corretamente no Local Storage.</li> 
      <li>Clicar em "Avançar" </li>
      <li>Verificar se na Página "Escolha de componentes", o campo "Orçamento" está de acordo com o valor máximo escolhido anteriormente</li>
    </ol>
    </td>
-  <td>A aplicação deve respeitar as escolhas decididads pelo usuário em todo processo de montagem.</td>
+  <td>A aplicação deve respeitar as escolhas decididas inicialmente pelo usuário em todo processo de montagem.</td>
   <td>Luan Bezerra</td>
  </tr>
      <tr>
