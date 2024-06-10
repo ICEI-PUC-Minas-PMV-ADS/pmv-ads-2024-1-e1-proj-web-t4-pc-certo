@@ -105,6 +105,6 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
    </ol>
    </td>
   <td>A aplicação deve respeitar as escolhas decididads pelo usuário em todo processo de montagem.</td>
-  <td>Pedro Bezerra</td>
+  <td>Luan Bezerra</td>
  </tr>
 </table>
