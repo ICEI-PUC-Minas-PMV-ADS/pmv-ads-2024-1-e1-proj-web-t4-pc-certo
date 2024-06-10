@@ -107,6 +107,7 @@ Comprador Interessado em Aprender | Ler comentários e avaliações de outras pe
 | RF-12 |A aplicação deve permitir o usuário selecionar individualmente cada componente para o computador após o resultado gerado pela aplicação mantendo a compatibilidade e orçamento, caso necessário. |Média| 
 | RF-13 |A aplicação deve permitir que apenas usuários logados realizem publicações no fórum.|Média| 
 | RF-14 |A aplicação deve fornecer um guia para escolha de peças e como realizar a montagem de um computador. |Alta| 
+| RF-15 |A aplicação deve fornecer um resumo dos componentes selecionados pelo usuário ao final da montagem. |Alta| 
 
 **Prioridade: Alta / Média / Baixa. 
 
