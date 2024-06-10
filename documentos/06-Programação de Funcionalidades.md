@@ -80,7 +80,7 @@ O acesso a página Guia poderá ser feito através da opção do menu de navega�
 
 Exemplo da página de Guia:
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E3-pagGuias.png">
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E3-pagGuia.png">
 
 #### Requisito atendido
 
@@ -200,7 +200,7 @@ O acesso a página Escolha de Componentes poderá ser feito através do botão A
 
 Exemplo da página Escolha de Componentes:
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E3-pagMontarpc.png">
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E3-pagEscolha.png">
 
 #### Requisito atendido
 
@@ -252,7 +252,7 @@ As estruturas de dados foram baseadas em HTML, CSS e JS.
 
 Exemplo da página Resumo de Componentes:
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E3-pagMontarpc.png">
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/E3-pagResumo.png">
 
 #### Requisito atendido
 
