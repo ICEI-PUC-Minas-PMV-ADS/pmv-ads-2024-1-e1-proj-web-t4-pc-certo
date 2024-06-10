@@ -24,39 +24,48 @@
   <body>
     <!-- HEADER -->
 
-    <header>
-      <a href="../Paginainicial.html" id="logosite">
-        <img class="logo" src="../img/logo.png" alt="" />
-        <img class="loguinho" src="../img/favicon.png" alt="" />
-      </a>
-      <button class="sidebaricon">
-        <img
-          src="../img/sidebar.png"
-          alt="iconesidebar"
-          width="35px"
-          height="30px"
+    <div class="contTop">
+      <div class="Search">
+        <input
+          name="caixapesq"
+          type="text"
+          class="SearchBar"
+          placeholder="O que você procura?"
+          required
         />
-      </button>
-      <div class="botoescabecalho">
-        <a class="botaocabecalho" href="../Forum.html"
-          ><span class="txtcabecalho">Fórum</span></a
-        >
-        <a class="botaocabecalho" href="../Guiademontagem.html"
-          ><span class="txtcabecalho">Guia</span></a
-        >
-        <a class="botaocabecalho" href="../Montarpc.html"
-          ><span class="txtcabecalho">Montar PC</span></a
-        >
-        <a class="botaocabecalho2" href="../Login.html">
+        <button class="SearchBtn" id="srch0">
           <img
-            class="ProfileIcon"
-            src="../img/ProfileIcon.png"
-            alt="Meu Perfil"
+            src="img/forum/searchIcon_DM.png"
+            class="SearchIcon"
+            alt="Icone de Pesquisa"
           />
-          <span class="txtcabecalho"> Fazer Login</span>
-        </a>
+        </button>
+        <button class="SearchBtn" id="srch1">
+          <img
+            src="img/forum/searchIcon_DM.png"
+            class="SearchIcon"
+            alt="Icone de Pesquisa"
+          />
+        </button>
       </div>
-    </header>
+      <button class="filterBtn">
+        <img src="img/forum/filtroIcon_DM.png" class="iconSmll" alt="" />
+      </button>
+
+      <span class="flexGrow1">&nbsp;</span>
+      <div id="iconesForum">
+        <a href="forumPages/forumNovoPost.html">
+          <img src="img/forum/mais_DM.png" class="iconSmll" alt="" />
+        </a>
+        <img
+          src="img/forum/sinos/sinoMais_DM.png"
+          class="iconSmll"
+          alt=""
+          id="sinoNot"
+        />
+        <img src="img/forum/profileIconSmll_DM.png" class="iconSmll" alt="" />
+      </div>
+    </div>
     <br />
 
     <!-- TOPO -->

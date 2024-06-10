@@ -154,8 +154,8 @@ for (var l = 1; l < 6; l++) {
 const buttons = document.querySelectorAll(".eachForum");
 
 buttons.forEach((button) => {
-  button.addEventListener("click", function () {
+  button.onclick = function () {
     const id = this.id;
     window.location.href = `forumPages/exibirPosts.html?id=${id}`;
-  });
+  };
 });
