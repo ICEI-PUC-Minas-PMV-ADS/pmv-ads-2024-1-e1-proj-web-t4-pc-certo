@@ -6,7 +6,7 @@ Os testes funcionais realizados na aplicação web são descritos a seguir.
   <li> CT-01: Verificar o funcionamento do orçamento e soma dos valores dos componentes.
 
   Responsável: Lucas Gabriel Ferreira Toti.
-  [documentos/vids/CT01.mp4](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/vids/CT01.mp4)
+  <p>[documentos/vids/CT01.mp4](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/vids/CT01.mp4)</p>
 
 A aplicação realiza corretamente a soma sempre que um componente é adicionado ou removido da seleção, além de fornecer um feedback quando o orçamento é excedido ou está dentro do limite.
   </li>
