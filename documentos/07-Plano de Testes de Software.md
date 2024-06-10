@@ -58,7 +58,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
    </ol>
    </td>
   <td>A opção de criar publicaçãos deve ser impossibilitada caso o usuário não tenha realizado login.</td>
-  <td>Lucas Gabriel</td>
+  <td>Lucas Gabriel, Caetano Piccolo</td>
  </tr>
  <tr>
   <td>CT-03: A aplicação deve impedir a publicação caso as condições necessárias forem insuficientes.</td>
