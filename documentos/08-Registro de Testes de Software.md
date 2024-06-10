@@ -6,7 +6,10 @@ Os testes funcionais realizados na aplicação web são descritos a seguir.
   <li> CT-01: Verificar o funcionamento do orçamento e soma dos valores dos componentes.
 
   Responsável: Lucas Gabriel Ferreira Toti.
-  <p>[documentos/vids/CT01.mp4](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/vids/CT01.mp4)</p>
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/assets/157435433/03e3eb86-4e43-4939-be0a-7fb44bd2f034
+
 
 A aplicação realiza corretamente a soma sempre que um componente é adicionado ou removido da seleção, além de fornecer um feedback quando o orçamento é excedido ou está dentro do limite.
   </li>
@@ -16,8 +19,11 @@ A aplicação realiza corretamente a soma sempre que um componente é adicionado
 
   Responsável:Luan Bezerra.
     
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/assets/157435433/ca5030d6-618f-4bfb-9cf1-fb987eec0c75
+
+
   <p>Verificar se é possível fazer uma nova publicação sem login</p>    
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/CT-02%20.png
 
   </li>
   <hr>
@@ -26,20 +32,24 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo
    
   Responsável: Pedro Bezerra. 
    
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/assets/157435433/66fe4779-1b83-4155-8482-abe02cf28788
+
+
    <p>Garantir que o usuário consiga escolher o objetivo do computador e também quanto deseja investir no PC.</p>
       
-  [documentos/vids/CT-04.mp4](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/vids/CT-04.mp4)
     
   </li>
+  <hr>
   <li> CT-05: Verificar se o programa irá exibir os componentes escolhidos pelo usuário ao final da montagem.
 
   Responsável: Pedro Machado. 
-  
+  ![CT-05img1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/assets/157435433/440de12e-8f3a-4812-8274-d62d07145342)
+  ![CT-05img2](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/assets/157435433/603a1413-9b55-4677-b107-7a18c5705a2c)
+  ![CT-05img3](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/assets/157435433/350ccd7b-d65d-4715-8488-eff6143277e8)
+
    <p>A aplicação corresponde às escolhas decididads pelo usuário em todo processo de montagem.</p>
   
-  ![[8d33f1db-e0a7-4e41-b956-fde91ac31c63](https://user-images.githubusercontent.com/98122346/174851091-f201d92d-02f9-45c0-8b00-e66358158d8d.jpg)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/Resumo/Resumo1.png)
-  !https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/Resumo/Resumo2.png
-  !https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/Resumo/Resumo3.png
 
 
 
