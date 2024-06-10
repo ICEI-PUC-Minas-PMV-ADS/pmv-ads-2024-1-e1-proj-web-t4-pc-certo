@@ -42,15 +42,15 @@
 <table>
 <tbody>
 <tr align=center>
-<th colspan="2">Perfil 03: Administrador do Fórum</th>
+<th colspan="2">Perfil 03: Usuário do Fórum</th>
 </tr>
 <tr>
 <td width="150px"><b>Descrição</b></td>
-<td width="600px">Ter privilégios no fórum como editar/apagar publicações, finalizar publicações cujas dúvidas já foram resolvidas, banir ou suspender usuários e adicionar ou remover tópicos no fórum</td>
+<td width="600px">Ter privilégios no fórum como enviar publicações</td>
 </tr>
 <tr>
 <td><b>Necessidades</b></td>
-<td>Acesso ao fórum do site para auxiliar outras pessoas interessadas em montar um computador e discutir assuntos relacionados a hardware de computador</td>
+<td>Acesso ao fórum do site para tirar suas dúvidas e discutir assuntos relacionados a hardware de computador</td>
 </tr>
 </tbody>
 </table>
@@ -98,7 +98,7 @@ Comprador Interessado em Aprender | Ler comentários e avaliações de outras pe
 | RF-03 |A aplicação deve coletar as informações por meio de um arquivo JSON dos componentes do computador, como preços e especificações.|Alta| 
 | RF-04 |A aplicação deve oferecer um orçamento ajustável para o usuário.|Alta| 
 | RF-05 |A aplicação deve calcular a soma dos componentes escolhidos para o usuário.|Alta| 
-| RF-06 |A aplicação deve disponibilizar ao usuário a escolha final das peças realizadas pela filtragem. |Alta| 
+| RF-06 |A aplicação deve disponibilizar ao usuário a escolha das peças realizadas pela filtragem. |Alta| 
 | RF-07 |A aplicação deve permitir o cadastro de usuários para o uso do fórum. |Média| 
 | RF-08 |A aplicação deve permitir o login de usuários para o uso do fórum.|Média| 
 | RF-09 |A aplicação deve disponibilizar links de lojas online de hardware de computador para que os usuários comprem as peças diretamente através do site.|Baixo| 
