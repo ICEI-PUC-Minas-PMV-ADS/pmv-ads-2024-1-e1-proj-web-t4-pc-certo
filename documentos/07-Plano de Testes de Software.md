@@ -29,6 +29,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
     <li>Escolher a finalidade</li> 
     <li>Escolher o nível de orçamento</li> 
     <li>Escolher o valor máximo a investir</li> 
+     <li>Clicar em "Avançar" </li>
     <li>Escolher as peças do computador e ir verificando se a soma está sendo feita corretamente e se o orçamento está sendo respeitado.</li> 
    </ol>
    </td>
@@ -80,5 +81,30 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
    </td>
   <td>O botão de enviar a publicação deverá não submeter as informações, além de exibir o(s) motivo(s) que estão impossibilitando o envio, permitindo ao usuário corrigir os campos para realizar sua publicaçao com êxito.</td>
   <td>Lucas Gabriel</td>
+ </tr>
+  <tr>
+  <td>CT-04: Verificar se o programa irá funcionar de acordo com a necessidade do usuário</td>
+  <td>
+   <ul>
+    <li>RF-01	A aplicação deve perguntar ao usuário qual será especificamente o uso das peças do computador a serem montadas.	Alta</li>
+    <li>RF-04	A aplicação deve oferecer um orçamento ajustável para o usuário.</li>
+   </ul>
+  </td>
+  <td>Garantir que o usuário consiga escolher o objetivo do computador e também quanto deseja investir no PC. </td>
+  <td>
+   <ol>
+    <li>Acessar o navegador.</li>
+    <li>Informar o endereço do site.</li>
+    <li>Visualizar a página Home.</li>
+    <li>Clicar em "iniciar" ou no Header clicar em "Montar PC"</li>
+    <li>Escolher a finalidade e verificar se está sendo salvo corretamente no Local Storage<</li> 
+    <li>Escolher o nível de orçamento e verificar se está sendo corretamente salvo no Local Storage</li> 
+    <li>Escolher o valor máximo a investir e verificar se está salvo corretamente no Local Storage</li> 
+     <li>Clicar em "Avançar" </li>
+     <li>Verificar se na Página "Escolha de componentes", o campo "Orçamento" está de acordo com o valor máximo escolhido anteriormente</li>
+   </ol>
+   </td>
+  <td>A aplicação deve respeitar as escolhas decididads pelo usuário em todo processo de montagem.</td>
+  <td>Pedro Bezerra</td>
  </tr>
 </table>
