@@ -31,14 +31,16 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo
   [documentos/vids/CT-04.mp4](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/vids/CT-04.mp4)
     
   </li>
+  <li> CT-05: Verificar se o programa irá exibir os componentes escolhidos pelo usuário ao final da montagem.
+
+  Responsável: Pedro Machado. 
   
-  <p>Verificar se o usuário foi cadastrado.</p>
-    
- ![Screen Shot 2022-06-01 at 14 57 22](https://user-images.githubusercontent.com/81182674/171472447-009af414-aaa4-45fb-abb8-e76a23430875.png)
-    
-  <p> Informações armazenadas no LocalStorage após usuário se cadastrar.</p>
-    
-  ![Screen Shot 2022-06-01 at 15 20 21](https://user-images.githubusercontent.com/81182674/171475137-83469b08-7778-4391-a725-ad4b3b3d2a77.png)
+   <p>A aplicação corresponde às escolhas decididads pelo usuário em todo processo de montagem.</p>
   
+  ![[8d33f1db-e0a7-4e41-b956-fde91ac31c63](https://user-images.githubusercontent.com/98122346/174851091-f201d92d-02f9-45c0-8b00-e66358158d8d.jpg)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/Resumo/Resumo1.png)
+  !https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/Resumo/Resumo2.png
+  !https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/Resumo/Resumo3.png
+
+
+
   </li>
-  <hr>
