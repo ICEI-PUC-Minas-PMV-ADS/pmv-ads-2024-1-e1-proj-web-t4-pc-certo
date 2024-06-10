@@ -4,8 +4,13 @@
 }
 
 body {
-    background: radial-gradient(150% 80% at 10% 30%,
-    #41ae4f 1%, #2b7735 25%,#19441f 100%)
+    font-family: roboto;
+    padding: 0px;
+    margin: 0px;
+    background: url("../img/menuInicial.jpg");
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(20px)brightness(0.9);
 }
 
 .wrapper {
