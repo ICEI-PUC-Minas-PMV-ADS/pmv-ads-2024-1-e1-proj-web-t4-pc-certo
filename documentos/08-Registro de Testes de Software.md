@@ -3,12 +3,13 @@
 Os testes funcionais realizados na aplicação web são descritos a seguir.
 
 <ol>
-  <li> CT-01: Verificar o funcionamento dos links da página Home.
+  <li> CT-01: Verificar o funcionamento do orçamento e soma dos valores dos componentes.
 
-  Responsável: Beatriz.
+  Responsável: Lucas Gabriel Ferreira Toti.
+  
+documentos/vids/CT01.mp4
 
-https://user-images.githubusercontent.com/100447878/174854223-c457e6ca-a9ce-48d3-aba9-b9e617132f31.mov
-
+A aplicação realiza corretamente a soma sempre que um componente é adicionado ou removido da seleção, além de fornecer um feedback quando o orçamento é excedido ou está dentro do limite.
   </li>
   <hr>
   
