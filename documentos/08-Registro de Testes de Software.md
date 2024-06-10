@@ -12,21 +12,12 @@ A aplicação realiza corretamente a soma sempre que um componente é adicionado
   </li>
   <hr>
   
-  <li> CT-02: Verificar o funcionamento do filtro de pesquisa.
+  <li> CT-02: Verifique a possibilidade do usuário contribuir com base no login.
 
-  Responsável: Beatriz.
+  Responsável:Luan Bezerra.
     
-  <p>Filtro da página Livros:</p>
-    
-![Captura de Tela 2022-06-21 às 13 50 15](https://user-images.githubusercontent.com/100447878/174855824-6afdd9f8-9d77-4e2d-b20b-bd62977586ea.png)
-
-  <p>Filtro da página Tutorias:</p>
-    
-![Captura de Tela 2022-06-21 às 13 56 27](https://user-images.githubusercontent.com/100447878/174856220-f128f9d7-0e78-46e9-a80c-56545101d0d2.png)
-
-  <p> No caso abaixo, o termo digitado não fazia parte das informações cadastradas dos livros. Assim, não houve retorno de livros registrados.</p>
-    
-![Captura de Tela 2022-06-21 às 13 56 09](https://user-images.githubusercontent.com/100447878/174856402-2a4e38b6-bf79-4ec0-8b3e-26063f99f4e1.png)
+  <p>Verificar se é possível fazer uma nova publicação sem login</p>    
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/img/CT-02%20.png
 
   </li>
   <hr>
