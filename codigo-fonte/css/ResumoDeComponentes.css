@@ -34,7 +34,8 @@ body {
 .placaMae {
     background-color: #2e2e2e;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     border-radius: 20px;
     margin: 0 50px 10px 50px;
 }
@@ -42,7 +43,8 @@ body {
 .ram {
     background-color: #2e2e2e;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     border-radius: 20px;
     margin: 0 50px 10px 50px;
 }
@@ -50,7 +52,8 @@ body {
 .gpu {
     background-color: #2e2e2e;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     border-radius: 20px;
     margin: 0 50px 10px 50px;
 }
@@ -58,7 +61,8 @@ body {
 .armazenamento {
     background-color: #2e2e2e;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     border-radius: 20px;
     margin: 0 50px 10px 50px;
 }
@@ -66,7 +70,8 @@ body {
 .fonte {
     background-color: #2e2e2e;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     border-radius: 20px;
     margin: 0 50px 10px 50px;
 }
@@ -74,7 +79,8 @@ body {
 .gabinete {
     background-color: #2e2e2e;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     border-radius: 20px;
     margin: 0 50px 10px 50px;
 }
@@ -82,7 +88,8 @@ body {
 .cooler {
     background-color: #2e2e2e;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     border-radius: 20px;
     margin: 0 50px 10px 50px;
 }
@@ -90,12 +97,260 @@ body {
 .cpu {
     background-color: #2e2e2e;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     border-radius: 20px;
     margin: 0 50px 10px 50px;
+}
+.cpuTitulo {
+    font-size: 32px;
+    display: flex;
+    margin: 20px 0 20px 40px;
+}
+
+.cpuElementos {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 20px 20px;
+    align-items: center;
+    border-radius: 20px;
     display: flex;
 }
 
+.cpuModelo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 0 20px;
+}
+
+.cpuPreco p {
+    font-size: 26px;
+}
+
+.placaMaeTitulo {
+    font-size: 32px;
+    display: flex;
+    margin: 20px 0 20px 40px;
+}
+
+.placaMaeElementos {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 20px 20px;
+    align-items: center;
+    border-radius: 20px;
+    display: flex;
+}
+
+.placaMaeModelo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 0 20px;
+}
+
+.placaMaePreco {
+    display: flex;
+    align-items: center;
+}
+
+.placaMaePreco p {
+    font-size: 26px;
+}
+
+
+.ramTitulo {
+    font-size: 32px;
+    display: flex;
+    margin: 20px 0 20px 40px;
+}
+
+.ramElementos {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 20px 20px;
+    align-items: center;
+    border-radius: 20px;
+    display: flex;
+}
+
+.ramModelo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 0 20px;
+}
+
+.ramPreco {
+    display: flex;
+    align-items: center;
+}
+
+.ramPreco p {
+    font-size: 26px;
+}
+
+.gpuTitulo {
+    font-size: 32px;
+    display: flex;
+    margin: 20px 0 20px 40px;
+}
+
+.gpuElementos {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 20px 20px;
+    align-items: center;
+    border-radius: 20px;
+    display: flex;
+}
+
+.gpuModelo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 0 20px;
+}
+
+.gpuPreco {
+    display: flex;
+    align-items: center;
+}
+
+.gpuPreco p {
+    font-size: 26px;
+}
+
+.armazenamentoTitulo {
+    font-size: 32px;
+    display: flex;
+    margin: 20px 0 20px 40px;
+}
+
+.armazenamentoElementos {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 20px 20px;
+    align-items: center;
+    border-radius: 20px;
+    display: flex;
+}
+
+.armazenamentoModelo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 0 20px;
+}
+
+.armazenamentoPreco {
+    display: flex;
+    align-items: center;
+}
+
+.armazenamentoPreco p {
+    font-size: 26px;
+}
+
+.fonteTitulo {
+    font-size: 32px;
+    display: flex;
+    margin: 20px 0 20px 40px;
+}
+
+.fonteElementos {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 20px 20px;
+    align-items: center;
+    border-radius: 20px;
+    display: flex;
+}
+
+.fonteModelo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 0 20px;
+}
+
+.fontePreco {
+    display: flex;
+    align-items: center;
+}
+
+.fontePreco p {
+    font-size: 26px;
+}
+
+.gabineteTitulo {
+    font-size: 32px;
+    display: flex;
+    margin: 20px 0 20px 40px;
+}
+
+.gabineteElementos {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 20px 20px;
+    align-items: center;
+    border-radius: 20px;
+    display: flex;
+}
+
+.gabineteModelo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 0 20px;
+}
+
+.gabinetePreco {
+    display: flex;
+    align-items: center;
+}
+
+.gabinetePreco p {
+    font-size: 26px;
+}
+
+.coolerTitulo {
+    font-size: 32px;
+    display: flex;
+    margin: 20px 0 20px 40px;
+}
+
+.coolerElementos {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 20px 20px;
+    align-items: center;
+    border-radius: 20px;
+    display: flex;
+}
+
+.coolerModelo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 0 20px;
+}
+
+.coolerPreco {
+    display: flex;
+    align-items: center;
+}
+
+.coolerPreco p {
+    font-size: 26px;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 .comprarbotao{
     border-radius: 25px;
     border: 0;
@@ -120,18 +375,14 @@ body {
     background-color: #dcdcdc;
     color: #2e2e2e;
     font-size: x-large;
-    margin-right: 15px;
 }
 #alterarbotoes:hover{
     background-color: white;
     transition: 0.3s ease-in-out;
     cursor: pointer;
 }
-.componentes div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 3vh;
-    padding-right: 3vh;
-}
 
+img {
+    width: 100px;
+    height: 100px;
+}

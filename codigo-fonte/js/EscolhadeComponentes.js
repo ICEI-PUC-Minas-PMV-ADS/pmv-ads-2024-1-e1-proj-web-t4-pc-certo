@@ -4,13 +4,13 @@ let componenteAtual = "Processador";
 let componenteSelecionado = JSON.parse(localStorage.getItem('componentesSelecionados')) || {};
 let precoParcial = parseFloat(localStorage.getItem('totalParcial')) || 0;
 let precoTemporario = 0;
-const ordemComponentes = ['Processador', 'Placa-mae', 'RAM', 'GPU', 'Armazenamento', 'PSU', 'Gabinete', 'Refrigeração'];
+const ordemComponentes = ['Processador', 'PlacaMae', 'RAM', 'GPU', 'Armazenamento', 'PSU', 'Gabinete', 'Refrigeração'];
 
 // Atualizar resumo ao mudar de componente
 function atualizarResumo(componenteAtual) {
     const resumos = {
         'Processador': ['Processador', 'O cérebro do computador, responsável por executar tarefas e processar dados.', 'img/pagGuia-CPU.png'],
-        'Placa-mae': ['Placa-Mãe', 'É como o centro de controle do computador, onde todas as outras partes se conectam para trabalharem juntas. Escolher uma boa placa-mãe é importante porque ela determina quais componentes você pode usar e a capacidade de atualizar seu PC no futuro.', 'img/pagGuia-MB.jpg'],
+        'PlacaMae': ['Placa-Mãe', 'É como o centro de controle do computador, onde todas as outras partes se conectam para trabalharem juntas. Escolher uma boa placa-mãe é importante porque ela determina quais componentes você pode usar e a capacidade de atualizar seu PC no futuro.', 'img/pagGuia-MB.jpg'],
         'RAM': ['Memória RAM', 'É como a mesa de trabalho do computador, onde ele coloca as coisas que está usando no momento. Ter bastante RAM é importante para que seu computador possa fazer muitas coisas ao mesmo tempo sem ficar lento.', 'img/pagGuia-MemoriaRAM.png'],
         'GPU': ['Placa de Vídeo (GPU)', 'É como um artista que desenha as imagens e gráficos que você vê na tela. Escolher uma boa placa de vídeo é importante se você planeja jogar jogos, editar vídeos ou fazer qualquer coisa que envolva gráficos detalhados.', 'img/pagGuia-GPU.png'],
         'Armazenamento': ['Armazenamento', 'É como uma biblioteca onde o computador guarda todos os seus programas, documentos, fotos e outros arquivos. Escolher entre um HDD (mais barato e com mais espaço) e um SSD (mais rápido) é importante dependendo se você quer mais velocidade ou mais armazenamento.', 'img/pagGuia-Armazenamento.jpg'],
