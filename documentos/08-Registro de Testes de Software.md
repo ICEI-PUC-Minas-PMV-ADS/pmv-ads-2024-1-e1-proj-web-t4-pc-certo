@@ -22,22 +22,13 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo
   </li>
   <hr>
   
-  <li> CT-03: Verificar detalhes dos livros.
-
-Responsável: Silvia.
-      
-![Captura de Tela 2022-06-21 às 14 00 59 (2)](https://user-images.githubusercontent.com/100447878/174856950-9d27862f-5d4d-407b-95f3-70e9b152dc49.png)
-
-  </li>
-  <hr>
-  
-  <li> CT-04: Verificar o cadastro de usuários.
+  <li> CT-04: Verificar se o programa irá funcionar de acordo com a necessidade do usuário
    
-  Responsável: Pedro. 
+  Responsável: Pedro Bezerra. 
    
-   <p>Usuário preenche os campos "Senha" e "Confirmaçāo de Senha" com valores diferentes.</p>
+   <p>Garantir que o usuário consiga escolher o objetivo do computador e também quanto deseja investir no PC.</p>
       
-  ![Screen Shot 2022-06-01 at 15 14 13](https://user-images.githubusercontent.com/81182674/171474105-64632f30-5457-4366-852d-68145a28b2b3.png)
+  [documentos/vids/CT-04.mp4](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo/blob/main/documentos/vids/CT-04.mp4)
     
   </li>
   
