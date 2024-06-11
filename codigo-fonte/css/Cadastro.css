@@ -217,10 +217,44 @@ button.Cancelar:hover {
 
     .JanelaCadastro {
         padding: 2px;
+        margin: 10px 0 0 0;
     }
 }
 
 @media (max-width: 350px) {
+    .botoes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .JanelaCadastro {
+        padding: 10px 0 10px 0;
+        margin: 10px 0 0 0;
+    }
+
+    .Parte .campo input {
+        width: 100%;
+    }
+
+    .termosuso {
+        margin: 0 20px 0 20px;
+    }
+}
+
+@media (max-width: 831px) {
+    .JanelaCadastro {
+        margin: 10px 0 0 0;
+    }
+
+    .organizar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
     .botoes {
         display: flex;
         flex-direction: column;

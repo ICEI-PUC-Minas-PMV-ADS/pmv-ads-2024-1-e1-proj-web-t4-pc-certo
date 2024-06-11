@@ -425,9 +425,44 @@ body {
     cursor: pointer;
 }
 
-img {
-    width: 100px;
-    height: 100px;
+.cpuModelo img {
+    width: 200px;
+    height: 200px;
+}
+
+.placaMaeModelo img {
+    width: 200px;
+    height: 200px;
+}
+
+.ramModelo img {
+    width: 200px;
+    height: 200px;
+}
+
+.gpuModelo img {
+    width: 200px;
+    height: 200px;
+}
+
+.armazenamentoModelo img {
+    width: 200px;
+    height: 200px;
+}
+
+.fonteModelo img {
+    width: 200px;
+    height: 200px;
+}
+
+.gabineteModelo img {
+    width: 200px;
+    height: 200px;
+}
+
+.coolerModelo img {
+    width: 200px;
+    height: 200px;
 }
 
 @media (max-width: 950px) {
@@ -441,6 +476,11 @@ img {
         flex-direction: column;
         margin: 0;
         gap: 0;
+    }
+
+    .cpuModelo img {
+        width: 200px;
+        height: 200px;
     }
 
     .cpu p {
@@ -461,6 +501,11 @@ img {
         gap: 0;
     }
 
+    .placaMaeModelo img {
+        width: 200px;
+        height: 200px;
+    }
+
     .placaMae p {
         display: flex;
         justify-content: center;
@@ -477,6 +522,11 @@ img {
         flex-direction: column;
         margin: 0;
         gap: 0;
+    }
+
+    .ramModelo img {
+        width: 200px;
+        height: 200px;
     }
 
     .ram p {
@@ -497,6 +547,11 @@ img {
         gap: 0;
     }
 
+    .ramModelo img {
+        width: 200px;
+        height: 200px;
+    }
+
     .gpu p {
         display: flex;
         justify-content: center;
@@ -513,6 +568,11 @@ img {
         flex-direction: column;
         margin: 0;
         gap: 0;
+    }
+
+    .armazenamentoModelo img {
+        width: 200px;
+        height: 200px;
     }
 
     .armazenamento p {
@@ -533,6 +593,11 @@ img {
         gap: 0;
     }
 
+    .fonteModelo img {
+        width: 200px;
+        height: 200px;
+    }
+
     .fonte p {
         display: flex;
         justify-content: center;
@@ -549,6 +614,11 @@ img {
         flex-direction: column;
         margin: 0;
         gap: 0;
+    }
+
+    .gabineteModelo img {
+        width: 200px;
+        height: 200px;
     }
 
     .gabinete p {
@@ -569,6 +639,11 @@ img {
         gap: 0;
     }
 
+    .coolerModelo img {
+        width: 200px;
+        height: 200px;
+    }
+
     .cooler p {
         display: flex;
         justify-content: center;
@@ -587,42 +662,38 @@ img {
         justify-content: center;
     }
 
-    img {
-        width: 200px;
-        height: 200px;
-    }
 }
 
 @media (max-width: 500px) {
     .cpu {
-        margin: 0 10px 10px 10px;
+        margin: 0 5px 10px 5px;
     }
 
     .placaMae {
-        margin: 0 10px 10px 10px;
+        margin: 0 5px 10px 5px;
     }
 
     .ram {
-        margin: 0 10px 10px 10px;
+        margin: 0 5px 10px 5px;
     }
 
     .gpu {
-        margin: 0 10px 10px 10px;
+        margin: 0 5px 10px 5px;
     }
 
     .armazenamento {
-        margin: 0 10px 10px 10px;
+        margin: 0 5px 10px 5px;
     }
 
     .fonte {
-        margin: 0 10px 10px 10px;
+        margin: 0 5px 10px 5px;
     }
 
     .gabinete {
-        margin: 0 10px 10px 10px;
+        margin: 0 5px 10px 5px;
     }
 
     .cooler {
-        margin: 0 10px 10px 10px;
+        margin: 0 5px 10px 5px;
     }
 }
