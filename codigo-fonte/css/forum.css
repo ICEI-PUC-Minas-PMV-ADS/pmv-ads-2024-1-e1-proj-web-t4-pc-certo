@@ -298,6 +298,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     max-height: fit-content;
+    word-break: break-all;
 
     flex-grow: 1;
     flex: 1;
@@ -311,16 +312,13 @@ a:hover {
     flex-grow: 1;
 }
 
-#ultimoPubAut1,
-#ultimoPubAut2,
-#ultimoPubAut3,
-#ultimoPubAut4,
-#ultimoPubAut5 {
+.ultimoPubAut {
     color: #86c49e;
 }
 
-.sideBarPubResp {
+.ultimoPubResp {
     color: #7db486;
+    padding-left: 5px;
 }
 
 .tempoDesdePub {

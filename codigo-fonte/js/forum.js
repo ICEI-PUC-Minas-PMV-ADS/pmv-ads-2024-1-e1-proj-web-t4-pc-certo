@@ -106,7 +106,6 @@ allKeys.forEach(function (key) {
   }
 });
 
-//EXIBIR NAS DIVS ULTIMOS POSTS
 for (var l = 1; l < 6; l++) {
   if (maioresIDs.length >= l) {
     let Publication = document.getElementById("ultimoPub" + l);
@@ -131,8 +130,7 @@ for (var l = 1; l < 6; l++) {
 
           Titulo.textContent = objeto.titulo;
           Autor.textContent = objeto.autor;
-          Respostas.textContent = objeto.nRespostas;
-
+          Respostas.textContent = objeto.nRespostas + " Respostas";
           // DATA FORMATADA
           let dataDoObjeto = new Date(objeto.data);
           let dia = dataDoObjeto.getDate().toString().padStart(2, "0");
@@ -147,6 +145,20 @@ for (var l = 1; l < 6; l++) {
         }
       }
     }
+  }
+}
+
+//EXIBIR NAS DIVS ULTIMOS POSTS
+for (let i = 1; i < 6; i++) {
+  let lastPosts = document.getElementById("ultimoPub" + i);
+  let lastPostsBy = document.getElementById("ultimoPubAut" + i);
+  let noLastPost = document.getElementById("noRecentPosts");
+
+  if (lastPostsBy.textContent == "") {
+    lastPosts.style.display = "none";
+  } else {
+    lastPosts.style.display = "flex";
+    noLastPost.style.display = "none";
   }
 }
 
