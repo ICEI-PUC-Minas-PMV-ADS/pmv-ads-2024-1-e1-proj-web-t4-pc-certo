@@ -63,7 +63,7 @@ body {
     font-family: Roboto;
     background: transparent;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-    padding: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 40px;
     width: 250px;
     height: 40px;
     border: none;
@@ -80,6 +80,7 @@ input::placeholder {
 /* Todos os erros ocultos */
 .erro {
     opacity: 0;
+    text-align: center;
 }
 
 /* Formatação das mensagens de erro */
@@ -181,13 +182,47 @@ button.Cancelar:hover {
     cursor: pointer;
 }
 
+.campoIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons {
+    display: flex;
+    translate: 30px;
+}
+
+.passwordIconF {
+    display: flex;
+    translate: -50px;
+    opacity: 0;
+}
+
+.passwordIcon {
+    display: flex;
+    translate: -40px;
+}
+
+.passwordIcon:hover {
+    cursor: pointer;
+}
+
 /* Responsividade */
 @media (max-width: 600px) {
     .organizar {
         flex-direction: column;
         gap: 20px;
     }
+
     .JanelaCadastro {
         padding: 2px;
+    }
+}
+
+@media (max-width: 350px) {
+    .botoes {
+        display: flex;
+        flex-direction: column;
     }
 }

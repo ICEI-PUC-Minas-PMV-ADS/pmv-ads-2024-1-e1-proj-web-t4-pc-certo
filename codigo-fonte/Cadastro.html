@@ -2,91 +2,115 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/Cadastro.css">
-    <link rel="stylesheet" href="css/HeaderFooter.css">
-    <link rel="icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <title>Cadastre-se - PC Certo</title>
-    <script defer src="js/Cadastro.js"></script>
-    <script defer src="js/HeaderFooter.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/Cadastro.css">
+  <link rel="stylesheet" href="css/HeaderFooter.css">
+  <link rel="icon" href="img/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <title>Cadastre-se - PC Certo</title>
+  <script defer src="js/Cadastro.js"></script>
+  <script defer src="js/HeaderFooter.js"></script>
 </head>
 
 <body>
-    <!-- Cabeçalho -->
-    <header>
-        <a href="Paginainicial.html" id="logosite">
-            <img class="logo" src="img/logo.png" alt="">
-            <img class="loguinho" src="img/favicon.png" alt="">
-        </a>
-        <button class="sidebaricon"><img src="img/sidebar.png" alt="iconesidebar" width="35px" height="30px"></button>
-        <div class="botoescabecalho">
-            <a class="botaocabecalho" href="Forum.html"><span class="txtcabecalho">Fórum</span></a>
-            <a class="botaocabecalho" href="Guiademontagem.html"><span class="txtcabecalho">Guia</span></a>
-            <a class="botaocabecalho" href="Montarpc.html"><span class="txtcabecalho">Montar PC</span></a>
-            <a class="botaocabecalho2" href="Login.html">
-                <img class="ProfileIcon" src="img/ProfileIcon.png" alt="Meu Perfil">
-                <span class="txtcabecalho"> Fazer Login</span>
-            </a>
+  <!-- Cabeçalho -->
+  <header>
+    <a href="Paginainicial.html" id="logosite">
+      <img class="logo" src="img/logo.png" alt="" />
+      <img class="loguinho" src="img/favicon.png" alt="" />
+    </a>
+    <button class="sidebaricon">
+      <img src="img/sidebar.png" alt="iconesidebar" width="35px" height="30px" />
+    </button>
+    <div class="botoescabecalho">
+      <a class="botaocabecalho" href="Forum.html"><span class="txtcabecalho">Fórum</span></a>
+      <a class="botaocabecalho" href="Guiademontagem.html"><span class="txtcabecalho">Guia</span></a>
+      <a class="botaocabecalho" href="Montarpc.html"><span class="txtcabecalho">Montar PC</span></a>
+      <a id="btDeslogado" class="botaocabecalho2" href="Login.html">
+        <img class="ProfileIcon" src="img/ProfileIcon.png" alt="Meu Perfil" />
+        <span class="txtcabecalho"> Fazer Login</span>
+      </a>
+      <a id="btLogado" class="botaocabecalho3" href="ResumoDeComponentes.html">
+        <img class="ProfileIcon" src="img/ProfileIcon.png" alt="Meu Perfil" />
+      </a>
+    </div>
+  </header>
+  <!-- Cadastro -->
+  <div class="Conteudo">
+    <form class="form">
+      <div class="JanelaCadastro">
+        <h1>Cadastre-se</h1>
+        <div class="organizar">
+          <div class="Parte">
+            <div class="campo">
+              <div class="campoIcon">
+                <img class="icons" src="img/profileWhiteIcon.png" alt="mailIcon" width="20px" height="20px">
+                <input type="text" placeholder="Nome de Usuário" class="obrigatorio" maxlength="30"
+                  oninput="validarNome()">
+                <img class="passwordIconF" src="img/eyeIcon.png" alt="eyeIcon" width="20px" height="20px">
+              </div>
+              <div class="nome erro">
+                <p class="erroNomeEmail"> O nome de usuário precisa ter no mínimo 5 caracteres.</p>
+              </div>
+            </div>
+            <div class="campo">
+              <div class="campoIcon">
+                <img class="icons" src="img/mailIcon.png" alt="mailIcon" width="20px" height="20px">
+                <input type="text" placeholder="Email" class="obrigatorio" maxlength="30" oninput="validarEmail()">
+                <img class="passwordIconF" src="img/eyeIcon.png" alt="eyeIcon" width="20px" height="20px">
+              </div>
+              <div class="email erro">
+                <p class="erroNomeEmail"> Não é um Email válido.</p>
+              </div>
+            </div>
+          </div>
+          <div class="Parte">
+            <div class="campo">
+              <div class="campoIcon">
+                <img class="icons" src="img/lockIcon.png" alt="lockIcon" width="15px" height="15px">
+                <input type="password" placeholder="Senha" class="obrigatorio" maxlength="25" oninput="validarSenha()">
+                <img class="passwordIcon" src="img/closedEyeIcon.png" alt="eyeIcon" width="20px" height="20px"
+                  onclick="passwordIcon()">
+              </div>
+              <div class="senha erro">
+                <p class="erroSenhaConfirmacao"> Necessário 8 caracteres, uma letra maiúscula, minúscula e um caractere
+                  especial.</p>
+              </div>
+              <div class="campo">
+                <div class="campoIcon">
+                  <img class="icons" src="img/lockIcon.png" alt="lockIcon" width="15px" height="15px">
+                  <input type="password" placeholder="Confirmar Senha" class="obrigatorio" maxlength="25"
+                    oninput="validarConfirmacao()">
+                  <img class="passwordIconF" src="img/closedEyeIcon.png" alt="eyeIcon" width="20px" height="20px"
+                    onclick="passwordIcon()">
+                </div>
+                <div class="confirmacao erro">
+                  <p class="erroSenhaConfirmacao"> As senhas não são iguais.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </header>
-    <!-- Cadastro -->
-    <div class="Conteudo">
-        <form class="form">
-            <div class="JanelaCadastro">
-                <h1>Cadastre-se</h1>
-                <div class="organizar">
-                    <div class="Parte">
-                        <div class="campo">
-                            <input type="text" placeholder="Nome de Usuário" class="obrigatorio"
-                                oninput="validarNome()">
-                            <div class="nome erro">
-                                <p class="erroNomeEmail"> O nome de usuário precisa ter no mínimo 5 caracteres.</p>
-                            </div>
-                        </div>
-                        <div class="campo">
-                            <input type="text" placeholder="Email" class="obrigatorio" oninput="validarEmail()">
-                            <div class="email erro">
-                                <p class="erroNomeEmail"> Não é um Email válido.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="Parte">
-                        <div class="campo">
-                            <input type="password" placeholder="Senha" class="obrigatorio" oninput="validarSenha()">
-                            <div class="senha erro">
-                                <p class="erroSenhaConfirmacao"> A senha precisa ter no mínimo 8 caracteres.</p>
-                            </div>
-                            <div class="campo">
-                                <input type="password" placeholder="Confirmar Senha" class="obrigatorio"
-                                    oninput="validarConfirmacao()">
-                                <div class="confirmacao erro">
-                                    <p class="erroSenhaConfirmacao"> As senhas não são iguais.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="termosuso">
-                    <label><input type="checkbox" class="checkbox" value="on"> Li e estou de acordo com o <a
-                            href="https://t.co/go5tdUfqCl" target="_blank" </a> Termos de Uso e Política de
-                            Privacidade.</a></input></label>
-                    <div class="termos erro">
-                        <p class="erroTermos"> É necessário aceitar os termos de uso para continuar. </p>
-                    </div>
-                </div>
-                <div class="botoes">
-                    <button class="Cadastrar"> Cadastrar </button>
-        </form>
-        <button type="button" class="Cancelar" onclick="window.location.href='Login.html';"> Cancelar </button>
-    </div>
-    </div>
-    </div>
-    <!-- Rodapé -->
-    <footer class="rodape">
-        <p class="copyright">© 2024, PC Certo | Todos os direitos reservados.</p>
-    </footer>
+        <div class="termosuso">
+          <label><input type="checkbox" class="checkbox" value="on"> Li e estou de acordo com o <a
+              href="https://t.co/go5tdUfqCl" target="_blank" </a> Termos de Uso e Política de
+              Privacidade.</a></input></label>
+          <div class="termos erro">
+            <p class="erroTermos"> É necessário aceitar os termos de uso para continuar. </p>
+          </div>
+        </div>
+        <div class="botoes">
+          <button class="Cadastrar"> Cadastrar </button>
+    </form>
+    <button type="button" class="Cancelar" onclick="window.location.href='Login.html';"> Cancelar </button>
+  </div>
+  </div>
+  </div>
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <p class="copyright">© 2024, PC Certo | Todos os direitos reservados.</p>
+  </footer>
 </body>
 
 </html>

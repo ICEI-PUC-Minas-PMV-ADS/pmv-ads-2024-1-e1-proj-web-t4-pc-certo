@@ -9,9 +9,11 @@ body {
 }
 
 .Conteudo {
+    display: flex;
+    flex-direction: column;
     min-height: 85vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -102,6 +104,7 @@ body {
     border-radius: 20px;
     margin: 0 50px 10px 50px;
 }
+
 .cpuTitulo {
     font-size: 32px;
     display: flex;
@@ -351,32 +354,72 @@ body {
     align-items: center;
     gap: 20px;
 }
-.comprarbotao{
+
+.comprarbotao {
     border-radius: 25px;
     border: 0;
-    height: 7vh;
-    width: 12vh;
+    padding: 15px;
     background-color: #41ae4f;
     color: aliceblue;
     font-size: x-large;
 
 }
-.comprarbotao:hover{
+
+.comprarbotao:hover {
     background-color: #31833c;
     transition: 0.3s ease-in-out;
     cursor: pointer;
 
 }
-#alterarbotoes{
+
+.orcamentoTotal {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 100px;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 10px;
+    border-radius: 20px;
+    width: 350px;
+    color: white;
+
+
+    .orcamento {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 8px 16px 8px 16px;
+        border-radius: 20px 20px 0 0;
+        background-color: #41ae4f;
+        justify-content: space-between;
+    }
+
+    .totalparcial {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 8px 16px 8px 16px;
+        border-radius: 0 0 20px 20px;
+        background-color: #2e2e2e;
+        justify-content: space-between;
+
+    }
+}
+
+.centralizarOrcamento {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 50px 20px 43px;
+}
+
+#alterarbotoes {
     border-radius: 25px;
     border: 0;
-    height: 7vh;
-    width: 12vh;
+    padding: 15px;
     background-color: #dcdcdc;
     color: #2e2e2e;
     font-size: x-large;
 }
-#alterarbotoes:hover{
+
+#alterarbotoes:hover {
     background-color: white;
     transition: 0.3s ease-in-out;
     cursor: pointer;
@@ -385,4 +428,201 @@ body {
 img {
     width: 100px;
     height: 100px;
+}
+
+@media (max-width: 950px) {
+    .cpuElementos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cpuModelo {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+    }
+
+    .cpu p {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0 20px 0;
+    }
+
+    .placaMaeElementos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .placaMaeModelo {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+    }
+
+    .placaMae p {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0 20px 0;
+    }
+
+    .ramElementos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ramModelo {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+    }
+
+    .ram p {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0 20px 0;
+    }
+
+    .gpuElementos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gpuModelo {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+    }
+
+    .gpu p {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0 20px 0;
+    }
+
+    .armazenamentoElementos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .armazenamentoModelo {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+    }
+
+    .armazenamento p {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0 20px 0;
+    }
+
+    .fonteElementos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fonteModelo {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+    }
+
+    .fonte p {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0 20px 0;
+    }
+
+    .gabineteElementos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gabineteModelo {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+    }
+
+    .gabinete p {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0 20px 0;
+    }
+
+    .coolerElementos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .coolerModelo {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+    }
+
+    .cooler p {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0 20px 0;
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: -10px 0 0 0;
+    }
+
+    .centralizarOrcamento {
+        display: flex;
+        justify-content: center;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 500px) {
+    .cpu {
+        margin: 0 10px 10px 10px;
+    }
+
+    .placaMae {
+        margin: 0 10px 10px 10px;
+    }
+
+    .ram {
+        margin: 0 10px 10px 10px;
+    }
+
+    .gpu {
+        margin: 0 10px 10px 10px;
+    }
+
+    .armazenamento {
+        margin: 0 10px 10px 10px;
+    }
+
+    .fonte {
+        margin: 0 10px 10px 10px;
+    }
+
+    .gabinete {
+        margin: 0 10px 10px 10px;
+    }
+
+    .cooler {
+        margin: 0 10px 10px 10px;
+    }
 }
