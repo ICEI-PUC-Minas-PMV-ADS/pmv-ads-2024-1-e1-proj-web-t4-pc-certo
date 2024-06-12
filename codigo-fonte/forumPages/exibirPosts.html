@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
     />
+    <link rel="stylesheet" href="forumNovoPost.css" />
     <link rel="stylesheet" href="exibirPosts.css" />
     <link rel="stylesheet" href="../css/HeaderFooter.css" />
     <link rel="icon" href="../img/favicon.png" type="image/x-icon" />
@@ -71,9 +72,74 @@
     </header>
     <br />
 
+    <div class="contTop">
+      <div class="Search">
+        <input
+          name="caixapesq"
+          type="text"
+          class="SearchBar"
+          placeholder="O que você procura?"
+          required
+        />
+        <button class="SearchBtn" id="srch0">
+          <img
+            src="../img/forum/searchIcon_DM.png"
+            class="SearchIcon"
+            alt="Icone de Pesquisa"
+          />
+        </button>
+        <button class="SearchBtn" id="srch1">
+          <img
+            src="../img/forum/searchIcon_DM.png"
+            class="SearchIcon"
+            alt="Icone de Pesquisa"
+          />
+        </button>
+      </div>
+      <button class="filterBtn">
+        <img src="../img/forum/filtroIcon_DM.png" class="iconSmll" alt="" />
+      </button>
+
+      <span class="flexGrow1">&nbsp</span>
+      <div id="iconesForum">
+        <a href="forumNovoPost.html">
+          <img src="../img/forum/mais_DM.png" class="iconSmll" alt="" />
+        </a>
+        <img
+          src="../img/forum/sinos/sinoMais_DM.png"
+          class="iconSmll"
+          alt=""
+          id="sinoNot"
+        />
+        <img
+          src="../img/forum/profileIconSmll_DM.png"
+          class="iconSmll"
+          alt=""
+        />
+      </div>
+    </div>
+    <br />
+
+    <div class="Breadcrumb">
+      <span id="indBC">&#9679;</span>
+      <a class="bcBt" href="../Paginainicial.html"> Página Inicial</a>
+      &#10140;
+      <a class="bcBt" href="../Forum.html">Fórum da Comunidade</a>
+      &#10140;
+      <span class="bcBt"><span id="bcTema"></span>
+    </div>
+    <br />
+
     <main>
-      <div id="exibicaoPosts"></div>
+      <div id="naoTemPosts">
+        Ops, parece que não tem nenhuma publicação aqui por enquanto...
+        <br><br><a class="volteForum" href="../Forum.html">&#10140; Volte ao Fórum</a>
+      </div>
+      <div id="exibicaoPosts">
+        <div>Publicações em:<span id="postsIn"></span></div>
+      </div>
     </main>
+    <br />
     <!-- FOOTER -->
 
     <footer class="rodape">

@@ -1,6 +1,11 @@
 var url = window.location.href;
 var partesDoUrl = url.split("_");
 var temaHTML = partesDoUrl[1];
+var temPosts = document.getElementById("exibicaoPosts");
+var naoTemPosts = document.getElementById("naoTemPosts");
+var bcTema = document.getElementById("bcTema");
+
+var isTherePosts = 0;
 
 for (var i = 0; i < localStorage.length; i++) {
   var chave = localStorage.key(i);
@@ -11,9 +16,63 @@ for (var i = 0; i < localStorage.length; i++) {
 
     if (objeto.hasOwnProperty("tema") && objeto.tema === temaHTML) {
       CriaPostDiv(objeto);
+      isTherePosts = 1;
     }
   }
 }
+
+naoTemPosts.style.display = "none";
+
+if (isTherePosts == 0) {
+  temPosts.style.display = "none";
+  naoTemPosts.style.display = "inline-block";
+}
+
+var postsIn = document.getElementById("postsIn");
+var temaLegi = "";
+
+if (temaHTML == "Regras") {
+  temaLegi = " Regras do Fórum";
+}
+
+if (temaHTML == "ERROS") {
+  temaLegi = " Erros e Soluções de Problemas";
+}
+
+if (temaHTML == "UPGRADE") {
+  temaLegi = " Upgrade e Troca de Peças";
+}
+
+if (temaHTML == "MOUSETECLADO") {
+  temaLegi = " Mouse, Teclado e Mousepads";
+}
+
+if (temaHTML == "SUGESTOESMONTAGEM") {
+  temaLegi = " Sugestões de Montagem";
+}
+
+if (temaHTML == "COMPRASONLINE") {
+  temaLegi = " Sugestões de Compras Online";
+}
+
+if (temaHTML == "MONITORES") {
+  temaLegi = " Monitores";
+}
+
+if (temaHTML == "AUDIO") {
+  temaLegi = " Headsets, Microfones e Áudio";
+}
+
+if (temaHTML == "OUTROS") {
+  temaLegi = " Outros Periféricos E Dispositivos";
+}
+
+if (temaHTML == "DICAS") {
+  temaLegi = " Dicas de Programas de Monitoração";
+}
+
+postsIn.textContent = temaLegi;
+bcTema.textContent = temaLegi;
 
 // CRIA DIVS:
 
