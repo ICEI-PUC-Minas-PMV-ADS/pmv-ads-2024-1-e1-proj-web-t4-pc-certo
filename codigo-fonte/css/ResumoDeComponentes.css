@@ -465,6 +465,11 @@ body {
     height: 200px;
 }
 
+.avisoResumo {
+    display: none;
+    margin: 0 0 0 300px;
+}
+
 @media (max-width: 950px) {
     .cpuElementos {
         display: flex;

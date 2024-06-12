@@ -1,4 +1,18 @@
+var componentesBoolean = false;
 const componentes = JSON.parse(localStorage.getItem("componentesSelecionados"));
+const aviso = document.querySelector(".avisoResumo");
+
+do {
+  if (componentes.Processador == null) {
+    aviso.style.display = "flex";
+  } else {
+    aviso.style.display = "none";
+    componentesBoolean = true;
+  }
+} while ((componentesBoolean = false));
+
+console.log(componentesBoolean);
+
 var orcamentoTotal = localStorage.getItem("orcamentoTotal");
 var orcTotal = document.getElementById("orcTotal");
 var totalParcial = parseFloat(localStorage.getItem("totalParcial"));
