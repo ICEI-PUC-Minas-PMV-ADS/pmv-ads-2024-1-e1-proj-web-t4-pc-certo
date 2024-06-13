@@ -7,7 +7,9 @@ let precoTemporario = 0;
 const ordemComponentes = ['Processador', 'PlacaMae', 'RAM', 'GPU', 'Armazenamento', 'PSU', 'Gabinete', 'Refrigeração'];
 
 // Atualizar resumo ao mudar de componente
+// 
 function atualizarResumo(componenteAtual) {
+    // Titulo de resumo e desc do resumo de componentes
     const resumos = {
         'Processador': ['Processador', 'O cérebro do computador, responsável por executar tarefas e processar dados.', 'img/pagGuia-CPU.png'],
         'PlacaMae': ['Placa-Mãe', 'É como o centro de controle do computador, onde todas as outras partes se conectam para trabalharem juntas. Escolher uma boa placa-mãe é importante porque ela determina quais componentes você pode usar e a capacidade de atualizar seu PC no futuro.', 'img/pagGuia-MB.jpg'],
@@ -18,7 +20,7 @@ function atualizarResumo(componenteAtual) {
         'Gabinete': ['Gabinete', 'É a caixa que segura e protege todas as peças do computador, mantendo tudo organizado e seguro. Escolher um bom gabinete é importante para garantir que todas as peças cabem bem, que haja boa ventilação e que seja fácil de montar e manter.', 'img/pagGuia-Gabinete.jpg'],
         'Refrigeração': ['Cooler de CPU', 'É como um ventilador que mantém o cérebro do computador fresco para ele não esquentar demais. Escolher um bom cooler é importante para manter seu processador funcionando bem e evitar danos por superaquecimento.', 'img/pagGuia-Cooler.png']
     };
-
+    // Mudando o resumo de acordo com o ComponenteAtual
     const [titulo, descricao, imagem] = resumos[componenteAtual] || [];
     if (titulo && descricao && imagem) {
         document.getElementById('resumoTit').innerText = titulo;
@@ -26,7 +28,8 @@ function atualizarResumo(componenteAtual) {
         document.getElementById('resumoImg').src = imagem
     }
 }
-
+// Calculo de atualização do Orçamento - Feedback ao exceder e outro ao passar 10% do valor total
+// 
 function atualizarOrcamentoCard() {
     let orcamentoTotalString = localStorage.getItem('orcamentoTotal');
     // Remove "R$" e "," para converter em número
@@ -46,19 +49,19 @@ function atualizarOrcamentoCard() {
     }
 
 }
-
+// Funcao para atualizar Total Parcial 
 function atualizarTotalParcial() {
     const TotalParcial = document.getElementById('parcialTotal');
     TotalParcial.innerHTML = `R$${precoParcial.toFixed(2).replace('.', ',')}`;
     atualizarOrcamentoCard()
 }
 
-// Função para salvar componentes selecionados no localStorage
+// Salvar componentes selecionados no localStorage
 function salvarComponentesSelecionados() {
     localStorage.setItem('componentesSelecionados', JSON.stringify(componenteSelecionado));
 }
 
-// Remover componente selecionado ao voltar
+// Remover componente e preco dele ao voltar a peca anterior
 function removerComponenteSelecionado(tipo) {
     if (componenteSelecionado[tipo]) {
         precoParcial -= componenteSelecionado[tipo].preco;
@@ -69,7 +72,7 @@ function removerComponenteSelecionado(tipo) {
     }
 }
 
-// Evento do botão "Avançar"
+// Funcao do btn Avancar
 document.getElementById('avancar').addEventListener('click', () => {
     if (!componenteSelecionado[componenteAtual]) {
         alert("Por favor, selecione uma opção antes de avançar.");
@@ -81,7 +84,7 @@ document.getElementById('avancar').addEventListener('click', () => {
     salvarComponentesSelecionados();
     atualizarTotalParcial();
 
-    precoTemporario = 0; // Reset precoTemporario after advancing
+    precoTemporario = 0
 
     const indexAtual = ordemComponentes.indexOf(componenteAtual);
     if (indexAtual < ordemComponentes.length - 1) {
@@ -93,7 +96,7 @@ document.getElementById('avancar').addEventListener('click', () => {
     }
 });
 
-// Evento do botão "Voltar"
+// Funcao do btn Voltar
 document.getElementById('voltar').addEventListener('click', () => {
     const indexAtual = ordemComponentes.indexOf(componenteAtual);
     if (indexAtual > 0) {
@@ -102,10 +105,10 @@ document.getElementById('voltar').addEventListener('click', () => {
         carregarComponentes(componenteAtual);
         atualizarResumo(componenteAtual);
         atualizarTotalParcial();
-
     }
 
 });
+// Ao estar em processador remove localstorage para recomecar montagem
 if (componenteAtual === 'Processador') {
     localStorage.removeItem('componentesSelecionados');
     localStorage.removeItem('totalParcial');
@@ -114,32 +117,38 @@ if (componenteAtual === 'Processador') {
     precoTemporario = 0;
     atualizarTotalParcial();
 }
+
+// Carregar dados JSON
 async function carregarDataComponentes() {
     const resposta = await fetch('/codigo-fonte/js/JSON/Componentes.json');
     componentes = await resposta.json();
     carregarComponentes(componenteAtual);
 }
 
+// Transformar JSON em cards HTML
 function carregarComponentes(tipo) {
+
+    // log para teste -- descartavel
     console.log(`Carregando componentes para tipo: ${tipo}`);
+
     const container = document.querySelector('#containerComp');
     container.innerHTML = '';
 
+    // Cada elemento de um "tipo":
     componentes[tipo].forEach((componente) => {
 
         const opcao = document.createElement('div');
         opcao.classList.add('opcaoComponente');
 
+        // Formatar float p/ brl
         const formatarValor = (preco) => {
             return preco.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
         };
 
-        const precoFormatado = formatarValor(componente.preco);
-
         opcao.innerHTML = `
             <div class="nomePreco">
                 <h2 class="nome">${componente.modelo}</h2>
-                <h2 class="preco">R$${precoFormatado}</h2>
+                <h2 class="preco">R$${formatarValor(componente.preco)}</h2>
             </div>
             <div class="imgComponente"><img class="imagemComponente" src="${componente.imagem}">
             </div>
@@ -152,20 +161,26 @@ function carregarComponentes(tipo) {
             </div>
         `;
 
-        // Adicionar o evento de clique para selecionar o componente
+        // Ao clicar no "+" do card do componente:
         opcao.querySelector('.addComponente').addEventListener('click', () => {
+            // remove a classe "opcaoSelecionada" de todos elem
             document.querySelectorAll('.opcaoComponente').forEach(opc => { opc.classList.remove('opcaoSelecionada'); });
+
+            // add "opcaoSelecionada" ao elem clicado
             opcao.classList.add('opcaoSelecionada');
             componenteSelecionado[tipo] = componente;
             precoTemporario = parseFloat(componente.preco);
             const TotalParcial = document.getElementById('parcialTotal');
             TotalParcial.innerHTML = `R$${(precoParcial + precoTemporario).toFixed(2).replace('.', ',')}`;
+
+            // Salva o componente no local storage
             salvarComponentesSelecionados();
 
         });
-
+        // Atribui os cards como filhos do container
         container.appendChild(opcao);
 
+        // Funcao para definir cor dependendo do desempenho
         function lvlDesempenho() {
             const alerta = opcao.querySelector(".alertaDesempenho");
             if (componente.desempenho === "Alto Desempenho") {
@@ -180,6 +195,7 @@ function carregarComponentes(tipo) {
         }
         lvlDesempenho();
 
+        // Puxar orcamento do LocalStorage
         function orcTotal() {
             let orcTot = localStorage.getItem('orcamentoTotal');
             document.getElementById('orcTotal').textContent = orcTot;
