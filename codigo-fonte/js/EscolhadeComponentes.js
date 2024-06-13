@@ -11,7 +11,7 @@ const ordemComponentes = ['Processador', 'PlacaMae', 'RAM', 'GPU', 'Armazenament
 function atualizarResumo(componenteAtual) {
     // Titulo de resumo e desc do resumo de componentes
     const resumos = {
-        'Processador': ['Processador', 'O cérebro do computador, responsável por executar tarefas e processar dados.', 'img/pagGuia-CPU.png'],
+        'Processador': ['Processador', 'É como o cérebro do computador, que pensa e realiza todas as tarefas. Escolher um processador rápido e eficiente é importante para garantir que seu computador possa realizar muitas tarefas de forma rápida e suave.', 'img/pagGuia-CPU.png'],
         'PlacaMae': ['Placa-Mãe', 'É como o centro de controle do computador, onde todas as outras partes se conectam para trabalharem juntas. Escolher uma boa placa-mãe é importante porque ela determina quais componentes você pode usar e a capacidade de atualizar seu PC no futuro.', 'img/pagGuia-MB.jpg'],
         'RAM': ['Memória RAM', 'É como a mesa de trabalho do computador, onde ele coloca as coisas que está usando no momento. Ter bastante RAM é importante para que seu computador possa fazer muitas coisas ao mesmo tempo sem ficar lento.', 'img/pagGuia-MemoriaRAM.png'],
         'GPU': ['Placa de Vídeo (GPU)', 'É como um artista que desenha as imagens e gráficos que você vê na tela. Escolher uma boa placa de vídeo é importante se você planeja jogar jogos, editar vídeos ou fazer qualquer coisa que envolva gráficos detalhados.', 'img/pagGuia-GPU.png'],

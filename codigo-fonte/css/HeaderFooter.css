@@ -1,3 +1,18 @@
+/* FORMATACAO SCROLLBAR */
+::-webkit-scrollbar-track {
+    background: #2e2e2e;
+}
+::-webkit-scrollbar-thumb {
+    background: #41ae4f;
+    border-radius: 6px;
+}
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #41ae4f #2e2e2e;
+}
+
+
+
 /* RESPONSIVIDADE */
 
 @media (max-width: 950px) {
