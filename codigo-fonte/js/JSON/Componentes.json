@@ -153,7 +153,7 @@
       "info": "https://www.gigabyte.com/br/Motherboard/Z790-AORUS-ELITE-rev-11/sp#sp",
       "imagem": "img/json/PlacaMae/tufZ790.png",
       "socket": "LGA1700",
-      "RAM": "DDR5",
+      "ram": "DDR5",
       "format": "ATX"
     },
     {
@@ -164,7 +164,7 @@
       "info": "https://www.asus.com/br/motherboards-components/motherboards/tuf-gaming/tuf-gaming-x670e-plus/",
       "imagem": "img/json/PlacaMae/x670e-plus.png",
       "socket": "AM5",
-      "RAM": "DDR5",
+      "ram": "DDR5",
       "format": "ATX"
     },
     {
@@ -175,7 +175,7 @@
       "info": "https://www.asus.com/br/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b650m-plus/",
       "imagem": "img/json/PlacaMae/b650m.png",
       "socket": "AM5",
-      "RAM": "DDR5",
+      "ram": "DDR5",
       "format": "mATX"
     },
     {
@@ -186,7 +186,7 @@
       "info": "https://www.asus.com/br/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b550m-plus/",
       "imagem": "img/json/PlacaMae/b550m.png",
       "socket": "AM4",
-      "RAM": "DDR4",
+      "ram": "DDR4",
       "format": "microATX"
     },
     {
@@ -197,7 +197,7 @@
       "info": "https://pg.asrock.com/mb/Intel/B660M%20Phantom%20Gaming%204/index.br.asp",
       "imagem": "img/json/PlacaMae/b660m.png",
       "socket": "LGA1700",
-      "RAM": "DDR4",
+      "ram": "DDR4",
       "format": "mATX"
     },
     {
@@ -208,7 +208,7 @@
       "info": "https://www.gigabyte.com/br/Motherboard/H610M-H-DDR4-rev-10#kf",
       "imagem": "img/json/PlacaMae/h610m.png",
       "socket": "LGA1700",
-      "RAM": "DDR4",
+      "ram": "DDR4",
       "format": "mATX"
     },
     {
@@ -219,7 +219,7 @@
       "info": "https://br.msi.com/Motherboard/A520M-A-PRO/Overview",
       "imagem": "img/json/PlacaMae/a520m.png",
       "socket": "AM4",
-      "RAM": "DDR4",
+      "ram": "DDR4",
       "format": "mATX"
     },
     {
@@ -230,7 +230,7 @@
       "info": "https://www.gigabyte.com/br/Motherboard/H510M-H-rev-10-11-15#kf",
       "imagem": "img/json/PlacaMae/h510m.png",
       "socket": "LGA1200",
-      "RAM": "DDR4",
+      "ram": "DDR4",
       "format": "mATX"
     },
     {
@@ -241,7 +241,7 @@
       "info": "https://www.msi.com/Motherboard/B560M-PRO-E",
       "imagem": "img/json/PlacaMae/b560m.png",
       "socket": "LGA1200",
-      "RAM": "DDR4",
+      "ram": "DDR4",
       "format": "mATX"
     }
   ],
@@ -334,7 +334,7 @@
       "desempenho": "Custo-Benefício",
       "info": "",
       "imagem": "",
-      "sugPSU": "750W"
+      "sugPSU": "integrado"
     },
     {
       "marca": "AMD",
@@ -343,7 +343,7 @@
       "desempenho": "Alto Desempenho",
       "info": "https://www.amd.com/en/products/graphics/amd-radeon-rx-6800-xt",
       "imagem": "img/json/GPU/rx6800xt.png",
-      "sugPSU": "750W"
+      "sugPSU": 750
     },
     {
       "marca": "AMD",
@@ -352,7 +352,7 @@
       "desempenho": "Alto Desempenho",
       "info": "https://www.amd.com/en/products/graphics/amd-radeon-rx-6700-xt",
       "imagem": "img/json/GPU/rx6700xt.png",
-      "sugPSU": "650W"
+      "sugPSU": 650
     },
     {
       "marca": "NVIDIA",
@@ -361,7 +361,7 @@
       "desempenho": "Custo-Benefício",
       "info": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3060-ti/",
       "imagem": "img/json/GPU/rtx3060.png",
-      "sugPSU": "550W"
+      "sugPSU": 550
     },
     {
       "marca": "NVIDIA",
@@ -370,7 +370,7 @@
       "preco": 2549.99,
       "info": "https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4060-ti/",
       "imagem": "img/json/GPU/rtx4060ti.png",
-      "sugPSU": "650W"
+      "sugPSU": 650
     },
     {
       "marca": "AMD",
@@ -379,7 +379,7 @@
       "desempenho": "Baixa Performance",
       "info": "https://www.amd.com/en/products/graphics/radeon-rx-550",
       "imagem": "img/json/GPU/rx550.png",
-      "sugPSU": "350W"
+      "sugPSU": 350
     },
     {
       "marca": "NVIDIA",
@@ -388,7 +388,7 @@
       "desempenho": "Baixa Performance",
       "info": "https://www.nvidia.com/en-us/geforce/graphics-cards/10-series/gt-1030/",
       "imagem": "img/json/GPU/gt1030.png",
-      "sugPSU": "300W"
+      "sugPSU": 300
     },
     {
       "marca": "NVIDIA",
@@ -397,7 +397,7 @@
       "desempenho": "Custo-Benefício",
       "info": "https://www.nvidia.com/en-us/geforce/graphics-cards/10-series/gtx-1050/",
       "imagem": "img/json/GPU/gtx1050ti.png",
-      "sugPSU": "300W"
+      "sugPSU": 300
     }
   ],
   "Armazenamento": [
@@ -455,7 +455,7 @@
       "desempenho": "Alto Desempenho",
       "info": "https://www.xpg.com/pt/xpg/641",
       "imagem": "img/json/PSU/corereactor650.png",
-      "potencia": "650W",
+      "potencia": 650,
       "eficiencia": "80 Plus Gold"
     },
     {
@@ -465,7 +465,7 @@
       "desempenho": "Custo-Benefício",
       "info": "https://www.corsair.com/us/en/p/psu/cp-9020121-na/cx-series-cx550-550-watt-80-plus-bronze-certified-atx-psu-cp-9020121-na",
       "imagem": "img/json/PSU/cx550.png",
-      "potencia": "550W",
+      "potencia": 550,
       "eficiencia": "80 Plus Bronze"
     },
     {
@@ -475,7 +475,7 @@
       "desempenho": "Custo-Benefício",
       "info": "https://pichaugaming.com.br/p/fonte-pichau-gaming-nidus-500w/",
       "imagem": "img/json/PSU/nidus500w.png",
-      "potencia": "500W",
+      "potencia": 500,
       "eficiencia": "80 Plus Bronze"
     },
     {
@@ -485,7 +485,7 @@
       "desempenho": "Custo-Benefício",
       "info": "https://www.evga.com/products/product.aspx?pn=100-BV-0500-K1",
       "imagem": "img/json/PSU/evga500bw.png",
-      "potencia": "500W",
+      "potencia": 500,
       "eficiencia": "80 Plus Bronze"
     },
     {
@@ -495,7 +495,7 @@
       "desempenho": "Baixa Performance",
       "info": "https://www.redragon.com.br/rgps400w",
       "imagem": "img/json/PSU/redragon400.png",
-      "potencia": "400W",
+      "potencia": 400,
       "eficiencia": "80 Plus White"
     }
   ],

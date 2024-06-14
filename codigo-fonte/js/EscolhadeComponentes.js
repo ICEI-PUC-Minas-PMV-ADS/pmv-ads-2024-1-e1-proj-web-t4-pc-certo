@@ -134,9 +134,9 @@ function carregarComponentes(tipo) {
     const container = document.querySelector('#containerComp');
     container.innerHTML = '';
 
-    // Cada elemento de um "tipo":
-    componentes[tipo].forEach((componente) => {
+    // Cada elemento de um "tipo":=
 
+    function criaDiv(componente) {
         const opcao = document.createElement('div');
         opcao.classList.add('opcaoComponente');
 
@@ -146,20 +146,20 @@ function carregarComponentes(tipo) {
         };
 
         opcao.innerHTML = `
-            <div class="nomePreco">
-                <h2 class="nome">${componente.modelo}</h2>
-                <h2 class="preco">R$${formatarValor(componente.preco)}</h2>
-            </div>
-            <div class="imgComponente"><img class="imagemComponente" src="${componente.imagem}">
-            </div>
-            <div class="alertas">
-                <div class="alertaDesempenho" style="background-color: rgb(255, 214, 0);">${componente.desempenho}</div>
-                <button class="maisInfo">
-                    <a href="${componente.info}" target="_blank" class="maisInfoLink">Mais Info</a>
-                </button>
-                <button class="addComponente">+</button>
-            </div>
-        `;
+    <div class="nomePreco">
+        <h2 class="nome">${componente.modelo}</h2>
+        <h2 class="preco">R$${formatarValor(componente.preco)}</h2>
+    </div>
+    <div class="imgComponente"><img class="imagemComponente" src="${componente.imagem}">
+    </div>
+    <div class="alertas">
+        <div class="alertaDesempenho" style="background-color: rgb(255, 214, 0);">${componente.desempenho}</div>
+        <button class="maisInfo">
+            <a href="${componente.info}" target="_blank" class="maisInfoLink">Mais Info</a>
+        </button>
+        <button class="addComponente">+</button>
+    </div>
+`;
 
         // Ao clicar no "+" do card do componente:
         opcao.querySelector('.addComponente').addEventListener('click', () => {
@@ -201,9 +201,76 @@ function carregarComponentes(tipo) {
             document.getElementById('orcTotal').textContent = orcTot;
         }
         orcTotal();
+    }
+    const compEscolhidos = JSON.parse(localStorage.getItem("componentesSelecionados"))
+    switch (tipo) {
+        case "Processador":
+            componentes[tipo].forEach((componente) => {
+                criaDiv(componente)
+            });
+            break;
 
-    });
+        case "PlacaMae":
+            let socket = compEscolhidos.Processador.socket
+            const mbCompativel = componentes.PlacaMae.filter(mb => mb.socket == socket)
+
+            mbCompativel.forEach((mb) => {
+                criaDiv(mb)
+            });
+            break;
+
+        case "RAM":
+            let tipoRam = compEscolhidos.PlacaMae.ram
+            const ramCompativel = componentes.RAM.filter(ddr => ddr.tipo == tipoRam)
+            ramCompativel.forEach((ddr) => {
+                criaDiv(ddr)
+            });
+            break;
+
+        case "GPU":
+            let vdIntegrado = compEscolhidos.Processador.videoIntegrado
+            if (vdIntegrado == "não") {
+                const gpuCompativel = componentes.GPU.filter(precisa => precisa.sugPSU != "integrado")
+                gpuCompativel.forEach((precisa) => {
+                    criaDiv(precisa)
+                });
+            }
+            else {
+                const gpuCompativel = componentes.GPU.filter(precisa => precisa.sugPSU)
+                gpuCompativel.forEach((precisa) => {
+                    criaDiv(precisa)
+                });
+            }
+            break;
+
+        case "Armazenamento":
+            componentes[tipo].forEach((componente) => {
+                criaDiv(componente)
+            });
+            break;
+
+        case "PSU":
+            let gpuPower = compEscolhidos.GPU.sugPSU
+            const psuCompativel = componentes.PSU.filter(pot => pot.potencia >= gpuPower)
+            psuCompativel.forEach((pot) => {
+                criaDiv(pot)
+            });
+            break;
+
+        case "Gabinete":
+            componentes[tipo].forEach((componente) => {
+                criaDiv(componente)
+            });
+            break;
+
+        case "Refrigeração":
+            componentes[tipo].forEach((componente) => {
+                criaDiv(componente)
+            });
+            break;
+    }
 }
+
 
 carregarDataComponentes();
 atualizarTotalParcial();
