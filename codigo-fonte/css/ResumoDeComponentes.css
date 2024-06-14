@@ -30,7 +30,12 @@ body {
     height: fit-content;
     width: 90%;
     border-radius: 20px;
-    margin: 20px 0 0 0;
+    margin: 20px 0 20px 0;
+}
+
+.janelaTitulo {
+    display: flex;
+    justify-content: center;
 }
 
 .placaMae {
@@ -355,7 +360,18 @@ body {
     gap: 20px;
 }
 
-.comprarbotao {
+.botaoResumoAvisoDIV {
+    display: none;
+    justify-content: center
+}
+
+.botaoResumoAviso {
+    margin: 0 5px 0 5px;
+}
+
+.comprarbotao,
+.botaoAviso,
+.botaoResumoAviso {
     border-radius: 25px;
     border: 0;
     padding: 15px;
@@ -365,7 +381,10 @@ body {
 
 }
 
-.comprarbotao:hover {
+.comprarbotao:hover,
+.botaoAviso:hover,
+.botaoResumoAviso:hover,
+.botaoRefazer:hover {
     background-color: #31833c;
     transition: 0.3s ease-in-out;
     cursor: pointer;
@@ -374,40 +393,63 @@ body {
 
 .orcamentoTotal {
     display: flex;
-    flex-direction: column;
-    margin: 0 0 0 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
     font-weight: bold;
     font-size: 24px;
     margin: 10px;
-    border-radius: 20px;
     width: 350px;
     color: white;
+}
 
 
-    .orcamento {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 8px 16px 8px 16px;
-        border-radius: 20px 20px 0 0;
-        background-color: #41ae4f;
-        justify-content: space-between;
-    }
+.orcamento {
+    display: flex;
+    padding: 8px 16px 8px 16px;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    gap: 20px;
+}
 
-    .totalparcial {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 8px 16px 8px 16px;
-        border-radius: 0 0 20px 20px;
-        background-color: #2e2e2e;
-        justify-content: space-between;
+.totalparcial {
+    display: flex;
+    padding: 8px 16px 8px 16px;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    gap: 20px;
 
-    }
+}
+
+.centralizando {
+    display: flex;
 }
 
 .centralizarOrcamento {
     display: flex;
-    justify-content: flex-start;
-    margin: 0 50px 20px 43px;
+    position: sticky;
+    background-color: #2e2e2e;
+    box-shadow: 0 -30px 30px -30px rgba(0, 0, 0, 0.5);
+    justify-content: space-around;
+    width: 100%;
+    bottom: 0;
+    margin: 0 0 -50px 0;
+}
+
+.botaoRefazer {
+    border-radius: 25px;
+    border: 0;
+    padding: 15px;
+    margin: 10px 0 10px 0;
+    background-color: #41ae4f;
+    color: aliceblue;
+    font-size: x-large;
+}
+
+.botaoRefazerDIV {
+    display: flex;
 }
 
 #alterarbotoes {
@@ -465,12 +507,49 @@ body {
     height: 200px;
 }
 
-.avisoResumo {
+.cpuAviso,
+.placaMaeAviso,
+.ramAviso,
+.gpuAviso,
+.armazenamentoAviso,
+.fonteAviso,
+.gabineteAviso,
+.coolerAviso {
     display: none;
-    margin: 0 0 0 300px;
+    justify-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.erroResumo {
+    background-color: #2e2e2e;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 0 50px 10px 50px;
 }
 
 @media (max-width: 950px) {
+    .centralizarOrcamento {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .orcamentoTotal {
+        flex-direction: column;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .centralizando {
+        justify-content: center;
+    }
+
+    .botaoRefazerDIV {
+        justify-content: center;
+    }
+
     .cpuElementos {
         display: flex;
         flex-direction: column;
@@ -670,6 +749,33 @@ body {
 }
 
 @media (max-width: 500px) {
+    .orcamentoTotal {
+        gap: 20px;
+    }
+
+    .orcamento {
+        gap: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .totalparcial {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #orcTotal {
+        margin: -20px 0 0 0;
+    }
+
+    #parcialTotal {
+        margin: -20px 0 0 0;
+    }
+
+    .janelaTitulo {
+        font-size: large;
+    }
+
     .cpu {
         margin: 0 5px 10px 5px;
     }

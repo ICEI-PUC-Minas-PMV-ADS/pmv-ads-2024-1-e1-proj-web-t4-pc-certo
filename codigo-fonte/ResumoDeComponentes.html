@@ -40,11 +40,21 @@
   <div class="Conteudo">
     <div class="JanelaResumo">
       <div class="componentes">
-        <h1>Resumo</h1>
+        <div class="janelaTitulo">
+          <h1>Seu Computador</h1>
+        </div>
+        <p class="avisoResumo">Você ainda não fez a montagem do seu computador!</p>
+        <div class="botaoResumoAvisoDIV">
+          <button class="botaoResumoAviso" onclick=location.href="Montarpc.html"> Ir para a página de
+            Montagem</button>
+        </div>
         <div class="cpu">
           <p class="cpuTitulo">Processador</p>
           <div class="cpuElementos">
-            <p class="avisoResumo">Você ainda não fez a montagem do seu computador!</p>
+            <div class="cpuAviso">
+              <p class="cpuTexto">Você ainda não escolheu o processador!</p>
+              <button class="botaoAviso"> Ir para a página de Escolha</button>
+            </div>
             <div class="cpuModelo"></div>
             <div class="botoes">
               <div class="cpuPreco"></div>
@@ -53,9 +63,15 @@
             </div>
           </div>
         </div>
+        <div class="erroResumo">
+        </div>
         <div class="placaMae">
           <p class="placaMaeTitulo">Placa Mãe</p>
           <div class="placaMaeElementos">
+            <div class="placaMaeAviso">
+              <p class="placaMaeTexto">Você ainda não escolheu a placa-mãe!</p>
+              <button class="botaoAviso"> Ir para a página de Escolha</button>
+            </div>
             <div class="placaMaeModelo"></div>
             <div class="botoes">
               <div class="placaMaePreco"></div>
@@ -67,6 +83,10 @@
         <div class="ram">
           <p class="ramTitulo">Memória RAM</p>
           <div class="ramElementos">
+            <div class="ramAviso">
+              <p class="ramTexto">Você ainda não escolheu a memória RAM!</p>
+              <button class="botaoAviso"> Ir para a página de Escolha</button>
+            </div>
             <div class="ramModelo"></div>
             <div class="botoes">
               <div class="ramPreco"></div>
@@ -78,6 +98,10 @@
         <div class="gpu">
           <p class="gpuTitulo">Placa de Vídeo</p>
           <div class="gpuElementos">
+            <div class="gpuAviso">
+              <p class="gpuTexto">Você ainda não escolheu a placa de vídeo!</p>
+              <button class="botaoAviso"> Ir para a página de Escolha</button>
+            </div>
             <div class="gpuModelo"></div>
             <div class="botoes">
               <div class="gpuPreco"></div>
@@ -89,6 +113,10 @@
         <div class="armazenamento">
           <p class="armazenamentoTitulo">Armazenamento</p>
           <div class="armazenamentoElementos">
+            <div class="armazenamentoAviso">
+              <p class="armazenamentoTexto">Você ainda não escolheu o armazenamento!</p>
+              <button class="botaoAviso"> Ir para a página de Escolha</button>
+            </div>
             <div class="armazenamentoModelo"></div>
             <div class="botoes">
               <div class="armazenamentoPreco"></div>
@@ -100,6 +128,10 @@
         <div class="fonte">
           <p class="fonteTitulo">Fonte de Alimentação</p>
           <div class="fonteElementos">
+            <div class="fonteAviso">
+              <p class="fonteTexto">Você ainda não escolheu a fonte de alimentação!</p>
+              <button class="botaoAviso"> Ir para a página de Escolha</button>
+            </div>
             <div class="fonteModelo"></div>
             <div class="botoes">
               <div class="fontePreco"></div>
@@ -111,6 +143,10 @@
         <div class="gabinete">
           <p class="gabineteTitulo">Gabinete</p>
           <div class="gabineteElementos">
+            <div class="gabineteAviso">
+              <p class="gabineteTexto">Você ainda não escolheu o gabinete!</p>
+              <button class="botaoAviso"> Ir para a página de Escolha</button>
+            </div>
             <div class="gabineteModelo"></div>
             <div class="botoes">
               <div class="gabinetePreco"></div>
@@ -122,6 +158,10 @@
         <div class="cooler">
           <p class="coolerTitulo">Cooler</p>
           <div class="coolerElementos">
+            <div class="coolerAviso">
+              <p class="coolerTexto">Você ainda não escolheu a refrigeração!</p>
+              <button class="botaoAviso"> Ir para a página de Escolha</button>
+            </div>
             <div class="coolerModelo"></div>
             <div class="botoes">
               <div class="coolerPreco"></div>
@@ -131,17 +171,22 @@
           </div>
         </div>
       </div>
-      <div class="centralizarOrcamento">
+    </div>
+    <div class="centralizarOrcamento">
+      <div class="centralizando">
         <div class="orcamentoTotal">
           <div class="orcamento">
-            <p>Orçamento:</p>
+            <p class="orcamentoTexto">Orçamento:</p>
             <p id="orcTotal">R$00,00</p>
           </div>
           <div class="totalparcial">
-            <p>Total parcial:</p>
+            <nobr class="totalParcialTexto">Total parcial:</nobr>
             <p id="parcialTotal">R$00,00</p>
           </div>
         </div>
+      </div>
+      <div class="botaoRefazerDIV">
+        <button class="botaoRefazer" onclick=location.href="Montarpc.html"> Refazer montagem</button>
       </div>
     </div>
   </div>
