@@ -119,3 +119,21 @@ a {
 #errorEmail {
     font-size: small;
 }
+
+.checkGIF {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+}
+
+
+.centralizarCheck {
+    display: none;
+    justify-content: center;
+}
+
+.semLoginTexto {
+    display: flex;
+    justify-content: center;
+}

@@ -13,7 +13,7 @@
   <script defer src="js/HeaderFooter.js"></script>
 </head>
 
-<body>
+<body class="body">
   <!-- Cabeçalho -->
   <header>
     <a href="Paginainicial.html" id="logosite">
@@ -82,8 +82,7 @@
                   <img class="icons" src="img/lockIcon.png" alt="lockIcon" width="15px" height="15px">
                   <input type="password" placeholder="Confirmar Senha" class="obrigatorio" maxlength="25"
                     oninput="validarConfirmacao()">
-                  <img class="passwordIconF" src="img/closedEyeIcon.png" alt="eyeIcon" width="20px" height="20px"
-                    onclick="passwordIcon()">
+                  <img class="passwordIconF" src="img/closedEyeIcon.png" alt="eyeIcon" width="20px" height="20px">
                 </div>
                 <div class="confirmacao erro">
                   <p class="erroSenhaConfirmacao"> As senhas não são iguais.</p>
@@ -92,20 +91,33 @@
             </div>
           </div>
         </div>
-        <div class="termosuso">
-          <label><input type="checkbox" class="checkbox" value="on"> Li e estou de acordo com o <a
-              href="https://t.co/go5tdUfqCl" target="_blank" </a> Termos de Uso e Política de
-              Privacidade.</a></input></label>
-          <div class="termos erro">
-            <p class="erroTermos"> É necessário aceitar os termos de uso para continuar. </p>
+        <div class="organizarTermos">
+          <div class="termosuso">
+            <label class="checkbox"><input type="checkbox" class="checkboxInput" value="on"><span
+                class="checkmark"></span></input> <label class="concordoTermos">Li e estou de
+                acordo com o <a href="https://t.co/go5tdUfqCl" target="_blank" </a> Termos de Uso e Política de
+                  Privacidade.</a></label></label>
+            <div class="termos erro">
+              <p class="erroTermos"> É necessário aceitar os termos de uso para continuar. </p>
+            </div>
           </div>
         </div>
         <div class="botoes">
           <button class="Cadastrar"> Cadastrar </button>
+          <button type="button" class="Cancelar" onclick="window.location.href='Login.html';"> Cancelar </button>
+        </div>
+      </div>
+      <div class="sucessoCadastro">
+        <div class="janelaSucesso">
+          <img src="img/checkGIF.gif" alt="checkGIF" class="checkGIF">
+          <img src="img/checkPNG.png" alt="checkPNG" class="checkPNG">
+          <h1>Concluído!</h1>
+          <p class="sucessoTexto">Sua conta foi registrada com sucesso!</p>
+          <p class="loginTexto">Agora você pode fazer o login</p>
+          <button class="fazerLogin" onclick="window.location.href='Login.html';"> Fazer Login</button>
+        </div>
+      </div>
     </form>
-    <button type="button" class="Cancelar" onclick="window.location.href='Login.html';"> Cancelar </button>
-  </div>
-  </div>
   </div>
   <!-- Rodapé -->
   <footer class="rodape">

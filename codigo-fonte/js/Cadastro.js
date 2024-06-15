@@ -3,7 +3,7 @@ var form = document.querySelector(".form");
 var obrigatorio = document.querySelectorAll(".obrigatorio");
 var mensagemErro = document.querySelectorAll(".erro");
 var email = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
-var checkbox = document.querySelector(".checkbox");
+var checkbox = document.querySelector(".checkboxInput");
 var cadastrar = document.querySelector(".Cadastrar");
 var passwordIcons = document.querySelector(".passwordIcon");
 var eyeIconBoolean = false;
@@ -110,7 +110,14 @@ form.addEventListener("submit", (event) => {
   var validado3 = localStorage.getItem("confirmacaoCadastro");
   var validado4 = localStorage.getItem("termosCadastro");
   if (validado0 && validado1 && validado2 && validado3 && validado4) {
-    window.location.href = "../codigo-fonte/Login.html";
+    document.querySelector(".JanelaCadastro").style.display = "none";
+    document.querySelector(".janelaSucesso").style.display = "flex";
+    setTimeout(() => {
+      document.querySelector(".checkGIF").style.display = "none";
+      document.querySelector(".checkPNG").style.display = "flex";
+    }, 2000);
+    document.querySelector(".body").style.backdropFilter =
+      "brightness(0.6) blur(20px)";
   }
 });
 

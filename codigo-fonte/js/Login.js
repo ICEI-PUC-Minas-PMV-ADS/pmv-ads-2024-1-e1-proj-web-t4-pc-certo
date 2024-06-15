@@ -15,7 +15,12 @@ botaologin.addEventListener("click", function validarEmail() {
     localStorage.getItem("senhaCadastro") == senhaInserida.value
   ) {
     console.log("o email é valido");
-    window.location.href = "../codigo-fonte/Forum.html";
+    document.querySelector(".Entrar").style.display = "none";
+    document.querySelector(".semLoginTexto").style.display = "none";
+    document.querySelector(".centralizarCheck").style.display = "flex";
+    setTimeout(() => {
+      window.location.href = "../codigo-fonte/Forum.html";
+    }, 2000);
   } else {
     console.log("email invalido");
     erroremail.style.display = "block";

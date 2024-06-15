@@ -1,4 +1,4 @@
-body {
+.body {
     padding: 0px;
     margin: 0px;
     background: url("../img/menuInicial.jpg");
@@ -18,6 +18,8 @@ body {
 .JanelaCadastro {
     background-color: #2e2e2e69;
     backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
     align-items: center;
     padding: 50px;
     border-radius: 20px;
@@ -27,7 +29,8 @@ body {
 }
 
 /* Título "Cadastre-se" */
-.JanelaCadastro h1 {
+.JanelaCadastro h1,
+.janelaSucesso h1 {
     color: white;
     font-family: Roboto;
     font-size: 36px;
@@ -104,19 +107,75 @@ input::placeholder {
 
 /* Termos de uso */
 label {
-    cursor: pointer;
     font-family: Roboto;
     font-size: small;
     color: white;
 }
 
+.concordoTermos {
+    margin: 0 0 0 5px;
+}
+
+
 a {
     color: white;
 }
 
+.organizarTermos {
+    display: flex;
+    width: 97%;
+}
+
 /* Caixa de Check */
+
 .checkbox {
+    display: block;
+}
+
+.checkbox input {
     cursor: pointer;
+    opacity: 0;
+}
+
+.checkmark {
+    position: absolute;
+    left: 67px;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.checkbox:hover input~.checkmark {
+    background-color: #7a7a7a;
+    transition: 0.2s;
+}
+
+.checkbox input:checked~.checkmark {
+    background-color: #2e2e2e;
+    transition: 0.1s;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox input:checked~.checkmark:after {
+    display: block;
+}
+
+.checkbox .checkmark:after {
+    left: 6px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 /* Posição e organização dos Termos de uso */
@@ -140,6 +199,7 @@ a {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-evenly;
+    gap: 150px;
 }
 
 /* Botão Cancelar */
@@ -169,7 +229,8 @@ button.Cadastrar {
 }
 
 /* Botão Cadastrar ao passar o mouse */
-button.Cadastrar:hover {
+button.Cadastrar:hover,
+.fazerLogin:hover {
     background-color: #31833c;
     transition: 0.3s;
     cursor: pointer;
@@ -208,6 +269,60 @@ button.Cancelar:hover {
     cursor: pointer;
 }
 
+.sucessoCadastro {
+    display: flex;
+    justify-content: center;
+}
+
+.janelaSucesso {
+    background-color: #2e2e2e90;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.sucessoTexto {
+    font-family: Roboto;
+    color: white;
+}
+
+.loginTexto {
+    font-family: Roboto;
+    color: white;
+    margin: -5px 0 20px 0;
+}
+
+.fazerLogin {
+    color: white;
+    font-family: Roboto;
+    font-size: medium;
+    background: #41ae4f;
+    padding: 25px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    width: 150px;
+    margin: 10px;
+}
+
+.checkGIF {
+    display: flex;
+    width: 100px;
+    height: 100px;
+}
+
+.checkPNG {
+    display: none;
+    width: 100px;
+    height: 100px;
+}
+
 /* Responsividade */
 @media (max-width: 600px) {
     .organizar {
@@ -218,6 +333,12 @@ button.Cancelar:hover {
     .JanelaCadastro {
         padding: 2px;
         margin: 10px 0 0 0;
+    }
+
+    .checkmark {
+        position: absolute;
+        left: 18px;
+        height: 20px;
     }
 }
 
@@ -243,6 +364,12 @@ button.Cancelar:hover {
     .termosuso {
         margin: 0 20px 0 20px;
     }
+
+    .checkmark {
+        position: absolute;
+        left: 25px;
+        height: 20px;
+    }
 }
 
 @media (max-width: 831px) {
@@ -258,5 +385,6 @@ button.Cancelar:hover {
     .botoes {
         display: flex;
         flex-direction: column;
+        gap: 0;
     }
 }
