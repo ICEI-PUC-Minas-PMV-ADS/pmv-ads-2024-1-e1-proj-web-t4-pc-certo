@@ -34,7 +34,11 @@ document.getElementById('avancar').addEventListener('click', () => {
 // Funcao do btn Voltar
 document.getElementById('voltar').addEventListener('click', () => {
     const indexAtual = ordemComponentes.indexOf(componenteAtual);
-    if (indexAtual > 0) {
+    if (indexAtual == 0) {
+        location.href = 'Montarpc.html'
+    }
+
+    else if (indexAtual > 0) {
         componenteAtual = ordemComponentes[indexAtual - 1];
         removerComponenteSelecionado(componenteAtual);
         carregarComponentes(componenteAtual);
