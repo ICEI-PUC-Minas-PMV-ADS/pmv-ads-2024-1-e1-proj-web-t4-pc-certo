@@ -96,7 +96,7 @@ body {
 .buscaFiltro {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 10px;
     width: 100%;
     justify-content: space-evenly;
@@ -115,6 +115,7 @@ body {
             max-width: 200px;
             border-radius: 10px;
             padding: 10px;
+            width: 100%;
         }
 
         button {
@@ -165,6 +166,7 @@ body {
             font-size: 16px;
             cursor: pointer;
             width: 100%;
+            min-width: 20px;
             max-width: 300px; /* Adjust as needed */
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for a more modern look */
         }
