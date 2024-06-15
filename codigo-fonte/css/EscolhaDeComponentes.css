@@ -103,7 +103,6 @@ body {
     align-items: center;
 
     border-radius: 20px;
-    background-color: #2e2e2e;
     padding: 10px 0;
 
     .buscar {
@@ -178,8 +177,8 @@ body {
 
     .opcaoComponente {
         display: grid;
-        grid-template-areas: "preco img alerta";
-        grid-template-columns: 55% 20% 25%;
+        grid-template-areas: "img preco alerta";
+        grid-template-columns: 20% 55% 25%;
 
         background-color: #2e2e2e;
         border-radius: 20px;
@@ -199,7 +198,7 @@ body {
                 font-style: normal;
                 font-weight: 300;
                 line-height: normal;
-                text-align: right;
+                text-align: left;
             }
 
             .preco:nth-child(2) {
@@ -604,6 +603,7 @@ body {
 
             font-size: x-large;
         }
+
     }
 }
 
