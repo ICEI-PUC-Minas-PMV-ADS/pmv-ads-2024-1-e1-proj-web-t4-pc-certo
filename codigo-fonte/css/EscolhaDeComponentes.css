@@ -139,6 +139,11 @@ body {
         gap: 15px;
         margin: 5px 0;
 
+        .ordemTxt {
+            color: white;
+            align-self: center;
+        }
+
         select,
         option {
             width: 60px;
