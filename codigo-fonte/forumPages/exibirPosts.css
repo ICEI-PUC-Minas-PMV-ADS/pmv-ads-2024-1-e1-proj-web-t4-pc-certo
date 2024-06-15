@@ -18,9 +18,17 @@ body {
     padding: 20px;
     border-radius: 5px;
 
-    background-color: #659b75;
+    background-color: transparent;
 }
 
+.pubsEm {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#postsIn {
+    color: #c0ffbe;
+}
 
 .cadaPost {
     background-color: #3f6944;
@@ -38,10 +46,10 @@ body {
 }
 
 .cadaPostTop {
-
     border-radius: 15px;
 
     flex-grow: 1;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -75,11 +83,19 @@ body {
     border-radius: 10px;
 }
 
+#cadaPostIds {
+    display: none;
+}
+
 #cadaPostTit {
     font-size: 25px;
     font-weight: bolder;
     color: #fff;
     word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+
+    flex-grow: 1;
 
     transition: 0.3s;
 }

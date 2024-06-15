@@ -88,10 +88,10 @@ function CriaPostDiv(dados) {
   cadaPostTitDiv.textContent = dados.titulo;
   cadaPostTopDiv.appendChild(cadaPostTitDiv);
 
-  var xDiv = document.createElement("div");
-  xDiv.textContent = "x";
-  xDiv.id = "cadaPostX";
-  cadaPostTopDiv.appendChild(xDiv);
+  var cadaPostId = document.createElement("div");
+  cadaPostId.id = "cadaPostIds";
+  cadaPostId.textContent = dados.id;
+  cadaPostTopDiv.appendChild(cadaPostId);
 
   cadaPostDiv.appendChild(cadaPostTopDiv);
 
@@ -121,3 +121,14 @@ function CriaPostDiv(dados) {
 
   exibicaoPostsDiv.appendChild(cadaPostDiv);
 }
+
+//REDIRECIONAR PARA POSTS
+
+var forumPosts = document.querySelectorAll(".cadaPostTop");
+
+forumPosts.forEach(function (post) {
+  post.addEventListener("click", function () {
+    var postId = this.querySelector("#cadaPostIds").textContent;
+    window.location.href = "responderPost.html?id=" + postId;
+  });
+});

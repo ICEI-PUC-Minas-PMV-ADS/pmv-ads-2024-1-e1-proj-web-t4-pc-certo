@@ -114,6 +114,7 @@ for (var l = 1; l < 6; l++) {
     let Respostas = document.getElementById("ultimoPubResp" + l);
     let Data = document.getElementById("ultimoPubData" + l);
     let Hora = document.getElementById("ultimoPubHora" + l);
+    let idPost = document.getElementById("lastPostsId" + l);
 
     let objeto = maioresIDs[l - 1];
 
@@ -128,9 +129,11 @@ for (var l = 1; l < 6; l++) {
           let valor = localStorage.getItem(chave);
           let objeto = JSON.parse(valor);
 
+          idPost.textContent = objeto.id;
           Titulo.textContent = objeto.titulo;
           Autor.textContent = objeto.autor;
           Respostas.textContent = objeto.nRespostas + " Respostas";
+
           // DATA FORMATADA
           let dataDoObjeto = new Date(objeto.data);
           let dia = dataDoObjeto.getDate().toString().padStart(2, "0");
@@ -153,6 +156,7 @@ for (let i = 1; i < 6; i++) {
   let lastPosts = document.getElementById("ultimoPub" + i);
   let lastPostsBy = document.getElementById("ultimoPubAut" + i);
   let noLastPost = document.getElementById("noRecentPosts");
+  let lastPostsId = document.getElementById("LastPostsId" + i);
 
   if (lastPostsBy.textContent == "") {
     lastPosts.style.display = "none";
@@ -162,12 +166,23 @@ for (let i = 1; i < 6; i++) {
   }
 }
 
-//REDIRECIONAMENTO
-const buttons = document.querySelectorAll(".eachForum");
+//REDIRECIONAMENTO DOS TEMAS
+const temaForumsBotoes = document.querySelectorAll(".eachForum");
 
-buttons.forEach((button) => {
+temaForumsBotoes.forEach((button) => {
   button.onclick = function () {
-    const id = this.id;
-    window.location.href = `forumPages/exibirPosts.html?id=${id}`;
+    const temasId = this.id;
+    window.location.href = `forumPages/exibirPosts.html?id=${temasId}`;
   };
+});
+
+//REDIRECIONAMENTO DOS POSTS
+
+var forumPosts = document.querySelectorAll(".contForums");
+
+forumPosts.forEach(function (post) {
+  post.addEventListener("click", function () {
+    var postId = this.querySelector(".lastPostsIds").textContent;
+    window.location.href = "forumPages/responderPost.html?id=" + postId;
+  });
 });

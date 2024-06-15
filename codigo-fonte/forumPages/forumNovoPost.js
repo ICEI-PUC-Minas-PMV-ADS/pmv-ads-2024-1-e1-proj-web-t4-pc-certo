@@ -87,6 +87,13 @@ function publicar() {
   clickCounter = 0;
   repCounter = 0;
 
+  //CRIAR ID UNICO
+
+  var nPost = localStorage.length;
+  nPost += 1;
+
+  var idPost = "POST_" + temaTpc.value + "_" + nPost;
+
   //ENVIAR DADOS AO LOCAL STORAGE E FECHAR
   var Publicacao = {
     titulo: titPub.value,
@@ -96,14 +103,9 @@ function publicar() {
     data: dataPost,
     nClicks: clickCounter,
     nRespostas: repCounter,
+    id: idPost,
   };
   ///
-
-  //CRIANDO NUMERO PARA CHAVE idPost
-  var nPost = localStorage.length;
-  nPost += 1;
-
-  var idPost = "POST_" + temaTpc.value + "_" + nPost;
 
   var postString = JSON.stringify(Publicacao);
 

@@ -772,55 +772,6 @@ h3 {
     float: left;
 }
 
-/* Estilos dos tópicos */
-
-.classePSU,
-.classeCASE,
-.classeGERAL,
-.classeSSD,
-.classeUPGRADE,
-.classeRAM,
-.classeMONTAGEM,
-.classeNOTEBOOKS,
-.classePERIF,
-.classeGPU,
-.classeMOBO,
-.classeISSUES,
-.classeCPU,
-.classeCOOLER {
-    background-color: #fff;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    padding: 10px;
-    word-wrap: break-word;
-
-    width: 90%;
-
-    display: grid;
-
-    transition: 0.3s ease;
-}
-
-.classePSU:hover,
-.classeCASE:hover,
-.classeGERAL:hover,
-.classeSSD:hover,
-.classeUPGRADE:hover,
-.classeRAM:hover,
-.classeMONTAGEM:hover,
-.classeNOTEBOOKS:hover,
-.classePERIF:hover,
-.classeGPU:hover,
-.classeMOBO:hover,
-.classeISSUES:hover,
-.classeCPU:hover,
-.classeCOOLER:hover {
-    cursor: pointer;
-    transform: scale(1.015);
-    border: 1px solid green;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
-}
-
 .titulo {
     font-size: 24px;
     font-weight: 600;
@@ -860,4 +811,8 @@ h3 {
 .autor {
     font-weight: 600;
     width: fit-content;
+}
+
+.lastPostsIds {
+    display: none;
 }
