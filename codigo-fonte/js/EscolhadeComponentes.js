@@ -76,7 +76,7 @@ function carregarComponentes(tipo) {
     const container = document.querySelector('#containerComp');
     container.innerHTML = '';
 
-    // Cada elemento de um "tipo":=
+    // Cada elemento de um "tipo":
 
     function criaDiv(componente) {
         const opcao = document.createElement('div');
@@ -193,10 +193,18 @@ function carregarComponentes(tipo) {
 
         case "PSU":
             let gpuPower = compEscolhidos.GPU.sugPSU
-            const psuCompativel = componentes.PSU.filter(pot => pot.potencia >= gpuPower)
-            psuCompativel.forEach((pot) => {
-                criaDiv(pot)
-            });
+            if (gpuPower == "integrado") {
+                const psuCompativel = componentes.PSU.filter(pot => pot.potencia)
+                psuCompativel.forEach((pot) => {
+                    criaDiv(pot)
+                });
+            }
+            else {
+                const psuCompativel = componentes.PSU.filter(pot => pot.potencia >= gpuPower)
+                psuCompativel.forEach((pot) => {
+                    criaDiv(pot)
+                });
+            }
             break;
 
         case "Gabinete":
