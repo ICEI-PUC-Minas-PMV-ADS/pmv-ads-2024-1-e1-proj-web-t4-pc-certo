@@ -19,6 +19,8 @@ document.getElementById('avancar').addEventListener('click', () => {
     salvarComponentesSelecionados();
     atualizarTotalParcial();
 
+    document.getElementById('buscainput').value = ''
+
     precoTemporario = 0
 
     const indexAtual = ordemComponentes.indexOf(componenteAtual);
@@ -44,6 +46,7 @@ document.getElementById('voltar').addEventListener('click', () => {
         carregarComponentes(componenteAtual);
         atualizarResumo(componenteAtual);
         atualizarTotalParcial();
+        document.getElementById('buscainput').value = ''
     }
 
 });
@@ -148,81 +151,75 @@ function carregarComponentes(tipo) {
         }
         orcTotal();
     }
-    const compEscolhidos = JSON.parse(localStorage.getItem("componentesSelecionados"))
-    switch (tipo) {
-        case "Processador":
-            componentes[tipo].forEach((componente) => {
-                criaDiv(componente)
-            });
-            break;
 
-        case "PlacaMae":
-            let socket = compEscolhidos.Processador.socket
-            const mbCompativel = componentes.PlacaMae.filter(mb => mb.socket == socket)
-
-            mbCompativel.forEach((mb) => {
-                criaDiv(mb)
-            });
-            break;
-
-        case "RAM":
-            let tipoRam = compEscolhidos.PlacaMae.ram
-            const ramCompativel = componentes.RAM.filter(ddr => ddr.tipo == tipoRam)
-            ramCompativel.forEach((ddr) => {
-                criaDiv(ddr)
-            });
-            break;
-
-        case "GPU":
-            let vdIntegrado = compEscolhidos.Processador.videoIntegrado
-            if (vdIntegrado == "não") {
-                const gpuCompativel = componentes.GPU.filter(precisa => precisa.sugPSU != "integrado")
-                gpuCompativel.forEach((precisa) => {
-                    criaDiv(precisa)
-                });
-            }
-            else {
-                const gpuCompativel = componentes.GPU.filter(precisa => precisa.sugPSU)
-                gpuCompativel.forEach((precisa) => {
-                    criaDiv(precisa)
-                });
-            }
-            break;
-
-        case "Armazenamento":
-            componentes[tipo].forEach((componente) => {
-                criaDiv(componente)
-            });
-            break;
-
-        case "PSU":
-            let gpuPower = compEscolhidos.GPU.sugPSU
-            if (gpuPower == "integrado") {
-                const psuCompativel = componentes.PSU.filter(pot => pot.potencia)
-                psuCompativel.forEach((pot) => {
-                    criaDiv(pot)
-                });
-            }
-            else {
-                const psuCompativel = componentes.PSU.filter(pot => pot.potencia >= gpuPower)
-                psuCompativel.forEach((pot) => {
-                    criaDiv(pot)
-                });
-            }
-            break;
-
-        case "Gabinete":
-            componentes[tipo].forEach((componente) => {
-                criaDiv(componente)
-            });
-            break;
-
-        case "Refrigeração":
-            componentes[tipo].forEach((componente) => {
-                criaDiv(componente)
-            });
-            break;
+    function filtrarComponentesPorCompatibilidade(componentes) {
+        const compEscolhidos = JSON.parse(localStorage.getItem("componentesSelecionados"));
+        switch (tipo) {
+            case "Processador":
+                return componentes[tipo];
+                break;
+            case "PlacaMae":
+                let socket = compEscolhidos.Processador.socket;
+                return componentes.PlacaMae.filter(mb => mb.socket === socket);
+                break;
+            case "RAM":
+                let tipoRam = compEscolhidos.PlacaMae.ram;
+                return componentes.RAM.filter(ddr => ddr.tipo === tipoRam);
+                break;
+            case "GPU":
+                let vdIntegrado = compEscolhidos.Processador.videoIntegrado;
+                if (vdIntegrado === "não") {
+                    return componentes.GPU.filter(precisa => precisa.sugPSU !== "integrado");
+                } else {
+                    return componentes.GPU.filter(precisa => precisa.sugPSU);
+                }
+                break;
+            case "Armazenamento":
+                return componentes[tipo];
+                break;
+            case "PSU":
+                let gpuPower = compEscolhidos.GPU.sugPSU;
+                if (gpuPower === "integrado") {
+                    return componentes.PSU.filter(pot => pot.potencia);
+                } else {
+                    return componentes.PSU.filter(pot => pot.potencia >= gpuPower);
+                }
+                break;
+            case "Gabinete":
+                return componentes[tipo];
+                break;
+            case "Refrigeração":
+                return componentes[tipo];
+                break;
+            default:
+                return [];
+        }
     }
+
+    function filtrarComponentesPorBusca(componentes, busca) {
+        const buscaUpper = busca.toUpperCase();
+        return componentes.filter(componente => componente.modelo.toUpperCase().includes(buscaUpper));
+    }
+
+    function mostrarComponentes() {
+        container.innerHTML = '';
+        const inputBusca = document.getElementById('buscainput').value;
+        let componentesFiltrados = filtrarComponentesPorCompatibilidade(componentes);
+
+        if (inputBusca) {
+            componentesFiltrados = filtrarComponentesPorBusca(componentesFiltrados, inputBusca);
+        }
+
+        componentesFiltrados.forEach(componente => criaDiv(componente));
+    }
+
+    mostrarComponentes();
+
+    document.getElementById('buscainput').addEventListener('input', mostrarComponentes);
+    document.querySelector('.limpaBusca').addEventListener('click', () => {
+        document.getElementById('buscainput').value = '';
+        mostrarComponentes();
+    });
 }
 
 // Atualizar resumo ao mudar de componente
