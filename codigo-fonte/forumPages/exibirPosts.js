@@ -55,6 +55,10 @@ if (temaHTML == "COMPRASONLINE") {
   temaLegi = " Sugestões de Compras Online";
 }
 
+if (temaHTML == "COMPRASLOCAIS") {
+  temaLegi = " Sugestões de Compras Locais";
+}
+
 if (temaHTML == "MONITORES") {
   temaLegi = " Monitores";
 }
