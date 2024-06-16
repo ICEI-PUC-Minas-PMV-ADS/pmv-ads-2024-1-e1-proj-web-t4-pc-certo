@@ -114,14 +114,39 @@ function carregarComponentes(tipo) {
         // Ao clicar no "+" do card do componente:
         opcao.querySelector('.addComponente').addEventListener('click', () => {
             // remove a classe "opcaoSelecionada" de todos elem
-            document.querySelectorAll('.opcaoComponente').forEach(opc => { opc.classList.remove('opcaoSelecionada'); });
+            document.querySelectorAll('.opcaoComponente').forEach(opc => {
+                opc.classList.remove('opcaoSelecionada');
+                // Restaura o texto do botão para "+" e remove a imagem
+                opc.querySelector('.addComponente').textContent = '+';
+                if (opc.querySelector('.checkmark-icon')) {
+                    opc.querySelector('.checkmark-icon').remove();
+                }
+            });
 
             // add "opcaoSelecionada" ao elem clicado
             opcao.classList.add('opcaoSelecionada');
             componenteSelecionado[tipo] = componente;
             precoTemporario = parseFloat(componente.preco);
+
             const TotalParcial = document.getElementById('parcialTotal');
             TotalParcial.innerHTML = `R$${(precoParcial + precoTemporario).toFixed(2).replace('.', ',')}`;
+
+            // Substitui o botão "+" pelo ícone de imagem após o clique
+            const addComponenteButton = opcao.querySelector('.addComponente');
+            const imgIcon = document.createElement('img');
+            imgIcon.src = '/codigo-fonte/img/checkGIF.gif';
+            imgIcon.alt = 'CheckIcon';
+            imgIcon.id = 'check'
+            addComponenteButton.textContent = ''; // Limpa o conteúdo atual do botão
+            addComponenteButton.appendChild(imgIcon); // Adiciona a imagem como filho do botão
+
+            // const imgIcon2 = document.createElement('img');
+            // imgIcon2.src = '/codigo-fonte/img/checkPNG.PNG';
+            // imgIcon2.alt = 'CheckIcon';
+            // imgIcon2.id = 'checkPNG'
+            // addComponenteButton.textContent = ''; // Limpa o conteúdo atual do botão
+            // addComponenteButton.appendChild(imgIcon2); // Adiciona a imagem como filho do botão
+
 
             // Salva o componente no local storage
             salvarComponentesSelecionados();
@@ -211,6 +236,17 @@ function carregarComponentes(tipo) {
             componentesFiltrados = filtrarComponentesPorBusca(componentesFiltrados, inputBusca);
         }
 
+        // Filtro por ordem crescente e decrescente
+        const ordem = document.getElementById('ordenar').value;
+
+        if (ordem === 'Sugestão: PC Certo') {
+        }
+        else if (ordem === 'crescente') {
+            componentesFiltrados.sort((a, b) => a.preco - b.preco);
+        } else if (ordem === 'decrescente') {
+            componentesFiltrados.sort((a, b) => b.preco - a.preco);
+        }
+
         componentesFiltrados.forEach(componente => criaDiv(componente));
     }
 
@@ -221,6 +257,7 @@ function carregarComponentes(tipo) {
         document.getElementById('buscainput').value = '';
         mostrarComponentes();
     });
+    document.getElementById('ordenar').addEventListener('change', mostrarComponentes);
 }
 
 // Atualizar resumo ao mudar de componente
