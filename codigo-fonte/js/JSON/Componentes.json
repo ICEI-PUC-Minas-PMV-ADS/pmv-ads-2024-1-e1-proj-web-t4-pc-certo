@@ -146,6 +146,78 @@
   ],
   "PlacaMae": [
     {
+      "marca": "ASRock",
+      "modelo": "ASRock B450M Steel Legend",
+      "preco": 749.99,
+      "desempenho": "Alto Desempenho",
+      "info": "https://www.asrock.com/mb/AMD/B450M%20Steel%20Legend/index.br.asp",
+      "imagem": "img/json/PlacaMae/b450m.png",
+      "socket": "AM4",
+      "ram": "DDR4",
+      "format": "ATX",
+      "buy": "https://www.kabum.com.br/produto/100672/placa-mae-asrock-b450m-steel-legend-amd-am4-matx-ddr4"
+    },
+    {
+      "marca": "MSI",
+      "modelo": "MSI MPG B550 Gaming Plus",
+      "preco": 1029.99,
+      "desempenho": "Alto Desempenho",
+      "info": "https://br.msi.com/Motherboard/MPG-B550-GAMING-PLUS",
+      "imagem": "img/json/PlacaMae/msimpgb550.png",
+      "socket": "AM4",
+      "ram": "DDR4",
+      "format": "ATX",
+      "buy": "https://www.kabum.com.br/produto/114335/placa-mae-msi-mpg-b550-gaming-plus-amd-am4-atx"
+    },
+    {
+      "marca": "Gigabyte",
+      "modelo": "Gigabyte B760M AORUS ELITE (rev. 1.0)",
+      "preco": 1299.99,
+      "desempenho": "Alto Desempenho",
+      "info": "https://www.gigabyte.com/br/Motherboard/B760M-AORUS-ELITE-rev-1x#kf",
+      "imagem": "img/json/PlacaMae/b760m.png",
+      "socket": "LGA1700",
+      "ram": "DDR5",
+      "format": "ATX",
+      "buy": "https://www.kabum.com.br/produto/419108/placa-mae-gigabyte-b760m-aorus-elite-rev-1-0-lga-1700-ddr5"
+    },
+    {
+      "marca": "Gigabyte",
+      "modelo": "Gigabyte X670 Aorus Elite AX",
+      "preco": 2179.99,
+      "desempenho": "Alto Desempenho",
+      "info": "https://www.gigabyte.com/br/Motherboard/X670-AORUS-ELITE-AX-rev-10-12#kf",
+      "imagem": "img/json/PlacaMae/x670.png",
+      "socket": "AM5",
+      "ram": "DDR5",
+      "format": "ATX",
+      "buy": "https://www.kabum.com.br/produto/390209/placa-mae-gigabyte-x670-aorus-elite-ax-amd-am5-atx-ddr5-led-rgb-bluetooth-wi-fi-6e"
+    },
+    {
+      "marca": "Gigabyte",
+      "modelo": "Gigabyte H410M H V2",
+      "preco": 599.99,
+      "desempenho": "Baixo Desempenho",
+      "info": "https://www.gigabyte.com/br/Motherboard/H410M-H-V2-rev-10/sp#sp",
+      "imagem": "img/json/PlacaMae/h410m.png",
+      "socket": "LGA1200",
+      "ram": "DDR4",
+      "format": "Micro ATX",
+      "buy": "https://www.kabum.com.br/produto/457817/placa-mae-gigabyte-h410m-h-v2-intel-micro-atx-ddr4-h410m-h-v2"
+    },
+    {
+      "marca": "Asus",
+      "modelo": "Asus Prime H610M-E D4",
+      "preco": 574.99,
+      "desempenho": "Custo-Benefício",
+      "info": "https://www.asus.com/br/motherboards-components/motherboards/prime/prime-h610m-e-d4/",
+      "imagem": "img/json/PlacaMae/h610m-e.png",
+      "socket": "LGA1700",
+      "ram": "DDR4",
+      "format": "mATX",
+      "buy": "https://www.kabum.com.br/produto/457817/placa-mae-gigabyte-h410m-h-v2-intel-micro-atx-ddr4-h410m-h-v2"
+    },
+    {
       "marca": "AORUS",
       "modelo": "TUF Gaming Z790-Plus Wifi",
       "preco": 1899.99,
@@ -325,6 +397,83 @@
       "imagem": "img/json/ram/furyBeastddr4.png",
       "tipo": "DDR4",
       "frequencia": "3200MHz"
+    },
+    {
+      "marca": "Kingston",
+      "modelo": "Fury Beast RGB 2x16GB DDR5",
+      "preco": 1129.99,
+      "desempenho": "Alto Desempenho",
+      "info": "https://www.kabum.com.br/produto/448306/memoria-ram-kingston-fury-beast-rgb-32gb-2x16gb-6000mhz-ddr5-cl36-branco-kf560c36bweak2-32",
+      "imagem": "img/json/ram/furybeast2x16ddr5.png",
+      "tipo": "DDR5",
+      "frequencia": "6000MHz",
+      "buy": "https://www.kabum.com.br/produto/448306/memoria-ram-kingston-fury-beast-rgb-32gb-2x16gb-6000mhz-ddr5-cl36-branco-kf560c36bweak2-32"
+    },
+    {
+      "marca": "Kingston",
+      "modelo": "Fury Beast RGB 2x8GB DDR5",
+      "preco": 659.99,
+      "desempenho": "Alto Desempenho",
+      "info": "https://www.kabum.com.br/produto/388093/memoria-ram-kingston-fury-beast-rgb-16gb-2x8gb-6000mhz-ddr5-cl40-para-intel-xmp-preto-kf560c40bbak2-16",
+      "imagem": "img/json/ram/memoria-kingston-fury-beast-rgb-16gb-6000mhz-ddr5-cl40.png",
+      "tipo": "DDR5",
+      "frequencia": "6000MHz",
+      "buy": "https://www.kabum.com.br/produto/388093/memoria-ram-kingston-fury-beast-rgb-16gb-2x8gb-6000mhz-ddr5-cl40-para-intel-xmp-preto-kf560c40bbak2-16"
+    },
+    {
+      "marca": "XPG",
+      "modelo": "Lancer XPG 16GB DDR5",
+      "preco": 389.99,
+      "desempenho": "Alto Desempenho",
+      "info": "https://www.kabum.com.br/produto/271728/memoria-ram-lancer-xpg-16gb-5200mhz-ddr5-cl38-preto-ax5u5200c3816g-clabk",
+      "imagem": "img/json/ram/memoria-lancer-xpg-16gb-5200mhz-ddr5-cl38.png",
+      "tipo": "DDR5",
+      "frequencia": "5200MHz",
+      "buy": "https://www.kabum.com.br/produto/271728/memoria-ram-lancer-xpg-16gb-5200mhz-ddr5-cl38-preto-ax5u5200c3816g-clabk"
+    },
+    {
+      "marca": "Kingston",
+      "modelo": "Fury Beast RGB 2x16GB DDR5",
+      "preco": 1059.99,
+      "desempenho": "Alto Desempenho",
+      "info": "https://www.kabum.com.br/produto/388095/memoria-ram-kingston-fury-beast-rgb-32gb-2x16gb-6000mhz-ddr5-cl40-preto-kf560c40bbak2-32",
+      "imagem": "img/json/ram/memoria-kingston-fury-beast-rgb-32gb-6000mhz-ddr5-cl40.png",
+      "tipo": "DDR5",
+      "frequencia": "6000MHz",
+      "buy": "https://www.kabum.com.br/produto/388095/memoria-ram-kingston-fury-beast-rgb-32gb-2x16gb-6000mhz-ddr5-cl40-preto-kf560c40bbak2-32"
+    },
+    {
+      "marca": "XPG",
+      "modelo": "XPG Gammix D45 8GB DDR4",
+      "preco": 179.99,
+      "desempenho": "Alto Desempenho",
+      "info": "https://www.kabum.com.br/produto/166056/memoria-ram-xpg-gammix-d45-8gb-3600mhz-ddr4-cl18-preto-ax4u36008g18i-cbkd45",
+      "imagem": "img/json/ram/memoria-xpg-gammix-d45-8gb-3600mhz-ddr4-cl18.png",
+      "tipo": "DDR4",
+      "frequencia": "3600MHz",
+      "buy": "https://www.kabum.com.br/produto/166056/memoria-ram-xpg-gammix-d45-8gb-3600mhz-ddr4-cl18-preto-ax4u36008g18i-cbkd45"
+    },
+    {
+      "marca": "Kingston",
+      "modelo": "Fury Beast RGB 2x16GB DDR4",
+      "preco": 649.99,
+      "desempenho": "Alto Desempenho",
+      "info": "https://www.kabum.com.br/produto/480530/memoria-ram-kingston-fury-beast-rgb-32gb-2x16gb-3200mhz-ddr4-cl16-preto-kf432c16bb12ak2-32",
+      "imagem": "img/json/ram/memoria-kingston-fury-beast-rgb-32gb-2x16gb-3200mhz-ddr4-cl16.png",
+      "tipo": "DDR4",
+      "frequencia": "3200MHz",
+      "buy": "https://www.kabum.com.br/produto/480530/memoria-ram-kingston-fury-beast-rgb-32gb-2x16gb-3200mhz-ddr4-cl16-preto-kf432c16bb12ak2-32"
+    },
+    {
+      "marca": "Kingston",
+      "modelo": "Fury Beast 2x32GB DDR4",
+      "preco": 1129.99,
+      "desempenho": "Alto Desempenho",
+      "info": "https://www.kabum.com.br/produto/172368/memoria-ram-kingston-fury-beast-64gb-2x32gb-3200mhz-ddr4-cl16-preto-kf432c16bbk2-64",
+      "imagem": "img/json/ram/memoria-kingston-fury-beast-64gb-2x32gb-3200mhz-ddr4-cl16.png",
+      "tipo": "DDR4",
+      "frequencia": "3200MHz",
+      "buy": "https://www.kabum.com.br/produto/172368/memoria-ram-kingston-fury-beast-64gb-2x32gb-3200mhz-ddr4-cl16-preto-kf432c16bbk2-64"
     }
   ],
   "GPU": [
@@ -333,7 +482,7 @@
       "preco": 0,
       "desempenho": "Custo-Benefício",
       "info": "",
-      "imagem": "",
+      "imagem": "img/json/cooler/nao.png",
       "sugPSU": "integrado"
     },
     {
@@ -398,6 +547,46 @@
       "info": "https://www.nvidia.com/en-us/geforce/graphics-cards/10-series/gtx-1050/",
       "imagem": "img/json/GPU/gtx1050ti.png",
       "sugPSU": 300
+    },
+    {
+      "marca": "NVIDIA",
+      "modelo": "MSI RTX 3050 Ventus 2X",
+      "preco": 1329.99,
+      "desempenho": "Custo-Benefício",
+      "info": "https://www.msi.com/Graphics-Card/GeForce-RTX-3050-VENTUS-2X-8G-OC",
+      "imagem": "img/json/GPU/3050.png",
+      "sugPSU": 500,
+      "buy": "https://www.kabum.com.br/produto/547108/placa-de-video-msi-rtx-3050-ventus-2x-xs-oc-nvidia-geforce-8gb-gddr6-912-v809-4266"
+    },
+    {
+      "marca": "NVIDIA",
+      "modelo": "RTX 4060 ASUS Dual O8G EVO",
+      "preco": 2179.99,
+      "desempenho": "Alto Desempenho",
+      "info": "https://www.asus.com/br/motherboards-components/graphics-cards/dual/dual-rtx4060-o8g-evo/",
+      "imagem": "img/json/GPU/asus4060.png",
+      "sugPSU": 550,
+      "buy": "https://www.kabum.com.br/produto/522531/placa-de-video-rtx-4060-asus-dual-o8g-evo-nvidia-geforce-8gb-gddr6-g-sync-ray-tracing-90yv0jc7-m0na00"
+    },
+    {
+      "marca": "NVIDIA",
+      "modelo": "Galax GeForce GTX 1650 EX Plus",
+      "preco": 899.99,
+      "desempenho": "Custo-Benefício",
+      "info": "https://www.galax.com/pt/graphics-card/16-series/galax-geforce-gtx-1650ex1clickoc-gddr6-plus.html",
+      "imagem": "img/json/GPU/gx_1650_ex_1click_01l_box.png",
+      "sugPSU": 300,
+      "buy": "https://www.kabum.com.br/produto/115753/placa-de-video-galax-nvidia-geforce-gtx-1650-ex-plus-1-click-oc-4gb-gddr6-65sql8ds93e1"
+    },
+    {
+      "marca": "NVIDIA",
+      "modelo": "RTX 4070 Super Gigabyte Eagle OC",
+      "preco": 4499.99,
+      "desempenho": "Alto Desempenho",
+      "info": "https://www.gigabyte.com/br/Graphics-Card/GV-N407SEAGLE-OC-12GD#kf",
+      "imagem": "img/json/GPU/4070.png",
+      "sugPSU": 700,
+      "buy": "https://www.kabum.com.br/produto/517750/placa-de-video-rtx-4070-super-gigabyte-eagle-oc-nvidia-geforce-12gb-gddr6-dlss-ray-tracing-gv-n407seagle-oc-12gd"
     }
   ],
   "Armazenamento": [
@@ -445,6 +634,46 @@
       "info": "https://www.seagate.com/internal-hard-drives/hdd/barracuda/",
       "imagem": "img/json/Armazenamento/hdbarracuda.png",
       "tipo": "HDD"
+    },
+    {
+      "marca": "Seagate",
+      "modelo": "Barracuda 2TB HDD",
+      "preco": 419.99,
+      "desempenho": "Custo-Benefício",
+      "info": "https://www.seagate.com/www-content/datasheets/pdfs/3-5-barracudaDS1900-11-1806BR-pt_PT.pdf",
+      "imagem": "img/json/Armazenamento/seagate2tb.png",
+      "tipo": "HDD",
+      "buy": "https://www.kabum.com.br/produto/100916/hd-seagate-2tb-barracuda-3-5-sata-st2000dm008"
+    },
+    {
+      "marca": "Kingston",
+      "modelo": "SSD SATA Kingston A400 240GB",
+      "preco": 169.99,
+      "desempenho": "Custo-Benefício",
+      "info": "https://www.kingston.com/br/ssd/a400-solid-state-drive",
+      "imagem": "img/json/Armazenamento/ssd-wd-blue-sn570-500gb-m-2-2280-nvme-leituras-3-500mbp-s-gravacao-2-300mbp-s-azul-wds500g3b0c_1652795391_gg.jpg",
+      "tipo": "SATA SSD",
+      "buy": "https://www.kabum.com.br/produto/85197/ssd-sata-kingston-a400-240gb-2-5-leitura-500mb-s-e-gravacao-350mb-s-preto-sa400s37-240g"
+    },
+    {
+      "marca": "WD",
+      "modelo": "SSD 240 GB WD Green M.2",
+      "preco": 194.99,
+      "desempenho": "Custo-Benefício",
+      "info": "https://www.westerndigital.com/pt-br/products/internal-drives/wd-green-sata-m-2-ssd?sku=WDS240G3G0B",
+      "imagem": "img/json/Armazenamento/wd240gbssd.png",
+      "tipo": "NVMe SSD",
+      "buy": "https://www.kabum.com.br/produto/338409/ssd-240-gb-wd-green-m-2-leitura-545mb-s-wds240g3g0b"
+    },
+    {
+      "marca": "WD",
+      "modelo": "SSD 500 GB WD Blue M.2",
+      "preco": 324.99,
+      "desempenho": "Custo-Benefício",
+      "info": "https://www.kabum.com.br/produto/351529/ssd-500-gb-wd-blue-m-2-leitura-560mb-s-e-gravacao-510mb-s-wds500g3b0b",
+      "imagem": "img/json/Armazenamento/ssdwdblue500gb.png",
+      "tipo": "NVMe SSD",
+      "buy": "https://www.kabum.com.br/produto/351529/ssd-500-gb-wd-blue-m-2-leitura-560mb-s-e-gravacao-510mb-s-wds500g3b0b"
     }
   ],
   "PSU": [
@@ -497,6 +726,72 @@
       "imagem": "img/json/PSU/redragon400.png",
       "potencia": 400,
       "eficiencia": "80 Plus White"
+    },
+    {
+      "marca": "MSI",
+      "modelo": "MSI MAG A650BN 650W",
+      "preco": 279.99,
+      "desempenho": "Custo-Benefício",
+      "info": "https://br.msi.com/Power-Supply/MAG-A650BN",
+      "imagem": "img/json/PSU/a650bn.png",
+      "potencia": 650,
+      "eficiencia": "80 Plus Bronze",
+      "buy": "https://www.kabum.com.br/produto/369658/fonte-msi-mag-a650bn-650w-80-plus-bronze-pfc-ativo-com-cabo-preto-306-7zp2b22-ce0"
+    },
+    {
+      "marca": "XPG",
+      "modelo": "Core Reactor 850W 80 Plus Gold Modular",
+      "preco": 679.99,
+      "desempenho": "Alto Desempenho",
+      "info": "https://www.xpg.com/pt/xpg/641",
+      "imagem": "img/json/PSU/850corereactor.png",
+      "potencia": 850,
+      "eficiencia": "80 Plus Gold",
+      "buy": "https://www.kabum.com.br/produto/103282/fonte-xpg-core-reactor-850w-80-plus-gold-modular-com-cabo-preto-core-reactor"
+    },
+    {
+      "marca": "Gamemax",
+      "modelo": "GX1050 PRO 1050W 80 Plus Platinum Modular",
+      "preco": 849.99,
+      "desempenho": "Alto Desempenho",
+      "info": "https://www.gamemax-br.com/produto/GX1050PROBK",
+      "imagem": "img/json/PSU/gamemax1050.png",
+      "potencia": 1050,
+      "eficiencia": "80 Plus Platinum",
+      "buy": "https://www.kabum.com.br/produto/495997/fonte-gamemax-gx1050-pro-1050w-80-plus-platinum-modular-pfc-ativo-com-cabo-preto-gx1050prbks8810br"
+    },
+    {
+      "marca": "MSI",
+      "modelo": "MAG A850GL 850W 80 Plus Gold Modular",
+      "preco": 629.99,
+      "desempenho": "Alto Desempenho",
+      "info": "https://br.msi.com/Power-Supply/MAG-A850GL-PCIE5",
+      "imagem": "img/json/PSU/mag850.png",
+      "potencia": 850,
+      "eficiencia": "80 Plus Gold",
+      "buy": "https://www.kabum.com.br/produto/462816/fonte-msi-mag-a850gl-850w-80-plus-gold-modular-pfc-ativo-com-cabo-preto"
+    },
+    {
+      "marca": "Gigabyte",
+      "modelo": "GP-P450B 450W 80 Plus Bronze",
+      "preco": 259.99,
+      "desempenho": "Custo-Benefício",
+      "info": "https://www.gigabyte.com/br/Power-Supply/GP-P450B#kf",
+      "imagem": "img/json/PSU/450w.png",
+      "potencia": 450,
+      "eficiencia": "80 Plus Bronze",
+      "buy": "https://www.kabum.com.br/produto/114165/fonte-gigabyte-gp-p450b-450w-80-plus-bronze-pfc-ativo-com-cabo-preto-28200-p450b-1brr"
+    },
+    {
+      "marca": "Fortrek",
+      "modelo": "Black Hawk 400W 80 Plus White",
+      "preco": 199.99,
+      "desempenho": "Baixa Performance",
+      "info": "https://fortrek.com.br/fonte-gamer-atx-400w-80-plus-white-black-hawk-fortrek",
+      "imagem": "img/json/PSU/400w.png",
+      "potencia": 400,
+      "eficiencia": "80 Plus White",
+      "buy": "https://www.kabum.com.br/produto/136022/fonte-fortrek-black-hawk-400w-80-plus-white-preto-70458"
     }
   ],
   "Gabinete": [
@@ -544,6 +839,46 @@
       "info": "https://www.lianli.com.br/produtos-gabinete-o11",
       "imagem": "img/json/Gabinete/lianLi.png",
       "tipo": "Full Tower"
+    },
+    {
+      "marca": "Redragon",
+      "modelo": "Redragon Wheel Jack",
+      "preco": 179.99,
+      "desempenho": "Custo-Benefício",
+      "info": "https://www.redragon.com.br/wheeljackrgb",
+      "imagem": "img/json/Gabinete/gabinete-gamer-redragon-wheel-jack-mid-tower-lateral-e-frontal-em-vidro-gc-606bk_1669125155_gg-removebg-preview.png",
+      "tipo": "Mid Tower",
+      "buy": "https://www.kabum.com.br/produto/104484/gabinete-gamer-redragon-wheel-jack-mid-tower-lateral-e-frontal-em-vidro-gc-606bk"
+    },
+    {
+      "marca": "T-Dagger",
+      "modelo": "T-Dagger Cube White",
+      "preco": 169.99,
+      "desempenho": "Custo-Benefício",
+      "info": "https://www.tdagger.com.br/produtos/cubew",
+      "imagem": "img/json/Gabinete/gabinete-gamer-t-dagger-cube-white-mid-tower-lateral-em-vidro-branco-t-tgc305w_1581359322_gg-removebg-preview.png",
+      "tipo": "Mid Tower",
+      "buy": "https://www.kabum.com.br/produto/108089/gabinete-gamer-t-dagger-cube-white-mid-tower-lateral-em-vidro-branco-t-tgc305w"
+    },
+    {
+      "marca": "NZXT",
+      "modelo": "NZXT H9 Elite",
+      "preco": 1649.99,
+      "desempenho": "Alto Desempenho",
+      "info": "https://nzxt.com/product/h9-elite",
+      "imagem": "img/json/Gabinete/gabinete-gamer-nzxt-h9-elite-mid-tower-rgb-atx-lateral-frontal-e-topo-em-vidro-branco-cm-h91ew-01_1678280203_gg-removebg-preview.png",
+      "tipo": "Mid Tower",
+      "buy": "https://www.kabum.com.br/produto/418220/gabinete-gamer-nzxt-h9-elite-mid-tower-rgb-atx-lateral-frontal-e-topo-em-vidro-branco-cm-h91ew-01"
+    },
+    {
+      "marca": "NZXT",
+      "modelo": "NZXT H5 Elite Compact",
+      "preco": 899.99,
+      "desempenho": "Alto Desempenho",
+      "info": "https://nzxt.com/product/h5-elite",
+      "imagem": "img/json/Gabinete/gabinete-nzxt-h5-elite-compact-mid-tower-rgb-atx-lateral-e-frontal-em-vidro-temperado-3x-cooler-fan-preto-cc-h51eb-01_1666615378_gg-removebg-preview.png",
+      "tipo": "Mid Tower",
+      "buy": "https://www.kabum.com.br/produto/392078/gabinete-nzxt-h5-elite-compact-mid-tower-rgb-atx-lateral-e-frontal-em-vidro-temperado-3x-cooler-fan-preto-cc-h51eb-01"
     }
   ],
   "Refrigeração": [
@@ -553,7 +888,7 @@
       "preco": 0,
       "desempenho": "Custo-Benefício",
       "info": "",
-      "imagem": "",
+      "imagem": "img/json/cooler/nao.png",
       "tipo": "Air Cooler"
     },
     {
@@ -600,6 +935,36 @@
       "info": "https://www.lojarisemode.com.br/produto/air-cooler-gamer-rise-mode-g800-rm-ac-o8-rgb",
       "imagem": "img/json/cooler/g800.png",
       "tipo": "Air Cooler"
+    },
+    {
+      "marca": "DeepCool",
+      "modelo": "Gammaxx Ag400 ARGB",
+      "preco": 189.99,
+      "desempenho": "Custo-Benefício",
+      "info": "https://www.deepcool.com/products/Cooling/cpuaircoolers/AG400-BK-ARGB-120mm-CPU-Cooler-1700-AM5/2022/16085.shtml",
+      "imagem": "img/json/cooler/Air-Cooler-Deepcool-Gammaxx-Ag400-ArGB-Led-RGB-120mm-Intel-amd-R-ag400-bkanmc-g-1_1714074290_gg-removebg-preview.png",
+      "tipo": "Air Cooler",
+      "buy": "https://www.kabum.com.br/produto/446573/air-cooler-deepcool-gammaxx-ag400-argb-led-rgb-120mm-intel-amd-r-ag400-bkanmc-g-1"
+    },
+    {
+      "marca": "DeepCool",
+      "modelo": "Deepcool Dual Tower Ak620 Zero Dark",
+      "preco": 556.99,
+      "desempenho": "Alto Desempenho",
+      "info": "https://www.deepcool.com/products/Cooling/cpuaircoolers/AK620-ZERO-DARK-High-Performance-CPU-Cooler-1700-AM5/2022/16124.shtml",
+      "imagem": "img/json/cooler/Cooler-Para-Processador-Deepcool-Dual-Tower-Ak620-Zero-Dark-Preto-R-Ak620-Bknnmt-G-1_1715006724_gg-removebg-preview.png",
+      "tipo": "Air Cooler",
+      "buy": "https://www.kabum.com.br/produto/479415/cooler-para-processador-deepcool-dual-tower-ak620-zero-dark-preto-r-ak620-bknnmt-g-1"
+    },
+    {
+      "marca": "Corsair",
+      "modelo": "WC iCUE H150i Elite Capellix XT RGB 360mm",
+      "preco": 1449.99,
+      "desempenho": "Alto Desempenho",
+      "info": "https://www.corsair.com/br/pt/p/cpu-coolers/cw-9060048-ww/icue-h150i-elite-capellix-liquid-cpu-cooler-cw-9060048-ww",
+      "imagem": "img/json/cooler/water-cooler-corsair-icue-h150i-elite-capellix-xt-rgb-120mm-intel-e-amd-preto-cw-9060070-ww_1697640032_gg-removebg-preview.png",
+      "tipo": "Water Cooler",
+      "buy": "https://www.kabum.com.br/produto/472707/water-cooler-corsair-icue-h150i-elite-capellix-xt-rgb-360mm-amd-intel-preto-cw-9060070-ww"
     }
   ]
 }
