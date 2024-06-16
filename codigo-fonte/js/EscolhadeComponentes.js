@@ -42,11 +42,12 @@ document.getElementById('voltar').addEventListener('click', () => {
 
     else if (indexAtual > 0) {
         componenteAtual = ordemComponentes[indexAtual - 1];
+        document.getElementById('buscainput').value = ''
         removerComponenteSelecionado(componenteAtual);
         carregarComponentes(componenteAtual);
         atualizarResumo(componenteAtual);
         atualizarTotalParcial();
-        document.getElementById('buscainput').value = ''
+
     }
 
 });
