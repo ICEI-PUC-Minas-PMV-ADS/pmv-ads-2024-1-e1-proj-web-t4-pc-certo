@@ -111,7 +111,7 @@ function publicar() {
 
   localStorage.setItem(idPost, postString);
 
-  window.location.href = "forumPubFeita.html";
+  window.location.href = "forumPubFeita.html?id=" + idPost;
   ///
 }
 

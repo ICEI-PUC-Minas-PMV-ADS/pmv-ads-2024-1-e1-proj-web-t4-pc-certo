@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Publicação Enviada - PC Certo</title>
+    <title>Publicações - PC Certo</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
     />
-    <link rel="stylesheet" href="forumPubFeita.css" />
-    <link rel="stylesheet" href="../css/HeaderFooter.css" />
     <link rel="stylesheet" href="forumNovoPost.css" />
+    <link rel="stylesheet" href="exibirPosts.css" />
+    <link rel="stylesheet" href="../css/HeaderFooter.css" />
     <link rel="icon" href="../img/favicon.png" type="image/x-icon" />
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
 
@@ -21,7 +21,7 @@
     />
 
     <script defer src="../js/HeaderFooter.js"></script>
-    <script defer src="forumPubFeita.js"></script>
+    <script defer src="meusPosts.js"></script>
   </head>
   <body>
     <!-- HEADER -->
@@ -49,7 +49,7 @@
         <a class="botaocabecalho" href="../Montarpc.html"
           ><span class="txtcabecalho">Montar PC</span></a
         >
-        <a id="btDeslogado" class="botaocabecalho2" href="../Login.html">
+        <a id="btDeslogado" class="botaocabecalho2" href="Login.html">
           <img
             class="ProfileIcon"
             src="../img/ProfileIcon.png"
@@ -60,7 +60,7 @@
         <a
           id="btLogado"
           class="botaocabecalho3"
-          href="ResumoDeComponentes.html"
+          href="../ResumoDeComponentes.html"
         >
           <img
             class="ProfileIcon"
@@ -118,41 +118,27 @@
         />
       </div>
     </div>
-    <br /><br />
+    <br />
 
-    <!-- TOPO -->
+    <div class="Breadcrumb">
+      <span id="indBC">&#9679;</span>
+      <a class="bcBt" href="../Paginainicial.html"> Página Inicial</a>
+      &#10140;
+      <a class="bcBt" href="../Forum.html">Fórum da Comunidade</a>
+      &#10140;
+      <span class="bcBt"><span id="bcTema"></span>
+    </div>
+    <br />
 
     <main>
-      <div class="conteiner">
-        <img
-          src="../img/forum/postCriado.png"
-          width="200px"
-          height="auto"
-          max-width="100%"
-          alt=""
-        /><br />
-        <h1>Publicação Enviada Com Sucesso!</h1>
-        <br />
-        <p>
-          Sua publicação foi enviada aos servidores e ja estará disponível para
-          outras pessoas verem e responderem ela!
-        </p>
-        <br />
-        <div class="botoes">
-          <button id="verPubFeita">Ver Publicação</button>
-
-          <button id="minhasPubs">Minhas Publicações</button>
-          <br />
-
-          <a class="novoPost" href="forumNovoPost.html">
-            Fazer Nova Publicação
-          </a>
-
-          <a class="voltarForum" href="../Forum.html"> Voltar ao Forum </a>
-        </div>
+      <div id="naoTemPosts">
+        Ops, parece que não tem nenhuma publicação aqui por enquanto...
+        <br><br><a class="volteForum" href="../Forum.html">&#10140; Voltar ao Fórum</a>
+      </div>
+      <div id="exibicaoPosts">
+        <div class="pubsEm">Minhas Publicações</div>
       </div>
     </main>
-
     <br />
     <!-- FOOTER -->
 
