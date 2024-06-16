@@ -96,20 +96,18 @@ body {
     max-width: 100%;
 
     flex-grow: 1;
-
-    transition: 0.3s;
 }
 
 #cadaPostTit:hover {
+    font-weight: 900;
     cursor: pointer;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 5px;
 }
 
 #cadaPostTxt {
-    color: #ffffff;
+    color: #cccccc;
     word-wrap: break-word;
 }
 

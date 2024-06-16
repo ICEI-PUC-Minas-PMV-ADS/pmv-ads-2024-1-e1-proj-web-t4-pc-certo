@@ -230,48 +230,27 @@ button:hover {
     color: #41ae4f;
 }
 
-a:hover {
+.bcBt {
+    text-decoration: none;
+    color: rgb(143, 167, 143);
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    max-width: fit-content;
+}
+
+.bcBt:hover {
     scale: 1.03;
     color: rgb(179, 245, 179);
 }
 
-
-/* CORES DAS CATEGORIAS */
-
-#geralIcon {
-    background-color: #3b89ff;
-}
-
-#regrasIcon {
-    background-color: #dbaf1d;
-}
-
-#HWIcon {
-    background-color: #db1d1d;
-}
-
-#prfIcon {
-    background-color: #129e2a;
-}
-
-#mntIcon {
-    background-color: #c7660b;
-}
-
-#foneIcon {
-    background-color: #9b0bc7;
-}
-
-.CntrTit {
-    color: #fff;
+.bcBtN {
+    text-decoration: none;
+    color: rgb(143, 167, 143);
     font-size: 20px;
-    font-weight: 300;
-}
-
-.CntrTxt {
-    color: #86c49e;
-    font-size: 15px;
-    font-weight: 300;
+    font-weight: 600;
+    transition: 0.3s ease;
+    max-width: fit-content;
 }
 
 .cxNovoTpc {

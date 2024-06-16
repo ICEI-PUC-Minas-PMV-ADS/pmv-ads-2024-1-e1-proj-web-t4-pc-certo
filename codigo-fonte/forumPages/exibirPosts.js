@@ -71,6 +71,44 @@ if (temaHTML == "DICAS") {
   temaLegi = " Dicas de Programas de Monitoração";
 }
 
+////
+
+if (temaHTML == "PLACADEVIDEO") {
+  temaLegi = " Placas de Vídeo";
+}
+
+if (temaHTML == "PROCESSADORES") {
+  temaLegi = " Processadores";
+}
+
+if (temaHTML == "PLACAMAE") {
+  temaLegi = " Placas-Mãe";
+}
+
+if (temaHTML == "FONTES") {
+  temaLegi = " Fontes e energia";
+}
+
+if (temaHTML == "MEMORIARAM") {
+  temaLegi = " Memória RAM";
+}
+
+if (temaHTML == "ARMAZENAMENTO") {
+  temaLegi = " SSD's, HDD's e Armazenamento";
+}
+
+if (temaHTML == "GABINETES") {
+  temaLegi = " Gabinetes e Casemod";
+}
+
+if (temaHTML == "OUTROS") {
+  temaLegi = " Peças de Refrigeração";
+}
+
+if (temaHTML == "DICAS") {
+  temaLegi = " Cabos e Outras Peças";
+}
+
 postsIn.textContent = temaLegi;
 bcTema.textContent = temaLegi;
 

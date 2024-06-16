@@ -56,6 +56,12 @@ main {
     max-width: fit-content;
 }
 
+.bcBt:hover {
+    scale: 1.03;
+    color: rgb(179, 245, 179);
+}
+
+
 .btDef {
     border: none;
 
@@ -231,11 +237,6 @@ button:hover {
 
 #indBC {
     color: #41ae4f;
-}
-
-a:hover {
-    scale: 1.03;
-    color: rgb(179, 245, 179);
 }
 
 /* MAIN */
