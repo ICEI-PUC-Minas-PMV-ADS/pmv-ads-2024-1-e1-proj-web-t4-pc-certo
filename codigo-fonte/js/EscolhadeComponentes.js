@@ -211,6 +211,17 @@ function carregarComponentes(tipo) {
             componentesFiltrados = filtrarComponentesPorBusca(componentesFiltrados, inputBusca);
         }
 
+        // Filtro por ordem crescente e decrescente
+        const ordem = document.getElementById('ordenar').value;
+
+        if (ordem === 'Sugestão: PC Certo') {
+        }
+        else if (ordem === 'crescente') {
+            componentesFiltrados.sort((a, b) => a.preco - b.preco);
+        } else if (ordem === 'decrescente') {
+            componentesFiltrados.sort((a, b) => b.preco - a.preco);
+        }
+
         componentesFiltrados.forEach(componente => criaDiv(componente));
     }
 
@@ -221,6 +232,7 @@ function carregarComponentes(tipo) {
         document.getElementById('buscainput').value = '';
         mostrarComponentes();
     });
+    document.getElementById('ordenar').addEventListener('change', mostrarComponentes);
 }
 
 // Atualizar resumo ao mudar de componente
