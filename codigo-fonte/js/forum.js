@@ -186,3 +186,13 @@ forumPosts.forEach(function (post) {
     window.location.href = "forumPages/responderPost.html?id=" + postId;
   });
 });
+
+//MINHAS PUBS
+
+document.getElementById("meuPerfilPosts");
+
+var nomeAutor = localStorage.getItem("nomeCadastro");
+
+meuPerfilPosts.onclick = function () {
+  window.location.href = "forumPages/meusPosts.html?id=" + nomeAutor;
+};

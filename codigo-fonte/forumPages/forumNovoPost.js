@@ -122,3 +122,13 @@ if (usuarioString !== null) {
 } else {
   iconesForum.style.display = "none";
 }
+
+//Meus posts
+
+document.getElementById("meuPerfilPosts");
+
+var nomeAutor = localStorage.getItem("nomeCadastro");
+
+meuPerfilPosts.onclick = function () {
+  window.location.href = "meusPosts.html?id=" + nomeAutor;
+};

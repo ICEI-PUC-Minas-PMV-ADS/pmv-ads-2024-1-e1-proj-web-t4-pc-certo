@@ -181,3 +181,13 @@ var divisaoUrl = url.split("=");
 
 var idPostJanela = document.getElementById("idPostJanela");
 idPostJanela.textContent = "#" + divisaoUrl[1];
+
+//Meus posts ICONE
+
+document.getElementById("meuPerfilPosts");
+
+var nomeAutor = localStorage.getItem("nomeCadastro");
+
+meuPerfilPosts.onclick = function () {
+  window.location.href = "meusPosts.html?id=" + nomeAutor;
+};
