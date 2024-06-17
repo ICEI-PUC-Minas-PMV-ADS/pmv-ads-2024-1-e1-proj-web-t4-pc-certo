@@ -206,6 +206,7 @@ a {
 button.Cancelar {
     color: white;
     font-family: Roboto;
+    font-size: medium;
     background-color: #7a7a7a;
     padding: 25px;
     border: none;
@@ -219,6 +220,7 @@ button.Cancelar {
 button.Cadastrar {
     color: white;
     font-family: Roboto;
+    font-size: medium;
     background: #41ae4f;
     padding: 25px;
     border: none;

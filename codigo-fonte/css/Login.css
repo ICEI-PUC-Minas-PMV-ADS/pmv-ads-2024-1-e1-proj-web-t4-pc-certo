@@ -86,6 +86,7 @@ input::placeholder {
 div button {
     color: white;
     font-family: Roboto;
+    font-size: medium;
     background-color: #41ae4f;
     padding: 20px 15px 20px 15px;
     border: none;
