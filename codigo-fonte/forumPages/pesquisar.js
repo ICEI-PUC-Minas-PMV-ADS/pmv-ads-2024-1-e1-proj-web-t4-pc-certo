@@ -14,7 +14,6 @@ function carregaPost(entrada) {
       var postJSON = JSON.parse(itemLclStrg);
       if (itemLclStrg.toLowerCase().includes(entrada.toLowerCase())) {
         CriaPostDiv(postJSON);
-        console.log("achei uma");
         isTherePosts = 1;
       }
     }
