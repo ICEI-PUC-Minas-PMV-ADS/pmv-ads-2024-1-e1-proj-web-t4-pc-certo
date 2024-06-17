@@ -17,7 +17,7 @@ document.getElementById("verPubFeita").onclick = function () {
   window.location.href = "responderPost.html?id=" + idPub;
 };
 
-//Meus posts ICONE
+////MEUS POSTS
 
 document.getElementById("meuPerfilPosts");
 

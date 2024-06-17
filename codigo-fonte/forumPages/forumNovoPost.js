@@ -16,10 +16,7 @@ temaTpc.value = "NULO";
 ///
 
 //VALIDA DADOS ANTES DE PUBLICAR
-enviarPub.onclick = function () {
-  validaDados();
-  podeSairDaPagina = false;
-};
+enviarPub.onclick = validaDados;
 
 function validaDados() {
   if (
@@ -134,22 +131,6 @@ var nomeAutor = localStorage.getItem("nomeCadastro");
 
 meuPerfilPosts.onclick = function () {
   window.location.href = "meusPosts.html?id=" + nomeAutor;
-};
-
-//EVITAR DE SAIR DA PÁGINA SEM QUERER -- VI NO GOOGLE, NAO ENTENDI O EVENT RETURNVALUE E O RETURN
-
-let podeSairDaPagina = true;
-
-window.onbeforeunload = function (event) {
-  if (
-    podeSairDaPagina &&
-    (titPub.value.length > 5 || textoPub.value.length > 10)
-  ) {
-    const confirmationMessage =
-      "Tem certeza que deseja sair da página? Se você sair, perderá todos os dados não salvos.";
-    event.returnValue = confirmationMessage;
-    return confirmationMessage;
-  }
 };
 
 //PESQUISAR

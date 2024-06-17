@@ -182,7 +182,7 @@ var divisaoUrl = url.split("=");
 var idPostJanela = document.getElementById("idPostJanela");
 idPostJanela.textContent = "#" + divisaoUrl[1];
 
-//Meus posts ICONE
+////MEUS POSTS
 
 document.getElementById("meuPerfilPosts");
 

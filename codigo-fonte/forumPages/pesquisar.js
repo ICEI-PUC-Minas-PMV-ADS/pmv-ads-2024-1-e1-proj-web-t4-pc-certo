@@ -114,3 +114,13 @@ forumPosts.forEach(function (post) {
     window.location.href = "responderPost.html?id=" + postId;
   });
 });
+
+////MEUS POSTS
+
+document.getElementById("meuPerfilPosts");
+
+var nomeAutor = localStorage.getItem("nomeCadastro");
+
+meuPerfilPosts.onclick = function () {
+  window.location.href = "meusPosts.html?id=" + nomeAutor;
+};

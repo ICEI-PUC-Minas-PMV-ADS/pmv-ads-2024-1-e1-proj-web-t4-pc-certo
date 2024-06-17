@@ -180,7 +180,7 @@ forumPosts.forEach(function (post) {
   });
 });
 
-//Meus posts
+//MEUS POSTS
 
 document.getElementById("meuPerfilPosts");
 

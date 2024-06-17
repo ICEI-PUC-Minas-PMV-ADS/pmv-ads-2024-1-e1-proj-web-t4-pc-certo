@@ -260,3 +260,5 @@ btPesquisa.onclick = function () {
     alert("O campo de pesquisa está vazio!");
   }
 };
+
+console.log("Tudo certo...");

@@ -93,7 +93,7 @@ forumPosts.forEach(function (post) {
   });
 });
 
-//Meus posts ICONE
+////MEUS POSTS
 
 document.getElementById("meuPerfilPosts");
 
