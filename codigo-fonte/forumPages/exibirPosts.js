@@ -130,6 +130,11 @@ function CriaPostDiv(dados) {
   cadaPostTitDiv.textContent = dados.titulo;
   cadaPostTopDiv.appendChild(cadaPostTitDiv);
 
+  var cadaPostResp = document.createElement("div");
+  cadaPostResp.id = "cadaPostResp";
+  cadaPostResp.textContent = dados.nRespostas + " Resp.";
+  cadaPostTopDiv.appendChild(cadaPostResp);
+
   var cadaPostId = document.createElement("div");
   cadaPostId.id = "cadaPostIds";
   cadaPostId.textContent = dados.id;

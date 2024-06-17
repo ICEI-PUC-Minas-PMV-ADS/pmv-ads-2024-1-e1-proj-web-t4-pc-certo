@@ -196,3 +196,54 @@ var nomeAutor = localStorage.getItem("nomeCadastro");
 meuPerfilPosts.onclick = function () {
   window.location.href = "forumPages/meusPosts.html?id=" + nomeAutor;
 };
+
+//CONTADORES DE MENSAGENS E DE THREADS:
+
+function countPostsAndResponses(theme) {
+  let postCount = 0;
+  let messageCount = 0;
+
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    if (key.startsWith(`POST_${theme}_`)) {
+      postCount++;
+      messageCount++;
+
+      for (let j = 0; ; j++) {
+        const responseKey = `${key}_RESP${j}`;
+        if (localStorage.getItem(responseKey) !== null) {
+          messageCount++;
+        } else {
+          break;
+        }
+      }
+    }
+  }
+
+  return { postCount, messageCount };
+}
+
+// ATUALIZAR CONTADORES
+function updateCounters() {
+  const forumDivs = document.querySelectorAll(".eachForum");
+
+  forumDivs.forEach((forumDiv) => {
+    const id = forumDiv.id;
+    const theme = id.split("_")[1];
+
+    const { postCount, messageCount } = countPostsAndResponses(theme);
+
+    // ATUALIZAR CONTADORES
+    const tpcCounter = forumDiv.querySelector(".tpcCounter .CntrTit");
+    const msgCounter = forumDiv.querySelector(".msgCounter .CntrTit");
+
+    if (tpcCounter) {
+      tpcCounter.textContent = postCount.toLocaleString();
+    }
+    if (msgCounter) {
+      msgCounter.textContent = messageCount.toLocaleString();
+    }
+  });
+}
+
+updateCounters();
