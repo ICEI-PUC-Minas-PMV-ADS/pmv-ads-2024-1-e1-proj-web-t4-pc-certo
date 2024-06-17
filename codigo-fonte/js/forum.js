@@ -197,8 +197,7 @@ meuPerfilPosts.onclick = function () {
   window.location.href = "forumPages/meusPosts.html?id=" + nomeAutor;
 };
 
-//CONTADORES DE MENSAGENS E DE THREADS -- <CHAT GPT AJUDOU!>
-
+//CONTADORES DE MENSAGENS E DE THREADS
 function countPostsAndResponses(theme) {
   let postCount = 0;
   let messageCount = 0;
@@ -223,7 +222,7 @@ function countPostsAndResponses(theme) {
   return { postCount, messageCount };
 }
 
-// ATUALIZAR CONTADORES
+// ATUALIZAR CONTADORES -- <CHAT GPT AJUDOU!>
 function updateCounters() {
   const forumDivs = document.querySelectorAll(".eachForum");
 
