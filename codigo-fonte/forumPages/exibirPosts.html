@@ -1,72 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Publicações - PC Certo</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-    />
-    <link rel="stylesheet" href="exibirPosts.css" />
-    <link rel="stylesheet" href="../css/HeaderFooter.css" />
-    <link rel="icon" href="../img/favicon.png" type="image/x-icon" />
-    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publicações - PC Certo</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" />
+  <link rel="stylesheet" href="exibirPosts.css" />
+  <link rel="stylesheet" href="../css/HeaderFooter.css" />
+  <link rel="icon" href="../img/favicon.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
 
-    <script defer src="../js/HeaderFooter.js"></script>
-    <script defer src="exibirPosts.js"></script>
-  </head>
-  <body>
-    <!-- HEADER -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700&display=swap" rel="stylesheet" />
 
-    <header>
-      <a href="../Paginainicial.html" id="logosite">
-        <img class="logo" src="../img/logo.png" alt="" />
-        <img class="loguinho" src="../img/favicon.png" alt="" />
-      </a>
-      <button class="sidebaricon">
-        <img
-          src="../img/sidebar.png"
-          alt="iconesidebar"
-          width="35px"
-          height="30px"
-        />
-      </button>
-      <div class="botoescabecalho">
-        <a class="botaocabecalho" href="../Forum.html"
-          ><span class="txtcabecalho">Fórum</span></a
-        >
-        <a class="botaocabecalho" href="../Guiademontagem.html"
-          ><span class="txtcabecalho">Guia</span></a
-        >
-        <a class="botaocabecalho" href="../Montarpc.html"
-          ><span class="txtcabecalho">Montar PC</span></a
-        >
-        <a class="botaocabecalho2" href="../Login.html">
-          <img
-            class="ProfileIcon"
-            src="../img/ProfileIcon.png"
-            alt="Meu Perfil"
-          />
-          <span class="txtcabecalho"> Fazer Login</span>
-        </a>
+  <script defer src="../js/HeaderFooter.js"></script>
+  <script defer src="exibirPosts.js"></script>
+</head>
+
+<body>
+  <!-- HEADER -->
+
+  <header>
+    <a href="Paginainicial.html" id="logosite">
+      <img class="logo" src="../img/logo.png" alt="" />
+      <img class="loguinho" src="../img/favicon.png" alt="" />
+    </a>
+    <button class="sidebaricon">
+      <img src="../img/sidebar.png" alt="iconesidebar" width="35px" height="30px" />
+    </button>
+    <div class="botoescabecalho">
+
+      <div class="divBotao">
+        <a class="botaocabecalho" href="Forum.html"><span class="txtcabecalho">Fórum</span></a>
+        <div class="lineBotao"></div>
       </div>
-    </header>
-    <br />
+      <div class="divBotao">
+        <a class="botaocabecalho" href="Guiademontagem.html"><span class="txtcabecalho">Guia</span></a>
+        <div class="lineBotao"></div>
+      </div>
+      <div class="divBotao">
+        <a class="botaocabecalho" href="Montarpc.html"><span class="txtcabecalho">Montar PC</span></a>
+        <div class="lineBotao"></div>
+      </div>
+      <a id="btDeslogado" class="botaocabecalho2" href="Login.html">
+        <img class="ProfileIcon" src="../img/profileIcon.png" alt="Meu Perfil" />
+        <span class="txtcabecalho"> Fazer Login</span>
+      </a>
+      <a id="btLogado" class="botaocabecalho3" href="ResumoDeComponentes.html">
+        <img class="ProfileIcon" src="../img/profileWhiteIcon.png" alt="Meu Perfil" />
+      </a>
+    </div>
+  </header>
+  <br />
 
-    <main>
-      <div id="exibicaoPosts"></div>
-    </main>
-    <!-- FOOTER -->
+  <main>
+    <div id="exibicaoPosts"></div>
+  </main>
+  <!-- FOOTER -->
 
-    <footer class="rodape">
-      <p class="copyright">© 2024, PC Certo | Todos os direitos reservados.</p>
-    </footer>
-  </body>
+  <footer class="rodape">
+    <p class="copyright">© 2024, PC Certo | Todos os direitos reservados.</p>
+  </footer>
+</body>
+
 </html>

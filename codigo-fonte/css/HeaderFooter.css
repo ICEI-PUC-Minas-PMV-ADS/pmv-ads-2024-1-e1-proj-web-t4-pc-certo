@@ -2,10 +2,12 @@
 ::-webkit-scrollbar-track {
     background: #2e2e2e;
 }
+
 ::-webkit-scrollbar-thumb {
     background: #41ae4f;
     border-radius: 6px;
 }
+
 * {
     scrollbar-width: thin;
     scrollbar-color: #41ae4f #2e2e2e;
@@ -32,6 +34,13 @@
         height: 70px;
         margin-left: 20px;
     }
+
+    .lineBotao:nth-child(2) {
+        transform: scaleX(1);
+        margin-left: 45px;
+        width: 120px;
+    }
+
 
     div.botoescabecalho {
         background-color: #2e2e2e;
@@ -120,7 +129,8 @@ header {
 .botoescabecalho {
     display: flex;
     justify-content: space-evenly;
-    margin: 2% 0px;
+    margin: 10px 0 0 0;
+    gap: 25px;
 
 }
 
@@ -139,16 +149,27 @@ header {
     display: none;
 }
 
+.divBotao {
+    display: flex;
+    flex-direction: column;
+}
+
+.lineBotao {
+    display: flex;
+    background-color: #41ae4f;
+    height: 2px;
+    transform: scaleX(0);
+}
+
 
 .botaocabecalho {
-    margin-right: 32px;
-    border-radius: 20px;
-    background-color: #41ae4f;
+    display: flex;
+    margin: 10px 0 0 0;
 }
 
 .botaocabecalho2 {
     display: flex;
-
+    margin-top: 5px;
     margin-right: 32px;
     border-radius: 20px;
     float: left;
@@ -161,9 +182,9 @@ header {
 
 .botaocabecalho3 {
     margin-right: 32px;
+    margin-top: 7px;
     border-radius: 20px;
     float: left;
-    background-color: #dcdcdc;
 }
 
 .botaocabecalho3 .txtcabecalho {
@@ -176,25 +197,15 @@ header {
     color: white;
     text-decoration-line: none;
     float: left;
-    padding: 15px;
+    padding: 15px 15px 9px 15px;
 }
 
-.botaocabecalho:hover {
-    background-color: #31833c;
-    transition: 0.3s ease-in-out;
+.divBotao:hover .lineBotao {
+    transform: scaleX(1);
+    transition: 0.2s ease;
 }
 
 .botaocabecalho2:hover {
-    background-color: white;
-    transition: 0.3s;
-}
-
-.botaocabecalho:hover {
-    background-color: #31833c;
-    transition: 0.3s ease-in-out;
-}
-
-.botaocabecalho3:hover {
     background-color: white;
     transition: 0.3s;
 }

@@ -11,6 +11,24 @@ sideBtn.addEventListener("click", function () {
   togglenavbar = !togglenavbar;
 });
 
+var guiademontagem = "Guiademontagem";
+var lineBotao = document.querySelectorAll(".lineBotao");
+if (window.location.pathname.match(guiademontagem)) {
+  lineBotao[1].style.transform = "scalex(1)";
+}
+
+var forum = "Forum";
+var lineBotao = document.querySelectorAll(".lineBotao");
+if (window.location.pathname.match(forum)) {
+  lineBotao[0].style.transform = "scalex(1)";
+}
+
+var montarpc = "Montarpc";
+var lineBotao = document.querySelectorAll(".lineBotao");
+if (window.location.pathname.match(montarpc)) {
+  lineBotao[2].style.transform = "scalex(1)";
+}
+
 //mudar icone login
 
 const temUsuario = localStorage.getItem("nomeCadastro");

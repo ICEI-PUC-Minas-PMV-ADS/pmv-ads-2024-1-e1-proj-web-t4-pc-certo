@@ -2,116 +2,111 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/HeaderFooter.css">
-    <script defer src="js/HeaderFooter.js"></script>
-    <script defer src="js/EscolhadeComponentes.js"></script>
-    <link rel="stylesheet" href="css/EscolhaDeComponentes.css">
-    <title>Escolha de componentes - PC Certo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/HeaderFooter.css">
+  <script defer src="js/HeaderFooter.js"></script>
+  <script defer src="js/EscolhadeComponentes.js"></script>
+  <link rel="stylesheet" href="css/EscolhaDeComponentes.css">
+  <title>Escolha de componentes - PC Certo</title>
 </head>
 
 <body>
-    <header>
-        <a href="Paginainicial.html" id="logosite">
-          <img class="logo" src="img/logo.png" alt="" />
-          <img class="loguinho" src="img/favicon.png" alt="" />
-        </a>
-        <button class="sidebaricon">
-          <img
-            src="img/sidebar.png"
-            alt="iconesidebar"
-            width="35px"
-            height="30px"
-          />
-        </button>
-        <div class="botoescabecalho">
-          <a class="botaocabecalho" href="Forum.html"
-            ><span class="txtcabecalho">Fórum</span></a
-          >
-          <a class="botaocabecalho" href="Guiademontagem.html"
-            ><span class="txtcabecalho">Guia</span></a
-          >
-          <a class="botaocabecalho" href="Montarpc.html"
-            ><span class="txtcabecalho">Montar PC</span></a
-          >
-          <a id="btDeslogado" class="botaocabecalho2" href="Login.html">
-            <img class="ProfileIcon" src="img/ProfileIcon.png" alt="Meu Perfil" />
-            <span class="txtcabecalho"> Fazer Login</span>
-          </a>
-          <a
-            id="btLogado"
-            class="botaocabecalho3"
-            href="ResumoDeComponentes.html"
-          >
-            <img class="ProfileIcon" src="img/ProfileIcon.png" alt="Meu Perfil" />
-          </a>
+  <header>
+    <a href="Paginainicial.html" id="logosite">
+      <img class="logo" src="img/logo.png" alt="" />
+      <img class="loguinho" src="img/favicon.png" alt="" />
+    </a>
+    <button class="sidebaricon">
+      <img src="img/sidebar.png" alt="iconesidebar" width="35px" height="30px" />
+    </button>
+    <div class="botoescabecalho">
+
+      <div class="divBotao">
+        <a class="botaocabecalho" href="Forum.html"><span class="txtcabecalho">Fórum</span></a>
+        <div class="lineBotao"></div>
+      </div>
+      <div class="divBotao">
+        <a class="botaocabecalho" href="Guiademontagem.html"><span class="txtcabecalho">Guia</span></a>
+        <div class="lineBotao"></div>
+      </div>
+      <div class="divBotao">
+        <a class="botaocabecalho" href="Montarpc.html"><span class="txtcabecalho">Montar PC</span></a>
+        <div class="lineBotao"></div>
+      </div>
+      <a id="btDeslogado" class="botaocabecalho2" href="Login.html">
+        <img class="ProfileIcon" src="img/profileIcon.png" alt="Meu Perfil" />
+        <span class="txtcabecalho"> Fazer Login</span>
+      </a>
+      <a id="btLogado" class="botaocabecalho3" href="ResumoDeComponentes.html">
+        <img class="ProfileIcon" src="img/profileWhiteIcon.png" alt="Meu Perfil" />
+      </a>
+    </div>
+  </header>
+  <main class="wrapper">
+
+    <!-- Titulo Pagina -->
+    <article class="titulopagina">
+      <div class="titlinha">
+        <h1>Escolha de Componentes</h1>
+      </div>
+      <p class="titdesc">Vamos começar, peça por peça!</p>
+    </article>
+    <!-- Resumo do que é o Componente -->
+    <div class="resumoComponente">
+      <div><img id="resumoImg" class="imgResumo" src="img/pagGuia-CPU.png" alt=""></div>
+      <h2 id="resumoTit">Processador</h2>
+      <p id="resumoDesc">É como o cérebro do computador, que pensa e realiza todas as tarefas. Escolher um
+        processador rápido
+        e eficiente é importante para garantir que seu computador possa realizar muitas tarefas de forma
+        rápida e suave.</p>
+      <button class="guia" onclick="window.location.href='Guiademontagem.html'">Guia</button>
+    </div>
+
+    <article class="containerEscolhaProx">
+      <!-- Divisão para a Escolha de Componentes -->
+      <h1 class="divisaoh1">ESCOLHA UMA OPÇÃO</h1>
+      <!-- Escolha de Componentes -->
+      <div class="escolhaComponentes">
+        <div class="buscaFiltro">
+          <div class="buscar">
+            <input type="text" class="busca" placeholder="Pesquise aqui!" id="buscainput">
+            <button class="limpaBusca"><img src="img/pagEscolha-limpaFiltro.png" alt=""></button>
+          </div>
+          <div class="filtrar">
+            <p class="ordemTxt">Ordenar por:</p>
+            <select name="" id="ordenar">
+              <option value="">Sugestão: PC Certo</option>
+              <option value="decrescente">Maior Preço</option>
+              <option value="crescente">Menor Preço</option>
+            </select>
+          </div>
         </div>
-      </header>
-    <main class="wrapper">
-
-        <!-- Titulo Pagina -->
-        <article class="titulopagina">
-            <div class="titlinha">
-                <h1>Escolha de Componentes</h1>
-            </div>
-            <p class="titdesc">Vamos começar, peça por peça!</p>
-        </article>
-        <!-- Resumo do que é o Componente -->
-        <div class="resumoComponente">
-            <div><img id="resumoImg" class="imgResumo" src="img/pagGuia-CPU.png" alt=""></div>
-            <h2 id="resumoTit">Processador</h2>
-            <p id="resumoDesc">É como o cérebro do computador, que pensa e realiza todas as tarefas. Escolher um
-                processador rápido
-                e eficiente é importante para garantir que seu computador possa realizar muitas tarefas de forma
-                rápida e suave.</p>
-            <button class="guia" onclick="window.location.href='Guiademontagem.html'">Guia</button>
+        <div id="containerComp" class="opcoesComponentes">
         </div>
+      </div>
+      <!-- Botão fixo orcamento total e prox etapa -->
+      <div class="orcamentoTotaleAvancar">
+        <div class="orcamentoTotal">
+          <div class="orcamento">
+            <p>Orçamento:</p>
+            <p id="orcTotal">R$0,00</p>
+          </div>
+          <div class="totalparcial">
+            <p>Total parcial:</p>
+            <p id="parcialTotal">R$00,00</p>
+          </div>
+        </div>
+        <button class="proxComponente" id="voltar">Voltar</button>
+        <button class="proxComponente" id="avancar">Próximo</button>
 
-        <article class="containerEscolhaProx">
-            <!-- Divisão para a Escolha de Componentes -->
-            <h1 class="divisaoh1">ESCOLHA UMA OPÇÃO</h1>
-            <!-- Escolha de Componentes -->
-            <div class="escolhaComponentes">
-                <div class="buscaFiltro">
-                    <div class="buscar">
-                        <input type="text" class="busca" placeholder="Pesquise aqui!" id="buscainput">
-                        <button class="limpaBusca"><img src="img/pagEscolha-limpaFiltro.png" alt=""></button>
-                    </div>
-                    <div class="filtrar">
-                      <p class="ordemTxt">Ordenar por:</p>
-                        <select name="" id="ordenar">
-                            <option value="">Sugestão: PC Certo</option>
-                            <option value="decrescente">Maior Preço</option>
-                            <option value="crescente">Menor Preço</option>
-                        </select>
-                    </div>
-                </div>
-                <div id="containerComp" class="opcoesComponentes">
-                </div>
-            </div>
-            <!-- Botão fixo orcamento total e prox etapa -->
-            <div class="orcamentoTotaleAvancar">
-                <div class="orcamentoTotal">
-                    <div class="orcamento">
-                        <p>Orçamento:</p>
-                        <p id="orcTotal">R$0,00</p>
-                    </div>
-                    <div class="totalparcial">
-                        <p>Total parcial:</p>
-                        <p id="parcialTotal">R$00,00</p>
-                    </div>
-                </div>
-                <button class="proxComponente" id="voltar">Voltar</button>
-                <button class="proxComponente" id="avancar">Próximo</button>
+      </div>
+    </article>
 
-            </div>
-        </article>
-
-    </main>
-    <footer class="rodape">
-        <p class="copyright">© 2024, PC Certo | Todos os direitos reservados.</p>
-    </footer>
+  </main>
+  <footer class="rodape">
+    <p class="copyright">© 2024, PC Certo | Todos os direitos reservados.</p>
+  </footer>
 </body>
 
 </html>
