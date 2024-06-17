@@ -197,7 +197,7 @@ meuPerfilPosts.onclick = function () {
   window.location.href = "forumPages/meusPosts.html?id=" + nomeAutor;
 };
 
-//CONTADORES DE MENSAGENS E DE THREADS:
+//CONTADORES DE MENSAGENS E DE THREADS -- <CHAT GPT AJUDOU!>
 
 function countPostsAndResponses(theme) {
   let postCount = 0;
@@ -260,5 +260,4 @@ btPesquisa.onclick = function () {
     alert("O campo de pesquisa está vazio!");
   }
 };
-
-console.log("Tudo certo...");
+console.log("JS Carregado!");
