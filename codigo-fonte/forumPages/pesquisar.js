@@ -1,36 +1,40 @@
-// FILTRAR EM MEUS POSTS
-
-var url = window.location.href;
-var partesDoUrl = url.split("=");
-var usuarioPosts = partesDoUrl[1];
-
+// SE NAO TIVER NADA 1/2
 var temPosts = document.getElementById("exibicaoPosts");
 var naoTemPosts = document.getElementById("naoTemPosts");
 
 var isTherePosts = 0;
+///
 
-for (var i = 0; i < localStorage.length; i++) {
-  var chave = localStorage.key(i);
-  var valor = localStorage.getItem(chave);
+function carregaPost(entrada) {
+  for (var i = 0; i < localStorage.length; i++) {
+    var chave = localStorage.key(i);
+    var itemLclStrg = localStorage.getItem(chave);
 
-  if (valor.startsWith("{") && valor.endsWith("}")) {
-    var objeto = JSON.parse(valor);
-
-    if (objeto.hasOwnProperty("autor") && objeto.autor === usuarioPosts) {
-      CriaPostDiv(objeto);
-      isTherePosts = 1;
+    if (chave.startsWith("POST_")) {
+      var postJSON = JSON.parse(itemLclStrg);
+      if (itemLclStrg.toLowerCase().includes(entrada.toLowerCase())) {
+        CriaPostDiv(postJSON);
+        console.log("achei uma");
+        isTherePosts = 1;
+      }
     }
   }
 }
 
+var url = window.location.href;
+var urlDividida = url.split("=");
+var pesquisaID = decodeURIComponent(urlDividida[1]);
+
+carregaPost(pesquisaID);
+
+//SE NAO TIVER NADA 2/2
 naoTemPosts.style.display = "none";
 
 if (isTherePosts == 0) {
   temPosts.style.display = "none";
   naoTemPosts.style.display = "inline-block";
 }
-
-//cria divs
+///
 function CriaPostDiv(dados) {
   var cadaPostDiv = document.createElement("div");
   cadaPostDiv.classList.add("cadaPost");
@@ -82,26 +86,11 @@ function CriaPostDiv(dados) {
   exibicaoPostsDiv.appendChild(cadaPostDiv);
 }
 
-//REDIRECIONAR PARA POSTS
+// BREADCRUMB
 
-var forumPosts = document.querySelectorAll(".cadaPostTop");
+var bcPesq = document.getElementById("pesquisarID");
 
-forumPosts.forEach(function (post) {
-  post.addEventListener("click", function () {
-    var postId = this.querySelector("#cadaPostIds").textContent;
-    window.location.href = "responderPost.html?id=" + postId;
-  });
-});
-
-//Meus posts ICONE
-
-document.getElementById("meuPerfilPosts");
-
-var nomeAutor = localStorage.getItem("nomeCadastro");
-
-meuPerfilPosts.onclick = function () {
-  window.location.href = "meusPosts.html?id=" + nomeAutor;
-};
+bcPesq.textContent = "'" + pesquisaID + "'";
 
 //PESQUISAR
 document.getElementById("barraPesquisar");
@@ -114,3 +103,14 @@ btPesquisa.onclick = function () {
     alert("O campo de pesquisa está vazio!");
   }
 };
+
+//REDIRECIONAR PARA POSTS
+
+var forumPosts = document.querySelectorAll(".cadaPostTop");
+
+forumPosts.forEach(function (post) {
+  post.addEventListener("click", function () {
+    var postId = this.querySelector("#cadaPostIds").textContent;
+    window.location.href = "responderPost.html?id=" + postId;
+  });
+});

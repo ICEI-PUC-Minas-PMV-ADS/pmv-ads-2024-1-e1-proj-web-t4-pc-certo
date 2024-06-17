@@ -247,3 +247,16 @@ function updateCounters() {
 }
 
 updateCounters();
+
+//PESQUISAR
+document.getElementById("barraPesquisar");
+var btPesquisa = document.getElementById("srch0");
+
+btPesquisa.onclick = function () {
+  if (barraPesquisar.value !== "") {
+    window.location.href =
+      "forumPages/pesquisar.html?id=" + barraPesquisar.value;
+  } else {
+    alert("O campo de pesquisa está vazio!");
+  }
+};

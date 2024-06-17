@@ -16,7 +16,10 @@ temaTpc.value = "NULO";
 ///
 
 //VALIDA DADOS ANTES DE PUBLICAR
-enviarPub.onclick = validaDados;
+enviarPub.onclick = function () {
+  validaDados();
+  podeSairDaPagina = false;
+};
 
 function validaDados() {
   if (
@@ -123,7 +126,7 @@ if (usuarioString !== null) {
   iconesForum.style.display = "none";
 }
 
-//Meus posts
+//MEUS POSTS
 
 document.getElementById("meuPerfilPosts");
 
@@ -131,4 +134,32 @@ var nomeAutor = localStorage.getItem("nomeCadastro");
 
 meuPerfilPosts.onclick = function () {
   window.location.href = "meusPosts.html?id=" + nomeAutor;
+};
+
+//EVITAR DE SAIR DA PÁGINA SEM QUERER -- VI NO GOOGLE, NAO ENTENDI O EVENT RETURNVALUE E O RETURN
+
+let podeSairDaPagina = true;
+
+window.onbeforeunload = function (event) {
+  if (
+    podeSairDaPagina &&
+    (titPub.value.length > 5 || textoPub.value.length > 10)
+  ) {
+    const confirmationMessage =
+      "Tem certeza que deseja sair da página? Se você sair, perderá todos os dados não salvos.";
+    event.returnValue = confirmationMessage;
+    return confirmationMessage;
+  }
+};
+
+//PESQUISAR
+document.getElementById("barraPesquisar");
+var btPesquisa = document.getElementById("srch0");
+
+btPesquisa.onclick = function () {
+  if (barraPesquisar.value !== "") {
+    window.location.href = "pesquisar.html?id=" + barraPesquisar.value;
+  } else {
+    alert("O campo de pesquisa está vazio!");
+  }
 };

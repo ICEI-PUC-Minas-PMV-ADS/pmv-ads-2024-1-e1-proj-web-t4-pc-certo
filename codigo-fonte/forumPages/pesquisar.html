@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nova Publicação - PC Certo</title>
+    <title>Publicações - PC Certo</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
     />
     <link rel="stylesheet" href="forumNovoPost.css" />
+    <link rel="stylesheet" href="exibirPosts.css" />
     <link rel="stylesheet" href="../css/HeaderFooter.css" />
     <link rel="icon" href="../img/favicon.png" type="image/x-icon" />
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
@@ -20,10 +21,11 @@
     />
 
     <script defer src="../js/HeaderFooter.js"></script>
-    <script defer src="forumNovoPost.js"></script>
+    <script defer src="pesquisar.js"></script>
   </head>
   <body>
     <!-- HEADER -->
+
     <header>
       <a href="../Paginainicial.html" id="logosite">
         <img class="logo" src="../img/logo.png" alt="" />
@@ -47,7 +49,7 @@
         <a class="botaocabecalho" href="../Montarpc.html"
           ><span class="txtcabecalho">Montar PC</span></a
         >
-        <a id="btDeslogado" class="botaocabecalho2" href="../Login.html">
+        <a id="btDeslogado" class="botaocabecalho2" href="Login.html">
           <img
             class="ProfileIcon"
             src="../img/ProfileIcon.png"
@@ -58,7 +60,7 @@
         <a
           id="btLogado"
           class="botaocabecalho3"
-          href="ResumoDeComponentes.html"
+          href="../ResumoDeComponentes.html"
         >
           <img
             class="ProfileIcon"
@@ -69,13 +71,13 @@
       </div>
     </header>
     <br />
-    <!-- MAIN -->
 
     <div class="contTop">
       <div class="Search">
         <input
           id="barraPesquisar"
           name="caixapesq"
+          id="barraPesquisar"
           type="text"
           class="SearchBar"
           placeholder="O que você procura?"
@@ -116,6 +118,7 @@
         />
       </div>
     </div>
+    <br />
 
     <div class="Breadcrumb">
       <span id="indBC">&#9679;</span>
@@ -123,65 +126,22 @@
       &#10140;
       <a class="bcBt" href="../Forum.html">Fórum da Comunidade</a>
       &#10140;
-      <span class="bcBtN">Nova Publicação</span>
+      <span class="bcBt">Resultados para: <span id="pesquisarID"></span></span>
     </div>
     <br />
-    <main>
-      <div class="cxNovoTpc">
-        <div class="popUpTop">
-          <h2 id="h2">Novo Tópico <span id="novoTpcEm"></span></h2>
-          <br />
-        </div>
-        <h3 id="h3">Título</h3>
-        <input
-          type="text"
-          id="titPub"
-          class="formNormal"
-          placeholder="Título do Tópico"
-          maxlength="75"
-        />
-        <span id="titCurto"></span><br />
-        <label for="temaTpc" id="escolhaTema"> Escolha o tema:</label>
-        <select id="temaTpc" class="formNormal">
-          <option value="NULO"></option>
-          <option value="ERROS">Erros e Soluções de Problemas</option>
-          <option value="UPGRADE">Upgrade e Troca de Peças</option>
-          <option value="MOUSETECLADO">Mouse, Teclado e Mousepad</option>
-          <option value="SUGESTOESMONTAGEM">Sugestões de Montagem</option>
-          <option value="COMPRASONLINE">Sugestões de Compras Online</option>
-          <option value="COMPRASLOCAIS">Sugestões de Compras Locais</option>
-          <option value="MONITORES">Monitores</option>
-          <option value="AUDIO">Headsets e Microfones e Áudio</option>
-          <option value="DICAS">Dicas de Programação e Monitoração</option>
-          <option value="OUTROS">Outros Periféricos</option>
-          <option value="NULO"></option>
-          <option value="PLACADEVIDEO">Placa de Vídeo</option>
-          <option value="PROCESSADORES">Processadores</option>
-          <option value="PLACAMAE">Placas-Mãe</option>
-          <option value="FONTES">Fontes</option>
-          <option value="MEMORIARAM">Memória RAM</option>
-          <option value="ARMAZENAMENTO">SSD's, HDD's e Armazenamento</option>
-          <option value="GABINETES">Gabinetes e Casemod.</option>
-          <option value="REFRIGERACAO">Peças de refrigeração</option>
-          <option value="OUTROS">Cabos e Outras Peças</option>
-        </select>
-        <span id="opcInval"></span><br />
-        <h3 id="h4">Texto</h3>
-        <textarea
-          id="textoPub"
-          class="formNormal"
-          placeholder="Digite aqui sua dúvida..."
-          maxlength="750"
-        ></textarea>
-        <span id="txtCurto"></span><br />
 
-        <div class="centralizar">
-          <button id="enviarPub">Publicar</button>
-        </div>
+    <main>
+      <div id="naoTemPosts">
+        Ops, parece que não tem nenhuma publicação aqui por enquanto...
+        <br /><br /><a class="volteForum" href="../Forum.html"
+          >&#10140; Voltar ao Fórum</a
+        >
+      </div>
+      <div id="exibicaoPosts">
+        <div class="pubsEm">Publicações em:<span id="postsIn"></span></div>
       </div>
     </main>
     <br />
-
     <!-- FOOTER -->
 
     <footer class="rodape">

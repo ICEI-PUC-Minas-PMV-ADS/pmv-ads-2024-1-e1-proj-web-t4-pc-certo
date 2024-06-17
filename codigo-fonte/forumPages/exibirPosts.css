@@ -140,3 +140,7 @@ body {
     scale: 1.1;
     text-decoration: underline;
 }
+
+#pesquisarID {
+    color: #c0cec2;
+}

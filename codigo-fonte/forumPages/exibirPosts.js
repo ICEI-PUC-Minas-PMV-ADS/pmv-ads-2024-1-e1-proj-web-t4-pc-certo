@@ -189,3 +189,15 @@ var nomeAutor = localStorage.getItem("nomeCadastro");
 meuPerfilPosts.onclick = function () {
   window.location.href = "meusPosts.html?id=" + nomeAutor;
 };
+
+//PESQUISAR
+document.getElementById("barraPesquisar");
+var btPesquisa = document.getElementById("srch0");
+
+btPesquisa.onclick = function () {
+  if (barraPesquisar.value !== "") {
+    window.location.href = "pesquisar.html?id=" + barraPesquisar.value;
+  } else {
+    alert("O campo de pesquisa está vazio!");
+  }
+};
