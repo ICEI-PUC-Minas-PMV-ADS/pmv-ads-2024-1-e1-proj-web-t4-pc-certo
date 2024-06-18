@@ -330,34 +330,38 @@ const enviarResposta = document.getElementById("enviarResposta");
 var numeroResp = 0;
 
 enviarResposta.onclick = function () {
-  //SOMA +1 RESPOSTA NO POST ORIGINAL
-  let objeto = localStorage.getItem(postId);
-  let objetoJSON = JSON.parse(objeto);
+  if (document.getElementById("responderPub").value.length > 9) {
+    //SOMA +1 RESPOSTA NO POST ORIGINAL
+    let objeto = localStorage.getItem(postId);
+    let objetoJSON = JSON.parse(objeto);
 
-  objetoJSON.nRespostas += 1;
+    objetoJSON.nRespostas += 1;
 
-  objeto = JSON.stringify(objetoJSON);
+    objeto = JSON.stringify(objetoJSON);
 
-  localStorage.setItem(postId, objeto);
+    localStorage.setItem(postId, objeto);
 
-  //ENVIA RESPOSTA
+    //ENVIA RESPOSTA
 
-  let idResp = postId + "_RESP_" + numeroResp;
+    let idResp = postId + "_RESP_" + numeroResp;
 
-  let objetoResp = {
-    texto: document.getElementById("responderPub").value,
-    autor: localStorage.getItem("nomeCadastro"),
-    data: new Date(),
-    id: idResp,
-  };
+    let objetoResp = {
+      texto: document.getElementById("responderPub").value,
+      autor: localStorage.getItem("nomeCadastro"),
+      data: new Date(),
+      id: idResp,
+    };
 
-  var respString = JSON.stringify(objetoResp);
+    var respString = JSON.stringify(objetoResp);
 
-  localStorage.setItem(idResp, respString);
+    localStorage.setItem(idResp, respString);
 
-  //DA REFRESH NA PAGINA
+    //DA REFRESH NA PAGINA
 
-  window.location.reload();
+    window.location.reload();
+  } else {
+    alert("A resposta deve conter pelo menos 10 dígitos!");
+  }
 };
 
 //AUMENTA CONTADOR DE RESPOSTAS DO POST ORIGINAL

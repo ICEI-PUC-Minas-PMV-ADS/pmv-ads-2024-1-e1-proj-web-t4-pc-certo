@@ -13,7 +13,7 @@ for (var i = 0; i < localStorage.length; i++) {
   var chave = localStorage.key(i);
   var valor = localStorage.getItem(chave);
 
-  if (valor.startsWith("{") && valor.endsWith("}")) {
+  if (valor.startsWith("{") && valor.endsWith("}") && !chave.includes("RESP")) {
     var objeto = JSON.parse(valor);
 
     if (objeto.hasOwnProperty("autor") && objeto.autor === usuarioPosts) {
