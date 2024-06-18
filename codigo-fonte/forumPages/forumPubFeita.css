@@ -1,0 +1,151 @@
+body {
+    font-family: 'Hanken Grotesk', sans-serif, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    min-height: 100vh;
+    background-color: #273F27;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+main {
+    min-height: 100%;
+    padding: 0 5%;
+
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    color: #fff;
+}
+
+p {
+    color: #7db486;
+    font-size: large;
+    margin: 0;
+}
+
+.conteiner {
+    background-color: #3f6944;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 500px;
+
+    padding: 50px;
+    border: 2px solid #3f6944;
+    border-radius: 50px;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.novoPost {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: #41ae4f;
+    border-radius: 10px;
+    border: 2px solid transparent;
+
+    padding: 8px 15px;
+    transition: 0.3s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.novoPost:hover {
+    scale: 1.05;
+    color: #fff;
+    border: 2px solid #88ff98;
+}
+
+.voltarForum {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: #609e69;
+    border-radius: 10px;
+    border: 2px solid transparent;
+
+    padding: 8px 15px;
+    transition: 0.3s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.voltarForum:hover {
+    scale: 1.05;
+    color: #fff;
+    border: 2px solid #a2ffb0;
+}
+
+#verPubFeita {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: #3f86c9;
+    border-radius: 10px;
+    border: 2px solid transparent;
+
+    padding: 8px 15px;
+    transition: 0.3s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+#verPubFeita:hover {
+    scale: 1.05;
+    color: #fff;
+    border: 2px solid #7bbfff;
+}
+
+
+#minhasPubs {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: #3f86c9;
+    border-radius: 10px;
+    border: 2px solid transparent;
+
+    padding: 8px 15px;
+    transition: 0.3s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+#minhasPubs:hover {
+    scale: 1.05;
+    color: #fff;
+    border: 2px solid #7bbfff;
+}

@@ -1,0 +1,409 @@
+body {
+    font-family: 'Hanken Grotesk', sans-serif, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    min-height: 100vh;
+    background-color: #273F27;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.contTop {
+    max-height: fit-content;
+
+    font-family: 'Hanken Grotesk', Arial, sans-serif;
+    padding: 10px 5%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.flexGrow1 {
+    flex-grow: 1;
+}
+
+/* MAIN */
+
+main {
+    min-height: 100%;
+    gap: 10px 0 10px 0;
+    padding: 0 5%;
+
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.bcBt {
+    text-decoration: none;
+    color: rgb(143, 167, 143);
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    max-width: fit-content;
+    cursor: pointer;
+}
+
+.btDef {
+    border: none;
+
+}
+
+.filterBtn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0 0 0 0;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* Pesquisar*/
+
+.Search {
+    font-size: 27px;
+    background-color: #3f6944;
+    border-radius: 20px;
+    padding: 15px 15px 15px 15px;
+    max-width: 500px;
+    min-width: fit-content;
+
+    flex-grow: 2;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.SearchBar {
+    font-size: 27px;
+    color: #fff;
+
+    border: none;
+    outline: none;
+    background-color: transparent;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.SearchBar::placeholder {
+    color: #7db486;
+}
+
+@media (max-width: 709px) {
+    .SearchBar {
+        max-width: 300px;
+    }
+
+    .Search {
+        max-width: fit-content;
+    }
+}
+
+@media (max-width: 690px) {
+    input.SearchBar {
+        display: none;
+    }
+
+    div.Search {
+        flex-grow: 0;
+    }
+
+    button#srch0 {
+        display: none;
+    }
+
+    button#srch1 {
+        display: inline-block;
+    }
+}
+
+.SearchBtn {
+    width: 33.47px;
+    height: 33.47px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    align-self: flex-end;
+}
+
+.SearchBtn:hover {
+    scale: 1.2;
+    cursor: pointer;
+
+}
+
+.SearchIcon {
+    width: 33px;
+    height: 33px;
+}
+
+#srch1 {
+    display: none;
+}
+
+/* ICONES FORUM */
+
+#iconesForum {
+    display: flex;
+}
+
+.iconSmll {
+    width: 33px;
+    height: 33px;
+    max-width: 100%;
+    padding: 10px;
+    float: right;
+
+    bottom: 50%;
+    transition: 0.5s ease;
+}
+
+.iconSmll:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.iconVSmll {
+    width: 30px;
+    height: auto;
+    max-width: 100%;
+    padding: 10px;
+
+    transition: 0.5s ease;
+}
+
+#sinoNot:hover {
+    animation: shake 0.35s;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+
+    75% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* BREADCRUMB */
+
+.Breadcrumb {
+    max-height: fit-content;
+    color: rgb(126, 167, 126);
+    padding: 10px 5%;
+    font-size: 20px;
+    gap: 1%;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#indBC {
+    color: #41ae4f;
+}
+
+.bcBt {
+    text-decoration: none;
+    color: rgb(143, 167, 143);
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    max-width: fit-content;
+
+    word-wrap: break-word;
+}
+
+.bcBt:hover {
+    scale: 1.03;
+    color: rgb(179, 245, 179);
+}
+
+.bcBtN {
+    text-decoration: none;
+    color: rgb(143, 167, 143);
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    max-width: fit-content;
+
+
+    word-wrap: break-word;
+}
+
+.cxNovoTpc {
+    background-color: #3f6944;
+    padding: 3%;
+    border-radius: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.verRegras {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: #d36811;
+    border-radius: 10px;
+    border: 2px solid #f89b50;
+
+    padding: 8px 15px;
+    max-width: fit-content;
+
+    transition: 0.3s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.verRegras:hover {
+    scale: 1.05;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.popUpTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#novoTpcEm {
+    font-size: 25px;
+    color: #82a781;
+}
+
+h2 {
+    color: #fff;
+    font-size: 40px;
+    margin: 0;
+}
+
+h3 {
+    margin: 0 0 5px 0;
+    font-weight: 500;
+}
+
+.formNormal {
+    border: 2px solid #c0ffbe;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px;
+    font-size: 25px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    border-radius: 10px;
+
+    max-width: 100%;
+}
+
+.formErro {
+    border: 2px solid #FF5858;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px;
+    font-size: 25px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    border-radius: 10px;
+}
+
+#titPub::placeholder {
+    color: #82a781;
+    font-weight: normal;
+}
+
+#escolhaTema {
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+#temaTpc option {
+    background-color: #7db486;
+    max-height: 100px;
+    font-size: 15px;
+
+}
+
+#textoPub {
+    min-height: 300px;
+    max-width: 100%;
+    resize: none;
+}
+
+#textoPub::placeholder {
+    color: #82a781;
+    font-weight: normal;
+}
+
+
+#txtCurto,
+#titCurto,
+#opcInval {
+    font-size: 15px;
+    font-weight: 600;
+    color: #FF5858;
+    margin-top: 2px;
+}
+
+#enviarPub {
+    border: 2px solid transparent;
+    outline: none;
+    background-color: #41ae4f;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+
+    padding: 15px 50px;
+    max-width: fit-content;
+
+    font-weight: bold;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+#enviarPub:hover {
+    scale: 1.03;
+    border: 2px solid #fff;
+}
+
+.centralizar {
+    display: flex;
+    justify-content: center;
+}
