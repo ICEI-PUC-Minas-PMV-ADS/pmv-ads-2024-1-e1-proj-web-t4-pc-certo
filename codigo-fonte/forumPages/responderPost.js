@@ -1,3 +1,5 @@
+//BREADCRUMB REDIRECIONAR
+
 var url = window.location.href;
 var partesDoUrl = url.split("_");
 
@@ -212,7 +214,7 @@ var postId = urlEq[1];
 for (let i = 0; i < localStorage.length; i++) {
   if (localStorage.key(i) == postId) {
     var chave = localStorage.key(i);
-    const objeto = localStorage.getItem(chave);
+    let objeto = localStorage.getItem(chave);
     gerarPost(objeto);
   }
 }
@@ -293,11 +295,11 @@ function gerarResp(objeto) {
 
   let divTxt = document.createElement("div");
   divTxt.textContent = objetoJSON.texto;
-  divTxt.className = "txtPostPrincipal";
+  divTxt.className = "txt";
 
   let divAut = document.createElement("div");
   divAut.textContent = objetoJSON.autor;
-  divAut.className = "autPostPrincipal";
+  divAut.className = "aut";
 
   //DATA
 
@@ -309,7 +311,7 @@ function gerarResp(objeto) {
   let hora_formatada = data_hora_objeto.toLocaleTimeString("pt-BR");
 
   divData.textContent = data_formatada + " às " + hora_formatada;
-  divData.className = "dataPostPrincipal";
+  divData.className = "dat";
 
   let newResp = document.createElement("div");
   newResp.className = "cadaResp";
@@ -319,4 +321,57 @@ function gerarResp(objeto) {
   newResp.appendChild(divData);
 
   postRespostas.appendChild(newResp);
+}
+
+// BOTAO DE ENVIAR
+
+const enviarResposta = document.getElementById("enviarResposta");
+
+var numeroResp = 0;
+
+enviarResposta.onclick = function () {
+  //SOMA +1 RESPOSTA NO POST ORIGINAL
+  let objeto = localStorage.getItem(postId);
+  let objetoJSON = JSON.parse(objeto);
+
+  objetoJSON.nRespostas += 1;
+
+  objeto = JSON.stringify(objetoJSON);
+
+  localStorage.setItem(postId, objeto);
+
+  //ENVIA RESPOSTA
+
+  let idResp = postId + "_RESP_" + numeroResp;
+
+  let objetoResp = {
+    texto: document.getElementById("responderPub").value,
+    autor: localStorage.getItem("nomeCadastro"),
+    data: new Date(),
+    id: idResp,
+  };
+
+  var respString = JSON.stringify(objetoResp);
+
+  localStorage.setItem(idResp, respString);
+
+  //DA REFRESH NA PAGINA
+
+  window.location.reload();
+};
+
+//AUMENTA CONTADOR DE RESPOSTAS DO POST ORIGINAL
+
+for (let i = 0; i < localStorage.length; i++) {
+  if (localStorage.key(i).startsWith(postId)) {
+    numeroResp += 1;
+  }
+}
+
+// SE NAO TIVER RESPOSTAS
+
+if (numeroResp > 1) {
+  var noRep = document.getElementById("noRep");
+
+  noRep.style.display = "none";
 }

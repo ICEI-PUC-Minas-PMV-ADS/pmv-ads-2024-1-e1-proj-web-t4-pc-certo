@@ -144,9 +144,33 @@
       <div id="conteinerPost">
         <div id="postPrincipal"></div>
 
-        <div id="postRespostas"></div>
+        <div class="respCont">
+          <h1>
+            <img src="../img/forum/globo_DM.png" class="respIMG" />Respostas
+          </h1>
+          <span id="linhaHor"></span>
+        </div>
+        <div id="noRep">
+          Ninguém respondeu à essa publicação por enquanto...
+        </div>
 
-        <div id="responderPost"></div>
+        <div id="postRespostas"></div>
+      </div>
+      <div class="respCont">
+        <h1>
+          <img src="../img/forum/responder_DM.png" class="respIMG" />Responder
+        </h1>
+        <span id="linhaHor"></span>
+      </div>
+      <div id="responderPost">
+        <textarea
+          id="responderPub"
+          placeholder="Digite aqui sua resposta..."
+          maxlength="500"
+        ></textarea>
+        <div class="conteinerResp">
+          <button id="enviarResposta">Enviar Resposta</button>
+        </div>
       </div>
     </main>
     <br />
