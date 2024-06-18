@@ -1,0 +1,55 @@
+#conteinerPost {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#postPrincipal {
+    background-color: #3f6944;
+    padding: 20px;
+    border-radius: 5px;
+
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#postRespostas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cadaResp {
+    background-color: #3f6944;
+    padding: 20px;
+    border-radius: 5px;
+
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tit {
+    word-wrap: break-word;
+    font-size: 30px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.txt {
+    word-wrap: break-word;
+    color: #ffffff;
+}
+
+.aut {
+    color: #c0ffbe
+}
+
+.dat {
+    color: #88a885;
+}

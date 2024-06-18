@@ -138,8 +138,8 @@ temaPostJanelas.onclick = function () {
     pagTema = "../forumPages/exibirPosts.html?id=softForums_DICAS";
   }
 
-  if (temaHTML == "PLACAMAE") {
-    pagTema = "../forumPages/exibirPosts.html?id=componentes_PLACAMAE";
+  if (temaHTML == "PLACADEVIDEO") {
+    pagTema = "../forumPages/exibirPosts.html?id=componentes_PLACADEVIDEO";
   }
 
   if (temaHTML == "PROCESSADORES") {
@@ -203,3 +203,120 @@ btPesquisa.onclick = function () {
     alert("O campo de pesquisa está vazio!");
   }
 };
+
+//RENDERIZAR POST PRINCIPAL DA PÁGINA - PEGA POST
+
+var urlEq = url.split("=");
+var postId = urlEq[1];
+
+for (let i = 0; i < localStorage.length; i++) {
+  if (localStorage.key(i) == postId) {
+    var chave = localStorage.key(i);
+    const objeto = localStorage.getItem(chave);
+    gerarPost(objeto);
+  }
+}
+
+//GERAR POST PRINCIPAL
+
+document.getElementById("postPrincipal");
+document.getElementById("postRespostas");
+
+function gerarPost(objeto) {
+  let objetoJSON = JSON.parse(objeto);
+
+  let divTitulo = document.createElement("div");
+  divTitulo.textContent = objetoJSON.titulo;
+  divTitulo.className = "tit";
+
+  let divTxt = document.createElement("div");
+  divTxt.textContent = objetoJSON.texto;
+  divTxt.className = "txt";
+
+  let divAut = document.createElement("div");
+  divAut.textContent = objetoJSON.autor;
+  divAut.className = "aut";
+
+  //DATA
+
+  let divData = document.createElement("div");
+
+  let data_hora_objeto = new Date(objetoJSON.data);
+
+  // FORMATAR DATA
+  let data_formatada = data_hora_objeto.toLocaleDateString("pt-BR");
+  let hora_formatada = data_hora_objeto.toLocaleTimeString("pt-BR");
+
+  divData.textContent = data_formatada + " às " + hora_formatada;
+  divData.className = "dat";
+
+  postPrincipal.appendChild(divTitulo);
+  postPrincipal.appendChild(divTxt);
+  postPrincipal.appendChild(divAut);
+  postPrincipal.appendChild(divData);
+}
+
+//RENDERIZAR RESPOSTAS DA PÁGINA
+let respostas = [];
+
+for (let i = 0; i < localStorage.length; i++) {
+  let respostaLocal = localStorage.key(i);
+
+  if (respostaLocal.startsWith(postId + "_RESP_")) {
+    let objeto = localStorage.getItem(respostaLocal);
+
+    let keySplit = respostaLocal.split("_");
+    let nResp = keySplit[4];
+
+    respostas.push([nResp, objeto]);
+  }
+}
+
+//ORGANIZA OS PARES EM ORDEM CRESCENTE
+respostas.sort(function (a, b) {
+  return a[0] - b[0];
+});
+
+//SOLICTA GERAR RESPOSTA EM ORDEM
+
+for (let i = 0; i < respostas.length; i++) {
+  let par = respostas[i];
+  let segundoItem = par[1];
+
+  gerarResp(segundoItem);
+}
+
+//GERA RESPOSTA
+
+function gerarResp(objeto) {
+  let objetoJSON = JSON.parse(objeto);
+
+  let divTxt = document.createElement("div");
+  divTxt.textContent = objetoJSON.texto;
+  divTxt.className = "txtPostPrincipal";
+
+  let divAut = document.createElement("div");
+  divAut.textContent = objetoJSON.autor;
+  divAut.className = "autPostPrincipal";
+
+  //DATA
+
+  let divData = document.createElement("div");
+
+  let data_hora_objeto = new Date(objetoJSON.data);
+
+  let data_formatada = data_hora_objeto.toLocaleDateString("pt-BR");
+  let hora_formatada = data_hora_objeto.toLocaleTimeString("pt-BR");
+
+  divData.textContent = data_formatada + " às " + hora_formatada;
+  divData.className = "dataPostPrincipal";
+
+  let newResp = document.createElement("div");
+  newResp.className = "cadaResp";
+
+  newResp.appendChild(divTxt);
+  newResp.appendChild(divAut);
+  newResp.appendChild(divData);
+
+  postRespostas.appendChild(newResp);
+}

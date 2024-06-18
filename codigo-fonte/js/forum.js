@@ -134,17 +134,15 @@ for (var l = 1; l < 6; l++) {
           Autor.textContent = objeto.autor;
           Respostas.textContent = objeto.nRespostas + " Respostas";
 
-          // DATA FORMATADA
-          let dataDoObjeto = new Date(objeto.data);
-          let dia = dataDoObjeto.getDate().toString().padStart(2, "0");
-          let mes = (dataDoObjeto.getMonth() + 1).toString().padStart(2, "0");
-          let ano = dataDoObjeto.getFullYear().toString().substr(-2);
-          let hora = dataDoObjeto.getHours().toString().padStart(2, "0");
-          let minuto = dataDoObjeto.getMinutes().toString().padStart(2, "0");
-          let dataFormatada = dia + "/" + mes + "/" + ano;
+          //DATA
 
-          Data.textContent = dataFormatada + " ";
-          Hora.textContent = " " + hora + ":" + minuto;
+          let data_hora_objeto = new Date(objeto.data);
+
+          // FORMATAR DATA
+          let data_formatada = data_hora_objeto.toLocaleDateString("pt-BR");
+          let hora_formatada = data_hora_objeto.toLocaleTimeString("pt-BR");
+
+          Data.textContent = data_formatada + " às " + hora_formatada;
         }
       }
     }
@@ -198,27 +196,21 @@ meuPerfilPosts.onclick = function () {
 };
 
 //CONTADORES DE MENSAGENS E DE THREADS
-function countPostsAndResponses(theme) {
+function realizarContagem(theme) {
   let postCount = 0;
   let messageCount = 0;
 
   for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);
-    if (key.startsWith(`POST_${theme}_`)) {
+    if (key.startsWith("POST_" + theme) && !key.includes("RESP")) {
       postCount++;
       messageCount++;
-
-      for (let j = 0; ; j++) {
-        const responseKey = `${key}_RESP${j}`;
-        if (localStorage.getItem(responseKey) !== null) {
-          messageCount++;
-        } else {
-          break;
-        }
+    } else {
+      if (key.startsWith("POST_" + theme) && key.includes("RESP")) {
+        messageCount++;
       }
     }
   }
-
   return { postCount, messageCount };
 }
 
@@ -230,17 +222,17 @@ function updateCounters() {
     const id = forumDiv.id;
     const theme = id.split("_")[1];
 
-    const { postCount, messageCount } = countPostsAndResponses(theme);
+    const { postCount, messageCount } = realizarContagem(theme);
 
     // ATUALIZAR CONTADORES
     const tpcCounter = forumDiv.querySelector(".tpcCounter .CntrTit");
     const msgCounter = forumDiv.querySelector(".msgCounter .CntrTit");
 
     if (tpcCounter) {
-      tpcCounter.textContent = postCount.toLocaleString();
+      tpcCounter.textContent = postCount;
     }
     if (msgCounter) {
-      msgCounter.textContent = messageCount.toLocaleString();
+      msgCounter.textContent = messageCount;
     }
   });
 }
@@ -259,4 +251,6 @@ btPesquisa.onclick = function () {
     alert("O campo de pesquisa está vazio!");
   }
 };
+
+//JS CARREGADO AVISOB
 console.log("JS Carregado!");
