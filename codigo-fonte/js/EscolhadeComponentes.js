@@ -118,9 +118,13 @@ function carregarComponentes(tipo) {
                 opc.classList.remove('opcaoSelecionada');
                 // Restaura o texto do botão para "+" e remove a imagem
                 opc.querySelector('.addComponente').textContent = '+';
+                opc.querySelector('.addComponente').style.backgroundColor = "#308041"
+                
                 if (opc.querySelector('.checkmark-icon')) {
                     opc.querySelector('.checkmark-icon').remove();
                 }
+
+                
             });
 
             // add "opcaoSelecionada" ao elem clicado
@@ -139,14 +143,11 @@ function carregarComponentes(tipo) {
             imgIcon.id = 'check'
             addComponenteButton.textContent = ''; // Limpa o conteúdo atual do botão
             addComponenteButton.appendChild(imgIcon); // Adiciona a imagem como filho do botão
-
-            // const imgIcon2 = document.createElement('img');
-            // imgIcon2.src = '/codigo-fonte/img/checkPNG.PNG';
-            // imgIcon2.alt = 'CheckIcon';
-            // imgIcon2.id = 'checkPNG'
-            // addComponenteButton.textContent = ''; // Limpa o conteúdo atual do botão
-            // addComponenteButton.appendChild(imgIcon2); // Adiciona a imagem como filho do botão
-
+            addComponenteButton.style.backgroundColor = "#0a4212"
+            setTimeout(() => {
+                imgIcon.src = '/codigo-fonte/img/checkGIF.gif';
+                imgIcon.src = '/codigo-fonte/img/checkPNG.png';
+            }, 1500);
 
             // Salva o componente no local storage
             salvarComponentesSelecionados();
@@ -159,7 +160,7 @@ function carregarComponentes(tipo) {
         function lvlDesempenho() {
             const alerta = opcao.querySelector(".alertaDesempenho");
             if (componente.desempenho === "Alto Desempenho") {
-                alerta.style.backgroundColor = "#308041";
+                alerta.style.backgroundColor = "#0a4212";
                 alerta.style.color = "white";
             } else if (componente.desempenho === "Custo-Benefício") {
                 alerta.style.backgroundColor = "#FFD600";
@@ -169,7 +170,6 @@ function carregarComponentes(tipo) {
             }
         }
         lvlDesempenho();
-
         // Puxar orcamento do LocalStorage
         function orcTotal() {
             let orcTot = localStorage.getItem('orcamentoTotal');

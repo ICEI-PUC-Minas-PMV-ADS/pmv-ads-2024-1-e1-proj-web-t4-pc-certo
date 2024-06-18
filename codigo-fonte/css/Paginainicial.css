@@ -51,11 +51,14 @@
     font-size: 40px;
     font-weight: 900;
     color: #FFF;
+    transition: 0.2s ease-in-out;
 
     user-select: none;
     cursor: pointer;
-
-    animation: pulsar 1.5s ease-in-out infinite
+}
+.btnPrincipal:hover{
+    scale: 1.2;
+    
 }
 
 @media (max-width:850px){
