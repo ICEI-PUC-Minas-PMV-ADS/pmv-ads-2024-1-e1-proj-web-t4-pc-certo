@@ -89,7 +89,7 @@ var allKeys = Object.keys(localStorage);
 var maioresIDs = [];
 
 allKeys.forEach(function (key) {
-  if (key.startsWith("POST_")) {
+  if (key.startsWith("POST_") && !key.includes("RESP")) {
     var id = parseInt(key.split("_")[2]);
 
     if (maioresIDs.length < 5 || id > maioresIDs[4].id) {
