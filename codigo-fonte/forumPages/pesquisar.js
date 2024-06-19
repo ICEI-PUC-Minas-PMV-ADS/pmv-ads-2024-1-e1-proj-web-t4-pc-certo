@@ -12,7 +12,10 @@ function carregaPost(entrada) {
 
     if (chave.startsWith("POST_")) {
       var postJSON = JSON.parse(itemLclStrg);
-      if (itemLclStrg.toLowerCase().includes(entrada.toLowerCase())) {
+      if (
+        itemLclStrg.toLowerCase().includes(entrada.toLowerCase()) &&
+        !chave.includes("RESP")
+      ) {
         CriaPostDiv(postJSON);
         isTherePosts = 1;
       }
