@@ -70,7 +70,7 @@ atualizarResumo(componenteAtual);
 
 // Fetch JSON
 async function carregarDataComponentes() {
-    const resposta = await fetch('/codigo-fonte/js/JSON/Componentes.json');
+    const resposta = await fetch('../codigo-fonte/js/JSON/Componentes.json');
     componentes = await resposta.json();
     carregarComponentes(componenteAtual);
 }
