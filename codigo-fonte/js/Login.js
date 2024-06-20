@@ -6,6 +6,7 @@ var emailInserido = document.getElementById("email");
 var senhaInserida = document.getElementById("senha");
 var botaologin = document.getElementById("botao");
 var passwordIcons = document.querySelector(".passwordIcon");
+var login = false;
 var eyeIconBoolean = false;
 
 // validar emails cadastrados
@@ -19,6 +20,8 @@ botaologin.addEventListener("click", function validarEmail() {
     document.querySelector(".semLoginTexto").style.display = "none";
     document.querySelector(".centralizarCheck").style.display = "flex";
     setTimeout(() => {
+      var login = true;
+      localStorage.setItem("Login", login);
       window.location.href = "../codigo-fonte/Forum.html";
     }, 2000);
   } else {

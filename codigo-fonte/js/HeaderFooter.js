@@ -31,7 +31,7 @@ if (window.location.pathname.match(montarpc)) {
 
 //mudar icone login
 
-const temUsuario = localStorage.getItem("nomeCadastro");
+const temUsuario = localStorage.getItem("Login");
 
 document.getElementById(btLogado);
 document.getElementById(btDeslogado);

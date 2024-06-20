@@ -15,7 +15,7 @@ document.getElementById("Publique");
 
 // RETIRAR VALOR DO LOCAL STORAGE E CONVERTER COM JSON
 
-const usuarioString = localStorage.getItem("nomeCadastro");
+const usuarioString = localStorage.getItem("Login");
 
 // DISPLAY DIFERENTE NA TELA INICIAL DEPENDENDO DO LOGIN
 if (usuarioString !== null) {

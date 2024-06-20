@@ -1,9 +1,10 @@
 const usuarioString = localStorage.getItem("nomeCadastro"); // DECLARA VAR USUARIO
+const login = localStorage.getItem("Login"); // VERIFICAÇÃO DE LOGIN
 
 var tpcEm = document.getElementById("novoTpcEm"); // VAR NOVO TOPICO "EM X"
 
-if (!usuarioString) {
-  alert("É necessario criar uma conta para fazer uma publicação!");
+if (!login) {
+  alert("É necessario estar logado para fazer uma publicação!");
   window.location.href = "../Forum.html";
 }
 
