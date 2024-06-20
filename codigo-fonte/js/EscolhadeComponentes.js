@@ -138,15 +138,15 @@ function carregarComponentes(tipo) {
             // Substitui o botão "+" pelo ícone de imagem após o clique
             const addComponenteButton = opcao.querySelector('.addComponente');
             const imgIcon = document.createElement('img');
-            imgIcon.src = '/codigo-fonte/img/checkGIF.gif';
+            imgIcon.src = '../codigo-fonte/img/checkGIF.gif';
             imgIcon.alt = 'CheckIcon';
             imgIcon.id = 'check'
             addComponenteButton.textContent = ''; // Limpa o conteúdo atual do botão
             addComponenteButton.appendChild(imgIcon); // Adiciona a imagem como filho do botão
             addComponenteButton.style.backgroundColor = "#0a4212"
             setTimeout(() => {
-                imgIcon.src = '/codigo-fonte/img/checkGIF.gif';
-                imgIcon.src = '/codigo-fonte/img/checkPNG.png';
+                imgIcon.src = '../codigo-fonte/img/checkGIF.gif';
+                imgIcon.src = '../codigo-fonte/img/checkPNG.png';
             }, 1500);
 
             // Salva o componente no local storage

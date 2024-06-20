@@ -6,7 +6,7 @@
       "preco": 2839.99,
       "desempenho": "Alto Desempenho",
       "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-9-5950x.html",
-      "imagem": "img/json/processadores/Ryzen5950X.png",
+      "imagem": "img/json/Processadores/Ryzen5950X.png",
       "socket": "AM4",
       "TDP": "105W",
       "videoIntegrado": "não"
@@ -17,7 +17,7 @@
       "preco": 2498.99,
       "desempenho": "Alto Desempenho",
       "info": "https://www.intel.com.br/content/www/br/pt/products/sku/236787/intel-core-i9-processor-14900kf-36m-cache-up-to-6-00-ghz/specifications.html",
-      "imagem": "img/json/processadores/I9.png",
+      "imagem": "img/json/Processadores/I9.png",
       "socket": "LGA1700",
       "TDP": "125W",
       "videoIntegrado": "não"
@@ -28,7 +28,7 @@
       "preco": 4998.99,
       "desempenho": "Alto Desempenho",
       "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/7000-series/amd-ryzen-9-7950x3d.html",
-      "imagem": "img/json/processadores/Ryzen7950X3D.png",
+      "imagem": "img/json/Processadores/Ryzen7950X3D.png",
       "socket": "AM5",
       "TDP": "120W",
       "videoIntegrado": "sim"
@@ -39,7 +39,7 @@
       "preco": 1999.99,
       "desempenho": "Alto Desempenho",
       "info": "https://www.intel.com.br/content/www/br/pt/products/sku/230494/intel-core-i513600kf-processor-24m-cache-up-to-5-10-ghz/specifications.html",
-      "imagem": "img/json/processadores/i5.png",
+      "imagem": "img/json/Processadores/i5.png",
       "socket": "LGA1700",
       "TDP": "125W",
       "videoIntegrado": "não"
@@ -50,7 +50,7 @@
       "preco": 1889.99,
       "desempenho": "Alto Desempenho",
       "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7700.html",
-      "imagem": "img/json/processadores/Ryzen7700.png",
+      "imagem": "img/json/Processadores/Ryzen7700.png",
       "socket": "AM5",
       "TDP": "65W",
       "videoIntegrado": "sim"
@@ -61,7 +61,7 @@
       "preco": 998.99,
       "desempenho": "Custo-Benefício",
       "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
-      "imagem": "img/json/processadores/Ryzen5500e5600.png",
+      "imagem": "img/json/Processadores/Ryzen5500e5600.png",
       "socket": "AM4",
       "TDP": "65W",
       "videoIntegrado": "não"
@@ -72,7 +72,7 @@
       "preco": 769.99,
       "desempenho": "Custo-Benefício",
       "info": "https://www.intel.com.br/content/www/br/pt/products/sku/134587/intel-core-i512400f-processor-18m-cache-up-to-4-40-ghz/specifications.html",
-      "imagem": "img/json/processadores/i5.png",
+      "imagem": "img/json/Processadores/i5.png",
       "socket": "LGA1700",
       "TDP": "65W",
       "videoIntegrado": "não"
@@ -83,7 +83,7 @@
       "preco": 669.99,
       "desempenho": "Custo-Benefício",
       "info": "https://www.amd.com/en/product/11811",
-      "imagem": "img/json/processadores/Ryzen5500e5600.png",
+      "imagem": "img/json/Processadores/Ryzen5500e5600.png",
       "socket": "AM4",
       "TDP": "65W",
       "videoIntegrado": "não"
@@ -94,7 +94,7 @@
       "preco": 999.99,
       "desempenho": "Custo-Benefício",
       "info": "https://www.intel.com.br/content/www/br/pt/products/sku/199278/intel-core-i510400f-processor-12m-cache-up-to-4-30-ghz/specifications.html",
-      "imagem": "img/json/processadores/i5.png",
+      "imagem": "img/json/Processadores/i5.png",
       "socket": "LGA1200",
       "TDP": "65W",
       "videoIntegrado": "não"
@@ -105,7 +105,7 @@
       "preco": 834.99,
       "desempenho": "Custo-Benefício",
       "info": "https://www.amd.com/en/product/11176",
-      "imagem": "img/json/processadores/Ryzen5600X.png",
+      "imagem": "img/json/Processadores/Ryzen5600X.png",
       "socket": "AM4",
       "TDP": "65W",
       "videoIntegrado": "sim"
@@ -116,7 +116,7 @@
       "preco": 587.99,
       "desempenho": "Baixa Performance",
       "info": "https://www.intel.com.br/content/www/br/pt/products/sku/201894/intel-core-i310105-processor-6m-cache-up-to-4-40-ghz/specifications.html",
-      "imagem": "img/json/processadores/i3.webp",
+      "imagem": "img/json/Processadores/i3.webp",
       "socket": "LGA1200",
       "TDP": "65W",
       "videoIntegrado": "sim"
@@ -127,7 +127,7 @@
       "preco": 579.99,
       "desempenho": "Baixa Performance",
       "info": "https://www.adrenaline.com.br/produto/processador/amd-ryzen-5-4600g/",
-      "imagem": "img/json/processadores/Ryzen4600G.png",
+      "imagem": "img/json/Processadores/Ryzen4600G.png",
       "socket": "AM4",
       "TDP": "65W",
       "videoIntegrado": "sim"
@@ -138,7 +138,7 @@
       "preco": 430.99,
       "desempenho": "Baixa Performance",
       "info": "https://www.intel.com.br/content/www/br/pt/products/sku/201901/intel-pentium-gold-g6405-processor-4m-cache-4-10-ghz/specifications.html",
-      "imagem": "img/json/processadores/pentium.png",
+      "imagem": "img/json/Processadores/pentium.png",
       "socket": "LGA1200",
       "TDP": "58W",
       "videoIntegrado": "sim"
@@ -597,7 +597,8 @@
       "desempenho": "Alto Desempenho",
       "info": "https://www.samsung.com/us/computing/memory-storage/solid-state-drives/ssd-970-evo-plus-nvme-m-2-1tb-mz-v7s1t0b-am/",
       "imagem": "img/json/Armazenamento/970evoplus.png",
-      "tipo": "NVMe SSD"
+      "tipo": "NVMe SSD",
+      "buy": "https://www.pichau.com.br/ssd-samsung-970-evo-plus-1tb-m-2-2280-pcie-nvme-leitura-3500-mb-s-gravacao-3-300-mb-s-mz-v7s1t0?gad_source=1&gclid=CjwKCAjwg8qzBhAoEiwAWagLrGkVMddsoCd1x2Nfn88UAMgcfvc2MftiUtDFwHnOuz6E7xA5xVCGDxoCAvUQAvD_BwE"
     },
     {
       "marca": "Western Digital",
@@ -606,16 +607,18 @@
       "desempenho": "Custo-Benefício",
       "info": "https://www.westerndigital.com/products/internal-drives/wd-blue-3d-nand-sata-ssd",
       "imagem": "img/json/Armazenamento/wdblue.png",
-      "tipo": "SATA SSD"
+      "tipo": "SATA SSD",
+      "buy": "https://www.kabum.com.br/produto/351527/ssd-sata-wd-blue-1tb-2-5-leitura-560mb-s-e-gravacao-520mb-s-preto-wds100t3b0a?gad_source=1&gclid=CjwKCAjwg8qzBhAoEiwAWagLrEbrwgeWtBTUMaYZ_Rm-krWMrmMmc8zRDN8Tofl5Ez9V8z_xr9aMNRoCdSEQAvD_BwE"
     },
     {
       "marca": "Crucial",
       "modelo": "BX500 500GB SATA SSD",
-      "preco": 199.99,
+      "preco": 259.99,
       "desempenho": "Custo-Benefício",
       "info": "https://www.crucial.com/ssd/mx500/ct500mx500ssd1",
       "imagem": "img/json/Armazenamento/crucial.png",
-      "tipo": "SATA SSD"
+      "tipo": "SATA SSD",
+      "buy": "https://www.kabum.com.br/produto/378464/ssd-500gb-crucial-bx500-sata-3d-nand-leitura-540mb-s-e-gravacao-500mb-s-ct500bx500ssd1?gad_source=1&gclid=CjwKCAjwg8qzBhAoEiwAWagLrJQ94ywmdjDiGQEXJ5V7iRbUv5aB92u43WrFHyQOsH7WQYAHeiJ-DhoCBVIQAvD_BwE"
     },
     {
       "marca": "Kingston",
@@ -624,16 +627,18 @@
       "desempenho": "Custo-Benefício",
       "info": "https://www.kingston.com/en/ssd/nv2-nvme-pcie-ssd",
       "imagem": "img/json/Armazenamento/kingston.png",
-      "tipo": "NVMe SSD"
+      "tipo": "NVMe SSD",
+      "buy": "https://www.kabum.com.br/produto/380743/ssd-kingston-nv2-250-gb-m-2-2280-pcie-nvme-leitura-3000-mb-s-e-gravacao-1300-mb-s-snv2s-250g?gad_source=1&gclid=CjwKCAjwg8qzBhAoEiwAWagLrHPr043As2UznhdXdOnms_GRYVHqOTuK5-v36XYo22lwFydTGskujRoCbH4QAvD_BwE"
     },
     {
       "marca": "Seagate",
       "modelo": "Barracuda 1TB HDD",
-      "preco": 349.99,
+      "preco": 359.99,
       "desempenho": "Custo-Benefício",
       "info": "https://www.seagate.com/internal-hard-drives/hdd/barracuda/",
       "imagem": "img/json/Armazenamento/hdbarracuda.png",
-      "tipo": "HDD"
+      "tipo": "HDD",
+      "buy": "https://www.pichau.com.br/hd-seagate-barracuda-1tb-3-5-7200-rpm-sata-iii-6gb-s-cache-256mb-st1000dm014?gad_source=1&gclid=CjwKCAjwg8qzBhAoEiwAWagLrBX-atlq3s9RywEaR9HbxTwZwLZEURxLFU_Rlf8xrOKII28qv-eguxoCYw4QAvD_BwE"
     },
     {
       "marca": "Seagate",
@@ -680,12 +685,13 @@
     {
       "marca": "XPG",
       "modelo": "Core Reactor 650W 80 Plus Gold",
-      "preco": 589.99,
+      "preco": 569.99,
       "desempenho": "Alto Desempenho",
       "info": "https://www.xpg.com/pt/xpg/641",
       "imagem": "img/json/PSU/corereactor650.png",
       "potencia": 650,
-      "eficiencia": "80 Plus Gold"
+      "eficiencia": "80 Plus Gold",
+      "buy": "https://www.kabum.com.br/produto/103280/fonte-xpg-core-reactor-650w-80-plus-gold-modular?gad_source=1&gclid=CjwKCAjwg8qzBhAoEiwAWagLrKg3MlyWtaxbwK6-hGXDoF_0Ir7hXV7vBIo1LjE4HjWPGW1PTMDfQxoCJuMQAvD_BwE"
     },
     {
       "marca": "Corsair",
@@ -695,27 +701,30 @@
       "info": "https://www.corsair.com/us/en/p/psu/cp-9020121-na/cx-series-cx550-550-watt-80-plus-bronze-certified-atx-psu-cp-9020121-na",
       "imagem": "img/json/PSU/cx550.png",
       "potencia": 550,
-      "eficiencia": "80 Plus Bronze"
+      "eficiencia": "80 Plus Bronze",
+      "buy":"https://www.kabum.com.br/produto/516055/fonte-corsair-cx-series-cx550-550w-80-plus-bronze-com-cabo-preto-cp-9020277-br?gad_source=1&gclid=CjwKCAjwg8qzBhAoEiwAWagLrE_StmAA1tvc-t-QXKLRpikOPg_3BimYZKuYiYQUE9ryENrzXLGbdBoCxPgQAvD_BwE"
     },
     {
       "marca": "Pichau",
       "modelo": "Nidus 500W 80 Plus Bronze",
-      "preco": 350.99,
+      "preco": 459.99,
       "desempenho": "Custo-Benefício",
       "info": "https://pichaugaming.com.br/p/fonte-pichau-gaming-nidus-500w/",
       "imagem": "img/json/PSU/nidus500w.png",
       "potencia": 500,
-      "eficiencia": "80 Plus Bronze"
+      "eficiencia": "80 Plus Bronze",
+      "buy": "https://www.pichau.com.br/fonte-pichau-nidus-500w-bronze-80-plus-pg-5001-br-oem"
     },
     {
       "marca": "EVGA",
-      "modelo": "500W 80 Plus Bronze",
+      "modelo": "EVGA 500BV 500W 80 Plus Bronze",
       "preco": 299.99,
       "desempenho": "Custo-Benefício",
       "info": "https://www.evga.com/products/product.aspx?pn=100-BV-0500-K1",
       "imagem": "img/json/PSU/evga500bw.png",
       "potencia": 500,
-      "eficiencia": "80 Plus Bronze"
+      "eficiencia": "80 Plus Bronze",
+      "buy": "https://www.kabum.com.br/produto/521094/fonte-evga-500-bv-500w-80-plus-bronze-bivolt-100-bv-0500-k1?gad_source=1&gclid=CjwKCAjwg8qzBhAoEiwAWagLrJYPl1m-REeQT5PbmK5OT40dSGG-YuDzamt8Pg5mNdrLsP4l9G4clhoC8qIQAvD_BwE"
     },
     {
       "marca": "Redragon",
@@ -725,7 +734,8 @@
       "info": "https://www.redragon.com.br/rgps400w",
       "imagem": "img/json/PSU/redragon400.png",
       "potencia": 400,
-      "eficiencia": "80 Plus White"
+      "eficiencia": "80 Plus White",
+      "buy": "https://www.kabum.com.br/produto/365051/fonte-gamer-redragon-rgps-400w-80-plus-white-pfc-ativo-sem-cabo-preto-gc-ps012?gad_source=1&gclid=CjwKCAjwg8qzBhAoEiwAWagLrFlBTc0kCDs1-MB7aWqlpJLpFPdJo6MyEB0JuYwJgnxVP_7MdAi92xoCMgUQAvD_BwE"
     },
     {
       "marca": "MSI",
@@ -798,47 +808,52 @@
     {
       "marca": "Mancer",
       "modelo": "Gamer Hexer Rainbow",
-      "preco": 208.99,
+      "preco": 225.99,
       "desempenho": "Custo-Benefício",
       "info": "https://mancer.com.br/p/gabinete-gamer-mancer-hexer/",
       "imagem": "img/json/Gabinete/hexerRainbow.png",
-      "tipo": "Mid Tower"
+      "tipo": "Mid Tower",
+      "buy": "https://www.amazon.com.br/Gabinete-Mancer-Rainbow-Mid-Tower-MCR-HEX-RB01/dp/B0BH8ZN7ZH/ref=asc_df_B0BH8ZN7ZH/?tag=googleshopp00-20&linkCode=df0&hvadid=379817895773&hvpos=&hvnetw=g&hvrand=4199776399188881793&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001655&hvtargid=pla-1836088346046&mcid=4c49fd45ab8b365088fee5ba3960a2c2&th=1"
     },
     {
       "marca": "Rise Mode",
       "modelo": "Glass 06X",
-      "preco": 159.99,
+      "preco": 149.99,
       "desempenho": "Custo-Benefício",
       "info": "https://www.lojarisemode.com.br/produto/gabinete-rise-mode-glass-06x-black-sem-fans-rm-ca-06x-fb",
       "imagem": "img/json/Gabinete/glass06X.png",
-      "tipo": "Mid Tower"
+      "tipo": "Mid Tower",
+      "buy": "https://www.kabum.com.br/produto/324516/gabinete-gamer-rise-mode-glass-06x-mid-tower-lateral-em-vidro-fume-e-frontal-em-vidro-temperado-preto-rm-ca-06x-fb?gad_source=1&gclid=CjwKCAjwg8qzBhAoEiwAWagLrAmhJl3BqBh0OqjqdBA618FCcU-i25swxpKvSAkGXo5sgVwxqImHwxoCpKMQAvD_BwE"
     },
     {
       "marca": "Corsair",
       "modelo": "4000D Airflow",
-      "preco": 649.99,
+      "preco": 499.99,
       "desempenho": "Custo-Benefício",
       "info": "https://www.corsair.com/br/pt/p/pc-cases/cc-9011201-ww/4000d-airflow-tempered-glass-mid-tower-atx-case-white-cc-9011201-ww",
       "imagem": "img/json/Gabinete/CorsairAirFlow.png",
-      "tipo": "Mid Tower"
+      "tipo": "Mid Tower",
+      "buy": "https://www.kabum.com.br/produto/115451/gabinete-gamer-corsair-4000d-airflow-mid-tower-atx-lateral-em-vidro-temperado-com-fan-preto-cc-9011200-ww"
     },
     {
       "marca": "Rise Mode",
-      "modelo": "Galaxy Glass",
-      "preco": 549.99,
+      "modelo": "Galaxy Glass Standart",
+      "preco": 299.99,
       "desempenho": "Custo-Benefício",
-      "info": "https://www.lojarisemode.com.br/produto/gabinete-gamer-rise-mode-galaxy-glass-m-black-sem-fans-rm-ga-ggm-fb",
+      "info": "https://www.lojarisemode.com.br/produto/gabinete-gamer-rise-mode-galaxy-glass-standard-black-sem-fans-rm-ga-ggst-fb",
       "imagem": "img/json/Gabinete/galaxyGlass.png",
-      "tipo": "Mid Tower"
+      "tipo": "Mid Tower",
+      "buy": "https://www.kabum.com.br/produto/386144/gabinete-gamer-rise-mode-galaxy-glass-standard-mid-tower-lateral-e-frontal-em-vidro-temperado-sem-fans-preto-rm-ga-ggst-fb?gad_source=1&gclid=CjwKCAjwg8qzBhAoEiwAWagLrO1cULhHoab6NpGC4NzN0vvSeMFZhEQdZWXi6r4lbN6yAPtmEwA1eBoCUjcQAvD_BwE"
     },
     {
       "marca": "Lian Li",
-      "modelo": "Lian Li 011",
-      "preco": 1235.99,
-      "desempenho": "Custo-Benefício",
+      "modelo": "Lian Li O11 Vision",
+      "preco": 1350.99,
+      "desempenho": "Alto Desempenho",
       "info": "https://www.lianli.com.br/produtos-gabinete-o11",
       "imagem": "img/json/Gabinete/lianLi.png",
-      "tipo": "Full Tower"
+      "tipo": "Full Tower",
+      "buy": "https://www.amazon.com.br/Gabinete-Lian-Li-Vision-Preto/dp/B0CNKXCCVX/ref=asc_df_B0CNKXCCVX/?tag=googleshopp00-20&linkCode=df0&hvadid=647610501547&hvpos=&hvnetw=g&hvrand=6786574682452133093&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001655&hvtargid=pla-2266813542128&psc=1&mcid=9e57d2e81d9c3f94ad3ec392e1492bb3"
     },
     {
       "marca": "Redragon",
@@ -889,7 +904,8 @@
       "desempenho": "Custo-Benefício",
       "info": "",
       "imagem": "img/json/cooler/nao.png",
-      "tipo": "Air Cooler"
+      "tipo": "Air Cooler",
+      "buy": ""
     },
     {
       "marca": "Rise Mode",
@@ -898,16 +914,18 @@
       "desempenho": "Custo-Benefício",
       "info": "https://www.kabum.com.br/produto/506058/air-cooler-gamer-rise-mode-storm-8-black-intel-amd-120mm-preto-rm-acst-b",
       "imagem": "img/json/cooler/storm8.png",
-      "tipo": "Air Cooler"
+      "tipo": "Air Cooler",
+      "buy": "https://www.kabum.com.br/produto/506058/air-cooler-gamer-rise-mode-storm-8-black-intel-amd-120mm-preto-rm-acst-b"
     },
     {
       "marca": "Rise Mode",
       "modelo": "Gamer Black 240mm",
-      "preco": 189.99,
+      "preco": 169.99,
       "desempenho": "Custo-Benefício",
       "info": "https://www.lojarisemode.com.br/produto/water-cooler-rise-mode-black-240mm-rgb-rm-wcb-02-rgb",
       "imagem": "img/json/cooler/gamerBlack.png",
-      "tipo": "Water Cooler"
+      "tipo": "Water Cooler",
+      "buy": "https://www.kabum.com.br/produto/130043/water-cooler-rise-mode-gamer-black-rgb-240mm-amd-intel-preto-rm-wcb-02-rgb?gad_source=1&gclid=CjwKCAjwg8qzBhAoEiwAWagLrHZUfYInn2YtmBSGPAfg-uCm5sAEHfIHC1H1hnUTMc_h6xFt0u_U3RoCxhEQAvD_BwE"
     },
     {
       "marca": "Cooler Master",
@@ -916,7 +934,8 @@
       "desempenho": "Custo-Benefício",
       "info": "https://www.coolermaster.com/pt-br/products/masterliquid-ml280-mirror/",
       "imagem": "img/json/cooler/ml280.png",
-      "tipo": "Water Cooler"
+      "tipo": "Water Cooler",
+      "buy": "https://www.amazon.com.br/WATER-COOLER-MASTERLIQUID-ML280-MIRROR/dp/B08G8XD3Q7/ref=asc_df_B08G8XD3Q7/?tag=googleshopp00-20&linkCode=df0&hvadid=379728526006&hvpos=&hvnetw=g&hvrand=11983097332183325640&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001655&hvtargid=pla-976921020150&psc=1&mcid=294e93634bca340e884a8997fb1f7ec6"
     },
     {
       "marca": "DeepCool",
@@ -925,16 +944,18 @@
       "desempenho": "Custo-Benefício",
       "info": "https://www.terabyteshop.com.br/produto/23224/cooler-para-processador-deepcool-gammaxx-ag400-120mm-intel-amd-r-ag400-bknnmn-g-1",
       "imagem": "img/json/cooler/ag400.png",
-      "tipo": "Air Cooler"
+      "tipo": "Air Cooler",
+      "buy": "https://www.pichau.com.br/cooler-para-processador-deepcool-gammaxx-ag400-120mm-r-ag400-bknnmn-g-1?gad_source=1&gclid=CjwKCAjwg8qzBhAoEiwAWagLrL4FLZEprI5PBDWef-jGmEzEMYkZZk4j9RsyY6f3oyJLaLx-snWNlBoCCIwQAvD_BwE"
     },
     {
       "marca": "Rise Mode",
       "modelo": "G800",
-      "preco": 89.99,
+      "preco": 72.99,
       "desempenho": "Custo-Benefício",
       "info": "https://www.lojarisemode.com.br/produto/air-cooler-gamer-rise-mode-g800-rm-ac-o8-rgb",
       "imagem": "img/json/cooler/g800.png",
-      "tipo": "Air Cooler"
+      "tipo": "Air Cooler",
+      "buy": "https://www.kabum.com.br/produto/130040/air-cooler-rise-mode-gamer-g800-rgb-amd-intel-90mm-preto-rm-ac-o8-rgb?gad_source=1&gclid=CjwKCAjwg8qzBhAoEiwAWagLrAFzfMisgiz0OtGKzgCjE1h2InfNrVaVEJozURsrgGqcbWmZRRvM7RoCbDoQAvD_BwE"
     },
     {
       "marca": "DeepCool",
