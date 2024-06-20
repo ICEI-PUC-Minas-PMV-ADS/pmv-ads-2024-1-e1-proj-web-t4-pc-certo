@@ -1,4 +1,3 @@
-var componentesBoolean = false;
 const componentes = JSON.parse(localStorage.getItem("componentesSelecionados"));
 const botoes = document.querySelectorAll(".botoes");
 const erro = document.querySelector(".erroResumo");
@@ -52,13 +51,13 @@ if (componentes !== null) {
 
   document.querySelectorAll("#alterarbotoes").forEach(function (element) {
     element.addEventListener("click", function () {
-      window.location.href = "/codigo-fonte/EscolhaDeComponentes.html";
+      window.location.href = "../codigo-fonte/EscolhaDeComponentes.html";
     });
   });
 
   botaoAviso.forEach(function (elemento) {
     elemento.addEventListener("click", function () {
-      window.location.href = "/codigo-fonte/EscolhaDeComponentes.html";
+      window.location.href = "../codigo-fonte/EscolhaDeComponentes.html";
     });
   });
 
