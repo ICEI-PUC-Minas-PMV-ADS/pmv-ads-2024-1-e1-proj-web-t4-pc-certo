@@ -154,7 +154,6 @@ for (let i = 1; i < 6; i++) {
   let lastPosts = document.getElementById("ultimoPub" + i);
   let lastPostsBy = document.getElementById("ultimoPubAut" + i);
   let noLastPost = document.getElementById("noRecentPosts");
-  let lastPostsId = document.getElementById("LastPostsId" + i);
 
   if (lastPostsBy.textContent == "") {
     lastPosts.style.display = "none";
@@ -175,8 +174,7 @@ temaForumsBotoes.forEach((button) => {
 });
 
 //REDIRECIONAMENTO DOS POSTS
-
-var forumPosts = document.querySelectorAll(".contForums");
+var forumPosts = document.querySelectorAll(".contForums > .contForums");
 
 forumPosts.forEach(function (post) {
   post.addEventListener("click", function () {
@@ -251,6 +249,107 @@ btPesquisa.onclick = function () {
     alert("O campo de pesquisa está vazio!");
   }
 };
+
+//5 PUBS MAIS VISTAS - LANÇAR
+
+let items = [];
+
+for (let i = 0; i < localStorage.length; i++) {
+  let key = localStorage.key(i);
+
+  if (key.includes("POST") && !key.includes("RESP")) {
+    let item = JSON.parse(localStorage.getItem(key));
+    if (item.nClicks !== 0) {
+      items.push({ key: key, nClicks: item.nClicks });
+    }
+  }
+}
+
+items.sort((a, b) => b.nClicks - a.nClicks);
+
+let topCinco = items.slice(0, 5).map((item) => item.key);
+
+localStorage.setItem("topCinco", JSON.stringify(topCinco));
+
+//5 PUBS MAIS VISTAS - RENDERIZAR
+var semAcessos = document.getElementById("semAcessos");
+var maisAcessadas = document.getElementById("maisAcessadas");
+
+if (items.length == 0) {
+  semAcessos.style.display = "flex";
+} else {
+  semAcessos.style.display = "none";
+
+  //EXIBIR AQUI AS PUBS MAIS VISTAS
+  for (let i = 0; i < items.length; i++) {
+    let itemMaisAcessado = items[i];
+
+    for (let j = 0; j < localStorage.length; j++) {
+      let chaveLC = localStorage.key(j);
+
+      if (chaveLC == itemMaisAcessado.key) {
+        let itemLC = localStorage.getItem(chaveLC);
+        let itemLCJSON = JSON.parse(itemLC);
+
+        let sideBarPub = document.createElement("div");
+        sideBarPub.className = "sideBarPub";
+        sideBarPub.id = itemLCJSON.id;
+
+        let imgPerfil = document.createElement("img");
+        imgPerfil.src = "img/ProfileIcon.png";
+        imgPerfil.alt = "";
+        imgPerfil.className = "sideBarPubPic";
+
+        let pubTxt = document.createElement("div");
+        pubTxt.className = "sideBarPubTxt";
+
+        let tituloPub = document.createElement("div");
+        tituloPub.textContent = itemLCJSON.titulo;
+
+        let autorPub = document.createElement("div");
+        autorPub.className = "ultimoPubAut";
+        autorPub.textContent = itemLCJSON.autor;
+
+        //DATA
+
+        let data_hora_objeto = new Date(itemLCJSON.data);
+
+        // FORMATAR DATA
+        let data_formatada = data_hora_objeto.toLocaleDateString("pt-BR");
+        let hora_formatada = data_hora_objeto.toLocaleTimeString("pt-BR");
+
+        let dataPub = document.createElement("div");
+        dataPub.className = "tempoDesdePub";
+        dataPub.textContent = data_formatada + " às " + hora_formatada;
+
+        let respostasPub = document.createElement("div");
+        respostasPub.className = "ultimoPubResp";
+        respostasPub.textContent = itemLCJSON.nRespostas + " Respostas";
+
+        pubTxt.appendChild(tituloPub);
+        pubTxt.appendChild(autorPub);
+        pubTxt.appendChild(dataPub);
+        pubTxt.appendChild(respostasPub);
+
+        sideBarPub.appendChild(imgPerfil);
+        sideBarPub.appendChild(pubTxt);
+
+        maisAcessadas.appendChild(sideBarPub);
+      }
+    }
+  }
+}
+
+//REDIRECIONAMENTO DOS POSTS
+
+let divs = document.querySelectorAll('div[id*="POST_"]');
+
+divs.forEach(function (div) {
+  div.addEventListener("click", function () {
+    let id = this.id;
+    window.location.href = "forumPages/responderPost.html?id=" + id;
+  });
+});
 
 //JS CARREGADO AVISOB
 console.log("JS Carregado!");

@@ -73,7 +73,7 @@ function eFormNormal() {
     textoPub.classList.remove("formErro");
     textoPub.classList.add("formNormal");
   }
-  if (titPub.value.length >= 5) {
+  if (titPub.value.length >= 7) {
     titCurto.textContent = "";
     titPub.classList.remove("formErro");
     titPub.classList.add("formNormal");

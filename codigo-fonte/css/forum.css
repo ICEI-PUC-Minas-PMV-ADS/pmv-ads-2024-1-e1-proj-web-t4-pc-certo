@@ -817,3 +817,8 @@ h3 {
 .lastPostsIds {
     display: none;
 }
+
+.noPosts {
+    font-size: 20px;
+    color: #adadad;
+}
