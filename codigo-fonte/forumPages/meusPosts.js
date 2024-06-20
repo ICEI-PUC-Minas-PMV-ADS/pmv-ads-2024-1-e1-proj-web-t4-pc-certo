@@ -1,3 +1,13 @@
+//VER SE TA LOGADO;
+const usuarioString = localStorage.getItem("Login");
+
+if (!usuarioString) {
+  alert(
+    "É necessário estar logado para ver suas publicações! Faça login ou realize um cadastro"
+  );
+  window.location.href = "../Forum.html";
+}
+
 // FILTRAR EM MEUS POSTS
 var url = window.location.href;
 var partesDoUrl = url.split("=");

@@ -180,3 +180,45 @@ textarea::placeholder {
 #enviarResposta:hover {
     border: 2px solid #fff;
 }
+
+#facaLogin {
+    display: none;
+    color: #ffffff;
+    font-size: x-large;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#cadastroLog {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px
+}
+
+.fazerLog {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    background-color: #41ae4f;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+.fazerCad {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    background-color: #41ae81;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+.fazerCad:hover,
+.fazerLog:hover {
+    border: 2px solid white;
+}

@@ -340,6 +340,98 @@ if (items.length == 0) {
   }
 }
 
+//
+
+//5 PUBS MAIS RESPONDIDAS - LANÇAR
+
+var items2 = [];
+
+for (var i = 0; i < localStorage.length; i++) {
+  var key = localStorage.key(i);
+
+  if (key.includes("POST") && !key.includes("RESP")) {
+    var item = JSON.parse(localStorage.getItem(key));
+    if (item.nRespostas !== 0) {
+      items2.push({ key: key, nRespostas: item.nRespostas });
+    }
+  }
+}
+
+items2.sort((a, b) => b.nRespostas - a.nRespostas);
+
+var topFiveKeys2 = items2.slice(0, 5).map((item) => item.key);
+
+localStorage.setItem("topFiveKeys2", JSON.stringify(topFiveKeys2));
+
+var semAcessos2 = document.getElementById("semAcessos2");
+var maisAcessadas2 = document.getElementById("maisAcessadas2");
+
+if (items2.length == 0) {
+  semAcessos2.style.display = "flex";
+} else {
+  semAcessos2.style.display = "none";
+
+  for (var i = 0; i < topFiveKeys2.length; i++) {
+    var itemKey = topFiveKeys2[i];
+
+    for (var j = 0; j < localStorage.length; j++) {
+      var chaveLC = localStorage.key(j);
+
+      if (chaveLC == itemKey) {
+        var itemLC = localStorage.getItem(chaveLC);
+        var itemLCJSON = JSON.parse(itemLC);
+
+        var sideBarPub = document.createElement("div");
+        sideBarPub.className = "sideBarPub";
+        sideBarPub.id = itemLCJSON.id;
+
+        var imgPerfil = document.createElement("img");
+        imgPerfil.src = "img/ProfileIcon.png";
+        imgPerfil.alt = "";
+        imgPerfil.className = "sideBarPubPic";
+
+        var pubTxt = document.createElement("div");
+        pubTxt.className = "sideBarPubTxt";
+
+        var tituloPub = document.createElement("div");
+        tituloPub.textContent = itemLCJSON.titulo;
+
+        var autorPub = document.createElement("div");
+        autorPub.className = "ultimoPubAut";
+        autorPub.textContent = itemLCJSON.autor;
+
+        var numeroAcessos = document.createElement("div");
+        numeroAcessos.className = "ultimoPubResp";
+        numeroAcessos.textContent = itemLCJSON.nClicks + " Acessos";
+
+        var data_hora_objeto = new Date(itemLCJSON.data);
+        var data_formatada = data_hora_objeto.toLocaleDateString("pt-BR");
+        var hora_formatada = data_hora_objeto.toLocaleTimeString("pt-BR");
+
+        var dataPub = document.createElement("div");
+        dataPub.className = "tempoDesdePub";
+        dataPub.textContent = data_formatada + " às " + hora_formatada;
+
+        var respostasPub = document.createElement("div");
+        respostasPub.className = "ultimoPubResp";
+        respostasPub.textContent = itemLCJSON.nRespostas + " Respostas";
+
+        pubTxt.appendChild(tituloPub);
+        pubTxt.appendChild(autorPub);
+        pubTxt.appendChild(dataPub);
+        pubTxt.appendChild(respostasPub);
+        pubTxt.appendChild(numeroAcessos);
+
+        sideBarPub.appendChild(imgPerfil);
+        sideBarPub.appendChild(pubTxt);
+
+        maisAcessadas2.appendChild(sideBarPub);
+        break;
+      }
+    }
+  }
+}
+
 //REDIRECIONAMENTO DOS POSTS
 
 let divs = document.querySelectorAll('div[id*="POST_"]');

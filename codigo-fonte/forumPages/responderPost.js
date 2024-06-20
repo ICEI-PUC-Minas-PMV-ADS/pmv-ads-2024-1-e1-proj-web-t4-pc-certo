@@ -1,3 +1,15 @@
+usuarioString = localStorage.getItem("Login");
+var facaLogin = document.getElementById("facaLogin");
+var respPost = document.getElementById("responderPost");
+
+if (!usuarioString) {
+  facaLogin.style.display = "flex";
+  respPost.style.display = "none";
+} else {
+  facaLogin.style.display = "none";
+  respPost.style.display = "flex";
+}
+
 //BREADCRUMB REDIRECIONAR
 
 var url = window.location.href;
@@ -180,9 +192,6 @@ temaPostJanelas.onclick = function () {
 };
 
 var divisaoUrl = url.split("=");
-
-var idPostJanela = document.getElementById("idPostJanela");
-idPostJanela.textContent = "#" + divisaoUrl[1];
 
 //LOOP PARA AUMENTAR nClicks
 for (let i = 0; i < localStorage.length; i++) {
