@@ -25,7 +25,6 @@ botaologin.addEventListener("click", function validarEmail() {
       window.location.href = "../codigo-fonte/Forum.html";
     }, 2000);
   } else {
-    console.log("email invalido");
     erroremail.style.display = "block";
     redborder.forEach(function (element) {
       element.style.border = "2px solid #e63636";

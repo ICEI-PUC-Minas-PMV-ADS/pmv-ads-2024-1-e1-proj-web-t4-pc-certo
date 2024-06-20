@@ -34,7 +34,7 @@ function removerTermosErro() {
 
 // FUNÇÕES PARA VALIDAR OS CAMPOS
 function validarNome() {
-  if (obrigatorio[0].value.length < 5) {
+  if (obrigatorio[0].value.length < 5 || obrigatorio[0].value.match(Epattern)) {
     erro(0);
     localStorage.removeItem("nomeCadastro");
   } else {
