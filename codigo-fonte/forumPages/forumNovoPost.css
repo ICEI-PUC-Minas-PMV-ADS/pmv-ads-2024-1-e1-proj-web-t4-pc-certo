@@ -20,7 +20,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -100,34 +100,6 @@ button:hover {
     color: #7db486;
 }
 
-@media (max-width: 709px) {
-    .SearchBar {
-        max-width: 300px;
-    }
-
-    .Search {
-        max-width: fit-content;
-    }
-}
-
-@media (max-width: 690px) {
-    input.SearchBar {
-        display: none;
-    }
-
-    div.Search {
-        flex-grow: 0;
-    }
-
-    button#srch0 {
-        display: none;
-    }
-
-    button#srch1 {
-        display: inline-block;
-    }
-}
-
 .SearchBtn {
     width: 33.47px;
     height: 33.47px;
@@ -152,14 +124,12 @@ button:hover {
     height: 33px;
 }
 
-#srch1 {
-    display: none;
-}
-
 /* ICONES FORUM */
 
 #iconesForum {
     display: flex;
+    flex-direction: row-reverse;
+    flex-grow: 1;
 }
 
 .iconSmll {
