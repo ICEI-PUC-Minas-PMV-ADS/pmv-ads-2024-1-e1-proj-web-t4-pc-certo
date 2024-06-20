@@ -1,8 +1,7 @@
 // FILTRAR EM MEUS POSTS
-
 var url = window.location.href;
 var partesDoUrl = url.split("=");
-var usuarioPosts = partesDoUrl[1];
+var usuarioPosts = decodeURIComponent(partesDoUrl[1]);
 
 var temPosts = document.getElementById("exibicaoPosts");
 var naoTemPosts = document.getElementById("naoTemPosts");
@@ -16,7 +15,7 @@ for (var i = 0; i < localStorage.length; i++) {
   if (valor.startsWith("{") && valor.endsWith("}") && !chave.includes("RESP")) {
     var objeto = JSON.parse(valor);
 
-    if (objeto.hasOwnProperty("autor") && objeto.autor === usuarioPosts) {
+    if (objeto.hasOwnProperty("autor") && objeto.autor.includes(usuarioPosts)) {
       CriaPostDiv(objeto);
       isTherePosts = 1;
     }
