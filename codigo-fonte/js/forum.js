@@ -310,6 +310,10 @@ if (items.length == 0) {
         autorPub.className = "ultimoPubAut";
         autorPub.textContent = itemLCJSON.autor;
 
+        let numeroAcessos = document.createElement("div");
+        numeroAcessos.className = "ultimoPubResp";
+        numeroAcessos.textContent = itemLCJSON.nClicks + " Acessos";
+
         //DATA
 
         let data_hora_objeto = new Date(itemLCJSON.data);
@@ -330,6 +334,7 @@ if (items.length == 0) {
         pubTxt.appendChild(autorPub);
         pubTxt.appendChild(dataPub);
         pubTxt.appendChild(respostasPub);
+        pubTxt.appendChild(numeroAcessos);
 
         sideBarPub.appendChild(imgPerfil);
         sideBarPub.appendChild(pubTxt);
