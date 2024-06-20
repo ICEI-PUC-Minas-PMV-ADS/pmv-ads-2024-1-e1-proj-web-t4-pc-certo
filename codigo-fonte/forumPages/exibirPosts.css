@@ -111,6 +111,17 @@ body {
     word-wrap: break-word;
 }
 
+#cadaPostClick {
+    color: #6caa86;
+    word-wrap: break-word;
+    padding: 0 10px;
+}
+
+#cadaPostResp {
+    color: #c5c5c5;
+    word-wrap: break-word;
+}
+
 #cadaPostAut {
     color: #c0ffbe;
 }

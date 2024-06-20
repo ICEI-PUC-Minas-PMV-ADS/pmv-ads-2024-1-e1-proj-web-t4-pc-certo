@@ -126,6 +126,25 @@ textarea {
     flex-grow: 1;
 }
 
+.textareaErro {
+    border: 2px solid #eb3535;
+    box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.3);
+    outline: none;
+
+    color: #fff;
+    background-color: #3f6944;
+
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    border-radius: 10px;
+
+    height: 100px;
+    resize: none;
+
+    flex-grow: 1;
+}
+
 textarea::placeholder {
     color: #6f976d;
     font-weight: normal;
@@ -133,7 +152,15 @@ textarea::placeholder {
 
 .conteinerResp {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: reverse;
+    flex-wrap: wrap;
+}
+
+#respMin {
+    flex-grow: 1;
+    color: #ff4848;
+    font-weight: 800;
+    opacity: 0;
 }
 
 #enviarResposta {

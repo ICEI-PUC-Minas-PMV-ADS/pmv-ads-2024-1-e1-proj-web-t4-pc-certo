@@ -184,7 +184,21 @@ var divisaoUrl = url.split("=");
 var idPostJanela = document.getElementById("idPostJanela");
 idPostJanela.textContent = "#" + divisaoUrl[1];
 
-////MEUS POSTS
+//LOOP PARA AUMENTAR nClicks
+for (let i = 0; i < localStorage.length; i++) {
+  let chaveLC = localStorage.key(i);
+  let postLC = localStorage.getItem(chaveLC);
+  console.log("tentando com " + chaveLC);
+  if (chaveLC == divisaoUrl[1]) {
+    let postLCJSON = JSON.parse(postLC);
+    postLCJSON.nClicks += 1;
+
+    localStorage.setItem(divisaoUrl[1], JSON.stringify(postLCJSON));
+  }
+}
+///
+
+//MEUS POSTS
 
 document.getElementById("meuPerfilPosts");
 
@@ -360,7 +374,21 @@ enviarResposta.onclick = function () {
 
     window.location.reload();
   } else {
-    alert("A resposta deve conter pelo menos 10 dígitos!");
+    let respMin = document.getElementById("respMin");
+    let textArea = document.getElementById("responderPub");
+
+    respMin.style.opacity = "1";
+    textArea.className = "textareaErro";
+
+    responderPub.oninput = function () {
+      if (textArea.value.length > 9) {
+        respMin.style.opacity = "0";
+        textArea.className = "";
+      } else {
+        respMin.style.opacity = "1";
+        textArea.className = "textareaErro";
+      }
+    };
   }
 };
 
