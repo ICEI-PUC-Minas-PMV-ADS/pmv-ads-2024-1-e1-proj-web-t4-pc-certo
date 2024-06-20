@@ -345,6 +345,102 @@ if (items.length == 0) {
   }
 }
 
+//5 PUBS MAIS REPONDIDAS - LANÇAR
+
+let itemsMaisResp = [];
+
+for (let i = 0; i < localStorage.length; i++) {
+  let key = localStorage.key(i);
+
+  if (key.includes("POST") && !key.includes("RESP")) {
+    let item = JSON.parse(localStorage.getItem(key));
+    if (item.nRespostas !== 0) {
+      itemsMaisResp.push({ key: key, nClicks: item.nRespostas });
+    }
+  }
+}
+
+itemsMaisResp.sort((a, b) => b.nClicks - a.nClicks);
+
+let topCincoResp = itemsMaisResp.slice(0, 5).map((item) => item.key);
+
+localStorage.setItem("topCincoResp", JSON.stringify(topCincoResp));
+
+//5 PUBS MAIS RESPONDIDAS - RENDERIZAR
+
+var semRespostas = document.getElementById("semRespostas");
+var maisRespostas = document.getElementById("maisRespostas");
+
+if (itemsMaisResp.length == 0) {
+  semRespostas.style.display = "flex";
+} else {
+  semRespostas.style.display = "none";
+
+  //EXIBIR AQUI AS PUBS MAIS RESPONDIDAS
+  for (let i = 0; i < itemsMaisResp.length; i++) {
+    let itemMaisAcessado = itemsMaisResp[i];
+
+    for (let j = 0; j < localStorage.length; j++) {
+      let chaveLC = localStorage.key(j);
+
+      if (chaveLC == itemMaisAcessado.key) {
+        let itemLC = localStorage.getItem(chaveLC);
+        let itemLCJSON = JSON.parse(itemLC);
+
+        let sideBarPub = document.createElement("div");
+        sideBarPub.className = "sideBarPub";
+        sideBarPub.id = itemLCJSON.id;
+
+        let imgPerfil = document.createElement("img");
+        imgPerfil.src = "img/ProfileIcon.png";
+        imgPerfil.alt = "";
+        imgPerfil.className = "sideBarPubPic";
+
+        let pubTxt = document.createElement("div");
+        pubTxt.className = "sideBarPubTxt";
+
+        let tituloPub = document.createElement("div");
+        tituloPub.textContent = itemLCJSON.titulo;
+
+        let autorPub = document.createElement("div");
+        autorPub.className = "ultimoPubAut";
+        autorPub.textContent = itemLCJSON.autor;
+
+        let numeroAcessos = document.createElement("div");
+        numeroAcessos.className = "ultimoPubResp";
+        numeroAcessos.textContent = itemLCJSON.nClicks + " Acessos";
+
+        //DATA
+
+        let data_hora_objeto = new Date(itemLCJSON.data);
+
+        // FORMATAR DATA
+        let data_formatada = data_hora_objeto.toLocaleDateString("pt-BR");
+        let hora_formatada = data_hora_objeto.toLocaleTimeString("pt-BR");
+
+        let dataPub = document.createElement("div");
+        dataPub.className = "tempoDesdePub";
+        dataPub.textContent = data_formatada + " às " + hora_formatada;
+
+        let respostasPub = document.createElement("div");
+        respostasPub.className = "ultimoPubResp";
+        respostasPub.textContent = itemLCJSON.nRespostas + " Respostas";
+
+        pubTxt.appendChild(tituloPub);
+        pubTxt.appendChild(autorPub);
+        pubTxt.appendChild(dataPub);
+        pubTxt.appendChild(respostasPub);
+        pubTxt.appendChild(numeroAcessos);
+
+        sideBarPub.appendChild(imgPerfil);
+        sideBarPub.appendChild(pubTxt);
+
+        maisRespostas.appendChild(sideBarPub);
+      }
+    }
+  }
+}
+
 //REDIRECIONAMENTO DOS POSTS
 
 let divs = document.querySelectorAll('div[id*="POST_"]');
