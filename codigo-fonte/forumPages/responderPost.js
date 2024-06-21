@@ -10,6 +10,14 @@ if (!usuarioString) {
   respPost.style.display = "flex";
 }
 
+// SUMIR ICONES DO FORUM SE NAO TIVER LOGADO
+if (usuarioString !== null) {
+  iconesForum.classList.remove("forumSlctOpt");
+} else {
+  iconesForum.style.display = "none";
+}
+///
+
 //BREADCRUMB REDIRECIONAR
 
 var url = window.location.href;
@@ -19,7 +27,7 @@ var temaHTML = partesDoUrl[1];
 
 var temaLegi = "";
 
-if (temaHTML == "Regras") {
+if (temaHTML == "REGRAS") {
   temaLegi = " Regras do Fórum";
 }
 
@@ -108,8 +116,8 @@ temaPostJanela.textContent = temaLegi;
 temaPostJanelas.onclick = function () {
   var pagTema = "";
 
-  if (temaHTML == "Regras") {
-    pagTema = "../forumPages/exibirPosts.html?id=etcForums_Regras";
+  if (temaHTML == "REGRAS") {
+    pagTema = "../forumPages/exibirPosts.html?id=etcForums_REGRAS";
   }
 
   if (temaHTML == "ERROS") {

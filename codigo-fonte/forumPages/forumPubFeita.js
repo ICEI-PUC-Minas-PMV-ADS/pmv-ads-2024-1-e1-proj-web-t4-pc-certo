@@ -1,3 +1,14 @@
+// SUMIR ICONES DO FORUM SE NAO TIVER LOGADO
+
+usuarioString = localStorage.getItem("Login");
+
+if (usuarioString !== null) {
+  iconesForum.classList.remove("forumSlctOpt");
+} else {
+  iconesForum.style.display = "none";
+}
+///
+
 //Minhas Publicações
 document.getElementById("minhasPubs");
 
