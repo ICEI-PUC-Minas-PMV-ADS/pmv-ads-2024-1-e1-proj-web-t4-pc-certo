@@ -1,3 +1,14 @@
+// SUMIR ICONES DO FORUM SE NAO TIVER LOGADO
+
+usuarioString = localStorage.getItem("Login");
+
+if (usuarioString !== null) {
+  iconesForum.classList.remove("forumSlctOpt");
+} else {
+  iconesForum.style.display = "none";
+}
+///
+
 var url = window.location.href;
 var partesDoUrl = url.split("_");
 var temaHTML = partesDoUrl[1];
@@ -31,7 +42,7 @@ if (isTherePosts == 0) {
 var postsIn = document.getElementById("postsIn");
 var temaLegi = "";
 
-if (temaHTML == "Regras") {
+if (temaHTML == "REGRAS") {
   temaLegi = " Regras do Fórum";
 }
 
