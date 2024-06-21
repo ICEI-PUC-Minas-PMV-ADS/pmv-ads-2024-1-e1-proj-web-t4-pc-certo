@@ -9,29 +9,33 @@
       "imagem": "img/json/Processadores/Ryzen5950X.png",
       "socket": "AM4",
       "TDP": "105W",
-      "videoIntegrado": "não"
+      "videoIntegrado": "não",
+      "buy": "https://www.terabyteshop.com.br/produto/15697/processador-amd-ryzen-9-5950x-34ghz-49ghz-turbo-16-cores-32-threads-am4-sem-cooler?gad_source=1&gclid=CjwKCAjwps-zBhAiEiwALwsVYR2lhQPj50Xi_ypqrJL6o5mg9QjGQFVZKwotvb7srRULhuDjVZJ84RoC5ZkQAvD_BwE"
+
     },
     {
       "marca": "Intel",
       "modelo": "Core i9-14900KF",
-      "preco": 2498.99,
+      "preco": 3747.99,
       "desempenho": "Alto Desempenho",
       "info": "https://www.intel.com.br/content/www/br/pt/products/sku/236787/intel-core-i9-processor-14900kf-36m-cache-up-to-6-00-ghz/specifications.html",
       "imagem": "img/json/Processadores/I9.png",
       "socket": "LGA1700",
       "TDP": "125W",
-      "videoIntegrado": "não"
+      "videoIntegrado": "não",
+      "buy": "https://www.terabyteshop.com.br/produto/26262/processador-intel-core-i9-14900kf-36-ghz-60ghz-turbo-14-geracao-24-cores-32-threads-lga-1700-bx8071514900kf?gad_source=1&gclid=CjwKCAjwps-zBhAiEiwALwsVYWnez9YSutXNDIRLXfuJKpXJPGJgXEfn2GiJCbM5gdV7ZD9oOwNCLhoCUCAQAvD_BwE"
     },
     {
       "marca": "AMD",
       "modelo": "Ryzen 9 7950X3D",
-      "preco": 4998.99,
+      "preco": 3799.99,
       "desempenho": "Alto Desempenho",
       "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/7000-series/amd-ryzen-9-7950x3d.html",
       "imagem": "img/json/Processadores/Ryzen7950X3D.png",
       "socket": "AM5",
       "TDP": "120W",
-      "videoIntegrado": "sim"
+      "videoIntegrado": "sim",
+      "buy": "https://www.terabyteshop.com.br/produto/23858/processador-amd-ryzen-9-7950x3d-42ghz-57ghz-turbo-16-cores-32-threads-am5-sem-cooler-100-100000908wof?gad_source=1&gclid=CjwKCAjwps-zBhAiEiwALwsVYWgCg-97KCzExF9PiMSnOHAEzOtq9v4t895v45ynDto8TNSwpLtfyxoC9GIQAvD_BwE"
     },
     {
       "marca": "Intel",
@@ -42,106 +46,121 @@
       "imagem": "img/json/Processadores/i5.png",
       "socket": "LGA1700",
       "TDP": "125W",
-      "videoIntegrado": "não"
+      "videoIntegrado": "não",
+      "buy": "https://www.pichau.com.br/processador-intel-core-i5-13600kf-14-core-20-threads-3-5ghz-5-1ghz-turbo-cache-24mb-lga1700-bx8071513600kf?gad_source=1&gclid=CjwKCAjwps-zBhAiEiwALwsVYfGRhM3ie8xswG54Dbs_S6Xjl3Z73iem8UCWMaQWmQxwaBNlrKCzjhoC89oQAvD_BwE"
     },
+    
     {
       "marca": "AMD",
       "modelo": "Ryzen 7 7700",
-      "preco": 1889.99,
+      "preco": 1999.90,
       "desempenho": "Alto Desempenho",
       "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7700.html",
       "imagem": "img/json/Processadores/Ryzen7700.png",
       "socket": "AM5",
       "TDP": "65W",
-      "videoIntegrado": "sim"
+      "videoIntegrado": "sim",
+      "buy": "https://www.terabyteshop.com.br/produto/23411/processador-amd-ryzen-7-7700-38ghz-53ghz-turbo-8-cores-16-threads-am5-com-cooler-amd-wraith-prism-100-100000592box?gad_source=1&gclid=CjwKCAjwps-zBhAiEiwALwsVYaUiTkJ03NW4qIWCPT8R-1EXPwWHMhy58BoUu2h--jcyFLTqm1zXNhoCJ1YQAvD_BwE"
     },
+    
     {
       "marca": "AMD",
       "modelo": "Ryzen 5 5600X",
-      "preco": 998.99,
+      "preco": 739.30,
       "desempenho": "Custo-Benefício",
       "info": "https://www.amd.com/pt/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
       "imagem": "img/json/Processadores/Ryzen5500e5600.png",
       "socket": "AM4",
       "TDP": "65W",
-      "videoIntegrado": "não"
+      "videoIntegrado": "não",
+      "buy": "https://www.amazon.com.br/PROCESSADOR-AMD-5600-100-100000927BOX-Cerâmica/dp/B09VCHR1VH/ref=asc_df_B09VCHR1VH/?tag=googleshopp00-20&linkCode=df0&hvadid=379799918300&hvpos=&hvnetw=g&hvrand=973194324380928496&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9198038&hvtargid=pla-1649701389824&psc=1&mcid=ce71f1a9df883248832e6cfc0f64fa2b"
     },
     {
       "marca": "Intel",
       "modelo": "Core i5-12400F",
-      "preco": 769.99,
+      "preco": 699.99,
       "desempenho": "Custo-Benefício",
       "info": "https://www.intel.com.br/content/www/br/pt/products/sku/134587/intel-core-i512400f-processor-18m-cache-up-to-4-40-ghz/specifications.html",
       "imagem": "img/json/Processadores/i5.png",
       "socket": "LGA1700",
       "TDP": "65W",
-      "videoIntegrado": "não"
+      "videoIntegrado": "não",
+      "buy": "https://www.amazon.com.br/Processador-Intel-I5-12400F-Núcleos-BX8071512400F/dp/B09MDFH5HY/ref=asc_df_B09MDFH5HY/?tag=googleshopp00-20&linkCode=df0&hvadid=379714135425&hvpos=&hvnetw=g&hvrand=2527517424826590407&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9198038&hvtargid=pla-1587126994691&psc=1&mcid=878ffa0599323f5098b70934a27e47b4"
     },
     {
       "marca": "AMD",
       "modelo": "Ryzen 5 5500",
-      "preco": 669.99,
+      "preco": 656.00,
       "desempenho": "Custo-Benefício",
       "info": "https://www.amd.com/en/product/11811",
       "imagem": "img/json/Processadores/Ryzen5500e5600.png",
       "socket": "AM4",
       "TDP": "65W",
-      "videoIntegrado": "não"
+      "videoIntegrado": "não",
+      "buy": "https://www.amazon.com.br/Processador-AMD-Ryzen-5500-100100000457BOX/dp/B09VCJ171S/ref=asc_df_B09VCJ171S/?tag=googleshopp00-20&linkCode=df0&hvadid=379733601514&hvpos=&hvnetw=g&hvrand=1175810479162146735&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9198038&hvtargid=pla-1649605665774&psc=1&mcid=6231ff22a90c39d3bdefc0139c054912"
     },
     {
       "marca": "Intel",
       "modelo": "Core i5-10400F",
-      "preco": 999.99,
+      "preco": 579.99,
       "desempenho": "Custo-Benefício",
       "info": "https://www.intel.com.br/content/www/br/pt/products/sku/199278/intel-core-i510400f-processor-12m-cache-up-to-4-30-ghz/specifications.html",
       "imagem": "img/json/Processadores/i5.png",
       "socket": "LGA1200",
       "TDP": "65W",
-      "videoIntegrado": "não"
+      "videoIntegrado": "não",
+      "buy": "https://www.pichau.com.br/processador-intel-core-i5-10400f-6-core-12-threads-2-9ghz-4-3ghz-turbo-cache-12mb-lga1200-bx8070110400f-br?gad_source=1&gclid=CjwKCAjwps-zBhAiEiwALwsVYUnLBFH9WAtWEwEEBWRlfz6LZFdetZ27OcP4sFrg8G6JJUR-hqdOKhoCxToQAvD_BwE"
+      
     },
     {
       "marca": "AMD",
       "modelo": "Ryzen 5 5600G",
-      "preco": 834.99,
+      "preco": 800.00,
       "desempenho": "Custo-Benefício",
       "info": "https://www.amd.com/en/product/11176",
       "imagem": "img/json/Processadores/Ryzen5600X.png",
       "socket": "AM4",
       "TDP": "65W",
-      "videoIntegrado": "sim"
+      "videoIntegrado": "sim",
+      "buy": "https://www.amazon.com.br/Processador-AMD-Ryzen-5600G-Stealth/dp/B092L9GF5N/ref=asc_df_B092L9GF5N/?tag=googleshopp00-20&linkCode=df0&hvadid=379739321983&hvpos=&hvnetw=g&hvrand=8923336085209714961&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9198038&hvtargid=pla-1250272768452&mcid=7c0dd52ab3443804a0394af48c3c729d&th=1"
     },
+
     {
       "marca": "Intel",
       "modelo": "Core i3-10105",
-      "preco": 587.99,
+      "preco": 379.99,
       "desempenho": "Baixa Performance",
       "info": "https://www.intel.com.br/content/www/br/pt/products/sku/201894/intel-core-i310105-processor-6m-cache-up-to-4-40-ghz/specifications.html",
       "imagem": "img/json/Processadores/i3.webp",
       "socket": "LGA1200",
       "TDP": "65W",
-      "videoIntegrado": "sim"
+      "videoIntegrado": "sim",
+      "buy": "https://www.amazon.com.br/PROCESSADOR-I3-10105F-3-7GHz-GERACAO-BX8070110105F/dp/B08V1KKZ12/ref=asc_df_B08V1KKZ12/?tag=googleshopp00-20&linkCode=df0&hvadid=379799918300&hvpos=&hvnetw=g&hvrand=1047381274680590091&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9198038&hvtargid=pla-1264471547457&psc=1&mcid=0fddfc6c726a3d2b87dd8634682e9865"
     },
+    
     {
       "marca": "AMD",
       "modelo": "Ryzen 5 4600G",
-      "preco": 579.99,
+      "preco": 676.00,
       "desempenho": "Baixa Performance",
       "info": "https://www.adrenaline.com.br/produto/processador/amd-ryzen-5-4600g/",
       "imagem": "img/json/Processadores/Ryzen4600G.png",
       "socket": "AM4",
       "TDP": "65W",
-      "videoIntegrado": "sim"
+      "videoIntegrado": "sim",
+      "buy": "https://www.amazon.com.br/Processador-AMD-Ryzen-4600G-Graphics/dp/B09Z5NH6SJ/ref=asc_df_B09Z5NH6SJ/?tag=googleshopp00-20&linkCode=df0&hvadid=379739321983&hvpos=&hvnetw=g&hvrand=1006005368017314014&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9198038&hvtargid=pla-1716984960927&psc=1&mcid=901a3ec2207732f2accc61d9c20bba8c"
     },
     {
       "marca": "Intel",
       "modelo": "Pentium Gold G6405",
-      "preco": 430.99,
+      "preco": 399.99,
       "desempenho": "Baixa Performance",
       "info": "https://www.intel.com.br/content/www/br/pt/products/sku/201901/intel-pentium-gold-g6405-processor-4m-cache-4-10-ghz/specifications.html",
       "imagem": "img/json/Processadores/pentium.png",
       "socket": "LGA1200",
       "TDP": "58W",
-      "videoIntegrado": "sim"
+      "videoIntegrado": "sim",
+      "buy": "https://www.pichau.com.br/processador-intel-pentium-gold-g7400-2-core-4-threads-3-7ghz-cache-6mb-lga1700-bx80715g7400?gad_source=4&gclid=CjwKCAjwps-zBhAiEiwALwsVYRcdhJFCqUc2Mo8IoL8hr5Q-FqFESkEI-jqSmBH7MxK15JahcHAEbBoCE70QAvD_BwE"
     }
   ],
   "PlacaMae": [
@@ -220,13 +239,14 @@
     {
       "marca": "AORUS",
       "modelo": "TUF Gaming Z790-Plus Wifi",
-      "preco": 1899.99,
+      "preco": 2694.99,
       "desempenho": "Alto Desempenho",
       "info": "https://www.gigabyte.com/br/Motherboard/Z790-AORUS-ELITE-rev-11/sp#sp",
       "imagem": "img/json/PlacaMae/tufZ790.png",
       "socket": "LGA1700",
       "ram": "DDR5",
-      "format": "ATX"
+      "format": "ATX",
+      "buy": "https://www.kabum.com.br/produto/427131/placa-mae-asus-tuf-gaming-z790-plus-intel-atx-ddr5-rgb-wi-fi-bluetooth-90mb1d80-m1eay0?gad_source=1&gclid=CjwKCAjwps-zBhAiEiwALwsVYTFmmyRZeDhscWVMccZsEV9eatnNB3dKLuf_lkYlFBgD7_CSJtz7ZxoC9aEQAvD_BwE"
     },
     {
       "marca": "ASUS",
@@ -237,7 +257,8 @@
       "imagem": "img/json/PlacaMae/x670e-plus.png",
       "socket": "AM5",
       "ram": "DDR5",
-      "format": "ATX"
+      "format": "ATX",
+      "buy": "https://www.kabum.com.br/produto/444049/placa-mae-asus-tuf-gaming-x670e-plus-amd-x670-am5-ddr5-90mb1bj0-c1bay0?gad_source=1&gclid=CjwKCAjwps-zBhAiEiwALwsVYbZUPWT42buNfsh9Fqc6rOGqCJTDBGUYHpGQeST1E5n8Lyn92SxFRRoCClAQAvD_BwE"
     },
     {
       "marca": "ASUS",
@@ -248,18 +269,20 @@
       "imagem": "img/json/PlacaMae/b650m.png",
       "socket": "AM5",
       "ram": "DDR5",
-      "format": "mATX"
+      "format": "mATX",
+      "buy": "https://www.kabum.com.br/produto/392052/placa-mae-asus-tuf-gaming-b650m-plus-amd-am5-b650-matx-ddr5-90mb1bg0-m0eay0?gad_source=1&gclid=CjwKCAjwps-zBhAiEiwALwsVYZS9DLibMYtutmsCSB80znac_GFrf8CKsn8vv7W0J0VL3025D2o24hoCeDsQAvD_BwE"
     },
     {
       "marca": "ASUS",
       "modelo": "TUF Gaming B550M-Plus",
-      "preco": 829.99,
+      "preco": 999.99,
       "desempenho": "Custo-Benefício",
       "info": "https://www.asus.com/br/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b550m-plus/",
       "imagem": "img/json/PlacaMae/b550m.png",
       "socket": "AM4",
       "ram": "DDR4",
-      "format": "microATX"
+      "format": "microATX",
+      "buy": "https://www.kabum.com.br/produto/115216/placa-mae-asus-tuf-gaming-b550m-plus-amd-am4-matx-ddr4?gad_source=1&gclid=CjwKCAjwps-zBhAiEiwALwsVYdRXtRPS-qkIcLWEmsh37a84ECDH86T6SqBNa0wROPHM4S52LTyGFBoCMQkQAvD_BwE"
     },
     {
       "marca": "ASROCK",
@@ -270,7 +293,8 @@
       "imagem": "img/json/PlacaMae/b660m.png",
       "socket": "LGA1700",
       "ram": "DDR4",
-      "format": "mATX"
+      "format": "mATX",
+      "buy": "https://www.kabum.com.br/produto/495982/placa-mae-asrock-b660m-phantom-gaming-4-intel-m-atx-ddr4-socket-lga-1700?gad_source=1&gclid=CjwKCAjwps-zBhAiEiwALwsVYVWv17ceDxLwBy2RH0LCIxUzHrfgqxX9wVCBrUAVSCja6RKzyHsgCxoC0FMQAvD_BwE"
     },
     {
       "marca": "Gigabyte",
@@ -281,7 +305,8 @@
       "imagem": "img/json/PlacaMae/h610m.png",
       "socket": "LGA1700",
       "ram": "DDR4",
-      "format": "mATX"
+      "format": "mATX",
+      "buy": "https://www.kabum.com.br/produto/315273/placa-mae-gigabyte-h610m-rev-1-0-intel-lga1700-h610-ddr4-matx-h610m-h-ddr4"
     },
     {
       "marca": "MSI",
@@ -292,71 +317,78 @@
       "imagem": "img/json/PlacaMae/a520m.png",
       "socket": "AM4",
       "ram": "DDR4",
-      "format": "mATX"
+      "format": "mATX",
+      "buy": "https://www.kabum.com.br/produto/280890/placa-mae-msi-a520m-a-pro-amd-am4-matx-ddr4?gad_source=1&gclid=CjwKCAjwps-zBhAiEiwALwsVYTmQe2g-AXLhp481hD7w8fZUeW0njOJaALyeLZ4QkKbolXpqrF1UQBoCrvQQAvD_BwE"
     },
     {
       "marca": "Gigabyte",
       "modelo": "H510M REV.1.0",
-      "preco": 517.99,
+      "preco": 555.00,
       "desempenho": "Custo-Benefício",
       "info": "https://www.gigabyte.com/br/Motherboard/H510M-H-rev-10-11-15#kf",
       "imagem": "img/json/PlacaMae/h510m.png",
       "socket": "LGA1200",
       "ram": "DDR4",
-      "format": "mATX"
+      "format": "mATX",
+      "buy": "https://www.amazon.com.br/PLACA-INTEL-GIGABYTE-H510M-GERACAO/dp/B092DTVSQT/ref=asc_df_B092DTVSQT/?tag=googleshopp00-20&linkCode=df0&hvadid=379726213669&hvpos=&hvnetw=g&hvrand=2026850120458533806&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9198038&hvtargid=pla-1386544913224&psc=1&mcid=854af4079e1f36e7acd9f5d0cc8364a8"
     },
     {
       "marca": "MSI",
       "modelo": "B560M PRO-E",
-      "preco": 439.99,
+      "preco": 580.67,
       "desempenho": "Custo-Benefício",
       "info": "https://www.msi.com/Motherboard/B560M-PRO-E",
       "imagem": "img/json/PlacaMae/b560m.png",
       "socket": "LGA1200",
       "ram": "DDR4",
-      "format": "mATX"
+      "format": "mATX",
+      "buy": "https://www.amazon.com.br/Msi-B560m-Pro-lga-1200/dp/B08ZJFFDDH/ref=asc_df_B08ZJFFDDH/?tag=googleshopp00-20&linkCode=df0&hvadid=647617542685&hvpos=&hvnetw=g&hvrand=10790325874050996136&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9198038&hvtargid=pla-1278559737041&psc=1&mcid=ff0d5048702d3c959941a1a0eb208a08"
     }
   ],
   "RAM": [
     {
       "marca": "Corsair",
       "modelo": "Vengeance RGB 2x16GB DDR5",
-      "preco": 1049.99,
+      "preco": 799.99,
       "desempenho": "Alto Desempenho",
       "info": "https://www.corsair.com/br/pt/p/memory/cmh32gx5m2x6200c36/vengeance-rgb-32gb-2x16gb-ddr5-dram-6200mt-s-cl36-memory-kit-black-cmh32gx5m2x6200c36",
       "imagem": "img/json/ram/veneganceddr5.png",
       "tipo": "DDR5",
-      "frequencia": "6200MHz"
+      "frequencia": "6200MHz",
+      "buy": "https://www.amazon.com.br/Corsair-VENGEANCE-3600MHz-computador-compatível/dp/B082DJ19CK/ref=asc_df_B082DJ19CK/?tag=googleshopp00-20&linkCode=df0&hvadid=379787220407&hvpos=&hvnetw=g&hvrand=5624706819805022221&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9198038&hvtargid=pla-880326806583&psc=1&mcid=74adce1a80523b08a35a92e4c5443bab"
     },
     {
       "marca": "Rise Mode",
       "modelo": "Rise Mode Z 16GB DDR5",
-      "preco": 299.99,
+      "preco": 5289.99,
       "desempenho": "Custo-Benefício",
       "info": "https://www.lojarisemode.com.br/produto/memoria-ddr5-rise-mode-z-preto-rm-d5-16g-4800z",
       "imagem": "img/json/ram/risemodez.png",
       "tipo": "DDR5",
-      "frequencia": "4800MHz"
+      "frequencia": "4800MHz",
+      "buy": "https://www.kabum.com.br/produto/442742/memoria-ram-rise-mode-z-16gb-4800mhz-ddr5-cl40-branco-rm-d5-16g-4800zw?gad_source=1&gclid=CjwKCAjwps-zBhAiEiwALwsVYbO9dme1OSTUAhbKteqG8f3l6tsYqzIV9WvU2XzUoZHqwsNNvO-6hxoCu04QAvD_BwE"
     },
     {
       "marca": "Kingston",
       "modelo": "Fury Beast 8GB DDR5",
-      "preco": 699.99,
+      "preco": 224.90,
       "desempenho": "Alto Desempenho",
       "info": "https://www.kingston.com/br/memory/gaming/kingston-fury-beast-ddr5-memory",
       "imagem": "img/json/ram/furyBeastddr5.png",
       "tipo": "DDR5",
-      "frequencia": "4800MHz"
+      "frequencia": "4800MHz",
+      "buy": "https://www.amazon.com.br/Memória-Desktop-Kingston-Fury-Beast/dp/B09T8ZMKHG/ref=asc_df_B09T8ZMKHG/?tag=googleshopp00-20&linkCode=df0&hvadid=647617539787&hvpos=&hvnetw=g&hvrand=17408396902574335122&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9198038&hvtargid=pla-1650258787580&psc=1&mcid=83f8108870303afcb1beae82625fd86d"
     },
     {
       "marca": "Kingston",
       "modelo": "Fury Beast 8GB DDR4",
-      "preco": 169.99,
+      "preco": 157.99,
       "desempenho": "Custo-Benefício",
       "info": "https://www.kingston.com/br/memory/gaming/kingston-fury-beast-ddr4-rgb-memory",
       "imagem": "img/json/ram/furyBeastRGB.png",
       "tipo": "DDR4",
-      "frequencia": "3000MHz"
+      "frequencia": "3200MHz",
+      "buy": "https://www.terabyteshop.com.br/produto/19314/memoria-kingston-fury-beast-8gb-3200mhz-ddr4-black-kf432c16bb8?gad_source=1&gclid=CjwKCAjwps-zBhAiEiwALwsVYYjxkQa1MoXKCr4dbtqzEr-dKOtH1t9DXF_hAJMlqpBqIX_1KZSDhxoCIMwQAvD_BwE"
     },
     {
       "marca": "Kingston",
@@ -366,27 +398,30 @@
       "info": "https://www.kingston.com/br/memory/gaming/kingston-fury-beast-ddr4-rgb-memory",
       "imagem": "img/json/ram/furyBeastRGB.png",
       "tipo": "DDR4",
-      "frequencia": "3200MHz"
+      "frequencia": "3200MHz",
+      "buy": "https://www.kabum.com.br/produto/480530/memoria-ram-kingston-fury-beast-rgb-32gb-2x16gb-3200mhz-ddr4-cl16-preto-kf432c16bb12ak2-32?gad_source=1&gclid=CjwKCAjwps-zBhAiEiwALwsVYTwE3WCY56-v_R1hQ5yOQ1iaqPL3aHBn0bhT518h_zMt2zfgXRXqFBoCIfUQAvD_BwE"
     },
     {
       "marca": "XPG",
       "modelo": "Spectrix D35G 16GB DDR4",
-      "preco": 285.99,
+      "preco": 285.90,
       "desempenho": "Alto Desempenho",
       "info": "https://www.xpg.com/pt/xpg/dram-modules-spectrix-d35g-rgb-ddr4",
       "imagem": "img/json/ram/xpgspectrixD35G.png",
       "tipo": "DDR4",
-      "frequencia": "3200MHz"
+      "frequencia": "3200MHz",
+      "buy": "https://www.terabyteshop.com.br/produto/25634/memoria-ddr4-xpg-spectrix-d35g-rgb-16gb-3200mhz-black-ax4u320016g16a-sbkd35g?gad_source=1&gclid=CjwKCAjwps-zBhAiEiwALwsVYXva7fLKy4qYci9Ik-qnQih85MIv7mEcpBZ7Z1eT2hitkPn1OdNi6hoCNK0QAvD_BwE"
     },
     {
       "marca": "Corsair",
       "modelo": "Vengeance LPX 4GB DDR4",
-      "preco": 119.99,
+      "preco": 170.41,
       "desempenho": "Baixa Performance",
       "info": "https://www.corsair.com/br/pt/p/memory/cmk4gx4m1a2400c14r/vengeancea-lpx-4gb-1-x-4gb-ddr4-dram-2400mhz-c14-memory-kit-red-cmk4gx4m1a2400c14r",
       "imagem": "img/json/ram/veneganceLPX.png",
       "tipo": "DDR4",
-      "frequencia": "2400MHz"
+      "frequencia": "2400MHz",
+      "buy": "https://www.amazon.com.br/HX426C16FB34-Memória-HyperX-2666Mhz-desktop/dp/B07WCQRLF9/ref=asc_df_B07WCQRLF9/?tag=googleshopp00-20&linkCode=df0&hvadid=379720664788&hvpos=&hvnetw=g&hvrand=12003064762724419824&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9198038&hvtargid=pla-817064630827&psc=1&mcid=4a15bad6571f3ad29fbfdaad47dd9126"
     },
     {
       "marca": "Kingston",
@@ -396,7 +431,8 @@
       "info": "https://www.kingston.com/br/memory/gaming/kingston-fury-beast-ddr4-memory",
       "imagem": "img/json/ram/furyBeastddr4.png",
       "tipo": "DDR4",
-      "frequencia": "3200MHz"
+      "frequencia": "3200MHz",
+      "buy": "https://www.kabum.com.br/produto/193500/memoria-ram-kingston-fury-beast-16gb-2x8gb-3200mhz-ddr4-cl16-preto-kf432c16bbk2-16?gad_source=1&gclid=CjwKCAjwps-zBhAiEiwALwsVYUJCeiCCiEbhUIEBlKF8GP1kC-bZG4l-G7oXDz2-E96zzNZjxntY5xoCH30QAvD_BwE"
     },
     {
       "marca": "Kingston",
@@ -492,61 +528,68 @@
       "desempenho": "Alto Desempenho",
       "info": "https://www.amd.com/en/products/graphics/amd-radeon-rx-6800-xt",
       "imagem": "img/json/GPU/rx6800xt.png",
-      "sugPSU": 750
+      "sugPSU": 750,
+      "buy": "https://www.terabyteshop.com.br/produto/20718/placa-de-video-gigabyte-radeon-rx-6800-xt-gaming-oc-16gb-gddr6-fsr-ray-tracing-gv-r68xtgaming-oc-16gd"
     },
     {
       "marca": "AMD",
       "modelo": "Radeon RX 6700 XT",
-      "preco": 2500.99,
+      "preco": 1739.99,
       "desempenho": "Alto Desempenho",
       "info": "https://www.amd.com/en/products/graphics/amd-radeon-rx-6700-xt",
       "imagem": "img/json/GPU/rx6700xt.png",
-      "sugPSU": 650
+      "sugPSU": 650,
+      "buy": "https://www.amazon.com.br/Placa-Vídeo-Sapphire-Radeon-128-Bit/dp/B0C49S5R55/ref=asc_df_B0C49S5R55/?tag=googleshopp00-20&linkCode=df0&hvadid=647476141426&hvpos=&hvnetw=g&hvrand=6962321033099634285&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9198038&hvtargid=pla-2197260404398&psc=1&mcid=ea542d68fa8035be9e2f00a5c7d692f3"
     },
     {
       "marca": "NVIDIA",
       "modelo": "GeForce RTX 3060",
-      "preco": 2100.99,
+      "preco": 2261.25,
       "desempenho": "Custo-Benefício",
       "info": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3060-ti/",
       "imagem": "img/json/GPU/rtx3060.png",
-      "sugPSU": 550
+      "sugPSU": 550,
+      "buy": "https://www.amazon.com.br/PLACA-VIDEO-PALIT-GEFORCE-GDDR6/dp/B08WR6DRQQ/ref=asc_df_B08WR6DRQQ/?tag=googleshopp00-20&linkCode=df0&hvadid=379726213405&hvpos=&hvnetw=g&hvrand=17878427127050632254&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9198038&hvtargid=pla-1221598512718&psc=1&mcid=02f301d6a5443e60891c977837ba0cb4"
     },
     {
       "marca": "NVIDIA",
       "modelo": "GeForce RTX 4060 Ti",
       "desempenho": "Alto Desempenho",
-      "preco": 2549.99,
+      "preco": 22899.00,
       "info": "https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4060-ti/",
       "imagem": "img/json/GPU/rtx4060ti.png",
-      "sugPSU": 650
+      "sugPSU": 650,
+      "buy": "https://www.amazon.com.br/Placa-RTX4060TI-1-CLICK-128BIT-46ISL8MD8COC/dp/B0C5T2N31S/ref=asc_df_B0C5T2N31S/?tag=googleshopp00-20&linkCode=df0&hvadid=647682162692&hvpos=&hvnetw=g&hvrand=11625198610100666387&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9198038&hvtargid=pla-2196911325316&psc=1&mcid=f08212cc0f13363685e91013f983657d"
     },
     {
       "marca": "AMD",
       "modelo": "Radeon RX 550",
-      "preco": 500.99,
+      "preco": 599.79,
       "desempenho": "Baixa Performance",
       "info": "https://www.amd.com/en/products/graphics/radeon-rx-550",
       "imagem": "img/json/GPU/rx550.png",
-      "sugPSU": 350
+      "sugPSU": 350,
+      "buy": "https://www.amazon.com.br/GDDR5-Bits-Dual-Fan-Projeto-PVEX5504GBDF/dp/B0CV2C7WTB/ref=asc_df_B0CV2C7WTB/?tag=googleshopp00-20&linkCode=df0&hvadid=647476141426&hvpos=&hvnetw=g&hvrand=14153661471388559551&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9198038&hvtargid=pla-2292441529826&psc=1&mcid=4f2ff9ce47773bcc8acab83d49d8b1fb"
     },
     {
       "marca": "NVIDIA",
       "modelo": "GeForce GT 1030",
-      "preco": 499.99,
+      "preco":  515.99,
       "desempenho": "Baixa Performance",
       "info": "https://www.nvidia.com/en-us/geforce/graphics-cards/10-series/gt-1030/",
       "imagem": "img/json/GPU/gt1030.png",
-      "sugPSU": 300
+      "sugPSU": 300,
+      "buy": "https://www.pichau.com.br/placa-de-video-gigabyte-geforce-gt-1030-2gb-gddr5-low-profile-64-bit-gv-n1030d5-2gl?gad_source=1&gclid=CjwKCAjwps-zBhAiEiwALwsVYXB69qbyn2yvMl4gSq7L2KX1WMrhab7mYbe6jwHC0ZvzhxZcCrixehoCua8QAvD_BwE"
     },
     {
       "marca": "NVIDIA",
       "modelo": "GeForce GTX 1050 Ti",
-      "preco": 1354.99,
+      "preco": 849.99,
       "desempenho": "Custo-Benefício",
       "info": "https://www.nvidia.com/en-us/geforce/graphics-cards/10-series/gtx-1050/",
       "imagem": "img/json/GPU/gtx1050ti.png",
-      "sugPSU": 300
+      "sugPSU": 300,
+      "buy": "https://www.amazon.com.br/Placa-Vídeo-NVIDIA-Gainward-GeForce/dp/B01M28XOBQ/ref=asc_df_B01M28XOBQ/?tag=googleshopp00-20&linkCode=df0&hvadid=379787213900&hvpos=&hvnetw=g&hvrand=2185592669700389027&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9198038&hvtargid=pla-349489793160&psc=1&mcid=bf75f1f19527320ab3f35939e0d9e1c5"
     },
     {
       "marca": "NVIDIA",
