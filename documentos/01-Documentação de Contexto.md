@@ -18,9 +18,9 @@ O objetivo principal deste projeto é criar uma solução que permita que pessoa
 Como objetivos específicos, podemos destacar:
 
 
-   • Comparar preços e desempenho dos hardwares;
+   • Fornecer hardwares compatíveis durante todo o processo de escolhas dos componentes;
    
-   • Fornecer vídeos e imagens que orientem em cada fase do procedimento de montagem;
+   • Auxiliar na escolha de componentes de acordo com o orçamento do usuário;
    
    • Disponibilizar um fórum para interação da comunidade interessada em computadores.
 
