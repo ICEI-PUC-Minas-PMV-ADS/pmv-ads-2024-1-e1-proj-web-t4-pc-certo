@@ -360,7 +360,7 @@
     {
       "marca": "Rise Mode",
       "modelo": "Rise Mode Z 16GB DDR5",
-      "preco": 5289.99,
+      "preco": 289.99,
       "desempenho": "Custo-Benefício",
       "info": "https://www.lojarisemode.com.br/produto/memoria-ddr5-rise-mode-z-preto-rm-d5-16g-4800z",
       "imagem": "img/json/ram/risemodez.png",
@@ -555,7 +555,7 @@
       "marca": "NVIDIA",
       "modelo": "GeForce RTX 4060 Ti",
       "desempenho": "Alto Desempenho",
-      "preco": 22899.00,
+      "preco": 2799.00,
       "info": "https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4060-ti/",
       "imagem": "img/json/GPU/rtx4060ti.png",
       "sugPSU": 650,
