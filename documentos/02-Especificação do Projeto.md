@@ -46,7 +46,7 @@
 </tr>
 <tr>
 <td width="150px"><b>Descrição</b></td>
-<td width="600px">Ter privilégios no fórum como enviar publicações</td>
+<td width="600px">Deseja interagir com publicações feitas por outros usuários, além de criar novos tópicos para comunidade tirar suas dúvidas. </td>
 </tr>
 <tr>
 <td><b>Necessidades</b></td>
