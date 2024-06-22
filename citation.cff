@@ -1,0 +1,23 @@
+message: Please cite this software using these metadata.
+title: PC Certo
+authors:
+  - family-names: Piccolo de Souza
+    given-names: Caetano
+  - family-names: Fernando dos Santos Bezerra
+    given-names: Luan
+  - family-names: Gabriel Ferreira Toti
+    given-names: Lucas
+  - family-names: Fernando dos Santos Bezerra
+    given-names: Pedro
+  - family-names: Henrique Silveira Leiva Machado
+    given-names: Pedro
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Rodrigo Costa
+    given-names: Marco
+keywords:
+  - MontagemPC
+  - Hardware
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pc-certo
+version: 1.0.0
+date-released: 2024-06-22
