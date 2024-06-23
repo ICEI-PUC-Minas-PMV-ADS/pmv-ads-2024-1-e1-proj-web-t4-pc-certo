@@ -77,7 +77,7 @@ if (componentes !== null) {
     document
       .getElementById("comprarbotaoproc")
       .addEventListener("click", function () {
-        window.location.href = componentes.Processador.info;
+        window.open(componentes.Processador.buy);
       });
     var CPUmodelo = document.querySelector(".cpuModelo");
     var CPUpreco = document.querySelector(".cpuPreco");
@@ -105,7 +105,7 @@ if (componentes !== null) {
     document
       .getElementById("comprarbotaoplac")
       .addEventListener("click", function () {
-        window.location.href = componentes.PlacaMae.info;
+        window.open(componentes.PlacaMae.buy);
       });
     var placaMae = document.querySelector(".placaMaeModelo");
     var placaMaePreco = document.querySelector(".placaMaePreco");
@@ -133,7 +133,7 @@ if (componentes !== null) {
     document
       .getElementById("comprarbotaomem")
       .addEventListener("click", function () {
-        window.location.href = componentes.RAM.info;
+        window.open(componentes.RAM.buy);
       });
     var ram = document.querySelector(".ramModelo");
     var ramPreco = document.querySelector(".ramPreco");
@@ -161,7 +161,7 @@ if (componentes !== null) {
     document
       .getElementById("comprarbotaovideo")
       .addEventListener("click", function () {
-        window.location.href = componentes.GPU.info;
+        window.open(componentes.GPU.buy);
       });
     var gpu = document.querySelector(".gpuModelo");
     var gpuPreco = document.querySelector(".gpuPreco");
@@ -191,7 +191,7 @@ if (componentes !== null) {
     document
       .getElementById("comprarbotaoarmaz")
       .addEventListener("click", function () {
-        window.location.href = componentes.Armazenamento.info;
+        window.open(componentes.Armazenamento.buy);
       });
     var armazenamento = document.querySelector(".armazenamentoModelo");
     var armazenamentoPreco = document.querySelector(".armazenamentoPreco");
@@ -219,7 +219,8 @@ if (componentes !== null) {
     document
       .getElementById("comprarbotaofont")
       .addEventListener("click", function () {
-        window.location.href = componentes.PSU.info;
+        window.open(componentes.PSU.buy);
+
       });
     var fonte = document.querySelector(".fonteModelo");
     var fontePreco = document.querySelector(".fontePreco");
@@ -247,7 +248,7 @@ if (componentes !== null) {
     document
       .getElementById("comprarbotaogabi")
       .addEventListener("click", function () {
-        window.location.href = componentes.Gabinete.info;
+        window.open(componentes.Gabinete.buy);
       });
     var gabinete = document.querySelector(".gabineteModelo");
     var gabinetePreco = document.querySelector(".gabinetePreco");
@@ -275,7 +276,7 @@ if (componentes !== null) {
     document
       .getElementById("comprarbotaocooler")
       .addEventListener("click", function () {
-        window.location.href = componentes.Refrigeração.info;
+        window.open(componentes.Refrigeração.buy);
       });
     var cooler = document.querySelector(".coolerModelo");
     var coolerPreco = document.querySelector(".coolerPreco");
